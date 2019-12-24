@@ -1,2 +1,5 @@
-# freetnil
-A community driven of the next Ithkuilic language
+The Free TNIL Project
+=====================
+
+A community driven conlang inspired by [John Quijada\'s
+Ithkuil](http://ithkuil.net/).
