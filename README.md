@@ -8,8 +8,7 @@ Contributing
 ============
 
 You can contribute to the Free TNIL project by making a pull request.
-Remember to add your name to [the authors
-list](authors.txt::Below are the names/handles of contributors to the Free TNIL project. If you contribute, make sure to add your name to this list:).
+Remember to add your name to [the authors list](authors.txt).
 
 Design Goals
 ============
