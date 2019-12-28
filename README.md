@@ -26,5 +26,5 @@ Description of the Language
 
 Like other Philosophical/Ithkuilic languages, Free TNIL consists of a
 number of abstract categories marked morphologically on specific
-word-types. [This document](categories.org) outlines the categories of
-the language. A morphology document is forthcoming
+word-types. [This document](docs/categories.org) outlines the categories
+of the language. A morphology document is forthcoming
