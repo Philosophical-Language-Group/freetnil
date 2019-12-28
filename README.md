@@ -19,7 +19,13 @@ review):
 -   expressiveness,
 -   unambiguity,
 -   semantic productivity,
+-   density,
 -   detail.
+
+Additionally this project is an experiment in computer-aided language
+development, with a twist. Alongside the usual tables of affixes and
+category values, these documents will contain programs for encoding and
+deciphering its text.
 
 Description of the Language
 ===========================
