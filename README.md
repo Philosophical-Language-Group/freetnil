@@ -1,8 +1,9 @@
 The Free TNIL Project
 =====================
 
-A community driven conlang inspired by [John Quijada\'s
-Ithkuil](http://ithkuil.net/).
+Free TNIL is the working title of a community driven conlang inspired by
+[John Quijada\'s Ithkuil](http://ithkuil.net/). It includes a
+refactoring of the category system developed by Mr. Quijada.
 
 Contributing
 ============
