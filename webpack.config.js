@@ -17,7 +17,11 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|svg|jpg|gif)$/,
+                test: /\.svg$/,
+                loader: 'svg-inline-loader?removingSVGTagAttrs=true',
+            },
+            {
+                test: /\.(png|jpg|gif)$/,
                 use: [
                     'file-loader',
                 ]
