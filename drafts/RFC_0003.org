@@ -1,0 +1,339 @@
+#+title: RFC: Down with Specification
+#+author: uakci
+
+* Problem
+Neither the 2011 nor the 2020 edition of Ithkuil is lexically
+consistent.
+
+For a clear statement of the intent of this proposal, please read the
+opening paragraph of the Proposal section.
+
+* Duration
+[2038-01-19 Tue 03:14]
+
+* Current State
+WIP Draft.
+
+* Proposers
+- @uakci
+
+Specification→Format concept originally by @melopee; he is not implied
+to endorse the execution presented in this RFC.
+
+* Detail
+(In the following paragraphs, uppercased /Stem/ refers to the
+tri- or tetravalent Category, and lowercase /stem/—to
+[[https:/en.wikipedia.org/wiki/Word_stem][the linguistic concept]].)
+
+** Why 2011 Ithkuil’s lexicon is not satisfactory
+
+*** Exposition
+In [[http:/ithkuil.net/][2011 Ithkuil]], the latest stable version of
+Ithkuil, all roots are expected to conjugate for three lexical
+Categories—Designation, Pattern, and Stem—yielding 18 possible stems.
+Designation is a well-defined bivalent Category which determines the
+presence or absence of permanence, institutionalization, artificiality
+in a root concept (e.g., /create/ vs. /construct/, /wander/ vs.
+/travel/). The reference grammar explains Pattern and Stem with great
+vagueness; one may gather that these trivalent Categories’ main
+purpose is to subdivide the general, overarching semantics of the root
+so as to yield finer semantic distinctions—or to group related
+concepts, or their disparate facets, under a single consonantal affix.
+
+*** Criticism
+The main point that the author wishes to make is that *the
+above-presented system suffers from non-expansibility*. Specifically,
+with each new root that the language creator (John Quijada or
+otherwise) wishes to add to the language, they must consider a
+dichotomy and two trichotomies to go with it. In order from least to
+most irrational:
+
+1. While Designation is mostly predictable in its praxes, there exist
+   examples which seem forced and/or humorous, even, in their
+   absurdity: -DK- /buttock/ → /haunch/, -Ph- /wood/ → /wood product/,
+   /sound made by non-oral, non-vocal part of the body/ → /phoneme/
+   (viz. -LŻ-), -Qh- /spirit or soul/ → /religious belief/.
+
+2. In most cases, the solution is to render the Pattern 1 meaning (the
+   ‘Holistic Stem’) as a sum of two parts, which constitute Pattern 2
+   and 3—e.g., -L- /vocal utterance/ → /physical production of vocal
+   utterance/ + /content conveyed through vocal utterance/. Another
+   tactic commonly used by Quijada is to introduce a presence–absence
+   distinction of a certain property within Patterns 2 and 3 (the
+   so-called ‘Complementary Stems’)—e.g., -RR- /cat/ → /wild cat/,
+   /domesticated cat/. However, no Pattern pattern prevails throughout
+   the lexicon, which engenders gratuitous vocabulary bloat.
+
+3. Stem is the most irregular Category of all three. Sometimes, it is
+   used in the same way as Pattern is (e.g., -SK- vs. -LTh-, -L- vs.
+   -Th-). Quijada does not give any remote explanation of Stem apart
+   from the statement that ‘[i]t is at the level of stem that Ithkuil
+   roots become actual words with instantiated meaning’
+   ([[http:/www.ithkuil.net/02_morpho-phonology.html#Sec2o2o2][source]]).
+
+4. Wherever the eighteen combinations being the Cartesian product of
+   Designation, Pattern, and Stem are not enough, 2011 Ithkuil uses
+   the SSD suffix. This suffix may be used on some—but not all, or
+   even the majority of—roots to prescribe Stem-Specific Derivations
+   (for example, the Stem-Specific Derivations for -TT-
+   ‘salutation/greeting’ include /shake hands upon leavetaking/ and
+   /verbal salutation only upon arrival/, and the 31 (!) SSDs for -ŢW-
+   ‘weather condition’ include such concepts as /smog/ and /gentle
+   breeze/).
+
+The above examples aim to show that while at first blush, the
+grid-like approach to vocabulary building and encoding of nuance may
+seem clever, Quijada treats the root as a ‘bag of words’ with little
+care for consistency, arriving at a Byzantine concept-organization
+which does not lend itself well to formalizing or reasoning about.
+This sorry state of affairs is only exacerbated by the SSD suffix,
+which breaks the neat structurization which follows from the use of
+three orthogonal Categories.
+
+There is also a trend highlighted in these examples: where Quijada’s
+wording is inexact, inspecific, or lacking in detail, the concept
+there described tends to suffer from inconsistency or arbitrariness.
+This will come into play in the following section:
+
+** Why 2020 Ithkuil’s lexicon is not satisfactory
+
+*** Exposition
+2020 Ithkuil replaces 2011 Ithkuil’s 18-cell grid with a 24-cell grid.
+In particular, Pattern is replaced with Specification—a refreshingly
+regular 4-way distinction (or so it would seem). The possible values
+for Specification are:
+
+- Basic (BSC) :: (core meaning of a Stem×Designation combination)
+- Contential (CTE) :: ideal essence or function
+- Constitutive (CSV) :: actual shape or realization
+- Objective (OBJ) :: ‘[t]arget or "object" or product associated with
+  the act/state/event’ (p. 13 of
+  /[[http://www.ithkuil.net/morpho-phonology_v_0_12.pdf][Morphology
+  0.12.3]]/)
+
+*** Criticism
+As before, Designation×Stem are oftentimes treated like bags-of-words:
+Informal Stems may not always correspond to Formal Stems. While most
+words do not have Formal Stems, all have all three Informal Stems,
+which leads to ridiculous forced-trilemmas in 2011 Ithkuil’s spirit,
+such as /finger/ – /thumb/ – /toe/ or /arabica coffee/ – /robusta
+coffee/ – /other coffee/ (roots -NK- and -ÇX-). In 2020 Ithkuil, it is
+Specification which causes the most problems.
+
+Specification is intimately related with the syntactic function of the
+formative that the root is embedded in—the verbal sense oft differs
+from the nominal. In a majority of instances, Specification follows
+the scheme (example root is Stem 1 of -JḐ- ‘predicament’):
+
+|              | Nominal                                          | Verbal                                                   |
+|--------------+--------------------------------------------------+----------------------------------------------------------|
+|        Basic | state of facing a predicament                    | to face a predicament                                    |
+|   Contential | state of not knowing how to escape a predicament | to be a state of not knowing how to escape a predicament |
+| Constitutive | state of causing a predicament                   | to cause a predicament                                   |
+|    Objective | the predicament-circumstance itself              | to be the predicament-circumstance                       |
+
+We can extract several law-like observations from this table:
+
+1. There are two feasible possibilities for a Specification’s nominal
+   and verbal readings:
+   
+   - ‘state of X-ing (nominal); to X (verbal)’
+   - ‘X (nominal); to be X (verbal)’
+   
+2. Furthermore, the latter option is characteristic of Contential and
+   Objective—Basic and Constitutive are action-like.
+
+Nevertheless, as one analyses the lexicon, one will find that these
+observations do not hold. Further remarks:
+
+1. The Objective Specification—the most loosely defined out of the
+   four—can assume any of the following roles: subject (-KŠ-), object
+   (-MŠ-), goal (-SŘ-), tool (-ẒḐ-), particular instance (-LZ-), cause
+   (-MR-), essence or manner (-ḐḐ-), related action (-MŘ-, -N-), the
+   one impacted by the presence of a being or an action (-ŠW-), and
+   other single-issue examples, like -G- or -ŠL-.
+
+2. Sometimes, the Contential sense of a root is the same as or similar
+   to the Objective; sometimes, it is the Basic sense which is paired
+   with the Objective. In the former case, the Basic Specification may
+   embrace an awkward general-like meaning, as it is in the case of
+   -LKS- /a state of there being food available for consumption/; in
+   some of the latter cases, the Contential takes on an empty meaning,
+   as in -LLY- /the state of there being singing to be heard/. In
+   other words, there are situations in the lexicon where a root would
+   benefit from one of its Specifications not being specified.
+
+3. Among misfitting lexical items, one may give -CJ- (Objective is
+   missing for no reason), Stem 3 of -JJ- (Objective is ‘same as
+   CTE’)…
+
+4. The four Specifications closely resemble Aristotle’s Four Causes;
+   despite this, many Contential and Constitutive senses miss the
+   Aristotelian ‘letter vs. intent’ distinction, and, as demonstrated
+   above in (1.), the Objective Specification, supposedly equivalent
+   to the final cause, is in fact treated as a catch-all utility
+   conjugation whose meaning is fully dependent on that of the
+   particular root.
+
+In conclusion, 2020 Ithkuil’s Specification does not introduce any
+systematicity to the system. While it is the case that most phenomena
+can be portrayed in terms of the BSC–CTE–CSV–OBJ framework, a large,
+unignorable part of the lexicon fits in it poorly, which breeds
+exceptions and irregularities reminiscent of 2011 Ithkuil’s.
+
+** Affixes
+(Note: affixes are called suffixes in 2011 Ithkuil. There is no
+difference between the two terms, up to the version of the language
+involved.)
+
+Affixes and affix degrees have little or nothing to do with the
+corresponding roots. 2020 Ithkuil’s Affixes document defines six affix
+gradient patterns (see p. 3 therein); however, they only conceal the
+fact that there is no feasible way to derive the degrees from the
+consonantal affix values. The degree assignments are predominantly
+pragmatics-driven; some of them, like -ct Sequential Participation,
+the grammatically salient affixes (like -ň COO, -n TPF, -t DCD),
+having no semantic impact, do not correspond to any root in any way,
+nor under any mapping (from degrees to their meanings). This is
+unacceptable: an ideal Ithkuilic language would ideally restrict its
+irregular syntactic affixes to a minimum, and leave the rest of the
+heavy-lifting semantic work to the underlying roots. It is not a light
+job to fill all nine degrees with sensible values; thus, some of the
+affixes present in the lexicon contain awkward ninth values, while
+others resemble bags-of-words (which is what the author means to avoid
+at all costs).
+
+In addition, it is a great drawback that only those roots which John
+Quijada has considered to render as affixes can be used as affixes,
+with all other roots only appliable via incorporation or periphrasis.
+
+* Proposal
+
+** Overview
+In the previous section, we saw that any grid-like approach to
+semantic refinement eventually leads to over-analysis and false
+dichotomies. This Request For Comments, with 2020 Ithkuil’s
+morphology, Categories, and Case values at the outset, intends to:
+- replace Specification with a Case-Accessor-like mechanism, hereafter
+  called Format (in analogy with 2020 Incorporation Format);
+- introduce a series of Cases which help cover the semantic space of
+  2020’s Contential, Constitutive, Objective;
+- revamp Degree into a specialized set of adjectival/adverbial
+  relations (resembling 2011 Ithkuil’s Format), dictated by
+  pragmatics.
+
+** Practical design
+The following is a possible implementation of the goals outlined
+above:
+
+- Remove Specification. Move Stem and Function to Slot IV (where
+  Designation, Version, Relation reside currently). With Slot VI
+  empty, introduce the new Category, Format, identical to Case, there.
+  Format is functionally identical to a Case Accessor and scopes over
+  Designation, Version, and Stem, but is scoped over by the Ca
+  complex. /(One might favour exchanging Slot VI with Slot IV in such
+  a setting, but this issue is highly dependent on the frequency of
+  these slots’ exhibiting of non-default values relative to one
+  another.)/
+
+- Extend the Vowel Sequence with a ninth column (this should be
+  a feasible job, as there exist 81 V’V forms, and only 36 are
+  currently taken).
+
+- Augment 2020 Ithkuil’s Cases from
+  
+  | THM | INS | ABS | STM | AFF | EFF | ERG | DAT | IND |
+  | POS | PRP | GEN | ATT | PDC | ITP | OGN | IDP | PAR |
+  | APL | PUR | TRA | DFR | CRS | TSP | CMM | CMP | CSD |
+  | FUN | TFM | CLA | RSL | CSM | CON | AVR | CVS | SIT |
+  | LOC | ATD | ALL | ABL | ORI | IRL | INV |  -  | NAV |
+  | CNR | ASS | PER | PRO | PCV | PCR | ELP |  -  | PLM |
+  | REF | ASI | ESS | COR | CPS | COM | UTL |  -  | RLT |
+  | ACT | DSC | TRM | SEL | CFM | DEP | PRD |  -  | VOC |
+
+  to (changes in bold):
+
+  | *CTE* |  INS  |  ABS  |  STM  | *THM* | *AFF* |  ERG  |  DAT  |  IND  |
+  | *FUN* | *MAT* | *MTH* | *MTV* | *XPL* | *PFS* | *SNT* | *EFF* | *IMP* |
+  |  POS  |  PRP  |  GEN  |  ATT  |  PDC  |  ITP  |  OGN  |  IDP  |  PAR  |
+  |  APL  |  PUR  |  TRA  |  DFR  |  CRS  |  TSP  |  CMM  |  CMP  |  CSD  |
+  | *TFM* | *CLA* | *RSL* | *CSM* | *CON* | *AVR* | *CVS* |  *-*  |  SIT  |
+  |  LOC  |  ATD  |  ALL  |  ABL  |  ORI  |  IRL  |  INV  |   -   |  NAV  |
+  |  CNR  |  ASS  |  PER  |  PRO  |  PCV  |  PCR  |  ELP  |   -   |  PLM  |
+  |  REF  |  ASI  |  ESS  |  COR  |  CPS  |  COM  |  UTL  |   -   |  RLT  |
+  |  ACT  |  DSC  |  TRM  |  SEL  |  CFM  |  DEP  |  PRD  |   -   |  VOC  |
+
+  - Case series 2–8 are shifted by one row (with series 8 taking the
+    new Vowel Sequence column).
+
+  - The Transrelative Cases are rearranged slightly. Importantly, the
+    Effectuative Case is moved to the new second row.
+
+  - A new Case is added: the /Contentive/, which refers to the state
+    or action or entity that is the semantic content of the root. As a
+    Format, Contentive is a no-operation; as a Case, one may
+    instantiate it to equate the predicate with the noun marked by
+    that Case—for example, =angry-(verbal) you-AFF this-CTE=, meaning:
+    ‘this is [an instance of] you being angry’. While 2020 Ithkuil’s
+    Thematic Case may refer either to the content of the action or to
+    the action itself (/that which one knows/ vs. /the state of one
+    knowing something/), depending on whether the formative is verbal
+    or nominal (and sometimes, the only choice available is the
+    latter—compare the table in the 2020 Ithkuil Criticism section).
+    In contrast to this, this proposal’s Thematic always refers to the
+    theme of the state/action (/that which one knows/), while
+    Contentive serves as a way to specify or restate this state/action
+    itself (/the state of one knowing something/).
+
+    TODO(@uakci): What would Format on a verbal formative mean? For
+    ‘you are a clown’ (a sentence which requires Objective in 2020
+    Ithkuil), one can already say =clown-(verbal) you-ABS=. Which of
+    =ABS-clown-(verbal) you-CTE= and =ABS-clown-(verbal) you-THM=
+    would be correct? (In other words, do sentence-level Cases refer
+    to the root’s Case roles or to the derived accessed Case’s own
+    Case roles? The latter seems more practical.)
+
+  - The Functive Case is moved to the newly-created second row, and
+    the remaining cases shifted, creating a gap to imitate the
+    following rows. The remaining five new cases are as follows:
+    
+    - Material :: the medium through, surface on, or system via which
+      the action is performed (e.g., /air/, /canvas/, /telephony/)
+    - Methodic :: the physical movement or change-in-state through
+      which the state or action is expressed (e.g., /she greeted me
+      with a handshake/)
+    - Motivational :: the motive behind the actors’ actions which has
+      led to commencement of the state (e.g., /I hit him out of
+      spite/).
+    - Explicative :: reason (rational explanation, rationale/-ization,
+      that which the speaker ascribes the action to)
+    - Professional :: party associated with the state/action as
+      profession, vocation, habit, hobby, obligation; one who is
+      (stereo)typically involved with the state/action [author’s note:
+      including this Case may have been a mistake]
+    - Essential :: the ideal/intended cause-and-purpose or profound
+      meaning of a state/action (e.g., /He gulps the soylent for
+      nutrition/)
+    - Implicative :: the minimal set of circumstances which predicates
+      the inevitable/invariable occurrence of the state/action
+
+- Affix degrees are replaced with Case accessors (either the second
+  row of Cases or all Cases).
+
+- The lexicon is redesigned so that every root has at most six
+  definitions (2 Designations × 3 Stems); it is not required that
+  every root have all of its stems defined. Stem 0 is renamed to Stem
+  4; for the general meaning, one must use Stem /n/ + 1, where /n/ is
+  the highest-number Stem defined. (TODO(anybody): discuss removing
+  Designation in favour for a large pool (5–8) of Stems).
+
+* Record of votes
+| Vote | Name   |
+|------+--------|
+|   +1 | @uakci |
+
+* Resolution
+Draft.
+
+* CC
+@porpoiseless, @melopee.
