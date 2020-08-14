@@ -1,11 +1,13 @@
-#+title: Discourse, Evidence, Illocution
-* The Structure of Discursive Categories
+# Discourse, Evidence, Illocution
+## The Structure of Discursive Categories
 This language will systematically distinguish between discourse and content categories.
 Content categories apply to the subject matter of a conversation, while Discourse categories apply to the conversants.
-These categories of Sanction, Validation, and Illocution are , as [[https://www.reddit.com/r/Ithkuil/comments/9fi82g/a_list_of_ideas_for_the_forthcoming_ithkuilic/e5ysq03/?utm_source=share&utm_medium=web2x][la_menli]] and others have suggested, poorly understood and perhaps poorly structured.
+These categories of Sanction, Validation, and Illocution are , as [la_menli](https://www.reddit.com/r/Ithkuil/comments/9fi82g/a_list_of_ideas_for_the_forthcoming_ithkuilic/e5ysq03/?utm_source=share&utm_medium=web2x) and others have suggested, poorly understood and perhaps poorly structured.
 We will review these categories in Ithkuil '11 and other conlangs.
-** Láadan
-[[https://laadanlanguage.wordpress.com/laadan-reference/evidence-morphemes/][Láadan Evidence Morphemes]]
+### Láadan
+[Láadan Evidence Morphemes](https://laadanlanguage.wordpress.com/laadan-reference/evidence-morphemes/)
+|       |                                                                                                                                                                                                                                           |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | waálh | assumed false by speaker because source is not trusted and evil intent by source is assumed, assumed false by X because X distrusts source and X suspects source of acting with evil intent (evidence morpheme)                           |
 | waá   | assumed false by X because X distrusts source (evidence morpheme)                                                                                                                                                                         |
 | wi    | an evidential meaning “The reason I claim that what I'm saying is true is because it's self-evident; everybody can see that it's true, or everybody is in agreement that it's true.”; known to X because self-evident (evidence morpheme) |
@@ -14,8 +16,10 @@ We will review these categories in Ithkuil '11 and other conlangs.
 | wo    | imagined or invented by speaker, hypothetical, imagined or invented by X, hypothetical (evidence morpheme)                                                                                                                                |
 | wáa   | assumed true by X because X trusts source (evidence morpheme)                                                                                                                                                                             |
 | we    | perceived by speaker in a dream, perceived by X in a dream (evidence morpheme)                                                                                                                                                            |
-** Lojban
-[[https://lojban.github.io/cll/13/11/][Lojban Evidentials]]
+### Lojban
+[Lojban Evidentials](https://lojban.github.io/cll/13/11/)
+|      |         |                               |                 |            |
+| ---- | ------- | ----------------------------- | --------------- | ---------- |
 | ja'o | [jalge] | I  conclude                   |                 |            |
 | ca'e |         | I define                      |                 |            |
 | ba'a | [balvi] | I expect                      | I experience    | I remember |
@@ -27,16 +31,18 @@ We will review these categories in Ithkuil '11 and other conlangs.
 | pe'i | [pensi] | I opine                       |                 |            |
 | ru'a | [sruma] | I postulate                   |                 |            |
 | ju'a | [jufra] | I state                       |                 |            |
-** Toki Pona
+### Toki Pona
 Toki Pona (described by SoyBoy#4800 on discord)
+|                |                                        |                         |
+| -------------- | -------------------------------------- | ----------------------- |
 | Assertives     | mi moku                                | I eat                   |
 | Hortatives     | mi o moku                              | I should/I ought to eat |
 | Imperatives    | o moku                                 | Eat!                    |
 | Interrogatives | sina moku ala moku, sina moku anu seme | Did you eat ?           |
-** Pramāṇa ("means of knowledge") in Indian philosophy
-[[https://en.wikipedia.org/wiki/Pramana][Pramāṇa]]
+### Pramāṇa ("means of knowledge") in Indian philosophy
+[Pramāṇa](https://en.wikipedia.org/wiki/Pramana)
 | Name       | Gloss              |
-|------------+--------------------|
+| ---------- | ------------------ |
 | pratyakṣa  | perception         |
 | anumāna    | inference          |
 | upamāna    | comparison/analogy |
@@ -44,9 +50,11 @@ Toki Pona (described by SoyBoy#4800 on discord)
 | anupalabdi | non-perception     |
 | śabda      | reliable testimony |
 
-** Ithkuil '11
-*** Sanction
+### Ithkuil '11
+#### Sanction
 Sanction: conversational role and truth-commitment.
+|               |                                                   |
+| ------------- | ------------------------------------------------- |
 | Propositional | materially factual                                |
 | Epistemic     | socially/conventionally factual                   |
 | Allegative    | personal opinion/belief                           |
@@ -57,10 +65,10 @@ Sanction: conversational role and truth-commitment.
 | Expatiative   | untestable hypothesis                             |
 | Axiomatic     | non-contestable truth                             |
 
-*** Validation
+#### Validation
 Non-Hearsay Validations
 | Name         | Means of Knowledge           | Verifiable? |
-|--------------+------------------------------+-------------|
+| ------------ | ---------------------------- | ----------- |
 | Confirmative | direct observation/knowledge | yes         |
 | Affirmative  | direct observation/knowledge | unknown     |
 | Reportive    | direct observation/knowledge | no          |
@@ -69,7 +77,7 @@ Non-Hearsay Validations
 
 Hearsay validations
 | Name          | Trustworthy source? | Verifiable |
-|---------------+---------------------+------------|
+| ------------- | ------------------- | ---------- |
 | Presumptive   | Yes                 | Yes        |
 | Presumptive 2 | Yes                 | Unknown    |
 | Purportive    | Yes                 | No         |
@@ -80,15 +88,15 @@ Hearsay validations
 | Putative      | No                  | Unknown    |
 | Improbable    | No                  | No         |
 
-*** Illocution
+#### Illocution
 | Name          | Description |
-|---------------+-------------|
+| ------------- | ----------- |
 | Assertive     | truth claim |
 | Directive     | instruction |
 | Interrogative | question    |
 | Admonitive    | warning     |
 | Hortative     | wish        |
-* Improving the situation
+## Improving the situation
 Discourse categories should answer a number of questions.
 
 ** What does the speech *do*? (Illocution)
@@ -96,11 +104,11 @@ The view I want to adopt here is that all statements are performative: every utt
 A kind of speech act that has been much analyzed by logicians is the truth claim.
 Truth claims require special consideration.
 
-** Purpose: What kind of response is expected of the addressee?
+### Purpose: What kind of response is expected of the addressee?
 Currently under consideration: a three-fold structure, roughly thought, speech, action.
 
 | Name       |         |               | Description                                     |
-|------------+---------+---------------+-------------------------------------------------|
+| ---------- | ------- | ------------- | ----------------------------------------------- |
 | Cognitive  | thought | declarative   | consider/contemplate what is being said         |
 | Discursive | speech  | interrogative | comment, answer a question, refute a claim, etc |
 | Motive     | action  | imperative    | undertake some other kind of action             |
@@ -114,10 +122,10 @@ There are many views on what truth is and how it may be ascertained.
 Each view has its own criteria of judging truth claims, and therefore cannot endorse any other claims but its own.
 However, we can do something like a fixed point operation to find a view that is indifferent to the diversity of opinions.
 
-** What is the source of the information?
+### What is the source of the information?
 
 | Name             | Gloss                                   | Description                                                            |
-|------------------+-----------------------------------------+------------------------------------------------------------------------|
+| ---------------- | --------------------------------------- | ---------------------------------------------------------------------- |
 | Credential       | "I believe/assume/posit/hypothesize..." | belief with unspecified evidence                                       |
 | Observational    | "I observe..."                          | present sensory knowledge                                              |
 | Recollective     | "I remember..."                         | past sensory knowledge                                                 |
@@ -128,5 +136,5 @@ However, we can do something like a fixed point operation to find a view that is
 | Non-Apprehensive | "I know by negative means..."           | conclusion from absence of evidence, failure/absurdity of alternatives |
 | Unfounded        | [non-claim: unreal]                     | statement not thought to be true, (used in conjunction with mood)      |
 
-** Are there any relevant presuppositions (Mood)
+### Are there any relevant presuppositions (Mood)
 

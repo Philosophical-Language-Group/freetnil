@@ -1,23 +1,23 @@
-#+title: Free TNIL Categories
-* Morphological Categories
+# Free TNIL Categories
+## Morphological Categories
 Words in Free TNIL inflect for many categories. This document enumerates those categories and their values.
 
-** Lexical items
+### Lexical items
 
-*** Derivation
+#### Derivation
 Each root has three stems and four Derivations.
 Derivation selects a specific instantiation of a stem.
 
 | Value   | Description                     |
-|---------+---------------------------------|
+| ------- | ------------------------------- |
 | Content | material, interiority, "spirit" |
 | Form    | shape, exteriority, "letter"    |
 | Process | activity, effort                |
 | Result  | intent, purpose                 |
 
-*** Examples
+#### Examples
 | Lexical Item | Content                            | Form                               | Process                     | Result                                                       |
-|--------------+------------------------------------+------------------------------------+-----------------------------+--------------------------------------------------------------|
+| ------------ | ---------------------------------- | ---------------------------------- | --------------------------- | ------------------------------------------------------------ |
 | "fire"       | (to be) on fire, something burning | (to be) a flame                    | to burn, burning            | something burnt or heated by fire                            |
 | "name"       | named item                         | name as a symbol                   | naming, to (give a) name    | identification                                               |
 | "word"       | sense of a word                    | uttered/written/spoken/signed word | meaning, to mean            | referent of a word                                           |
@@ -26,11 +26,11 @@ Derivation selects a specific instantiation of a stem.
 | "machine"    | machine                            | design of a machine                | to construct a machine      | result of using a machine                                    |
 | "disease"    | disease-causing agent, pathogen    | (to express) symptoms of a disease | to sicken, to cause disease | long term outcome, prognosis                                 |
 
-** Organizational Categories
+### Organizational Categories
 The "Organizational set" is a powerful way of expressing how a concept is instantiated in space and time.
 The organizational set is represented morphologically by a consonantal affix.
 | Category       | Values | Question                                                                 |
-|----------------+--------+--------------------------------------------------------------------------|
+| -------------- | ------ | ------------------------------------------------------------------------ |
 | Number         |      3 | How many items in the set?                                               |
 | Connectedness  |      3 | How closely are the items arranged?                                      |
 | Composition    |      2 | Are the items physically similar?                                        |
@@ -45,65 +45,65 @@ The categories of connectedness and composition cannot apply to Singular sets.
 Consequently, for there are seven valid combinations of Number, Connectedness, Composition.
 
 The 12 envelopes come in 2 series of six distinguished by whether they refer to space or time.
-7*4*12*2*2*2=1344 values.
+7\*4\*12\*2\*2\*2=1344 values.
 
 | homogeneous   | dual | plural |
-|---------------+------+--------|
-| separate      |      |        |
-| contiguous    |      |        |
-| fused         |      |        |
-|---------------+------+--------|
-| heterogeneous | dual | plural |
-|---------------+------+--------|
+| ------------- | ---- | ------ |
 | separate      |      |        |
 | contiguous    |      |        |
 | fused         |      |        |
 
-*** Number
+| heterogeneous | dual | plural |
+| ------------- | ---- | ------ |
+| separate      |      |        |
+| contiguous    |      |        |
+| fused         |      |        |
+
+#### Number
 How many instances are there?
 | Value     | Definition                                 |
-|-----------+--------------------------------------------|
+| --------- | ------------------------------------------ |
 | Non-Count | mass nouns, (units irrelevant/undisclosed) |
 | Singular  | individual                                 |
 | Dual      | pair                                       |
 | Plural    | group                                      |
-*** Connectedness
+#### Connectedness
 How physically close are the instances?
 | Value      | Definition         |
-|------------+--------------------|
+| ---------- | ------------------ |
 | Separate   | separate           |
 | Contiguous | adjacent, touching |
 | Fused      | attached, combined |
-*** Disposition
+#### Disposition
 Are there similarities of use, purpose, or condition among members of the set?
 | Name         | Definition                     |
-|--------------+--------------------------------|
+| ------------ | ------------------------------ |
 | Ambivalent   | unknown/irrelevant use/purpose |
 | Oppositional | divided/conflicted use/purpose |
 | Mutual       | shared use/purpose             |
 | Synergetic   | emergent use/purpose           |
-*** Composition
+#### Composition
 How varied are the members of the set?
 | Name          | Definition        |
-|---------------+-------------------|
+| ------------- | ----------------- |
 | Homogeneous   | uniform members   |
 | Heterogeneous | diverse members   |
 
-*** Distribution
+#### Distribution
 Distribution governs whether operations are applied to individual items from a set or the set itself.
 Another way to think about Distribution: Conjunctive Distribution /singularizes/ the set.
 | Value       | Definition               |
-|-------------+--------------------------|
+| ----------- | ------------------------ |
 | Disjunctive | each instance separately |
 | Conjunctive | all instances together   |
 
-*** Envelope
+#### Envelope
 Envelope identifies the spatiotemporal limits and dynamics of the set.
 Note: I have Envelope scope outside of distribution.
 Thus, by varying Distribution, we can refer to the beginning of the set, or the beginning of each member of the set.
 
 | Value      | space                                    | time                     |
-|------------+------------------------------------------+--------------------------|
+| ---------- | ---------------------------------------- | ------------------------ |
 | Partial    | part                                     | phase, moment, era of... |
 | Holistic   | all                                      | (whole) duration of...   |
 | Initial    | (spatial) beginning, first in a sequence | (beginning) beginning    |
@@ -111,75 +111,75 @@ Thus, by varying Distribution, we can refer to the beginning of the set, or the 
 | Augmentive | physical/directional increase            | development/becoming     |
 | Diminutive | physical/directional decrease            | decaying/ceasing-to-be   |
 
-*** Quantification
+#### Quantification
 
 | Value       | Definition                      |
-|-------------+---------------------------------|
+| ----------- | ------------------------------- |
 | Existential | "there exists...", at least one |
 | Universal   | every instance                  |
 
-*** Vagueness
+#### Vagueness
 | Value   | Definition                                                       |
-|---------+------------------------------------------------------------------|
+| ------- | ---------------------------------------------------------------- |
 | Vague   | "something like", "what passes for"; questionable set membership |
 | Precise | clear set membership                                             |
 
-*** Interrelativity
-| Value        | Definition                                                                                                    |
-|--------------+---------------------------------------------------------------------------------------------------------------|
-| Isolated     | considered in isolation, with its attributes derived from itself only, not from its relation to other objects |
+#### Interrelativity
+| Value        | Definition                                                                                                                                                                 |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Isolated     | considered in isolation, with its attributes derived from itself only, not from its relation to other objects                                                              |
 | Interrelated | considered in relation with all objects associated to it in discourse, with its attributes maybe derived not only from itself, but also from its relation to other objects |
 
-*** Tangibility
-| Value    | Definition                                                                               |
-|----------|------------------------------------------------------------------------------------------|
-| Sensible | might have a physical/concrete/observable influence on the world                         |
+#### Tangibility
+| Value           | Definition                                                                               |
+| --------------- | ---------------------------------------------------------------------------------------- |
+| Sensible        | might have a physical/concrete/observable influence on the world                         |
 | Intelligible    | may only exist as an hypothesis/thought/model, without any physical bearing on the world |
 
 The two previous categories give equivalents to values of the old Perspective category :
- - Sensible corresponds to both Monadic and Polyadic. The distinction between those two is represented by Distribution here, Interrelativity adds a new distinction altogether
- - Isolated + Intelligible corresponds to Abstract. Here we consider the entity as an abstraction, an ideal that only depends on itself ; like a Platonic ideal, which matches the definition of Abstract.
- - Interrelated + Intelligible corresponds to Nomic. Here we consider the entity as an abstraction encompassing all of its relations with instances of other entities. We therefore obtain an archetype, which all Sensible instances of the entity emulate more or less.
- 
+- Sensible corresponds to both Monadic and Polyadic. The distinction between those two is represented by Distribution here, Interrelativity adds a new distinction altogether
+- Isolated + Intelligible corresponds to Abstract. Here we consider the entity as an abstraction, an ideal that only depends on itself ; like a Platonic ideal, which matches the definition of Abstract.
+- Interrelated + Intelligible corresponds to Nomic. Here we consider the entity as an abstraction encompassing all of its relations with instances of other entities. We therefore obtain an archetype, which all Sensible instances of the entity emulate more or less.
+
 |              | Isolated           | Interrelated |
-|--------------+--------------------+--------------|
+| ------------ | ------------------ | ------------ |
 | Sensible     | monadic & polyadic | [new value]  |
 | Intelligible | abstract           | nomic        |
 
 To picture the difference between Isolated and Interrelated used with Sensible (implied), consider the following example :
-  - "like"-Isolated : no particular statement is made about what is being liked, so it simply corresponds to the verb "to like" itself.
-  - "like"-Interrelated : this time, the target is being liked, /compared/ to the other things that might be liked in the context at hand, so it instead conveys the meaning of "to prefer". 
+- "like"-Isolated : no particular statement is made about what is being liked, so it simply corresponds to the verb "to like" itself.
+- "like"-Interrelated : this time, the target is being liked, /compared/ to the other things that might be liked in the context at hand, so it instead conveys the meaning of "to prefer". 
   
 Note that in this specific case, the implication is that the other things are liked /less/, but this is only because the verb "to like" has a positive meaning ; Interrelated implies no specific type of comparison, only that some comparison is taking place. 
   
-** Telicity
+#### Telicity
 Is it goal- or process-driven?
 | Value  | Definition                             |
-|--------+----------------------------------------|
+| ------ | -------------------------------------- |
 | Telic  | goal-driven, completable action        |
 | Atelic | process-driven, non-completable action |
-** Comparison
+#### Comparison
 | Name | Definition |
-|------+------------|
+| ---- | ---------- |
 |      |            |
-** Domain
+#### Domain
 Domain selects the context in which the word is deployed.
 | Value         | Definition            |
-|---------------+-----------------------|
+| ------------- | --------------------- |
 | Material      | objective             |
 | Social        | cultural/personal     |
 | Metaphorical  | analogical/rhetorical |
 | Philosophical | gestalt               |
-*** Material
+##### Material
 The Material Domain refers to physical reality of sensible objects.
-*** Social
+##### Social
 The Social Domain draws attention to the social or cultural dimensions of the subject of discussion.
-*** Metaphorical
+##### Metaphorical
 The Metaphorical Domain considers the analogical, rhetorical, or significative use of a word, rather than its literal definition.
-*** Philosophical
+##### Philosophical
 The Philosophical Domain considers the full historical and philosophical range of meanings of a word.
 ** Discourse categories
-*** What is meant by a 'discourse category'?
+#### What is meant by a 'discourse category'?
 Conversation relates two logically distinct contexts:
 1. the content or subject matter of our our conversation, and
 2. the people involved in having the conversation; speaker and
@@ -220,8 +220,8 @@ that all three are the same person in no way diminishes our ability to
 differentiate what that person is doing in each role (making a
 sandwich, vs. speaking/listening).
 
-*** Illocution
-**** What does the speech *do*?
+#### Illocution
+##### What does the speech *do*?
 The view I want to adopt here is that all language is performative:
 every utterance *does something*.  Truth claims are only one kind of
 speech act that happens to have received preferential treatment at the
@@ -246,11 +246,9 @@ marks truth claims and latter all other speech acts.
 
 Consider these:
 
-#+begin_quote
-"I warn you"+Assertive
-
-"I warn you"+Performative
-#+end_quote
+> "I warn you"+Assertive
+> 
+> "I warn you"+Performative
 
 The first is a claim, it presumes that some other sign or speech act
 carries the warning, while the sentence merely asserts that warning
@@ -265,7 +263,7 @@ warn them..." *cannot* be the same sentence the speaker used as a
 warning—otherwise it would refer to the recipient of the command in
 the 2nd person: "I warn *you*..."
 
-*** Expectation
+#### Expectation
 Now for the category of Expectation, it's purpose is to mark what kind
 of response the speaker desires from their audience. Broadly speaking,
 the three expectations work as generalized versions of the classic
@@ -275,7 +273,7 @@ expected "channel" in which the response will take place (as thought,
 speech, and action).
 
 |                   | Cognitive   | Discursive    | Motive     |
-|-------------------+-------------+---------------+------------|
+| ----------------- | ----------- | ------------- | ---------- |
 | intended response | thought     | speech        | action     |
 | sentence purpose  | declarative | interrogative | imperative |
 
@@ -290,34 +288,30 @@ commands.
 Speech acts like warnings and commands may be, but are not
 necessarily, truth claims. Consider the following utterances:
 
-#+begin_quote
-If you touch the stove, you will get burned.
-
-I warn you not to touch the stove.
-#+end_quote
+> If you touch the stove, you will get burned.
+> 
+> I warn you not to touch the stove.
 
 The first sentence seems like a truth claim, but it can be *used* as a
 warning. The second is explicitly a warning, but it may be only the
 *mention* of a warning previously given—in other words, it may be an
 assertion that a warning was issued.
 
-|            | Assertive                                              | Performative                                                           |
-|------------+--------------------------------------------------------+------------------------------------------------------------------------|
-| Cognitive  | truth claim inviting only mental consideration         | stipulation or declaration entailing cognitive change (c.f. =let x = y=) |
-| Discursive | truth claim inviting rebuttal, comment, or explanation | request for comment                                                    |
-| Motive     | truth claim inviting listener to take action           | warning, command, specific call to action                              |
+|            | Assertive                                              | Performative                                                             |
+| ---------- | ------------------------------------------------------ | ------------------------------------------------------------------------ |
+| Cognitive  | truth claim inviting only mental consideration         | stipulation or declaration entailing cognitive change (c.f. `let x = y`) |
+| Discursive | truth claim inviting rebuttal, comment, or explanation | request for comment                                                      |
+| Motive     | truth claim inviting listener to take action           | warning, command, specific call to action                                |
 
 Consider, for example, the following sentence in each of the 6
 Illocution×Expectation combinations listed in the preceding
 table. This sentence does not name a speech act, so it demonstrates
 the power and flexibility of the new Illocution×Expectation scheme.
 
-#+begin_quote
-There is toilet paper on your shoe.
-#+end_quote
+> There is toilet paper on your shoe.
 
 |            | Assertive                                                            | Performative                                                        |
-|------------+----------------------------------------------------------------------+---------------------------------------------------------------------|
+| ---------- | -------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | Cognitive  | I claim there is toilet paper on your shoe.                          | Consider yourself informed that there is toilet paper on your shoe. |
 | Discursive | Comment on the toilet paper on your shoe.                            | Isn't that toilet paper on your shoe?                               |
 | Motive     | I claim there is toilet paper on your shoe, (do something about it). | Do something about the toilet paper on your shoe!                   |
@@ -331,7 +325,7 @@ commands and questions simply by adding the right verb, so instead of
 easily say, "You clean your shoe"+Performative+Motive to make explicit
 what you want your listener to do.
 
-*** Evidentials
+#### Evidentials
 Evidentials mark the source of information presented in an utterance.
 The categories of evidence are chosen to mark clear distinctions in categories of evidence while discouraging escalation of claims.
 Thus, remembered sensory knowledge is treated differently than present sensory knowledge, but all unverifiable first-person claims share a category.
@@ -339,7 +333,7 @@ All forms of evidence can be unreliable, and different thinkers disagree about w
 Persons can be mistaken, deceived, or motivated in their thinking, and this language must not shy away from that.
 
 | Name             | Gloss                                   | Description                                                            |
-|------------------+-----------------------------------------+------------------------------------------------------------------------|
+| ---------------- | --------------------------------------- | ---------------------------------------------------------------------- |
 | Credential       | "I believe/assume/posit/hypothesize..." | belief with unspecified evidence                                       |
 | Observational    | "I observe..."                          | present sensory knowledge                                              |
 | Recollective     | "I remember..."                         | past sensory knowledge                                                 |
@@ -350,10 +344,8 @@ Persons can be mistaken, deceived, or motivated in their thinking, and this lang
 | Non-Apprehensive | "I know by negative means..."           | conclusion from absence of evidence, failure/absurdity of alternatives |
 | Imaginary        | [non-claim: unreal]                     | statement not thought to be true, (used in conjunction with mood)      |
 
-**** Credential
-#+begin_quote
-I think...
-#+end_quote
+##### Credential
+> I think...
 
 The Credential Evidentiality marks claims supported only by private first-person evidence.
 It covers hunches, intuitions, beliefs, opinions, unsubstantiated theories, and forms of so-called direct knowledge.
@@ -368,10 +360,8 @@ However, mystical and individualist thinkers may place it above the rest as "con
 - The gods have shown me the future.
 - Nurture is as influential as nature.
 
-**** Observational
-#+begin_quote
-I observe...
-#+end_quote
+##### Observational
+> I observe...
 
 The Observational Evidentiality expresses present sensory knowledge.
 Observational is to be used when the speaker can see, hear, smell, taste, or feel the subject of conversation.
@@ -382,10 +372,8 @@ However it is used less frequently than the Recollective because of the infreque
 - She burnt the toast.
 - There are four lights.
 
-**** Recollective
-#+begin_quote
-I remember...
-#+end_quote
+##### Recollective
+> I remember...
 
 The Recollective Evidentiality indicates remembered sensory knowledge.
 This evidentiality is separate from Observational because of memory's documented unreliability.
@@ -395,11 +383,10 @@ Though generally considered weaker than the Observational, the efficacy of sense
 - He sometimes wears a hat.
 - The trail begins nearby.
 
-**** Reportive
-#+begin_quote
-My source informs me...
-I was taught...
-#+end_quote
+##### Reportive
+> My source informs me...
+> 
+> I was taught...
 
 The Reportive Evidentiality claims one or more specific individuals as knowledge sources.
 Using Reportive indicates that the speaker could attribute the claim to an identifiable person or text.
@@ -410,11 +397,9 @@ Statements in the Reportive are held to be as trustworthy as the source of the i
 - There are billions and billions of stars.
 - Nobody expects the Spanish Inquisition.
 
-**** Conventional
-#+begin_quote
-They say...
-I read somewhere...
-#+end_quote
+##### Conventional
+> They say...
+> I read somewhere...
 
 The Conventional Evidentiality marks knowledge issuing from non-specific second-hand sources.
 It is used for second-hand evidence that cannot be attributed to an individual.
@@ -425,7 +410,7 @@ This includes matters of socially determined knowledge.
 - Nevada is part of the United States.
 - Carbohydrates are bad for one's health.
 
-**** Inferential
+##### Inferential
 The Inferential Evidentiality attributes knowledge to a process of (possibly informal) reasoning.
 Utterances marked Inferential are held to be as valid as their most disputable premise or means of inference.
 Use of Inferential suggests that the speaker could make their reasoning public.
@@ -433,10 +418,8 @@ Use of Inferential suggests that the speaker could make their reasoning public.
 - They must have left in a hurry.
 - Only the guilty have reason to fear.
 
-**** Analogical
-#+begin_quote
-I analogize...
-#+end_quote
+##### Analogical
+> I analogize...
 
 The Analogical Evidentiality attributes knowledge to analogy, comparison, ostention, generalization, particularization, or induction.
 Some philosophies consider analogical reasoning problematic, while others claim all other sources of knowledge are ultimately derived from comparison.
@@ -445,10 +428,8 @@ Some philosophies consider analogical reasoning problematic, while others claim 
 - Gravity is ubiquitous.
 - Primes continue without end.
 
-**** Non-Apprehensive
-#+begin_quote
-Lack of evidence suggests... 
-#+end_quote
+##### Non-Apprehensive
+> Lack of evidence suggests... 
 
 The Non-Apprehensive indicates that an absence of evidence or failure or contradiction of alternatives is the source of the knowledge.
 Opinions are divided on the validity of knowledge acquired through this means.
@@ -460,10 +441,8 @@ This evidentiality would be used in statements like the following:
 - This house is free of tigers.
 - A round square cannot be constructed.
 
-**** Imaginary
-#+begin_quote
-I imagine...
-#+end_quote
+##### Imaginary
+> I imagine...
 
 The Imaginary Evidential marks statements the speaker does not know or believe to be true.
 It is used in combination with irrealis moods to discuss states of affairs contrary to fact.

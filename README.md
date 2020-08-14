@@ -1,10 +1,9 @@
-#+title: README
-* The Free TNIL Project
-Free TNIL is the working title of a community driven conlang inspired by [[http://ithkuil.net/][John Quijada's Ithkuil]].
+# The Free TNIL Project
+Free TNIL is the working title of a community driven conlang inspired by [John Quijada's Ithkuil](http://ithkuil.net).
 It includes a refactoring of the category system developed by Mr. Quijada.
 
-* Design Goals
-[[file:design-goals.org][See the design goals file for more information.]]
+## Design Goals
+[See the design goals file for more information.](./design-goals.md)
 
 Goals for the language (in no particular order and subject to community review):
 - expressiveness,
@@ -13,16 +12,16 @@ Goals for the language (in no particular order and subject to community review):
 - density,
 - detail.
 
-* Description of the project
+## Description of the project
 Like other Philosophical/Ithkuilic languages, Free TNIL consists of a number of abstract categories marked morphologically on specific word-types.
-[[file:docs/categories.org][This document]] outlines the categories of the language.
+[This document](./docs/categories.md) outlines the categories of the language.
 Morphology awaits the completion of the categories document.
 
 This project is an experiment in computer-aided language development, with a twist.
 In addition to the usual tables of affixes and category values, these documents will contain programs for encoding and deciphering its text.
 The end goal of this project is not only the specification of a language, but also an implementation of it.
 
-* Contributing
+## Contributing
 Contributions and bug-fixes are welcome, and anybody may contribute.
-[[file:contribute.org][See here instructions.]]
+[See here instructions.](./contribute.md)
 
