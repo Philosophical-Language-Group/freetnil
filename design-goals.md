@@ -4,7 +4,9 @@ Goals for the language (in no particular order and subject to community review):
   different meanings and accomplish many different purposes,
 - **unambiguity**: utterances should have single meaning (though the meaning may
   be vague, in which case it will bear markers for the ways in which it is vague),
-- semantic productivity,
+- **composability:** grammatical marks should available for combination and reuse,
+- **clear semantics**: the meanings of morphosemantic operations should be rigorously
+  specified,
 - **density**: expressions of the language should be concise,
 - **detail**: users should be able to convey a lot of information about the
   subject of discourse.
