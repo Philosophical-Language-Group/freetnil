@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e; shopt -s extglob
+set -e; shopt -s extglob nullglob
 
 if [ $# -ne 3 ]; then
   tee >&2 <<BAD
@@ -19,4 +19,8 @@ mkdir -p "$OUTPUT"
 
 for file in "$INPUT"/!(__*).yml; do
   "$CONVERT_ONE" "$file" "$OUTPUT/$(basename -- "$file" .yml).html" "$TEMPLATE"
+  ive_managed_to_do_something=indeed
 done
+
+test "$ive_managed_to_do_something" || \
+  echo "Warning: no files converted in dir $INPUT"

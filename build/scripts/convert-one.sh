@@ -12,5 +12,5 @@ fi
 INPUT="$1" OUTPUT="$2" TEMPLATE="$3"
 
 filename="$(basename -- "$INPUT" .yml)"
-pandoc --template "$TEMPLATE" -s -V "pagetitle:$filename" -V "title:$filename" -f markdown -o "$OUTPUT/$filename.html" "$INPUT"
+pandoc --template "$TEMPLATE" -s -V "pagetitle:$filename" -V "title:$filename" -f markdown -o "$OUTPUT" "$INPUT"
 echo "Converted $INPUT to $OUTPUT!"
