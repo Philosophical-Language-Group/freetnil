@@ -13,11 +13,10 @@ BAD
   exit 1
 fi
 
+CONVERT_ONE="$(dirname "$0")/convert-one.sh"
 INPUT="$1" OUTPUT="$2" TEMPLATE="$3"
 mkdir -p "$OUTPUT"
 
-for File in "$INPUT"/!(__*).yml; do
-  filename="$(basename -s .yml -- "$File")"
-  pandoc --template "$TEMPLATE" -s -V "pagetitle:$filename" -V "title:$filename" -f markdown -o "$OUTPUT/$filename.html" "$File"
-  echo "Converted $filename.yml to $OUTPUT/$filename.html!"
+for file in "$INPUT"/!(__*).yml; do
+  "$CONVERT_ONE" "$file" "$OUTPUT/$(basename -- "$file" .yml).html" "$TEMPLATE"
 done
