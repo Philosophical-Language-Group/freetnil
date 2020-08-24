@@ -1,0 +1,16 @@
+<section id="category-$name$">
+  <h1 class="category-title" data-abbrev="$abbrev$">$name$</h1>
+  <p class="category-brief">$brief$</p>
+  $full$
+  <dl>
+    $for(values)$
+    <dt data-abbrev="$values.abbrev$">$values.name$</dt>
+    <dd>
+      <details>
+	<summary>$values.brief$</summary>
+	$values.full$
+      </details>
+    </dd>
+    $endfor$
+  </dl>
+</section>
