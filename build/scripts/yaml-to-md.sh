@@ -9,6 +9,6 @@ for file in "$DATA"/!(__*).yml; do
     pandoc --data-dir build --template category.md -f markdown -t markdown -s "$file" -o docs/md/$(basename -- "$file" .yml).md
 done
 
-pandoc -s -o docs/md/categories.md docs/md/*.md
+pandoc -s -t gfm -o docs/md/categories.md docs/md/*.md
 
 pandoc -s -o output/categories.html docs/md/categories.md
