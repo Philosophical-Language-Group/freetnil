@@ -14,7 +14,7 @@ Goals for the language (in no particular order and subject to community review):
 
 ## Description of the project
 Like other Philosophical/Ithkuilic languages, Free TNIL consists of a number of abstract categories marked morphologically on specific word-types.
-[This document](./docs/categories.md) outlines the categories of the language.
+[This document](./docs/md/categories.md) outlines the categories of the language.
 Morphology awaits the completion of the categories document.
 
 This project is an experiment in computer-aided language development, with a twist.
