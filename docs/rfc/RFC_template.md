@@ -1,13 +1,14 @@
-# RFC: title
-*by* author name or handle
-
+---
+title: RFC: Title
+author: author name or handle
+---
 ## Problem
 
 Factual description of the problems solved by the RFC.
 
 ## Duration
 
-Time window in whcih the RFC is open for comment. If the deadline is
+Time window in which the RFC is open for comment. If the deadline is
 reached and more time is needed, make a note of the extension and the
 new deadline below. For example:
 
