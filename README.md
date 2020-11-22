@@ -9,6 +9,7 @@ Goals for the language (in no particular order and subject to community review):
 - expressiveness,
 - unambiguity,
 - semantic productivity,
+- separation of concerns,
 - density,
 - detail.
 
