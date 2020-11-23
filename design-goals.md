@@ -1,15 +1,15 @@
-# design goals
+# Design Goals
 Goals for the language (in no particular order and subject to community review):
 - **expressiveness**: the language should be flexible enough to communicate many
-  different meanings and accomplish many different purposes,
-- **unambiguity**: utterances should have single meaning (though the meaning may
+  different meanings and support many different uses,
+- **unambiguity**: utterances should have a single meaning (though the meaning may
   be vague, in which case it will bear markers for the ways in which it is vague),
 - **composability:** grammatical marks should available for combination and reuse,
 - **clear semantics**: the meanings of morphosemantic operations should be rigorously
   specified,
-- **density**: expressions of the language should be concise,
-- **detail**: users should be able to convey a lot of information about the
-  subject of discourse.
+- **separation of concerns**: clearly distinguish between
+  e.g. discourse level and logical level of language,
+- **parsimony**: expressions of the language should be concise,
 
 Additionally we will be guided by two Perl praxemes:
 - **There is more than one way to do it**: We aren't trying to make users
