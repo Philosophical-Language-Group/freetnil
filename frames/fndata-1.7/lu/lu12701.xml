@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Add_Annotation" POS="A" name="contractual.a" ID="12701" frame="Documents" frameID="560" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp=1386" name="bncp=1386" ID="19524"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="Bea" name="Bearer"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Do" name="Document"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Iss" name="Issuer"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="" name="Medium"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Core" abbrev="Obl" name="Obligation"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Rig" name="Right"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="Spec" name="Specification"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="Sta" name="Status"/>
+        </frame>
+    </header>
+    <definition>FN: of or relating to a legally binding document, i.e., a contract.</definition>
+    <lexeme POS="A" name="contractual"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Bearer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Bearer"/>
+                <annoSet ID="6565446"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Document"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Document"/>
+                <annoSet ID="6565446"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Issuer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Issuer"/>
+                <annoSet ID="6565446"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Obligation"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Obligation"/>
+                <annoSet ID="6565446"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Bearer"/>
+            <FE name="Document"/>
+            <FE name="Issuer"/>
+            <FE name="Obligation"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Bearer"/>
+                <valenceUnit GF="" PT="--" FE="Document"/>
+                <valenceUnit GF="" PT="INI" FE="Issuer"/>
+                <valenceUnit GF="Dep" PT="NP" FE="Obligation"/>
+                <annoSet ID="6565446"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-modifies-(1)">
+        <sentence corpID="111" docID="19524" sentNo="2" paragNo="22" aPos="0" ID="4108720">
+            <text>There was an expectation but not a contractual obligation that the postholder would work closely with the Beacon Nursery .</text>
+            <annotationSet cDate="06/01/2011 05:29:32 PDT Wed" status="UNANN" ID="6565445">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="ex"/>
+                    <label end="8" start="6" name="VBD"/>
+                    <label end="11" start="10" name="dt"/>
+                    <label end="23" start="13" name="nn"/>
+                    <label end="27" start="25" name="cc"/>
+                    <label end="31" start="29" name="rb"/>
+                    <label end="33" start="33" name="dt"/>
+                    <label end="45" start="35" name="jj"/>
+                    <label end="56" start="47" name="nn"/>
+                    <label end="61" start="58" name="in"/>
+                    <label end="65" start="63" name="dt"/>
+                    <label end="76" start="67" name="nn"/>
+                    <label end="82" start="78" name="md"/>
+                    <label end="87" start="84" name="VV"/>
+                    <label end="95" start="89" name="rb"/>
+                    <label end="100" start="97" name="in"/>
+                    <label end="104" start="102" name="dt"/>
+                    <label end="111" start="106" name="NP"/>
+                    <label end="119" start="113" name="nn"/>
+                    <label end="121" start="121" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="06/01/2011 05:29:32 PDT Wed" status="MANUAL" ID="6565446">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="45" start="35" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="4188" end="119" start="47" name="Obligation"/>
+                    <label cBy="MLC" feID="4192" end="45" start="35" name="Document"/>
+                    <label cBy="MLC" feID="4187" itype="INI" name="Issuer"/>
+                    <label cBy="MLC" feID="4181" itype="INI" name="Bearer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="119" start="47" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="119" start="47" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="02-other-matched-(1)"/>
+    <subCorpus name="03-other-unmatched-(1)"/>
+</lexUnit>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="New" POS="V" name="faint.v" ID="15499" frame="Fall_asleep" frameID="292" totalAnnotated="5" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp=1085" name="bncp=1085" ID="17737"/>
+            <document description="bncp=1648" name="bncp=1648" ID="20204"/>
+            <document description="bncp=2299" name="bncp=2299" ID="20266"/>
+        </corpus>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Bell Ringing" name="BellRinging" ID="23009"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Slp" name="Sleeper"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: suddenly lose consciousness (often resulting in falling down) as a result of emotional shock, pain, or some other internal cause.</definition>
+    <lexeme POS="V" name="faint"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Place"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Place"/>
+                <annoSet ID="4531137"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="5">
+            <FE name="Sleeper"/>
+            <pattern total="5">
+                <valenceUnit GF="Ext" PT="NP" FE="Sleeper"/>
+                <annoSet ID="2580492"/>
+                <annoSet ID="2580506"/>
+                <annoSet ID="2580566"/>
+                <annoSet ID="4531137"/>
+                <annoSet ID="4531144"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Time"/>
+                <annoSet ID="2580566"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Place"/>
+            <FE name="Sleeper"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Place"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Sleeper"/>
+                <annoSet ID="4531137"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="3">
+            <FE name="Sleeper"/>
+            <pattern total="3">
+                <valenceUnit GF="Ext" PT="NP" FE="Sleeper"/>
+                <annoSet ID="2580492"/>
+                <annoSet ID="2580506"/>
+                <annoSet ID="4531144"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Sleeper"/>
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Sleeper"/>
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Time"/>
+                <annoSet ID="2580566"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-modifier-(1)">
+        <sentence corpID="111" docID="20204" sentNo="2" paragNo="532" aPos="0" ID="1572940">
+            <text>She 's only fainted .</text>
+            <annotationSet cDate="07/14/2010 04:39:00 PDT Wed" status="UNANN" ID="2580491">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="PP"/>
+                    <label end="5" start="4" name="VBZ"/>
+                    <label end="10" start="7" name="rb"/>
+                    <label end="18" start="12" name="VVN"/>
+                    <label end="20" start="20" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="07/14/2010 04:39:01 PDT Wed" status="MANUAL" ID="2580492">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="18" start="12" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="2516" end="2" start="0" name="Sleeper"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="2" start="0" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="2" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="17737" sentNo="1" paragNo="4327" aPos="0" ID="1572947">
+            <text>` She turned white and almost fainted .</text>
+            <annotationSet cDate="07/14/2010 04:39:02 PDT Wed" status="UNANN" ID="2580505">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="2" name="PP"/>
+                    <label end="11" start="6" name="VVD"/>
+                    <label end="17" start="13" name="jj"/>
+                    <label end="21" start="19" name="cc"/>
+                    <label end="28" start="23" name="rb"/>
+                    <label end="36" start="30" name="VVN"/>
+                    <label end="38" start="38" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="07/14/2010 04:39:02 PDT Wed" status="MANUAL" ID="2580506">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="36" start="30" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="2516" end="4" start="2" name="Sleeper"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="4" start="2" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="4" start="2" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="02-wh_comp-(1)"/>
+    <subCorpus name="03-other-matched-(1)"/>
+    <subCorpus name="04-other-unmatched-(1)">
+        <sentence corpID="111" docID="20266" sentNo="2" paragNo="877" aPos="0" ID="1572977">
+            <text>No wonder she had made such a fool of herself by fainting in the middle of Luke 's proposal .</text>
+            <annotationSet cDate="07/14/2010 04:39:07 PDT Wed" status="UNANN" ID="2580565">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="dt"/>
+                    <label end="8" start="3" name="nn"/>
+                    <label end="12" start="10" name="PP"/>
+                    <label end="16" start="14" name="VHD"/>
+                    <label end="21" start="18" name="VVN"/>
+                    <label end="26" start="23" name="pdt"/>
+                    <label end="28" start="28" name="dt"/>
+                    <label end="33" start="30" name="nn"/>
+                    <label end="36" start="35" name="in"/>
+                    <label end="44" start="38" name="PP"/>
+                    <label end="47" start="46" name="in"/>
+                    <label end="56" start="49" name="VVG"/>
+                    <label end="59" start="58" name="in"/>
+                    <label end="63" start="61" name="dt"/>
+                    <label end="70" start="65" name="nn"/>
+                    <label end="73" start="72" name="in"/>
+                    <label end="78" start="75" name="NP"/>
+                    <label end="81" start="80" name="POS"/>
+                    <label end="90" start="83" name="nn"/>
+                    <label end="92" start="92" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="07/14/2010 04:39:07 PDT Wed" status="MANUAL" ID="2580566">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="56" start="49" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="2516" end="12" start="10" name="Sleeper"/>
+                    <label cBy="AlK" feID="2517" end="90" start="58" name="Time"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="12" start="10" name="Ext"/>
+                    <label end="90" start="58" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="12" start="10" name="NP"/>
+                    <label end="90" start="58" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23009" sentNo="2" paragNo="26" aPos="0" ID="2824264">
+            <text>`` Another women wrote from Sheffield to say that in her 60 years of ringing , `` I have never known a lady to faint in the belfry .</text>
+            <annotationSet cDate="02/05/2004 08:29:41 PST Thu" status="UNANN" ID="4528259">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="``"/>
+                    <label end="9" start="3" name="dt"/>
+                    <label end="15" start="11" name="nns"/>
+                    <label end="21" start="17" name="VVD"/>
+                    <label end="26" start="23" name="in"/>
+                    <label end="36" start="28" name="NP"/>
+                    <label end="39" start="38" name="to"/>
+                    <label end="43" start="41" name="VV"/>
+                    <label end="48" start="45" name="in"/>
+                    <label end="51" start="50" name="in"/>
+                    <label end="55" start="53" name="PP$"/>
+                    <label end="58" start="57" name="cd"/>
+                    <label end="64" start="60" name="nns"/>
+                    <label end="67" start="66" name="in"/>
+                    <label end="75" start="69" name="VVG"/>
+                    <label end="77" start="77" name=","/>
+                    <label end="80" start="79" name="``"/>
+                    <label end="82" start="82" name="PP"/>
+                    <label end="87" start="84" name="VHP"/>
+                    <label end="93" start="89" name="rb"/>
+                    <label end="99" start="95" name="VVN"/>
+                    <label end="101" start="101" name="dt"/>
+                    <label end="106" start="103" name="nn"/>
+                    <label end="109" start="108" name="to"/>
+                    <label end="115" start="111" name="VV"/>
+                    <label end="118" start="117" name="in"/>
+                    <label end="122" start="120" name="dt"/>
+                    <label end="129" start="124" name="nn"/>
+                    <label end="131" start="131" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="36" start="28" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="39" start="38" name="NT"/>
+                    <label end="51" start="50" name="NT"/>
+                    <label end="77" start="77" name="NT"/>
+                    <label end="80" start="79" name="NT"/>
+                    <label end="87" start="84" name="NT"/>
+                    <label end="109" start="108" name="NT"/>
+                    <label end="118" start="117" name="NT"/>
+                    <label end="131" start="131" name="NT"/>
+                    <label end="36" start="28" name="NT"/>
+                    <label end="48" start="45" name="NT"/>
+                    <label end="55" start="53" name="NT"/>
+                    <label end="67" start="66" name="NT"/>
+                    <label end="82" start="82" name="NT"/>
+                    <label end="101" start="101" name="NT"/>
+                    <label end="122" start="120" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/30/2010 11:57:27 PDT Wed" status="MANUAL" ID="4531137">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="115" start="111" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="2516" end="106" start="101" name="Sleeper"/>
+                    <label cBy="AlK" feID="2515" end="129" start="117" name="Place"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="106" start="101" name="Ext"/>
+                    <label end="129" start="117" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="106" start="101" name="NP"/>
+                    <label end="129" start="117" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="115" docID="23009" sentNo="2" paragNo="25" aPos="0" ID="2824261">
+            <text>One writer , signing his letter as `` Red-blooded , balanced male , '' remarked on the `` frequency of women fainting in peals , '' and suggested that they `` settle back into their traditional role of making tea at meetings .</text>
+            <annotationSet cDate="02/05/2004 08:29:39 PST Thu" status="UNANN" ID="4528256">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="cd"/>
+                    <label end="9" start="4" name="nn"/>
+                    <label end="11" start="11" name=","/>
+                    <label end="19" start="13" name="VVG"/>
+                    <label end="23" start="21" name="PP$"/>
+                    <label end="30" start="25" name="nn"/>
+                    <label end="33" start="32" name="in"/>
+                    <label end="36" start="35" name="``"/>
+                    <label end="48" start="38" name="jj"/>
+                    <label end="50" start="50" name=","/>
+                    <label end="59" start="52" name="jj"/>
+                    <label end="64" start="61" name="nn"/>
+                    <label end="66" start="66" name=","/>
+                    <label end="69" start="68" name="''"/>
+                    <label end="78" start="71" name="VVD"/>
+                    <label end="81" start="80" name="in"/>
+                    <label end="85" start="83" name="dt"/>
+                    <label end="88" start="87" name="``"/>
+                    <label end="98" start="90" name="nn"/>
+                    <label end="101" start="100" name="in"/>
+                    <label end="107" start="103" name="nns"/>
+                    <label end="116" start="109" name="VVG"/>
+                    <label end="119" start="118" name="in"/>
+                    <label end="125" start="121" name="nns"/>
+                    <label end="127" start="127" name=","/>
+                    <label end="130" start="129" name="''"/>
+                    <label end="134" start="132" name="cc"/>
+                    <label end="144" start="136" name="VVD"/>
+                    <label end="149" start="146" name="in"/>
+                    <label end="154" start="151" name="PP"/>
+                    <label end="157" start="156" name="``"/>
+                    <label end="164" start="159" name="VV"/>
+                    <label end="169" start="166" name="rb"/>
+                    <label end="174" start="171" name="in"/>
+                    <label end="180" start="176" name="PP$"/>
+                    <label end="192" start="182" name="jj"/>
+                    <label end="197" start="194" name="nn"/>
+                    <label end="200" start="199" name="in"/>
+                    <label end="207" start="202" name="VVG"/>
+                    <label end="211" start="209" name="nn"/>
+                    <label end="214" start="213" name="in"/>
+                    <label end="223" start="216" name="nns"/>
+                    <label end="225" start="225" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="11" start="11" name="NT"/>
+                    <label end="36" start="35" name="NT"/>
+                    <label end="50" start="50" name="NT"/>
+                    <label end="66" start="66" name="NT"/>
+                    <label end="69" start="68" name="NT"/>
+                    <label end="88" start="87" name="NT"/>
+                    <label end="119" start="118" name="NT"/>
+                    <label end="127" start="127" name="NT"/>
+                    <label end="130" start="129" name="NT"/>
+                    <label end="157" start="156" name="NT"/>
+                    <label end="169" start="166" name="NT"/>
+                    <label end="225" start="225" name="NT"/>
+                    <label end="23" start="21" name="NT"/>
+                    <label end="33" start="32" name="NT"/>
+                    <label end="85" start="83" name="NT"/>
+                    <label end="101" start="100" name="NT"/>
+                    <label end="134" start="132" name="NT"/>
+                    <label end="149" start="146" name="NT"/>
+                    <label end="154" start="151" name="NT"/>
+                    <label end="174" start="171" name="NT"/>
+                    <label end="180" start="176" name="NT"/>
+                    <label end="200" start="199" name="NT"/>
+                    <label end="214" start="213" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/30/2010 12:06:27 PDT Wed" status="MANUAL" ID="4531144">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="116" start="109" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="2516" end="107" start="103" name="Sleeper"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="107" start="103" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="107" start="103" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

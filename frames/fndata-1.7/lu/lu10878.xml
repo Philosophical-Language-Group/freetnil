@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Needs_SCs" POS="PREP" name="from.prep" ID="10878" frame="Evidence" frameID="25" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp" name="bncp" ID="421"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Depict" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="doma" name="Domain_of_relevance"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Prp" name="Proposition"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="Result" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Sup" name="Support"/>
+        </frame>
+    </header>
+    <definition>FN: indicating source of evidence</definition>
+    <lexeme POS="PREP" name="from"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <annoSet ID="6656013"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Proposition"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPfin" FE="Proposition"/>
+                <annoSet ID="6656013"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Proposition"/>
+                <annoSet ID="6656011"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Result"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="NP" FE="Result"/>
+                <annoSet ID="6655947"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Support"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="NP" FE="Support"/>
+                <annoSet ID="6655947"/>
+                <annoSet ID="6656013"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Support"/>
+                <annoSet ID="6656011"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="Proposition"/>
+            <FE name="Support"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <valenceUnit GF="Dep" PT="VPfin" FE="Proposition"/>
+                <valenceUnit GF="Dep" PT="NP" FE="Support"/>
+                <annoSet ID="6656013"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Proposition"/>
+            <FE name="Support"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Proposition"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Support"/>
+                <annoSet ID="6656011"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Result"/>
+            <FE name="Support"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="NP" FE="Result"/>
+                <valenceUnit GF="Dep" PT="NP" FE="Support"/>
+                <annoSet ID="6655947"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-Tprp-NP-NP-XP-(1)"/>
+    <subCorpus name="02-Tprp-NP-NP-XP-(1)"/>
+    <subCorpus name="other-matched-(1)"/>
+    <subCorpus name="other-unmatched-(1)">
+        <sentence corpID="111" docID="421" sentNo="1" paragNo="359" aPos="74298450" ID="4156726">
+            <text>Information from the judicial statistics</text>
+            <annotationSet cDate="04/01/2014 05:18:58 PDT Tue" status="UNANN" ID="6655946">
+                <layer rank="1" name="PENN">
+                    <label end="10" start="0" name="nn"/>
+                    <label end="15" start="12" name="in"/>
+                    <label end="19" start="17" name="dt"/>
+                    <label end="28" start="21" name="jj"/>
+                    <label end="39" start="30" name="nns"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/01/2014 05:18:58 PDT Tue" status="MANUAL" ID="6655947">
+                <layer rank="1" name="Target">
+                    <label cBy="0" end="15" start="12" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="WMcQ" feID="107" end="39" start="17" name="Support"/>
+                    <label cBy="WMcQ" feID="1028" end="10" start="0" name="Result"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="39" start="17" name="Dep"/>
+                    <label end="10" start="0" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="39" start="17" name="NP"/>
+                    <label end="10" start="0" name="NP"/>
+                    <label end="15" start="12" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Prep"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="421" sentNo="1" paragNo="5" aPos="48731372" ID="4156758">
+            <text>You could have no clue of their passion for snooker -- bad snooker , at that -- from the information they allow you on their book jackets .</text>
+            <annotationSet cDate="04/01/2014 05:19:06 PDT Tue" status="UNANN" ID="6656010">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="PP"/>
+                    <label end="8" start="4" name="md"/>
+                    <label end="13" start="10" name="VH"/>
+                    <label end="16" start="15" name="dt"/>
+                    <label end="21" start="18" name="nn"/>
+                    <label end="24" start="23" name="in"/>
+                    <label end="30" start="26" name="PP$"/>
+                    <label end="38" start="32" name="nn"/>
+                    <label end="42" start="40" name="in"/>
+                    <label end="50" start="44" name="nn"/>
+                    <label end="53" start="52" name=":"/>
+                    <label end="57" start="55" name="jj"/>
+                    <label end="65" start="59" name="nn"/>
+                    <label end="67" start="67" name=","/>
+                    <label end="70" start="69" name="in"/>
+                    <label end="75" start="72" name="wdt"/>
+                    <label end="78" start="77" name=":"/>
+                    <label end="83" start="80" name="in"/>
+                    <label end="87" start="85" name="dt"/>
+                    <label end="99" start="89" name="nn"/>
+                    <label end="104" start="101" name="PP"/>
+                    <label end="110" start="106" name="VVP"/>
+                    <label end="114" start="112" name="PP"/>
+                    <label end="117" start="116" name="in"/>
+                    <label end="123" start="119" name="PP$"/>
+                    <label end="128" start="125" name="nn"/>
+                    <label end="136" start="130" name="nns"/>
+                    <label end="138" start="138" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/01/2014 05:19:06 PDT Tue" status="MANUAL" ID="6656011">
+                <layer rank="1" name="Target">
+                    <label cBy="0" end="83" start="80" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="WMcQ" feID="107" end="136" start="85" name="Support"/>
+                    <label cBy="WMcQ" feID="108" end="75" start="26" name="Proposition"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="136" start="85" name="Obj"/>
+                    <label end="75" start="26" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="136" start="85" name="NP"/>
+                    <label end="75" start="26" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Prep"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="421" sentNo="13" paragNo="539" aPos="39176717" ID="4156759">
+            <text>As far as I understand from the gossip there 's nothing 'll come out of it by goin' to the polis ; it 's got to come from Parliament .</text>
+            <annotationSet cDate="04/01/2014 05:19:06 PDT Tue" status="UNANN" ID="6656012">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="rb"/>
+                    <label end="5" start="3" name="rb"/>
+                    <label end="8" start="7" name="in"/>
+                    <label end="10" start="10" name="PP"/>
+                    <label end="21" start="12" name="VVP"/>
+                    <label end="26" start="23" name="in"/>
+                    <label end="30" start="28" name="dt"/>
+                    <label end="37" start="32" name="nn"/>
+                    <label end="43" start="39" name="rb"/>
+                    <label end="46" start="45" name="POS"/>
+                    <label end="54" start="48" name="nn"/>
+                    <label end="58" start="56" name="md"/>
+                    <label end="63" start="60" name="VV"/>
+                    <label end="67" start="65" name="rp"/>
+                    <label end="70" start="69" name="in"/>
+                    <label end="73" start="72" name="PP"/>
+                    <label end="76" start="75" name="in"/>
+                    <label end="82" start="78" name="nn"/>
+                    <label end="85" start="84" name="to"/>
+                    <label end="89" start="87" name="dt"/>
+                    <label end="95" start="91" name="nn"/>
+                    <label end="97" start="97" name=":"/>
+                    <label end="100" start="99" name="PP"/>
+                    <label end="103" start="102" name="VBZ"/>
+                    <label end="107" start="105" name="VVN"/>
+                    <label end="110" start="109" name="to"/>
+                    <label end="115" start="112" name="VV"/>
+                    <label end="120" start="117" name="in"/>
+                    <label end="133" start="133" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/01/2014 05:19:06 PDT Tue" status="MANUAL" ID="6656013">
+                <layer rank="1" name="Target">
+                    <label cBy="0" end="26" start="23" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="WMcQ" feID="107" end="37" start="28" name="Support"/>
+                    <label cBy="WMcQ" feID="108" end="21" start="12" name="Proposition"/>
+                    <label cBy="WMcQ" feID="7423" end="10" start="10" name="Cognizer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="37" start="28" name="Dep"/>
+                    <label end="21" start="12" name="Dep"/>
+                    <label end="10" start="10" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="37" start="28" name="NP"/>
+                    <label end="21" start="12" name="VPfin"/>
+                    <label end="10" start="10" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Prep"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="manually-added"/>
+    <subCorpus name="01-Tprp-NP-NP-XP-(2)"/>
+    <subCorpus name="02-Tprp-NP-NP-XP-(2)"/>
+    <subCorpus name="other-matched-(2)"/>
+    <subCorpus name="other-unmatched-(2)"/>
+</lexUnit>

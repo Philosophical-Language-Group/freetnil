@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Insufficient_Attestations" POS="V" name="claim.v" ID="8251" frame="Predicting" frameID="425" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="Acc" name="Accuracy"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Eventuality" name="Eventuality"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Evidence" name="Evidence"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="med" name="Medium"/>
+            <FE fgColor="000000" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Speaker" name="Speaker"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="ToE" name="Time_of_eventuality"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="top" name="Topic"/>
+        </frame>
+    </header>
+    <definition>COD: predict the result of (an election or a vote).</definition>
+    <lexeme POS="V" name="claim"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Eventuality"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Eventuality"/>
+                <annoSet ID="6548606"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Speaker"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Speaker"/>
+                <annoSet ID="6548606"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Eventuality"/>
+            <FE name="Speaker"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Eventuality"/>
+                <valenceUnit GF="" PT="CNI" FE="Speaker"/>
+                <annoSet ID="6548606"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence sentNo="1" aPos="0" ID="4101328">
+            <text>During his stay in Iraq , he will visit several places , including hospitals and schools , in Baghdad and southern Iraq , where the U.S. and Britain imposed a no-fly zone , with the claimed aim of protecting Shi 'ite Muslims from possible attacks by Iraqi government .</text>
+            <annotationSet cDate="08/02/2007 08:54:56 PDT Thu" status="UNANN" ID="6544516">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="in"/>
+                    <label end="9" start="7" name="PP$"/>
+                    <label end="14" start="11" name="nn"/>
+                    <label end="17" start="16" name="in"/>
+                    <label end="22" start="19" name="NP"/>
+                    <label end="24" start="24" name=","/>
+                    <label end="27" start="26" name="PP"/>
+                    <label end="32" start="29" name="md"/>
+                    <label end="38" start="34" name="VV"/>
+                    <label end="46" start="40" name="jj"/>
+                    <label end="53" start="48" name="nns"/>
+                    <label end="55" start="55" name=","/>
+                    <label end="65" start="57" name="VVG"/>
+                    <label end="75" start="67" name="nns"/>
+                    <label end="79" start="77" name="cc"/>
+                    <label end="87" start="81" name="nns"/>
+                    <label end="89" start="89" name=","/>
+                    <label end="92" start="91" name="in"/>
+                    <label end="100" start="94" name="NP"/>
+                    <label end="104" start="102" name="cc"/>
+                    <label end="113" start="106" name="jj"/>
+                    <label end="118" start="115" name="NP"/>
+                    <label end="120" start="120" name=","/>
+                    <label end="126" start="122" name="wrb"/>
+                    <label end="130" start="128" name="dt"/>
+                    <label end="135" start="132" name="NP"/>
+                    <label end="139" start="137" name="cc"/>
+                    <label end="147" start="141" name="NP"/>
+                    <label end="155" start="149" name="VVD"/>
+                    <label end="157" start="157" name="dt"/>
+                    <label end="164" start="159" name="nn"/>
+                    <label end="169" start="166" name="nn"/>
+                    <label end="171" start="171" name=","/>
+                    <label end="176" start="173" name="in"/>
+                    <label end="180" start="178" name="dt"/>
+                    <label end="188" start="182" name="VVN"/>
+                    <label end="192" start="190" name="nn"/>
+                    <label end="195" start="194" name="in"/>
+                    <label end="206" start="197" name="VVG"/>
+                    <label end="210" start="208" name="NP"/>
+                    <label end="215" start="212" name="jj"/>
+                    <label end="223" start="217" name="NPS"/>
+                    <label end="228" start="225" name="in"/>
+                    <label end="237" start="230" name="jj"/>
+                    <label end="245" start="239" name="nns"/>
+                    <label end="248" start="247" name="in"/>
+                    <label end="254" start="250" name="jj"/>
+                    <label end="265" start="256" name="nn"/>
+                    <label end="267" start="267" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="22" start="19" name="location"/>
+                    <label end="100" start="94" name="location"/>
+                    <label end="118" start="115" name="location"/>
+                    <label end="135" start="132" name="location"/>
+                    <label end="147" start="141" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="9" start="7" name="NT"/>
+                    <label end="22" start="19" name="NT"/>
+                    <label end="24" start="24" name="NT"/>
+                    <label end="27" start="26" name="NT"/>
+                    <label end="32" start="29" name="NT"/>
+                    <label end="55" start="55" name="NT"/>
+                    <label end="79" start="77" name="NT"/>
+                    <label end="89" start="89" name="NT"/>
+                    <label end="100" start="94" name="NT"/>
+                    <label end="104" start="102" name="NT"/>
+                    <label end="118" start="115" name="NT"/>
+                    <label end="120" start="120" name="NT"/>
+                    <label end="126" start="122" name="NT"/>
+                    <label end="130" start="128" name="NT"/>
+                    <label end="135" start="132" name="NT"/>
+                    <label end="139" start="137" name="NT"/>
+                    <label end="147" start="141" name="NT"/>
+                    <label end="157" start="157" name="NT"/>
+                    <label end="171" start="171" name="NT"/>
+                    <label end="176" start="173" name="NT"/>
+                    <label end="180" start="178" name="NT"/>
+                    <label end="195" start="194" name="NT"/>
+                    <label end="210" start="208" name="NT"/>
+                    <label end="228" start="225" name="NT"/>
+                    <label end="248" start="247" name="NT"/>
+                    <label end="267" start="267" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/22/2007 03:32:22 PDT Mon" status="MANUAL" ID="6548606">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="188" start="182" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="3915" end="265" start="190" name="Eventuality"/>
+                    <label cBy="JKs" feID="3914" itype="CNI" name="Speaker"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="265" start="190" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="265" start="190" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

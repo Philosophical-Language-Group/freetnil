@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="New" POS="N" name="accomplishment.n" ID="12307" frame="Accomplishment" frameID="1519" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Election Victory" name="ElectionVictory" ID="23010"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Jerusalem" name="HistoryOfJerusalem" ID="23647"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agt" name="Agent"/>
+            <FE fgColor="000000" bgColor="00BFFF" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="dom" name="Domain"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Peripheral" abbrev="" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="goa" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="Ins" name="Instrument"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="" name="Outcome"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="" name="Particular_iteration"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: something that has been achieved successfully.</definition>
+    <lexeme POS="N" name="accomplishment"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Agent"/>
+            <pattern total="2">
+                <valenceUnit GF="Gen" PT="Poss" FE="Agent"/>
+                <annoSet ID="4530374"/>
+                <annoSet ID="6538995"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Domain"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Domain"/>
+                <annoSet ID="4530374"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Goal"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Goal"/>
+                <annoSet ID="4530374"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Agent"/>
+                <annoSet ID="6538995"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Domain"/>
+            <FE name="Goal"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Agent"/>
+                <valenceUnit GF="Dep" PT="N" FE="Domain"/>
+                <valenceUnit GF="" PT="DEN" FE="Goal"/>
+                <annoSet ID="4530374"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-Wtechnical,great-(1)"/>
+    <subCorpus name="02-Whis,hers-(1)"/>
+    <subCorpus name="03-T-PP-(1)"/>
+    <subCorpus name="04-T-(1)"/>
+    <subCorpus name="other-matched-(1)"/>
+    <subCorpus name="other-unmatched-(1)"/>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23010" sentNo="3" paragNo="3" aPos="0" ID="2824278">
+            <text>In response to this , the Socialist prime minister has simply cited his free-market accomplishments .</text>
+            <annotationSet cDate="02/05/2004 08:29:45 PST Thu" status="UNANN" ID="4528273">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="10" start="3" name="nn"/>
+                    <label end="13" start="12" name="to"/>
+                    <label end="18" start="15" name="dt"/>
+                    <label end="20" start="20" name=","/>
+                    <label end="24" start="22" name="dt"/>
+                    <label end="34" start="26" name="jj"/>
+                    <label end="40" start="36" name="jj"/>
+                    <label end="49" start="42" name="nn"/>
+                    <label end="53" start="51" name="VHZ"/>
+                    <label end="60" start="55" name="rb"/>
+                    <label end="66" start="62" name="VVN"/>
+                    <label end="70" start="68" name="PP$"/>
+                    <label end="82" start="72" name="jj"/>
+                    <label end="98" start="84" name="nns"/>
+                    <label end="100" start="100" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="49" start="26" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="13" start="12" name="NT"/>
+                    <label end="20" start="20" name="NT"/>
+                    <label end="53" start="51" name="NT"/>
+                    <label end="60" start="55" name="NT"/>
+                    <label end="100" start="100" name="NT"/>
+                    <label end="1" start="0" name="NT"/>
+                    <label end="18" start="15" name="NT"/>
+                    <label end="24" start="22" name="NT"/>
+                    <label end="70" start="68" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/14/2005 11:58:43 PDT Thu" status="MANUAL" ID="4530374">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="98" start="84" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="8283" end="70" start="68" name="Agent"/>
+                    <label cBy="KmG" feID="8305" end="98" start="84" name="Goal"/>
+                    <label cBy="RLG" feID="10991" end="82" start="72" name="Domain"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="70" start="68" name="Gen"/>
+                    <label end="82" start="72" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="70" start="68" name="Poss"/>
+                    <label end="82" start="72" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23647" sentNo="1" paragNo="13" aPos="0" ID="4100358">
+            <text>For all his accomplishments , Herod was nevertheless hated by his subjects ; he taxed , he tortured , and he ordered the massacre of male Jewish infants in an attempt to do away with the heralded Messiah .</text>
+            <annotationSet cDate="09/29/2006 11:00:45 PDT Fri" status="UNANN" ID="6538438">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="in"/>
+                    <label end="6" start="4" name="pdt"/>
+                    <label end="10" start="8" name="PP$"/>
+                    <label end="26" start="12" name="nns"/>
+                    <label end="28" start="28" name=","/>
+                    <label end="34" start="30" name="NP"/>
+                    <label end="38" start="36" name="VBD"/>
+                    <label end="51" start="40" name="rb"/>
+                    <label end="57" start="53" name="VVN"/>
+                    <label end="60" start="59" name="in"/>
+                    <label end="64" start="62" name="PP$"/>
+                    <label end="73" start="66" name="nns"/>
+                    <label end="75" start="75" name=":"/>
+                    <label end="78" start="77" name="PP"/>
+                    <label end="84" start="80" name="VVD"/>
+                    <label end="86" start="86" name=","/>
+                    <label end="89" start="88" name="PP"/>
+                    <label end="98" start="91" name="VVN"/>
+                    <label end="100" start="100" name=","/>
+                    <label end="104" start="102" name="cc"/>
+                    <label end="107" start="106" name="PP"/>
+                    <label end="115" start="109" name="VVD"/>
+                    <label end="119" start="117" name="dt"/>
+                    <label end="128" start="121" name="nn"/>
+                    <label end="131" start="130" name="in"/>
+                    <label end="136" start="133" name="jj"/>
+                    <label end="143" start="138" name="jj"/>
+                    <label end="151" start="145" name="nns"/>
+                    <label end="154" start="153" name="in"/>
+                    <label end="157" start="156" name="dt"/>
+                    <label end="165" start="159" name="nn"/>
+                    <label end="168" start="167" name="to"/>
+                    <label end="171" start="170" name="VV"/>
+                    <label end="176" start="173" name="rb"/>
+                    <label end="181" start="178" name="in"/>
+                    <label end="185" start="183" name="dt"/>
+                    <label end="194" start="187" name="VVN"/>
+                    <label end="202" start="196" name="NP"/>
+                    <label end="204" start="204" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="34" start="30" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="10" start="8" name="NT"/>
+                    <label end="28" start="28" name="NT"/>
+                    <label end="34" start="30" name="NT"/>
+                    <label end="38" start="36" name="NT"/>
+                    <label end="60" start="59" name="NT"/>
+                    <label end="64" start="62" name="NT"/>
+                    <label end="75" start="75" name="NT"/>
+                    <label end="78" start="77" name="NT"/>
+                    <label end="86" start="86" name="NT"/>
+                    <label end="89" start="88" name="NT"/>
+                    <label end="100" start="100" name="NT"/>
+                    <label end="104" start="102" name="NT"/>
+                    <label end="107" start="106" name="NT"/>
+                    <label end="119" start="117" name="NT"/>
+                    <label end="131" start="130" name="NT"/>
+                    <label end="154" start="153" name="NT"/>
+                    <label end="157" start="156" name="NT"/>
+                    <label end="168" start="167" name="NT"/>
+                    <label end="181" start="178" name="NT"/>
+                    <label end="185" start="183" name="NT"/>
+                    <label end="204" start="204" name="NT"/>
+                    <label end="51" start="40" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/20/2006 05:45:51 PDT Fri" status="MANUAL" ID="6538995">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="26" start="12" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="8283" end="10" start="8" name="Agent"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="10" start="8" name="Gen"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="10" start="8" name="Poss"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

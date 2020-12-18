@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="ubiquitous.a" ID="14473" frame="Locative_relation" frameID="199" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Dublin" name="IntroOfDublin" ID="23652"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="" name="Accessibility"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="" name="Deixis"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="Dir" name="Direction"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Extra-Thematic" abbrev="" name="Directness"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dist" name="Distance"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Fig" name="Figure"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core-Unexpressed" abbrev="" name="Figures"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Grnd" name="Ground"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Core" abbrev="" name="Profiled_region"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Region_quantification"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Temporal_profile"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: all over, everywhere.</definition>
+    <lexeme POS="A" name="ubiquitous"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Figure"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Figure"/>
+                <annoSet ID="6551641"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Ground"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Ground"/>
+                <annoSet ID="6551641"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Figure"/>
+            <FE name="Ground"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Figure"/>
+                <valenceUnit GF="" PT="DNI" FE="Ground"/>
+                <annoSet ID="6551641"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23652" sentNo="4" paragNo="14" aPos="0" ID="4100624">
+            <text>Coffee has replaced the ubiquitous tea -- Dublin is now almost as much a coffee city as Vienna or Seattle .</text>
+            <annotationSet cDate="11/14/2006 04:25:27 PST Tue" status="UNANN" ID="6539623">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="NP"/>
+                    <label end="9" start="7" name="VHZ"/>
+                    <label end="18" start="11" name="VVN"/>
+                    <label end="22" start="20" name="dt"/>
+                    <label end="33" start="24" name="jj"/>
+                    <label end="37" start="35" name="nn"/>
+                    <label end="40" start="39" name=":"/>
+                    <label end="47" start="42" name="NP"/>
+                    <label end="50" start="49" name="VBZ"/>
+                    <label end="54" start="52" name="rb"/>
+                    <label end="61" start="56" name="rb"/>
+                    <label end="64" start="63" name="in"/>
+                    <label end="69" start="66" name="rb"/>
+                    <label end="71" start="71" name="dt"/>
+                    <label end="78" start="73" name="nn"/>
+                    <label end="83" start="80" name="nn"/>
+                    <label end="86" start="85" name="in"/>
+                    <label end="93" start="88" name="NP"/>
+                    <label end="96" start="95" name="cc"/>
+                    <label end="104" start="98" name="NP"/>
+                    <label end="106" start="106" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="47" start="42" name="location"/>
+                    <label end="93" start="88" name="location"/>
+                    <label end="104" start="98" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="9" start="7" name="NT"/>
+                    <label end="22" start="20" name="NT"/>
+                    <label end="40" start="39" name="NT"/>
+                    <label end="47" start="42" name="NT"/>
+                    <label end="50" start="49" name="NT"/>
+                    <label end="64" start="63" name="NT"/>
+                    <label end="71" start="71" name="NT"/>
+                    <label end="86" start="85" name="NT"/>
+                    <label end="93" start="88" name="NT"/>
+                    <label end="96" start="95" name="NT"/>
+                    <label end="104" start="98" name="NT"/>
+                    <label end="106" start="106" name="NT"/>
+                    <label end="69" start="66" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/20/2008 03:56:25 PST Wed" status="MANUAL" ID="6551641">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="33" start="24" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="1622" end="37" start="35" name="Figure"/>
+                    <label cBy="JKs" feID="1621" itype="DNI" name="Ground"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="37" start="35" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="37" start="35" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

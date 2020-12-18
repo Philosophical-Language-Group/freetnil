@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="settlement [act].n" ID="13579" frame="Colonization" frameID="1794" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="col" name="Colonists"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="hom" name="Homeland"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="new" name="New_area"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: the action or process of settling.</definition>
+    <lexeme POS="N" name="settlement"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Colonists"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Colonists"/>
+                <annoSet ID="6542488"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="New_area"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="New_area"/>
+                <annoSet ID="6542488"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Colonists"/>
+            <FE name="New_area"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Colonists"/>
+                <valenceUnit GF="Dep" PT="AVP" FE="New_area"/>
+                <annoSet ID="6542488"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23692" sentNo="2" paragNo="14" aPos="0" ID="4101206">
+            <text>Archaeology shows that , during this time , societies lived mainly in coastal trading towns with little settlement inland .</text>
+            <annotationSet cDate="03/12/2007 02:51:06 PDT Mon" status="UNANN" ID="6541999">
+                <layer rank="1" name="PENN">
+                    <label end="10" start="0" name="nn"/>
+                    <label end="16" start="12" name="nns"/>
+                    <label end="21" start="18" name="wdt"/>
+                    <label end="23" start="23" name=","/>
+                    <label end="30" start="25" name="in"/>
+                    <label end="35" start="32" name="dt"/>
+                    <label end="40" start="37" name="nn"/>
+                    <label end="42" start="42" name=","/>
+                    <label end="52" start="44" name="nns"/>
+                    <label end="58" start="54" name="VVD"/>
+                    <label end="65" start="60" name="rb"/>
+                    <label end="68" start="67" name="in"/>
+                    <label end="76" start="70" name="jj"/>
+                    <label end="84" start="78" name="nn"/>
+                    <label end="90" start="86" name="nns"/>
+                    <label end="95" start="92" name="in"/>
+                    <label end="102" start="97" name="jj"/>
+                    <label end="113" start="104" name="nn"/>
+                    <label end="120" start="115" name="rb"/>
+                    <label end="122" start="122" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="21" start="18" name="NT"/>
+                    <label end="23" start="23" name="NT"/>
+                    <label end="30" start="25" name="NT"/>
+                    <label end="35" start="32" name="NT"/>
+                    <label end="42" start="42" name="NT"/>
+                    <label end="65" start="60" name="NT"/>
+                    <label end="95" start="92" name="NT"/>
+                    <label end="122" start="122" name="NT"/>
+                    <label end="10" start="0" name="Nonrelational"/>
+                    <label end="102" start="97" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/15/2007 11:53:23 PDT Thu" status="MANUAL" ID="6542488">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="113" start="104" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="10639" end="120" start="115" name="New_area"/>
+                    <label cBy="DYo" feID="10637" itype="DNI" name="Colonists"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="120" start="115" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="120" start="115" name="AVP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

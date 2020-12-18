@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="ADV" name="financially.adv" ID="7818" frame="Domain" frameID="430" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Las Vegas" name="HistoryOfLasVegas" ID="23691"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Domain" name="Domain"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Predicate" name="Predicate"/>
+        </frame>
+    </header>
+    <definition>FN: of or relating to finance</definition>
+    <lexeme POS="ADV" name="financially"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Domain"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Domain"/>
+                <annoSet ID="6551726"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Predicate"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="Sing" FE="Predicate"/>
+                <annoSet ID="6551726"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Domain"/>
+            <FE name="Predicate"/>
+            <FE name="Predicate"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Domain"/>
+                <valenceUnit GF="Dep" PT="Sing" FE="Predicate"/>
+                <valenceUnit GF="Dep" PT="Sing" FE="Predicate"/>
+                <annoSet ID="6551726"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23691" sentNo="2" paragNo="22" aPos="0" ID="4101093">
+            <text>Providing an influx of $165 million to the southwestern economy , Hoover Dam played a major role in preventing Las Vegas from drying up , both financially and literally .</text>
+            <annotationSet cDate="03/12/2007 02:47:01 PDT Mon" status="UNANN" ID="6541886">
+                <layer rank="1" name="PENN">
+                    <label end="8" start="0" name="VVG"/>
+                    <label end="11" start="10" name="dt"/>
+                    <label end="18" start="13" name="nn"/>
+                    <label end="21" start="20" name="in"/>
+                    <label end="26" start="23" name="nn"/>
+                    <label end="34" start="28" name="cd"/>
+                    <label end="37" start="36" name="to"/>
+                    <label end="41" start="39" name="dt"/>
+                    <label end="54" start="43" name="jj"/>
+                    <label end="62" start="56" name="nn"/>
+                    <label end="64" start="64" name=","/>
+                    <label end="71" start="66" name="NP"/>
+                    <label end="75" start="73" name="NP"/>
+                    <label end="82" start="77" name="VVD"/>
+                    <label end="84" start="84" name="dt"/>
+                    <label end="90" start="86" name="jj"/>
+                    <label end="95" start="92" name="nn"/>
+                    <label end="98" start="97" name="in"/>
+                    <label end="109" start="100" name="VVG"/>
+                    <label end="113" start="111" name="NP"/>
+                    <label end="119" start="115" name="NP"/>
+                    <label end="124" start="121" name="in"/>
+                    <label end="131" start="126" name="VVG"/>
+                    <label end="134" start="133" name="rp"/>
+                    <label end="136" start="136" name=","/>
+                    <label end="141" start="138" name="cc"/>
+                    <label end="153" start="143" name="rb"/>
+                    <label end="157" start="155" name="cc"/>
+                    <label end="167" start="159" name="rb"/>
+                    <label end="169" start="169" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="34" start="23" name="money"/>
+                    <label end="119" start="111" name="location"/>
+                    <label end="75" start="66" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="11" start="10" name="NT"/>
+                    <label end="21" start="20" name="NT"/>
+                    <label end="34" start="28" name="NT"/>
+                    <label end="37" start="36" name="NT"/>
+                    <label end="41" start="39" name="NT"/>
+                    <label end="64" start="64" name="NT"/>
+                    <label end="71" start="66" name="NT"/>
+                    <label end="75" start="73" name="Nonrelational"/>
+                    <label end="84" start="84" name="NT"/>
+                    <label end="98" start="97" name="NT"/>
+                    <label end="113" start="111" name="NT"/>
+                    <label end="119" start="115" name="NT"/>
+                    <label end="124" start="121" name="NT"/>
+                    <label end="134" start="133" name="NT"/>
+                    <label end="136" start="136" name="NT"/>
+                    <label end="141" start="138" name="NT"/>
+                    <label end="157" start="155" name="NT"/>
+                    <label end="167" start="159" name="NT"/>
+                    <label end="169" start="169" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/03/2008 04:09:11 PST Mon" status="MANUAL" ID="6551726">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="153" start="143" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="3962" end="153" start="143" name="Domain"/>
+                    <label cBy="KmG" feID="3961" end="119" start="111" name="Predicate"/>
+                    <label cBy="KmG" feID="3961" end="134" start="126" name="Predicate"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="119" start="111" name="Dep"/>
+                    <label end="134" start="126" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="119" start="111" name="Sing"/>
+                    <label end="134" start="126" name="Sing"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

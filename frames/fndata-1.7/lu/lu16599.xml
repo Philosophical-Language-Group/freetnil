@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="board [computer].n" ID="16599" frame="Part_piece" frameID="142" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="MASC" name="MASC" ID="150">
+            <document description="Examples of the lemma board from the MASC project for FN annotation" name="board" ID="24524"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Piece" name="Piece"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="" name="Piece_prop"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Substance" name="Substance"/>
+        </frame>
+    </header>
+    <definition>FN: A flat, manufactured silicon chip made for use in computers.</definition>
+    <lexeme POS="N" name="board"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Piece"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Piece"/>
+                <annoSet ID="6584597"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Substance"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Substance"/>
+                <annoSet ID="6584597"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Piece"/>
+            <FE name="Substance"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Piece"/>
+                <valenceUnit GF="" PT="INI" FE="Substance"/>
+                <annoSet ID="6584597"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="150" docID="24524" sentNo="3" paragNo="7" aPos="0" ID="4116316">
+            <text>The paper reports that the congressional investigation is trying to determine if the board was missing because the Chinese `` took '' it .</text>
+            <annotationSet cDate="08/24/2011 12:53:15 PDT Wed" status="UNANN" ID="6580216">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="8" start="4" name="nn"/>
+                    <label end="16" start="10" name="VVZ"/>
+                    <label end="21" start="18" name="IN/that"/>
+                    <label end="25" start="23" name="dt"/>
+                    <label end="39" start="27" name="jj"/>
+                    <label end="53" start="41" name="nn"/>
+                    <label end="56" start="55" name="VBZ"/>
+                    <label end="63" start="58" name="VVG"/>
+                    <label end="66" start="65" name="to"/>
+                    <label end="76" start="68" name="VV"/>
+                    <label end="79" start="78" name="in"/>
+                    <label end="83" start="81" name="dt"/>
+                    <label end="89" start="85" name="nn"/>
+                    <label end="93" start="91" name="VBD"/>
+                    <label end="101" start="95" name="VVG"/>
+                    <label end="109" start="103" name="in"/>
+                    <label end="113" start="111" name="dt"/>
+                    <label end="121" start="115" name="NP"/>
+                    <label end="124" start="123" name="``"/>
+                    <label end="129" start="126" name="VVD"/>
+                    <label end="132" start="131" name="''"/>
+                    <label end="135" start="134" name="PP"/>
+                    <label end="137" start="137" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="25" start="23" name="NT"/>
+                    <label end="56" start="55" name="NT"/>
+                    <label end="66" start="65" name="NT"/>
+                    <label end="79" start="78" name="NT"/>
+                    <label end="83" start="81" name="NT"/>
+                    <label end="93" start="91" name="NT"/>
+                    <label end="109" start="103" name="NT"/>
+                    <label end="113" start="111" name="NT"/>
+                    <label end="121" start="115" name="NT"/>
+                    <label end="124" start="123" name="NT"/>
+                    <label end="132" start="131" name="NT"/>
+                    <label end="135" start="134" name="NT"/>
+                    <label end="137" start="137" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="09/22/2011 03:56:59 PDT Thu" status="MANUAL" ID="6584597">
+                <layer rank="1" name="Target">
+                    <label cBy="PKe" end="89" start="85" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="PKe" feID="1106" end="89" start="85" name="Piece"/>
+                    <label cBy="PKe" feID="1108" itype="INI" name="Substance"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

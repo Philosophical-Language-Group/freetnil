@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Direction" POS="A" name="previous.a" ID="14087" frame="Time_vector" frameID="379" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Goodwill fund-raising letter" name="110CYL070" ID="23795"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Direction" name="Direction"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Distance" name="Distance"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Core" abbrev="Evt" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="lan" name="Landmark_event"/>
+        </frame>
+    </header>
+    <definition>COD: existing or occurring before in time or order.</definition>
+    <lexeme POS="A" name="previous"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Direction"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Direction"/>
+                <annoSet ID="6556822"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Event"/>
+                <annoSet ID="6556822"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Direction"/>
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Direction"/>
+                <valenceUnit GF="Head" PT="N" FE="Event"/>
+                <annoSet ID="6556822"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23795" sentNo="2" paragNo="5" aPos="0" ID="4106498">
+            <text>You have helped make Goodwill 's work possible with your previous support .</text>
+            <annotationSet cDate="11/19/2008 04:25:11 PST Wed" status="UNANN" ID="6556615">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="PP"/>
+                    <label end="7" start="4" name="VHP"/>
+                    <label end="14" start="9" name="VVN"/>
+                    <label end="19" start="16" name="VVP"/>
+                    <label end="28" start="21" name="NP"/>
+                    <label end="31" start="30" name="POS"/>
+                    <label end="36" start="33" name="nn"/>
+                    <label end="45" start="38" name="jj"/>
+                    <label end="50" start="47" name="in"/>
+                    <label end="55" start="52" name="PP$"/>
+                    <label end="64" start="57" name="jj"/>
+                    <label end="72" start="66" name="nn"/>
+                    <label end="74" start="74" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="28" start="21" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="7" start="4" name="NT"/>
+                    <label end="28" start="21" name="NT"/>
+                    <label end="31" start="30" name="NT"/>
+                    <label end="50" start="47" name="NT"/>
+                    <label end="55" start="52" name="NT"/>
+                    <label end="74" start="74" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/24/2008 04:31:34 PST Mon" status="MANUAL" ID="6556822">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="64" start="57" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="3398" end="64" start="57" name="Direction"/>
+                    <label cBy="AlK" feID="4832" end="72" start="66" name="Event"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="72" start="66" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="72" start="66" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

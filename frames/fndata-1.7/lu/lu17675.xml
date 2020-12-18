@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="littered.a" ID="17675" frame="Abounding_with" frameID="262" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Loc" name="Location"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Thm" name="Theme"/>
+            <FE fgColor="FFFF00" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: having sporadic instances (esp. of something undesirable) irregularly distributed on the surface.</definition>
+    <lexeme POS="A" name="littered"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Location"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[over]" FE="Location"/>
+                <annoSet ID="6672768"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Theme"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Theme"/>
+                <annoSet ID="6672768"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Location"/>
+            <FE name="Theme"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[over]" FE="Location"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Theme"/>
+                <annoSet ID="6672768"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="3" paragNo="8" aPos="0" ID="4148259">
+            <text>The limbs and body of some large , white bird , torn savagely to pieces with the feathers still on , were littered all over it .</text>
+            <annotationSet cDate="04/30/2013 05:17:15 PDT Tue" status="UNANN" ID="6645291">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="8" start="4" name="nns"/>
+                    <label end="12" start="10" name="cc"/>
+                    <label end="17" start="14" name="nn"/>
+                    <label end="20" start="19" name="in"/>
+                    <label end="25" start="22" name="dt"/>
+                    <label end="31" start="27" name="jj"/>
+                    <label end="39" start="35" name="jj"/>
+                    <label end="44" start="41" name="nn"/>
+                    <label end="51" start="48" name="VBN"/>
+                    <label end="60" start="53" name="rb"/>
+                    <label end="63" start="62" name="to"/>
+                    <label end="70" start="65" name="nns"/>
+                    <label end="75" start="72" name="in"/>
+                    <label end="79" start="77" name="dt"/>
+                    <label end="88" start="81" name="nns"/>
+                    <label end="94" start="90" name="rb"/>
+                    <label end="97" start="96" name="rb"/>
+                    <label end="104" start="101" name="VBD"/>
+                    <label end="113" start="106" name="VBN"/>
+                    <label end="117" start="115" name="dt"/>
+                    <label end="122" start="119" name="in"/>
+                    <label end="125" start="124" name="PRP"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="08/15/2014 03:09:31 PDT Fri" status="MANUAL" ID="6672768">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="113" start="106" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="2261" end="125" start="115" name="Location"/>
+                    <label cBy="MJE" feID="2260" end="97" start="0" name="Theme"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="125" start="115" name="Dep"/>
+                    <label end="97" start="0" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="125" start="115" name="PP"/>
+                    <label end="97" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="104" start="101" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="ADV" name="a lot.adv" ID="17659" frame="Degree" frameID="2001" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_3" name="Fires_3" ID="25618"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="Gra" name="Gradable_attribute"/>
+        </frame>
+    </header>
+    <definition>FN: to a great degree.</definition>
+    <lexeme order="1" headword="false" breakBefore="false" POS="ART" name="a"/>
+    <lexeme order="2" headword="true" breakBefore="false" POS="N" name="lot"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Gradable_attribute"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="AJP" FE="Gradable_attribute"/>
+                <annoSet ID="6672443"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Gradable_attribute"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="AJP" FE="Gradable_attribute"/>
+                <annoSet ID="6672443"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25618" sentNo="1" paragNo="9" aPos="0" ID="4165005">
+            <text>'' I 'm feeling a lot more optimistic today than I did yesterday .</text>
+            <annotationSet cDate="07/17/2014 11:43:49 PDT Thu" status="UNANN" ID="6669175">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="''"/>
+                    <label end="3" start="3" name="PP"/>
+                    <label end="6" start="5" name="vbp"/>
+                    <label end="14" start="8" name="VVG"/>
+                    <label end="16" start="16" name="dt"/>
+                    <label end="20" start="18" name="nn"/>
+                    <label end="25" start="22" name="rbr"/>
+                    <label end="36" start="27" name="jj"/>
+                    <label end="42" start="38" name="nn"/>
+                    <label end="47" start="44" name="in"/>
+                    <label end="49" start="49" name="PP"/>
+                    <label end="53" start="51" name="VVD"/>
+                    <label end="63" start="55" name="nn"/>
+                    <label end="65" start="65" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="3" start="3" name="NT"/>
+                    <label end="6" start="5" name="NT"/>
+                    <label end="47" start="44" name="NT"/>
+                    <label end="49" start="49" name="NT"/>
+                    <label end="53" start="51" name="NT"/>
+                    <label end="65" start="65" name="NT"/>
+                    <label end="25" start="22" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/28/2014 06:44:23 PDT Mon" status="MANUAL" ID="6672443">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="20" start="18" name="Target"/>
+                    <label cBy="MJE" end="16" start="16" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="12081" end="36" start="22" name="Gradable_attribute"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="36" start="22" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="36" start="22" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

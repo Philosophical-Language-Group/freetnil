@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="RLG" cDate="07/25/2011 02:34:39 PDT Mon" name="Triggering" ID="2579" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;A &lt;fen&gt;Cause&lt;/fen&gt; triggers a &lt;fen&gt;System&lt;/fen&gt; to operate in accordance with its intended purpose. Alternatively, an &lt;fen&gt;Actor&lt;/fen&gt; (acting volitionally or not) which participates in the &lt;fen&gt;Cause&lt;/fen&gt;, stands in for the &lt;fen&gt;Cause&lt;/fen&gt;. The &lt;fen&gt;System&lt;/fen&gt; often has the capability to detect and signal the presence of an object or the occurence of an event (metal, an earthquake). It may also be or contain an explosive device. The Means by which the Cause activates the System may also be specified.
+
+&lt;ex&gt;&lt;fex name="Cause"&gt;Smoking a cigarette&lt;/fex&gt; will normally not &lt;t&gt;set off&lt;/t&gt; &lt;fex name="System"&gt;a smoke alarm&lt;/fex&gt;.&lt;/ex&gt;
+
+&lt;ex&gt;&lt;fex name="Actor"&gt;Suspected drug traffickers&lt;/fex&gt; &lt;t&gt;set off&lt;/t&gt; &lt;fex name="System"&gt;12 bombs&lt;/fex&gt;, injuring 35 people.&lt;/ex&gt;
+
+&lt;ex&gt;&lt;fex name="Actor"&gt;Joseph&lt;/fex&gt; wriggled out of the ropes and inadvertantly &lt;t&gt;triggered&lt;/t&gt; &lt;fex name="System"&gt;the burglar alarm&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="07/25/2011 03:03:56 PDT Mon" abbrev="cau" name="Cause" ID="14547">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Cause&lt;/fen&gt; interacts with the &lt;fen&gt;System&lt;/fen&gt; such that conditions are met for the &lt;fen&gt;System&lt;/fen&gt; to operate.
+
+&lt;ex&gt;&lt;fex name="cau"&gt;His presence&lt;/fex&gt; &lt;t&gt;set off&lt;/t&gt; the motion alarms.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="07/25/2011 03:09:51 PDT Mon" abbrev="sys" name="System" ID="14548">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;System&lt;/fen&gt; interacts with or detects the &lt;fen&gt;Cause&lt;/fen&gt; and activates.
+
+&lt;ex&gt;They let him through even though something &lt;t&gt;triggered&lt;/t&gt; &lt;fex name="sys"&gt;the metal detector&lt;/fex&gt;?&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FF69B4" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="07/25/2011 03:15:08 PDT Mon" abbrev="mea" name="Means" ID="14549">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Means&lt;/fen&gt; is a subevent which the &lt;fen&gt;Cause&lt;/fen&gt; or &lt;fen&gt;Actor&lt;/fen&gt; participates in which results in triggering the &lt;fen&gt;System&lt;/fen&gt; .  &lt;ex&gt;You must have &lt;t&gt;set off&lt;/t&gt; the alarm &lt;fex name="mea"&gt;by stepping near this sensor&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="1E90FF" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="08/31/2011 12:55:17 PDT Wed" abbrev="act" name="Actor" ID="14904">
+        <definition>&lt;def-root&gt;An entity which participates in a &lt;fen&gt;Cause&lt;/fen&gt;, perhaps volitionally and perhaps not.
+
+&lt;ex&gt;&lt;fex name="act"&gt;She&lt;/fex&gt; &lt;t&gt;set off&lt;/t&gt; the silent alarm before being shoved into the middle of the lobby.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <excludesFE name="Cause" ID="14547"/>
+    </FE>
+    <FE bgColor="A52A2A" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="08/31/2011 01:11:14 PDT Wed" abbrev="man" name="Manner" ID="14905">
+        <definition>&lt;def-root&gt;Any holistic description of the event, including overall depictions (&lt;ment&gt;the same way&lt;/ment&gt;) and descriptions pertaining to the &lt;fen&gt;Actor&lt;/fen&gt;'s or &lt;fen&gt;Cause&lt;/fen&gt;'s influence on the character of the event (&lt;ment&gt;eagerly, quietly&lt;/ment&gt;).&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="08/31/2011 01:12:05 PDT Wed" abbrev="pla" name="Place" ID="14906">
+        <definition>&lt;def-root&gt;Where the triggering takes place.
+
+&lt;ex&gt;Police came running downstairs when someone set off the metal detector &lt;fex name="pla"&gt;at the county courthouse&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="08/31/2011 01:17:40 PDT Wed" abbrev="tim" name="Time" ID="14907">
+        <definition>&lt;def-root&gt;The time when the triggering takes place.
+
+&lt;ex&gt;Three bombs were &lt;t&gt;set off&lt;/t&gt; &lt;fex name="tim"&gt;at three o'clock today&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="800080" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="03/27/2012 12:20:35 PDT Tue" abbrev="pur" name="Purpose" ID="15558">
+        <definition>&lt;def-root&gt;The purpose of the &lt;fen&gt;Actor&lt;/fen&gt; in setting off the &lt;fen&gt;System&lt;/fen&gt;.&lt;/def-root&gt;</definition>
+    </FE>
+    <frameRelation type="Inherits from"/>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses"/>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of">
+        <relatedFrame ID="2640">Getting_triggered</relatedFrame>
+    </frameRelation>
+    <frameRelation type="See also"/>
+    <lexUnit status="In_Use" POS="V" name="trigger.v" ID="16410" lemmaID="41225" cBy="RLG" cDate="07/25/2011 03:27:18 PDT Mon">
+        <definition>FN: cause a device to activate or operate.</definition>
+        <sentenceCount annotated="17" total="69"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="trigger"/>
+    </lexUnit>
+    <lexUnit status="In_Use" POS="V" name="set off.v" ID="16568" lemmaID="51391" cBy="RLG" cDate="08/31/2011 12:54:44 PDT Wed">
+        <definition>FN: trigger or activate.</definition>
+        <sentenceCount annotated="40" total="58"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="V" name="set"/>
+        <lexeme order="2" headword="false" breakBefore="false" POS="PREP" name="off"/>
+    </lexUnit>
+</frame>

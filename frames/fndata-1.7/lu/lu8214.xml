@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="subordinate.n" ID="8214" frame="Subordinates_and_superiors" frameID="530" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="AFGP-2002-600045-Trans" name="AFGP-2002-600045-Trans" ID="23740"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="Sub" name="Subordinate"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Com" name="Superior"/>
+        </frame>
+    </header>
+    <definition>COD: a person under the authority or control of another</definition>
+    <lexeme POS="N" name="subordinate"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Subordinate"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Subordinate"/>
+                <annoSet ID="6550661"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Superior"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Superior"/>
+                <annoSet ID="6550661"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Subordinate"/>
+            <FE name="Superior"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Subordinate"/>
+                <valenceUnit GF="" PT="DNI" FE="Superior"/>
+                <annoSet ID="6550661"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23740" sentNo="6" paragNo="17" aPos="0" ID="4103254">
+            <text>All members commanders as well as subordinates must obey these rules .</text>
+            <annotationSet cDate="08/24/2007 01:46:58 PDT Fri" status="UNANN" ID="6547077">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="10" start="4" name="nns"/>
+                    <label end="21" start="12" name="nns"/>
+                    <label end="24" start="23" name="rb"/>
+                    <label end="29" start="26" name="rb"/>
+                    <label end="32" start="31" name="in"/>
+                    <label end="45" start="34" name="nns"/>
+                    <label end="50" start="47" name="md"/>
+                    <label end="55" start="52" name="VV"/>
+                    <label end="61" start="57" name="dt"/>
+                    <label end="67" start="63" name="nns"/>
+                    <label end="69" start="69" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="24" start="23" name="NT"/>
+                    <label end="29" start="26" name="NT"/>
+                    <label end="32" start="31" name="NT"/>
+                    <label end="61" start="57" name="NT"/>
+                    <label end="69" start="69" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/08/2007 03:22:15 PST Thu" status="MANUAL" ID="6550661">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="45" start="34" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="4141" end="45" start="34" name="Subordinate"/>
+                    <label cBy="JKs" feID="4140" itype="DNI" name="Superior"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

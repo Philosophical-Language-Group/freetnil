@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Weapon" POS="N" name="gunman.n" ID="13130" frame="Bearing_arms" frameID="470" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="This is a 5-sentence news story about alleged White House gunman Robert Pickett." name="Pickett" ID="6"/>
+            <document description="Hijack" name="Hijack" ID="23592"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="" name="Protagonist"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="" name="Weapon"/>
+        </frame>
+    </header>
+    <definition>COD: a man who uses a gun to commit a crime or terrorist act.</definition>
+    <lexeme POS="N" name="gunman"/>
+    <semType name="Agentive_noun" ID="102"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Place"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Place"/>
+                <annoSet ID="2600216"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="Appositive" PT="NP" FE="Protagonist"/>
+                <annoSet ID="2600216"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Protagonist"/>
+                <annoSet ID="6534082"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Weapon"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INC" FE="Weapon"/>
+                <annoSet ID="2600216"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Place"/>
+            <FE name="Protagonist"/>
+            <FE name="Weapon"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Place"/>
+                <valenceUnit GF="Appositive" PT="NP" FE="Protagonist"/>
+                <valenceUnit GF="" PT="INC" FE="Weapon"/>
+                <annoSet ID="2600216"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Protagonist"/>
+                <annoSet ID="6534082"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="6" sentNo="1" paragNo="1" aPos="0" ID="239738">
+            <text>Alleged White House gunman Robert Pickett was arraigned Wednesday at a federal court in Washington and ordered held without bond .</text>
+            <annotationSet cDate="01/06/2003 08:08:38 PST Mon" status="UNANN" ID="125957">
+                <layer rank="1" name="BNC">
+                    <label end="6" start="0" name="AJ0"/>
+                    <label end="12" start="8" name="NP0"/>
+                    <label end="18" start="14" name="NN1"/>
+                    <label end="25" start="20" name="NN1"/>
+                    <label end="32" start="27" name="NP0"/>
+                    <label end="40" start="34" name="NP0"/>
+                    <label end="44" start="42" name="VBD"/>
+                    <label end="54" start="46" name="AJ0"/>
+                    <label end="64" start="56" name="NP0"/>
+                    <label end="67" start="66" name="PRP"/>
+                    <label end="69" start="69" name="AT0"/>
+                    <label end="77" start="71" name="AJ0"/>
+                    <label end="83" start="79" name="NN1"/>
+                    <label end="86" start="85" name="PRP"/>
+                    <label end="97" start="88" name="NP0"/>
+                    <label end="101" start="99" name="CJC"/>
+                    <label end="109" start="103" name="VVD"/>
+                    <label end="114" start="111" name="VVN"/>
+                    <label end="122" start="116" name="PRP"/>
+                    <label end="127" start="124" name="NN1"/>
+                    <label end="129" start="129" name="PUN"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="07/30/2010 07:07:46 PDT Fri" status="MANUAL" ID="2600216">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="25" start="20" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="4001" itype="INC" name="Weapon"/>
+                    <label cBy="MJE" feID="4002" end="40" start="27" name="Protagonist"/>
+                    <label cBy="MJE" feID="14102" end="18" start="8" name="Place"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="40" start="27" name="Appositive"/>
+                    <label end="18" start="8" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="40" start="27" name="NP"/>
+                    <label end="18" start="8" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="175" docID="23592" sentNo="1" paragNo="2" aPos="0" ID="4099232">
+            <text>The United Nations says Somali gunmen who hijacked a U.N. - chartered vessel carrying food aid for tsunami victims have released the ship after holding it for more than two months .</text>
+            <annotationSet cDate="03/20/2006 06:27:27 PST Mon" status="UNANN" ID="6534066">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="9" start="4" name="NP"/>
+                    <label end="17" start="11" name="NPS"/>
+                    <label end="22" start="19" name="VVZ"/>
+                    <label end="29" start="24" name="jj"/>
+                    <label end="36" start="31" name="nns"/>
+                    <label end="40" start="38" name="wp"/>
+                    <label end="49" start="42" name="VVD"/>
+                    <label end="51" start="51" name="dt"/>
+                    <label end="56" start="53" name="NP"/>
+                    <label end="58" start="58" name=":"/>
+                    <label end="68" start="60" name="jj"/>
+                    <label end="75" start="70" name="nn"/>
+                    <label end="84" start="77" name="VVG"/>
+                    <label end="89" start="86" name="nn"/>
+                    <label end="93" start="91" name="nn"/>
+                    <label end="97" start="95" name="in"/>
+                    <label end="105" start="99" name="nn"/>
+                    <label end="113" start="107" name="nns"/>
+                    <label end="118" start="115" name="VHP"/>
+                    <label end="127" start="120" name="VVN"/>
+                    <label end="131" start="129" name="dt"/>
+                    <label end="136" start="133" name="nn"/>
+                    <label end="142" start="138" name="in"/>
+                    <label end="150" start="144" name="VVG"/>
+                    <label end="153" start="152" name="PP"/>
+                    <label end="157" start="155" name="in"/>
+                    <label end="162" start="159" name="jjr"/>
+                    <label end="167" start="164" name="in"/>
+                    <label end="171" start="169" name="cd"/>
+                    <label end="178" start="173" name="nns"/>
+                    <label end="180" start="180" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="17" start="4" name="organization"/>
+                    <label end="56" start="53" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="9" start="4" name="NT"/>
+                    <label end="17" start="11" name="NT"/>
+                    <label end="40" start="38" name="NT"/>
+                    <label end="51" start="51" name="NT"/>
+                    <label end="56" start="53" name="NT"/>
+                    <label end="58" start="58" name="NT"/>
+                    <label end="97" start="95" name="NT"/>
+                    <label end="118" start="115" name="NT"/>
+                    <label end="131" start="129" name="NT"/>
+                    <label end="153" start="152" name="NT"/>
+                    <label end="157" start="155" name="NT"/>
+                    <label end="167" start="164" name="NT"/>
+                    <label end="171" start="169" name="NT"/>
+                    <label end="180" start="180" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/22/2006 08:01:11 PST Wed" status="MANUAL" ID="6534082">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="36" start="31" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="4002" end="36" start="31" name="Protagonist"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

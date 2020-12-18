@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="parishioner.n" ID="10246" frame="People_by_jurisdiction" frameID="1023" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Bell Ringing" name="BellRinging" ID="23009"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Age" name="Age"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Authority"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Eth" name="Ethnicity"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Ori" name="Jurisdiction"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Pers_char" name="Persistent_characteristic"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Person" name="Person"/>
+        </frame>
+    </header>
+    <definition>FN: a person who belongs to a particular Church parish</definition>
+    <lexeme POS="N" name="parishioner"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Jurisdiction"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Jurisdiction"/>
+                <annoSet ID="4528556"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Person"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Person"/>
+                <annoSet ID="4528556"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Jurisdiction"/>
+            <FE name="Person"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Jurisdiction"/>
+                <valenceUnit GF="" PT="DEN" FE="Person"/>
+                <annoSet ID="4528556"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23009" sentNo="1" paragNo="4" aPos="0" ID="2824200">
+            <text>The parishioners of St. Michael and All Angels stop to chat at the church door , as members here always have .</text>
+            <annotationSet cDate="02/05/2004 08:29:19 PST Thu" status="UNANN" ID="4528195">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="15" start="4" name="nns"/>
+                    <label end="18" start="17" name="in"/>
+                    <label end="22" start="20" name="NP"/>
+                    <label end="30" start="24" name="NP"/>
+                    <label end="34" start="32" name="cc"/>
+                    <label end="38" start="36" name="dt"/>
+                    <label end="45" start="40" name="NPS"/>
+                    <label end="50" start="47" name="VVP"/>
+                    <label end="53" start="52" name="to"/>
+                    <label end="58" start="55" name="VV"/>
+                    <label end="61" start="60" name="in"/>
+                    <label end="65" start="63" name="dt"/>
+                    <label end="72" start="67" name="nn"/>
+                    <label end="77" start="74" name="nn"/>
+                    <label end="79" start="79" name=","/>
+                    <label end="82" start="81" name="in"/>
+                    <label end="90" start="84" name="nns"/>
+                    <label end="95" start="92" name="rb"/>
+                    <label end="102" start="97" name="rb"/>
+                    <label end="107" start="104" name="VHP"/>
+                    <label end="109" start="109" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="45" start="20" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="53" start="52" name="NT"/>
+                    <label end="79" start="79" name="NT"/>
+                    <label end="109" start="109" name="NT"/>
+                    <label end="2" start="0" name="NT"/>
+                    <label end="18" start="17" name="NT"/>
+                    <label end="22" start="20" name="NT"/>
+                    <label end="30" start="24" name="NT"/>
+                    <label end="34" start="32" name="NT"/>
+                    <label end="38" start="36" name="NT"/>
+                    <label end="45" start="40" name="NT"/>
+                    <label end="61" start="60" name="NT"/>
+                    <label end="65" start="63" name="NT"/>
+                    <label end="82" start="81" name="NT"/>
+                    <label end="107" start="104" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/21/2004 09:15:23 PST Sun" status="MANUAL" ID="4528556">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="15" start="4" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="6089" end="15" start="4" name="Person"/>
+                    <label cBy="MJE" feID="6088" end="45" start="17" name="Jurisdiction"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="45" start="17" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="45" start="17" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="guitar.n" ID="10210" frame="Noise_makers" frameID="1017" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="crt" name="Creator"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Peripheral" abbrev="Grnd" name="Ground"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="mat" name="Material"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="nm" name="Noise_maker"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="toc" name="Time_of_creation"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="tp" name="Type"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="s" name="Use"/>
+        </frame>
+    </header>
+    <definition>COD: a stringed musical instrument with a fretted fingerboard and six or twelve strings, played by plucking or strumming with the fingers or a plectrum</definition>
+    <lexeme POS="N" name="guitar"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Noise_maker"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Noise_maker"/>
+                <annoSet ID="6645225"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Noise_maker"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Noise_maker"/>
+                <annoSet ID="6645225"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="5" paragNo="6" aPos="0" ID="4148243">
+            <text>Odds and ends , some pipes , a few novels , two of them in Spanish , and old-fashioned pinfire revolver , and a guitar were among the personal property .</text>
+            <annotationSet cDate="04/30/2013 05:17:02 PDT Tue" status="UNANN" ID="6645221">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="nns"/>
+                    <label end="7" start="5" name="cc"/>
+                    <label end="12" start="9" name="nns"/>
+                    <label end="19" start="16" name="dt"/>
+                    <label end="25" start="21" name="nns"/>
+                    <label end="29" start="29" name="dt"/>
+                    <label end="33" start="31" name="jj"/>
+                    <label end="40" start="35" name="nns"/>
+                    <label end="46" start="44" name="cd"/>
+                    <label end="49" start="48" name="in"/>
+                    <label end="54" start="51" name="PRP"/>
+                    <label end="57" start="56" name="in"/>
+                    <label end="65" start="59" name="NNP"/>
+                    <label end="71" start="69" name="cc"/>
+                    <label end="85" start="73" name="jj"/>
+                    <label end="93" start="87" name="nn"/>
+                    <label end="102" start="95" name="nn"/>
+                    <label end="108" start="106" name="cc"/>
+                    <label end="110" start="110" name="dt"/>
+                    <label end="117" start="112" name="nn"/>
+                    <label end="122" start="119" name="VBD"/>
+                    <label end="128" start="124" name="in"/>
+                    <label end="132" start="130" name="dt"/>
+                    <label end="141" start="134" name="jj"/>
+                    <label end="150" start="143" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:17:03 PDT Tue" status="MANUAL" ID="6645225">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="117" start="112" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="6043" end="117" start="112" name="Noise_maker"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

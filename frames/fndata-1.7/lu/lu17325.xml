@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="succeed.v" ID="17325" frame="Relative_time" frameID="81" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="FEv" name="Focal_occasion"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="" name="Focal_participant"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Int" name="Interval"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="REv" name="Landmark_occasion"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+        </frame>
+    </header>
+    <definition>FN: to occur after</definition>
+    <lexeme POS="V" name="succeed"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Focal_occasion"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Focal_occasion"/>
+                <annoSet ID="6645440"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Landmark_occasion"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Landmark_occasion"/>
+                <annoSet ID="6645440"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Focal_occasion"/>
+            <FE name="Landmark_occasion"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Focal_occasion"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Landmark_occasion"/>
+                <annoSet ID="6645440"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="5" paragNo="13" aPos="0" ID="4148306">
+            <text>Day succeeded day , and my friend took no step forward .</text>
+            <annotationSet cDate="04/30/2013 05:17:42 PDT Tue" status="UNANN" ID="6645435">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="NNP"/>
+                    <label end="12" start="4" name="VBD"/>
+                    <label end="16" start="14" name="nn"/>
+                    <label end="22" start="20" name="cc"/>
+                    <label end="25" start="24" name="PRP$"/>
+                    <label end="32" start="27" name="nn"/>
+                    <label end="37" start="34" name="VBD"/>
+                    <label end="40" start="39" name="dt"/>
+                    <label end="45" start="42" name="nn"/>
+                    <label end="53" start="47" name="rb"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:17:43 PDT Tue" status="MANUAL" ID="6645440">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="12" start="4" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="373" end="2" start="0" name="Focal_occasion"/>
+                    <label cBy="EGp" feID="374" end="16" start="14" name="Landmark_occasion"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="2" start="0" name="Ext"/>
+                    <label end="16" start="14" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="2" start="0" name="NP"/>
+                    <label end="16" start="14" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

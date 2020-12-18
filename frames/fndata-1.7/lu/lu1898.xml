@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Finished_Initial" POS="V" name="badger.v" ID="1898" frame="Manipulate_into_doing" frameID="92" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Goods" name="Goods"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Manip" name="Manipulator"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="Mann" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Action" name="Resulting_action"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Victim" name="Victim"/>
+        </frame>
+    </header>
+    <definition>COD: repeatedly and annoyingly ask (someone) to do something</definition>
+    <lexeme POS="V" name="badger"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Manipulator"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Manipulator"/>
+                <annoSet ID="38257"/>
+                <annoSet ID="38261"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Resulting_action"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="PPing[into]" FE="Resulting_action"/>
+                <annoSet ID="38257"/>
+                <annoSet ID="38261"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Victim"/>
+            <pattern total="2">
+                <valenceUnit GF="Obj" PT="NP" FE="Victim"/>
+                <annoSet ID="38257"/>
+                <annoSet ID="38261"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Manipulator"/>
+            <FE name="Resulting_action"/>
+            <FE name="Victim"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Manipulator"/>
+                <valenceUnit GF="Dep" PT="PPing[into]" FE="Resulting_action"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Victim"/>
+                <annoSet ID="38257"/>
+                <annoSet ID="38261"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="V-570-np-ppinto"/>
+    <subCorpus name="V-590-np-pinginto">
+        <sentence sentNo="0" aPos="77683032" ID="192858">
+            <text>Organisers Karen Stead and Sue Symes badgered twenty-eight people into giving baby and recent photographs . </text>
+            <annotationSet cDate="01/06/2003 06:31:57 PST Mon" status="UNANN" ID="38256">
+                <layer rank="1" name="BNC">
+                    <label end="9" start="0" name="NP0"/>
+                    <label end="15" start="11" name="NP0"/>
+                    <label end="21" start="17" name="NP0"/>
+                    <label end="25" start="23" name="CJC"/>
+                    <label end="29" start="27" name="NP0"/>
+                    <label end="35" start="31" name="NP0"/>
+                    <label end="44" start="37" name="VVD"/>
+                    <label end="57" start="46" name="CRD"/>
+                    <label end="64" start="59" name="NN0"/>
+                    <label end="69" start="66" name="PRP"/>
+                    <label end="76" start="71" name="VVG"/>
+                    <label end="81" start="78" name="NN1"/>
+                    <label end="85" start="83" name="CJC"/>
+                    <label end="92" start="87" name="AJ0"/>
+                    <label end="104" start="94" name="NN2"/>
+                    <label end="106" start="106" name="PUN"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="01/06/2003 06:31:57 PST Mon" status="MANUAL" ID="38257">
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="436" end="35" start="0" name="Manipulator"/>
+                    <label cBy="MJE" feID="437" end="64" start="46" name="Victim"/>
+                    <label cBy="MJE" feID="438" end="104" start="66" name="Resulting_action"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="35" start="0" name="Ext"/>
+                    <label end="64" start="46" name="Obj"/>
+                    <label end="104" start="66" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="35" start="0" name="NP"/>
+                    <label end="64" start="46" name="NP"/>
+                    <label end="104" start="66" name="PPing"/>
+                </layer>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Target">
+                    <label cBy="BoC" end="44" start="37" name="Target"/>
+                </layer>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence sentNo="0" aPos="30245851" ID="192860">
+            <text>She had badgered her parents into letting her join the Women 's Auxiliary Territorial Service after her eighteenth birthday . </text>
+            <annotationSet cDate="01/06/2003 06:31:57 PST Mon" status="UNANN" ID="38260">
+                <layer rank="1" name="BNC">
+                    <label end="2" start="0" name="PNP"/>
+                    <label end="6" start="4" name="VHD"/>
+                    <label end="15" start="8" name="VVN"/>
+                    <label end="19" start="17" name="DPS"/>
+                    <label end="27" start="21" name="NN2"/>
+                    <label end="32" start="29" name="PRP"/>
+                    <label end="40" start="34" name="VVG"/>
+                    <label end="44" start="42" name="PNP"/>
+                    <label end="49" start="46" name="VVI"/>
+                    <label end="53" start="51" name="AT0"/>
+                    <label end="59" start="55" name="NN2"/>
+                    <label end="62" start="61" name="POS"/>
+                    <label end="72" start="64" name="AJ0-NN1"/>
+                    <label end="84" start="74" name="AJ0"/>
+                    <label end="92" start="86" name="NN1"/>
+                    <label end="98" start="94" name="PRP"/>
+                    <label end="102" start="100" name="DPS"/>
+                    <label end="113" start="104" name="ORD"/>
+                    <label end="122" start="115" name="NN1"/>
+                    <label end="124" start="124" name="PUN"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="01/06/2003 06:31:57 PST Mon" status="MANUAL" ID="38261">
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="436" end="2" start="0" name="Manipulator"/>
+                    <label cBy="MJE" feID="437" end="27" start="17" name="Victim"/>
+                    <label cBy="MJE" feID="438" end="122" start="29" name="Resulting_action"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="2" start="0" name="Ext"/>
+                    <label end="27" start="17" name="Obj"/>
+                    <label end="122" start="29" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="2" start="0" name="NP"/>
+                    <label end="27" start="17" name="NP"/>
+                    <label end="122" start="29" name="PPing"/>
+                </layer>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Target">
+                    <label cBy="BoC" end="15" start="8" name="Target"/>
+                </layer>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="V-620-np-ppother"/>
+    <subCorpus name="V-630-np-pingother"/>
+    <subCorpus name="V-660-trans-simple"/>
+    <subCorpus name="V-670-pass-by"/>
+    <subCorpus name="V-690-trans-other"/>
+    <subCorpus name="V-890-intrans-adverb"/>
+    <subCorpus name="V-900-other"/>
+</lexUnit>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="survival.n" ID="14587" frame="Surviving" frameID="1792" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="wsj_1640.mrg-NEW" name="wsj_1640.mrg-NEW" ID="23727"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="dan" name="Dangerous_situation"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="sur" name="Survivor"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: the state of being alive or existing</definition>
+    <lexeme POS="N" name="survival"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Dangerous_situation"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Dangerous_situation"/>
+                <annoSet ID="6549055"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Survivor"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Survivor"/>
+                <annoSet ID="6549055"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Dangerous_situation"/>
+            <FE name="Survivor"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Dangerous_situation"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Survivor"/>
+                <annoSet ID="6549055"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23727" sentNo="1" paragNo="2" aPos="0" ID="4101847">
+            <text>It `` may well be '' that theft of business data is `` as serious a strategic threat to national security '' as it is a threat to the survival of victimized U.S. firms , said Michelle Van Cleave , the White House 's assistant director for National Security Affairs .</text>
+            <annotationSet cDate="08/15/2007 04:21:48 PDT Wed" status="UNANN" ID="6545605">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="4" start="3" name="``"/>
+                    <label end="8" start="6" name="md"/>
+                    <label end="13" start="10" name="rb"/>
+                    <label end="16" start="15" name="vb"/>
+                    <label end="19" start="18" name="''"/>
+                    <label end="24" start="21" name="in"/>
+                    <label end="30" start="26" name="nn"/>
+                    <label end="33" start="32" name="in"/>
+                    <label end="42" start="35" name="nn"/>
+                    <label end="47" start="44" name="nns"/>
+                    <label end="50" start="49" name="VBZ"/>
+                    <label end="53" start="52" name="``"/>
+                    <label end="56" start="55" name="rb"/>
+                    <label end="64" start="58" name="jj"/>
+                    <label end="66" start="66" name="dt"/>
+                    <label end="76" start="68" name="jj"/>
+                    <label end="83" start="78" name="nn"/>
+                    <label end="86" start="85" name="to"/>
+                    <label end="95" start="88" name="jj"/>
+                    <label end="104" start="97" name="nn"/>
+                    <label end="107" start="106" name="''"/>
+                    <label end="110" start="109" name="in"/>
+                    <label end="113" start="112" name="PP"/>
+                    <label end="116" start="115" name="VBZ"/>
+                    <label end="118" start="118" name="dt"/>
+                    <label end="125" start="120" name="nn"/>
+                    <label end="128" start="127" name="to"/>
+                    <label end="132" start="130" name="dt"/>
+                    <label end="141" start="134" name="nn"/>
+                    <label end="144" start="143" name="in"/>
+                    <label end="155" start="146" name="VVN"/>
+                    <label end="160" start="157" name="NP"/>
+                    <label end="166" start="162" name="nns"/>
+                    <label end="168" start="168" name=","/>
+                    <label end="173" start="170" name="VVD"/>
+                    <label end="182" start="175" name="NP"/>
+                    <label end="186" start="184" name="NP"/>
+                    <label end="193" start="188" name="VV"/>
+                    <label end="195" start="195" name=","/>
+                    <label end="199" start="197" name="dt"/>
+                    <label end="205" start="201" name="NP"/>
+                    <label end="211" start="207" name="NP"/>
+                    <label end="214" start="213" name="POS"/>
+                    <label end="224" start="216" name="jj"/>
+                    <label end="233" start="226" name="nn"/>
+                    <label end="237" start="235" name="in"/>
+                    <label end="246" start="239" name="NP"/>
+                    <label end="255" start="248" name="NP"/>
+                    <label end="263" start="257" name="NPS"/>
+                    <label end="265" start="265" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="160" start="157" name="location"/>
+                    <label end="193" start="175" name="person"/>
+                    <label end="211" start="201" name="organization"/>
+                    <label end="263" start="239" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="4" start="3" name="NT"/>
+                    <label end="16" start="15" name="NT"/>
+                    <label end="19" start="18" name="NT"/>
+                    <label end="24" start="21" name="NT"/>
+                    <label end="33" start="32" name="NT"/>
+                    <label end="50" start="49" name="NT"/>
+                    <label end="53" start="52" name="NT"/>
+                    <label end="56" start="55" name="NT"/>
+                    <label end="66" start="66" name="NT"/>
+                    <label end="86" start="85" name="NT"/>
+                    <label end="107" start="106" name="NT"/>
+                    <label end="110" start="109" name="NT"/>
+                    <label end="113" start="112" name="NT"/>
+                    <label end="116" start="115" name="NT"/>
+                    <label end="118" start="118" name="NT"/>
+                    <label end="128" start="127" name="NT"/>
+                    <label end="132" start="130" name="NT"/>
+                    <label end="144" start="143" name="NT"/>
+                    <label end="160" start="157" name="NT"/>
+                    <label end="168" start="168" name="NT"/>
+                    <label end="182" start="175" name="NT"/>
+                    <label end="186" start="184" name="NT"/>
+                    <label end="195" start="195" name="NT"/>
+                    <label end="199" start="197" name="NT"/>
+                    <label end="205" start="201" name="NT"/>
+                    <label end="211" start="207" name="NT"/>
+                    <label end="214" start="213" name="NT"/>
+                    <label end="237" start="235" name="NT"/>
+                    <label end="263" start="257" name="NT"/>
+                    <label end="265" start="265" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/26/2007 04:26:28 PDT Fri" status="MANUAL" ID="6549055">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="141" start="134" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="10621" end="166" start="143" name="Survivor"/>
+                    <label cBy="JKs" feID="10622" end="47" start="26" name="Dangerous_situation"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="166" start="143" name="Dep"/>
+                    <label end="47" start="26" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="166" start="143" name="PP"/>
+                    <label end="47" start="26" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="116" start="115" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

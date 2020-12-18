@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="change.v" ID="13862" frame="Exchange" frameID="1170" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Dublin" name="IntroOfDublin" ID="23652"/>
+        </corpus>
+        <frame>
+            <FE fgColor="9400D3" bgColor="d0d0d0" type="Extra-Thematic" abbrev="dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="exs" name="Exchangers"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="ex1" name="Exchanger_1"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Core" abbrev="ex2" name="Exchanger_2"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Means" name="Means"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Period_of_iterations"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Core" abbrev="thms" name="Themes"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="thm1" name="Theme_1"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="thm2" name="Theme_2"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: to exchange</definition>
+    <lexeme POS="V" name="change"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Exchanger_1"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Exchanger_1"/>
+                <annoSet ID="6541455"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Exchanger_2"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[with]" FE="Exchanger_2"/>
+                <annoSet ID="6541455"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Themes"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Themes"/>
+                <annoSet ID="6541455"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Exchanger_1"/>
+            <FE name="Exchanger_2"/>
+            <FE name="Themes"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Exchanger_1"/>
+                <valenceUnit GF="Dep" PT="PP[with]" FE="Exchanger_2"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Themes"/>
+                <annoSet ID="6541455"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23652" sentNo="2" paragNo="2" aPos="0" ID="4100578">
+            <text>New construction is everywhere , the streets buzz , traffic is increasingly congested , and in the frenetic pace of rush hour everyone in Dublin seems intent on changing places with everyone else .</text>
+            <annotationSet cDate="11/14/2006 04:25:11 PST Tue" status="UNANN" ID="6539577">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="jj"/>
+                    <label end="15" start="4" name="nn"/>
+                    <label end="18" start="17" name="VBZ"/>
+                    <label end="29" start="20" name="rb"/>
+                    <label end="31" start="31" name=","/>
+                    <label end="35" start="33" name="dt"/>
+                    <label end="43" start="37" name="nns"/>
+                    <label end="48" start="45" name="nn"/>
+                    <label end="50" start="50" name=","/>
+                    <label end="58" start="52" name="nn"/>
+                    <label end="61" start="60" name="VBZ"/>
+                    <label end="74" start="63" name="rb"/>
+                    <label end="84" start="76" name="VVN"/>
+                    <label end="86" start="86" name=","/>
+                    <label end="90" start="88" name="cc"/>
+                    <label end="93" start="92" name="in"/>
+                    <label end="97" start="95" name="dt"/>
+                    <label end="106" start="99" name="jj"/>
+                    <label end="111" start="108" name="nn"/>
+                    <label end="114" start="113" name="in"/>
+                    <label end="119" start="116" name="nn"/>
+                    <label end="124" start="121" name="nn"/>
+                    <label end="133" start="126" name="nn"/>
+                    <label end="136" start="135" name="in"/>
+                    <label end="143" start="138" name="NP"/>
+                    <label end="149" start="145" name="VVZ"/>
+                    <label end="156" start="151" name="nn"/>
+                    <label end="159" start="158" name="in"/>
+                    <label end="168" start="161" name="VVG"/>
+                    <label end="175" start="170" name="nns"/>
+                    <label end="180" start="177" name="in"/>
+                    <label end="189" start="182" name="nn"/>
+                    <label end="194" start="191" name="rb"/>
+                    <label end="196" start="196" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="143" start="138" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="18" start="17" name="NT"/>
+                    <label end="31" start="31" name="NT"/>
+                    <label end="35" start="33" name="NT"/>
+                    <label end="50" start="50" name="NT"/>
+                    <label end="61" start="60" name="NT"/>
+                    <label end="86" start="86" name="NT"/>
+                    <label end="90" start="88" name="NT"/>
+                    <label end="93" start="92" name="NT"/>
+                    <label end="97" start="95" name="NT"/>
+                    <label end="114" start="113" name="NT"/>
+                    <label end="143" start="138" name="NT"/>
+                    <label end="159" start="158" name="NT"/>
+                    <label end="180" start="177" name="NT"/>
+                    <label end="194" start="191" name="NT"/>
+                    <label end="196" start="196" name="NT"/>
+                    <label end="58" start="52" name="Nonrelational"/>
+                    <label end="133" start="126" name="NT"/>
+                    <label end="189" start="182" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/26/2007 12:14:13 PST Mon" status="MANUAL" ID="6541455">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="168" start="161" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="6782" end="143" start="126" name="Exchanger_1"/>
+                    <label cBy="KmG" feID="6793" end="175" start="170" name="Themes"/>
+                    <label cBy="KmG" feID="6788" end="194" start="177" name="Exchanger_2"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="143" start="126" name="Ext"/>
+                    <label end="175" start="170" name="Obj"/>
+                    <label end="194" start="177" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="143" start="126" name="NP"/>
+                    <label end="175" start="170" name="NP"/>
+                    <label end="194" start="177" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

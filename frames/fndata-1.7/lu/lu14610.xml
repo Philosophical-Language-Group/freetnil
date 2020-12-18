@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="New" POS="V" name="destroy.v" ID="14610" frame="Killing" frameID="590" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="CNN_AARONBROWN_ENG_20051101_215800.partial-NEW" name="CNN_AARONBROWN_ENG_20051101_215800.partial-NEW" ID="23733"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="ben" name="Beneficiary"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="" name="Cause"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Extra-Thematic" abbrev="" name="Containing_event"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Extra-Thematic" abbrev="" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Instr" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Kill" name="Killer"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="Man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="" name="Means"/>
+            <FE fgColor="000000" bgColor="7CCD73" type="Extra-Thematic" abbrev="" name="Period_of_iterations"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Loc" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="" name="Victim"/>
+        </frame>
+    </header>
+    <definition>FN: euthanize or put down</definition>
+    <lexeme POS="V" name="destroy"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Killer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Killer"/>
+                <annoSet ID="6549195"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Purpose"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPto" FE="Purpose"/>
+                <annoSet ID="6549195"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Victim"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Victim"/>
+                <annoSet ID="6549195"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Killer"/>
+            <FE name="Purpose"/>
+            <FE name="Victim"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Killer"/>
+                <valenceUnit GF="Dep" PT="VPto" FE="Purpose"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Victim"/>
+                <annoSet ID="6549195"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-NP-T-PPin-(1)"/>
+    <subCorpus name="02-NP-T-PP-(1)"/>
+    <subCorpus name="03-NP-T-NP-(1)"/>
+    <subCorpus name="other-matched-(1)"/>
+    <subCorpus name="other-unmatched-(1)"/>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23733" sentNo="2" paragNo="27" aPos="0" ID="4102447">
+            <text>Hundreds of millions of birds around the world have been destroyed to try to contain the disease .</text>
+            <annotationSet cDate="08/17/2007 03:24:54 PDT Fri" status="UNANN" ID="6546229">
+                <layer rank="1" name="PENN">
+                    <label end="7" start="0" name="nns"/>
+                    <label end="10" start="9" name="in"/>
+                    <label end="19" start="12" name="nns"/>
+                    <label end="22" start="21" name="in"/>
+                    <label end="28" start="24" name="nns"/>
+                    <label end="35" start="30" name="in"/>
+                    <label end="39" start="37" name="dt"/>
+                    <label end="45" start="41" name="nn"/>
+                    <label end="50" start="47" name="VHP"/>
+                    <label end="55" start="52" name="VBN"/>
+                    <label end="65" start="57" name="VVN"/>
+                    <label end="68" start="67" name="to"/>
+                    <label end="72" start="70" name="VV"/>
+                    <label end="75" start="74" name="to"/>
+                    <label end="83" start="77" name="VV"/>
+                    <label end="87" start="85" name="dt"/>
+                    <label end="95" start="89" name="nn"/>
+                    <label end="97" start="97" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="10" start="9" name="NT"/>
+                    <label end="22" start="21" name="NT"/>
+                    <label end="39" start="37" name="NT"/>
+                    <label end="50" start="47" name="NT"/>
+                    <label end="55" start="52" name="NT"/>
+                    <label end="68" start="67" name="NT"/>
+                    <label end="75" start="74" name="NT"/>
+                    <label end="87" start="85" name="NT"/>
+                    <label end="97" start="97" name="NT"/>
+                    <label end="28" start="24" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/29/2007 03:33:13 PDT Mon" status="MANUAL" ID="6549195">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="65" start="57" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="4451" end="45" start="0" name="Victim"/>
+                    <label cBy="KmG" feID="4450" itype="CNI" name="Killer"/>
+                    <label cBy="KmG" feID="4453" end="95" start="67" name="Purpose"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="45" start="0" name="Ext"/>
+                    <label end="95" start="67" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="45" start="0" name="NP"/>
+                    <label end="95" start="67" name="VPto"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

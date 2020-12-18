@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="atrocious.a" ID="17263" frame="Social_interaction_evaluation" frameID="372" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Affect" name="Affected_party"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Beh" name="Behavior"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Eval" name="Evaluee"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="Exp" name="Expressor"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core-Unexpressed" abbrev="jud" name="Judge"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manner" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Gr" name="Topic"/>
+        </frame>
+    </header>
+    <definition>FN: extremely unpleasent</definition>
+    <lexeme POS="A" name="atrocious"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Affected_party"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Affected_party"/>
+                <annoSet ID="6646414"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Evaluee"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Evaluee"/>
+                <annoSet ID="6646414"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Judge"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Judge"/>
+                <annoSet ID="6646414"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Affected_party"/>
+            <FE name="Evaluee"/>
+            <FE name="Judge"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Affected_party"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Evaluee"/>
+                <valenceUnit GF="" PT="INI" FE="Judge"/>
+                <annoSet ID="6646414"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="8" paragNo="39" aPos="0" ID="4148543">
+            <text>I have heard that he was atrocious .</text>
+            <annotationSet cDate="04/30/2013 05:22:25 PDT Tue" status="UNANN" ID="6646412">
+                <layer rank="1" name="PENN">
+                    <label end="0" start="0" name="PRP"/>
+                    <label end="5" start="2" name="vbp"/>
+                    <label end="11" start="7" name="VBN"/>
+                    <label end="16" start="13" name="in"/>
+                    <label end="19" start="18" name="PRP"/>
+                    <label end="23" start="21" name="VBD"/>
+                    <label end="33" start="25" name="jj"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:22:25 PDT Tue" status="MANUAL" ID="6646414">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="33" start="25" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="3336" end="19" start="18" name="Evaluee"/>
+                    <label cBy="EGp" feID="3337" itype="INI" name="Affected_party"/>
+                    <label cBy="EGp" feID="6393" itype="INI" name="Judge"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="19" start="18" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="19" start="18" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

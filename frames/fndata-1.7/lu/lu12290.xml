@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Force" POS="N" name="armed forces.n" ID="12290" frame="Military" frameID="1514" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="North Korea Chemical Overview" name="NorthKorea_ChemicalOverview" ID="23611"/>
+        </corpus>
+        <corpus description="MASC" name="MASC" ID="150">
+            <document description="Examples of the lemma force from the MASC project for FN annotation" name="force" ID="21958"/>
+        </corpus>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="wsj_1640.mrg-NEW" name="wsj_1640.mrg-NEW" ID="23727"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="dom" name="Domain"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="for" name="Force"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="goa" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="mem" name="Members"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="per" name="Period_of_existence"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="pos" name="Possessor"/>
+        </frame>
+    </header>
+    <definition>FN: the army, navy, and air force.</definition>
+    <lexeme order="1" headword="false" breakBefore="false" POS="A" name="armed"/>
+    <lexeme order="2" headword="true" breakBefore="false" POS="N" name="forces"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Domain"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Domain"/>
+                <annoSet ID="2614870"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Force"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="DEN" FE="Force"/>
+                <annoSet ID="2614870"/>
+                <annoSet ID="6536069"/>
+                <annoSet ID="6549059"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Possessor"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Possessor"/>
+                <annoSet ID="2614870"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Domain"/>
+            <FE name="Force"/>
+            <FE name="Possessor"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Domain"/>
+                <valenceUnit GF="" PT="DEN" FE="Force"/>
+                <valenceUnit GF="" PT="INI" FE="Possessor"/>
+                <annoSet ID="2614870"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="2">
+            <FE name="Force"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Force"/>
+                <annoSet ID="6536069"/>
+                <annoSet ID="6549059"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="150" docID="21958" sentNo="7" paragNo="10" aPos="0" ID="1563516">
+            <text>because even if you said okay you know armed forces could have them</text>
+            <annotationSet cDate="06/04/2010 01:58:29 PDT Fri" status="UNANN" ID="2568786">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="in"/>
+                    <label end="11" start="8" name="rb"/>
+                    <label end="14" start="13" name="in"/>
+                    <label end="18" start="16" name="PP"/>
+                    <label end="23" start="20" name="VVD"/>
+                    <label end="28" start="25" name="jj"/>
+                    <label end="32" start="30" name="PP"/>
+                    <label end="37" start="34" name="VVP"/>
+                    <label end="43" start="39" name="jj"/>
+                    <label end="50" start="45" name="nns"/>
+                    <label end="56" start="52" name="md"/>
+                    <label end="61" start="58" name="VH"/>
+                    <label end="66" start="63" name="PP"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="50" start="39" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="0" name="NT"/>
+                    <label end="11" start="8" name="NT"/>
+                    <label end="14" start="13" name="NT"/>
+                    <label end="18" start="16" name="NT"/>
+                    <label end="32" start="30" name="NT"/>
+                    <label end="56" start="52" name="NT"/>
+                    <label end="66" start="63" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/10/2010 02:31:46 PST Wed" status="MANUAL" ID="2614870">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="50" start="45" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="8253" end="50" start="45" name="Force"/>
+                    <label cBy="MLC" feID="8269" end="43" start="39" name="Domain"/>
+                    <label cBy="MLC" feID="8254" itype="INI" name="Possessor"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="43" start="39" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="43" start="39" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23611" sentNo="1" paragNo="19" aPos="0" ID="4099724">
+            <text>In the early 1990s -- according to reports from DPRK defectors -- the North Korean Foreign Ministry and the Ministry of the People's Armed Forces debated over whether to join the Chemical Weapons Convention ( CWC ) .</text>
+            <annotationSet cDate="06/27/2006 04:45:21 PDT Tue" status="UNANN" ID="6535932">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="11" start="7" name="jj"/>
+                    <label end="17" start="13" name="nns"/>
+                    <label end="20" start="19" name=":"/>
+                    <label end="30" start="22" name="VVG"/>
+                    <label end="33" start="32" name="to"/>
+                    <label end="41" start="35" name="nns"/>
+                    <label end="46" start="43" name="in"/>
+                    <label end="51" start="48" name="NP"/>
+                    <label end="61" start="53" name="nns"/>
+                    <label end="64" start="63" name=":"/>
+                    <label end="68" start="66" name="dt"/>
+                    <label end="74" start="70" name="NP"/>
+                    <label end="81" start="76" name="NP"/>
+                    <label end="89" start="83" name="NP"/>
+                    <label end="98" start="91" name="NP"/>
+                    <label end="102" start="100" name="cc"/>
+                    <label end="106" start="104" name="dt"/>
+                    <label end="115" start="108" name="NP"/>
+                    <label end="118" start="117" name="in"/>
+                    <label end="122" start="120" name="dt"/>
+                    <label end="131" start="124" name="NP"/>
+                    <label end="137" start="133" name="NP"/>
+                    <label end="144" start="139" name="nns"/>
+                    <label end="152" start="146" name="VVN"/>
+                    <label end="157" start="154" name="rp"/>
+                    <label end="165" start="159" name="in"/>
+                    <label end="168" start="167" name="to"/>
+                    <label end="173" start="170" name="VV"/>
+                    <label end="177" start="175" name="dt"/>
+                    <label end="186" start="179" name="NP"/>
+                    <label end="194" start="188" name="nns"/>
+                    <label end="205" start="196" name="NP"/>
+                    <label end="207" start="207" name="("/>
+                    <label end="211" start="209" name="NP"/>
+                    <label end="213" start="213" name=")"/>
+                    <label end="215" start="215" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="17" start="13" name="date"/>
+                    <label end="51" start="48" name="location"/>
+                    <label end="98" start="83" name="organization"/>
+                    <label end="144" start="108" name="organization"/>
+                    <label end="205" start="179" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="20" start="19" name="NT"/>
+                    <label end="46" start="43" name="NT"/>
+                    <label end="51" start="48" name="NT"/>
+                    <label end="64" start="63" name="NT"/>
+                    <label end="68" start="66" name="NT"/>
+                    <label end="74" start="70" name="NT"/>
+                    <label end="81" start="76" name="NT"/>
+                    <label end="89" start="83" name="NT"/>
+                    <label end="98" start="91" name="NT"/>
+                    <label end="102" start="100" name="NT"/>
+                    <label end="106" start="104" name="NT"/>
+                    <label end="115" start="108" name="NT"/>
+                    <label end="118" start="117" name="NT"/>
+                    <label end="122" start="120" name="NT"/>
+                    <label end="131" start="124" name="NT"/>
+                    <label end="157" start="154" name="NT"/>
+                    <label end="165" start="159" name="NT"/>
+                    <label end="168" start="167" name="NT"/>
+                    <label end="177" start="175" name="NT"/>
+                    <label end="186" start="179" name="NT"/>
+                    <label end="205" start="196" name="NT"/>
+                    <label end="207" start="207" name="NT"/>
+                    <label end="211" start="209" name="NT"/>
+                    <label end="213" start="213" name="NT"/>
+                    <label end="215" start="215" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/29/2006 04:05:38 PDT Thu" status="MANUAL" ID="6536069">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="137" start="133" name="Target"/>
+                    <label cBy="EGp" end="144" start="139" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="8253" end="144" start="133" name="Force"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="205" docID="23727" sentNo="1" paragNo="3" aPos="0" ID="4101848">
+            <text>The conference was jointly sponsored by the New York Institute of Technology School of Management and the Armed Forces Communications and Electronics Association , a joint industry-government trade group .</text>
+            <annotationSet cDate="08/15/2007 04:21:48 PDT Wed" status="UNANN" ID="6545606">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="13" start="4" name="nn"/>
+                    <label end="17" start="15" name="VBD"/>
+                    <label end="25" start="19" name="rb"/>
+                    <label end="35" start="27" name="VVN"/>
+                    <label end="38" start="37" name="in"/>
+                    <label end="42" start="40" name="dt"/>
+                    <label end="46" start="44" name="NP"/>
+                    <label end="51" start="48" name="NP"/>
+                    <label end="61" start="53" name="NP"/>
+                    <label end="64" start="63" name="in"/>
+                    <label end="75" start="66" name="NP"/>
+                    <label end="82" start="77" name="NP"/>
+                    <label end="85" start="84" name="in"/>
+                    <label end="96" start="87" name="NP"/>
+                    <label end="100" start="98" name="cc"/>
+                    <label end="104" start="102" name="dt"/>
+                    <label end="110" start="106" name="NP"/>
+                    <label end="117" start="112" name="NP"/>
+                    <label end="132" start="119" name="NPS"/>
+                    <label end="136" start="134" name="cc"/>
+                    <label end="148" start="138" name="NPS"/>
+                    <label end="160" start="150" name="NP"/>
+                    <label end="162" start="162" name=","/>
+                    <label end="164" start="164" name="dt"/>
+                    <label end="170" start="166" name="jj"/>
+                    <label end="190" start="172" name="jj"/>
+                    <label end="196" start="192" name="nn"/>
+                    <label end="202" start="198" name="nn"/>
+                    <label end="204" start="204" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="96" start="44" name="organization"/>
+                    <label end="160" start="106" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="17" start="15" name="NT"/>
+                    <label end="25" start="19" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="42" start="40" name="NT"/>
+                    <label end="46" start="44" name="NT"/>
+                    <label end="51" start="48" name="NT"/>
+                    <label end="64" start="63" name="NT"/>
+                    <label end="75" start="66" name="NT"/>
+                    <label end="85" start="84" name="NT"/>
+                    <label end="96" start="87" name="NT"/>
+                    <label end="100" start="98" name="NT"/>
+                    <label end="104" start="102" name="NT"/>
+                    <label end="132" start="119" name="NT"/>
+                    <label end="136" start="134" name="NT"/>
+                    <label end="148" start="138" name="NT"/>
+                    <label end="160" start="150" name="NT"/>
+                    <label end="162" start="162" name="NT"/>
+                    <label end="164" start="164" name="NT"/>
+                    <label end="204" start="204" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/26/2007 04:33:11 PDT Fri" status="MANUAL" ID="6549059">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="110" start="106" name="Target"/>
+                    <label cBy="EGp" end="117" start="112" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="8253" end="117" start="106" name="Force"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

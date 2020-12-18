@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="beginner.n" ID="4450" frame="Activity_start" frameID="146" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="AQUAINT Knowledge-Based Evaluation Texts" name="KBEval" ID="185">
+            <document description="LCC-M" name="LCC-M" ID="23578"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Act" name="Activity"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Age" name="Agent"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="Cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Co-t" name="Co-timed_event"/>
+            <FE fgColor="000000" bgColor="9F79EE" type="Extra-Thematic" abbrev="Cf" name="Communicative_force"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="Con" name="Concessive"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Extra-Thematic" abbrev="Coe" name="Containing_event"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Depict" name="Depictive"/>
+            <FE fgColor="000000" bgColor="7CCD7C" type="Extra-Thematic" abbrev="Eve" name="Event_description"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Extra-Thematic" abbrev="New" name="New_situation"/>
+            <FE fgColor="000000" bgColor="FF69B4" type="Extra-Thematic" abbrev="Par" name="Particular_iteration"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: performer of the first part of an activity</definition>
+    <lexeme POS="N" name="beginner"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Activity"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Activity"/>
+                <annoSet ID="6533089"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Agent"/>
+                <annoSet ID="6533089"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Activity"/>
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Activity"/>
+                <valenceUnit GF="" PT="DEN" FE="Agent"/>
+                <annoSet ID="6533089"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="185" docID="23578" sentNo="2" paragNo="10" aPos="0" ID="4098825">
+            <text>The mistake most beginners make is in loading too much paint on the bristles .</text>
+            <annotationSet cDate="10/05/2005 01:34:06 PDT Wed" status="UNANN" ID="6531566">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="10" start="4" name="nn"/>
+                    <label end="15" start="12" name="jjs"/>
+                    <label end="25" start="17" name="nns"/>
+                    <label end="30" start="27" name="VVP"/>
+                    <label end="33" start="32" name="VBZ"/>
+                    <label end="36" start="35" name="in"/>
+                    <label end="44" start="38" name="VVG"/>
+                    <label end="48" start="46" name="rb"/>
+                    <label end="53" start="50" name="rb"/>
+                    <label end="59" start="55" name="VV"/>
+                    <label end="62" start="61" name="in"/>
+                    <label end="66" start="64" name="dt"/>
+                    <label end="75" start="68" name="VVZ"/>
+                    <label end="77" start="77" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="25" start="17" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="33" start="32" name="NT"/>
+                    <label end="36" start="35" name="NT"/>
+                    <label end="48" start="46" name="NT"/>
+                    <label end="53" start="50" name="NT"/>
+                    <label end="62" start="61" name="NT"/>
+                    <label end="66" start="64" name="NT"/>
+                    <label end="77" start="77" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/07/2005 03:57:50 PDT Fri" status="MANUAL" ID="6533089">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="25" start="17" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="2542" end="25" start="17" name="Agent"/>
+                    <label cBy="JKR" feID="2085" itype="DNI" name="Activity"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

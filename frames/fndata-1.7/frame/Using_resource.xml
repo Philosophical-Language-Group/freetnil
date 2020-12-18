@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="AlK" cDate="02/18/2011 02:46:39 PST Fri" name="Using_resource" ID="2480" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;An &lt;fen&gt;Agent&lt;/fen&gt; has access to a finite amount of some &lt;fen&gt;Resource&lt;/fen&gt; and uses it in some way to complete a &lt;fen&gt;Purpose&lt;/fen&gt;. The specific &lt;fen&gt;Portion&lt;/fen&gt; of the &lt;fen&gt;Resource&lt;/fen&gt; may be stated, and after the &lt;fen&gt;Resource&lt;/fen&gt; is spent, it is no longer available to the &lt;fen&gt;Agent&lt;/fen&gt;. The &lt;fen&gt;Means&lt;/fen&gt; by which the &lt;fen&gt;Resource&lt;/fen&gt; is used may be mentioned, but it is often implied by the stated Purpose or understood based on what the &lt;fen&gt;Resource&lt;/fen&gt; is.
+
+&lt;ex&gt;&lt;fex name="Agent"&gt;I&lt;/fex&gt; &lt;t&gt;used&lt;/t&gt; &lt;fex name="Portion"&gt;half&lt;/fex&gt; &lt;fex name="Resource"&gt;of the bag of dirt&lt;/fex&gt; &lt;fex name="Purpose"&gt;to plant the roses&lt;/fex&gt;.&lt;/ex&gt;
+&lt;ex&gt;&lt;fex name="Agent"&gt;She&lt;/fex&gt; just &lt;t&gt;spends&lt;/t&gt; &lt;fex name="Resource"&gt;all her time&lt;/fex&gt; &lt;fex name="Purpose"&gt;sitting in front of the television&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="AlK" cDate="02/18/2011 02:46:54 PST Fri" abbrev="" name="Agent" ID="14310">
+        <definition>&lt;def-root&gt;The person who depletes a Resource to achieve some Goal&lt;/def-root&gt;</definition>
+        <semType name="Sentient" ID="5"/>
+    </FE>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Core" cBy="AlK" cDate="02/18/2011 04:11:03 PST Fri" abbrev="" name="Resource" ID="14311">
+        <definition>&lt;def-root&gt;The exhaustible commodity that the &lt;fen&gt;Agent&lt;/fen&gt; has access to.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="800080" fgColor="FFFFFF" coreType="Core" cBy="AlK" cDate="02/18/2011 04:13:02 PST Fri" abbrev="" name="Purpose" ID="14312">
+        <definition>&lt;def-root&gt;What the &lt;fen&gt;Agent&lt;/fen&gt; is attempting to achieve by using the &lt;fen&gt;Resource&lt;/fen&gt;.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Core" cBy="AlK" cDate="02/18/2011 04:14:29 PST Fri" abbrev="" name="Portion" ID="14313">
+        <definition>&lt;def-root&gt;The amount of the &lt;fen&gt;Resource&lt;/fen&gt; that the &lt;fen&gt;Agent&lt;/fen&gt; uses to achieve the &lt;fen&gt;Purpose&lt;/fen&gt;.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="A52A2A" fgColor="FFFFFF" coreType="Core" cBy="AlK" cDate="02/18/2011 04:25:06 PST Fri" abbrev="" name="Means" ID="14314">
+        <definition>&lt;def-root&gt;A more specific description of how the &lt;fen&gt;Purpose&lt;/fen&gt; is achieved by spending the &lt;fen&gt;Resource&lt;/fen&gt;.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FF69B4" fgColor="FFFFFF" coreType="Peripheral" cBy="AlK" cDate="02/18/2011 04:28:05 PST Fri" abbrev="" name="Manner" ID="14315">
+        <definition>&lt;def-root&gt;Any description of the intentional act which is not covered by more specific FEs, including secondary effects (&lt;ment&gt;quietly, loudly&lt;/ment&gt;), and general descriptions comparing events (&lt;ment&gt;the same way&lt;/ment&gt;). In addition, it may indicate salient characteristics of an &lt;fen&gt;Agent&lt;/fen&gt; that also affect the action (&lt;ment&gt; deliberately, eagerly, carefully&lt;/ment&gt;). 
+&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="006400" fgColor="FFFFFF" coreType="Peripheral" cBy="AlK" cDate="02/18/2011 04:35:55 PST Fri" abbrev="" name="Place" ID="14316">
+        <definition>&lt;def-root&gt;The physical location where the &lt;fen&gt;Resource&lt;/fen&gt; is used.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Peripheral" cBy="AlK" cDate="02/18/2011 04:41:15 PST Fri" abbrev="" name="Time" ID="14317">
+        <definition>&lt;def-root&gt;The time at which the &lt;fen&gt;Resource&lt;/fen&gt; is used.&lt;/def-root&gt;</definition>
+    </FE>
+    <FEcoreSet>
+        <memberFE name="Resource" ID="14311"/>
+        <memberFE name="Portion" ID="14313"/>
+    </FEcoreSet>
+    <FEcoreSet>
+        <memberFE name="Means" ID="14314"/>
+        <memberFE name="Purpose" ID="14312"/>
+    </FEcoreSet>
+    <frameRelation type="Inherits from"/>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses"/>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="Created" POS="V" name="use.v" ID="16222" lemmaID="42557" cBy="AlK" cDate="02/18/2011 04:46:01 PST Fri">
+        <definition>FN: deplete a portion of an exhaustible commodity</definition>
+        <sentenceCount annotated="13" total="13"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="use"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="spend.v" ID="16289" lemmaID="37291" cBy="AlK" cDate="03/31/2011 11:14:28 PDT Thu">
+        <definition>FN: expend a portion of a commodity</definition>
+        <sentenceCount annotated="2" total="2"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="spend"/>
+    </lexUnit>
+</frame>

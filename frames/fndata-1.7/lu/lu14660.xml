@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="turn.n" ID="14660" frame="Temporal_subregion" frameID="1470" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Las Vegas" name="HistoryOfLasVegas" ID="23691"/>
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="subpar" name="Subpart"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="subpp" name="Subpart_property"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="tim" name="Time_period"/>
+        </frame>
+    </header>
+    <definition>FN: point at which one century ends and the next century begins. </definition>
+    <lexeme POS="N" name="turn"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Subpart"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Subpart"/>
+                <annoSet ID="6551560"/>
+                <annoSet ID="6559482"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Time_period"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Time_period"/>
+                <annoSet ID="6551560"/>
+                <annoSet ID="6559482"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Subpart"/>
+            <FE name="Time_period"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Subpart"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Time_period"/>
+                <annoSet ID="6551560"/>
+                <annoSet ID="6559482"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23691" sentNo="1" paragNo="15" aPos="0" ID="4101065">
+            <text>At the turn of the 19th century Los Angeles and Salt Lake City were among the burgeoning metropolises of the new American West .</text>
+            <annotationSet cDate="03/12/2007 02:46:48 PDT Mon" status="UNANN" ID="6541858">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="10" start="7" name="nn"/>
+                    <label end="13" start="12" name="in"/>
+                    <label end="17" start="15" name="dt"/>
+                    <label end="22" start="19" name="jj"/>
+                    <label end="30" start="24" name="nn"/>
+                    <label end="34" start="32" name="NP"/>
+                    <label end="42" start="36" name="NP"/>
+                    <label end="46" start="44" name="cc"/>
+                    <label end="51" start="48" name="NP"/>
+                    <label end="56" start="53" name="NP"/>
+                    <label end="61" start="58" name="NP"/>
+                    <label end="66" start="63" name="VBD"/>
+                    <label end="72" start="68" name="in"/>
+                    <label end="76" start="74" name="dt"/>
+                    <label end="87" start="78" name="VVG"/>
+                    <label end="100" start="89" name="nns"/>
+                    <label end="103" start="102" name="in"/>
+                    <label end="107" start="105" name="dt"/>
+                    <label end="111" start="109" name="jj"/>
+                    <label end="120" start="113" name="NP"/>
+                    <label end="125" start="122" name="NP"/>
+                    <label end="127" start="127" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="30" start="19" name="date"/>
+                    <label end="42" start="32" name="location"/>
+                    <label end="61" start="48" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="13" start="12" name="NT"/>
+                    <label end="17" start="15" name="NT"/>
+                    <label end="34" start="32" name="NT"/>
+                    <label end="42" start="36" name="NT"/>
+                    <label end="46" start="44" name="NT"/>
+                    <label end="51" start="48" name="NT"/>
+                    <label end="56" start="53" name="NT"/>
+                    <label end="61" start="58" name="NT"/>
+                    <label end="66" start="63" name="NT"/>
+                    <label end="76" start="74" name="NT"/>
+                    <label end="103" start="102" name="NT"/>
+                    <label end="107" start="105" name="NT"/>
+                    <label end="127" start="127" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/16/2008 02:33:18 PST Wed" status="MANUAL" ID="6551560">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="10" start="7" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="8053" end="10" start="7" name="Subpart"/>
+                    <label cBy="KmG" feID="8055" end="30" start="12" name="Time_period"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="30" start="12" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="30" start="12" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23771" sentNo="2" paragNo="50" aPos="0" ID="4105974">
+            <text>Kowloon 's main street was created by Sir Matthew Nathan when he was governor of Hong Kong at the turn of the 19th century .</text>
+            <annotationSet cDate="07/25/2008 01:18:46 PDT Fri" status="UNANN" ID="6555064">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="NP"/>
+                    <label end="9" start="8" name="POS"/>
+                    <label end="14" start="11" name="jj"/>
+                    <label end="21" start="16" name="nn"/>
+                    <label end="25" start="23" name="VBD"/>
+                    <label end="33" start="27" name="VVN"/>
+                    <label end="36" start="35" name="in"/>
+                    <label end="40" start="38" name="NP"/>
+                    <label end="48" start="42" name="NP"/>
+                    <label end="55" start="50" name="NP"/>
+                    <label end="60" start="57" name="wrb"/>
+                    <label end="63" start="62" name="PP"/>
+                    <label end="67" start="65" name="VBD"/>
+                    <label end="76" start="69" name="nn"/>
+                    <label end="79" start="78" name="in"/>
+                    <label end="84" start="81" name="NP"/>
+                    <label end="89" start="86" name="NP"/>
+                    <label end="92" start="91" name="in"/>
+                    <label end="96" start="94" name="dt"/>
+                    <label end="101" start="98" name="nn"/>
+                    <label end="104" start="103" name="in"/>
+                    <label end="108" start="106" name="dt"/>
+                    <label end="113" start="110" name="jj"/>
+                    <label end="121" start="115" name="nn"/>
+                    <label end="123" start="123" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="6" start="0" name="location"/>
+                    <label end="55" start="42" name="person"/>
+                    <label end="89" start="81" name="location"/>
+                    <label end="121" start="110" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="0" name="NT"/>
+                    <label end="9" start="8" name="NT"/>
+                    <label end="25" start="23" name="NT"/>
+                    <label end="36" start="35" name="NT"/>
+                    <label end="40" start="38" name="NT"/>
+                    <label end="48" start="42" name="NT"/>
+                    <label end="55" start="50" name="NT"/>
+                    <label end="60" start="57" name="NT"/>
+                    <label end="63" start="62" name="NT"/>
+                    <label end="67" start="65" name="NT"/>
+                    <label end="79" start="78" name="NT"/>
+                    <label end="84" start="81" name="NT"/>
+                    <label end="89" start="86" name="NT"/>
+                    <label end="92" start="91" name="NT"/>
+                    <label end="96" start="94" name="NT"/>
+                    <label end="104" start="103" name="NT"/>
+                    <label end="108" start="106" name="NT"/>
+                    <label end="123" start="123" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/08/2010 05:45:22 PDT Thu" status="MANUAL" ID="6559482">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="101" start="98" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="8053" end="101" start="98" name="Subpart"/>
+                    <label cBy="MLC" feID="8055" end="121" start="103" name="Time_period"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="121" start="103" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="121" start="103" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

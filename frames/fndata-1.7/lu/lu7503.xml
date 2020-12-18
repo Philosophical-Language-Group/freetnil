@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="acquisition [entity].n" ID="7503" frame="Getting" frameID="179" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="acquisition.n" name="acquisition.n" ID="25735"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="" name="Beneficiary"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Extra-Thematic" abbrev="con" name="Concessive"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="Rec" name="Recipient"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Extra-Thematic" abbrev="Result" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Source" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="Thm" name="Theme"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD:  a recently acquired asset or object.</definition>
+    <lexeme POS="N" name="acquisition"/>
+    <valences>
+        <governor type="Ctrlr" lemma="come">
+            <annoSet ID="6773617"/>
+        </governor>
+        <FERealization total="2">
+            <FE name="Recipient"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Recipient"/>
+                <annoSet ID="6773617"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Recipient"/>
+                <annoSet ID="6773621"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Source"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[from]" FE="Source"/>
+                <annoSet ID="6773617"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Theme"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Theme"/>
+                <annoSet ID="6773617"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Theme"/>
+                <annoSet ID="6773621"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Recipient"/>
+            <FE name="Source"/>
+            <FE name="Theme"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Recipient"/>
+                <valenceUnit GF="Dep" PT="PP[from]" FE="Source"/>
+                <valenceUnit GF="Dep" PT="N" FE="Theme"/>
+                <annoSet ID="6773617"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Recipient"/>
+            <FE name="Theme"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Recipient"/>
+                <valenceUnit GF="Dep" PT="NP" FE="Theme"/>
+                <annoSet ID="6773621"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25735" sentNo="9" paragNo="9" aPos="0" ID="4216717">
+            <text>Half of the annual global tropical timber acquisition comes from Borneo .</text>
+            <annotationSet cDate="02/29/2016 05:33:41 PST Mon" status="UNANN" ID="6773501">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="nn"/>
+                    <label end="6" start="5" name="in"/>
+                    <label end="10" start="8" name="dt"/>
+                    <label end="17" start="12" name="jj"/>
+                    <label end="24" start="19" name="jj"/>
+                    <label end="33" start="26" name="jj"/>
+                    <label end="40" start="35" name="nn"/>
+                    <label end="52" start="42" name="nn"/>
+                    <label end="58" start="54" name="VVZ"/>
+                    <label end="63" start="60" name="in"/>
+                    <label end="70" start="65" name="NP"/>
+                    <label end="72" start="72" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="70" start="65" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="5" name="NT"/>
+                    <label end="10" start="8" name="NT"/>
+                    <label end="63" start="60" name="NT"/>
+                    <label end="70" start="65" name="NT"/>
+                    <label end="72" start="72" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/29/2016 06:57:57 PST Mon" status="MANUAL" ID="6773617">
+                <layer rank="1" name="Target">
+                    <label cBy="HPh" end="52" start="42" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="HPh" feID="1406" itype="INI" name="Recipient"/>
+                    <label cBy="HPh" feID="1407" end="40" start="26" name="Theme"/>
+                    <label cBy="HPh" feID="1408" end="70" start="60" name="Source"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="40" start="26" name="Dep"/>
+                    <label end="70" start="60" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="40" start="26" name="N"/>
+                    <label end="70" start="60" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="58" start="54" name="Ctrlr"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="246" docID="25735" sentNo="4" paragNo="8" aPos="0" ID="4216702">
+            <text>Also among Gates 's private acquisitions is the Codex Leicester , a collection of writings by Leonardo da Vinci , which Gates bought for $30.8 and nbsp ; million at an auction in 1994 .</text>
+            <annotationSet cDate="02/29/2016 05:33:36 PST Mon" status="UNANN" ID="6773486">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="rb"/>
+                    <label end="9" start="5" name="in"/>
+                    <label end="15" start="11" name="NP"/>
+                    <label end="18" start="17" name="POS"/>
+                    <label end="26" start="20" name="jj"/>
+                    <label end="39" start="28" name="nns"/>
+                    <label end="42" start="41" name="VBZ"/>
+                    <label end="46" start="44" name="dt"/>
+                    <label end="52" start="48" name="NP"/>
+                    <label end="62" start="54" name="NP"/>
+                    <label end="64" start="64" name=","/>
+                    <label end="66" start="66" name="dt"/>
+                    <label end="77" start="68" name="nn"/>
+                    <label end="80" start="79" name="in"/>
+                    <label end="89" start="82" name="nns"/>
+                    <label end="92" start="91" name="in"/>
+                    <label end="101" start="94" name="NP"/>
+                    <label end="104" start="103" name="NP"/>
+                    <label end="110" start="106" name="NP"/>
+                    <label end="112" start="112" name=","/>
+                    <label end="118" start="114" name="wdt"/>
+                    <label end="124" start="120" name="NP"/>
+                    <label end="131" start="126" name="VVD"/>
+                    <label end="135" start="133" name="in"/>
+                    <label end="141" start="137" name="nn"/>
+                    <label end="145" start="143" name="cc"/>
+                    <label end="150" start="147" name="nn"/>
+                    <label end="152" start="152" name=":"/>
+                    <label end="160" start="154" name="cd"/>
+                    <label end="163" start="162" name="in"/>
+                    <label end="166" start="165" name="dt"/>
+                    <label end="174" start="168" name="nn"/>
+                    <label end="177" start="176" name="in"/>
+                    <label end="182" start="179" name="cd"/>
+                    <label end="184" start="184" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="15" start="11" name="person"/>
+                    <label end="62" start="48" name="location"/>
+                    <label end="110" start="94" name="person"/>
+                    <label end="124" start="120" name="person"/>
+                    <label end="141" start="137" name="money"/>
+                    <label end="182" start="179" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="9" start="5" name="NT"/>
+                    <label end="15" start="11" name="NT"/>
+                    <label end="18" start="17" name="NT"/>
+                    <label end="42" start="41" name="NT"/>
+                    <label end="46" start="44" name="NT"/>
+                    <label end="52" start="48" name="NT"/>
+                    <label end="62" start="54" name="NT"/>
+                    <label end="64" start="64" name="NT"/>
+                    <label end="66" start="66" name="NT"/>
+                    <label end="80" start="79" name="NT"/>
+                    <label end="92" start="91" name="NT"/>
+                    <label end="101" start="94" name="NT"/>
+                    <label end="104" start="103" name="NT"/>
+                    <label end="110" start="106" name="NT"/>
+                    <label end="112" start="112" name="NT"/>
+                    <label end="118" start="114" name="NT"/>
+                    <label end="124" start="120" name="NT"/>
+                    <label end="135" start="133" name="NT"/>
+                    <label end="145" start="143" name="NT"/>
+                    <label end="152" start="152" name="NT"/>
+                    <label end="160" start="154" name="NT"/>
+                    <label end="163" start="162" name="NT"/>
+                    <label end="166" start="165" name="NT"/>
+                    <label end="177" start="176" name="NT"/>
+                    <label end="182" start="179" name="NT"/>
+                    <label end="184" start="184" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/29/2016 07:06:55 PST Mon" status="MANUAL" ID="6773621">
+                <layer rank="1" name="Target">
+                    <label cBy="HPh" end="39" start="28" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="HPh" feID="1406" end="18" start="11" name="Recipient"/>
+                    <label cBy="HPh" feID="1407" end="62" start="44" name="Theme"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="18" start="11" name="Gen"/>
+                    <label end="62" start="44" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="18" start="11" name="Poss"/>
+                    <label end="62" start="44" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="42" start="41" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

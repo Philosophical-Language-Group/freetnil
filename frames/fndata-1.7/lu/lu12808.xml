@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="get.v" ID="12808" frame="Board_vehicle" frameID="1633" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="AQUAINT Knowledge-Based Evaluation Texts" name="KBEval" ID="185">
+            <document description="atm" name="atm" ID="23577"/>
+        </corpus>
+        <frame>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Extra-Thematic" abbrev="CT" name="Cotheme"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="dfs" name="Duration_of_final_state"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="" name="Path"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="" name="Source"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="tra" name="Traveller"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="veh" name="Vehicle"/>
+        </frame>
+    </header>
+    <definition>FN: enter or mount a vehicle</definition>
+    <lexeme POS="V" name="get"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Traveller"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Traveller"/>
+                <annoSet ID="6672775"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Traveller"/>
+                <annoSet ID="6533410"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Vehicle"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Vehicle"/>
+                <annoSet ID="6672775"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[on]" FE="Vehicle"/>
+                <annoSet ID="6533410"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Traveller"/>
+            <FE name="Vehicle"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Traveller"/>
+                <valenceUnit GF="" PT="DNI" FE="Vehicle"/>
+                <annoSet ID="6672775"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Traveller"/>
+                <valenceUnit GF="Dep" PT="PP[on]" FE="Vehicle"/>
+                <annoSet ID="6533410"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="185" docID="23577" sentNo="3" paragNo="17" aPos="0" ID="4098719">
+            <text>QN : Can he just get on a plane and fly to Paris ?</text>
+            <annotationSet cDate="10/05/2005 01:33:27 PDT Wed" status="UNANN" ID="6531460">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="NP"/>
+                    <label end="3" start="3" name=":"/>
+                    <label end="7" start="5" name="md"/>
+                    <label end="10" start="9" name="PP"/>
+                    <label end="15" start="12" name="rb"/>
+                    <label end="19" start="17" name="VVP"/>
+                    <label end="22" start="21" name="in"/>
+                    <label end="24" start="24" name="dt"/>
+                    <label end="30" start="26" name="nn"/>
+                    <label end="34" start="32" name="cc"/>
+                    <label end="38" start="36" name="VV"/>
+                    <label end="41" start="40" name="to"/>
+                    <label end="47" start="43" name="NP"/>
+                    <label end="49" start="49" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="47" start="43" name="location"/>
+                    <label end="30" start="24" name="VEH"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="3" start="3" name="NT"/>
+                    <label end="7" start="5" name="NT"/>
+                    <label end="10" start="9" name="NT"/>
+                    <label end="15" start="12" name="NT"/>
+                    <label end="22" start="21" name="NT"/>
+                    <label end="24" start="24" name="NT"/>
+                    <label end="34" start="32" name="NT"/>
+                    <label end="41" start="40" name="NT"/>
+                    <label end="47" start="43" name="NT"/>
+                    <label end="49" start="49" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/14/2005 04:29:04 PDT Fri" status="MANUAL" ID="6533410">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="19" start="17" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="9109" end="10" start="9" name="Traveller"/>
+                    <label cBy="JKR" feID="9110" end="30" start="21" name="Vehicle"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="10" start="9" name="Ext"/>
+                    <label end="30" start="21" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="10" start="9" name="NP"/>
+                    <label end="30" start="21" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

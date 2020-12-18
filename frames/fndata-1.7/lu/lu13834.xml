@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="lowering sky.n" ID="13834" frame="Weather" frameID="303" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Dublin" name="IntroOfDublin" ID="23652"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="P" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Spec" name="Specification"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="T" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: weather in which dark, low clouds presage a storm.</definition>
+    <lexeme order="1" headword="false" breakBefore="false" POS="A" name="lowering"/>
+    <lexeme order="2" headword="true" breakBefore="true" POS="N" name="sky"/>
+    <valences>
+        <governor type="Sup" lemma="under">
+            <annoSet ID="6541419"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Place"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Place"/>
+                <annoSet ID="6541419"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Place"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Place"/>
+                <annoSet ID="6541419"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23652" sentNo="3" paragNo="9" aPos="0" ID="4100608">
+            <text>Buildings seem to transform themselves depending on the light ; Dublin under a lowering sky is a different place from Dublin in sunshine .</text>
+            <annotationSet cDate="11/14/2006 04:25:20 PST Tue" status="UNANN" ID="6539607">
+                <layer rank="1" name="PENN">
+                    <label end="8" start="0" name="nns"/>
+                    <label end="13" start="10" name="VVP"/>
+                    <label end="16" start="15" name="to"/>
+                    <label end="26" start="18" name="VV"/>
+                    <label end="37" start="28" name="PP"/>
+                    <label end="47" start="39" name="VVG"/>
+                    <label end="50" start="49" name="in"/>
+                    <label end="54" start="52" name="dt"/>
+                    <label end="60" start="56" name="nn"/>
+                    <label end="62" start="62" name=":"/>
+                    <label end="69" start="64" name="NP"/>
+                    <label end="75" start="71" name="in"/>
+                    <label end="77" start="77" name="dt"/>
+                    <label end="86" start="79" name="VVG"/>
+                    <label end="90" start="88" name="nn"/>
+                    <label end="93" start="92" name="VBZ"/>
+                    <label end="95" start="95" name="dt"/>
+                    <label end="105" start="97" name="jj"/>
+                    <label end="111" start="107" name="nn"/>
+                    <label end="116" start="113" name="in"/>
+                    <label end="123" start="118" name="NP"/>
+                    <label end="126" start="125" name="in"/>
+                    <label end="135" start="128" name="nn"/>
+                    <label end="137" start="137" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="69" start="64" name="location"/>
+                    <label end="123" start="118" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="16" start="15" name="NT"/>
+                    <label end="37" start="28" name="NT"/>
+                    <label end="50" start="49" name="NT"/>
+                    <label end="54" start="52" name="NT"/>
+                    <label end="62" start="62" name="NT"/>
+                    <label end="69" start="64" name="NT"/>
+                    <label end="77" start="77" name="NT"/>
+                    <label end="93" start="92" name="NT"/>
+                    <label end="95" start="95" name="NT"/>
+                    <label end="116" start="113" name="NT"/>
+                    <label end="123" start="118" name="NT"/>
+                    <label end="126" start="125" name="NT"/>
+                    <label end="137" start="137" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/26/2007 10:55:46 PST Mon" status="MANUAL" ID="6541419">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="86" start="79" name="Target"/>
+                    <label cBy="EGp" end="90" start="88" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="3557" end="69" start="64" name="Place"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="69" start="64" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="69" start="64" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="75" start="71" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

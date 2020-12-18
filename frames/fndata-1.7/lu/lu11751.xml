@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="reach.n" ID="11751" frame="Range" frameID="1350" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="North Korea Introduction" name="NorthKorea_Introduction" ID="23481"/>
+            <document description="Iran Missile" name="Iran_Missile" ID="23512"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="dis" name="Distance"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="eve" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="par" name="Participant"/>
+        </frame>
+    </header>
+    <definition>FN: the extent or range of an entity's application, effect, or influence</definition>
+    <lexeme POS="N" name="reach"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Distance"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Distance"/>
+                <annoSet ID="6525843"/>
+                <annoSet ID="6527720"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Instrument"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="2nd" FE="Instrument"/>
+                <annoSet ID="6527720"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Participant"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Participant"/>
+                <annoSet ID="6527720"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Participant"/>
+                <annoSet ID="6525843"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Distance"/>
+            <FE name="Instrument"/>
+            <FE name="Participant"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Distance"/>
+                <valenceUnit GF="" PT="2nd" FE="Instrument"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Participant"/>
+                <annoSet ID="6527720"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Distance"/>
+            <FE name="Participant"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Distance"/>
+                <valenceUnit GF="" PT="DNI" FE="Participant"/>
+                <annoSet ID="6525843"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23481" sentNo="4" paragNo="10" aPos="0" ID="4096501">
+            <text>North Korea also has placed thousands of artillery systems -- including multiple launch rocket systems that are particularly effective for CW delivery -- within reach of the Demilitarized Zone ( DMZ ) and Seoul . </text>
+            <annotationSet cDate="12/10/2004 02:34:54 PST Fri" status="UNANN" ID="6521565">
+                <layer rank="1" name="PENN">
+                    <label end="15" start="12" name="rb"/>
+                    <label end="26" start="21" name="VVN"/>
+                    <label end="36" start="28" name="nns"/>
+                    <label end="49" start="41" name="nn"/>
+                    <label end="57" start="51" name="nns"/>
+                    <label end="60" start="59" name=":"/>
+                    <label end="70" start="62" name="VVG"/>
+                    <label end="79" start="72" name="jj"/>
+                    <label end="86" start="81" name="nn"/>
+                    <label end="93" start="88" name="nn"/>
+                    <label end="101" start="95" name="nns"/>
+                    <label end="106" start="103" name="wdt"/>
+                    <label end="123" start="112" name="rb"/>
+                    <label end="133" start="125" name="jj"/>
+                    <label end="137" start="135" name="in"/>
+                    <label end="140" start="139" name="nn"/>
+                    <label end="149" start="142" name="nn"/>
+                    <label end="152" start="151" name=":"/>
+                    <label end="159" start="154" name="in"/>
+                    <label end="165" start="161" name="nn"/>
+                    <label end="172" start="170" name="dt"/>
+                    <label end="193" start="193" name="("/>
+                    <label end="199" start="199" name=")"/>
+                    <label end="203" start="201" name="cc"/>
+                    <label end="211" start="211" name="sent"/>
+                    <label end="4" start="0" name="NNP"/>
+                    <label end="10" start="6" name="NNP"/>
+                    <label end="19" start="17" name="VHZ"/>
+                    <label end="39" start="38" name="in"/>
+                    <label end="110" start="108" name="VBZ"/>
+                    <label end="168" start="167" name="in"/>
+                    <label end="186" start="174" name="NNP"/>
+                    <label end="191" start="188" name="NNP"/>
+                    <label end="197" start="195" name="NNP"/>
+                    <label end="209" start="205" name="NNP"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="10" start="0" name="GPE"/>
+                    <label end="57" start="41" name="WEA"/>
+                    <label end="101" start="72" name="WEA"/>
+                    <label end="140" start="139" name="WEA"/>
+                    <label end="191" start="174" name="location"/>
+                    <label end="197" start="195" name="location"/>
+                    <label end="209" start="205" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="60" start="59" name="NT"/>
+                    <label end="106" start="103" name="NT"/>
+                    <label end="137" start="135" name="NT"/>
+                    <label end="152" start="151" name="NT"/>
+                    <label end="159" start="154" name="NT"/>
+                    <label end="172" start="170" name="NT"/>
+                    <label end="193" start="193" name="NT"/>
+                    <label end="199" start="199" name="NT"/>
+                    <label end="203" start="201" name="NT"/>
+                    <label end="211" start="211" name="NT"/>
+                    <label end="15" start="12" name="NT"/>
+                    <label end="123" start="112" name="NT"/>
+                    <label end="19" start="17" name="NT"/>
+                    <label end="110" start="108" name="NT"/>
+                    <label end="168" start="167" name="NT"/>
+                    <label end="4" start="0" name="NT"/>
+                    <label end="10" start="6" name="NT"/>
+                    <label end="36" start="28" name="NT"/>
+                    <label end="140" start="139" name="NT"/>
+                    <label end="186" start="174" name="NT"/>
+                    <label end="197" start="195" name="NT"/>
+                    <label end="209" start="205" name="NT"/>
+                    <label end="39" start="38" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="05/23/2005 02:01:14 PDT Mon" status="MANUAL" ID="6525843">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="165" start="161" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="7647" end="165" start="161" name="Distance"/>
+                    <label cBy="RLG" feID="7645" itype="DNI" name="Participant"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23512" sentNo="3" paragNo="38" aPos="0" ID="4096847">
+            <text>If conditions remain favorable , it will be able to extend the reach of its ballistic missile forces to include Southern Europe , North Africa , and South Asia by 2005 - 2010 and possibly the continental United States by 2015 .</text>
+            <annotationSet cDate="02/25/2005 12:23:37 PST Fri" status="UNANN" ID="6522512">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="12" start="3" name="nns"/>
+                    <label end="19" start="14" name="VVP"/>
+                    <label end="29" start="21" name="jj"/>
+                    <label end="31" start="31" name=","/>
+                    <label end="34" start="33" name="PP"/>
+                    <label end="39" start="36" name="md"/>
+                    <label end="42" start="41" name="vb"/>
+                    <label end="47" start="44" name="jj"/>
+                    <label end="50" start="49" name="to"/>
+                    <label end="57" start="52" name="VV"/>
+                    <label end="61" start="59" name="dt"/>
+                    <label end="67" start="63" name="nn"/>
+                    <label end="70" start="69" name="in"/>
+                    <label end="74" start="72" name="PP$"/>
+                    <label end="84" start="76" name="jj"/>
+                    <label end="92" start="86" name="nn"/>
+                    <label end="99" start="94" name="nns"/>
+                    <label end="102" start="101" name="to"/>
+                    <label end="110" start="104" name="VV"/>
+                    <label end="119" start="112" name="NP"/>
+                    <label end="126" start="121" name="NP"/>
+                    <label end="128" start="128" name=","/>
+                    <label end="134" start="130" name="NP"/>
+                    <label end="141" start="136" name="NP"/>
+                    <label end="143" start="143" name=","/>
+                    <label end="147" start="145" name="cc"/>
+                    <label end="153" start="149" name="NP"/>
+                    <label end="158" start="155" name="NP"/>
+                    <label end="161" start="160" name="in"/>
+                    <label end="166" start="163" name="cd"/>
+                    <label end="168" start="168" name=":"/>
+                    <label end="173" start="170" name="cd"/>
+                    <label end="177" start="175" name="cc"/>
+                    <label end="186" start="179" name="rb"/>
+                    <label end="190" start="188" name="dt"/>
+                    <label end="202" start="192" name="jj"/>
+                    <label end="209" start="204" name="NP"/>
+                    <label end="216" start="211" name="NPS"/>
+                    <label end="219" start="218" name="in"/>
+                    <label end="224" start="221" name="cd"/>
+                    <label end="226" start="226" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="126" start="112" name="location"/>
+                    <label end="141" start="130" name="location"/>
+                    <label end="158" start="149" name="location"/>
+                    <label end="166" start="163" name="date"/>
+                    <label end="173" start="170" name="date"/>
+                    <label end="92" start="76" name="WEA"/>
+                    <label end="216" start="192" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="31" start="31" name="NT"/>
+                    <label end="34" start="33" name="NT"/>
+                    <label end="39" start="36" name="NT"/>
+                    <label end="50" start="49" name="NT"/>
+                    <label end="61" start="59" name="NT"/>
+                    <label end="70" start="69" name="NT"/>
+                    <label end="74" start="72" name="NT"/>
+                    <label end="102" start="101" name="NT"/>
+                    <label end="119" start="112" name="NT"/>
+                    <label end="126" start="121" name="NT"/>
+                    <label end="128" start="128" name="NT"/>
+                    <label end="134" start="130" name="NT"/>
+                    <label end="141" start="136" name="NT"/>
+                    <label end="143" start="143" name="NT"/>
+                    <label end="147" start="145" name="NT"/>
+                    <label end="153" start="149" name="NT"/>
+                    <label end="158" start="155" name="NT"/>
+                    <label end="161" start="160" name="NT"/>
+                    <label end="166" start="163" name="NT"/>
+                    <label end="168" start="168" name="NT"/>
+                    <label end="173" start="170" name="NT"/>
+                    <label end="177" start="175" name="NT"/>
+                    <label end="190" start="188" name="NT"/>
+                    <label end="209" start="204" name="NT"/>
+                    <label end="216" start="211" name="NT"/>
+                    <label end="219" start="218" name="NT"/>
+                    <label end="224" start="221" name="NT"/>
+                    <label end="226" start="226" name="NT"/>
+                    <label end="42" start="41" name="NT"/>
+                    <label end="186" start="179" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/10/2005 11:52:48 PDT Fri" status="MANUAL" ID="6527720">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="67" start="63" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="7647" end="67" start="63" name="Distance"/>
+                    <label cBy="RLG" feID="7645" end="99" start="69" name="Participant"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="99" start="69" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="99" start="69" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+                <layer rank="2" name="FE">
+                    <label cBy="RLG" feID="7646" end="92" start="76" name="Instrument"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="work.v" ID="14071" frame="Being_operational" frameID="1200" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Polemic Progressive Education" name="PolemicProgressiveEducation" ID="23011"/>
+        </corpus>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="WMD News 06/26/2006" name="WMDNews_062606" ID="23621"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Obj" name="Object"/>
+        </frame>
+    </header>
+    <definition>COD: (of a machine or system) function, especially properly or effectively.</definition>
+    <lexeme POS="V" name="work"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Object"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Object"/>
+                <annoSet ID="4531485"/>
+                <annoSet ID="6548400"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Object"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Object"/>
+                <annoSet ID="4531485"/>
+                <annoSet ID="6548400"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23011" sentNo="4" paragNo="14" aPos="0" ID="2824357">
+            <text>That is the way the system works .</text>
+            <annotationSet cDate="02/05/2004 08:30:10 PST Thu" status="UNANN" ID="4528352">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="6" start="5" name="VBZ"/>
+                    <label end="10" start="8" name="dt"/>
+                    <label end="14" start="12" name="nn"/>
+                    <label end="18" start="16" name="dt"/>
+                    <label end="25" start="20" name="nn"/>
+                    <label end="31" start="27" name="VVZ"/>
+                    <label end="33" start="33" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="5" name="NT"/>
+                    <label end="33" start="33" name="NT"/>
+                    <label end="3" start="0" name="NT"/>
+                    <label end="10" start="8" name="NT"/>
+                    <label end="18" start="16" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/13/2010 05:34:05 PDT Tue" status="MANUAL" ID="4531485">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="31" start="27" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="7009" end="25" start="16" name="Object"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="25" start="16" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="25" start="16" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23621" sentNo="1" paragNo="15" aPos="0" ID="4099774">
+            <text>Cyanide Gas Device `` Probably Did n't Work ''</text>
+            <annotationSet cDate="07/18/2006 02:44:59 PDT Tue" status="UNANN" ID="6536860">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="nn"/>
+                    <label end="10" start="8" name="NP"/>
+                    <label end="17" start="12" name="nn"/>
+                    <label end="20" start="19" name="``"/>
+                    <label end="29" start="22" name="rb"/>
+                    <label end="33" start="31" name="VVD"/>
+                    <label end="37" start="35" name="rb"/>
+                    <label end="42" start="39" name="VV"/>
+                    <label end="45" start="44" name="''"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="20" start="19" name="NT"/>
+                    <label end="37" start="35" name="NT"/>
+                    <label end="45" start="44" name="NT"/>
+                    <label end="6" start="0" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/17/2007 05:53:37 PDT Wed" status="MANUAL" ID="6548400">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="42" start="39" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="7009" end="17" start="0" name="Object"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="17" start="0" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="17" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="In_Use" POS="V" name="characterize.v" ID="17074" frame="Condition_symptom_relation" frameID="2718" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Peripheral" abbrev="" name="Extent"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="" name="Group"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="" name="Influence"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="" name="Medical_condition"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Patient"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="" name="Symptom"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>normal sign of a medical condition</definition>
+    <lexeme POS="V" name="characterize"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Influence"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[by]" FE="Influence"/>
+                <annoSet ID="6626631"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Medical_condition"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Medical_condition"/>
+                <annoSet ID="6626631"/>
+                <annoSet ID="6631156"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Symptom"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPing" FE="Symptom"/>
+                <annoSet ID="6626631"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[by]" FE="Symptom"/>
+                <annoSet ID="6631156"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Influence"/>
+            <FE name="Medical_condition"/>
+            <FE name="Symptom"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[by]" FE="Influence"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Medical_condition"/>
+                <valenceUnit GF="Dep" PT="VPing" FE="Symptom"/>
+                <annoSet ID="6626631"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Medical_condition"/>
+            <FE name="Symptom"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Medical_condition"/>
+                <valenceUnit GF="Dep" PT="PP[by]" FE="Symptom"/>
+                <annoSet ID="6631156"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added"/>
+</lexUnit>

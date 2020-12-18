@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Dimension" POS="A" name="thin.a" ID="18488" frame="Measurable_attributes" frameID="965" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core-Unexpressed" abbrev="" name="Attribute"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Core" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core-Unexpressed" abbrev="" name="Value"/>
+        </frame>
+    </header>
+    <definition>FN: of a relatively small distance from one side to the other</definition>
+    <lexeme POS="A" name="thin"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Degree"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Degree"/>
+                <annoSet ID="6646376"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Entity"/>
+                <annoSet ID="6646376"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Degree"/>
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Degree"/>
+                <valenceUnit GF="Head" PT="N" FE="Entity"/>
+                <annoSet ID="6646376"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="7" paragNo="38" aPos="0" ID="4148533">
+            <text>Her thin hands clenched , and her worn face blanched with the passion of her hatred .</text>
+            <annotationSet cDate="04/30/2013 05:22:10 PDT Tue" status="UNANN" ID="6646372">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="PRP$"/>
+                    <label end="7" start="4" name="jj"/>
+                    <label end="13" start="9" name="nns"/>
+                    <label end="22" start="15" name="VBD"/>
+                    <label end="28" start="26" name="cc"/>
+                    <label end="32" start="30" name="PRP$"/>
+                    <label end="37" start="34" name="jj"/>
+                    <label end="42" start="39" name="nn"/>
+                    <label end="51" start="44" name="VBN"/>
+                    <label end="56" start="53" name="in"/>
+                    <label end="60" start="58" name="dt"/>
+                    <label end="68" start="62" name="nn"/>
+                    <label end="71" start="70" name="in"/>
+                    <label end="75" start="73" name="PRP$"/>
+                    <label end="82" start="77" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:22:11 PDT Tue" status="MANUAL" ID="6646376">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="7" start="4" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="5896" end="13" start="9" name="Entity"/>
+                    <label cBy="WMcQ" feID="5899" end="7" start="4" name="Degree"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="13" start="9" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="13" start="9" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="tourism.n" ID="14825" frame="Touring" frameID="1907" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Las Vegas" name="HistoryOfLasVegas" ID="23691"/>
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+            <document description="Berlitz Intro of Jamaica" name="IntroJamaica" ID="23754"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Phen" name="Attraction"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="co-p" name="Co-participant"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="State" name="Depictive"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="Ground" name="Ground"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="" name="Particular_iteration"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="per" name="Tourist"/>
+        </frame>
+    </header>
+    <definition>FN: peoples visiting a foreign land for pleasure and with the intention of becoming more aquainted with the particularities of the area.</definition>
+    <lexeme POS="N" name="tourism"/>
+    <valences>
+        <FERealization total="3">
+            <FE name="Attraction"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Attraction"/>
+                <annoSet ID="6552199"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="" PT="INI" FE="Attraction"/>
+                <annoSet ID="6559004"/>
+                <annoSet ID="6562664"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Tourist"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="INI" FE="Tourist"/>
+                <annoSet ID="6552199"/>
+                <annoSet ID="6559004"/>
+                <annoSet ID="6562664"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="3">
+            <FE name="Attraction"/>
+            <FE name="Tourist"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Attraction"/>
+                <valenceUnit GF="" PT="INI" FE="Tourist"/>
+                <annoSet ID="6552199"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="" PT="INI" FE="Attraction"/>
+                <valenceUnit GF="" PT="INI" FE="Tourist"/>
+                <annoSet ID="6559004"/>
+                <annoSet ID="6562664"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23692" sentNo="3" paragNo="45" aPos="0" ID="4101299">
+            <text>The expansion of air travel began the age of mass tourism , and Greece along with the Aegean Islands became exciting destinations for northern Europeans escaping their damp , cool summers .</text>
+            <annotationSet cDate="03/12/2007 02:52:04 PDT Mon" status="UNANN" ID="6542092">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="12" start="4" name="nn"/>
+                    <label end="15" start="14" name="in"/>
+                    <label end="19" start="17" name="nn"/>
+                    <label end="26" start="21" name="nn"/>
+                    <label end="32" start="28" name="VVD"/>
+                    <label end="36" start="34" name="dt"/>
+                    <label end="40" start="38" name="nn"/>
+                    <label end="43" start="42" name="in"/>
+                    <label end="48" start="45" name="jj"/>
+                    <label end="56" start="50" name="nn"/>
+                    <label end="58" start="58" name=","/>
+                    <label end="62" start="60" name="cc"/>
+                    <label end="69" start="64" name="NP"/>
+                    <label end="75" start="71" name="in"/>
+                    <label end="80" start="77" name="in"/>
+                    <label end="84" start="82" name="dt"/>
+                    <label end="91" start="86" name="NP"/>
+                    <label end="99" start="93" name="NP"/>
+                    <label end="106" start="101" name="VVD"/>
+                    <label end="115" start="108" name="jj"/>
+                    <label end="128" start="117" name="nns"/>
+                    <label end="132" start="130" name="in"/>
+                    <label end="141" start="134" name="jj"/>
+                    <label end="151" start="143" name="nns"/>
+                    <label end="160" start="153" name="VVG"/>
+                    <label end="166" start="162" name="PP$"/>
+                    <label end="171" start="168" name="jj"/>
+                    <label end="173" start="173" name=","/>
+                    <label end="178" start="175" name="jj"/>
+                    <label end="186" start="180" name="nns"/>
+                    <label end="188" start="188" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="69" start="64" name="location"/>
+                    <label end="99" start="86" name="location"/>
+                    <label end="186" start="180" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="15" start="14" name="NT"/>
+                    <label end="36" start="34" name="NT"/>
+                    <label end="43" start="42" name="NT"/>
+                    <label end="58" start="58" name="NT"/>
+                    <label end="62" start="60" name="NT"/>
+                    <label end="69" start="64" name="NT"/>
+                    <label end="75" start="71" name="NT"/>
+                    <label end="80" start="77" name="NT"/>
+                    <label end="84" start="82" name="NT"/>
+                    <label end="91" start="86" name="NT"/>
+                    <label end="132" start="130" name="NT"/>
+                    <label end="166" start="162" name="NT"/>
+                    <label end="173" start="173" name="NT"/>
+                    <label end="188" start="188" name="NT"/>
+                    <label end="19" start="17" name="Nonrelational"/>
+                    <label end="128" start="117" name="Nonrelational"/>
+                    <label end="151" start="143" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="05/23/2008 02:23:12 PDT Fri" status="MANUAL" ID="6552199">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="56" start="50" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="11396" itype="DNI" name="Attraction"/>
+                    <label cBy="JKs" feID="11395" itype="INI" name="Tourist"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23754" sentNo="1" paragNo="15" aPos="0" ID="4103896">
+            <text>Since independence in 1962 , tourism has been Jamaica 's primary industry and the island has become renowned as one of the prime destinations in the Caribbean .</text>
+            <annotationSet cDate="07/17/2008 06:10:05 PDT Thu" status="UNANN" ID="6552703">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="in"/>
+                    <label end="17" start="6" name="nn"/>
+                    <label end="20" start="19" name="in"/>
+                    <label end="25" start="22" name="cd"/>
+                    <label end="27" start="27" name=","/>
+                    <label end="35" start="29" name="nn"/>
+                    <label end="39" start="37" name="VHZ"/>
+                    <label end="44" start="41" name="VBN"/>
+                    <label end="52" start="46" name="NP"/>
+                    <label end="55" start="54" name="POS"/>
+                    <label end="63" start="57" name="jj"/>
+                    <label end="72" start="65" name="nn"/>
+                    <label end="76" start="74" name="cc"/>
+                    <label end="80" start="78" name="dt"/>
+                    <label end="87" start="82" name="nn"/>
+                    <label end="91" start="89" name="VHZ"/>
+                    <label end="98" start="93" name="VVN"/>
+                    <label end="107" start="100" name="jj"/>
+                    <label end="110" start="109" name="in"/>
+                    <label end="114" start="112" name="cd"/>
+                    <label end="117" start="116" name="in"/>
+                    <label end="121" start="119" name="dt"/>
+                    <label end="127" start="123" name="jj"/>
+                    <label end="140" start="129" name="nns"/>
+                    <label end="143" start="142" name="in"/>
+                    <label end="147" start="145" name="dt"/>
+                    <label end="157" start="149" name="NP"/>
+                    <label end="159" start="159" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="25" start="22" name="date"/>
+                    <label end="52" start="46" name="location"/>
+                    <label end="157" start="149" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="25" start="22" name="NT"/>
+                    <label end="27" start="27" name="NT"/>
+                    <label end="39" start="37" name="NT"/>
+                    <label end="44" start="41" name="NT"/>
+                    <label end="52" start="46" name="NT"/>
+                    <label end="55" start="54" name="NT"/>
+                    <label end="76" start="74" name="NT"/>
+                    <label end="80" start="78" name="NT"/>
+                    <label end="91" start="89" name="NT"/>
+                    <label end="114" start="112" name="NT"/>
+                    <label end="117" start="116" name="NT"/>
+                    <label end="121" start="119" name="NT"/>
+                    <label end="147" start="145" name="NT"/>
+                    <label end="157" start="149" name="NT"/>
+                    <label end="159" start="159" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/05/2009 04:06:37 PST Thu" status="MANUAL" ID="6559004">
+                <layer rank="1" name="Target">
+                    <label cBy="AnW" end="35" start="29" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AnW" feID="11396" itype="INI" name="Attraction"/>
+                    <label cBy="AnW" feID="11395" itype="INI" name="Tourist"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23691" sentNo="3" paragNo="44" aPos="0" ID="4101162">
+            <text>Recent business projections for Las Vegas predict challenges ; tourism revenues must increase substantially to sustain what is already built , while actual figures show visitation as steady or declining .</text>
+            <annotationSet cDate="03/12/2007 02:47:40 PDT Mon" status="UNANN" ID="6541955">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="jj"/>
+                    <label end="14" start="7" name="nn"/>
+                    <label end="26" start="16" name="nns"/>
+                    <label end="30" start="28" name="in"/>
+                    <label end="34" start="32" name="NP"/>
+                    <label end="40" start="36" name="NP"/>
+                    <label end="48" start="42" name="VVP"/>
+                    <label end="59" start="50" name="nns"/>
+                    <label end="61" start="61" name=":"/>
+                    <label end="69" start="63" name="nn"/>
+                    <label end="78" start="71" name="nns"/>
+                    <label end="83" start="80" name="md"/>
+                    <label end="92" start="85" name="VV"/>
+                    <label end="106" start="94" name="rb"/>
+                    <label end="109" start="108" name="to"/>
+                    <label end="117" start="111" name="VV"/>
+                    <label end="122" start="119" name="wp"/>
+                    <label end="125" start="124" name="VBZ"/>
+                    <label end="133" start="127" name="rb"/>
+                    <label end="139" start="135" name="VVN"/>
+                    <label end="141" start="141" name=","/>
+                    <label end="147" start="143" name="in"/>
+                    <label end="154" start="149" name="jj"/>
+                    <label end="162" start="156" name="nns"/>
+                    <label end="167" start="164" name="VVP"/>
+                    <label end="178" start="169" name="nn"/>
+                    <label end="181" start="180" name="in"/>
+                    <label end="188" start="183" name="jj"/>
+                    <label end="191" start="190" name="cc"/>
+                    <label end="201" start="193" name="VVG"/>
+                    <label end="203" start="203" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="40" start="32" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="30" start="28" name="NT"/>
+                    <label end="34" start="32" name="NT"/>
+                    <label end="40" start="36" name="NT"/>
+                    <label end="61" start="61" name="NT"/>
+                    <label end="106" start="94" name="NT"/>
+                    <label end="109" start="108" name="NT"/>
+                    <label end="122" start="119" name="NT"/>
+                    <label end="125" start="124" name="NT"/>
+                    <label end="133" start="127" name="NT"/>
+                    <label end="141" start="141" name="NT"/>
+                    <label end="147" start="143" name="NT"/>
+                    <label end="181" start="180" name="NT"/>
+                    <label end="191" start="190" name="NT"/>
+                    <label end="203" start="203" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="05/04/2011 04:26:33 PDT Wed" status="MANUAL" ID="6562664">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="69" start="63" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="11396" itype="INI" name="Attraction"/>
+                    <label cBy="MLC" feID="11395" itype="INI" name="Tourist"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

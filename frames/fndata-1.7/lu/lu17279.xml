@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="examination.n" ID="17279" frame="Scrutiny" frameID="31" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Extra-Thematic" abbrev="Dir" name="Direction"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Core" abbrev="Ground" name="Ground"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="Med" name="Medium"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="Phen" name="Phenomenon"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: the act of conducting an inspection of an area</definition>
+    <lexeme POS="N" name="examination"/>
+    <valences>
+        <governor type="Ctrlr" lemma="after">
+            <annoSet ID="6645182"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <annoSet ID="6645182"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Ground"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Ground"/>
+                <annoSet ID="6645182"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Ground"/>
+                <annoSet ID="6645806"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="Ground"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Ground"/>
+                <annoSet ID="6645182"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Ground"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Ground"/>
+                <annoSet ID="6645806"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="3" paragNo="5" aPos="0" ID="4148232">
+            <text>&quot; Yes , &quot; he reported , after a short examination of the grass bed , &quot; a number twelve shoe , I should say .</text>
+            <annotationSet cDate="04/30/2013 05:16:54 PDT Tue" status="UNANN" ID="6645177">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="2" name="rb"/>
+                    <label end="11" start="10" name="PRP"/>
+                    <label end="20" start="13" name="VBD"/>
+                    <label end="28" start="24" name="in"/>
+                    <label end="30" start="30" name="dt"/>
+                    <label end="36" start="32" name="jj"/>
+                    <label end="48" start="38" name="nn"/>
+                    <label end="51" start="50" name="in"/>
+                    <label end="55" start="53" name="dt"/>
+                    <label end="61" start="57" name="nn"/>
+                    <label end="65" start="63" name="nn"/>
+                    <label end="71" start="71" name="dt"/>
+                    <label end="78" start="73" name="nn"/>
+                    <label end="85" start="80" name="nn"/>
+                    <label end="90" start="87" name="nn"/>
+                    <label end="94" start="94" name="PRP"/>
+                    <label end="101" start="96" name="md"/>
+                    <label end="105" start="103" name="vb"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:16:55 PDT Tue" status="MANUAL" ID="6645182">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="48" start="38" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="128" end="11" start="10" name="Cognizer"/>
+                    <label cBy="MJE" feID="129" end="65" start="50" name="Ground"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="11" start="10" name="Ext"/>
+                    <label end="65" start="50" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="11" start="10" name="NP"/>
+                    <label end="65" start="50" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="28" start="24" name="Ctrlr"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="175" docID="25343" sentNo="2" paragNo="23" aPos="0" ID="4148393">
+            <text>My first days in this village were devoted to a series of walks in which in the intervals of my botanical researches I made a reconnaissance of all the large houses and an examination of the family history of the occupants .</text>
+            <annotationSet cDate="04/30/2013 05:19:12 PDT Tue" status="UNANN" ID="6645799">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PRP$"/>
+                    <label end="7" start="3" name="jj"/>
+                    <label end="12" start="9" name="nns"/>
+                    <label end="15" start="14" name="in"/>
+                    <label end="20" start="17" name="dt"/>
+                    <label end="28" start="22" name="nn"/>
+                    <label end="33" start="30" name="VBD"/>
+                    <label end="41" start="35" name="VBN"/>
+                    <label end="44" start="43" name="to"/>
+                    <label end="46" start="46" name="dt"/>
+                    <label end="53" start="48" name="nn"/>
+                    <label end="56" start="55" name="in"/>
+                    <label end="62" start="58" name="VBZ"/>
+                    <label end="65" start="64" name="in"/>
+                    <label end="71" start="67" name="wdt"/>
+                    <label end="74" start="73" name="in"/>
+                    <label end="78" start="76" name="dt"/>
+                    <label end="88" start="80" name="nns"/>
+                    <label end="91" start="90" name="in"/>
+                    <label end="94" start="93" name="PRP$"/>
+                    <label end="104" start="96" name="jj"/>
+                    <label end="115" start="106" name="VBZ"/>
+                    <label end="117" start="117" name="PRP"/>
+                    <label end="122" start="119" name="VBD"/>
+                    <label end="124" start="124" name="dt"/>
+                    <label end="139" start="126" name="nn"/>
+                    <label end="142" start="141" name="in"/>
+                    <label end="146" start="144" name="pdt"/>
+                    <label end="150" start="148" name="dt"/>
+                    <label end="156" start="152" name="jj"/>
+                    <label end="163" start="158" name="nns"/>
+                    <label end="167" start="165" name="cc"/>
+                    <label end="170" start="169" name="dt"/>
+                    <label end="182" start="172" name="nn"/>
+                    <label end="185" start="184" name="in"/>
+                    <label end="189" start="187" name="dt"/>
+                    <label end="196" start="191" name="nn"/>
+                    <label end="204" start="198" name="nn"/>
+                    <label end="207" start="206" name="in"/>
+                    <label end="211" start="209" name="dt"/>
+                    <label end="221" start="213" name="nns"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:19:14 PDT Tue" status="MANUAL" ID="6645806">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="182" start="172" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="129" end="223" start="184" name="Ground"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="223" start="184" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="223" start="184" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

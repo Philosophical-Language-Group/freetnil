@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Add_Annotation" POS="V" name="influence.v" ID="1866" frame="Talking_into" frameID="90" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Add" name="Addressee"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Cont" name="Content"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="goo" name="Goods"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Spkr" name="Speaker"/>
+        </frame>
+    </header>
+    <definition>COD: have an influence on. </definition>
+    <lexeme POS="V" name="influence"/>
+    <valences>
+        <FERealization total="3">
+            <FE name="Addressee"/>
+            <pattern total="3">
+                <valenceUnit GF="Obj" PT="NP" FE="Addressee"/>
+                <annoSet ID="19489"/>
+                <annoSet ID="19503"/>
+                <annoSet ID="19523"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Content"/>
+            <pattern total="3">
+                <valenceUnit GF="Dep" PT="VPto" FE="Content"/>
+                <annoSet ID="19489"/>
+                <annoSet ID="19503"/>
+                <annoSet ID="19523"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Speaker"/>
+            <pattern total="3">
+                <valenceUnit GF="Ext" PT="NP" FE="Speaker"/>
+                <annoSet ID="19489"/>
+                <annoSet ID="19503"/>
+                <annoSet ID="19523"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="3">
+            <FE name="Addressee"/>
+            <FE name="Content"/>
+            <FE name="Speaker"/>
+            <pattern total="3">
+                <valenceUnit GF="Obj" PT="NP" FE="Addressee"/>
+                <valenceUnit GF="Dep" PT="VPto" FE="Content"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Speaker"/>
+                <annoSet ID="19489"/>
+                <annoSet ID="19503"/>
+                <annoSet ID="19523"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="V-520-np-vping"/>
+    <subCorpus name="V-530-np-vpto">
+        <sentence sentNo="0" aPos="17405732" ID="90380">
+            <text>Should we wonder that they might influence some children to think that the real world is all like that ? </text>
+            <annotationSet cDate="01/06/2003 06:11:50 PST Mon" status="UNANN" ID="19488">
+                <layer rank="1" name="BNC">
+                    <label end="5" start="0" name="VM0"/>
+                    <label end="8" start="7" name="PNP"/>
+                    <label end="15" start="10" name="VVI"/>
+                    <label end="20" start="17" name="CJT"/>
+                    <label end="25" start="22" name="PNP"/>
+                    <label end="31" start="27" name="VM0"/>
+                    <label end="41" start="33" name="VVI"/>
+                    <label end="46" start="43" name="DT0"/>
+                    <label end="55" start="48" name="NN2"/>
+                    <label end="58" start="57" name="TO0"/>
+                    <label end="64" start="60" name="VVI"/>
+                    <label end="69" start="66" name="CJT"/>
+                    <label end="73" start="71" name="AT0"/>
+                    <label end="78" start="75" name="AJ0"/>
+                    <label end="84" start="80" name="NN1"/>
+                    <label end="87" start="86" name="VBZ"/>
+                    <label end="91" start="89" name="DT0"/>
+                    <label end="96" start="93" name="PRP"/>
+                    <label end="101" start="98" name="DT0"/>
+                    <label end="103" start="103" name="PUN"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="01/06/2003 06:11:50 PST Mon" status="MANUAL" ID="19489">
+                <layer rank="1" name="FE">
+                    <label cBy="mCo" feID="415" end="25" start="22" name="Speaker"/>
+                    <label cBy="mCo" feID="417" end="55" start="43" name="Addressee"/>
+                    <label cBy="mCo" feID="416" end="101" start="57" name="Content"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="25" start="22" name="Ext"/>
+                    <label end="55" start="43" name="Obj"/>
+                    <label end="101" start="57" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="25" start="22" name="NP"/>
+                    <label end="55" start="43" name="NP"/>
+                    <label end="101" start="57" name="VPto"/>
+                </layer>
+                <layer rank="1" name="Sent">
+                    <label end="0" start="0" name="reexamine"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Target">
+                    <label cBy="ChW" end="41" start="33" name="Target"/>
+                </layer>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence sentNo="0" aPos="76987535" ID="90387">
+            <text>How dare he influence her to give up her studies in England to walk the streets of Copenhagen ? &quot;  </text>
+            <annotationSet cDate="01/06/2003 06:11:51 PST Mon" status="UNANN" ID="19502">
+                <layer rank="1" name="BNC">
+                    <label end="2" start="0" name="AVQ"/>
+                    <label end="7" start="4" name="VVB"/>
+                    <label end="10" start="9" name="PNP"/>
+                    <label end="20" start="12" name="VVI"/>
+                    <label end="24" start="22" name="PNP"/>
+                    <label end="27" start="26" name="TO0"/>
+                    <label end="32" start="29" name="VVI"/>
+                    <label end="35" start="34" name="AVP"/>
+                    <label end="39" start="37" name="DPS"/>
+                    <label end="47" start="41" name="NN2"/>
+                    <label end="50" start="49" name="PRP"/>
+                    <label end="58" start="52" name="NP0"/>
+                    <label end="61" start="60" name="TO0"/>
+                    <label end="66" start="63" name="VVI"/>
+                    <label end="70" start="68" name="AT0"/>
+                    <label end="78" start="72" name="NN2"/>
+                    <label end="81" start="80" name="PRF"/>
+                    <label end="92" start="83" name="NP0"/>
+                    <label end="94" start="94" name="PUN"/>
+                    <label end="96" start="96" name="PUQ"/>
+                    <label end="97" start="98" name="PUQ"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="01/06/2003 06:11:51 PST Mon" status="MANUAL" ID="19503">
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="415" end="10" start="9" name="Speaker"/>
+                    <label cBy="MJE" feID="417" end="24" start="22" name="Addressee"/>
+                    <label cBy="MJE" feID="416" end="92" start="26" name="Content"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="10" start="9" name="Ext"/>
+                    <label end="24" start="22" name="Obj"/>
+                    <label end="92" start="26" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="10" start="9" name="NP"/>
+                    <label end="24" start="22" name="NP"/>
+                    <label end="92" start="26" name="VPto"/>
+                </layer>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Target">
+                    <label cBy="ChW" end="20" start="12" name="Target"/>
+                </layer>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence sentNo="0" aPos="5480350" ID="90397">
+            <text>Cave has influenced other kindred spirits to leave behind self-immolation in favour of The Song . </text>
+            <annotationSet cDate="01/06/2003 06:11:52 PST Mon" status="UNANN" ID="19522">
+                <layer rank="1" name="BNC">
+                    <label end="3" start="0" name="NN1-NP0"/>
+                    <label end="7" start="5" name="VHZ"/>
+                    <label end="18" start="9" name="VVN"/>
+                    <label end="24" start="20" name="AJ0"/>
+                    <label end="32" start="26" name="AJ0-NN1"/>
+                    <label end="40" start="34" name="NN2"/>
+                    <label end="43" start="42" name="TO0"/>
+                    <label end="49" start="45" name="VVI"/>
+                    <label end="56" start="51" name="PRP"/>
+                    <label end="72" start="58" name="AJ0-NN1"/>
+                    <label end="75" start="74" name="PRP"/>
+                    <label end="82" start="77" name="PRP"/>
+                    <label end="85" start="84" name="PRP"/>
+                    <label end="89" start="87" name="AT0"/>
+                    <label end="94" start="91" name="NN1"/>
+                    <label end="96" start="96" name="PUN"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="01/06/2003 06:11:52 PST Mon" status="MANUAL" ID="19523">
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="415" end="3" start="0" name="Speaker"/>
+                    <label cBy="MJE" feID="417" end="40" start="20" name="Addressee"/>
+                    <label cBy="MJE" feID="416" end="94" start="42" name="Content"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="3" start="0" name="Ext"/>
+                    <label end="40" start="20" name="Obj"/>
+                    <label end="94" start="42" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="3" start="0" name="NP"/>
+                    <label end="40" start="20" name="NP"/>
+                    <label end="94" start="42" name="VPto"/>
+                </layer>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Target">
+                    <label cBy="ChW" end="18" start="9" name="Target"/>
+                </layer>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="V-570-np-ppin"/>
+    <subCorpus name="V-570-np-ppon"/>
+    <subCorpus name="V-570-np-ppover"/>
+    <subCorpus name="V-590-np-pingin"/>
+    <subCorpus name="V-620-np-ppother"/>
+    <subCorpus name="V-630-np-pingother"/>
+    <subCorpus name="V-650-np-pother"/>
+    <subCorpus name="V-660-trans-simple"/>
+    <subCorpus name="V-670-pass-by"/>
+    <subCorpus name="V-680-pass"/>
+    <subCorpus name="V-690-trans-other"/>
+    <subCorpus name="V-750-pingby"/>
+    <subCorpus name="V-790-pingother"/>
+    <subCorpus name="V-810-pother"/>
+    <subCorpus name="V-890-intrans-adverb"/>
+    <subCorpus name="V-900-other"/>
+</lexUnit>

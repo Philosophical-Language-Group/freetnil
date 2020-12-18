@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Unit" POS="N" name="minute.n" ID="5143" frame="Calendric_unit" frameID="229" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="B W Tutorial chapter1" name="BWTutorial_chapter1" ID="23602"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="cou" name="Count"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="LM" name="Landmark_period"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="Name" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="RelT" name="Relative_time"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="sal_eve" name="Salient_event"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Extra-Thematic" abbrev="TR" name="Trajector_event"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="uni" name="Unit"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="Whole" name="Whole"/>
+        </frame>
+    </header>
+    <definition>COD: a period of time equal to sixty seconds or a sixtieth of an hour</definition>
+    <lexeme POS="N" name="minute"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Count"/>
+            <pattern total="1">
+                <valenceUnit GF="Quant" PT="Num" FE="Count"/>
+                <annoSet ID="6562092"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Unit"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Unit"/>
+                <annoSet ID="6535637"/>
+                <annoSet ID="6562092"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Count"/>
+            <FE name="Unit"/>
+            <pattern total="1">
+                <valenceUnit GF="Quant" PT="Num" FE="Count"/>
+                <valenceUnit GF="" PT="DEN" FE="Unit"/>
+                <annoSet ID="6562092"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Unit"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Unit"/>
+                <annoSet ID="6535637"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23602" sentNo="2" paragNo="12" aPos="0" ID="4099371">
+            <text>They cause illness or death within minutes to hours after exposure .</text>
+            <annotationSet cDate="06/02/2006 03:11:36 PDT Fri" status="UNANN" ID="6534598">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="PP"/>
+                    <label end="9" start="5" name="VVP"/>
+                    <label end="17" start="11" name="nn"/>
+                    <label end="20" start="19" name="cc"/>
+                    <label end="26" start="22" name="nn"/>
+                    <label end="33" start="28" name="in"/>
+                    <label end="41" start="35" name="nns"/>
+                    <label end="44" start="43" name="to"/>
+                    <label end="50" start="46" name="nns"/>
+                    <label end="56" start="52" name="in"/>
+                    <label end="65" start="58" name="nn"/>
+                    <label end="67" start="67" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="20" start="19" name="NT"/>
+                    <label end="33" start="28" name="NT"/>
+                    <label end="44" start="43" name="NT"/>
+                    <label end="67" start="67" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/21/2006 05:00:16 PDT Wed" status="MANUAL" ID="6535637">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="41" start="35" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="10331" end="41" start="35" name="Unit"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23771" sentNo="4" paragNo="96" aPos="0" ID="4106123">
+            <text>Jetfoils leave every 15 to 30 minutes 24 hours a day .</text>
+            <annotationSet cDate="07/25/2008 01:19:55 PDT Fri" status="UNANN" ID="6555213">
+                <layer rank="1" name="PENN">
+                    <label end="7" start="0" name="nns"/>
+                    <label end="13" start="9" name="VVP"/>
+                    <label end="19" start="15" name="dt"/>
+                    <label end="22" start="21" name="cd"/>
+                    <label end="25" start="24" name="to"/>
+                    <label end="28" start="27" name="cd"/>
+                    <label end="36" start="30" name="nns"/>
+                    <label end="39" start="38" name="cd"/>
+                    <label end="45" start="41" name="nns"/>
+                    <label end="47" start="47" name="dt"/>
+                    <label end="51" start="49" name="nn"/>
+                    <label end="53" start="53" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="25" start="24" name="NT"/>
+                    <label end="47" start="47" name="NT"/>
+                    <label end="53" start="53" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/31/2011 02:05:02 PST Mon" status="MANUAL" ID="6562092">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="36" start="30" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="10331" end="36" start="30" name="Unit"/>
+                    <label cBy="AlK" feID="7759" end="28" start="27" name="Count"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="28" start="27" name="Quant"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="28" start="27" name="Num"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

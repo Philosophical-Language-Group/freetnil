@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="rake.v" ID="17676" frame="Cause_motion" frameID="55" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agt" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Core" abbrev="Area" name="Area"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Core" abbrev="Cse" name="Cause"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Dist" name="Distance"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="" name="Duration"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Goal" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD73" type="Extra-Thematic" abbrev="" name="Handle"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="Initial_State" name="Initial_state"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="Ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Path" name="Path"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="0000FF" bgColor="d0d0d0" type="Core" abbrev="" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="Src" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="" name="Subregion"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Thm" name="Theme"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: move (something) using a rake.</definition>
+    <lexeme POS="V" name="rake"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <annoSet ID="6672782"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Source"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[out]" FE="Source"/>
+                <annoSet ID="6672782"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Theme"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Theme"/>
+                <annoSet ID="6672782"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Source"/>
+            <FE name="Theme"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="Dep" PT="PP[out]" FE="Source"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Theme"/>
+                <annoSet ID="6672782"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="3" paragNo="9" aPos="0" ID="4148268">
+            <text>We raked all these out of the fire .</text>
+            <annotationSet cDate="04/30/2013 05:17:20 PDT Tue" status="UNANN" ID="6645323">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PRP"/>
+                    <label end="7" start="3" name="VBD"/>
+                    <label end="11" start="9" name="pdt"/>
+                    <label end="17" start="13" name="dt"/>
+                    <label end="21" start="19" name="in"/>
+                    <label end="24" start="23" name="in"/>
+                    <label end="28" start="26" name="dt"/>
+                    <label end="33" start="30" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="08/18/2014 02:51:23 PDT Mon" status="MANUAL" ID="6672782">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="7" start="3" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="228" end="1" start="0" name="Agent"/>
+                    <label cBy="MJE" feID="229" end="17" start="9" name="Theme"/>
+                    <label cBy="MJE" feID="230" end="33" start="19" name="Source"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="1" start="0" name="Ext"/>
+                    <label end="17" start="9" name="Obj"/>
+                    <label end="33" start="19" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="1" start="0" name="NP"/>
+                    <label end="17" start="9" name="NP"/>
+                    <label end="33" start="19" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

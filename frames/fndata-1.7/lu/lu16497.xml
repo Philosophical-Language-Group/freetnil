@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="sense.n" ID="16497" frame="Opinion" frameID="1412" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="MASC" name="MASC" ID="150">
+            <document description="Examples of the lemma sense from the MASC project for FN annotation" name="sense" ID="24112"/>
+        </corpus>
+        <frame>
+            <FE fgColor="00008B" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="con" name="Constancy"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="dom" name="Domain"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Extra-Thematic" abbrev="evi" name="Evidence"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="opi" name="Opinion"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="rol" name="Role"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Peripheral" abbrev="" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="top" name="Topic"/>
+        </frame>
+    </header>
+    <definition>FN: an opinion held by a cognizer</definition>
+    <lexeme POS="N" name="sense"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Cognizer"/>
+            <pattern total="2">
+                <valenceUnit GF="Gen" PT="Poss" FE="Cognizer"/>
+                <annoSet ID="6579782"/>
+                <annoSet ID="6579783"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Opinion"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Opinion"/>
+                <annoSet ID="6579782"/>
+                <annoSet ID="6579783"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Cognizer"/>
+            <FE name="Opinion"/>
+            <pattern total="2">
+                <valenceUnit GF="Gen" PT="Poss" FE="Cognizer"/>
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Opinion"/>
+                <annoSet ID="6579782"/>
+                <annoSet ID="6579783"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="150" docID="24112" sentNo="9" paragNo="6" aPos="0" ID="4113673">
+            <text>My sense is for a simpler system .</text>
+            <annotationSet cDate="07/13/2011 01:35:28 PDT Wed" status="UNANN" ID="6574669">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP$"/>
+                    <label end="7" start="3" name="nn"/>
+                    <label end="10" start="9" name="VBZ"/>
+                    <label end="14" start="12" name="in"/>
+                    <label end="16" start="16" name="dt"/>
+                    <label end="24" start="18" name="jjr"/>
+                    <label end="31" start="26" name="nn"/>
+                    <label end="33" start="33" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="10" start="9" name="NT"/>
+                    <label end="14" start="12" name="NT"/>
+                    <label end="16" start="16" name="NT"/>
+                    <label end="33" start="33" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/15/2011 03:26:20 PDT Mon" status="MANUAL" ID="6579782">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="7" start="3" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="7869" end="1" start="0" name="Cognizer"/>
+                    <label cBy="CVa" feID="7870" end="31" start="12" name="Opinion"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="1" start="0" name="Gen"/>
+                    <label end="31" start="12" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="1" start="0" name="Poss"/>
+                    <label end="31" start="12" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="10" start="9" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="150" docID="24112" sentNo="10" paragNo="6" aPos="0" ID="4113674">
+            <text>My sense is for a simpler system .</text>
+            <annotationSet cDate="07/13/2011 01:35:28 PDT Wed" status="UNANN" ID="6574670">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP$"/>
+                    <label end="7" start="3" name="nn"/>
+                    <label end="10" start="9" name="VBZ"/>
+                    <label end="14" start="12" name="in"/>
+                    <label end="16" start="16" name="dt"/>
+                    <label end="24" start="18" name="jjr"/>
+                    <label end="31" start="26" name="nn"/>
+                    <label end="33" start="33" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="10" start="9" name="NT"/>
+                    <label end="14" start="12" name="NT"/>
+                    <label end="16" start="16" name="NT"/>
+                    <label end="33" start="33" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/15/2011 03:26:24 PDT Mon" status="MANUAL" ID="6579783">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="7" start="3" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="7869" end="1" start="0" name="Cognizer"/>
+                    <label cBy="CVa" feID="7870" end="31" start="12" name="Opinion"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="1" start="0" name="Gen"/>
+                    <label end="31" start="12" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="1" start="0" name="Poss"/>
+                    <label end="31" start="12" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="10" start="9" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

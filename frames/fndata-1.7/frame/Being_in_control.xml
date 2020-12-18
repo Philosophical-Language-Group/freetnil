@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="RLG" cDate="10/11/2006 03:04:26 PDT Wed" name="Being_in_control" ID="1800" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;A &lt;fen&gt;Controlling_entity&lt;/fen&gt; has control of a &lt;fen&gt;Dependent_entity&lt;/fen&gt;, &lt;fen&gt;Dependent_situation&lt;/fen&gt;, or &lt;fen&gt;Dependent_variable&lt;/fen&gt;. 
+
+&lt;ex&gt;&lt;fex name="Controlling_entity"&gt;She&lt;/fex&gt; was &lt;m&gt;in&lt;/m&gt; &lt;t&gt;control&lt;/t&gt; &lt;fex name="Dependent_entity"&gt;of the empire&lt;/fex&gt; &lt;fex name="Time"&gt;within two days&lt;/fex&gt;.&lt;/ex&gt;
+
+This frame is distinct from Control in that the &lt;fen&gt;Controlling_entity&lt;/fen&gt; is not fully asserted to be currently controlling the &lt;fen&gt;Dependent_entity&lt;/fen&gt;, &lt;fen&gt;Dependent_situation&lt;/fen&gt;, or &lt;fen&gt;Dependent_variable&lt;/fen&gt;, but rather is attentive to it and capable of making the situation correspond to the desired state at any time.&lt;/def-root&gt;</definition>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="10/11/2006 03:04:26 PDT Wed" abbrev="cone" name="Controlling_entity" ID="10680">
+        <definition>&lt;def-root&gt;A thing or person whose behavior controls a &lt;fen&gt;Dependent_entity&lt;/fen&gt;, &lt;fen&gt;Dependent_situation&lt;/fen&gt;, or &lt;fen&gt;Dependent_variable&lt;/fen&gt;.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="800080" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="10/11/2006 03:04:26 PDT Wed" abbrev="depe" name="Dependent_entity" ID="10681">
+        <definition>&lt;def-root&gt;An entity, usually a thing, that is influenced in its behavior by a &lt;fen&gt;Controlling_entity&lt;/fen&gt;.&lt;/def-root&gt;</definition>
+        <excludesFE name="Dependent_situation" ID="10683"/>
+    </FE>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Core-Unexpressed" cBy="RLG" cDate="10/11/2006 03:04:26 PDT Wed" abbrev="deps" name="Dependent_situation" ID="10683">
+        <definition>&lt;def-root&gt;A situation whose temporal or other characteristics are influenced by a &lt;fen&gt;Controlling_entity&lt;/fen&gt;.&lt;/def-root&gt;</definition>
+        <excludesFE name="Dependent_variable" ID="10684"/>
+    </FE>
+    <FE bgColor="FF00FF" fgColor="FFFFFF" coreType="Core-Unexpressed" cBy="RLG" cDate="10/11/2006 03:04:26 PDT Wed" abbrev="depv" name="Dependent_variable" ID="10684">
+        <definition>&lt;def-root&gt;A scalar variable, whose value depends on the behavior of a &lt;fen&gt;Controlling_entity&lt;/fen&gt;.
+
+&lt;ex&gt;Move the slider on the SpeedBar while playing audio or video material to &lt;t&gt;control&lt;/t&gt; &lt;fex name="depv"&gt;playback speed&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <excludesFE name="Dependent_entity" ID="10681"/>
+    </FE>
+    <FE bgColor="FF69B4" fgColor="FFFFFF" coreType="Core-Unexpressed" cBy="RLG" cDate="10/11/2006 03:04:26 PDT Wed" abbrev="deg" name="Degree" ID="10686">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Degree&lt;/fen&gt; to which the &lt;fen&gt;Controlling_entity&lt;/fen&gt; effects the &lt;fen&gt;Dependent_entity&lt;/fen&gt;.
+
+&lt;/def-root&gt;</definition>
+        <semType name="Degree" ID="172"/>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="10/11/2006 03:04:26 PDT Wed" abbrev="tim" name="Time" ID="10687">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Time&lt;/fen&gt; at which the controlling occurs.&lt;/def-root&gt;</definition>
+        <semType name="Time" ID="141"/>
+    </FE>
+    <FE bgColor="A52A2A" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="10/11/2006 03:04:26 PDT Wed" abbrev="pla" name="Place" ID="10688">
+        <definition>&lt;def-root&gt;The location at which the controlling occurs.&lt;/def-root&gt;</definition>
+        <semType name="Locative_relation" ID="182"/>
+    </FE>
+    <FE bgColor="808080" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="10/11/2006 03:04:26 PDT Wed" abbrev="man" name="Manner" ID="10689">
+        <definition>&lt;def-root&gt;Any description of the event which is not covered by more specific FEs, including force (hard, softly), secondary effects (quietly, loudly), and general descriptions comparing events (the same way). It may also indicate salient characteristics of an &lt;fen&gt;Controlling_entity&lt;/fen&gt; that also affect the action (presumptuously, coldly, deliberately, eagerly, carefully). &lt;/def-root&gt;</definition>
+        <semType name="Manner" ID="173"/>
+    </FE>
+    <FE bgColor="1E90FF" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="KmG" cDate="03/15/2007 04:54:30 PDT Thu" abbrev="" name="Concessive" ID="11201">
+        <definition>&lt;def-root&gt;This FE signifies that the state of affairs expressed by the main clause (containing the target) occurs or holds, and something other than that state of affairs would be expected given the state of affairs in the concessive clause. &lt;/def-root&gt;</definition>
+    </FE>
+    <frameRelation type="Inherits from">
+        <relatedFrame ID="1799">Control</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Inherited by">
+        <relatedFrame ID="1796">Dominate_competitor</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses"/>
+    <frameRelation type="Is Used by">
+        <relatedFrame ID="122">Kidnapping</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="In_Use" POS="N" name="control.n" ID="13613" lemmaID="8148" cBy="RLG" cDate="10/11/2006 03:30:51 PDT Wed">
+        <definition>FN: the power to (primarily) determine various features of some entity or situation</definition>
+        <sentenceCount annotated="68" total="242"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="control"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="dominate.v" ID="18150" lemmaID="11467" cBy="HPh" cDate="06/29/2015 02:58:12 PDT Mon">
+        <definition>FN: to rule over or control some entity or situation</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="dominate"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="domination.n" ID="18151" lemmaID="11468" cBy="HPh" cDate="06/29/2015 02:58:52 PDT Mon">
+        <definition>FN: authority, rule or control over some entity or situation</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="domination"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="manage.v" ID="18152" lemmaID="23317" cBy="HPh" cDate="06/29/2015 02:59:37 PDT Mon">
+        <definition>FN: to direct, govern, or control in action or use</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="manage"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="management.n" ID="18153" lemmaID="23320" cBy="HPh" cDate="06/29/2015 03:00:03 PDT Mon">
+        <definition>FN: the act of managing; direction or control</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="management"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="manipulate.v" ID="18154" lemmaID="23380" cBy="HPh" cDate="06/29/2015 03:01:10 PDT Mon">
+        <definition>FN: to skillfully handle, control, or influence something or someone</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="manipulate"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="manipulation.n" ID="18155" lemmaID="23381" cBy="HPh" cDate="06/29/2015 03:01:41 PDT Mon">
+        <definition>FN: the skillfull handling of, control of, or influence over something or someone</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="manipulation"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="rule.v" ID="18156" lemmaID="33744" cBy="HPh" cDate="06/29/2015 03:08:47 PDT Mon">
+        <definition>FN: to control, direct, or exercise dominating power or authority over</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="rule"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="control.v" ID="18157" lemmaID="8149" cBy="HPh" cDate="06/29/2015 03:13:18 PDT Mon">
+        <definition>FN: to (primarily) determine various features of some entity or situation</definition>
+        <sentenceCount annotated="9" total="9"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="control"/>
+    </lexUnit>
+</frame>

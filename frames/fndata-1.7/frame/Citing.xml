@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="HPh" cDate="09/15/2015 01:37:06 PDT Tue" name="Citing" ID="2984" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;A &lt;fen&gt;Defendant&lt;/fen&gt; is officially summoned to appear in &lt;fen&gt;Court&lt;/fen&gt; by an &lt;fen&gt;Authority&lt;/fen&gt; (such as the police) based on certain &lt;fen&gt;Charges&lt;/fen&gt;. Alternatively, there is often an option for the &lt;fen&gt;Defendant&lt;/fen&gt; to pay a &lt;fen&gt;Fine&lt;/fen&gt; (thereby admitting their guilt) instead of going to &lt;fen&gt;Court&lt;/fen&gt;. 
+
+&lt;ex&gt;&lt;fex name="Auth"&gt;The police&lt;/fex&gt; had &lt;t&gt;summonsed&lt;/t&gt; &lt;fex name="Dfnd"&gt;the wrong man&lt;/fex&gt;. &lt;fex name="Chrg"&gt;DNI&lt;/fex&gt;&lt;/ex&gt; 
+
+&lt;ex&gt;&lt;fex name="Tim"&gt;Since 1989&lt;/fex&gt; nearly a million &lt;t&gt;summonses&lt;/t&gt; have been issued &lt;fex name="Dfnd"&gt;to people&lt;/fex&gt; &lt;fex name="Chrg"&gt;for not paying their water bills&lt;/fex&gt;. &lt;fex name="Auth"&gt;CNI&lt;/fex&gt;&lt;/ex&gt; 
+
+&lt;ex&gt;&lt;fex name="Auth"&gt;The officer&lt;/fex&gt; &lt;t&gt;cited&lt;/t&gt; &lt;fex name="Dfnd"&gt;him&lt;/fex&gt; &lt;fex name="Chrg"&gt;for riding a bike without a light&lt;/fex&gt;.&lt;/ex&gt; 
+
+Three related frames are Notification_of_charges, Entering_of_plea, and Fining. 
+This frame is distinguished from Notification_of_charges in that it typically deals with less serious &lt;fen&gt;Charges&lt;/fen&gt; and/or offenses. It also involves more than just notifying the &lt;fen&gt;Defendant&lt;/fen&gt; (Accused in the Notification_of_charges frame) of the &lt;fen&gt;Charges&lt;/fen&gt; being brought against them; LUs in the Citing frame also require that the &lt;fen&gt;Defendant&lt;/fen&gt; take some form of action (go to &lt;fen&gt;Court&lt;/fen&gt; or pay a &lt;fen&gt;Fine&lt;/fen&gt;). Similarly, Citing differs from Entering_of_plea because its scenario encompasses more than the latter; Citing involves steps both before and after the &lt;fen&gt;Defendant&lt;/fen&gt; enters a Plea in answer to &lt;fen&gt;Charges&lt;/fen&gt;. Finally, this frame differs from Fining since the &lt;fen&gt;Defendant&lt;/fen&gt; (Payer in the Fining frame) does not necessarily end up paying a &lt;fen&gt;Fine&lt;/fen&gt;. He or she may go to &lt;fen&gt;Court&lt;/fen&gt; instead. &lt;/def-root&gt;</definition>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Core" cBy="HPh" cDate="09/15/2015 02:19:43 PDT Tue" abbrev="Dfnd" name="Defendant" ID="16716">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Defendant&lt;/fen&gt; is the individual or entity summoned to appear in &lt;fen&gt;Court&lt;/fen&gt;, or to pay a &lt;fen&gt;Fine&lt;/fen&gt; instead. 
+
+&lt;ex&gt;&lt;fex name="Dfnd"&gt;Mrs. Jones&lt;/fex&gt; was &lt;t&gt;summonsed&lt;/t&gt; for running a red light.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="Sentient" ID="5"/>
+    </FE>
+    <FE bgColor="9F79EE" fgColor="FFFFFF" coreType="Peripheral" cBy="HPh" cDate="09/15/2015 02:32:51 PDT Tue" abbrev="Crt" name="Court" ID="16717">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Court&lt;/fen&gt; where the &lt;fen&gt;Defendant&lt;/fen&gt; is summoned to appear. 
+
+&lt;ex&gt;Police have &lt;t&gt;summonsed&lt;/t&gt; Mr. Barnes to appear &lt;fex name="Crt"&gt;at the Manchester County Court&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="HPh" cDate="09/15/2015 02:34:25 PDT Tue" abbrev="Auth" name="Authority" ID="16718">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Authority&lt;/fen&gt; serve a citation or summons to a &lt;fen&gt;Defendant&lt;/fen&gt;, requiring that the latter appear in &lt;fen&gt;Court&lt;/fen&gt; or pay a &lt;fen&gt;Fine&lt;/fen&gt;. 
+
+&lt;ex&gt;&lt;fex name="Auth"&gt;The cop&lt;/fex&gt; &lt;t&gt;cited&lt;/t&gt; Mrs. Jones for illegal parking.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="Sentient" ID="5"/>
+    </FE>
+    <FE bgColor="A52A2A" fgColor="FFFFFF" coreType="Core" cBy="HPh" cDate="09/15/2015 02:36:58 PDT Tue" abbrev="Chrg" name="Charges" ID="16719">
+        <definition>&lt;def-root&gt;&lt;fen&gt;Charges&lt;/fen&gt; identifies the infraction or offense for which the &lt;fen&gt;Defendant&lt;/fen&gt; is summoned. 
+
+&lt;ex&gt;The cop served Mrs. Jones a &lt;t&gt;citation&lt;/t&gt; &lt;fex name="Chrg"&gt;for speeding&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="800080" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="HPh" cDate="09/15/2015 02:39:28 PDT Tue" abbrev="Fin" name="Fine" ID="16720">
+        <definition>&lt;def-root&gt;&lt;fen&gt;Fine&lt;/fen&gt; is the monetary amount that the &lt;fen&gt;Defendant&lt;/fen&gt; may pay in certain citation cases, instead of him or her having to appear in &lt;fen&gt;Court&lt;/fen&gt;. 
+
+&lt;ex&gt;Jason refused to pay &lt;fex name="Fin"&gt;the $100 fine&lt;/fex&gt; specified by his &lt;t&gt;summons&lt;/t&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Peripheral" cBy="HPh" cDate="09/15/2015 02:43:34 PDT Tue" abbrev="Pla" name="Place" ID="16721">
+        <definition>&lt;def-root&gt;&lt;fen&gt;Place&lt;/fen&gt; is the location where the &lt;fen&gt;Defendant&lt;/fen&gt; is issued the citation or summons. 
+
+&lt;ex&gt;Police issued Owen a &lt;t&gt;citation&lt;/t&gt; &lt;fex name="Pla"&gt;on the shoulder of the highway&lt;/fex&gt;.&lt;/ex&gt; &lt;/def-root&gt;</definition>
+        <semType name="Location" ID="54"/>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Peripheral" cBy="HPh" cDate="09/15/2015 02:46:11 PDT Tue" abbrev="Tim" name="Time" ID="16722">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Time&lt;/fen&gt; at which the &lt;fen&gt;Defendant&lt;/fen&gt; is issued the citation or summons. 
+
+&lt;ex&gt;Molly was &lt;t&gt;cited&lt;/t&gt; for driving over the speed limit &lt;fex name="Tim"&gt;on Friday&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="Time" ID="141"/>
+    </FE>
+    <frameRelation type="Inherits from"/>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses"/>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also">
+        <relatedFrame ID="129">Notification_of_charges</relatedFrame>
+        <relatedFrame ID="130">Entering_of_plea</relatedFrame>
+        <relatedFrame ID="223">Fining</relatedFrame>
+    </frameRelation>
+    <lexUnit status="Created" POS="V" name="cite.v" ID="18307" lemmaID="6584" cBy="HPh" cDate="09/15/2015 02:57:16 PDT Tue">
+        <definition>FN: to summon officially to appear in court</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="cite"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="summons.v" ID="18308" lemmaID="38777" cBy="HPh" cDate="09/15/2015 03:07:04 PDT Tue">
+        <definition>FN: to serve with a summons; to call officially to appear before a court</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="summons"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="summon.v" ID="18309" lemmaID="38775" cBy="HPh" cDate="09/15/2015 03:08:25 PDT Tue">
+        <definition>FN: to call or notify to appear before a court</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="summon"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="summons.n" ID="18310" lemmaID="38776" cBy="HPh" cDate="09/15/2015 03:10:45 PDT Tue">
+        <definition>FN: an official call or citation to appear before a court</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="summons"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="citation.n" ID="18311" lemmaID="6583" cBy="HPh" cDate="09/15/2015 03:11:46 PDT Tue">
+        <definition>FN: an official call or summons to appear before a court</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="citation"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="notice to appear.n" ID="18312" lemmaID="51953" cBy="HPh" cDate="09/15/2015 05:43:52 PDT Tue">
+        <definition>FN: an official call or summons to appear before a court</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="N" name="notice"/>
+        <lexeme order="2" headword="false" breakBefore="false" POS="PREP" name="to"/>
+        <lexeme order="3" headword="false" breakBefore="false" POS="V" name="appear"/>
+    </lexUnit>
+</frame>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="remainder.n" ID="10358" frame="Left_to_do" frameID="1041" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Missile" name="Iran_Missile" ID="23512"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="agt" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="pro" name="Process"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="rem" name="Remainder"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="tm" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: a part, number, or quantity that is left over to process</definition>
+    <lexeme POS="N" name="remainder"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Process"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Process"/>
+                <annoSet ID="6525278"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Remainder"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Remainder"/>
+                <annoSet ID="6525278"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Process"/>
+            <FE name="Remainder"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Process"/>
+                <valenceUnit GF="" PT="DEN" FE="Remainder"/>
+                <annoSet ID="6525278"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23512" sentNo="6" paragNo="17" aPos="0" ID="4096765">
+            <text>As a result of a cease-fire agreement in early June , the first `` War of the Cities '' came to an end and neither side is reported to have launched any missiles for the remainder of the year .</text>
+            <annotationSet cDate="02/25/2005 12:23:17 PST Fri" status="UNANN" ID="6522430">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="3" start="3" name="dt"/>
+                    <label end="10" start="5" name="nn"/>
+                    <label end="13" start="12" name="in"/>
+                    <label end="15" start="15" name="dt"/>
+                    <label end="26" start="17" name="nn"/>
+                    <label end="36" start="28" name="nn"/>
+                    <label end="39" start="38" name="in"/>
+                    <label end="45" start="41" name="jj"/>
+                    <label end="50" start="47" name="NP"/>
+                    <label end="52" start="52" name=","/>
+                    <label end="56" start="54" name="dt"/>
+                    <label end="62" start="58" name="jj"/>
+                    <label end="65" start="64" name="``"/>
+                    <label end="69" start="67" name="NP"/>
+                    <label end="72" start="71" name="in"/>
+                    <label end="76" start="74" name="dt"/>
+                    <label end="83" start="78" name="nns"/>
+                    <label end="86" start="85" name="''"/>
+                    <label end="91" start="88" name="VVD"/>
+                    <label end="94" start="93" name="to"/>
+                    <label end="97" start="96" name="dt"/>
+                    <label end="101" start="99" name="nn"/>
+                    <label end="105" start="103" name="cc"/>
+                    <label end="113" start="107" name="dt"/>
+                    <label end="118" start="115" name="nn"/>
+                    <label end="121" start="120" name="VBZ"/>
+                    <label end="130" start="123" name="VVN"/>
+                    <label end="133" start="132" name="to"/>
+                    <label end="138" start="135" name="VH"/>
+                    <label end="147" start="140" name="VVN"/>
+                    <label end="151" start="149" name="dt"/>
+                    <label end="160" start="153" name="nns"/>
+                    <label end="164" start="162" name="in"/>
+                    <label end="168" start="166" name="dt"/>
+                    <label end="178" start="170" name="nn"/>
+                    <label end="181" start="180" name="in"/>
+                    <label end="185" start="183" name="dt"/>
+                    <label end="190" start="187" name="nn"/>
+                    <label end="192" start="192" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="50" start="47" name="date"/>
+                    <label end="160" start="153" name="WEA"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="3" start="3" name="NT"/>
+                    <label end="13" start="12" name="NT"/>
+                    <label end="15" start="15" name="NT"/>
+                    <label end="39" start="38" name="NT"/>
+                    <label end="50" start="47" name="NT"/>
+                    <label end="52" start="52" name="NT"/>
+                    <label end="56" start="54" name="NT"/>
+                    <label end="69" start="67" name="NT"/>
+                    <label end="72" start="71" name="NT"/>
+                    <label end="76" start="74" name="NT"/>
+                    <label end="105" start="103" name="NT"/>
+                    <label end="113" start="107" name="NT"/>
+                    <label end="133" start="132" name="NT"/>
+                    <label end="151" start="149" name="NT"/>
+                    <label end="164" start="162" name="NT"/>
+                    <label end="168" start="166" name="NT"/>
+                    <label end="181" start="180" name="NT"/>
+                    <label end="185" start="183" name="NT"/>
+                    <label end="192" start="192" name="NT"/>
+                    <label end="65" start="64" name="NT"/>
+                    <label end="86" start="85" name="NT"/>
+                    <label end="121" start="120" name="NT"/>
+                    <label end="138" start="135" name="NT"/>
+                    <label end="45" start="41" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/23/2005 09:49:42 PST Wed" status="MANUAL" ID="6525278">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="178" start="170" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="6169" end="178" start="170" name="Remainder"/>
+                    <label cBy="RLG" feID="6168" end="190" start="180" name="Process"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="190" start="180" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="190" start="180" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

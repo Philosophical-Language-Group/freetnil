@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="remember.v" ID="11021" frame="Remembering_experience" frameID="1222" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="con" name="Context"/>
+            <FE fgColor="00008B" bgColor="d0d0d0" type="Peripheral" abbrev="dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="exp" name="Experience"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="imp" name="Impression"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="sal" name="Salient_entity"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="sta" name="State"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="viv" name="Vividness"/>
+        </frame>
+    </header>
+    <definition>FN: think of a past experience </definition>
+    <lexeme POS="V" name="remember"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <annoSet ID="6646635"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Experience"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="VPing" FE="Experience"/>
+                <annoSet ID="6646635"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="Experience"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <valenceUnit GF="Obj" PT="VPing" FE="Experience"/>
+                <annoSet ID="6646635"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="8" paragNo="44" aPos="0" ID="4148588">
+            <text>In a sort of dream I remember being half-led , halfcarried to the carriage ; in the same state I was conveyed to the train .</text>
+            <annotationSet cDate="04/30/2013 05:23:57 PDT Tue" status="UNANN" ID="6646632">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="3" start="3" name="dt"/>
+                    <label end="8" start="5" name="nn"/>
+                    <label end="11" start="10" name="in"/>
+                    <label end="17" start="13" name="nn"/>
+                    <label end="19" start="19" name="PRP"/>
+                    <label end="28" start="21" name="vbp"/>
+                    <label end="34" start="30" name="VBG"/>
+                    <label end="43" start="36" name="VBN"/>
+                    <label end="57" start="47" name="jj"/>
+                    <label end="60" start="59" name="to"/>
+                    <label end="64" start="62" name="dt"/>
+                    <label end="73" start="66" name="nn"/>
+                    <label end="78" start="77" name="in"/>
+                    <label end="82" start="80" name="dt"/>
+                    <label end="87" start="84" name="jj"/>
+                    <label end="93" start="89" name="nn"/>
+                    <label end="95" start="95" name="PRP"/>
+                    <label end="99" start="97" name="VBD"/>
+                    <label end="108" start="101" name="VBD"/>
+                    <label end="111" start="110" name="to"/>
+                    <label end="115" start="113" name="dt"/>
+                    <label end="121" start="117" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:23:59 PDT Tue" status="MANUAL" ID="6646635">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="28" start="21" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="7108" end="19" start="19" name="Cognizer"/>
+                    <label cBy="WMcQ" feID="7110" end="73" start="30" name="Experience"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="19" start="19" name="Ext"/>
+                    <label end="73" start="30" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="19" start="19" name="NP"/>
+                    <label end="73" start="30" name="VPing"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

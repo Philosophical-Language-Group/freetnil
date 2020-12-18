@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Direction" POS="ADV" name="beforehand.adv" ID="10887" frame="Time_vector" frameID="379" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Polemic Progressive Education" name="PolemicProgressiveEducation" ID="23011"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Direction" name="Direction"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Distance" name="Distance"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Core" abbrev="Evt" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="lan" name="Landmark_event"/>
+        </frame>
+    </header>
+    <definition>COD: in advance.</definition>
+    <lexeme POS="ADV" name="beforehand"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Direction"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INC" FE="Direction"/>
+                <annoSet ID="4529812"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Distance"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Distance"/>
+                <annoSet ID="4529812"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="Sfin" FE="Event"/>
+                <annoSet ID="4529812"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Landmark_event"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Landmark_event"/>
+                <annoSet ID="4529812"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Direction"/>
+            <FE name="Distance"/>
+            <FE name="Event"/>
+            <FE name="Landmark_event"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INC" FE="Direction"/>
+                <valenceUnit GF="" PT="INI" FE="Distance"/>
+                <valenceUnit GF="Head" PT="Sfin" FE="Event"/>
+                <valenceUnit GF="" PT="DNI" FE="Landmark_event"/>
+                <annoSet ID="4529812"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23011" sentNo="3" paragNo="9" aPos="0" ID="2824334">
+            <text>Conversely , there are the majority of unsuccessful schools , and we know which efforts at educational reform are doomed beforehand .</text>
+            <annotationSet cDate="02/05/2004 08:30:01 PST Thu" status="UNANN" ID="4528329">
+                <layer rank="1" name="PENN">
+                    <label end="9" start="0" name="rb"/>
+                    <label end="11" start="11" name=","/>
+                    <label end="17" start="13" name="ex"/>
+                    <label end="21" start="19" name="vbp"/>
+                    <label end="25" start="23" name="dt"/>
+                    <label end="34" start="27" name="nn"/>
+                    <label end="37" start="36" name="in"/>
+                    <label end="50" start="39" name="jj"/>
+                    <label end="58" start="52" name="nns"/>
+                    <label end="60" start="60" name=","/>
+                    <label end="64" start="62" name="cc"/>
+                    <label end="67" start="66" name="PP"/>
+                    <label end="72" start="69" name="VVP"/>
+                    <label end="78" start="74" name="wdt"/>
+                    <label end="86" start="80" name="nns"/>
+                    <label end="89" start="88" name="in"/>
+                    <label end="101" start="91" name="jj"/>
+                    <label end="108" start="103" name="nn"/>
+                    <label end="112" start="110" name="vbp"/>
+                    <label end="119" start="114" name="VVN"/>
+                    <label end="130" start="121" name="rb"/>
+                    <label end="132" start="132" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="9" start="0" name="NT"/>
+                    <label end="11" start="11" name="NT"/>
+                    <label end="60" start="60" name="NT"/>
+                    <label end="112" start="110" name="NT"/>
+                    <label end="132" start="132" name="NT"/>
+                    <label end="25" start="23" name="NT"/>
+                    <label end="64" start="62" name="NT"/>
+                    <label end="67" start="66" name="NT"/>
+                    <label end="78" start="74" name="NT"/>
+                    <label end="89" start="88" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/18/2004 05:54:39 PDT Wed" status="MANUAL" ID="4529812">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="130" start="121" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="3396" itype="DNI" name="Landmark_event"/>
+                    <label cBy="JKR" feID="3397" itype="INI" name="Distance"/>
+                    <label cBy="JKR" feID="3398" itype="INC" name="Direction"/>
+                    <label cBy="JKR" feID="4832" end="119" start="66" name="Event"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="119" start="66" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="119" start="66" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

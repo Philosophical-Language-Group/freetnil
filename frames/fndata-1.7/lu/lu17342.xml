@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="human.a" ID="17342" frame="Biological_entity" frameID="2567" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Organism"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="" name="Origin"/>
+        </frame>
+    </header>
+    <definition>FN: having the characteristic of being a person</definition>
+    <lexeme POS="A" name="human"/>
+    <semType name="Sentient" ID="5"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Organism"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Organism"/>
+                <annoSet ID="6645276"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Organism"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Organism"/>
+                <annoSet ID="6645276"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="7" paragNo="7" aPos="0" ID="4148254">
+            <text>Finally I was left in doubt as to whether it was animal or human .</text>
+            <annotationSet cDate="04/30/2013 05:17:11 PDT Tue" status="UNANN" ID="6645273">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="rb"/>
+                    <label end="8" start="8" name="PRP"/>
+                    <label end="12" start="10" name="VBD"/>
+                    <label end="17" start="14" name="VBN"/>
+                    <label end="20" start="19" name="in"/>
+                    <label end="26" start="22" name="nn"/>
+                    <label end="29" start="28" name="in"/>
+                    <label end="32" start="31" name="to"/>
+                    <label end="40" start="34" name="in"/>
+                    <label end="43" start="42" name="PRP"/>
+                    <label end="47" start="45" name="VBD"/>
+                    <label end="54" start="49" name="jj"/>
+                    <label end="57" start="56" name="cc"/>
+                    <label end="63" start="59" name="jj"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:17:12 PDT Tue" status="MANUAL" ID="6645276">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="63" start="59" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="14473" end="43" start="42" name="Organism"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="43" start="42" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="43" start="42" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="47" start="45" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

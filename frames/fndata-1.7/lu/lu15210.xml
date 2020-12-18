@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="cascade.n" ID="15210" frame="Natural_features" frameID="191" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Jamaica" name="IntroJamaica" ID="23754"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="Cnst" name="Constituent_parts"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="ContP" name="Container_possessor"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="FormC" name="Formational_cause"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Lcl" name="Locale"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="Name" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="RelLoc" name="Relative_location"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="Type" name="Type"/>
+        </frame>
+    </header>
+    <definition>FN: a waterfall or succession of waterfalls</definition>
+    <lexeme POS="N" name="cascade"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Descriptor"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPed" FE="Descriptor"/>
+                <annoSet ID="6555525"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Locale"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Locale"/>
+                <annoSet ID="6555525"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Descriptor"/>
+            <FE name="Locale"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPed" FE="Descriptor"/>
+                <valenceUnit GF="" PT="DEN" FE="Locale"/>
+                <annoSet ID="6555525"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23754" sentNo="5" paragNo="3" aPos="0" ID="4103849">
+            <text>Fresh water from tropical storms feeds 120 rivers and some of the most celebrated waterfalls and cascades on earth .</text>
+            <annotationSet cDate="07/17/2008 06:09:54 PDT Thu" status="UNANN" ID="6552656">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="jj"/>
+                    <label end="10" start="6" name="nn"/>
+                    <label end="15" start="12" name="in"/>
+                    <label end="24" start="17" name="jj"/>
+                    <label end="31" start="26" name="nns"/>
+                    <label end="37" start="33" name="VVZ"/>
+                    <label end="41" start="39" name="cd"/>
+                    <label end="48" start="43" name="nns"/>
+                    <label end="52" start="50" name="cc"/>
+                    <label end="57" start="54" name="dt"/>
+                    <label end="60" start="59" name="in"/>
+                    <label end="64" start="62" name="dt"/>
+                    <label end="69" start="66" name="rbs"/>
+                    <label end="80" start="71" name="jj"/>
+                    <label end="91" start="82" name="nns"/>
+                    <label end="95" start="93" name="cc"/>
+                    <label end="104" start="97" name="nns"/>
+                    <label end="107" start="106" name="in"/>
+                    <label end="113" start="109" name="nn"/>
+                    <label end="115" start="115" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="113" start="109" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="15" start="12" name="NT"/>
+                    <label end="41" start="39" name="NT"/>
+                    <label end="52" start="50" name="NT"/>
+                    <label end="60" start="59" name="NT"/>
+                    <label end="64" start="62" name="NT"/>
+                    <label end="69" start="66" name="NT"/>
+                    <label end="95" start="93" name="NT"/>
+                    <label end="115" start="115" name="NT"/>
+                    <label end="10" start="6" name="Nonrelational"/>
+                    <label end="113" start="109" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/25/2008 05:03:05 PDT Fri" status="MANUAL" ID="6555525">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="104" start="97" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="1573" end="104" start="97" name="Locale"/>
+                    <label cBy="KmG" feID="7153" end="80" start="71" name="Descriptor"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="80" start="71" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="80" start="71" name="VPed"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

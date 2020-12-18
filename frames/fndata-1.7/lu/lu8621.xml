@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="effects.n" ID="8621" frame="Possession" frameID="118" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="AFGP-2002-600002-Trans" name="AFGP-2002-600002-Trans" ID="23736"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Own" name="Owner"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Pos" name="Possession"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: personal belongings. </definition>
+    <lexeme POS="N" name="effects"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Depictive"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Depictive"/>
+                <annoSet ID="6550263"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Owner"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Owner"/>
+                <annoSet ID="6550263"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Possession"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Possession"/>
+                <annoSet ID="6550263"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Depictive"/>
+            <FE name="Owner"/>
+            <FE name="Possession"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Depictive"/>
+                <valenceUnit GF="" PT="INI" FE="Owner"/>
+                <valenceUnit GF="" PT="DEN" FE="Possession"/>
+                <annoSet ID="6550263"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23736" sentNo="1" paragNo="48" aPos="0" ID="4102887">
+            <text>2- Belongings A : Cars B : Personal effects C : Electronic equipment .</text>
+            <annotationSet cDate="08/21/2007 01:38:08 PDT Tue" status="UNANN" ID="6546702">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="cd"/>
+                    <label end="12" start="3" name="nns"/>
+                    <label end="14" start="14" name="dt"/>
+                    <label end="16" start="16" name=":"/>
+                    <label end="21" start="18" name="NPS"/>
+                    <label end="23" start="23" name="NP"/>
+                    <label end="25" start="25" name=":"/>
+                    <label end="34" start="27" name="jj"/>
+                    <label end="42" start="36" name="nns"/>
+                    <label end="44" start="44" name="NP"/>
+                    <label end="46" start="46" name=":"/>
+                    <label end="57" start="48" name="jj"/>
+                    <label end="67" start="59" name="nn"/>
+                    <label end="69" start="69" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="23" start="18" name="organization"/>
+                    <label end="57" start="48" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="14" start="14" name="NT"/>
+                    <label end="16" start="16" name="NT"/>
+                    <label end="23" start="23" name="NT"/>
+                    <label end="25" start="25" name="NT"/>
+                    <label end="44" start="44" name="NT"/>
+                    <label end="46" start="46" name="NT"/>
+                    <label end="69" start="69" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/06/2007 02:37:44 PST Tue" status="MANUAL" ID="6550263">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="42" start="36" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="584" end="34" start="27" name="Depictive"/>
+                    <label cBy="JKs" feID="582" end="42" start="36" name="Possession"/>
+                    <label cBy="JKs" feID="573" itype="INI" name="Owner"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="34" start="27" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="34" start="27" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

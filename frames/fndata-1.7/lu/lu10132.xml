@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Idiosyncrasy" POS="N" name="peculiarity.n" ID="10132" frame="Idiosyncrasy" frameID="982" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Bell Ringing" name="BellRinging" ID="23009"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Ent2" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Id" name="Idiosyncrasy"/>
+        </frame>
+    </header>
+    <definition>COD: an unusual or distinctive feature or habit</definition>
+    <lexeme POS="N" name="peculiarity"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Entity"/>
+                <annoSet ID="4528536"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Idiosyncrasy"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Idiosyncrasy"/>
+                <annoSet ID="4528536"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Entity"/>
+            <FE name="Idiosyncrasy"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Entity"/>
+                <valenceUnit GF="" PT="DEN" FE="Idiosyncrasy"/>
+                <annoSet ID="4528536"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23009" sentNo="1" paragNo="1" aPos="0" ID="2824197">
+            <text>The art of change-ringing is peculiar to the English , and , like most English peculiarities , unintelligible to the rest of the world .</text>
+            <annotationSet cDate="02/05/2004 08:29:18 PST Thu" status="UNANN" ID="4528192">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="6" start="4" name="nn"/>
+                    <label end="9" start="8" name="in"/>
+                    <label end="24" start="11" name="nn"/>
+                    <label end="27" start="26" name="VBZ"/>
+                    <label end="36" start="29" name="jj"/>
+                    <label end="39" start="38" name="to"/>
+                    <label end="43" start="41" name="dt"/>
+                    <label end="51" start="45" name="NP"/>
+                    <label end="53" start="53" name=","/>
+                    <label end="57" start="55" name="cc"/>
+                    <label end="59" start="59" name=","/>
+                    <label end="64" start="61" name="in"/>
+                    <label end="69" start="66" name="jjs"/>
+                    <label end="77" start="71" name="jj"/>
+                    <label end="91" start="79" name="nns"/>
+                    <label end="93" start="93" name=","/>
+                    <label end="108" start="95" name="jj"/>
+                    <label end="111" start="110" name="to"/>
+                    <label end="115" start="113" name="dt"/>
+                    <label end="120" start="117" name="nn"/>
+                    <label end="123" start="122" name="in"/>
+                    <label end="127" start="125" name="dt"/>
+                    <label end="133" start="129" name="nn"/>
+                    <label end="135" start="135" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="51" start="45" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="27" start="26" name="NT"/>
+                    <label end="53" start="53" name="NT"/>
+                    <label end="59" start="59" name="NT"/>
+                    <label end="93" start="93" name="NT"/>
+                    <label end="111" start="110" name="NT"/>
+                    <label end="135" start="135" name="NT"/>
+                    <label end="43" start="41" name="NT"/>
+                    <label end="57" start="55" name="NT"/>
+                    <label end="115" start="113" name="NT"/>
+                    <label end="123" start="122" name="NT"/>
+                    <label end="127" start="125" name="NT"/>
+                    <label end="2" start="0" name="NT"/>
+                    <label end="9" start="8" name="NT"/>
+                    <label end="39" start="38" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/21/2004 08:36:42 PST Sun" status="MANUAL" ID="4528536">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="91" start="79" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="5977" end="91" start="79" name="Idiosyncrasy"/>
+                    <label cBy="MJE" feID="5978" end="77" start="71" name="Entity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="77" start="71" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="77" start="71" name="A"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="feelings.n" ID="10300" frame="Feeling" frameID="396" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Bell Ringing" name="BellRinging" ID="23009"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Emot" name="Emotion"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="Emo_s" name="Emotional_state"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="Eval" name="Evaluation"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Exp" name="Experiencer"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+        </frame>
+    </header>
+    <definition>COD:  emotional responses or tendencies to respond.</definition>
+    <lexeme POS="N" name="feelings"/>
+    <valences>
+        <governor type="Sup" lemma="admit">
+            <annoSet ID="4528828"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Emotion"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Emotion"/>
+                <annoSet ID="4528828"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Evaluation"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Evaluation"/>
+                <annoSet ID="4528828"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Experiencer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Experiencer"/>
+                <annoSet ID="4528828"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Emotion"/>
+            <FE name="Evaluation"/>
+            <FE name="Experiencer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Emotion"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Evaluation"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Experiencer"/>
+                <annoSet ID="4528828"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23009" sentNo="1" paragNo="20" aPos="0" ID="2824244">
+            <text>Vicar Marshall admits to mixed feelings about this issue , since he is both a vicar and an active bell-ringer himself .</text>
+            <annotationSet cDate="02/05/2004 08:29:34 PST Thu" status="UNANN" ID="4528239">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="NP"/>
+                    <label end="13" start="6" name="NP"/>
+                    <label end="20" start="15" name="VVZ"/>
+                    <label end="23" start="22" name="to"/>
+                    <label end="29" start="25" name="jj"/>
+                    <label end="38" start="31" name="nns"/>
+                    <label end="44" start="40" name="in"/>
+                    <label end="49" start="46" name="dt"/>
+                    <label end="55" start="51" name="nn"/>
+                    <label end="57" start="57" name=","/>
+                    <label end="63" start="59" name="in"/>
+                    <label end="66" start="65" name="PP"/>
+                    <label end="69" start="68" name="VBZ"/>
+                    <label end="74" start="71" name="pdt"/>
+                    <label end="76" start="76" name="dt"/>
+                    <label end="82" start="78" name="nn"/>
+                    <label end="86" start="84" name="cc"/>
+                    <label end="89" start="88" name="dt"/>
+                    <label end="96" start="91" name="jj"/>
+                    <label end="108" start="98" name="nn"/>
+                    <label end="116" start="110" name="PP"/>
+                    <label end="118" start="118" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="13" start="0" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="23" start="22" name="NT"/>
+                    <label end="57" start="57" name="NT"/>
+                    <label end="69" start="68" name="NT"/>
+                    <label end="118" start="118" name="NT"/>
+                    <label end="4" start="0" name="NT"/>
+                    <label end="13" start="6" name="NT"/>
+                    <label end="49" start="46" name="NT"/>
+                    <label end="66" start="65" name="NT"/>
+                    <label end="74" start="71" name="NT"/>
+                    <label end="76" start="76" name="NT"/>
+                    <label end="86" start="84" name="NT"/>
+                    <label end="89" start="88" name="NT"/>
+                    <label end="116" start="110" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/06/2004 01:25:49 PDT Tue" status="MANUAL" ID="4528828">
+                <layer rank="1" name="Target">
+                    <label cBy="MiL" end="38" start="31" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MiL" feID="3554" end="13" start="0" name="Experiencer"/>
+                    <label cBy="MiL" feID="3559" end="29" start="25" name="Evaluation"/>
+                    <label cBy="MJE" feID="3555" end="38" start="31" name="Emotion"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="13" start="0" name="Ext"/>
+                    <label end="29" start="25" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="13" start="0" name="NP"/>
+                    <label end="29" start="25" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="20" start="15" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

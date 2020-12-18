@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="PREP" name="out.prep" ID="12672" frame="Expected_location_of_person" frameID="1619" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="enron-thread-159550" name="enron-thread-159550" ID="23724"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="loc" name="Location"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="per" name="Person"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: not at home or one's place of work.</definition>
+    <lexeme POS="PREP" name="out"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Duration"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Duration"/>
+                <annoSet ID="6548470"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Location"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Location"/>
+                <annoSet ID="6548470"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Person"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Person"/>
+                <annoSet ID="6548470"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Duration"/>
+            <FE name="Location"/>
+            <FE name="Person"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Duration"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Location"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Person"/>
+                <annoSet ID="6548470"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23724" sentNo="1" paragNo="7" aPos="0" ID="4101632">
+            <text>FYI-I will be out of the office all next week .</text>
+            <annotationSet cDate="08/15/2007 03:55:30 PDT Wed" status="UNANN" ID="6545390">
+                <layer rank="1" name="PENN">
+                    <label end="9" start="6" name="md"/>
+                    <label end="12" start="11" name="vb"/>
+                    <label end="16" start="14" name="rb"/>
+                    <label end="19" start="18" name="in"/>
+                    <label end="23" start="21" name="dt"/>
+                    <label end="30" start="25" name="nn"/>
+                    <label end="34" start="32" name="dt"/>
+                    <label end="39" start="36" name="jj"/>
+                    <label end="44" start="41" name="nn"/>
+                    <label end="46" start="46" name="sent"/>
+                    <label end="4" start="0" name="rp"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="9" start="6" name="NT"/>
+                    <label end="12" start="11" name="NT"/>
+                    <label end="19" start="18" name="NT"/>
+                    <label end="23" start="21" name="NT"/>
+                    <label end="34" start="32" name="NT"/>
+                    <label end="46" start="46" name="NT"/>
+                    <label end="4" start="0" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/18/2007 02:25:07 PDT Thu" status="MANUAL" ID="6548470">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="16" start="14" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="8946" end="30" start="18" name="Location"/>
+                    <label cBy="JKs" feID="8951" end="44" start="32" name="Duration"/>
+                    <label cBy="CVa" feID="8947" end="4" start="4" name="Person"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="30" start="18" name="Dep"/>
+                    <label end="44" start="32" name="Dep"/>
+                    <label end="4" start="4" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="30" start="18" name="PP"/>
+                    <label end="44" start="32" name="AVP"/>
+                    <label end="4" start="4" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Prep">
+                    <label end="12" start="11" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

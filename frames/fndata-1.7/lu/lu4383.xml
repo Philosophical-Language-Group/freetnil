@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="illness.n" ID="4383" frame="Medical_conditions" frameID="239" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="B W Tutorial chapter1" name="BWTutorial_chapter1" ID="23602"/>
+        </corpus>
+        <frame>
+            <FE fgColor="000000" bgColor="FFFF00" type="Core" abbrev="" name="Ailment"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="Body_P" name="Body_part"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="Cause" name="Cause"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="deg" name="Degree"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="Name" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Pat" name="Patient"/>
+            <FE fgColor="000000" bgColor="7CCD73" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Symp" name="Symptom"/>
+        </frame>
+    </header>
+    <definition>COD: a disease or period of sickness</definition>
+    <lexeme POS="N" name="illness"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Ailment"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Ailment"/>
+                <annoSet ID="6534688"/>
+                <annoSet ID="6535633"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Ailment"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Ailment"/>
+                <annoSet ID="6534688"/>
+                <annoSet ID="6535633"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23602" sentNo="2" paragNo="13" aPos="0" ID="4099373">
+            <text>Symptoms of illness do not appear immediately but only after a delay , or `` incubation period , '' that may last for days to weeks .</text>
+            <annotationSet cDate="06/02/2006 03:11:37 PDT Fri" status="UNANN" ID="6534600">
+                <layer rank="1" name="PENN">
+                    <label end="7" start="0" name="nns"/>
+                    <label end="10" start="9" name="in"/>
+                    <label end="18" start="12" name="nn"/>
+                    <label end="21" start="20" name="VVP"/>
+                    <label end="25" start="23" name="rb"/>
+                    <label end="32" start="27" name="VV"/>
+                    <label end="44" start="34" name="rb"/>
+                    <label end="48" start="46" name="cc"/>
+                    <label end="53" start="50" name="rb"/>
+                    <label end="59" start="55" name="in"/>
+                    <label end="61" start="61" name="dt"/>
+                    <label end="67" start="63" name="nn"/>
+                    <label end="69" start="69" name=","/>
+                    <label end="72" start="71" name="cc"/>
+                    <label end="75" start="74" name="``"/>
+                    <label end="86" start="77" name="nn"/>
+                    <label end="93" start="88" name="nn"/>
+                    <label end="95" start="95" name=","/>
+                    <label end="98" start="97" name="''"/>
+                    <label end="103" start="100" name="wdt"/>
+                    <label end="107" start="105" name="md"/>
+                    <label end="112" start="109" name="VV"/>
+                    <label end="116" start="114" name="in"/>
+                    <label end="121" start="118" name="nns"/>
+                    <label end="124" start="123" name="to"/>
+                    <label end="130" start="126" name="nns"/>
+                    <label end="132" start="132" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="10" start="9" name="NT"/>
+                    <label end="21" start="20" name="NT"/>
+                    <label end="25" start="23" name="NT"/>
+                    <label end="44" start="34" name="NT"/>
+                    <label end="48" start="46" name="NT"/>
+                    <label end="53" start="50" name="NT"/>
+                    <label end="61" start="61" name="NT"/>
+                    <label end="69" start="69" name="NT"/>
+                    <label end="72" start="71" name="NT"/>
+                    <label end="75" start="74" name="NT"/>
+                    <label end="95" start="95" name="NT"/>
+                    <label end="98" start="97" name="NT"/>
+                    <label end="103" start="100" name="NT"/>
+                    <label end="107" start="105" name="NT"/>
+                    <label end="116" start="114" name="NT"/>
+                    <label end="124" start="123" name="NT"/>
+                    <label end="132" start="132" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/02/2006 04:08:34 PDT Fri" status="MANUAL" ID="6534688">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="18" start="12" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="9687" end="18" start="12" name="Ailment"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23602" sentNo="2" paragNo="12" aPos="0" ID="4099371">
+            <text>They cause illness or death within minutes to hours after exposure .</text>
+            <annotationSet cDate="06/02/2006 03:11:36 PDT Fri" status="UNANN" ID="6534598">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="PP"/>
+                    <label end="9" start="5" name="VVP"/>
+                    <label end="17" start="11" name="nn"/>
+                    <label end="20" start="19" name="cc"/>
+                    <label end="26" start="22" name="nn"/>
+                    <label end="33" start="28" name="in"/>
+                    <label end="41" start="35" name="nns"/>
+                    <label end="44" start="43" name="to"/>
+                    <label end="50" start="46" name="nns"/>
+                    <label end="56" start="52" name="in"/>
+                    <label end="65" start="58" name="nn"/>
+                    <label end="67" start="67" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="20" start="19" name="NT"/>
+                    <label end="33" start="28" name="NT"/>
+                    <label end="44" start="43" name="NT"/>
+                    <label end="67" start="67" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/21/2006 03:42:48 PDT Wed" status="MANUAL" ID="6535633">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="17" start="11" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="9687" end="17" start="11" name="Ailment"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="connected.a" ID="13664" frame="Being_attached" frameID="307" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Hong Kong" name="IntroHongKong" ID="23757"/>
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="7CCD73" type="Core" abbrev="Conn" name="Connector"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="State" name="Dependent_state"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Goal" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="Handle" name="Handle"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Item" name="Item"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Items" name="Items"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mnr" name="Manner"/>
+        </frame>
+    </header>
+    <definition>FN: linked together.</definition>
+    <lexeme POS="A" name="connected"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Connector"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="PP[by]" FE="Connector"/>
+                <annoSet ID="6559728"/>
+                <annoSet ID="6561066"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Goal"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Goal"/>
+                <annoSet ID="6561066"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Item"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Item"/>
+                <annoSet ID="6559728"/>
+                <annoSet ID="6561066"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Item"/>
+                <annoSet ID="6559728"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Connector"/>
+            <FE name="Goal"/>
+            <FE name="Item"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[by]" FE="Connector"/>
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Goal"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Item"/>
+                <annoSet ID="6561066"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Connector"/>
+            <FE name="Item"/>
+            <FE name="Item"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[by]" FE="Connector"/>
+                <valenceUnit GF="Dep" PT="NP" FE="Item"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Item"/>
+                <annoSet ID="6559728"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23757" sentNo="2" paragNo="11" aPos="0" ID="4104023">
+            <text>Across Victoria Harbor , connected by ferry and the MTR rail line , is the Kowloon peninsula with its hotels , nightlife , and almost non-stop shopping .</text>
+            <annotationSet cDate="07/21/2008 03:12:23 PDT Mon" status="UNANN" ID="6552835">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="in"/>
+                    <label end="14" start="7" name="NP"/>
+                    <label end="21" start="16" name="NP"/>
+                    <label end="23" start="23" name=","/>
+                    <label end="33" start="25" name="VVN"/>
+                    <label end="36" start="35" name="in"/>
+                    <label end="42" start="38" name="nn"/>
+                    <label end="46" start="44" name="cc"/>
+                    <label end="50" start="48" name="dt"/>
+                    <label end="54" start="52" name="NP"/>
+                    <label end="59" start="56" name="nn"/>
+                    <label end="64" start="61" name="nn"/>
+                    <label end="66" start="66" name=","/>
+                    <label end="69" start="68" name="VBZ"/>
+                    <label end="73" start="71" name="dt"/>
+                    <label end="81" start="75" name="NP"/>
+                    <label end="91" start="83" name="nn"/>
+                    <label end="96" start="93" name="in"/>
+                    <label end="100" start="98" name="PP$"/>
+                    <label end="107" start="102" name="nns"/>
+                    <label end="109" start="109" name=","/>
+                    <label end="119" start="111" name="nn"/>
+                    <label end="121" start="121" name=","/>
+                    <label end="125" start="123" name="cc"/>
+                    <label end="132" start="127" name="rb"/>
+                    <label end="141" start="134" name="jj"/>
+                    <label end="150" start="143" name="nn"/>
+                    <label end="152" start="152" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="21" start="7" name="location"/>
+                    <label end="54" start="52" name="organization"/>
+                    <label end="81" start="75" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="0" name="NT"/>
+                    <label end="14" start="7" name="NT"/>
+                    <label end="21" start="16" name="NT"/>
+                    <label end="23" start="23" name="NT"/>
+                    <label end="36" start="35" name="NT"/>
+                    <label end="46" start="44" name="NT"/>
+                    <label end="50" start="48" name="NT"/>
+                    <label end="54" start="52" name="NT"/>
+                    <label end="66" start="66" name="NT"/>
+                    <label end="69" start="68" name="NT"/>
+                    <label end="73" start="71" name="NT"/>
+                    <label end="81" start="75" name="NT"/>
+                    <label end="96" start="93" name="NT"/>
+                    <label end="100" start="98" name="NT"/>
+                    <label end="109" start="109" name="NT"/>
+                    <label end="121" start="121" name="NT"/>
+                    <label end="125" start="123" name="NT"/>
+                    <label end="132" start="127" name="NT"/>
+                    <label end="152" start="152" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="12/08/2010 02:35:47 PST Wed" status="MANUAL" ID="6559728">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="33" start="25" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="2629" end="64" start="35" name="Connector"/>
+                    <label cBy="MLC" feID="2631" end="150" start="71" name="Item"/>
+                    <label cBy="MLC" feID="2631" end="21" start="7" name="Item"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="64" start="35" name="Dep"/>
+                    <label end="150" start="71" name="Dep"/>
+                    <label end="21" start="7" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="64" start="35" name="PP"/>
+                    <label end="150" start="71" name="NP"/>
+                    <label end="21" start="7" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent">
+                    <label end="0" start="0" name="Metaphor"/>
+                </layer>
+                <layer rank="1" name="Adj">
+                    <label end="69" start="68" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23771" sentNo="1" paragNo="124" aPos="0" ID="4106222">
+            <text>Farther away is Coloane , connected to Taipa by a causeway and a large land reclamation project .</text>
+            <annotationSet cDate="07/25/2008 01:20:51 PDT Fri" status="UNANN" ID="6555312">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="rb"/>
+                    <label end="11" start="8" name="rb"/>
+                    <label end="14" start="13" name="VBZ"/>
+                    <label end="22" start="16" name="NP"/>
+                    <label end="24" start="24" name=","/>
+                    <label end="34" start="26" name="VVN"/>
+                    <label end="37" start="36" name="to"/>
+                    <label end="43" start="39" name="NP"/>
+                    <label end="46" start="45" name="in"/>
+                    <label end="48" start="48" name="dt"/>
+                    <label end="57" start="50" name="nn"/>
+                    <label end="61" start="59" name="cc"/>
+                    <label end="63" start="63" name="dt"/>
+                    <label end="69" start="65" name="jj"/>
+                    <label end="74" start="71" name="nn"/>
+                    <label end="86" start="76" name="nn"/>
+                    <label end="94" start="88" name="nn"/>
+                    <label end="96" start="96" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="22" start="16" name="person"/>
+                    <label end="57" start="50" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="0" name="NT"/>
+                    <label end="11" start="8" name="NT"/>
+                    <label end="14" start="13" name="NT"/>
+                    <label end="22" start="16" name="NT"/>
+                    <label end="24" start="24" name="NT"/>
+                    <label end="37" start="36" name="NT"/>
+                    <label end="43" start="39" name="NT"/>
+                    <label end="46" start="45" name="NT"/>
+                    <label end="48" start="48" name="NT"/>
+                    <label end="61" start="59" name="NT"/>
+                    <label end="63" start="63" name="NT"/>
+                    <label end="96" start="96" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/26/2011 05:46:06 PST Wed" status="MANUAL" ID="6561066">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="34" start="26" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="2633" end="43" start="36" name="Goal"/>
+                    <label cBy="MLC" feID="2631" end="22" start="16" name="Item"/>
+                    <label cBy="MLC" feID="2629" end="94" start="45" name="Connector"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="43" start="36" name="Dep"/>
+                    <label end="22" start="16" name="Ext"/>
+                    <label end="94" start="45" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="43" start="36" name="PP"/>
+                    <label end="22" start="16" name="NP"/>
+                    <label end="94" start="45" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other">
+                    <label end="22" start="16" name="Ant"/>
+                </layer>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

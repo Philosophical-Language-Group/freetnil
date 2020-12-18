@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="CVa" cDate="02/09/2012 12:28:43 PST Thu" name="Biological_classification" ID="2701" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;This frame has to do with scientific taxonomy.  The lexical units in this frame include the seven major classifications in which organisms are grouped based on common biological characteristics.  These classifications are labeled &lt;fen&gt;Rank&lt;/fen&gt; in this frame.  The &lt;fen&gt;Member&lt;/fen&gt;s or &lt;fen&gt;Subtype&lt;/fen&gt; of the &lt;fen&gt;Rank&lt;/fen&gt; is often expressed with the use of the target-denoting noun.
+&lt;ex&gt;&lt;/ex&gt;
+&lt;ex&gt;&lt;t&gt;&lt;fex name="Rank"&gt;Phylum&lt;/fex&gt;&lt;/t&gt; &lt;fex name="Sub"&gt;Arthropoda&lt;/fex&gt; &lt;m&gt;contains&lt;/m&gt; &lt;fex name="Mem"&gt;crustaceans, insects, spiders and other creepy-crawlies&lt;/fex&gt;.&lt;/ex&gt;
+&lt;ex&gt;&lt;/ex&gt;
+&lt;ex&gt;&lt;fex name="Mem"&gt;The snow leopard&lt;/fex&gt; &lt;m&gt;belongs&lt;/m&gt; to the &lt;t&gt;&lt;fex name="Rank"&gt;kingdom&lt;/fex&gt;&lt;/t&gt; &lt;fex name="Sub"&gt;Animalia&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="CVa" cDate="02/09/2012 12:41:50 PST Thu" abbrev="R" name="Rank" ID="15444">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Rank&lt;/fen&gt; is the taxonomic category to which the &lt;fen&gt;Member&lt;/fen&gt; belongs.  It is also always the target-denoting noun.
+
+&lt;ex&gt;Molds and mushrooms belong to the &lt;t&gt;&lt;fex name="Rank"&gt;kingdom&lt;/fex&gt;&lt;/t&gt; Fungi.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Core" cBy="CVa" cDate="02/09/2012 12:45:51 PST Thu" abbrev="Mem" name="Member" ID="15445">
+        <definition>&lt;def-root&gt;The living organism which belongs to the expressed &lt;fen&gt;Rank&lt;/fen&gt;.
+
+&lt;ex&gt;The &lt;t&gt;genus&lt;/t&gt; Homo &lt;m&gt;includes&lt;/m&gt; &lt;fex name="Mem"&gt;modern humans&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="Living_thing" ID="66"/>
+    </FE>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Core" cBy="CVa" cDate="02/09/2012 12:58:04 PST Thu" abbrev="Sub" name="Subtype" ID="15447">
+        <definition>&lt;def-root&gt;The subtype of the &lt;fen&gt;Rank&lt;/fen&gt;.
+
+&lt;ex&gt;Do humans belong to the &lt;t&gt;order&lt;/t&gt; &lt;fex name="Sub"&gt;Primate&lt;/fex&gt;?&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FFD700" fgColor="000000" coreType="Peripheral" cBy="CVa" cDate="02/10/2012 11:02:14 PST Fri" abbrev="Prop" name="Property" ID="15448">
+        <definition>&lt;def-root&gt;A property of the &lt;fen&gt;Member&lt;/fen&gt; of the &lt;fen&gt;Rank&lt;/fen&gt;.
+
+&lt;ex&gt;Members of the &lt;t&gt;phylum&lt;/t&gt; Cycliophora &lt;m&gt;have&lt;/m&gt; &lt;fex name="Prop"&gt;a circular mouth&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FEcoreSet>
+        <memberFE name="Subtype" ID="15447"/>
+        <memberFE name="Member" ID="15445"/>
+    </FEcoreSet>
+    <frameRelation type="Inherits from">
+        <relatedFrame ID="128">Type</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses">
+        <relatedFrame ID="2567">Biological_entity</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="Created" incorporatedFE="Rank" POS="N" name="kingdom.n" ID="16883" lemmaID="21342" cBy="CVa" cDate="02/09/2012 01:08:55 PST Thu">
+        <definition>FN: one of the highest taxonomic categories which currently contains six subdivisions: Bacteria, Protozoa, Chromista, Plantae, Fungi and Animalia</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="kingdom"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Rank" POS="N" name="phylum.n" ID="16884" lemmaID="28855" cBy="CVa" cDate="02/10/2012 11:10:23 PST Fri">
+        <definition>FN: the taxonomic grouping ranking just below Kingdom; organisms are grouped into phyla based on evolutionary relatedness</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="phylum"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Rank" POS="N" name="class.n" ID="16885" lemmaID="6672" cBy="CVa" cDate="02/10/2012 11:13:07 PST Fri">
+        <definition>FN: the taxonomic group ranking just below Phylum</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="class"/>
+    </lexUnit>
+    <lexUnit status="Add_Annotation" incorporatedFE="Rank" POS="N" name="order.n" ID="16886" lemmaID="26907" cBy="CVa" cDate="02/10/2012 11:14:41 PST Fri">
+        <definition>FN: the taxonomic group ranking just below Class</definition>
+        <sentenceCount annotated="4" total="54"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="order"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Rank" POS="N" name="family.n" ID="16887" lemmaID="13903" cBy="CVa" cDate="02/10/2012 11:16:09 PST Fri">
+        <definition>FN: the taxonomic rank between Order and Genus</definition>
+        <sentenceCount annotated="1" total="1"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="family"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Rank" POS="N" name="genus.n" ID="16888" lemmaID="16121" cBy="CVa" cDate="02/10/2012 11:17:11 PST Fri">
+        <definition>FN: one of the lowest-ranking taxonomic class, situated between Family and Species</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="genus"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Rank" POS="N" name="species.n" ID="16889" lemmaID="37224" cBy="CVa" cDate="02/10/2012 11:18:12 PST Fri">
+        <definition>FN: a formal taxonomic class, subdivision of a genus; members of a species can interbreed, while members of different species usually cannot</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="species"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Rank" POS="N" name="domain.n" ID="16890" lemmaID="11451" cBy="CVa" cDate="02/10/2012 11:22:03 PST Fri">
+        <definition>FN: the highest-ranked level of taxonomic classification</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="domain"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Rank" POS="N" name="variety.n" ID="17265" lemmaID="42730" cBy="CFB" cDate="01/23/2013 11:36:11 PST Wed">
+        <definition>FN: a subdivision of a species with distinctive characteristics; in botany, used as a subdivsion of subspecies; in other fields, sometimes equivalent to subspecies</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="variety"/>
+    </lexUnit>
+</frame>

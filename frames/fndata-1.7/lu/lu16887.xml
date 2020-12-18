@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Rank" POS="N" name="family.n" ID="16887" frame="Biological_classification" frameID="2701" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Mem" name="Member"/>
+            <FE fgColor="000000" bgColor="FFD700" type="Peripheral" abbrev="Prop" name="Property"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="R" name="Rank"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Sub" name="Subtype"/>
+        </frame>
+    </header>
+    <definition>FN: the taxonomic rank between Order and Genus</definition>
+    <lexeme POS="N" name="family"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Subtype"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Subtype"/>
+                <annoSet ID="6626674"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Subtype"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Subtype"/>
+                <annoSet ID="6626674"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence sentNo="0" aPos="49081110" ID="279552">
+            <text>The perfection of this design is attested by the fact that species belonging to quite different families of fish have adopted it and thus bear a strong resemblance to one another . </text>
+            <annotationSet cDate="01/06/2003 09:38:34 PST Mon" status="UNANN" ID="204593">
+                <layer rank="1" name="BNC">
+                    <label end="2" start="0" name="AT0"/>
+                    <label end="13" start="4" name="NN1"/>
+                    <label end="16" start="15" name="PRF"/>
+                    <label end="21" start="18" name="DT0"/>
+                    <label end="28" start="23" name="NN1"/>
+                    <label end="31" start="30" name="VBZ"/>
+                    <label end="40" start="33" name="VVN"/>
+                    <label end="43" start="42" name="PRP"/>
+                    <label end="47" start="45" name="AT0"/>
+                    <label end="52" start="49" name="NN1"/>
+                    <label end="57" start="54" name="CJT-DT0"/>
+                    <label end="65" start="59" name="NN0"/>
+                    <label end="75" start="67" name="VVG"/>
+                    <label end="78" start="77" name="PRP"/>
+                    <label end="84" start="80" name="AV0"/>
+                    <label end="94" start="86" name="AJ0"/>
+                    <label end="103" start="96" name="NN2"/>
+                    <label end="106" start="105" name="PRF"/>
+                    <label end="111" start="108" name="NN0"/>
+                    <label end="116" start="113" name="VHB"/>
+                    <label end="124" start="118" name="VVN"/>
+                    <label end="127" start="126" name="PNP"/>
+                    <label end="131" start="129" name="CJC"/>
+                    <label end="136" start="133" name="AV0"/>
+                    <label end="141" start="138" name="VVB"/>
+                    <label end="143" start="143" name="AT0"/>
+                    <label end="150" start="145" name="AJ0"/>
+                    <label end="162" start="152" name="NN1"/>
+                    <label end="165" start="164" name="PRP"/>
+                    <label end="169" start="167" name="PNX"/>
+                    <label end="177" start="171" name="PNX"/>
+                    <label end="179" start="179" name="PUN"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="05/17/2012 04:02:51 PDT Thu" status="MANUAL" ID="6626674">
+                <layer rank="1" name="Target">
+                    <label cBy="PKe" end="103" start="96" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="PKe" feID="15447" end="111" start="105" name="Subtype"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="111" start="105" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="111" start="105" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="delay.v" ID="7948" frame="Hindering" frameID="480" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Missile" name="Iran_Missile" ID="23512"/>
+        </corpus>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_10" name="Fires_10" ID="25625"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Act" name="Action"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Extra-Thematic" abbrev="" name="Concessive"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="Deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Hin" name="Hindrance"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Peripheral" abbrev="Man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Pro" name="Protagonist"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: become or cause to become late or slow. </definition>
+    <lexeme POS="V" name="delay"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Action"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Action"/>
+                <annoSet ID="6525006"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Hindrance"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Hindrance"/>
+                <annoSet ID="6525006"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[by]" FE="Hindrance"/>
+                <annoSet ID="6671545"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Protagonist"/>
+                <annoSet ID="6671545"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Action"/>
+            <FE name="Hindrance"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Action"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Hindrance"/>
+                <annoSet ID="6525006"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Hindrance"/>
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[by]" FE="Hindrance"/>
+                <valenceUnit GF="" PT="DNI" FE="Protagonist"/>
+                <annoSet ID="6671545"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23512" sentNo="5" paragNo="38" aPos="0" ID="4096849">
+            <text>Any one of a host of international or domestic factors , however , could accelerate or delay these developments .</text>
+            <annotationSet cDate="02/25/2005 12:23:37 PST Fri" status="UNANN" ID="6522514">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="6" start="4" name="nn"/>
+                    <label end="9" start="8" name="in"/>
+                    <label end="11" start="11" name="dt"/>
+                    <label end="16" start="13" name="nn"/>
+                    <label end="19" start="18" name="in"/>
+                    <label end="33" start="21" name="jj"/>
+                    <label end="36" start="35" name="cc"/>
+                    <label end="45" start="38" name="jj"/>
+                    <label end="53" start="47" name="nns"/>
+                    <label end="55" start="55" name=","/>
+                    <label end="63" start="57" name="rb"/>
+                    <label end="65" start="65" name=","/>
+                    <label end="71" start="67" name="md"/>
+                    <label end="82" start="73" name="VV"/>
+                    <label end="85" start="84" name="cc"/>
+                    <label end="91" start="87" name="VV"/>
+                    <label end="97" start="93" name="dt"/>
+                    <label end="110" start="99" name="nns"/>
+                    <label end="112" start="112" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="9" start="8" name="NT"/>
+                    <label end="11" start="11" name="NT"/>
+                    <label end="19" start="18" name="NT"/>
+                    <label end="36" start="35" name="NT"/>
+                    <label end="55" start="55" name="NT"/>
+                    <label end="65" start="65" name="NT"/>
+                    <label end="71" start="67" name="NT"/>
+                    <label end="85" start="84" name="NT"/>
+                    <label end="97" start="93" name="NT"/>
+                    <label end="112" start="112" name="NT"/>
+                    <label end="63" start="57" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/16/2005 12:43:47 PST Wed" status="MANUAL" ID="6525006">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="91" start="87" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="4011" end="53" start="0" name="Hindrance"/>
+                    <label cBy="RLG" feID="4012" end="110" start="93" name="Action"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="53" start="0" name="Ext"/>
+                    <label end="110" start="93" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="53" start="0" name="NP"/>
+                    <label end="110" start="93" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="246" docID="25625" sentNo="1" paragNo="9" aPos="0" ID="4165603">
+            <text>Some helicopters and airplanes , which were to drop water on the fires , continued to be delayed by strong winds .</text>
+            <annotationSet cDate="07/21/2014 11:09:20 PDT Mon" status="UNANN" ID="6670859">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="15" start="5" name="nns"/>
+                    <label end="19" start="17" name="cc"/>
+                    <label end="29" start="21" name="nns"/>
+                    <label end="31" start="31" name=","/>
+                    <label end="37" start="33" name="wdt"/>
+                    <label end="42" start="39" name="VBD"/>
+                    <label end="45" start="44" name="to"/>
+                    <label end="50" start="47" name="VV"/>
+                    <label end="56" start="52" name="nn"/>
+                    <label end="59" start="58" name="in"/>
+                    <label end="63" start="61" name="dt"/>
+                    <label end="69" start="65" name="nns"/>
+                    <label end="71" start="71" name=","/>
+                    <label end="81" start="73" name="VVD"/>
+                    <label end="84" start="83" name="to"/>
+                    <label end="87" start="86" name="vb"/>
+                    <label end="95" start="89" name="VVN"/>
+                    <label end="98" start="97" name="in"/>
+                    <label end="105" start="100" name="jj"/>
+                    <label end="111" start="107" name="nns"/>
+                    <label end="113" start="113" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="19" start="17" name="NT"/>
+                    <label end="31" start="31" name="NT"/>
+                    <label end="37" start="33" name="NT"/>
+                    <label end="42" start="39" name="NT"/>
+                    <label end="45" start="44" name="NT"/>
+                    <label end="63" start="61" name="NT"/>
+                    <label end="71" start="71" name="NT"/>
+                    <label end="84" start="83" name="NT"/>
+                    <label end="87" start="86" name="NT"/>
+                    <label end="98" start="97" name="NT"/>
+                    <label end="113" start="113" name="NT"/>
+                    <label end="59" start="58" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/21/2014 04:19:24 PDT Mon" status="MANUAL" ID="6671545">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="95" start="89" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="4011" end="111" start="97" name="Hindrance"/>
+                    <label cBy="CVa" feID="4010" itype="DNI" name="Protagonist"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="111" start="97" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="111" start="97" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

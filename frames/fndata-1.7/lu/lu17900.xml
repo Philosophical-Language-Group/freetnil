@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="In_Use" POS="N" name="cooking.n" ID="17900" frame="Cooking_creation" frameID="268" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp" name="bncp" ID="421"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="Container" name="Container"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Cook" name="Cook"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="Heat_instr" name="Heating_instrument"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="Ingr" name="Ingredients"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="Food" name="Produced_food"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Rec" name="Recipient"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: the act of preparing food through the use of heat</definition>
+    <lexeme POS="N" name="cooking"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Cook"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Cook"/>
+                <annoSet ID="6714457"/>
+                <annoSet ID="6714463"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Place"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[at]" FE="Place"/>
+                <annoSet ID="6714463"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Produced_food"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="INI" FE="Produced_food"/>
+                <annoSet ID="6714457"/>
+                <annoSet ID="6714463"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cook"/>
+            <FE name="Place"/>
+            <FE name="Produced_food"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cook"/>
+                <valenceUnit GF="Dep" PT="PP[at]" FE="Place"/>
+                <valenceUnit GF="" PT="INI" FE="Produced_food"/>
+                <annoSet ID="6714463"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Cook"/>
+            <FE name="Produced_food"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cook"/>
+                <valenceUnit GF="" PT="INI" FE="Produced_food"/>
+                <annoSet ID="6714457"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-T-N-(1)"/>
+    <subCorpus name="01-N-T-(2)"/>
+    <subCorpus name="01-Det-T-(3)">
+        <sentence corpID="111" docID="421" sentNo="1" paragNo="754" aPos="33153244" ID="4187137">
+            <text>` That husband of hers , still doing the cooking ?</text>
+            <annotationSet cDate="04/14/2015 11:57:13 PDT Tue" status="UNANN" ID="6714456">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="2" name="dt"/>
+                    <label end="13" start="7" name="nn"/>
+                    <label end="16" start="15" name="in"/>
+                    <label end="21" start="18" name="nns"/>
+                    <label end="23" start="23" name=","/>
+                    <label end="29" start="25" name="rb"/>
+                    <label end="35" start="31" name="VVG"/>
+                    <label end="39" start="37" name="dt"/>
+                    <label end="47" start="41" name="nn"/>
+                    <label end="49" start="49" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/14/2015 11:57:13 PDT Tue" status="MANUAL" ID="6714457">
+                <layer rank="1" name="Target">
+                    <label cBy="HPh" end="47" start="41" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="HPh" feID="2298" end="21" start="2" name="Cook"/>
+                    <label cBy="HPh" feID="2299" itype="INI" name="Produced_food"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="21" start="2" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="21" start="2" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="421" sentNo="3" paragNo="411" aPos="51773369" ID="4187140">
+            <text>She stayed for four days and Carrie did the cooking at home .</text>
+            <annotationSet cDate="04/14/2015 11:57:13 PDT Tue" status="UNANN" ID="6714462">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="PP"/>
+                    <label end="9" start="4" name="VVD"/>
+                    <label end="13" start="11" name="in"/>
+                    <label end="18" start="15" name="cd"/>
+                    <label end="23" start="20" name="nns"/>
+                    <label end="27" start="25" name="cc"/>
+                    <label end="34" start="29" name="NP"/>
+                    <label end="38" start="36" name="VVD"/>
+                    <label end="42" start="40" name="dt"/>
+                    <label end="50" start="44" name="nn"/>
+                    <label end="53" start="52" name="in"/>
+                    <label end="58" start="55" name="nn"/>
+                    <label end="60" start="60" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/14/2015 11:57:13 PDT Tue" status="MANUAL" ID="6714463">
+                <layer rank="1" name="Target">
+                    <label cBy="HPh" end="50" start="44" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="HPh" feID="2298" end="34" start="29" name="Cook"/>
+                    <label cBy="HPh" feID="2299" itype="INI" name="Produced_food"/>
+                    <label cBy="HPh" feID="2303" end="58" start="52" name="Place"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="34" start="29" name="Ext"/>
+                    <label end="58" start="52" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="34" start="29" name="NP"/>
+                    <label end="58" start="52" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

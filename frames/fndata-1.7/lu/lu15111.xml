@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="acquisitive.a" ID="15111" frame="Mental_property" frameID="29" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Behv" name="Behavior"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="" name="Domain"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="jud" name="Judge"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Prac" name="Practice"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Prot" name="Protagonist"/>
+        </frame>
+    </header>
+    <definition>FN: willing and eager to acquire knowledge</definition>
+    <lexeme POS="A" name="acquisitive"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Practice"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Practice"/>
+                <annoSet ID="6552325"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Protagonist"/>
+                <annoSet ID="6552325"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Practice"/>
+            <FE name="Protagonist"/>
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Practice"/>
+                <valenceUnit GF="Head" PT="N" FE="Protagonist"/>
+                <valenceUnit GF="Head" PT="N" FE="Protagonist"/>
+                <annoSet ID="6552325"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23692" sentNo="2" paragNo="10" aPos="0" ID="4101192">
+            <text>The Mycenaeans were an acquisitive race who came to conquer , not to trade .</text>
+            <annotationSet cDate="03/12/2007 02:51:00 PDT Mon" status="UNANN" ID="6541985">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="13" start="4" name="NP"/>
+                    <label end="18" start="15" name="VBD"/>
+                    <label end="21" start="20" name="dt"/>
+                    <label end="33" start="23" name="jj"/>
+                    <label end="38" start="35" name="nn"/>
+                    <label end="42" start="40" name="wp"/>
+                    <label end="47" start="44" name="VVD"/>
+                    <label end="50" start="49" name="to"/>
+                    <label end="58" start="52" name="VV"/>
+                    <label end="60" start="60" name=","/>
+                    <label end="64" start="62" name="rb"/>
+                    <label end="67" start="66" name="to"/>
+                    <label end="73" start="69" name="VV"/>
+                    <label end="75" start="75" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="13" start="4" name="NT"/>
+                    <label end="18" start="15" name="NT"/>
+                    <label end="21" start="20" name="NT"/>
+                    <label end="42" start="40" name="NT"/>
+                    <label end="50" start="49" name="NT"/>
+                    <label end="60" start="60" name="NT"/>
+                    <label end="64" start="62" name="NT"/>
+                    <label end="67" start="66" name="NT"/>
+                    <label end="75" start="75" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/12/2008 01:49:29 PDT Thu" status="MANUAL" ID="6552325">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="33" start="23" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="122" itype="DNI" name="Practice"/>
+                    <label cBy="DYo" feID="120" end="38" start="35" name="Protagonist"/>
+                    <label cBy="DYo" feID="120" end="73" start="40" name="Protagonist"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="38" start="35" name="Head"/>
+                    <label end="73" start="40" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="38" start="35" name="N"/>
+                    <label end="73" start="40" name="N"/>
+                </layer>
+                <layer rank="1" name="Other">
+                    <label end="38" start="35" name="Ant"/>
+                    <label end="73" start="40" name="Rel"/>
+                </layer>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

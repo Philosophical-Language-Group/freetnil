@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="go wrong.v" ID="15525" frame="Successful_action" frameID="1389" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="con" name="Containing_event"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="deg" name="Degree"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="goa" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="pro" name="Protagonist"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Core" abbrev="rol" name="Role"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: fail.</definition>
+    <lexeme order="1" headword="true" breakBefore="false" POS="V" name="go"/>
+    <lexeme order="2" headword="false" breakBefore="true" POS="A" name="wrong"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Goal"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Goal"/>
+                <annoSet ID="6646526"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Means"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Means"/>
+                <annoSet ID="6646526"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="PP[with]" FE="Protagonist"/>
+                <annoSet ID="6646526"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Goal"/>
+            <FE name="Means"/>
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Goal"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Means"/>
+                <valenceUnit GF="Obj" PT="PP[with]" FE="Protagonist"/>
+                <annoSet ID="6646526"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="7" paragNo="42" aPos="0" ID="4148569">
+            <text>&quot; But everything went wrong with us .</text>
+            <annotationSet cDate="04/30/2013 05:23:09 PDT Tue" status="UNANN" ID="6646525">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="2" name="cc"/>
+                    <label end="15" start="6" name="nn"/>
+                    <label end="20" start="17" name="VBD"/>
+                    <label end="26" start="22" name="jj"/>
+                    <label end="31" start="28" name="in"/>
+                    <label end="34" start="33" name="PRP"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:23:09 PDT Tue" status="MANUAL" ID="6646526">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="20" start="17" name="Target"/>
+                </layer>
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="26" start="22" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="7796" end="15" start="6" name="Means"/>
+                    <label cBy="EGp" feID="8010" end="36" start="28" name="Protagonist"/>
+                    <label cBy="EGp" feID="7797" itype="DNI" name="Goal"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="15" start="6" name="Ext"/>
+                    <label end="36" start="28" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="15" start="6" name="NP"/>
+                    <label end="36" start="28" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

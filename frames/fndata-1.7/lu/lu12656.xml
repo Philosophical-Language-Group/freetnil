@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="designation.n" ID="12656" frame="Referring_by_name" frameID="1253" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Russia Introduction" name="Russia_Introduction" ID="23563"/>
+            <document description="WMD News 06/26/2006" name="WMDNews_062606" ID="23621"/>
+        </corpus>
+        <frame>
+            <FE fgColor="000000" bgColor="FFA500" type="Extra-Thematic" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="ent" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="nam" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="spe" name="Speaker"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: a speaker's name or term for some entity.</definition>
+    <lexeme POS="N" name="designation"/>
+    <valences>
+        <governor type="Ctrlr" lemma="grant">
+            <annoSet ID="6548310"/>
+        </governor>
+        <FERealization total="2">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <annoSet ID="6530525"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Entity"/>
+                <annoSet ID="6548310"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Name"/>
+            <pattern total="1">
+                <valenceUnit GF="Appositive" PT="NP" FE="Name"/>
+                <annoSet ID="6530525"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="N" FE="Name"/>
+                <annoSet ID="6536991"/>
+                <annoSet ID="6548310"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Speaker"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Speaker"/>
+                <annoSet ID="6530525"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Speaker"/>
+                <annoSet ID="6548310"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Entity"/>
+            <FE name="Name"/>
+            <FE name="Speaker"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <valenceUnit GF="Appositive" PT="NP" FE="Name"/>
+                <valenceUnit GF="Dep" PT="N" FE="Speaker"/>
+                <annoSet ID="6530525"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Entity"/>
+                <valenceUnit GF="Dep" PT="N" FE="Name"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Speaker"/>
+                <annoSet ID="6548310"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Name"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Name"/>
+                <annoSet ID="6536991"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23563" sentNo="3" paragNo="10" aPos="0" ID="4097793">
+            <text>The RS -12M2 Topol-M ( NATO designation SS-27 ) intercontinental ballistic missile ( ICBM ) has been developed for silo basing and mobile basing model is under development .</text>
+            <annotationSet cDate="08/01/2005 12:27:49 PDT Mon" status="UNANN" ID="6528768">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="5" start="4" name="NP"/>
+                    <label end="11" start="7" name="nn"/>
+                    <label end="19" start="13" name="NP"/>
+                    <label end="21" start="21" name="("/>
+                    <label end="26" start="23" name="NP"/>
+                    <label end="38" start="28" name="nn"/>
+                    <label end="44" start="40" name="cd"/>
+                    <label end="46" start="46" name=")"/>
+                    <label end="63" start="48" name="jj"/>
+                    <label end="73" start="65" name="jj"/>
+                    <label end="81" start="75" name="nn"/>
+                    <label end="83" start="83" name="("/>
+                    <label end="88" start="85" name="nn"/>
+                    <label end="90" start="90" name=")"/>
+                    <label end="94" start="92" name="VHZ"/>
+                    <label end="99" start="96" name="VBN"/>
+                    <label end="109" start="101" name="VVN"/>
+                    <label end="113" start="111" name="in"/>
+                    <label end="118" start="115" name="nn"/>
+                    <label end="125" start="120" name="VVG"/>
+                    <label end="129" start="127" name="cc"/>
+                    <label end="136" start="131" name="jj"/>
+                    <label end="143" start="138" name="VVG"/>
+                    <label end="149" start="145" name="nn"/>
+                    <label end="152" start="151" name="VBZ"/>
+                    <label end="158" start="154" name="in"/>
+                    <label end="170" start="160" name="nn"/>
+                    <label end="172" start="172" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="26" start="23" name="organization"/>
+                    <label end="11" start="4" name="WEA"/>
+                    <label end="19" start="13" name="WEA"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="5" start="4" name="NT"/>
+                    <label end="19" start="13" name="NT"/>
+                    <label end="21" start="21" name="NT"/>
+                    <label end="26" start="23" name="NT"/>
+                    <label end="44" start="40" name="NT"/>
+                    <label end="46" start="46" name="NT"/>
+                    <label end="83" start="83" name="NT"/>
+                    <label end="90" start="90" name="NT"/>
+                    <label end="94" start="92" name="NT"/>
+                    <label end="99" start="96" name="NT"/>
+                    <label end="113" start="111" name="NT"/>
+                    <label end="129" start="127" name="NT"/>
+                    <label end="152" start="151" name="NT"/>
+                    <label end="158" start="154" name="NT"/>
+                    <label end="172" start="172" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/22/2005 01:27:35 PDT Mon" status="MANUAL" ID="6530525">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="38" start="28" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="7251" end="26" start="23" name="Speaker"/>
+                    <label cBy="RLG" feID="7253" end="44" start="40" name="Name"/>
+                    <label cBy="RLG" feID="7252" end="19" start="4" name="Entity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="26" start="23" name="Dep"/>
+                    <label end="44" start="40" name="Appositive"/>
+                    <label end="19" start="4" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="26" start="23" name="N"/>
+                    <label end="44" start="40" name="NP"/>
+                    <label end="19" start="4" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23621" sentNo="3" paragNo="7" aPos="0" ID="4099754">
+            <text>Orphan Drug designation is awarded to compounds that offer potential therapeutic value in the treatment of rare diseases , defined as those affecting fewer than 200,000 Americans .</text>
+            <annotationSet cDate="07/18/2006 02:44:49 PDT Tue" status="UNANN" ID="6536840">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="nn"/>
+                    <label end="10" start="7" name="nn"/>
+                    <label end="22" start="12" name="nn"/>
+                    <label end="25" start="24" name="VBZ"/>
+                    <label end="33" start="27" name="VVN"/>
+                    <label end="36" start="35" name="to"/>
+                    <label end="46" start="38" name="nns"/>
+                    <label end="51" start="48" name="wdt"/>
+                    <label end="57" start="53" name="VVP"/>
+                    <label end="67" start="59" name="jj"/>
+                    <label end="79" start="69" name="jj"/>
+                    <label end="85" start="81" name="nn"/>
+                    <label end="88" start="87" name="in"/>
+                    <label end="92" start="90" name="dt"/>
+                    <label end="102" start="94" name="nn"/>
+                    <label end="105" start="104" name="in"/>
+                    <label end="110" start="107" name="jj"/>
+                    <label end="119" start="112" name="nns"/>
+                    <label end="121" start="121" name=","/>
+                    <label end="129" start="123" name="VVN"/>
+                    <label end="132" start="131" name="in"/>
+                    <label end="138" start="134" name="dt"/>
+                    <label end="148" start="140" name="VVG"/>
+                    <label end="154" start="150" name="rbr"/>
+                    <label end="159" start="156" name="in"/>
+                    <label end="167" start="161" name="cd"/>
+                    <label end="177" start="169" name="nns"/>
+                    <label end="179" start="179" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="25" start="24" name="NT"/>
+                    <label end="36" start="35" name="NT"/>
+                    <label end="51" start="48" name="NT"/>
+                    <label end="88" start="87" name="NT"/>
+                    <label end="92" start="90" name="NT"/>
+                    <label end="105" start="104" name="NT"/>
+                    <label end="121" start="121" name="NT"/>
+                    <label end="132" start="131" name="NT"/>
+                    <label end="138" start="134" name="NT"/>
+                    <label end="154" start="150" name="NT"/>
+                    <label end="159" start="156" name="NT"/>
+                    <label end="167" start="161" name="NT"/>
+                    <label end="179" start="179" name="NT"/>
+                    <label end="10" start="0" name="NT"/>
+                    <label end="46" start="38" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/20/2006 03:00:23 PDT Thu" status="MANUAL" ID="6536991">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="22" start="12" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="7253" end="10" start="0" name="Name"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="10" start="0" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="10" start="0" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23621" sentNo="1" paragNo="7" aPos="0" ID="4099752">
+            <text>Elusys Therapeutics Inc. , a privately - held biopharmaceutical company , announced that the United States Food and Drug Administration ( FDA ) has granted Orphan Drug Designation to Anthim ( ETI-204 ) , the company 's anthrax therapeutic .</text>
+            <annotationSet cDate="07/18/2006 02:44:47 PDT Tue" status="UNANN" ID="6536838">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="NP"/>
+                    <label end="18" start="7" name="nns"/>
+                    <label end="23" start="20" name="NP"/>
+                    <label end="25" start="25" name=","/>
+                    <label end="27" start="27" name="dt"/>
+                    <label end="37" start="29" name="rb"/>
+                    <label end="39" start="39" name=":"/>
+                    <label end="44" start="41" name="VVD"/>
+                    <label end="62" start="46" name="jj"/>
+                    <label end="70" start="64" name="nn"/>
+                    <label end="72" start="72" name=","/>
+                    <label end="82" start="74" name="VVN"/>
+                    <label end="87" start="84" name="in"/>
+                    <label end="91" start="89" name="dt"/>
+                    <label end="98" start="93" name="NP"/>
+                    <label end="105" start="100" name="NPS"/>
+                    <label end="110" start="107" name="NP"/>
+                    <label end="114" start="112" name="cc"/>
+                    <label end="119" start="116" name="NP"/>
+                    <label end="134" start="121" name="NP"/>
+                    <label end="136" start="136" name="("/>
+                    <label end="140" start="138" name="NP"/>
+                    <label end="142" start="142" name=")"/>
+                    <label end="146" start="144" name="VHZ"/>
+                    <label end="154" start="148" name="VVN"/>
+                    <label end="161" start="156" name="nn"/>
+                    <label end="166" start="163" name="nn"/>
+                    <label end="178" start="168" name="nn"/>
+                    <label end="181" start="180" name="to"/>
+                    <label end="188" start="183" name="nns"/>
+                    <label end="190" start="190" name="("/>
+                    <label end="198" start="192" name="cd"/>
+                    <label end="200" start="200" name=")"/>
+                    <label end="202" start="202" name=","/>
+                    <label end="206" start="204" name="dt"/>
+                    <label end="214" start="208" name="nn"/>
+                    <label end="217" start="216" name="POS"/>
+                    <label end="225" start="219" name="nn"/>
+                    <label end="237" start="227" name="jj"/>
+                    <label end="239" start="239" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="23" start="0" name="organization"/>
+                    <label end="140" start="138" name="organization"/>
+                    <label end="178" start="163" name="organization"/>
+                    <label end="134" start="89" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="0" name="NT"/>
+                    <label end="23" start="20" name="NT"/>
+                    <label end="25" start="25" name="NT"/>
+                    <label end="27" start="27" name="NT"/>
+                    <label end="37" start="29" name="NT"/>
+                    <label end="39" start="39" name="NT"/>
+                    <label end="72" start="72" name="NT"/>
+                    <label end="87" start="84" name="NT"/>
+                    <label end="91" start="89" name="NT"/>
+                    <label end="98" start="93" name="NT"/>
+                    <label end="105" start="100" name="NT"/>
+                    <label end="114" start="112" name="NT"/>
+                    <label end="119" start="116" name="NT"/>
+                    <label end="136" start="136" name="NT"/>
+                    <label end="140" start="138" name="NT"/>
+                    <label end="142" start="142" name="NT"/>
+                    <label end="146" start="144" name="NT"/>
+                    <label end="181" start="180" name="NT"/>
+                    <label end="190" start="190" name="NT"/>
+                    <label end="198" start="192" name="NT"/>
+                    <label end="200" start="200" name="NT"/>
+                    <label end="202" start="202" name="NT"/>
+                    <label end="206" start="204" name="NT"/>
+                    <label end="217" start="216" name="NT"/>
+                    <label end="239" start="239" name="NT"/>
+                    <label end="18" start="7" name="NT"/>
+                    <label end="62" start="46" name="NT"/>
+                    <label end="44" start="41" name="NT"/>
+                    <label end="188" start="183" name="NT"/>
+                    <label end="225" start="219" name="NT"/>
+                    <label end="161" start="156" name="NT"/>
+                    <label end="166" start="163" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/15/2007 05:35:13 PDT Mon" status="MANUAL" ID="6548310">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="178" start="168" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="7253" end="166" start="156" name="Name"/>
+                    <label cBy="KmG" feID="7252" end="237" start="180" name="Entity"/>
+                    <label cBy="KmG" feID="7251" end="142" start="89" name="Speaker"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="166" start="156" name="Dep"/>
+                    <label end="237" start="180" name="Dep"/>
+                    <label end="142" start="89" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="166" start="156" name="N"/>
+                    <label end="237" start="180" name="PP"/>
+                    <label end="142" start="89" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="154" start="148" name="Ctrlr"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

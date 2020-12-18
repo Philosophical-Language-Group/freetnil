@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="deteriorate.v" ID="18715" frame="Improvement_or_decline" frameID="3012" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="Examples4-5" name="Examples4-5" ID="25743"/>
+        </corpus>
+        <frame>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="dom" name="Domain"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Peripheral" abbrev="dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="ent" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="" name="Event_description"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="pos" name="Post_state"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="pri" name="Prior_state"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="rat" name="Rate"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: get worse.</definition>
+    <lexeme POS="V" name="deteriorate"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <annoSet ID="6774308"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Post_state"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PPadjP" FE="Post_state"/>
+                <annoSet ID="6774308"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Prior_state"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PPadjP" FE="Prior_state"/>
+                <annoSet ID="6774308"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Entity"/>
+            <FE name="Post_state"/>
+            <FE name="Prior_state"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <valenceUnit GF="Dep" PT="PPadjP" FE="Post_state"/>
+                <valenceUnit GF="Dep" PT="PPadjP" FE="Prior_state"/>
+                <annoSet ID="6774308"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25743" sentNo="2" paragNo="6" aPos="0" ID="4217212">
+            <text>On Sunday , he visited Mandela and pronounced that his state had deteriorated from stable to critical .</text>
+            <annotationSet cDate="06/03/2016 05:15:28 PDT Fri" status="UNANN" ID="6774133">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="8" start="3" name="NP"/>
+                    <label end="10" start="10" name=","/>
+                    <label end="13" start="12" name="PP"/>
+                    <label end="21" start="15" name="VVD"/>
+                    <label end="29" start="23" name="NP"/>
+                    <label end="33" start="31" name="cc"/>
+                    <label end="44" start="35" name="VVD"/>
+                    <label end="49" start="46" name="IN/that"/>
+                    <label end="53" start="51" name="PP$"/>
+                    <label end="59" start="55" name="nn"/>
+                    <label end="63" start="61" name="VHD"/>
+                    <label end="76" start="65" name="VVN"/>
+                    <label end="81" start="78" name="in"/>
+                    <label end="88" start="83" name="jj"/>
+                    <label end="91" start="90" name="to"/>
+                    <label end="100" start="93" name="jj"/>
+                    <label end="102" start="102" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="8" start="3" name="date"/>
+                    <label end="29" start="23" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="8" start="3" name="NT"/>
+                    <label end="10" start="10" name="NT"/>
+                    <label end="13" start="12" name="NT"/>
+                    <label end="29" start="23" name="NT"/>
+                    <label end="33" start="31" name="NT"/>
+                    <label end="53" start="51" name="NT"/>
+                    <label end="63" start="61" name="NT"/>
+                    <label end="81" start="78" name="NT"/>
+                    <label end="91" start="90" name="NT"/>
+                    <label end="102" start="102" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/16/2016 07:02:35 PDT Thu" status="MANUAL" ID="6774308">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="76" start="65" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="16834" end="59" start="51" name="Entity"/>
+                    <label cBy="MJE" feID="16835" end="88" start="78" name="Prior_state"/>
+                    <label cBy="MJE" feID="16836" end="100" start="90" name="Post_state"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="59" start="51" name="Ext"/>
+                    <label end="88" start="78" name="Dep"/>
+                    <label end="100" start="90" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="59" start="51" name="NP"/>
+                    <label end="88" start="78" name="PPadjP"/>
+                    <label end="100" start="90" name="PPadjP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

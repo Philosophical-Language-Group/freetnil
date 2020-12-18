@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Rules_Defined" POS="N" name="another.n" ID="10178" frame="Increment" frameID="1001" totalAnnotated="4" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Bell Ringing" name="BellRinging" ID="23009"/>
+        </corpus>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="as" name="Added_set"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Class"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="ncr" name="Increment"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="is" name="Initial_set"/>
+        </frame>
+    </header>
+    <definition>COD: used to refer to a different person or thing from one already referred to.</definition>
+    <lexeme POS="N" name="another"/>
+    <valences>
+        <FERealization total="3">
+            <FE name="Added_set"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Added_set"/>
+                <annoSet ID="4531059"/>
+                <annoSet ID="6646370"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="VPto" FE="Added_set"/>
+                <annoSet ID="6646692"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Class"/>
+            <pattern total="4">
+                <valenceUnit GF="" PT="DNI" FE="Class"/>
+                <annoSet ID="4531059"/>
+                <annoSet ID="6646370"/>
+                <annoSet ID="6646371"/>
+                <annoSet ID="6646692"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Initial_set"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="DNI" FE="Initial_set"/>
+                <annoSet ID="4531059"/>
+                <annoSet ID="6646370"/>
+                <annoSet ID="6646692"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Initial_set"/>
+                <annoSet ID="6646371"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="3">
+            <FE name="Added_set"/>
+            <FE name="Class"/>
+            <FE name="Initial_set"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Added_set"/>
+                <valenceUnit GF="" PT="DNI" FE="Class"/>
+                <valenceUnit GF="" PT="DNI" FE="Initial_set"/>
+                <annoSet ID="4531059"/>
+                <annoSet ID="6646370"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="VPto" FE="Added_set"/>
+                <valenceUnit GF="" PT="DNI" FE="Class"/>
+                <valenceUnit GF="" PT="DNI" FE="Initial_set"/>
+                <annoSet ID="6646692"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Class"/>
+            <FE name="Initial_set"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Class"/>
+                <valenceUnit GF="" PT="DEN" FE="Initial_set"/>
+                <annoSet ID="6646371"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23009" sentNo="2" paragNo="13" aPos="0" ID="2824226">
+            <text>Skilled ringers use their wrists to advance or retard the next swing , so that one bell can swap places with another in the following change .</text>
+            <annotationSet cDate="02/05/2004 08:29:28 PST Thu" status="UNANN" ID="4528221">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="jj"/>
+                    <label end="14" start="8" name="nns"/>
+                    <label end="18" start="16" name="VVP"/>
+                    <label end="24" start="20" name="PP$"/>
+                    <label end="31" start="26" name="nns"/>
+                    <label end="34" start="33" name="to"/>
+                    <label end="42" start="36" name="VV"/>
+                    <label end="45" start="44" name="cc"/>
+                    <label end="52" start="47" name="VV"/>
+                    <label end="56" start="54" name="dt"/>
+                    <label end="61" start="58" name="jj"/>
+                    <label end="67" start="63" name="nn"/>
+                    <label end="69" start="69" name=","/>
+                    <label end="72" start="71" name="rb"/>
+                    <label end="77" start="74" name="in"/>
+                    <label end="81" start="79" name="cd"/>
+                    <label end="86" start="83" name="nn"/>
+                    <label end="90" start="88" name="md"/>
+                    <label end="95" start="92" name="VV"/>
+                    <label end="102" start="97" name="nns"/>
+                    <label end="107" start="104" name="in"/>
+                    <label end="115" start="109" name="dt"/>
+                    <label end="118" start="117" name="in"/>
+                    <label end="122" start="120" name="dt"/>
+                    <label end="132" start="124" name="VVG"/>
+                    <label end="139" start="134" name="nn"/>
+                    <label end="141" start="141" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="34" start="33" name="NT"/>
+                    <label end="69" start="69" name="NT"/>
+                    <label end="72" start="71" name="NT"/>
+                    <label end="118" start="117" name="NT"/>
+                    <label end="141" start="141" name="NT"/>
+                    <label end="24" start="20" name="NT"/>
+                    <label end="45" start="44" name="NT"/>
+                    <label end="56" start="54" name="NT"/>
+                    <label end="77" start="74" name="NT"/>
+                    <label end="90" start="88" name="NT"/>
+                    <label end="107" start="104" name="NT"/>
+                    <label end="122" start="120" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/24/2010 04:14:48 PDT Thu" status="MANUAL" ID="4531059">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="115" start="109" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="5993" itype="DNI" name="Class"/>
+                    <label cBy="AlK" feID="6124" end="115" start="109" name="Added_set"/>
+                    <label cBy="AlK" feID="6125" itype="DNI" name="Initial_set"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="175" docID="25343" sentNo="6" paragNo="38" aPos="0" ID="4148532">
+            <text>But another will come , and yet another , until some day justice will be done ; that is as certain as the rise of to-morrow 's sun . &quot;</text>
+            <annotationSet cDate="04/30/2013 05:22:07 PDT Tue" status="UNANN" ID="6646364">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="cc"/>
+                    <label end="10" start="4" name="dt"/>
+                    <label end="15" start="12" name="md"/>
+                    <label end="20" start="17" name="vb"/>
+                    <label end="26" start="24" name="cc"/>
+                    <label end="30" start="28" name="rb"/>
+                    <label end="38" start="32" name="dt"/>
+                    <label end="46" start="42" name="in"/>
+                    <label end="51" start="48" name="dt"/>
+                    <label end="55" start="53" name="nn"/>
+                    <label end="63" start="57" name="nn"/>
+                    <label end="68" start="65" name="md"/>
+                    <label end="71" start="70" name="vb"/>
+                    <label end="76" start="73" name="VBN"/>
+                    <label end="83" start="80" name="dt"/>
+                    <label end="86" start="85" name="VBZ"/>
+                    <label end="89" start="88" name="rb"/>
+                    <label end="97" start="91" name="jj"/>
+                    <label end="100" start="99" name="in"/>
+                    <label end="104" start="102" name="dt"/>
+                    <label end="109" start="106" name="nn"/>
+                    <label end="112" start="111" name="in"/>
+                    <label end="122" start="114" name="nn"/>
+                    <label end="125" start="124" name="POS"/>
+                    <label end="129" start="127" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:22:09 PDT Tue" status="MANUAL" ID="6646370">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="10" start="4" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="5993" itype="DNI" name="Class"/>
+                    <label cBy="EGp" feID="6124" end="10" start="4" name="Added_set"/>
+                    <label cBy="EGp" feID="6125" itype="DNI" name="Initial_set"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:22:10 PDT Tue" status="MANUAL" ID="6646371">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="38" start="32" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="5993" itype="DNI" name="Class"/>
+                    <label cBy="EGp" feID="6125" end="10" start="4" name="Initial_set"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="175" docID="25343" sentNo="3" paragNo="46" aPos="0" ID="4148601">
+            <text>To entice a man in cold blood with the object of murdering him is another , whatever danger you may fear from him .</text>
+            <annotationSet cDate="04/30/2013 05:24:19 PDT Tue" status="UNANN" ID="6646686">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="to"/>
+                    <label end="8" start="3" name="vb"/>
+                    <label end="10" start="10" name="dt"/>
+                    <label end="14" start="12" name="nn"/>
+                    <label end="17" start="16" name="in"/>
+                    <label end="22" start="19" name="jj"/>
+                    <label end="28" start="24" name="nn"/>
+                    <label end="33" start="30" name="in"/>
+                    <label end="37" start="35" name="dt"/>
+                    <label end="44" start="39" name="nn"/>
+                    <label end="47" start="46" name="in"/>
+                    <label end="57" start="49" name="VBG"/>
+                    <label end="61" start="59" name="PRP"/>
+                    <label end="64" start="63" name="VBZ"/>
+                    <label end="72" start="66" name="dt"/>
+                    <label end="83" start="76" name="wdt"/>
+                    <label end="90" start="85" name="nn"/>
+                    <label end="94" start="92" name="PRP"/>
+                    <label end="98" start="96" name="md"/>
+                    <label end="103" start="100" name="vb"/>
+                    <label end="108" start="105" name="in"/>
+                    <label end="112" start="110" name="PRP"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:24:21 PDT Tue" status="MANUAL" ID="6646692">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="72" start="66" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="6124" end="61" start="0" name="Added_set"/>
+                    <label cBy="EGp" feID="6125" itype="DNI" name="Initial_set"/>
+                    <label cBy="EGp" feID="5993" itype="DNI" name="Class"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="61" start="0" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="61" start="0" name="VPto"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="parameter.n" ID="14261" frame="Terms_of_agreement" frameID="1531" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="China Overview" name="ChinaOverview" ID="23671"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="agr" name="Agreement"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="scr" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="des" name="Desired_state_of_affairs"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="par" name="Party"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="reg" name="Regulated_entity"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="req" name="Requirements"/>
+        </frame>
+    </header>
+    <definition>COD: a limit or boundary which defines the scope of a particular process or activity.</definition>
+    <lexeme POS="N" name="parameter"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Descriptor"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Descriptor"/>
+                <annoSet ID="6543765"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Requirements"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Requirements"/>
+                <annoSet ID="6543765"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Descriptor"/>
+            <FE name="Requirements"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Descriptor"/>
+                <valenceUnit GF="" PT="DEN" FE="Requirements"/>
+                <annoSet ID="6543765"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23671" sentNo="9" paragNo="11" aPos="0" ID="4100831">
+            <text>China has not joined the Missile Technology Control Regime ( MTCR ) , but has pledged to abide by its main parameters .</text>
+            <annotationSet cDate="02/07/2007 06:04:21 PST Wed" status="UNANN" ID="6540268">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="NP"/>
+                    <label end="8" start="6" name="VHZ"/>
+                    <label end="12" start="10" name="rb"/>
+                    <label end="19" start="14" name="VVN"/>
+                    <label end="23" start="21" name="dt"/>
+                    <label end="31" start="25" name="NP"/>
+                    <label end="42" start="33" name="NP"/>
+                    <label end="50" start="44" name="NP"/>
+                    <label end="57" start="52" name="nn"/>
+                    <label end="59" start="59" name="("/>
+                    <label end="64" start="61" name="nn"/>
+                    <label end="66" start="66" name=")"/>
+                    <label end="68" start="68" name=","/>
+                    <label end="72" start="70" name="cc"/>
+                    <label end="76" start="74" name="VHZ"/>
+                    <label end="84" start="78" name="VVN"/>
+                    <label end="87" start="86" name="to"/>
+                    <label end="93" start="89" name="VV"/>
+                    <label end="96" start="95" name="in"/>
+                    <label end="100" start="98" name="PP$"/>
+                    <label end="105" start="102" name="jj"/>
+                    <label end="116" start="107" name="nns"/>
+                    <label end="118" start="118" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="4" start="0" name="GPE"/>
+                    <label end="57" start="25" name="organization"/>
+                    <label end="64" start="61" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="4" start="0" name="NT"/>
+                    <label end="8" start="6" name="NT"/>
+                    <label end="12" start="10" name="NT"/>
+                    <label end="23" start="21" name="NT"/>
+                    <label end="50" start="44" name="NT"/>
+                    <label end="59" start="59" name="NT"/>
+                    <label end="66" start="66" name="NT"/>
+                    <label end="68" start="68" name="NT"/>
+                    <label end="72" start="70" name="NT"/>
+                    <label end="76" start="74" name="NT"/>
+                    <label end="87" start="86" name="NT"/>
+                    <label end="96" start="95" name="NT"/>
+                    <label end="100" start="98" name="NT"/>
+                    <label end="118" start="118" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/30/2007 11:17:36 PDT Fri" status="MANUAL" ID="6543765">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="116" start="107" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="8341" end="116" start="107" name="Requirements"/>
+                    <label cBy="KmG" feID="8344" end="105" start="102" name="Descriptor"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="105" start="102" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="105" start="102" name="A"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

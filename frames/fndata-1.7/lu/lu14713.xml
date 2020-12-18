@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="laundry room.n" ID="14713" frame="Building_subparts" frameID="188" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="sw2025-ms98-a-trans.ascii-1-NEW" name="sw2025-ms98-a-trans.ascii-1-NEW" ID="23731"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Building_part"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Des" name="Descriptor"/>
+            <FE fgColor="000000" bgColor="808080" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="" name="Type"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Peripheral" abbrev="" name="Use"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="" name="Whole"/>
+        </frame>
+    </header>
+    <definition>FN: the room in which the laundry is cleaned</definition>
+    <lexeme order="1" headword="false" breakBefore="false" POS="N" name="laundry"/>
+    <lexeme order="2" headword="true" breakBefore="false" POS="N" name="room"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Building_part"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Building_part"/>
+                <annoSet ID="6552181"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Building_part"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Building_part"/>
+                <annoSet ID="6552181"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23731" sentNo="3" paragNo="56" aPos="0" ID="4102276">
+            <text>I am locked up in the laundry room .</text>
+            <annotationSet cDate="08/16/2007 05:32:23 PDT Thu" status="UNANN" ID="6546034">
+                <layer rank="1" name="PENN">
+                    <label end="0" start="0" name="PP"/>
+                    <label end="3" start="2" name="vbp"/>
+                    <label end="10" start="5" name="VVN"/>
+                    <label end="13" start="12" name="rp"/>
+                    <label end="16" start="15" name="in"/>
+                    <label end="20" start="18" name="dt"/>
+                    <label end="28" start="22" name="nn"/>
+                    <label end="33" start="30" name="nn"/>
+                    <label end="35" start="35" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="0" start="0" name="NT"/>
+                    <label end="3" start="2" name="NT"/>
+                    <label end="20" start="18" name="NT"/>
+                    <label end="35" start="35" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="04/03/2008 02:19:45 PDT Thu" status="MANUAL" ID="6552181">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="28" start="22" name="Target"/>
+                    <label cBy="EGp" end="33" start="30" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="9680" end="33" start="22" name="Building_part"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

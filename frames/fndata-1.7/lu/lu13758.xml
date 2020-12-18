@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="disgusting.a" ID="13758" frame="Stimulus_focus" frameID="364" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Slate magazine article: Stephanopoulos Crimes" name="StephanopoulosCrimes" ID="23642"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="C_set" name="Comparison_set"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Exp" name="Experiencer"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Par" name="Parameter"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Property" name="Property"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Stim" name="Stimulus"/>
+        </frame>
+    </header>
+    <definition>FN: causing revulsion and disgust.</definition>
+    <lexeme POS="A" name="disgusting"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Stimulus"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[about]" FE="Stimulus"/>
+                <annoSet ID="6549402"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Stimulus"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[about]" FE="Stimulus"/>
+                <annoSet ID="6549402"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23642" sentNo="1" paragNo="3" aPos="0" ID="4099925">
+            <text>Is Chatterbox alone in thinking there is something strange and even disgusting about Stephanopoulos ' eager show of independence from the president ?</text>
+            <annotationSet cDate="09/05/2006 04:40:28 PDT Tue" status="UNANN" ID="6537827">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="VBZ"/>
+                    <label end="12" start="3" name="nn"/>
+                    <label end="18" start="14" name="rb"/>
+                    <label end="21" start="20" name="in"/>
+                    <label end="30" start="23" name="VVG"/>
+                    <label end="36" start="32" name="ex"/>
+                    <label end="39" start="38" name="VBZ"/>
+                    <label end="49" start="41" name="nn"/>
+                    <label end="57" start="51" name="jj"/>
+                    <label end="61" start="59" name="cc"/>
+                    <label end="66" start="63" name="rb"/>
+                    <label end="77" start="68" name="jj"/>
+                    <label end="83" start="79" name="in"/>
+                    <label end="98" start="85" name="NP"/>
+                    <label end="100" start="100" name="POS"/>
+                    <label end="106" start="102" name="jj"/>
+                    <label end="111" start="108" name="nn"/>
+                    <label end="114" start="113" name="in"/>
+                    <label end="127" start="116" name="nn"/>
+                    <label end="132" start="129" name="in"/>
+                    <label end="136" start="134" name="dt"/>
+                    <label end="146" start="138" name="nn"/>
+                    <label end="148" start="148" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="12" start="3" name="organization"/>
+                    <label end="98" start="85" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="21" start="20" name="NT"/>
+                    <label end="61" start="59" name="NT"/>
+                    <label end="83" start="79" name="NT"/>
+                    <label end="98" start="85" name="NT"/>
+                    <label end="100" start="100" name="NT"/>
+                    <label end="114" start="113" name="NT"/>
+                    <label end="132" start="129" name="NT"/>
+                    <label end="136" start="134" name="NT"/>
+                    <label end="148" start="148" name="NT"/>
+                    <label end="12" start="3" name="NT"/>
+                    <label end="49" start="41" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/30/2007 01:47:22 PDT Tue" status="MANUAL" ID="6549402">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="77" start="68" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="3291" end="146" start="79" name="Stimulus"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="146" start="79" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="146" start="79" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other">
+                    <label end="36" start="32" name="Null"/>
+                </layer>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="39" start="38" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

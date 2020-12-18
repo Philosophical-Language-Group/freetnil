@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="shoulder.n" ID="14162" frame="Body_parts" frameID="119" totalAnnotated="4" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Dublin" name="IntroOfDublin" ID="23652"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Attachment" name="Attachment"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Body_P" name="Body_part"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="OrLoc" name="Orientational_location"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Poss" name="Possessor"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Subr" name="Subregion"/>
+        </frame>
+    </header>
+    <definition>COD: the joint between the upper arm or forelimb and the main part of the body.  </definition>
+    <lexeme POS="N" name="shoulder"/>
+    <valences>
+        <FERealization total="4">
+            <FE name="Body_part"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="DEN" FE="Body_part"/>
+                <annoSet ID="6551640"/>
+                <annoSet ID="6646264"/>
+                <annoSet ID="6646615"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Body_part"/>
+                <annoSet ID="6645673"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Possessor"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Possessor"/>
+                <annoSet ID="6551640"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="Gen" PT="Poss" FE="Possessor"/>
+                <annoSet ID="6646264"/>
+                <annoSet ID="6646615"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="Poss" FE="Possessor"/>
+                <annoSet ID="6645673"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="4">
+            <FE name="Body_part"/>
+            <FE name="Possessor"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Body_part"/>
+                <valenceUnit GF="" PT="DNI" FE="Possessor"/>
+                <annoSet ID="6551640"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Body_part"/>
+                <valenceUnit GF="Gen" PT="Poss" FE="Possessor"/>
+                <annoSet ID="6646264"/>
+                <annoSet ID="6646615"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Body_part"/>
+                <valenceUnit GF="Obj" PT="Poss" FE="Possessor"/>
+                <annoSet ID="6645673"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23652" sentNo="4" paragNo="20" aPos="0" ID="4100638">
+            <text>However , young and old , stranger and Dubliner rub shoulders quite happily .</text>
+            <annotationSet cDate="11/14/2006 04:25:31 PST Tue" status="UNANN" ID="6539637">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="rb"/>
+                    <label end="8" start="8" name=","/>
+                    <label end="14" start="10" name="jj"/>
+                    <label end="18" start="16" name="cc"/>
+                    <label end="22" start="20" name="jj"/>
+                    <label end="24" start="24" name=","/>
+                    <label end="33" start="26" name="nn"/>
+                    <label end="37" start="35" name="cc"/>
+                    <label end="46" start="39" name="nn"/>
+                    <label end="50" start="48" name="nn"/>
+                    <label end="60" start="52" name="nns"/>
+                    <label end="66" start="62" name="rb"/>
+                    <label end="74" start="68" name="rb"/>
+                    <label end="76" start="76" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="0" name="NT"/>
+                    <label end="8" start="8" name="NT"/>
+                    <label end="18" start="16" name="NT"/>
+                    <label end="24" start="24" name="NT"/>
+                    <label end="37" start="35" name="NT"/>
+                    <label end="66" start="62" name="NT"/>
+                    <label end="76" start="76" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/20/2008 03:32:30 PST Wed" status="MANUAL" ID="6551640">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="60" start="52" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="692" end="60" start="52" name="Body_part"/>
+                    <label cBy="JKs" feID="611" itype="DNI" name="Possessor"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="175" docID="25343" sentNo="4" paragNo="19" aPos="0" ID="4148359">
+            <text>Holmes shrugged his shoulders as we walked away together .</text>
+            <annotationSet cDate="04/30/2013 05:18:38 PDT Tue" status="UNANN" ID="6645670">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="NNP"/>
+                    <label end="14" start="7" name="VBD"/>
+                    <label end="18" start="16" name="PRP$"/>
+                    <label end="28" start="20" name="nns"/>
+                    <label end="31" start="30" name="in"/>
+                    <label end="34" start="33" name="PRP"/>
+                    <label end="41" start="36" name="VBD"/>
+                    <label end="46" start="43" name="rp"/>
+                    <label end="55" start="48" name="rb"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:18:38 PDT Tue" status="MANUAL" ID="6645673">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="28" start="20" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="611" end="18" start="16" name="Possessor"/>
+                    <label cBy="EGp" feID="692" end="28" start="20" name="Body_part"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="18" start="16" name="Obj"/>
+                    <label end="28" start="20" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="18" start="16" name="Poss"/>
+                    <label end="28" start="20" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="175" docID="25343" sentNo="4" paragNo="35" aPos="0" ID="4148503">
+            <text>Holmes laid his hand upon the inspector 's shoulder .</text>
+            <annotationSet cDate="04/30/2013 05:21:31 PDT Tue" status="UNANN" ID="6646261">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="NNP"/>
+                    <label end="10" start="7" name="VBD"/>
+                    <label end="14" start="12" name="PRP$"/>
+                    <label end="19" start="16" name="nn"/>
+                    <label end="24" start="21" name="in"/>
+                    <label end="28" start="26" name="dt"/>
+                    <label end="38" start="30" name="nn"/>
+                    <label end="41" start="40" name="POS"/>
+                    <label end="50" start="43" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:21:32 PDT Tue" status="MANUAL" ID="6646264">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="50" start="43" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="611" end="41" start="26" name="Possessor"/>
+                    <label cBy="EGp" feID="692" end="50" start="43" name="Body_part"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="41" start="26" name="Gen"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="41" start="26" name="Poss"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="175" docID="25343" sentNo="5" paragNo="44" aPos="0" ID="4148585">
+            <text>I was confined to my room , terrorized by the most horrible threats , cruelly ill-used to break my spirit - see this stab on my shoulder and the bruises from end to end of my arms - and a gag was thrust into my mouth on the one occasion when I tried to call from the window .</text>
+            <annotationSet cDate="04/30/2013 05:23:42 PDT Tue" status="UNANN" ID="6646604">
+                <layer rank="1" name="PENN">
+                    <label end="0" start="0" name="PRP"/>
+                    <label end="4" start="2" name="VBD"/>
+                    <label end="13" start="6" name="VBN"/>
+                    <label end="16" start="15" name="to"/>
+                    <label end="19" start="18" name="PRP$"/>
+                    <label end="24" start="21" name="nn"/>
+                    <label end="37" start="28" name="VBN"/>
+                    <label end="40" start="39" name="in"/>
+                    <label end="44" start="42" name="dt"/>
+                    <label end="49" start="46" name="rbs"/>
+                    <label end="58" start="51" name="jj"/>
+                    <label end="66" start="60" name="nns"/>
+                    <label end="76" start="70" name="rb"/>
+                    <label end="85" start="78" name="VBN"/>
+                    <label end="88" start="87" name="to"/>
+                    <label end="94" start="90" name="vb"/>
+                    <label end="97" start="96" name="PRP$"/>
+                    <label end="104" start="99" name="nn"/>
+                    <label end="110" start="108" name="vb"/>
+                    <label end="115" start="112" name="dt"/>
+                    <label end="120" start="117" name="nn"/>
+                    <label end="123" start="122" name="in"/>
+                    <label end="126" start="125" name="PRP$"/>
+                    <label end="135" start="128" name="nn"/>
+                    <label end="139" start="137" name="cc"/>
+                    <label end="143" start="141" name="dt"/>
+                    <label end="151" start="145" name="nns"/>
+                    <label end="156" start="153" name="in"/>
+                    <label end="160" start="158" name="nn"/>
+                    <label end="163" start="162" name="to"/>
+                    <label end="167" start="165" name="vb"/>
+                    <label end="170" start="169" name="in"/>
+                    <label end="173" start="172" name="PRP$"/>
+                    <label end="178" start="175" name="nns"/>
+                    <label end="184" start="182" name="cc"/>
+                    <label end="186" start="186" name="dt"/>
+                    <label end="190" start="188" name="nn"/>
+                    <label end="194" start="192" name="VBD"/>
+                    <label end="201" start="196" name="VBN"/>
+                    <label end="206" start="203" name="in"/>
+                    <label end="209" start="208" name="PRP$"/>
+                    <label end="215" start="211" name="nn"/>
+                    <label end="218" start="217" name="in"/>
+                    <label end="222" start="220" name="dt"/>
+                    <label end="226" start="224" name="cd"/>
+                    <label end="235" start="228" name="nn"/>
+                    <label end="240" start="237" name="wrb"/>
+                    <label end="242" start="242" name="PRP"/>
+                    <label end="248" start="244" name="VBD"/>
+                    <label end="251" start="250" name="to"/>
+                    <label end="256" start="253" name="vb"/>
+                    <label end="261" start="258" name="in"/>
+                    <label end="265" start="263" name="dt"/>
+                    <label end="272" start="267" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:23:50 PDT Tue" status="MANUAL" ID="6646615">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="135" start="128" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="611" end="126" start="125" name="Possessor"/>
+                    <label cBy="EGp" feID="692" end="135" start="128" name="Body_part"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="126" start="125" name="Gen"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="126" start="125" name="Poss"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

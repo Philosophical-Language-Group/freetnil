@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="bank.n" ID="17623" frame="Businesses" frameID="365" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_5" name="Fires_5" ID="25620"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Busn" name="Business"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="BName" name="Business_name"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Prd" name="Product"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Pptr" name="Proprietor"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="ServP" name="Service_provider"/>
+        </frame>
+    </header>
+    <definition>FN: a corporation or other business primarily concerned with the safekeeping of account holders' financial assets and facilitating financial interactions such as monetary transfer, loans, and investment.</definition>
+    <lexeme POS="N" name="bank"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Business"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Business"/>
+                <annoSet ID="6669573"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Business_name"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Business_name"/>
+                <annoSet ID="6669573"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Business"/>
+            <FE name="Business_name"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Business"/>
+                <valenceUnit GF="Dep" PT="N" FE="Business_name"/>
+                <annoSet ID="6669573"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25620" sentNo="1" paragNo="7" aPos="0" ID="4165035">
+            <text>Some nearby buildings have also been evacuated , including the KPMG building and offices of the Macquarie Bank .</text>
+            <annotationSet cDate="07/17/2014 11:44:17 PDT Thu" status="UNANN" ID="6669205">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="10" start="5" name="jj"/>
+                    <label end="20" start="12" name="nns"/>
+                    <label end="25" start="22" name="VHP"/>
+                    <label end="30" start="27" name="rb"/>
+                    <label end="35" start="32" name="VBN"/>
+                    <label end="45" start="37" name="VVN"/>
+                    <label end="47" start="47" name=","/>
+                    <label end="57" start="49" name="VVG"/>
+                    <label end="61" start="59" name="dt"/>
+                    <label end="66" start="63" name="NP"/>
+                    <label end="75" start="68" name="nn"/>
+                    <label end="79" start="77" name="cc"/>
+                    <label end="87" start="81" name="nns"/>
+                    <label end="90" start="89" name="in"/>
+                    <label end="94" start="92" name="dt"/>
+                    <label end="104" start="96" name="NP"/>
+                    <label end="109" start="106" name="NP"/>
+                    <label end="111" start="111" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="66" start="63" name="organization"/>
+                    <label end="109" start="96" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="25" start="22" name="NT"/>
+                    <label end="30" start="27" name="NT"/>
+                    <label end="35" start="32" name="NT"/>
+                    <label end="47" start="47" name="NT"/>
+                    <label end="61" start="59" name="NT"/>
+                    <label end="66" start="63" name="NT"/>
+                    <label end="79" start="77" name="NT"/>
+                    <label end="90" start="89" name="NT"/>
+                    <label end="94" start="92" name="NT"/>
+                    <label end="104" start="96" name="NT"/>
+                    <label end="111" start="111" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/18/2014 01:23:16 PDT Fri" status="MANUAL" ID="6669573">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="109" start="106" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="3385" end="109" start="106" name="Business"/>
+                    <label cBy="MJE" feID="3386" end="104" start="96" name="Business_name"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="104" start="96" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="104" start="96" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

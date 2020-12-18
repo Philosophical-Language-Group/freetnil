@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="ADV" name="west.adv" ID="16201" frame="Direction" frameID="215" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Dublin" name="IntroOfDublin" ID="23652"/>
+            <document description="Berlitz Intro of Jamaica" name="IntroJamaica" ID="23754"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="" name="Distance"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dom" name="Domain"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Extra-Thematic" abbrev="Ind" name="Independent_variable"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Bse" name="Landmark"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Path" name="Path"/>
+        </frame>
+    </header>
+    <definition>COD: the direction towards the point of the horizon where the sun sets at the equinoxes, on the left-hand side of a person facing north. (ex. "10 feet west of..."</definition>
+    <lexeme POS="ADV" name="west"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Landmark"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DNI" FE="Landmark"/>
+                <annoSet ID="6767936"/>
+                <annoSet ID="6767937"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Path"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="--" FE="Path"/>
+                <annoSet ID="6767936"/>
+                <annoSet ID="6767937"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Landmark"/>
+            <FE name="Path"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DNI" FE="Landmark"/>
+                <valenceUnit GF="" PT="--" FE="Path"/>
+                <annoSet ID="6767936"/>
+                <annoSet ID="6767937"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23652" sentNo="1" paragNo="6" aPos="0" ID="4100592">
+            <text>The River Liffey flows from west to east through the center of the city to Dublin Bay .</text>
+            <annotationSet cDate="11/14/2006 04:25:16 PST Tue" status="UNANN" ID="6539591">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="8" start="4" name="NP"/>
+                    <label end="15" start="10" name="NP"/>
+                    <label end="21" start="17" name="VVZ"/>
+                    <label end="26" start="23" name="in"/>
+                    <label end="31" start="28" name="nn"/>
+                    <label end="34" start="33" name="to"/>
+                    <label end="39" start="36" name="jj"/>
+                    <label end="47" start="41" name="in"/>
+                    <label end="51" start="49" name="dt"/>
+                    <label end="58" start="53" name="nn"/>
+                    <label end="61" start="60" name="in"/>
+                    <label end="65" start="63" name="dt"/>
+                    <label end="70" start="67" name="nn"/>
+                    <label end="73" start="72" name="to"/>
+                    <label end="80" start="75" name="NP"/>
+                    <label end="84" start="82" name="NP"/>
+                    <label end="86" start="86" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="84" start="75" name="location"/>
+                    <label end="15" start="0" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="15" start="10" name="NT"/>
+                    <label end="26" start="23" name="NT"/>
+                    <label end="34" start="33" name="NT"/>
+                    <label end="51" start="49" name="NT"/>
+                    <label end="61" start="60" name="NT"/>
+                    <label end="65" start="63" name="NT"/>
+                    <label end="73" start="72" name="NT"/>
+                    <label end="80" start="75" name="NT"/>
+                    <label end="86" start="86" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="12/17/2015 10:45:07 PST Thu" status="MANUAL" ID="6767936">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="31" start="28" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="3690" end="31" start="28" name="Path"/>
+                    <label cBy="MJE" feID="3689" itype="DNI" name="Landmark"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23754" sentNo="2" paragNo="3" aPos="0" ID="4103846">
+            <text>The island is aligned almost east - to - west in the water so that sunrise wakes the eastern tip , proceeds to caress the length of the island , and kisses the western tip good night .</text>
+            <annotationSet cDate="07/17/2008 06:09:53 PDT Thu" status="UNANN" ID="6552653">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="9" start="4" name="nn"/>
+                    <label end="12" start="11" name="VBZ"/>
+                    <label end="20" start="14" name="VVN"/>
+                    <label end="27" start="22" name="rb"/>
+                    <label end="32" start="29" name="jj"/>
+                    <label end="34" start="34" name=":"/>
+                    <label end="37" start="36" name="to"/>
+                    <label end="39" start="39" name=":"/>
+                    <label end="44" start="41" name="rb"/>
+                    <label end="47" start="46" name="in"/>
+                    <label end="51" start="49" name="dt"/>
+                    <label end="57" start="53" name="nn"/>
+                    <label end="60" start="59" name="in"/>
+                    <label end="65" start="62" name="dt"/>
+                    <label end="73" start="67" name="nn"/>
+                    <label end="79" start="75" name="VVZ"/>
+                    <label end="83" start="81" name="dt"/>
+                    <label end="91" start="85" name="jj"/>
+                    <label end="95" start="93" name="nn"/>
+                    <label end="97" start="97" name=","/>
+                    <label end="106" start="99" name="VVZ"/>
+                    <label end="109" start="108" name="to"/>
+                    <label end="116" start="111" name="VV"/>
+                    <label end="120" start="118" name="dt"/>
+                    <label end="127" start="122" name="nn"/>
+                    <label end="130" start="129" name="in"/>
+                    <label end="134" start="132" name="dt"/>
+                    <label end="141" start="136" name="nn"/>
+                    <label end="143" start="143" name=","/>
+                    <label end="147" start="145" name="cc"/>
+                    <label end="154" start="149" name="VVZ"/>
+                    <label end="158" start="156" name="dt"/>
+                    <label end="166" start="160" name="jj"/>
+                    <label end="170" start="168" name="nn"/>
+                    <label end="175" start="172" name="jj"/>
+                    <label end="181" start="177" name="nn"/>
+                    <label end="183" start="183" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="12" start="11" name="NT"/>
+                    <label end="27" start="22" name="NT"/>
+                    <label end="34" start="34" name="NT"/>
+                    <label end="37" start="36" name="NT"/>
+                    <label end="39" start="39" name="NT"/>
+                    <label end="47" start="46" name="NT"/>
+                    <label end="51" start="49" name="NT"/>
+                    <label end="60" start="59" name="NT"/>
+                    <label end="65" start="62" name="NT"/>
+                    <label end="83" start="81" name="NT"/>
+                    <label end="97" start="97" name="NT"/>
+                    <label end="109" start="108" name="NT"/>
+                    <label end="120" start="118" name="NT"/>
+                    <label end="130" start="129" name="NT"/>
+                    <label end="134" start="132" name="NT"/>
+                    <label end="143" start="143" name="NT"/>
+                    <label end="147" start="145" name="NT"/>
+                    <label end="158" start="156" name="NT"/>
+                    <label end="183" start="183" name="NT"/>
+                    <label end="57" start="53" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="12/17/2015 10:46:00 PST Thu" status="MANUAL" ID="6767937">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="44" start="41" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="3690" end="44" start="41" name="Path"/>
+                    <label cBy="MJE" feID="3689" itype="DNI" name="Landmark"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

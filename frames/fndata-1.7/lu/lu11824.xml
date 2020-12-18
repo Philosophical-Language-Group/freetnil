@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Distance" POS="ADV" name="sooner rather than later.adv" ID="11824" frame="Time_vector" frameID="379" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="SemAnno_1" name="SemAnno_1" ID="23532"/>
+        </corpus>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="wsj_2465" name="wsj_2465" ID="23722"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Direction" name="Direction"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Distance" name="Distance"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Core" abbrev="Evt" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="lan" name="Landmark_event"/>
+        </frame>
+    </header>
+    <definition>FN: (of inevitable occurrences) quite soon (as opposed to later)</definition>
+    <lexeme order="1" headword="true" breakBefore="false" POS="ADV" name="sooner"/>
+    <lexeme order="2" headword="false" breakBefore="false" POS="ADV" name="rather"/>
+    <lexeme order="3" headword="false" breakBefore="false" POS="PREP" name="than"/>
+    <lexeme order="4" headword="false" breakBefore="false" POS="ADV" name="later"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Direction"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Direction"/>
+                <annoSet ID="6525632"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Distance"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Distance"/>
+                <annoSet ID="6547587"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="VPto" FE="Event"/>
+                <annoSet ID="6525632"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="Sbrst" FE="Event"/>
+                <annoSet ID="6547587"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Landmark_event"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DNI" FE="Landmark_event"/>
+                <annoSet ID="6525632"/>
+                <annoSet ID="6547587"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Direction"/>
+            <FE name="Event"/>
+            <FE name="Landmark_event"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Direction"/>
+                <valenceUnit GF="Head" PT="VPto" FE="Event"/>
+                <valenceUnit GF="" PT="DNI" FE="Landmark_event"/>
+                <annoSet ID="6525632"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Distance"/>
+            <FE name="Event"/>
+            <FE name="Landmark_event"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Distance"/>
+                <valenceUnit GF="Head" PT="Sbrst" FE="Event"/>
+                <valenceUnit GF="" PT="DNI" FE="Landmark_event"/>
+                <annoSet ID="6547587"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="23532" sentNo="2" paragNo="2" aPos="0" ID="4097210">
+            <text>It might not be a bad idea to do that sooner , rather than later .</text>
+            <annotationSet cDate="04/08/2005 01:17:49 PDT Fri" status="UNANN" ID="6525494">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="7" start="3" name="md"/>
+                    <label end="11" start="9" name="rb"/>
+                    <label end="14" start="13" name="vb"/>
+                    <label end="16" start="16" name="dt"/>
+                    <label end="20" start="18" name="jj"/>
+                    <label end="25" start="22" name="nn"/>
+                    <label end="28" start="27" name="to"/>
+                    <label end="31" start="30" name="VV"/>
+                    <label end="36" start="33" name="in"/>
+                    <label end="43" start="38" name="rbr"/>
+                    <label end="45" start="45" name=","/>
+                    <label end="52" start="47" name="rb"/>
+                    <label end="57" start="54" name="in"/>
+                    <label end="63" start="59" name="rb"/>
+                    <label end="65" start="65" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="14" start="13" name="NT"/>
+                    <label end="16" start="16" name="NT"/>
+                    <label end="28" start="27" name="NT"/>
+                    <label end="36" start="33" name="NT"/>
+                    <label end="45" start="45" name="NT"/>
+                    <label end="65" start="65" name="NT"/>
+                    <label end="11" start="9" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="04/11/2005 11:59:44 PDT Mon" status="MANUAL" ID="6525632">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="43" start="38" name="Target"/>
+                    <label cBy="JKR" end="52" start="47" name="Target"/>
+                    <label cBy="JKR" end="57" start="54" name="Target"/>
+                    <label cBy="JKR" end="63" start="59" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="4832" end="36" start="27" name="Event"/>
+                    <label cBy="JKR" feID="3396" itype="DNI" name="Landmark_event"/>
+                    <label cBy="JKR" feID="3398" end="63" start="38" name="Direction"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="36" start="27" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="36" start="27" name="VPto"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="205" docID="23722" sentNo="2" paragNo="11" aPos="0" ID="4101595">
+            <text>It might not be a bad idea to do that sooner , rather than later .</text>
+            <annotationSet cDate="08/15/2007 03:54:53 PDT Wed" status="UNANN" ID="6545353">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="7" start="3" name="md"/>
+                    <label end="11" start="9" name="rb"/>
+                    <label end="14" start="13" name="vb"/>
+                    <label end="16" start="16" name="dt"/>
+                    <label end="20" start="18" name="jj"/>
+                    <label end="25" start="22" name="nn"/>
+                    <label end="28" start="27" name="to"/>
+                    <label end="31" start="30" name="VV"/>
+                    <label end="36" start="33" name="in"/>
+                    <label end="43" start="38" name="rbr"/>
+                    <label end="45" start="45" name=","/>
+                    <label end="52" start="47" name="rb"/>
+                    <label end="57" start="54" name="in"/>
+                    <label end="63" start="59" name="rb"/>
+                    <label end="65" start="65" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="11" start="9" name="NT"/>
+                    <label end="14" start="13" name="NT"/>
+                    <label end="16" start="16" name="NT"/>
+                    <label end="28" start="27" name="NT"/>
+                    <label end="36" start="33" name="NT"/>
+                    <label end="65" start="65" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="09/10/2007 10:20:16 PDT Mon" status="MANUAL" ID="6547587">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="43" start="38" name="Target"/>
+                    <label cBy="RLG" end="52" start="47" name="Target"/>
+                    <label cBy="RLG" end="57" start="54" name="Target"/>
+                    <label cBy="RLG" end="63" start="59" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="4832" end="36" start="30" name="Event"/>
+                    <label cBy="RLG" feID="3397" itype="INI" name="Distance"/>
+                    <label cBy="RLG" feID="3396" itype="DNI" name="Landmark_event"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="36" start="30" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="36" start="30" name="Sbrst"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

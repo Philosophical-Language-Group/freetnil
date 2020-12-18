@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Needs_SCs" POS="V" name="dribble.v" ID="17525" frame="Cause_fluidic_motion" frameID="920" totalAnnotated="4" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp=1625" name="bncp=1625" ID="18170"/>
+            <document description="bncp=2575" name="bncp=2575" ID="18771"/>
+            <document description="bncp=13" name="bncp=13" ID="18837"/>
+            <document description="bncp=2298" name="bncp=2298" ID="20133"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="" name="Area"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Core" abbrev="" name="Cause"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="dis" name="Distance"/>
+            <FE fgColor="0000FF" bgColor="d0d0d0" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="" name="Fluid"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="" name="Path"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: to pour slowly resulting in drops or an unsteady stream</definition>
+    <lexeme POS="V" name="dribble"/>
+    <valences>
+        <FERealization total="4">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Agent"/>
+                <annoSet ID="6666518"/>
+            </pattern>
+            <pattern total="3">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <annoSet ID="6666442"/>
+                <annoSet ID="6666478"/>
+                <annoSet ID="6666502"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Area"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Area"/>
+                <annoSet ID="6666502"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Fluid"/>
+            <pattern total="4">
+                <valenceUnit GF="Obj" PT="NP" FE="Fluid"/>
+                <annoSet ID="6666442"/>
+                <annoSet ID="6666478"/>
+                <annoSet ID="6666502"/>
+                <annoSet ID="6666518"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Goal"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[into]" FE="Goal"/>
+                <annoSet ID="6666518"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[over]" FE="Goal"/>
+                <annoSet ID="6666478"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Manner"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Manner"/>
+                <annoSet ID="6666478"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Path"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Path"/>
+                <annoSet ID="6666478"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Source"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[from]" FE="Source"/>
+                <annoSet ID="6666442"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Area"/>
+            <FE name="Fluid"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="" PT="DNI" FE="Area"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Fluid"/>
+                <annoSet ID="6666502"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Fluid"/>
+            <FE name="Goal"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Agent"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Fluid"/>
+                <valenceUnit GF="Dep" PT="PP[into]" FE="Goal"/>
+                <annoSet ID="6666518"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Fluid"/>
+            <FE name="Goal"/>
+            <FE name="Manner"/>
+            <FE name="Path"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Fluid"/>
+                <valenceUnit GF="Dep" PT="PP[over]" FE="Goal"/>
+                <valenceUnit GF="Dep" PT="AVP" FE="Manner"/>
+                <valenceUnit GF="Dep" PT="AVP" FE="Path"/>
+                <annoSet ID="6666478"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Fluid"/>
+            <FE name="Source"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Fluid"/>
+                <valenceUnit GF="Dep" PT="PP[from]" FE="Source"/>
+                <annoSet ID="6666442"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="04-passive-(1)"/>
+    <subCorpus name="06-other-unmatched-(1)">
+        <sentence corpID="111" docID="18170" sentNo="2" paragNo="214" aPos="0" ID="4163584">
+            <text>Anemones tend to dribble a little water from their centres if you press them .</text>
+            <annotationSet cDate="07/09/2014 04:20:03 PDT Wed" status="UNANN" ID="6666441">
+                <layer rank="1" name="PENN">
+                    <label end="7" start="0" name="nns"/>
+                    <label end="12" start="9" name="VVP"/>
+                    <label end="15" start="14" name="to"/>
+                    <label end="23" start="17" name="VV"/>
+                    <label end="25" start="25" name="dt"/>
+                    <label end="32" start="27" name="jj"/>
+                    <label end="38" start="34" name="nn"/>
+                    <label end="43" start="40" name="in"/>
+                    <label end="49" start="45" name="PP$"/>
+                    <label end="57" start="51" name="nns"/>
+                    <label end="60" start="59" name="in"/>
+                    <label end="64" start="62" name="PP"/>
+                    <label end="70" start="66" name="VVP"/>
+                    <label end="75" start="72" name="PP"/>
+                    <label end="77" start="77" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="07/09/2014 04:20:03 PDT Wed" status="MANUAL" ID="6666442">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="23" start="17" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="5802" end="7" start="0" name="Agent"/>
+                    <label cBy="CVa" feID="5804" end="38" start="25" name="Fluid"/>
+                    <label cBy="CVa" feID="5805" end="57" start="40" name="Source"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="7" start="0" name="Ext"/>
+                    <label end="38" start="25" name="Obj"/>
+                    <label end="57" start="40" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="7" start="0" name="NP"/>
+                    <label end="38" start="25" name="NP"/>
+                    <label end="57" start="40" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="18837" sentNo="3" paragNo="1098" aPos="0" ID="4163602">
+            <text>That increases the surface tension on the top of the coffee -- or is it the specific gravity ? -- so that when you dribble the cream slowly down over the back of the spoon it stays on the top . ''</text>
+            <annotationSet cDate="07/09/2014 04:20:07 PDT Wed" status="UNANN" ID="6666477">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="wdt"/>
+                    <label end="13" start="5" name="VVZ"/>
+                    <label end="17" start="15" name="dt"/>
+                    <label end="25" start="19" name="nn"/>
+                    <label end="33" start="27" name="nn"/>
+                    <label end="36" start="35" name="in"/>
+                    <label end="40" start="38" name="dt"/>
+                    <label end="44" start="42" name="nn"/>
+                    <label end="47" start="46" name="in"/>
+                    <label end="51" start="49" name="dt"/>
+                    <label end="58" start="53" name="nn"/>
+                    <label end="61" start="60" name=":"/>
+                    <label end="64" start="63" name="cc"/>
+                    <label end="67" start="66" name="VBZ"/>
+                    <label end="70" start="69" name="PP"/>
+                    <label end="74" start="72" name="dt"/>
+                    <label end="83" start="76" name="jj"/>
+                    <label end="91" start="85" name="nn"/>
+                    <label end="93" start="93" name="sent"/>
+                    <label end="96" start="95" name=":"/>
+                    <label end="99" start="98" name="rb"/>
+                    <label end="104" start="101" name="in"/>
+                    <label end="109" start="106" name="wrb"/>
+                    <label end="113" start="111" name="PP"/>
+                    <label end="121" start="115" name="VV"/>
+                    <label end="125" start="123" name="dt"/>
+                    <label end="131" start="127" name="nn"/>
+                    <label end="138" start="133" name="rb"/>
+                    <label end="143" start="140" name="rb"/>
+                    <label end="148" start="145" name="in"/>
+                    <label end="152" start="150" name="dt"/>
+                    <label end="157" start="154" name="nn"/>
+                    <label end="160" start="159" name="in"/>
+                    <label end="164" start="162" name="dt"/>
+                    <label end="170" start="166" name="nn"/>
+                    <label end="173" start="172" name="PP"/>
+                    <label end="179" start="175" name="VVZ"/>
+                    <label end="182" start="181" name="in"/>
+                    <label end="186" start="184" name="dt"/>
+                    <label end="190" start="188" name="nn"/>
+                    <label end="192" start="192" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="07/09/2014 04:20:07 PDT Wed" status="MANUAL" ID="6666478">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="121" start="115" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="5802" end="113" start="111" name="Agent"/>
+                    <label cBy="CVa" feID="5804" end="131" start="123" name="Fluid"/>
+                    <label cBy="CVa" feID="5809" end="138" start="133" name="Manner"/>
+                    <label cBy="CVa" feID="5807" end="143" start="140" name="Path"/>
+                    <label cBy="CVa" feID="5806" end="170" start="145" name="Goal"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="113" start="111" name="Ext"/>
+                    <label end="131" start="123" name="Obj"/>
+                    <label end="138" start="133" name="Dep"/>
+                    <label end="143" start="140" name="Dep"/>
+                    <label end="170" start="145" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="113" start="111" name="NP"/>
+                    <label end="131" start="123" name="NP"/>
+                    <label end="138" start="133" name="AVP"/>
+                    <label end="143" start="140" name="AVP"/>
+                    <label end="170" start="145" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="20133" sentNo="11" paragNo="33" aPos="0" ID="4163614">
+            <text>This scholar dribbling tea</text>
+            <annotationSet cDate="07/09/2014 04:20:10 PDT Wed" status="UNANN" ID="6666501">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="11" start="5" name="nn"/>
+                    <label end="21" start="13" name="VVG"/>
+                    <label end="25" start="23" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="07/09/2014 04:20:10 PDT Wed" status="MANUAL" ID="6666502">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="21" start="13" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="5802" end="11" start="0" name="Agent"/>
+                    <label cBy="CVa" feID="5804" end="25" start="23" name="Fluid"/>
+                    <label cBy="CVa" feID="5808" itype="DNI" name="Area"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="11" start="0" name="Ext"/>
+                    <label end="25" start="23" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="11" start="0" name="NP"/>
+                    <label end="25" start="23" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="18771" sentNo="2" paragNo="365" aPos="0" ID="4163622">
+            <text>It was Barney who returned to it first , dribbling cream into his coffee and watching it swirl into a spiral on the surface .</text>
+            <annotationSet cDate="07/09/2014 04:20:12 PDT Wed" status="UNANN" ID="6666517">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="5" start="3" name="VBD"/>
+                    <label end="12" start="7" name="NP"/>
+                    <label end="16" start="14" name="wp"/>
+                    <label end="25" start="18" name="VVD"/>
+                    <label end="28" start="27" name="to"/>
+                    <label end="31" start="30" name="PP"/>
+                    <label end="37" start="33" name="jj"/>
+                    <label end="39" start="39" name=","/>
+                    <label end="49" start="41" name="VVG"/>
+                    <label end="55" start="51" name="nn"/>
+                    <label end="60" start="57" name="in"/>
+                    <label end="64" start="62" name="PP$"/>
+                    <label end="71" start="66" name="nn"/>
+                    <label end="75" start="73" name="cc"/>
+                    <label end="84" start="77" name="VVG"/>
+                    <label end="87" start="86" name="PP"/>
+                    <label end="93" start="89" name="nn"/>
+                    <label end="98" start="95" name="in"/>
+                    <label end="100" start="100" name="dt"/>
+                    <label end="107" start="102" name="nn"/>
+                    <label end="110" start="109" name="in"/>
+                    <label end="114" start="112" name="dt"/>
+                    <label end="122" start="116" name="nn"/>
+                    <label end="124" start="124" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="07/09/2014 04:20:13 PDT Wed" status="MANUAL" ID="6666518">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="49" start="41" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="5804" end="55" start="51" name="Fluid"/>
+                    <label cBy="CVa" feID="5806" end="71" start="57" name="Goal"/>
+                    <label cBy="CVa" feID="5802" itype="DNI" name="Agent"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="55" start="51" name="Obj"/>
+                    <label end="71" start="57" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="55" start="51" name="NP"/>
+                    <label end="71" start="57" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="non-native.a" ID="14494" frame="Indigenous_origin" frameID="1552" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Las Vegas" name="HistoryOfLasVegas" ID="23691"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="ent" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="ori" name="Origin"/>
+        </frame>
+    </header>
+    <definition>FN: not of indigenous origin to an area</definition>
+    <lexeme POS="A" name="non-native"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Entity"/>
+                <annoSet ID="6544245"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Origin"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Origin"/>
+                <annoSet ID="6544245"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Entity"/>
+            <FE name="Origin"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Entity"/>
+                <valenceUnit GF="" PT="DNI" FE="Origin"/>
+                <annoSet ID="6544245"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23691" sentNo="3" paragNo="15" aPos="0" ID="4101067">
+            <text>When it did , the Las Vegas Valley ( which at the time had a non-native population of less than 30 ) would change as well .</text>
+            <annotationSet cDate="03/12/2007 02:46:49 PDT Mon" status="UNANN" ID="6541860">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="wrb"/>
+                    <label end="6" start="5" name="PP"/>
+                    <label end="10" start="8" name="VVD"/>
+                    <label end="12" start="12" name=","/>
+                    <label end="16" start="14" name="dt"/>
+                    <label end="20" start="18" name="NP"/>
+                    <label end="26" start="22" name="NP"/>
+                    <label end="33" start="28" name="NP"/>
+                    <label end="35" start="35" name="("/>
+                    <label end="41" start="37" name="wdt"/>
+                    <label end="44" start="43" name="in"/>
+                    <label end="48" start="46" name="dt"/>
+                    <label end="53" start="50" name="nn"/>
+                    <label end="57" start="55" name="VHD"/>
+                    <label end="59" start="59" name="dt"/>
+                    <label end="70" start="61" name="jj"/>
+                    <label end="81" start="72" name="nn"/>
+                    <label end="84" start="83" name="in"/>
+                    <label end="89" start="86" name="jjr"/>
+                    <label end="94" start="91" name="in"/>
+                    <label end="97" start="96" name="cd"/>
+                    <label end="99" start="99" name=")"/>
+                    <label end="105" start="101" name="md"/>
+                    <label end="112" start="107" name="VV"/>
+                    <label end="115" start="114" name="rb"/>
+                    <label end="120" start="117" name="rb"/>
+                    <label end="122" start="122" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="33" start="14" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="5" name="NT"/>
+                    <label end="10" start="8" name="NT"/>
+                    <label end="12" start="12" name="NT"/>
+                    <label end="16" start="14" name="NT"/>
+                    <label end="20" start="18" name="NT"/>
+                    <label end="26" start="22" name="NT"/>
+                    <label end="35" start="35" name="NT"/>
+                    <label end="41" start="37" name="NT"/>
+                    <label end="44" start="43" name="NT"/>
+                    <label end="48" start="46" name="NT"/>
+                    <label end="59" start="59" name="NT"/>
+                    <label end="84" start="83" name="NT"/>
+                    <label end="94" start="91" name="NT"/>
+                    <label end="99" start="99" name="NT"/>
+                    <label end="105" start="101" name="NT"/>
+                    <label end="115" start="114" name="NT"/>
+                    <label end="120" start="117" name="NT"/>
+                    <label end="122" start="122" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/30/2007 01:55:51 PDT Mon" status="MANUAL" ID="6544245">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="70" start="61" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="8473" end="81" start="72" name="Entity"/>
+                    <label cBy="KmG" feID="8474" itype="DNI" name="Origin"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="81" start="72" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="81" start="72" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

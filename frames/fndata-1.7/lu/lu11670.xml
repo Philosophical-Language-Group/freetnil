@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="PREP" name="in.prep" ID="11670" frame="Fields" frameID="1345" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Goodwill fund-raising letter" name="110CYL069" ID="23794"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="act" name="Activity"/>
+            <FE fgColor="00008B" bgColor="7CCD73" type="Peripheral" abbrev="Pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="pra" name="Practitioner"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="sal" name="Salient_entity"/>
+            <FE fgColor="00008B" bgColor="FFFF00" type="Peripheral" abbrev="Tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Typ" name="Type"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="wor" name="Work"/>
+        </frame>
+    </header>
+    <definition>COD: indicating someone's occupation or profession.</definition>
+    <lexeme POS="PREP" name="in"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Activity"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Activity"/>
+                <annoSet ID="6557026"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="VPing" FE="Activity"/>
+                <annoSet ID="6557026"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Activity"/>
+            <FE name="Activity"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Activity"/>
+                <valenceUnit GF="Ext" PT="VPing" FE="Activity"/>
+                <annoSet ID="6557026"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23794" sentNo="1" paragNo="14" aPos="0" ID="4106475">
+            <text>In order to develop job skills , a man with some serious disabilities begins working in Goodwill 's industrial division .</text>
+            <annotationSet cDate="11/19/2008 04:11:08 PST Wed" status="UNANN" ID="6556592">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="7" start="3" name="nn"/>
+                    <label end="10" start="9" name="to"/>
+                    <label end="18" start="12" name="VV"/>
+                    <label end="22" start="20" name="nn"/>
+                    <label end="29" start="24" name="nns"/>
+                    <label end="31" start="31" name=","/>
+                    <label end="33" start="33" name="dt"/>
+                    <label end="37" start="35" name="nn"/>
+                    <label end="42" start="39" name="in"/>
+                    <label end="47" start="44" name="dt"/>
+                    <label end="55" start="49" name="jj"/>
+                    <label end="68" start="57" name="nns"/>
+                    <label end="75" start="70" name="VVZ"/>
+                    <label end="83" start="77" name="VVG"/>
+                    <label end="86" start="85" name="in"/>
+                    <label end="95" start="88" name="NP"/>
+                    <label end="98" start="97" name="POS"/>
+                    <label end="109" start="100" name="jj"/>
+                    <label end="118" start="111" name="nn"/>
+                    <label end="120" start="120" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="95" start="88" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="10" start="9" name="NT"/>
+                    <label end="31" start="31" name="NT"/>
+                    <label end="33" start="33" name="NT"/>
+                    <label end="95" start="88" name="NT"/>
+                    <label end="98" start="97" name="NT"/>
+                    <label end="120" start="120" name="NT"/>
+                    <label end="42" start="39" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/25/2008 04:48:53 PST Tue" status="MANUAL" ID="6557026">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="86" start="85" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="7604" end="118" start="88" name="Activity"/>
+                    <label cBy="MLC" feID="7604" end="83" start="77" name="Activity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="118" start="88" name="Obj"/>
+                    <label end="83" start="77" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="118" start="88" name="NP"/>
+                    <label end="83" start="77" name="VPing"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Prep"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

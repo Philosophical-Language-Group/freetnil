@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Add_Annotation" POS="N" name="transaction.n" ID="11459" frame="Commercial_transaction" frameID="177" totalAnnotated="5" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp=1523" name="bncp=1523" ID="18167"/>
+        </corpus>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="North Korea Introduction" name="NorthKorea_Introduction" ID="23481"/>
+            <document description="Iran Chemical" name="Iran_Chemical" ID="23514"/>
+        </corpus>
+        <corpus description="AQUAINT Knowledge-Based Evaluation Texts" name="KBEval" ID="185">
+            <document description="Brandeis" name="Brandeis" ID="23573"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="Byr" name="Buyer"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Gds" name="Goods"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Core" abbrev="Mny" name="Money"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Rate" name="Rate"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Slr" name="Seller"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Unit" name="Unit"/>
+        </frame>
+    </header>
+    <definition>COD: an instance of buying or selling.</definition>
+    <lexeme POS="N" name="transaction"/>
+    <valences>
+        <FERealization total="5">
+            <FE name="Buyer"/>
+            <pattern total="4">
+                <valenceUnit GF="" PT="INI" FE="Buyer"/>
+                <annoSet ID="6521907"/>
+                <annoSet ID="6527703"/>
+                <annoSet ID="6533212"/>
+                <annoSet ID="6533450"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Buyer"/>
+                <annoSet ID="2599267"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="5">
+            <FE name="Goods"/>
+            <pattern total="4">
+                <valenceUnit GF="" PT="INI" FE="Goods"/>
+                <annoSet ID="2599267"/>
+                <annoSet ID="6521907"/>
+                <annoSet ID="6533212"/>
+                <annoSet ID="6533450"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Goods"/>
+                <annoSet ID="6527703"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="5">
+            <FE name="Money"/>
+            <pattern total="5">
+                <valenceUnit GF="" PT="INI" FE="Money"/>
+                <annoSet ID="2599267"/>
+                <annoSet ID="6521907"/>
+                <annoSet ID="6527703"/>
+                <annoSet ID="6533212"/>
+                <annoSet ID="6533450"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="5">
+            <FE name="Seller"/>
+            <pattern total="5">
+                <valenceUnit GF="" PT="INI" FE="Seller"/>
+                <annoSet ID="2599267"/>
+                <annoSet ID="6521907"/>
+                <annoSet ID="6527703"/>
+                <annoSet ID="6533212"/>
+                <annoSet ID="6533450"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="5">
+            <FE name="Buyer"/>
+            <FE name="Goods"/>
+            <FE name="Money"/>
+            <FE name="Seller"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="INI" FE="Buyer"/>
+                <valenceUnit GF="" PT="INI" FE="Goods"/>
+                <valenceUnit GF="" PT="INI" FE="Money"/>
+                <valenceUnit GF="" PT="INI" FE="Seller"/>
+                <annoSet ID="6521907"/>
+                <annoSet ID="6533212"/>
+                <annoSet ID="6533450"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Buyer"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Goods"/>
+                <valenceUnit GF="" PT="INI" FE="Money"/>
+                <valenceUnit GF="" PT="INI" FE="Seller"/>
+                <annoSet ID="6527703"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Buyer"/>
+                <valenceUnit GF="" PT="INI" FE="Goods"/>
+                <valenceUnit GF="" PT="INI" FE="Money"/>
+                <valenceUnit GF="" PT="INI" FE="Seller"/>
+                <annoSet ID="2599267"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-object_of-(1)">
+        <sentence corpID="111" docID="18167" sentNo="1" paragNo="241" aPos="0" ID="1582128">
+            <text>But why might potential buyers of financial assets delay their transactions and instead hold their wealth in a perfectly liquid form with a zero or low yield , e.g. cash or current account deposits ?</text>
+            <annotationSet cDate="07/26/2010 11:29:07 PDT Mon" status="UNANN" ID="2599266">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="cc"/>
+                    <label end="6" start="4" name="wrb"/>
+                    <label end="12" start="8" name="md"/>
+                    <label end="22" start="14" name="jj"/>
+                    <label end="29" start="24" name="nns"/>
+                    <label end="32" start="31" name="in"/>
+                    <label end="42" start="34" name="jj"/>
+                    <label end="49" start="44" name="nns"/>
+                    <label end="55" start="51" name="VVP"/>
+                    <label end="61" start="57" name="PP$"/>
+                    <label end="74" start="63" name="nns"/>
+                    <label end="78" start="76" name="cc"/>
+                    <label end="86" start="80" name="rb"/>
+                    <label end="91" start="88" name="VV"/>
+                    <label end="97" start="93" name="PP$"/>
+                    <label end="104" start="99" name="nn"/>
+                    <label end="107" start="106" name="in"/>
+                    <label end="109" start="109" name="dt"/>
+                    <label end="119" start="111" name="rb"/>
+                    <label end="126" start="121" name="jj"/>
+                    <label end="131" start="128" name="nn"/>
+                    <label end="136" start="133" name="in"/>
+                    <label end="138" start="138" name="dt"/>
+                    <label end="143" start="140" name="nn"/>
+                    <label end="146" start="145" name="cc"/>
+                    <label end="150" start="148" name="jj"/>
+                    <label end="156" start="152" name="nn"/>
+                    <label end="158" start="158" name=","/>
+                    <label end="163" start="160" name="jj"/>
+                    <label end="168" start="165" name="nn"/>
+                    <label end="171" start="170" name="cc"/>
+                    <label end="179" start="173" name="jj"/>
+                    <label end="187" start="181" name="nn"/>
+                    <label end="196" start="189" name="nns"/>
+                    <label end="198" start="198" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="07/26/2010 11:29:07 PDT Mon" status="MANUAL" ID="2599267">
+                <layer rank="1" name="Target">
+                    <label cBy="AnW" end="74" start="63" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AnW" feID="1380" end="61" start="57" name="Buyer"/>
+                    <label cBy="AnW" feID="1381" itype="INI" name="Goods"/>
+                    <label cBy="AnW" feID="1383" itype="INI" name="Money"/>
+                    <label cBy="AnW" feID="1385" itype="INI" name="Seller"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="61" start="57" name="Gen"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="61" start="57" name="Poss"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="02-a_modifier-(1)"/>
+    <subCorpus name="03-n_modifier-(1)"/>
+    <subCorpus name="05-pp_between-p-(1)"/>
+    <subCorpus name="06-pp_with-p-(1)"/>
+    <subCorpus name="07-possessor-(1)"/>
+    <subCorpus name="08-pp_by-p-(1)"/>
+    <subCorpus name="09-other-matched-(1)"/>
+    <subCorpus name="10-other-unmatched-(1)"/>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23481" sentNo="2" paragNo="13" aPos="0" ID="4096510">
+            <text>There were rumors in 2003 of Burmese plans to purchase ballistic missiles from North Korea , but it is unclear whether any transactions have been completed . </text>
+            <annotationSet cDate="12/10/2004 02:35:00 PST Fri" status="UNANN" ID="6521574">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="ex"/>
+                    <label end="16" start="11" name="nns"/>
+                    <label end="19" start="18" name="in"/>
+                    <label end="35" start="29" name="jj"/>
+                    <label end="41" start="37" name="nns"/>
+                    <label end="44" start="43" name="to"/>
+                    <label end="53" start="46" name="VV"/>
+                    <label end="63" start="55" name="jj"/>
+                    <label end="72" start="65" name="nns"/>
+                    <label end="77" start="74" name="in"/>
+                    <label end="95" start="93" name="cc"/>
+                    <label end="98" start="97" name="PRP"/>
+                    <label end="109" start="103" name="jj"/>
+                    <label end="121" start="119" name="dt"/>
+                    <label end="134" start="123" name="nns"/>
+                    <label end="154" start="146" name="VVN"/>
+                    <label end="156" start="156" name="sent"/>
+                    <label end="9" start="6" name="VBD"/>
+                    <label end="27" start="26" name="in"/>
+                    <label end="83" start="79" name="NNP"/>
+                    <label end="89" start="85" name="NNP"/>
+                    <label end="91" start="91" name=","/>
+                    <label end="101" start="100" name="VBZ"/>
+                    <label end="117" start="111" name="in"/>
+                    <label end="139" start="136" name="VHZ"/>
+                    <label end="144" start="141" name="VBN"/>
+                    <label end="24" start="21" name="cd"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="24" start="21" name="date"/>
+                    <label end="72" start="55" name="WEA"/>
+                    <label end="89" start="79" name="GPE"/>
+                    <label end="35" start="29" name="GPE"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="19" start="18" name="NT"/>
+                    <label end="44" start="43" name="NT"/>
+                    <label end="77" start="74" name="NT"/>
+                    <label end="95" start="93" name="NT"/>
+                    <label end="98" start="97" name="NT"/>
+                    <label end="121" start="119" name="NT"/>
+                    <label end="156" start="156" name="NT"/>
+                    <label end="27" start="26" name="NT"/>
+                    <label end="91" start="91" name="NT"/>
+                    <label end="101" start="100" name="NT"/>
+                    <label end="117" start="111" name="NT"/>
+                    <label end="139" start="136" name="NT"/>
+                    <label end="144" start="141" name="NT"/>
+                    <label end="24" start="21" name="NT"/>
+                    <label end="35" start="29" name="NT"/>
+                    <label end="89" start="79" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="12/15/2004 09:33:46 PST Wed" status="MANUAL" ID="6521907">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="134" start="123" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="1380" itype="INI" name="Buyer"/>
+                    <label cBy="JKR" feID="1385" itype="INI" name="Seller"/>
+                    <label cBy="JKR" feID="1381" itype="INI" name="Goods"/>
+                    <label cBy="JKR" feID="1383" itype="INI" name="Money"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23514" sentNo="4" paragNo="47" aPos="0" ID="4097123">
+            <text>However , reports of transactions of various dual - use material is publicly known .</text>
+            <annotationSet cDate="02/25/2005 12:43:21 PST Fri" status="UNANN" ID="6522788">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="rb"/>
+                    <label end="8" start="8" name=","/>
+                    <label end="16" start="10" name="nns"/>
+                    <label end="19" start="18" name="in"/>
+                    <label end="32" start="21" name="nns"/>
+                    <label end="35" start="34" name="in"/>
+                    <label end="43" start="37" name="jj"/>
+                    <label end="48" start="45" name="jj"/>
+                    <label end="50" start="50" name=":"/>
+                    <label end="54" start="52" name="nn"/>
+                    <label end="63" start="56" name="nn"/>
+                    <label end="66" start="65" name="VBZ"/>
+                    <label end="75" start="68" name="rb"/>
+                    <label end="81" start="77" name="VVN"/>
+                    <label end="83" start="83" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="8" start="8" name="NT"/>
+                    <label end="19" start="18" name="NT"/>
+                    <label end="35" start="34" name="NT"/>
+                    <label end="50" start="50" name="NT"/>
+                    <label end="83" start="83" name="NT"/>
+                    <label end="6" start="0" name="NT"/>
+                    <label end="66" start="65" name="NT"/>
+                    <label end="75" start="68" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/10/2005 10:50:58 PDT Fri" status="MANUAL" ID="6527703">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="32" start="21" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="1381" end="63" start="34" name="Goods"/>
+                    <label cBy="RLG" feID="1380" itype="INI" name="Buyer"/>
+                    <label cBy="RLG" feID="1385" itype="INI" name="Seller"/>
+                    <label cBy="RLG" feID="1383" itype="INI" name="Money"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="63" start="34" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="63" start="34" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="185" docID="23573" sentNo="3" paragNo="20" aPos="0" ID="4098116">
+            <text>QN : Has the transaction taken place ?</text>
+            <annotationSet cDate="10/05/2005 12:50:14 PDT Wed" status="UNANN" ID="6530857">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="NP"/>
+                    <label end="3" start="3" name=":"/>
+                    <label end="7" start="5" name="VHZ"/>
+                    <label end="11" start="9" name="dt"/>
+                    <label end="23" start="13" name="nn"/>
+                    <label end="29" start="25" name="VVN"/>
+                    <label end="35" start="31" name="nn"/>
+                    <label end="37" start="37" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="3" start="3" name="NT"/>
+                    <label end="11" start="9" name="NT"/>
+                    <label end="37" start="37" name="NT"/>
+                    <label end="7" start="5" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/13/2005 12:31:04 PDT Thu" status="MANUAL" ID="6533212">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="23" start="13" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="1380" itype="INI" name="Buyer"/>
+                    <label cBy="MJE" feID="1381" itype="INI" name="Goods"/>
+                    <label cBy="MJE" feID="1383" itype="INI" name="Money"/>
+                    <label cBy="MJE" feID="1385" itype="INI" name="Seller"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="185" docID="23573" sentNo="3" paragNo="21" aPos="0" ID="4098119">
+            <text>QN : Has the transaction taken place ?</text>
+            <annotationSet cDate="10/05/2005 12:50:14 PDT Wed" status="UNANN" ID="6530860">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="NP"/>
+                    <label end="3" start="3" name=":"/>
+                    <label end="7" start="5" name="VHZ"/>
+                    <label end="11" start="9" name="dt"/>
+                    <label end="23" start="13" name="nn"/>
+                    <label end="29" start="25" name="VVN"/>
+                    <label end="35" start="31" name="nn"/>
+                    <label end="37" start="37" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="3" start="3" name="NT"/>
+                    <label end="11" start="9" name="NT"/>
+                    <label end="37" start="37" name="NT"/>
+                    <label end="7" start="5" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/14/2005 06:42:27 PDT Fri" status="MANUAL" ID="6533450">
+                <layer rank="1" name="FE">
+                    <label cBy="Hay" feID="1380" itype="INI" name="Buyer"/>
+                    <label cBy="Hay" feID="1381" itype="INI" name="Goods"/>
+                    <label cBy="Hay" feID="1383" itype="INI" name="Money"/>
+                    <label cBy="Hay" feID="1385" itype="INI" name="Seller"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="Noun"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Target">
+                    <label cBy="Hay" end="23" start="13" name="Target"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

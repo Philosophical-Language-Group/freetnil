@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="national.n" ID="10248" frame="People_by_jurisdiction" frameID="1023" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="Iran-related Questions" name="IranRelatedQuestions" ID="23541"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Age" name="Age"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Authority"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Eth" name="Ethnicity"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Ori" name="Jurisdiction"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Pers_char" name="Persistent_characteristic"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Person" name="Person"/>
+        </frame>
+    </header>
+    <definition>COD: a citizen of a particular country.</definition>
+    <lexeme POS="N" name="national"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Jurisdiction"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Jurisdiction"/>
+                <annoSet ID="6527113"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Person"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Person"/>
+                <annoSet ID="6527113"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Jurisdiction"/>
+            <FE name="Person"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Jurisdiction"/>
+                <valenceUnit GF="" PT="DEN" FE="Person"/>
+                <annoSet ID="6527113"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="23541" sentNo="2" paragNo="89" aPos="0" ID="4097409">
+            <text>US concerns about Iranian nuclear ambitions are currently delaying the granting of IAEA fellowships to Iranian nationals .</text>
+            <annotationSet cDate="05/27/2005 08:08:34 PDT Fri" status="UNANN" ID="6526103">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="10" start="3" name="VVZ"/>
+                    <label end="16" start="12" name="in"/>
+                    <label end="24" start="18" name="jj"/>
+                    <label end="32" start="26" name="jj"/>
+                    <label end="42" start="34" name="nns"/>
+                    <label end="46" start="44" name="vbp"/>
+                    <label end="56" start="48" name="rb"/>
+                    <label end="65" start="58" name="VVG"/>
+                    <label end="69" start="67" name="dt"/>
+                    <label end="78" start="71" name="VVG"/>
+                    <label end="81" start="80" name="in"/>
+                    <label end="86" start="83" name="nn"/>
+                    <label end="98" start="88" name="nns"/>
+                    <label end="101" start="100" name="to"/>
+                    <label end="109" start="103" name="jj"/>
+                    <label end="119" start="111" name="nns"/>
+                    <label end="121" start="121" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="1" start="0" name="location"/>
+                    <label end="86" start="83" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="16" start="12" name="NT"/>
+                    <label end="46" start="44" name="NT"/>
+                    <label end="56" start="48" name="NT"/>
+                    <label end="69" start="67" name="NT"/>
+                    <label end="81" start="80" name="NT"/>
+                    <label end="101" start="100" name="NT"/>
+                    <label end="121" start="121" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/02/2005 10:45:31 PDT Thu" status="MANUAL" ID="6527113">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="119" start="111" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="6089" end="119" start="111" name="Person"/>
+                    <label cBy="MJE" feID="6088" end="109" start="103" name="Jurisdiction"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="109" start="103" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="109" start="103" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

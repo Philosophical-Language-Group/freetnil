@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="lock up.v" ID="4760" frame="Immobilization" frameID="250" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="sw2025-ms98-a-trans.ascii-1-NEW" name="sw2025-ms98-a-trans.ascii-1-NEW" ID="23731"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agt" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="Anchor" name="Anchor"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="Ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Pat" name="Patient"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: make or become rigidly fixed or immovable by locking</definition>
+    <lexeme order="1" headword="true" breakBefore="false" POS="V" name="lock"/>
+    <lexeme order="2" headword="false" breakBefore="true" POS="ADV" name="up"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Agent"/>
+                <annoSet ID="6551500"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Patient"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Patient"/>
+                <annoSet ID="6551500"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Place"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Place"/>
+                <annoSet ID="6551500"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Patient"/>
+            <FE name="Place"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Agent"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Patient"/>
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Place"/>
+                <annoSet ID="6551500"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23731" sentNo="3" paragNo="56" aPos="0" ID="4102276">
+            <text>I am locked up in the laundry room .</text>
+            <annotationSet cDate="08/16/2007 05:32:23 PDT Thu" status="UNANN" ID="6546034">
+                <layer rank="1" name="PENN">
+                    <label end="0" start="0" name="PP"/>
+                    <label end="3" start="2" name="vbp"/>
+                    <label end="10" start="5" name="VVN"/>
+                    <label end="13" start="12" name="rp"/>
+                    <label end="16" start="15" name="in"/>
+                    <label end="20" start="18" name="dt"/>
+                    <label end="28" start="22" name="nn"/>
+                    <label end="33" start="30" name="nn"/>
+                    <label end="35" start="35" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="0" start="0" name="NT"/>
+                    <label end="3" start="2" name="NT"/>
+                    <label end="20" start="18" name="NT"/>
+                    <label end="35" start="35" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/16/2007 04:46:04 PST Fri" status="MANUAL" ID="6551500">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="10" start="5" name="Target"/>
+                    <label cBy="EGp" end="13" start="12" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="2184" end="0" start="0" name="Patient"/>
+                    <label cBy="JKs" feID="2189" end="33" start="15" name="Place"/>
+                    <label cBy="JKs" feID="2182" itype="CNI" name="Agent"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="0" start="0" name="Ext"/>
+                    <label end="33" start="15" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="0" start="0" name="NP"/>
+                    <label end="33" start="15" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

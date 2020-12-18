@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="determine.v" ID="17273" frame="Deciding" frameID="363" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="Circ" name="Circumstance"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Dec" name="Decision"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Inh" name="Inherent_purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Poss" name="Possibilities"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: to firmly decide</definition>
+    <lexeme POS="V" name="determine"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <annoSet ID="6646551"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Decision"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="VPto" FE="Decision"/>
+                <annoSet ID="6646551"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="Decision"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <valenceUnit GF="Obj" PT="VPto" FE="Decision"/>
+                <annoSet ID="6646551"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="4" paragNo="43" aPos="0" ID="4148575">
+            <text>But they determined to get rid forever of Garcia .</text>
+            <annotationSet cDate="04/30/2013 05:23:19 PDT Tue" status="UNANN" ID="6646550">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="cc"/>
+                    <label end="7" start="4" name="PRP"/>
+                    <label end="18" start="9" name="VBD"/>
+                    <label end="21" start="20" name="to"/>
+                    <label end="25" start="23" name="vb"/>
+                    <label end="29" start="27" name="jj"/>
+                    <label end="37" start="31" name="rb"/>
+                    <label end="40" start="39" name="in"/>
+                    <label end="47" start="42" name="NNP"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:23:19 PDT Tue" status="MANUAL" ID="6646551">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="18" start="9" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="3716" end="7" start="4" name="Cognizer"/>
+                    <label cBy="EGp" feID="3717" end="49" start="20" name="Decision"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="7" start="4" name="Ext"/>
+                    <label end="49" start="20" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="7" start="4" name="NP"/>
+                    <label end="49" start="20" name="VPto"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

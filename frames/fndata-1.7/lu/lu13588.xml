@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="charge.n" ID="13588" frame="Imposing_obligation" frameID="1494" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="con" name="Condition"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="dut" name="Duty"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="obl" name="Obligator"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Core" abbrev="pri" name="Principle"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="Resp" name="Responsible_party"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Core" abbrev="sit" name="Situation"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: an obligation placed upon another.</definition>
+    <lexeme POS="N" name="charge"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Duty"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Duty"/>
+                <annoSet ID="6561243"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Obligator"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Obligator"/>
+                <annoSet ID="6561243"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Responsible_party"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Responsible_party"/>
+                <annoSet ID="6561243"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Duty"/>
+            <FE name="Obligator"/>
+            <FE name="Responsible_party"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Duty"/>
+                <valenceUnit GF="" PT="DNI" FE="Obligator"/>
+                <valenceUnit GF="" PT="INI" FE="Responsible_party"/>
+                <annoSet ID="6561243"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23771" sentNo="1" paragNo="115" aPos="0" ID="4106191">
+            <text>The casinos have no admission charge and formal dress is optional , though long pants for men are required .</text>
+            <annotationSet cDate="07/25/2008 01:20:36 PDT Fri" status="UNANN" ID="6555281">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="10" start="4" name="nns"/>
+                    <label end="15" start="12" name="VHP"/>
+                    <label end="18" start="17" name="dt"/>
+                    <label end="28" start="20" name="nn"/>
+                    <label end="35" start="30" name="nn"/>
+                    <label end="39" start="37" name="cc"/>
+                    <label end="46" start="41" name="jj"/>
+                    <label end="52" start="48" name="nn"/>
+                    <label end="55" start="54" name="VBZ"/>
+                    <label end="64" start="57" name="jj"/>
+                    <label end="66" start="66" name=","/>
+                    <label end="73" start="68" name="in"/>
+                    <label end="78" start="75" name="jj"/>
+                    <label end="84" start="80" name="nns"/>
+                    <label end="88" start="86" name="in"/>
+                    <label end="92" start="90" name="nns"/>
+                    <label end="96" start="94" name="vbp"/>
+                    <label end="105" start="98" name="VVN"/>
+                    <label end="107" start="107" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="39" start="37" name="NT"/>
+                    <label end="55" start="54" name="NT"/>
+                    <label end="66" start="66" name="NT"/>
+                    <label end="73" start="68" name="NT"/>
+                    <label end="88" start="86" name="NT"/>
+                    <label end="96" start="94" name="NT"/>
+                    <label end="107" start="107" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/26/2011 06:29:21 PST Wed" status="MANUAL" ID="6561243">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="35" start="30" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="8149" end="35" start="30" name="Duty"/>
+                    <label cBy="MLC" feID="8154" itype="DNI" name="Obligator"/>
+                    <label cBy="MLC" feID="8148" itype="INI" name="Responsible_party"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="posture.n" ID="10356" frame="Posture" frameID="18" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Polemic Progressive Education" name="PolemicProgressiveEducation" ID="23011"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agt" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="Res" name="Dependent_state"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Extra-Thematic" abbrev="Depict" name="Depictive"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Peripheral" abbrev="" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="Loc" name="Location"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="0000FF" bgColor="d0d0d0" type="Core" abbrev="poc" name="Point_of_contact"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: a particular position of the body.</definition>
+    <lexeme POS="N" name="posture"/>
+    <valences>
+        <governor type="Sup" lemma="strike">
+            <annoSet ID="4529264"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <annoSet ID="4529264"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Manner"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Manner"/>
+                <annoSet ID="4529264"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Purpose"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[on]" FE="Purpose"/>
+                <annoSet ID="4529264"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Manner"/>
+            <FE name="Purpose"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="Dep" PT="AVP" FE="Manner"/>
+                <valenceUnit GF="Dep" PT="PP[on]" FE="Purpose"/>
+                <annoSet ID="4529264"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23011" sentNo="5" paragNo="8" aPos="0" ID="2824329">
+            <text>It is also the kind of libel politicians find useful , since it helps them strike a friendly posture on behalf of an important constituency .</text>
+            <annotationSet cDate="02/05/2004 08:29:59 PST Thu" status="UNANN" ID="4528324">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="4" start="3" name="VBZ"/>
+                    <label end="9" start="6" name="rb"/>
+                    <label end="13" start="11" name="dt"/>
+                    <label end="18" start="15" name="nn"/>
+                    <label end="21" start="20" name="in"/>
+                    <label end="27" start="23" name="nn"/>
+                    <label end="39" start="29" name="nns"/>
+                    <label end="44" start="41" name="VVP"/>
+                    <label end="51" start="46" name="jj"/>
+                    <label end="53" start="53" name=","/>
+                    <label end="59" start="55" name="in"/>
+                    <label end="62" start="61" name="PP"/>
+                    <label end="68" start="64" name="VVZ"/>
+                    <label end="73" start="70" name="PP"/>
+                    <label end="80" start="75" name="VV"/>
+                    <label end="82" start="82" name="dt"/>
+                    <label end="91" start="84" name="jj"/>
+                    <label end="99" start="93" name="nn"/>
+                    <label end="102" start="101" name="in"/>
+                    <label end="109" start="104" name="nn"/>
+                    <label end="112" start="111" name="in"/>
+                    <label end="115" start="114" name="dt"/>
+                    <label end="125" start="117" name="jj"/>
+                    <label end="138" start="127" name="nn"/>
+                    <label end="140" start="140" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="4" start="3" name="NT"/>
+                    <label end="9" start="6" name="NT"/>
+                    <label end="53" start="53" name="NT"/>
+                    <label end="140" start="140" name="NT"/>
+                    <label end="1" start="0" name="NT"/>
+                    <label end="13" start="11" name="NT"/>
+                    <label end="21" start="20" name="NT"/>
+                    <label end="59" start="55" name="NT"/>
+                    <label end="62" start="61" name="NT"/>
+                    <label end="73" start="70" name="NT"/>
+                    <label end="82" start="82" name="NT"/>
+                    <label end="102" start="101" name="NT"/>
+                    <label end="112" start="111" name="NT"/>
+                    <label end="115" start="114" name="NT"/>
+                    <label end="80" start="75" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/13/2004 10:20:09 PDT Tue" status="MANUAL" ID="4529264">
+                <layer rank="1" name="Target">
+                    <label cBy="CHg" end="99" start="93" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CHg" feID="81" end="73" start="70" name="Agent"/>
+                    <label cBy="CHg" feID="941" end="91" start="84" name="Manner"/>
+                    <label cBy="CHg" feID="5016" end="138" start="101" name="Purpose"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="73" start="70" name="Ext"/>
+                    <label end="91" start="84" name="Dep"/>
+                    <label end="138" start="101" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="73" start="70" name="NP"/>
+                    <label end="91" start="84" name="AVP"/>
+                    <label end="138" start="101" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent">
+                    <label end="0" start="0" name="Metaphor"/>
+                </layer>
+                <layer rank="1" name="Noun">
+                    <label end="80" start="75" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

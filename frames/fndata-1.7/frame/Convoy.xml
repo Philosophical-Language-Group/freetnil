@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="RLG" cDate="08/03/2011 09:08:02 PDT Wed" name="Convoy" ID="2597" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;A &lt;fen&gt;Convoy&lt;/fen&gt; consists of several &lt;fen&gt;Vehicles&lt;/fen&gt; which move together to transport &lt;fen&gt;Cargo&lt;/fen&gt; from a Source to a Goal.
+
+&lt;ex&gt;A &lt;t&gt;&lt;fex name="con"&gt;convoy&lt;/fex&gt;&lt;/t&gt; &lt;fex name="veh"&gt;of several dozen vehicles&lt;/fex&gt; was stopped at the border for several hours while border guards inspected their cargo.&lt;/ex&gt;
+
+&lt;ex&gt;Trained gunmen hijacked a &lt;fex name="car"&gt;medical supply&lt;/fex&gt; &lt;t&gt;&lt;fex name="con"&gt;convoy&lt;/fex&gt;&lt;/t&gt; headed for the city.&lt;/ex&gt;
+
+&lt;ex&gt;The &lt;fex name="dir"&gt;southbound&lt;/fex&gt; &lt;t&gt;&lt;fex name="con"&gt;convoy&lt;/fex&gt;&lt;/t&gt; &lt;fex name="veh"&gt;of two vans and several armored vehicles&lt;/fex&gt; arrived safely 10 hours after it had departed.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="08/03/2011 09:08:03 PDT Wed" abbrev="veh" name="Vehicles" ID="14652">
+        <definition>&lt;def-root&gt;The constituent vehicles that make up the &lt;fen&gt;Convoy&lt;/fen&gt;.
+
+&lt;ex&gt;Trained gunmen hijacked a &lt;fex name="veh"&gt;20-car&lt;/fex&gt; &lt;t&gt;convoy&lt;/t&gt; headed for the city.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="9400D3" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="08/03/2011 09:08:03 PDT Wed" abbrev="con" name="Convoy" ID="14653">
+        <definition>&lt;def-root&gt;The group of vehicles transporting the &lt;fen&gt;Cargo&lt;/fen&gt;.
+
+&lt;ex&gt;The southbound &lt;t&gt;&lt;fex name="con"&gt;convoy&lt;/fex&gt;&lt;/t&gt; of two vans and several armored vehicles arrived safely 10 hours after it had departed.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="00BFFF" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="RLG" cDate="08/03/2011 09:08:03 PDT Wed" abbrev="Agg" name="Aggregate_property" ID="14654">
+        <definition>&lt;def-root&gt;This FE describes a property of the &lt;fen&gt;Convoy&lt;/fen&gt; rather than the &lt;fen&gt;Vehicles&lt;/fen&gt; and is used to tag the adjective that modifies the aggregate noun when it is unambiguous.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="A52A2A" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="RLG" cDate="08/03/2011 09:08:03 PDT Wed" abbrev="nam" name="Name" ID="14655">
+        <definition>&lt;def-root&gt;The term used to refer to the &lt;fen&gt;Convoy&lt;/fen&gt;.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="2E8B57" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="RLG" cDate="08/03/2011 09:08:03 PDT Wed" abbrev="dom" name="Domain" ID="14657">
+        <definition>&lt;def-root&gt;The relevant &lt;fen&gt;Domain&lt;/fen&gt; as it pertains to the &lt;fen&gt;Convoy&lt;/fen&gt;.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="00008B" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="08/03/2011 09:12:47 PDT Wed" abbrev="pos" name="Possessor" ID="14658">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Possessor&lt;/fen&gt; of the &lt;fen&gt;Convoy&lt;/fen&gt;. Often a nation or organization that wants the &lt;fen&gt;Cargo&lt;/fen&gt; transported.
+
+&lt;ex&gt;Recent attacks on &lt;fex name="pos"&gt;NATO&lt;/fex&gt; &lt;t&gt;convoys&lt;/t&gt; have not helped the ongoing peace talks.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="08/03/2011 09:14:09 PDT Wed" abbrev="car" name="Cargo" ID="14659">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Cargo&lt;/fen&gt; are the goods and/or individuals transported by the &lt;fen&gt;Convoy&lt;/fen&gt;. This FE also covers the intended use of the transported goods.
+
+&lt;ex&gt;Trained gunmen hijacked a &lt;fex name="car"&gt;medical supply&lt;/fex&gt; &lt;t&gt;convoy&lt;/t&gt; headed for the city.&lt;/ex&gt;
+
+&lt;ex&gt;&lt;fex name="car"&gt;Aid&lt;/fex&gt; &lt;t&gt;convoys&lt;/t&gt; traveled through the city, mostly unharmed.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="08/03/2011 09:15:17 PDT Wed" abbrev="sou" name="Source" ID="14660">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Source&lt;/fen&gt; is the beginning of the path along which the &lt;fen&gt;Convoy&lt;/fen&gt; travels.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="A9A9A9" fgColor="000000" coreType="Peripheral" cBy="RLG" cDate="08/03/2011 09:23:34 PDT Wed" abbrev="pat" name="Path" ID="14661">
+        <definition>&lt;def-root&gt;The Path along which the &lt;fen&gt;Convoy&lt;/fen&gt; travels.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="08/03/2011 09:24:31 PDT Wed" abbrev="goa" name="Goal" ID="14662">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Goal&lt;/fen&gt; is the endpoint of path along which the &lt;fen&gt;Convoy&lt;/fen&gt; travels.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="9F79EE" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="09/16/2011 02:27:37 PDT Fri" abbrev="dir" name="Direction" ID="14987">
+        <definition>&lt;def-root&gt;The direction in which the &lt;fen&gt;Convoy&lt;/fen&gt; travels.
+
+&lt;ex&gt;All &lt;fex name="dir"&gt;northbound&lt;/fex&gt; &lt;t&gt;convoys&lt;/t&gt; are to be redirected.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="7CCD7C" fgColor="000000" coreType="Core" cBy="RLG" cDate="02/28/2012 03:35:47 PST Tue" abbrev="sup" name="Support" ID="15490">
+        <definition>&lt;def-root&gt;People and possibly other elements of the convoy who support and defend the transport of the &lt;fen&gt;Cargo&lt;/fen&gt; are the &lt;fen&gt;Support&lt;/fen&gt;. In military contexts, this typically consists of soldiers and military vehicles who provide defense for the conveying &lt;fen&gt;Vehicles&lt;/fen&gt; and &lt;fen&gt;Cargo&lt;/fen&gt;.
+
+&lt;ex&gt;A military &lt;t&gt;convoy&lt;/t&gt; &lt;fex name="sup"&gt;of rebel gunmen&lt;/fex&gt; stood between us and a large cache of weapons.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FF00FF" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="02/28/2012 04:57:46 PST Tue" abbrev="pla" name="Place" ID="15492">
+        <definition>&lt;def-root&gt;The general Place where the &lt;fen&gt;Convoy&lt;/fen&gt; is operating.
+
+&lt;ex&gt;&lt;t&gt;Convoys&lt;/t&gt; &lt;fex name="pla"&gt;in Afghanistan&lt;/fex&gt; have been hardest hit.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FEcoreSet>
+        <memberFE name="Support" ID="15490"/>
+        <memberFE name="Vehicles" ID="14652"/>
+    </FEcoreSet>
+    <frameRelation type="Inherits from">
+        <relatedFrame ID="103">Aggregate</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses">
+        <relatedFrame ID="429">Vehicle</relatedFrame>
+        <relatedFrame ID="240">Bringing</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="In_Use" POS="N" name="convoy.n" ID="16451" lemmaID="8234" cBy="RLG" cDate="08/03/2011 09:39:17 PDT Wed">
+        <definition>FN: a group of vehicles transporting items.</definition>
+        <sentenceCount annotated="106" total="286"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="convoy"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="train.n" ID="16452" lemmaID="40941" cBy="RLG" cDate="08/03/2011 09:39:50 PDT Wed">
+        <definition>FN: a collection of vehicles and possibly individuals for transporting items.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="train"/>
+    </lexUnit>
+</frame>

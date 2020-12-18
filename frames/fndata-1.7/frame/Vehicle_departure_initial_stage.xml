@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="RLG" cDate="08/25/2011 11:27:10 PDT Thu" name="Vehicle_departure_initial_stage" ID="2627" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;A &lt;fen&gt;Vehicle&lt;/fen&gt; moves into position or otherwise changes configuration or state as preparation for normal operation. The focus of the event is on the state of the &lt;fen&gt;Vehicle&lt;/fen&gt; rather than any agent which is manipulating the &lt;fen&gt;Vehicle&lt;/fen&gt;.
+
+&lt;ex&gt;&lt;fex name="Vehicle"&gt;The flight for New York&lt;/fex&gt; &lt;fex name="Time"&gt;finally&lt;/fex&gt; &lt;t&gt;lifted off&lt;/t&gt; &lt;fex name="Source"&gt;from Oakland International&lt;/fex&gt; &lt;fex name="Depictive"&gt;with one hundred passengers aboard&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    <FE bgColor="00008B" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="08/25/2011 11:27:11 PDT Thu" abbrev="Veh" name="Vehicle" ID="14852">
+        <definition>&lt;def-root&gt;The vehicle which moves into position for typical operation.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="006400" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="08/25/2011 11:27:11 PDT Thu" abbrev="sou" name="Source" ID="14853">
+        <definition>&lt;def-root&gt;Any expression which describes the location that the &lt;fen&gt;Vehicle&lt;/fen&gt; has been stationed at.
+
+&lt;ex&gt;The ship &lt;t&gt;cast&lt;/t&gt; &lt;t&gt;off&lt;/t&gt; &lt;fex name="Source"&gt;from Pier 21&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="Source" ID="151"/>
+    </FE>
+    <FE bgColor="00BFFF" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="08/25/2011 11:27:11 PDT Thu" abbrev="int" name="Intended_goal" ID="14854">
+        <definition>&lt;def-root&gt;The location that the &lt;fen&gt;Vehicle&lt;/fen&gt; is bound for.
+
+&lt;ex&gt;At 3:15 the airplane &lt;t&gt;took off&lt;/t&gt; &lt;fex name="int"&gt;to England&lt;/fex&gt;. &lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="Goal" ID="153"/>
+    </FE>
+    <FE bgColor="FF00FF" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="08/25/2011 11:27:11 PDT Thu" abbrev="Manr" name="Manner" ID="14855">
+        <definition>&lt;def-root&gt;Any description of the preparation for motion which is not covered by more specific FEs, including secondary effects (&lt;ment&gt;quietly&lt;/ment&gt;, &lt;ment&gt;loudly&lt;/ment&gt;), and general descriptions comparing events (&lt;ment&gt;the same way&lt;/ment&gt;). It may also indicate salient characteristics of the &lt;fen&gt;Vehicle&lt;/fen&gt; that affect the action (&lt;ment&gt;presumptuously&lt;/ment&gt;, &lt;ment&gt;coldly&lt;/ment&gt;, &lt;ment&gt;deliberately&lt;/ment&gt;, &lt;ment&gt;eagerly&lt;/ment&gt;, &lt;ment&gt;carefully&lt;/ment&gt;).   &lt;ex&gt;The airship &lt;fex name="Manr"&gt;slowly&lt;/fex&gt; &lt;t&gt;lifted off&lt;/t&gt; and rotated to face the center of the city.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="Manner" ID="173"/>
+    </FE>
+    <FE bgColor="9400D3" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="RLG" cDate="08/25/2011 11:27:11 PDT Thu" abbrev="Dep" name="Depictive" ID="14856">
+        <definition>&lt;def-root&gt;The state of the &lt;fen&gt;Vehicle&lt;/fen&gt; during the preparations.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="08/25/2011 11:27:11 PDT Thu" abbrev="mea" name="Means" ID="14857">
+        <definition>&lt;def-root&gt;An event in which the &lt;fen&gt;Vehicle&lt;/fen&gt; participates which causes or enables it to travel.
+
+&lt;ex&gt;This experimental aircraft &lt;t&gt;lifts off&lt;/t&gt; &lt;fex name="mea"&gt;by rearranging its wings and thrusters to achieve maximal elevation in as short a time as possible&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="State_of_affairs" ID="177"/>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="RLG" cDate="08/25/2011 11:27:11 PDT Thu" abbrev="res" name="Result" ID="14858">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Result&lt;/fen&gt; of the &lt;fen&gt;Vehicle&lt;/fen&gt;'s motion.
+
+&lt;ex&gt;The plane &lt;t&gt;lifted off&lt;/t&gt; &lt;fex name="Result"&gt;right into some trees&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="1E90FF" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="RLG" cDate="08/25/2011 11:27:11 PDT Thu" abbrev="co-p" name="Co-participant" ID="14859">
+        <definition>&lt;def-root&gt;An individual or vehicle that is also involved in the preparations.
+
+&lt;ex&gt;A representative of the department said that the helicopter &lt;t&gt;took off&lt;/t&gt; &lt;fex name="Co-participant"&gt;with three other aircraft&lt;/fex&gt;, arriving at the hospital in just under an hour.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="2E8B57" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="RLG" cDate="08/25/2011 11:27:11 PDT Thu" abbrev="cir" name="Circumstances" ID="14860">
+        <definition>&lt;def-root&gt;This FE indicates the &lt;fen&gt;Circumstances&lt;/fen&gt; under which the preparation of the &lt;fen&gt;Vehicle&lt;/fen&gt; takes place.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="08/25/2011 11:27:11 PDT Thu" abbrev="pla" name="Place" ID="14861">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Place&lt;/fen&gt; describes the location where the &lt;fen&gt;Vehicle&lt;/fen&gt; prepares for motion.&lt;/def-root&gt;</definition>
+        <semType name="Locative_relation" ID="182"/>
+    </FE>
+    <FE bgColor="2E8B57" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="08/25/2011 11:27:11 PDT Thu" abbrev="dur" name="Duration_of_final_state" ID="14862">
+        <definition>&lt;def-root&gt;The length  of the time that the &lt;fen&gt;Vehicle&lt;/fen&gt; remains in the state of readiness.&lt;/def-root&gt;</definition>
+        <semType name="Duration" ID="142"/>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="08/25/2011 11:27:11 PDT Thu" abbrev="tim" name="Time" ID="14863">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Time&lt;/fen&gt; when the &lt;fen&gt;Vehicle&lt;/fen&gt; gets ready for motion.
+
+&lt;ex&gt;The helicopter &lt;t&gt;took off&lt;/t&gt; &lt;fex name="Time"&gt;in the afternoon of October 9th&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="Time" ID="141"/>
+    </FE>
+    <FE bgColor="9F79EE" fgColor="000000" coreType="Extra-Thematic" cBy="RLG" cDate="08/25/2011 11:27:11 PDT Thu" abbrev="Exp" name="Explanation" ID="14864">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Explanation&lt;/fen&gt; is a proposition from which the main clause logically follows.&lt;/def-root&gt;</definition>
+    </FE>
+    <frameRelation type="Inherits from"/>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses">
+        <relatedFrame ID="1387">Getting_vehicle_underway</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="In_Use" POS="V" name="lift off.v" ID="16535" lemmaID="51376" cBy="RLG" cDate="08/25/2011 01:26:49 PDT Thu">
+        <definition>FN: elevate above the ground in preparation for flight.</definition>
+        <sentenceCount annotated="4" total="5"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="V" name="lift"/>
+        <lexeme order="2" headword="false" breakBefore="false" POS="PREP" name="off"/>
+    </lexUnit>
+    <lexUnit status="In_Use" POS="V" name="take off.v" ID="16573" lemmaID="51394" cBy="RLG" cDate="09/01/2011 11:32:54 PDT Thu">
+        <definition>FN: elevate above the ground in preparation for flight.</definition>
+        <sentenceCount annotated="7" total="19"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="V" name="take"/>
+        <lexeme order="2" headword="false" breakBefore="false" POS="PREP" name="off"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="cast off.v" ID="16714" lemmaID="51435" cBy="RLG" cDate="10/13/2011 09:54:20 PDT Thu">
+        <definition>FN: (of ships) be set free of moorings.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="V" name="cast"/>
+        <lexeme order="2" headword="false" breakBefore="false" POS="PREP" name="off"/>
+    </lexUnit>
+</frame>

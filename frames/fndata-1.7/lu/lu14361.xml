@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="ADV" name="constantly.adv" ID="14361" frame="Frequency" frameID="80" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Dublin" name="IntroOfDublin" ID="23652"/>
+        </corpus>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="AFGP-2002-600002-Trans" name="AFGP-2002-600002-Trans" ID="23736"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Core" abbrev="att" name="Attribute"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Evnt" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="gro" name="Group"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Int" name="Interval"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="rat" name="Rate"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Core" abbrev="sal" name="Salient_entity"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="T_span" name="Time_span"/>
+        </frame>
+    </header>
+    <definition>FN: happening all the time without pause.</definition>
+    <lexeme POS="ADV" name="constantly"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Event"/>
+                <annoSet ID="6551636"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPbrst" FE="Event"/>
+                <annoSet ID="6550100"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Event"/>
+                <annoSet ID="6551636"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPbrst" FE="Event"/>
+                <annoSet ID="6550100"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23736" sentNo="4" paragNo="32" aPos="0" ID="4102861">
+            <text>They should have telescopes in order to constantly control the areas around them .</text>
+            <annotationSet cDate="08/21/2007 01:38:02 PDT Tue" status="UNANN" ID="6546676">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="PP"/>
+                    <label end="10" start="5" name="md"/>
+                    <label end="15" start="12" name="VH"/>
+                    <label end="26" start="17" name="nns"/>
+                    <label end="29" start="28" name="in"/>
+                    <label end="35" start="31" name="nn"/>
+                    <label end="38" start="37" name="to"/>
+                    <label end="49" start="40" name="rb"/>
+                    <label end="57" start="51" name="VV"/>
+                    <label end="61" start="59" name="dt"/>
+                    <label end="67" start="63" name="nns"/>
+                    <label end="74" start="69" name="in"/>
+                    <label end="79" start="76" name="PP"/>
+                    <label end="81" start="81" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="61" start="59" name="NT"/>
+                    <label end="79" start="76" name="NT"/>
+                    <label end="81" start="81" name="NT"/>
+                    <label end="26" start="17" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/05/2007 03:57:03 PST Mon" status="MANUAL" ID="6550100">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="49" start="40" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="371" end="79" start="51" name="Event"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="79" start="51" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="79" start="51" name="VPbrst"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23652" sentNo="1" paragNo="13" aPos="0" ID="4100618">
+            <text>The constantly crowded and busy Grafton street is the most visible center for shopping , but there are shops all over that carry an international array of goods as well as the Irish crafts and souvenirs you expect .</text>
+            <annotationSet cDate="11/14/2006 04:25:24 PST Tue" status="UNANN" ID="6539617">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="13" start="4" name="rb"/>
+                    <label end="21" start="15" name="jj"/>
+                    <label end="25" start="23" name="cc"/>
+                    <label end="30" start="27" name="jj"/>
+                    <label end="38" start="32" name="nn"/>
+                    <label end="45" start="40" name="nn"/>
+                    <label end="48" start="47" name="VBZ"/>
+                    <label end="52" start="50" name="dt"/>
+                    <label end="57" start="54" name="rbs"/>
+                    <label end="65" start="59" name="jj"/>
+                    <label end="72" start="67" name="nn"/>
+                    <label end="76" start="74" name="in"/>
+                    <label end="85" start="78" name="nn"/>
+                    <label end="87" start="87" name=","/>
+                    <label end="91" start="89" name="cc"/>
+                    <label end="97" start="93" name="ex"/>
+                    <label end="101" start="99" name="vbp"/>
+                    <label end="107" start="103" name="nns"/>
+                    <label end="111" start="109" name="rb"/>
+                    <label end="116" start="113" name="in"/>
+                    <label end="121" start="118" name="wdt"/>
+                    <label end="127" start="123" name="VVP"/>
+                    <label end="130" start="129" name="dt"/>
+                    <label end="144" start="132" name="jj"/>
+                    <label end="150" start="146" name="nn"/>
+                    <label end="153" start="152" name="in"/>
+                    <label end="159" start="155" name="nns"/>
+                    <label end="162" start="161" name="rb"/>
+                    <label end="167" start="164" name="rb"/>
+                    <label end="170" start="169" name="in"/>
+                    <label end="174" start="172" name="dt"/>
+                    <label end="180" start="176" name="jj"/>
+                    <label end="187" start="182" name="nns"/>
+                    <label end="191" start="189" name="cc"/>
+                    <label end="201" start="193" name="nns"/>
+                    <label end="205" start="203" name="PP"/>
+                    <label end="212" start="207" name="VVP"/>
+                    <label end="214" start="214" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="45" start="32" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="25" start="23" name="NT"/>
+                    <label end="48" start="47" name="NT"/>
+                    <label end="52" start="50" name="NT"/>
+                    <label end="76" start="74" name="NT"/>
+                    <label end="87" start="87" name="NT"/>
+                    <label end="91" start="89" name="NT"/>
+                    <label end="121" start="118" name="NT"/>
+                    <label end="130" start="129" name="NT"/>
+                    <label end="153" start="152" name="NT"/>
+                    <label end="167" start="164" name="NT"/>
+                    <label end="170" start="169" name="NT"/>
+                    <label end="174" start="172" name="NT"/>
+                    <label end="191" start="189" name="NT"/>
+                    <label end="205" start="203" name="NT"/>
+                    <label end="214" start="214" name="NT"/>
+                    <label end="38" start="32" name="NT"/>
+                    <label end="201" start="193" name="Nonrelational"/>
+                    <label end="162" start="161" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/20/2008 03:20:35 PST Wed" status="MANUAL" ID="6551636">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="13" start="4" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="371" end="45" start="15" name="Event"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="45" start="15" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="45" start="15" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

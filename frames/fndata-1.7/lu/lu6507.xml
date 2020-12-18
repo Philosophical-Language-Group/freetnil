@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Insufficient_Attestations" POS="V" name="go.v" ID="6507" frame="Compatibility" frameID="360" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Polemic Progressive Education" name="PolemicProgressiveEducation" ID="23011"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Items" name="Items"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Item-1" name="Item_1"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Item-2" name="Item_2"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Prmtr" name="Parameter"/>
+        </frame>
+    </header>
+    <definition>COD: be harmonious, complementary, or matching</definition>
+    <lexeme POS="V" name="go"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Item_1"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Item_1"/>
+                <annoSet ID="4530134"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Item_2"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[with]" FE="Item_2"/>
+                <annoSet ID="4530134"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Items"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Items"/>
+                <annoSet ID="6560966"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Parameter"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Parameter"/>
+                <annoSet ID="6560966"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Item_1"/>
+            <FE name="Item_2"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Item_1"/>
+                <valenceUnit GF="Dep" PT="PP[with]" FE="Item_2"/>
+                <annoSet ID="4530134"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Items"/>
+            <FE name="Parameter"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Items"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Parameter"/>
+                <annoSet ID="6560966"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="V-429-s20-lcoll-what"/>
+    <subCorpus name="V-429-s23-lcoll-it"/>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23011" sentNo="3" paragNo="18" aPos="0" ID="2824371">
+            <text>With that authority , of course , goes an unambiguous accountability .</text>
+            <annotationSet cDate="02/05/2004 08:30:15 PST Thu" status="UNANN" ID="4528366">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="in"/>
+                    <label end="8" start="5" name="dt"/>
+                    <label end="18" start="10" name="nn"/>
+                    <label end="20" start="20" name=","/>
+                    <label end="23" start="22" name="in"/>
+                    <label end="30" start="25" name="nn"/>
+                    <label end="32" start="32" name=","/>
+                    <label end="37" start="34" name="VVZ"/>
+                    <label end="40" start="39" name="dt"/>
+                    <label end="52" start="42" name="jj"/>
+                    <label end="67" start="54" name="nn"/>
+                    <label end="69" start="69" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="20" start="20" name="NT"/>
+                    <label end="32" start="32" name="NT"/>
+                    <label end="69" start="69" name="NT"/>
+                    <label end="3" start="0" name="NT"/>
+                    <label end="8" start="5" name="NT"/>
+                    <label end="23" start="22" name="NT"/>
+                    <label end="40" start="39" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/20/2004 03:50:20 PDT Fri" status="MANUAL" ID="4530134">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="37" start="34" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="3191" end="67" start="39" name="Item_1"/>
+                    <label cBy="MJE" feID="3192" end="18" start="0" name="Item_2"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="67" start="39" name="Ext"/>
+                    <label end="18" start="0" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="67" start="39" name="NP"/>
+                    <label end="18" start="0" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23771" sentNo="8" paragNo="128" aPos="0" ID="4106249">
+            <text>Note , however , that the exchange does not go the other way ( see page 116 ) .</text>
+            <annotationSet cDate="07/25/2008 01:21:09 PDT Fri" status="UNANN" ID="6555339">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="nn"/>
+                    <label end="5" start="5" name=","/>
+                    <label end="13" start="7" name="rb"/>
+                    <label end="15" start="15" name=","/>
+                    <label end="20" start="17" name="in"/>
+                    <label end="24" start="22" name="dt"/>
+                    <label end="33" start="26" name="nn"/>
+                    <label end="38" start="35" name="VVZ"/>
+                    <label end="42" start="40" name="rb"/>
+                    <label end="45" start="44" name="VV"/>
+                    <label end="49" start="47" name="dt"/>
+                    <label end="55" start="51" name="jj"/>
+                    <label end="59" start="57" name="nn"/>
+                    <label end="61" start="61" name="("/>
+                    <label end="65" start="63" name="VV"/>
+                    <label end="70" start="67" name="nn"/>
+                    <label end="74" start="72" name="cd"/>
+                    <label end="76" start="76" name=")"/>
+                    <label end="78" start="78" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="5" name="NT"/>
+                    <label end="15" start="15" name="NT"/>
+                    <label end="20" start="17" name="NT"/>
+                    <label end="24" start="22" name="NT"/>
+                    <label end="38" start="35" name="NT"/>
+                    <label end="42" start="40" name="NT"/>
+                    <label end="49" start="47" name="NT"/>
+                    <label end="61" start="61" name="NT"/>
+                    <label end="74" start="72" name="NT"/>
+                    <label end="76" start="76" name="NT"/>
+                    <label end="78" start="78" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/26/2011 04:38:22 PST Wed" status="MANUAL" ID="6560966">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="45" start="44" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="3195" end="59" start="47" name="Parameter"/>
+                    <label cBy="MLC" feID="3193" itype="DNI" name="Items"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="59" start="47" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="59" start="47" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="quiet.n" ID="15354" frame="Becoming_silent" frameID="731" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Slate magazine article: Stephanopoulos Crimes" name="StephanopoulosCrimes" ID="23642"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="" name="Expressor"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Speaker"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="" name="Topic"/>
+        </frame>
+    </header>
+    <definition>FN: the state of being silent. Often occurs with verbs (keeping, remaining, staying).</definition>
+    <lexeme POS="N" name="quiet"/>
+    <valences>
+        <governor type="Ctrlr" lemma="keep">
+            <annoSet ID="6558645"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Speaker"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Speaker"/>
+                <annoSet ID="6558645"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Speaker"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Speaker"/>
+                <annoSet ID="6558645"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23642" sentNo="2" paragNo="6" aPos="0" ID="4099939">
+            <text>Stephanopoulos skillfully bullies and cajoles him into keeping quiet .</text>
+            <annotationSet cDate="09/05/2006 04:40:43 PDT Tue" status="UNANN" ID="6537841">
+                <layer rank="1" name="PENN">
+                    <label end="13" start="0" name="NP"/>
+                    <label end="24" start="15" name="rb"/>
+                    <label end="32" start="26" name="VVZ"/>
+                    <label end="36" start="34" name="cc"/>
+                    <label end="44" start="38" name="VVZ"/>
+                    <label end="48" start="46" name="PP"/>
+                    <label end="53" start="50" name="in"/>
+                    <label end="61" start="55" name="VVG"/>
+                    <label end="67" start="63" name="jj"/>
+                    <label end="69" start="69" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="13" start="0" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="13" start="0" name="NT"/>
+                    <label end="36" start="34" name="NT"/>
+                    <label end="48" start="46" name="NT"/>
+                    <label end="53" start="50" name="NT"/>
+                    <label end="69" start="69" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/15/2009 11:07:30 PDT Mon" status="MANUAL" ID="6558645">
+                <layer rank="1" name="Target">
+                    <label cBy="DYo" end="67" start="63" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="DYo" feID="4825" itype="CNI" name="Speaker"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="61" start="55" name="Ctrlr"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="bullet.n" ID="12840" frame="Ammunition" frameID="1565" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Dublin" name="IntroOfDublin" ID="23652"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="amm" name="Ammunition"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="cre" name="Creator"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Peripheral" abbrev="mat" name="Material"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time_of_creation"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="" name="Type"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="Use" name="Use"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="" name="Weapon"/>
+        </frame>
+    </header>
+    <definition>COD: a projectile fired from a small firearm, typically metal, cylindrical and pointed.</definition>
+    <lexeme POS="N" name="bullet"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Ammunition"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Ammunition"/>
+                <annoSet ID="6539702"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Ammunition"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Ammunition"/>
+                <annoSet ID="6539702"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23652" sentNo="3" paragNo="3" aPos="0" ID="4100583">
+            <text>This busy , modern European city sits on a thousand years of history -- history is present everywhere , from elegant Merrion Square to the bullet holes on the General Post Office .</text>
+            <annotationSet cDate="11/14/2006 04:25:13 PST Tue" status="UNANN" ID="6539582">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="8" start="5" name="jj"/>
+                    <label end="10" start="10" name=","/>
+                    <label end="17" start="12" name="jj"/>
+                    <label end="26" start="19" name="jj"/>
+                    <label end="31" start="28" name="nn"/>
+                    <label end="36" start="33" name="VVZ"/>
+                    <label end="39" start="38" name="in"/>
+                    <label end="41" start="41" name="dt"/>
+                    <label end="50" start="43" name="cd"/>
+                    <label end="56" start="52" name="nns"/>
+                    <label end="59" start="58" name="in"/>
+                    <label end="67" start="61" name="nn"/>
+                    <label end="70" start="69" name=":"/>
+                    <label end="78" start="72" name="nn"/>
+                    <label end="81" start="80" name="VBZ"/>
+                    <label end="89" start="83" name="rb"/>
+                    <label end="100" start="91" name="rb"/>
+                    <label end="102" start="102" name=","/>
+                    <label end="107" start="104" name="in"/>
+                    <label end="115" start="109" name="jj"/>
+                    <label end="123" start="117" name="NP"/>
+                    <label end="130" start="125" name="NP"/>
+                    <label end="133" start="132" name="to"/>
+                    <label end="137" start="135" name="dt"/>
+                    <label end="144" start="139" name="nn"/>
+                    <label end="150" start="146" name="nns"/>
+                    <label end="153" start="152" name="in"/>
+                    <label end="157" start="155" name="dt"/>
+                    <label end="165" start="159" name="NP"/>
+                    <label end="170" start="167" name="NP"/>
+                    <label end="177" start="172" name="NP"/>
+                    <label end="179" start="179" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="130" start="117" name="location"/>
+                    <label end="177" start="159" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="10" start="10" name="NT"/>
+                    <label end="41" start="41" name="NT"/>
+                    <label end="59" start="58" name="NT"/>
+                    <label end="70" start="69" name="NT"/>
+                    <label end="81" start="80" name="NT"/>
+                    <label end="102" start="102" name="NT"/>
+                    <label end="123" start="117" name="NT"/>
+                    <label end="137" start="135" name="NT"/>
+                    <label end="153" start="152" name="NT"/>
+                    <label end="157" start="155" name="NT"/>
+                    <label end="165" start="159" name="NT"/>
+                    <label end="179" start="179" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/15/2006 04:10:38 PST Wed" status="MANUAL" ID="6539702">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="144" start="139" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="8524" end="144" start="139" name="Ammunition"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="command.n" ID="13589" frame="Leadership" frameID="73" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="CNN_ENG_20030614_173123.4-NEW-1" name="CNN_ENG_20030614_173123.4-NEW-1" ID="23726"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="act" name="Activity"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="Dom" name="Domain"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="gov" name="Governed"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="lea" name="Leader"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Role" name="Role"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Typ" name="Type"/>
+        </frame>
+    </header>
+    <definition>COD: authority, especially over armed forces.</definition>
+    <lexeme POS="N" name="command"/>
+    <valences>
+        <governor type="Gov" lemma="establish">
+            <annoSet ID="6547491"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Governed"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Governed"/>
+                <annoSet ID="6547491"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Leader"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Leader"/>
+                <annoSet ID="6547491"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Governed"/>
+            <FE name="Leader"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Governed"/>
+                <valenceUnit GF="" PT="INI" FE="Leader"/>
+                <annoSet ID="6547491"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23726" sentNo="1" paragNo="18" aPos="0" ID="4101842">
+            <text>The main test of Mahmoud Abbas , will be to establish an overall command of all armed groups , if not , it does n't have a chance .</text>
+            <annotationSet cDate="08/15/2007 04:07:16 PDT Wed" status="UNANN" ID="6545600">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="7" start="4" name="jj"/>
+                    <label end="12" start="9" name="nn"/>
+                    <label end="15" start="14" name="in"/>
+                    <label end="23" start="17" name="NP"/>
+                    <label end="29" start="25" name="NP"/>
+                    <label end="31" start="31" name=","/>
+                    <label end="36" start="33" name="md"/>
+                    <label end="39" start="38" name="vb"/>
+                    <label end="42" start="41" name="to"/>
+                    <label end="52" start="44" name="VV"/>
+                    <label end="55" start="54" name="dt"/>
+                    <label end="63" start="57" name="jj"/>
+                    <label end="71" start="65" name="nn"/>
+                    <label end="74" start="73" name="in"/>
+                    <label end="78" start="76" name="dt"/>
+                    <label end="84" start="80" name="jj"/>
+                    <label end="91" start="86" name="nns"/>
+                    <label end="93" start="93" name=","/>
+                    <label end="96" start="95" name="in"/>
+                    <label end="100" start="98" name="rb"/>
+                    <label end="102" start="102" name=","/>
+                    <label end="105" start="104" name="PP"/>
+                    <label end="110" start="107" name="VVZ"/>
+                    <label end="114" start="112" name="rb"/>
+                    <label end="119" start="116" name="VH"/>
+                    <label end="121" start="121" name="dt"/>
+                    <label end="128" start="123" name="nn"/>
+                    <label end="130" start="130" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="29" start="17" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="15" start="14" name="NT"/>
+                    <label end="23" start="17" name="NT"/>
+                    <label end="29" start="25" name="NT"/>
+                    <label end="31" start="31" name="NT"/>
+                    <label end="36" start="33" name="NT"/>
+                    <label end="39" start="38" name="NT"/>
+                    <label end="42" start="41" name="NT"/>
+                    <label end="55" start="54" name="NT"/>
+                    <label end="74" start="73" name="NT"/>
+                    <label end="78" start="76" name="NT"/>
+                    <label end="93" start="93" name="NT"/>
+                    <label end="96" start="95" name="NT"/>
+                    <label end="100" start="98" name="NT"/>
+                    <label end="102" start="102" name="NT"/>
+                    <label end="105" start="104" name="NT"/>
+                    <label end="110" start="107" name="NT"/>
+                    <label end="114" start="112" name="NT"/>
+                    <label end="121" start="121" name="NT"/>
+                    <label end="130" start="130" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="09/03/2007 11:39:47 PDT Mon" status="MANUAL" ID="6547491">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="71" start="65" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="6431" end="91" start="73" name="Governed"/>
+                    <label cBy="RLG" feID="347" itype="INI" name="Leader"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="91" start="73" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="91" start="73" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="52" start="44" name="Gov"/>
+                    <label end="91" start="54" name="X"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

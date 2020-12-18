@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="RLG" cDate="09/01/2011 02:22:18 PDT Thu" name="Operate_vehicle_scenario" ID="2644" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;This frame describes an &lt;fen&gt;Operator&lt;/fen&gt; interacting with a &lt;fen&gt;Vehicle&lt;/fen&gt; to transport him/herself (and possibly others) from a &lt;fen&gt;Source&lt;/fen&gt; to a &lt;fen&gt;Goal&lt;/fen&gt;. The three primary stages are preparation for canonical operation, operation of the vehicle proper, and bringing the vehicle back to a state of rest, where it may continue to move but not in its typical fashion.&lt;/def-root&gt;</definition>
+    <semType name="Non-Lexical Frame" ID="16"/>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="09/01/2011 02:25:15 PDT Thu" abbrev="ope" name="Operator" ID="14965">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Operator&lt;/fen&gt; maneuvers the &lt;fen&gt;Vehicle&lt;/fen&gt;.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="09/01/2011 02:25:58 PDT Thu" abbrev="veh" name="Vehicle" ID="14966">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Vehicle&lt;/fen&gt; is directed to move by the &lt;fen&gt;Operator&lt;/fen&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="006400" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="09/01/2011 02:35:32 PDT Thu" abbrev="sou" name="Source" ID="14967">
+        <definition>&lt;def-root&gt;The starting-point of motion.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="A52A2A" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="09/01/2011 02:36:18 PDT Thu" abbrev="" name="Path" ID="14968">
+        <definition>&lt;def-root&gt;Any description of a trajectory of motion which is neither a &lt;fen&gt;Source&lt;/fen&gt; nor a &lt;fen&gt;Goal&lt;/fen&gt; expresses the frame element &lt;fen&gt;Path&lt;/fen&gt;. This includes directional expressions and "middle of path'' expressions, e.g.:&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="00BFFF" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="09/01/2011 02:36:48 PDT Thu" abbrev="" name="Goal" ID="14969">
+        <definition>&lt;def-root&gt;Where the &lt;fen&gt;Vehicle&lt;/fen&gt; ends up as a result of motion.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="9F79EE" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="09/01/2011 02:37:36 PDT Thu" abbrev="" name="Area" ID="14970">
+        <definition>&lt;def-root&gt;This frame element is used for expressions which describe a general area in which motion takes place when the motion is understood to be irregular and not to consist of a single linear path. Locative setting adjuncts of motion expressions may also be assigned this frame element.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="09/01/2011 02:39:38 PDT Thu" abbrev="pla" name="Place" ID="14972">
+        <definition>&lt;def-root&gt;Where the operation takes place.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="09/01/2011 02:39:58 PDT Thu" abbrev="tim" name="Time" ID="14973">
+        <definition>&lt;def-root&gt;When the operation takes place.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FF00FF" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="09/01/2011 02:40:22 PDT Thu" abbrev="man" name="Manner" ID="14974">
+        <definition>&lt;def-root&gt;Any description of the vehicle operation  which is not covered by more specific FEs, including secondary effects (&lt;ment&gt;quietly, loudly&lt;/ment&gt;), and general descriptions comparing events (&lt;ment&gt;the same way&lt;/ment&gt;). In addition, it may indicate salient characteristics of an &lt;fen&gt;Operator&lt;/fen&gt; that also affect the action (&lt;ment&gt;presumptuously, coldly, deliberately, eagerly, carefully&lt;/ment&gt;). &lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FF69B4" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="09/01/2011 02:41:36 PDT Thu" abbrev="" name="Means" ID="14976">
+        <definition>&lt;def-root&gt;An action which enables the &lt;fen&gt;Operator&lt;/fen&gt; to operate the &lt;fen&gt;Vehicle&lt;/fen&gt;, or which more directly causes the &lt;fen&gt;Vehicle&lt;/fen&gt; to operate.&lt;/def-root&gt;</definition>
+    </FE>
+    <frameRelation type="Inherits from"/>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses">
+        <relatedFrame ID="238">Motion_scenario</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)">
+        <relatedFrame ID="65">Operate_vehicle</relatedFrame>
+        <relatedFrame ID="2643">Cause_to_land</relatedFrame>
+        <relatedFrame ID="1387">Getting_vehicle_underway</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+</frame>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="ADV" name="frequently.adv" ID="14106" frame="Frequency" frameID="80" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Jamaica" name="IntroJamaica" ID="23754"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Core" abbrev="att" name="Attribute"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Evnt" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="gro" name="Group"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Int" name="Interval"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="rat" name="Rate"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Core" abbrev="sal" name="Salient_entity"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="T_span" name="Time_span"/>
+        </frame>
+    </header>
+    <definition>FN: with relatively short intervals between iterations.</definition>
+    <lexeme POS="ADV" name="frequently"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="Sfin" FE="Event"/>
+                <annoSet ID="6559078"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Event"/>
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="Sfin" FE="Event"/>
+                <valenceUnit GF="Head" PT="Sfin" FE="Event"/>
+                <annoSet ID="6559078"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23754" sentNo="4" paragNo="15" aPos="0" ID="4103899">
+            <text>There is frequently a temptation never to tear oneself away from the hotel .</text>
+            <annotationSet cDate="07/17/2008 06:10:06 PDT Thu" status="UNANN" ID="6552706">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="ex"/>
+                    <label end="7" start="6" name="VBZ"/>
+                    <label end="18" start="9" name="rb"/>
+                    <label end="20" start="20" name="dt"/>
+                    <label end="31" start="22" name="nn"/>
+                    <label end="37" start="33" name="rb"/>
+                    <label end="40" start="39" name="to"/>
+                    <label end="45" start="42" name="VV"/>
+                    <label end="53" start="47" name="PP"/>
+                    <label end="58" start="55" name="rp"/>
+                    <label end="63" start="60" name="in"/>
+                    <label end="67" start="65" name="dt"/>
+                    <label end="73" start="69" name="nn"/>
+                    <label end="75" start="75" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="7" start="6" name="NT"/>
+                    <label end="20" start="20" name="NT"/>
+                    <label end="40" start="39" name="NT"/>
+                    <label end="53" start="47" name="NT"/>
+                    <label end="58" start="55" name="NT"/>
+                    <label end="63" start="60" name="NT"/>
+                    <label end="67" start="65" name="NT"/>
+                    <label end="75" start="75" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/09/2009 02:35:02 PST Mon" status="MANUAL" ID="6559078">
+                <layer rank="1" name="Target">
+                    <label cBy="AnW" end="18" start="9" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AnW" feID="371" end="7" start="0" name="Event"/>
+                    <label cBy="AnW" feID="371" end="73" start="20" name="Event"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="7" start="0" name="Head"/>
+                    <label end="73" start="20" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="7" start="0" name="Sfin"/>
+                    <label end="73" start="20" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

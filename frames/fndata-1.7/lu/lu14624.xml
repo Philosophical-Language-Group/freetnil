@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Add_Annotation" POS="V" name="auction.v" ID="14624" frame="Commerce_sell" frameID="172" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp=2447" name="bncp=2447" ID="18232"/>
+            <document description="bncp=2707" name="bncp=2707" ID="20219"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFF00" bgColor="000000" type="Extra-Thematic" abbrev="Bac" name="Back"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="Byr" name="Buyer"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Gds" name="Goods"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="Imp" name="Imposed_purpose"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="" name="Manner"/>
+            <FE fgColor="00008B" bgColor="d0d0d0" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mny" name="Money"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="iter" name="Period_of_iterations"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Rate" name="Rate"/>
+            <FE fgColor="800080" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Relay"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Slr" name="Seller"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Unit" name="Unit"/>
+        </frame>
+    </header>
+    <definition>FN: selling to highest bidder</definition>
+    <lexeme POS="V" name="auction"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Buyer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Buyer"/>
+                <annoSet ID="6567099"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Buyer"/>
+                <annoSet ID="6567105"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Goods"/>
+            <pattern total="2">
+                <valenceUnit GF="Obj" PT="NP" FE="Goods"/>
+                <annoSet ID="6567099"/>
+                <annoSet ID="6567105"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Seller"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Seller"/>
+                <annoSet ID="6567099"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Seller"/>
+                <annoSet ID="6567105"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Buyer"/>
+            <FE name="Goods"/>
+            <FE name="Seller"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Buyer"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Goods"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Seller"/>
+                <annoSet ID="6567099"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Buyer"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Goods"/>
+                <valenceUnit GF="" PT="CNI" FE="Seller"/>
+                <annoSet ID="6567105"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-object-(1)"/>
+    <subCorpus name="02-part_trans-(1)">
+        <sentence corpID="111" docID="20219" sentNo="9" paragNo="864" aPos="0" ID="4109427">
+            <text>People would be auctioning off whole police stations under his nose</text>
+            <annotationSet cDate="06/20/2011 04:10:18 PDT Mon" status="UNANN" ID="6567098">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="nns"/>
+                    <label end="11" start="7" name="md"/>
+                    <label end="14" start="13" name="vb"/>
+                    <label end="25" start="16" name="VVG"/>
+                    <label end="29" start="27" name="rp"/>
+                    <label end="35" start="31" name="jj"/>
+                    <label end="42" start="37" name="nn"/>
+                    <label end="51" start="44" name="nns"/>
+                    <label end="57" start="53" name="in"/>
+                    <label end="61" start="59" name="PP$"/>
+                    <label end="66" start="63" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="06/20/2011 04:10:18 PDT Mon" status="MANUAL" ID="6567099">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="25" start="16" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="1401" end="5" start="0" name="Seller"/>
+                    <label cBy="MLC" feID="1397" end="51" start="31" name="Goods"/>
+                    <label cBy="MLC" feID="1396" itype="INI" name="Buyer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="5" start="0" name="Ext"/>
+                    <label end="51" start="31" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="5" start="0" name="NP"/>
+                    <label end="51" start="31" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb">
+                    <label end="29" start="27" name="Asp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="18232" sentNo="9" paragNo="442" aPos="0" ID="4109430">
+            <text>The right solution is to auction off slots to the highest bidder .</text>
+            <annotationSet cDate="06/20/2011 04:10:19 PDT Mon" status="UNANN" ID="6567104">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="8" start="4" name="jj"/>
+                    <label end="17" start="10" name="nn"/>
+                    <label end="20" start="19" name="VBZ"/>
+                    <label end="23" start="22" name="to"/>
+                    <label end="31" start="25" name="VV"/>
+                    <label end="35" start="33" name="rp"/>
+                    <label end="41" start="37" name="nns"/>
+                    <label end="44" start="43" name="to"/>
+                    <label end="48" start="46" name="dt"/>
+                    <label end="56" start="50" name="jjs"/>
+                    <label end="63" start="58" name="nn"/>
+                    <label end="65" start="65" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="06/20/2011 04:10:19 PDT Mon" status="MANUAL" ID="6567105">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="31" start="25" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="1396" end="63" start="43" name="Buyer"/>
+                    <label cBy="MLC" feID="1397" end="41" start="37" name="Goods"/>
+                    <label cBy="MLC" feID="1401" itype="CNI" name="Seller"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="41" start="37" name="Obj"/>
+                    <label end="63" start="43" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="41" start="37" name="NP"/>
+                    <label end="63" start="43" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb">
+                    <label end="35" start="33" name="Asp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="03-part_intrans-(1)"/>
+    <subCorpus name="04-passive-(1)"/>
+    <subCorpus name="05-other-matched-(1)"/>
+    <subCorpus name="06-other-unmatched-(1)"/>
+</lexUnit>

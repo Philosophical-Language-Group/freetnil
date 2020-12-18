@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="venue.n" ID="14265" frame="Locale_by_event" frameID="1921" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Las Vegas" name="HistoryOfLasVegas" ID="23691"/>
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="Cnst" name="Constituent_parts"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core-Unexpressed" abbrev="DefEvnt" name="Defining_event"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Lcl" name="Locale"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Name" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="rel" name="Relative_location"/>
+        </frame>
+    </header>
+    <definition>FN: The place where an event, typically large and organized such as a meeting or artistic performance, takes place</definition>
+    <lexeme POS="N" name="venue"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Defining_event"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Defining_event"/>
+                <annoSet ID="6544565"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Defining_event"/>
+                <annoSet ID="6559361"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Descriptor"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Descriptor"/>
+                <annoSet ID="6544565"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Locale"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Locale"/>
+                <annoSet ID="6544565"/>
+                <annoSet ID="6559361"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Defining_event"/>
+            <FE name="Descriptor"/>
+            <FE name="Locale"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Defining_event"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Descriptor"/>
+                <valenceUnit GF="" PT="DEN" FE="Locale"/>
+                <annoSet ID="6544565"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Defining_event"/>
+            <FE name="Locale"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Defining_event"/>
+                <valenceUnit GF="" PT="DEN" FE="Locale"/>
+                <annoSet ID="6559361"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23691" sentNo="1" paragNo="44" aPos="0" ID="4101160">
+            <text>As it changed from mob gambling town to corporate gaming venue , the population of Las Vegas skyrocketed .</text>
+            <annotationSet cDate="03/12/2007 02:47:39 PDT Mon" status="UNANN" ID="6541953">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="4" start="3" name="PP"/>
+                    <label end="12" start="6" name="VVD"/>
+                    <label end="17" start="14" name="in"/>
+                    <label end="21" start="19" name="nn"/>
+                    <label end="30" start="23" name="nn"/>
+                    <label end="35" start="32" name="nn"/>
+                    <label end="38" start="37" name="to"/>
+                    <label end="48" start="40" name="jj"/>
+                    <label end="55" start="50" name="nn"/>
+                    <label end="61" start="57" name="nn"/>
+                    <label end="63" start="63" name=","/>
+                    <label end="67" start="65" name="dt"/>
+                    <label end="78" start="69" name="nn"/>
+                    <label end="81" start="80" name="in"/>
+                    <label end="85" start="83" name="NP"/>
+                    <label end="91" start="87" name="NP"/>
+                    <label end="103" start="93" name="VVD"/>
+                    <label end="105" start="105" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="91" start="83" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="4" start="3" name="NT"/>
+                    <label end="17" start="14" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="63" start="63" name="NT"/>
+                    <label end="67" start="65" name="NT"/>
+                    <label end="81" start="80" name="NT"/>
+                    <label end="85" start="83" name="NT"/>
+                    <label end="91" start="87" name="NT"/>
+                    <label end="105" start="105" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/03/2007 12:56:04 PDT Fri" status="MANUAL" ID="6544565">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="61" start="57" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="11555" end="61" start="57" name="Locale"/>
+                    <label cBy="RLG" feID="11558" end="55" start="50" name="Defining_event"/>
+                    <label cBy="RLG" feID="11561" end="48" start="40" name="Descriptor"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="55" start="50" name="Dep"/>
+                    <label end="48" start="40" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="55" start="50" name="N"/>
+                    <label end="48" start="40" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23771" sentNo="2" paragNo="47" aPos="0" ID="4105957">
+            <text>Hong Kong 's major venue for the performing arts , the building has been criticized for its fortress - like architecture and windowless facade .</text>
+            <annotationSet cDate="07/25/2008 01:18:40 PDT Fri" status="UNANN" ID="6555047">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="NP"/>
+                    <label end="8" start="5" name="NP"/>
+                    <label end="11" start="10" name="POS"/>
+                    <label end="17" start="13" name="jj"/>
+                    <label end="23" start="19" name="nn"/>
+                    <label end="27" start="25" name="in"/>
+                    <label end="31" start="29" name="dt"/>
+                    <label end="42" start="33" name="VVG"/>
+                    <label end="47" start="44" name="nns"/>
+                    <label end="49" start="49" name=","/>
+                    <label end="53" start="51" name="dt"/>
+                    <label end="62" start="55" name="nn"/>
+                    <label end="66" start="64" name="VHZ"/>
+                    <label end="71" start="68" name="VBN"/>
+                    <label end="82" start="73" name="VVN"/>
+                    <label end="86" start="84" name="in"/>
+                    <label end="90" start="88" name="PP$"/>
+                    <label end="99" start="92" name="nn"/>
+                    <label end="101" start="101" name=":"/>
+                    <label end="106" start="103" name="in"/>
+                    <label end="119" start="108" name="nn"/>
+                    <label end="123" start="121" name="cc"/>
+                    <label end="134" start="125" name="jj"/>
+                    <label end="141" start="136" name="nn"/>
+                    <label end="143" start="143" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="8" start="0" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="8" start="5" name="NT"/>
+                    <label end="11" start="10" name="NT"/>
+                    <label end="27" start="25" name="NT"/>
+                    <label end="31" start="29" name="NT"/>
+                    <label end="49" start="49" name="NT"/>
+                    <label end="53" start="51" name="NT"/>
+                    <label end="66" start="64" name="NT"/>
+                    <label end="71" start="68" name="NT"/>
+                    <label end="86" start="84" name="NT"/>
+                    <label end="90" start="88" name="NT"/>
+                    <label end="101" start="101" name="NT"/>
+                    <label end="106" start="103" name="NT"/>
+                    <label end="123" start="121" name="NT"/>
+                    <label end="143" start="143" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/07/2010 04:00:06 PDT Wed" status="MANUAL" ID="6559361">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="23" start="19" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="11555" end="23" start="19" name="Locale"/>
+                    <label cBy="MLC" feID="11558" end="47" start="25" name="Defining_event"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="47" start="25" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="47" start="25" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

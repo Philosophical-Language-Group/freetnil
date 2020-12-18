@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="RLG" cDate="10/13/2011 04:12:33 PDT Thu" name="Friendly_or_hostile" ID="2675" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;Two parties or individuals are on the same side or on different sides of a (typically military) conflict. The two sides may be expressed jointly as the &lt;fen&gt;Sides&lt;/fen&gt;, or separately as &lt;fen&gt;Side_1&lt;/fen&gt; and &lt;fen&gt;Side_2&lt;/fen&gt;.
+
+&lt;ex&gt;We received a tip from a &lt;t&gt;friendly&lt;/t&gt; &lt;fex name="Side_1"&gt;local&lt;/fex&gt; about a possible attack. &lt;fex name="Side_2"&gt;DNI&lt;/fex&gt;&lt;/ex&gt;
+
+&lt;ex&gt;Infiltration from &lt;t&gt;hostile&lt;/t&gt; &lt;fex name="Side_1"&gt;forces&lt;/fex&gt; is a constant threat. &lt;fex name="Side_2"&gt;DNI&lt;/fex&gt;&lt;/ex&gt;
+
+In many cases only &lt;fen&gt;Side_1&lt;/fen&gt; is mentioned, leaving &lt;fen&gt;Side_2&lt;/fen&gt; as the perspective from whom the description is being given (typically the speaker/writer).&lt;/def-root&gt;</definition>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="10/13/2011 04:12:33 PDT Thu" abbrev="sid1" name="Side_1" ID="15203">
+        <definition>&lt;def-root&gt;&lt;fen&gt;Side_1&lt;/fen&gt; is the party or individual in a relationship with &lt;fen&gt;Side_2&lt;/fen&gt;. &lt;fen&gt;Side_1&lt;/fen&gt; is the primary protagonist of the frame, and is denoted by noun and adjective targets.
+
+&lt;ex&gt;The &lt;t&gt;&lt;fex name="sid1"&gt;hostiles&lt;/fex&gt;&lt;/t&gt; had become adept at spotting men in the night desert.&lt;/ex&gt;
+
+&lt;ex&gt;So now &lt;fex name="sid1"&gt;you&lt;/fex&gt; &lt;m&gt;are&lt;/m&gt; my &lt;t&gt;enemy&lt;/t&gt;?&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="Sentient" ID="5"/>
+        <requiresFE name="Side_2" ID="15205"/>
+        <excludesFE name="Sides" ID="15215"/>
+    </FE>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="10/13/2011 04:12:34 PDT Thu" abbrev="sid2" name="Side_2" ID="15205">
+        <definition>&lt;def-root&gt;The party or individual with whom &lt;fen&gt;Side_1&lt;/fen&gt; bears an adversarial or friendly relationship.
+
+&lt;ex&gt;&lt;fex name="sid2"&gt;His&lt;/fex&gt; &lt;t&gt;enemies&lt;/t&gt; were no doubt waiting for just such a moment.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <requiresFE name="Side_1" ID="15203"/>
+        <excludesFE name="Sides" ID="15215"/>
+    </FE>
+    <FE bgColor="FF69B4" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="10/13/2011 04:12:34 PDT Thu" abbrev="deg" name="Degree" ID="15206">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Degree&lt;/fen&gt; to which the relationship holds.
+
+&lt;ex&gt;They mistakenly thought that the soldiers and sailors were their &lt;fex name="deg"&gt;greatest&lt;/fex&gt; &lt;t&gt;enemy&lt;/t&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="Degree" ID="172"/>
+    </FE>
+    <FE bgColor="800080" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="10/13/2011 04:12:34 PDT Thu" abbrev="tim" name="Time" ID="15207">
+        <definition>&lt;def-root&gt;The time period during which the Sides have the indicated relationship with each other.
+
+&lt;ex&gt;&lt;fex name="Time"&gt;Last year&lt;/fex&gt; they were our &lt;t&gt;enemy&lt;/t&gt;, but things are different now. &lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="Time" ID="141"/>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="RLG" cDate="10/13/2011 04:12:34 PDT Thu" abbrev="exp" name="Explanation" ID="15208">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Explanation&lt;/fen&gt; is a proposition denoting a state of affairs from which the Sides having the relationship indicated logically follows.
+
+&lt;ex&gt;Could it be that they are &lt;t&gt;enemies&lt;/t&gt; &lt;fex name="exp"&gt;because of deep-seated prejudice&lt;/fex&gt;?&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="State_of_affairs" ID="177"/>
+    </FE>
+    <FE bgColor="7CCD73" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="RLG" cDate="10/13/2011 04:12:34 PDT Thu" abbrev="Des" name="Descriptor" ID="15210">
+        <definition>&lt;def-root&gt;This FE indicates a property of &lt;fen&gt;Side_1&lt;/fen&gt; or the Sides.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FFFF00" fgColor="000000" coreType="Extra-Thematic" cBy="RLG" cDate="10/13/2011 04:12:34 PDT Thu" abbrev="Con" name="Concessive" ID="15213">
+        <definition>&lt;def-root&gt;This FE signifies that the state of affairs expressed by the main clause (containing the target) occurs or holds, and something other than that state of affairs would be expected given the state of affairs in the concessive clause. &lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="EEE8AA" fgColor="9400D3" coreType="Peripheral" cBy="RLG" cDate="10/13/2011 04:12:34 PDT Thu" abbrev="pla" name="Place" ID="15214">
+        <definition>&lt;def-root&gt;The location where the two &lt;fen&gt;Sides&lt;/fen&gt; have an adversarial relationship.
+
+&lt;ex&gt;In our daily lives we are friends, but &lt;fex name="pla"&gt;here&lt;/fex&gt; we are bitter &lt;t&gt;enemies&lt;/t&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="A52A2A" fgColor="FFFFFF" coreType="Core" cBy="RLG" cDate="10/13/2011 04:41:07 PDT Thu" abbrev="sids" name="Sides" ID="15215">
+        <definition>&lt;def-root&gt;A joint expression of the two &lt;fen&gt;Sides&lt;/fen&gt; with a friendly or hostile stance towards one another.
+
+&lt;ex&gt;Aren't you afraid to be here? &lt;fex name="sids"&gt;We&lt;/fex&gt; are &lt;t&gt;enemies&lt;/t&gt;!&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <frameRelation type="Inherits from"/>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses">
+        <relatedFrame ID="93">Hostile_encounter</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="Created" POS="A" name="friendly.a" ID="16727" lemmaID="15475" cBy="RLG" cDate="10/13/2011 04:56:06 PDT Thu">
+        <definition>FN: belonging to the same side as an assumed individual or party.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="A" name="friendly"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="A" name="hostile.a" ID="16728" lemmaID="18479" cBy="RLG" cDate="10/13/2011 04:58:26 PDT Thu">
+        <definition>FN: belonging to an opposing side.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="A" name="hostile"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="friendly.n" ID="16729" lemmaID="15476" cBy="RLG" cDate="10/13/2011 05:04:32 PDT Thu">
+        <definition>FN: a person sympathetic or aligned to another's side (especially in military conflicts).</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="friendly"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="hostile.n" ID="16730" lemmaID="51351" cBy="RLG" cDate="10/13/2011 05:05:29 PDT Thu">
+        <definition>FN: an individual opposed to another side (especially in military contexts).</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="N" name="hostile"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="enemy.n" ID="16731" lemmaID="12741" cBy="RLG" cDate="10/13/2011 05:06:16 PDT Thu">
+        <definition>FN: an opposing party or individual.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="enemy"/>
+    </lexUnit>
+</frame>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="third.n" ID="10306" frame="Part_whole" frameID="140" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Bell Ringing" name="BellRinging" ID="23009"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="Nam" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="Orientation" name="Orientation"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="" name="Part"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="part" name="Part_prop"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="" name="System"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Whole"/>
+        </frame>
+    </header>
+    <definition>FN: one of three parts.</definition>
+    <lexeme POS="N" name="third"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Part"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Part"/>
+                <annoSet ID="4531011"/>
+                <annoSet ID="6673079"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Whole"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Whole"/>
+                <annoSet ID="6673079"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Whole"/>
+                <annoSet ID="4531011"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Part"/>
+            <FE name="Whole"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Part"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Whole"/>
+                <annoSet ID="6673079"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Part"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Whole"/>
+                <annoSet ID="4531011"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23009" sentNo="3" paragNo="9" aPos="0" ID="2824212">
+            <text>According to a nationwide survey taken a year ago , nearly a third of England 's church bells are no longer rung on Sundays because there is no one to ring them .</text>
+            <annotationSet cDate="02/05/2004 08:29:23 PST Thu" status="UNANN" ID="4528207">
+                <layer rank="1" name="PENN">
+                    <label end="8" start="0" name="VVG"/>
+                    <label end="11" start="10" name="to"/>
+                    <label end="13" start="13" name="dt"/>
+                    <label end="24" start="15" name="jj"/>
+                    <label end="31" start="26" name="nn"/>
+                    <label end="37" start="33" name="VVN"/>
+                    <label end="39" start="39" name="dt"/>
+                    <label end="44" start="41" name="nn"/>
+                    <label end="48" start="46" name="rb"/>
+                    <label end="50" start="50" name=","/>
+                    <label end="57" start="52" name="rb"/>
+                    <label end="59" start="59" name="dt"/>
+                    <label end="65" start="61" name="jj"/>
+                    <label end="68" start="67" name="in"/>
+                    <label end="76" start="70" name="NP"/>
+                    <label end="79" start="78" name="POS"/>
+                    <label end="86" start="81" name="nn"/>
+                    <label end="92" start="88" name="nns"/>
+                    <label end="96" start="94" name="vbp"/>
+                    <label end="99" start="98" name="rb"/>
+                    <label end="106" start="101" name="rbr"/>
+                    <label end="111" start="108" name="VVN"/>
+                    <label end="114" start="113" name="in"/>
+                    <label end="122" start="116" name="NPS"/>
+                    <label end="130" start="124" name="in"/>
+                    <label end="136" start="132" name="ex"/>
+                    <label end="139" start="138" name="VBZ"/>
+                    <label end="142" start="141" name="dt"/>
+                    <label end="146" start="144" name="nn"/>
+                    <label end="149" start="148" name="to"/>
+                    <label end="154" start="151" name="VV"/>
+                    <label end="159" start="156" name="PP"/>
+                    <label end="161" start="161" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="76" start="70" name="location"/>
+                    <label end="122" start="116" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="50" start="50" name="NT"/>
+                    <label end="96" start="94" name="NT"/>
+                    <label end="149" start="148" name="NT"/>
+                    <label end="161" start="161" name="NT"/>
+                    <label end="13" start="13" name="NT"/>
+                    <label end="39" start="39" name="NT"/>
+                    <label end="59" start="59" name="NT"/>
+                    <label end="68" start="67" name="NT"/>
+                    <label end="76" start="70" name="NT"/>
+                    <label end="79" start="78" name="NT"/>
+                    <label end="114" start="113" name="NT"/>
+                    <label end="122" start="116" name="NT"/>
+                    <label end="130" start="124" name="NT"/>
+                    <label end="142" start="141" name="NT"/>
+                    <label end="159" start="156" name="NT"/>
+                    <label end="146" start="144" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/23/2010 10:34:25 PDT Wed" status="MANUAL" ID="4531011">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="65" start="61" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="1089" end="92" start="67" name="Whole"/>
+                    <label cBy="AlK" feID="1088" end="65" start="61" name="Part"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="92" start="67" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="92" start="67" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

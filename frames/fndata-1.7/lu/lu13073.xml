@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="wise.a" ID="13073" frame="Mental_property" frameID="29" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Goodwill fund-raising letter" name="110CYL068" ID="23792"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Behv" name="Behavior"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="" name="Domain"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="jud" name="Judge"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Prac" name="Practice"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Prot" name="Protagonist"/>
+        </frame>
+    </header>
+    <definition>COD: having or showing experience, knowledge, and good judgement.</definition>
+    <lexeme POS="A" name="wise"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Behavior"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Behavior"/>
+                <annoSet ID="6556493"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Protagonist"/>
+                <annoSet ID="6556493"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Behavior"/>
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Behavior"/>
+                <valenceUnit GF="" PT="DNI" FE="Protagonist"/>
+                <annoSet ID="6556493"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23792" sentNo="1" paragNo="13" aPos="0" ID="4106407">
+            <text>P.S. Your gift is a wise investment in the community .</text>
+            <annotationSet cDate="11/17/2008 03:48:03 PST Mon" status="UNANN" ID="6556460">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="jj"/>
+                    <label end="8" start="5" name="PP$"/>
+                    <label end="13" start="10" name="nn"/>
+                    <label end="16" start="15" name="VBZ"/>
+                    <label end="18" start="18" name="dt"/>
+                    <label end="23" start="20" name="jj"/>
+                    <label end="34" start="25" name="nn"/>
+                    <label end="37" start="36" name="in"/>
+                    <label end="41" start="39" name="dt"/>
+                    <label end="51" start="43" name="nn"/>
+                    <label end="53" start="53" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="8" start="5" name="NT"/>
+                    <label end="16" start="15" name="NT"/>
+                    <label end="18" start="18" name="NT"/>
+                    <label end="37" start="36" name="NT"/>
+                    <label end="41" start="39" name="NT"/>
+                    <label end="53" start="53" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/19/2008 10:33:09 PST Wed" status="MANUAL" ID="6556493">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="23" start="20" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="121" end="34" start="25" name="Behavior"/>
+                    <label cBy="JKs" feID="120" itype="DNI" name="Protagonist"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="34" start="25" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="34" start="25" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

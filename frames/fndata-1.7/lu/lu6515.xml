@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="right.a" ID="6515" frame="Morality_evaluation" frameID="370" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Polemic Progressive Education" name="PolemicProgressiveEducation" ID="23011"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Beh" name="Behavior"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Eval" name="Evaluee"/>
+            <FE fgColor="FFFFFF" bgColor="EEE8AA" type="Core" abbrev="Exp" name="Expressor"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="jud" name="Judge"/>
+        </frame>
+    </header>
+    <definition>COD: morally good, justified or acceptable</definition>
+    <lexeme POS="A" name="right"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Evaluee"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Evaluee"/>
+                <annoSet ID="4529424"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Evaluee"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Evaluee"/>
+                <annoSet ID="4529424"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23011" sentNo="6" paragNo="15" aPos="0" ID="2824363">
+            <text>No one in his right mind actually believes that we all have an equal academic potential .</text>
+            <annotationSet cDate="02/05/2004 08:30:11 PST Thu" status="UNANN" ID="4528358">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="dt"/>
+                    <label end="5" start="3" name="nn"/>
+                    <label end="8" start="7" name="in"/>
+                    <label end="12" start="10" name="PP$"/>
+                    <label end="18" start="14" name="jj"/>
+                    <label end="23" start="20" name="nn"/>
+                    <label end="32" start="25" name="rb"/>
+                    <label end="41" start="34" name="VVZ"/>
+                    <label end="46" start="43" name="in"/>
+                    <label end="49" start="48" name="PP"/>
+                    <label end="53" start="51" name="rb"/>
+                    <label end="58" start="55" name="VHP"/>
+                    <label end="61" start="60" name="dt"/>
+                    <label end="67" start="63" name="jj"/>
+                    <label end="76" start="69" name="jj"/>
+                    <label end="86" start="78" name="nn"/>
+                    <label end="88" start="88" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="8" start="7" name="NT"/>
+                    <label end="32" start="25" name="NT"/>
+                    <label end="53" start="51" name="NT"/>
+                    <label end="88" start="88" name="NT"/>
+                    <label end="1" start="0" name="NT"/>
+                    <label end="12" start="10" name="NT"/>
+                    <label end="46" start="43" name="NT"/>
+                    <label end="49" start="48" name="NT"/>
+                    <label end="61" start="60" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/19/2004 03:57:43 PDT Mon" status="MANUAL" ID="4529424">
+                <layer rank="1" name="Target">
+                    <label cBy="CHg" end="18" start="14" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CHg" feID="3351" end="23" start="20" name="Evaluee"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="23" start="20" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="23" start="20" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

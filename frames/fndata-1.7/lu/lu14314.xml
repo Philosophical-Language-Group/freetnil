@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="ADV" name="seriously.adv" ID="14314" frame="Importance" frameID="407" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Polemic Progressive Education" name="PolemicProgressiveEducation" ID="23011"/>
+        </corpus>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="CNN_AARONBROWN_ENG_20051101_215800.partial-NEW" name="CNN_AARONBROWN_ENG_20051101_215800.partial-NEW" ID="23733"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degree" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Factor" name="Factor"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="Field" name="Field"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="Fre" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Interested_party" name="Interested_party"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="" name="Place"/>
+            <FE fgColor="000000" bgColor="FFD700" type="Extra-Thematic" abbrev="Tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Undertaking" name="Undertaking"/>
+        </frame>
+    </header>
+    <definition>FN: to a grave degree.</definition>
+    <lexeme POS="ADV" name="seriously"/>
+    <semType name="Negative_judgment" ID="14"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Factor"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPed" FE="Factor"/>
+                <annoSet ID="6548096"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Interested_party"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Interested_party"/>
+                <annoSet ID="4531528"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Undertaking"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPfin" FE="Undertaking"/>
+                <annoSet ID="4531528"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Factor"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPed" FE="Factor"/>
+                <annoSet ID="6548096"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Interested_party"/>
+            <FE name="Undertaking"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Interested_party"/>
+                <valenceUnit GF="Dep" PT="VPfin" FE="Undertaking"/>
+                <annoSet ID="4531528"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23011" sentNo="2" paragNo="7" aPos="0" ID="2824317">
+            <text>I know many schoolteachers and , on the whole , they are seriously committed to conscientious teaching .</text>
+            <annotationSet cDate="02/05/2004 08:29:57 PST Thu" status="UNANN" ID="4528312">
+                <layer rank="1" name="PENN">
+                    <label end="0" start="0" name="PP"/>
+                    <label end="5" start="2" name="VVP"/>
+                    <label end="10" start="7" name="jj"/>
+                    <label end="25" start="12" name="nns"/>
+                    <label end="29" start="27" name="cc"/>
+                    <label end="31" start="31" name=","/>
+                    <label end="34" start="33" name="in"/>
+                    <label end="38" start="36" name="dt"/>
+                    <label end="44" start="40" name="nn"/>
+                    <label end="46" start="46" name=","/>
+                    <label end="51" start="48" name="PP"/>
+                    <label end="55" start="53" name="vbp"/>
+                    <label end="65" start="57" name="rb"/>
+                    <label end="75" start="67" name="VVN"/>
+                    <label end="78" start="77" name="to"/>
+                    <label end="92" start="80" name="jj"/>
+                    <label end="101" start="94" name="nn"/>
+                    <label end="103" start="103" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="31" start="31" name="NT"/>
+                    <label end="46" start="46" name="NT"/>
+                    <label end="55" start="53" name="NT"/>
+                    <label end="78" start="77" name="NT"/>
+                    <label end="103" start="103" name="NT"/>
+                    <label end="0" start="0" name="NT"/>
+                    <label end="29" start="27" name="NT"/>
+                    <label end="34" start="33" name="NT"/>
+                    <label end="38" start="36" name="NT"/>
+                    <label end="51" start="48" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/14/2010 12:52:50 PDT Wed" status="MANUAL" ID="4531528">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="65" start="57" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="3771" end="51" start="48" name="Interested_party"/>
+                    <label cBy="MLC" feID="3753" end="101" start="67" name="Undertaking"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="51" start="48" name="Ext"/>
+                    <label end="101" start="67" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="51" start="48" name="NP"/>
+                    <label end="101" start="67" name="VPfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="205" docID="23733" sentNo="2" paragNo="14" aPos="0" ID="4102425">
+            <text>Over fifteen thousand have been seriously wounded .</text>
+            <annotationSet cDate="08/17/2007 03:24:48 PDT Fri" status="UNANN" ID="6546207">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="in"/>
+                    <label end="11" start="5" name="cd"/>
+                    <label end="20" start="13" name="cd"/>
+                    <label end="25" start="22" name="VHP"/>
+                    <label end="30" start="27" name="VBN"/>
+                    <label end="40" start="32" name="rb"/>
+                    <label end="48" start="42" name="VVN"/>
+                    <label end="50" start="50" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="25" start="22" name="NT"/>
+                    <label end="30" start="27" name="NT"/>
+                    <label end="50" start="50" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/03/2007 01:22:11 PDT Wed" status="MANUAL" ID="6548096">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="40" start="32" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="3749" end="48" start="42" name="Factor"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="48" start="42" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="48" start="42" name="VPed"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

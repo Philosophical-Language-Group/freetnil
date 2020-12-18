@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="employed.a" ID="10533" frame="Being_employed" frameID="282" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="AQUAINT Knowledge-Based Evaluation Texts" name="KBEval" ID="185">
+            <document description="MIT" name="MIT" ID="23580"/>
+        </corpus>
+        <frame>
+            <FE fgColor="00008B" bgColor="7CCD73" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Compens" name="Compensation"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="CB" name="Contract_basis"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Empee" name="Employee"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Emper" name="Employer"/>
+            <FE fgColor="000000" bgColor="FF69B4" type="Extra-Thematic" abbrev="" name="Event_description"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Field" name="Field"/>
+            <FE fgColor="800080" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="00008B" bgColor="FFD700" type="Extra-Thematic" abbrev="" name="Particular_iteration"/>
+            <FE fgColor="000000" bgColor="1E90FF" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="pla_emp" name="Place_of_employment"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="Posit" name="Position"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Rank" name="Rank"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="Task" name="Task"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Type" name="Type"/>
+        </frame>
+    </header>
+    <definition>FN: having a job</definition>
+    <lexeme POS="A" name="employed"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Employee"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Employee"/>
+                <annoSet ID="6532599"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Field"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Field"/>
+                <annoSet ID="6532599"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Employee"/>
+            <FE name="Field"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Employee"/>
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Field"/>
+                <annoSet ID="6532599"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="185" docID="23580" sentNo="3" paragNo="27" aPos="0" ID="4099086">
+            <text>QN : Are 22 million people employed in agriculture ?</text>
+            <annotationSet cDate="10/05/2005 01:35:16 PDT Wed" status="UNANN" ID="6531827">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="NP"/>
+                    <label end="3" start="3" name=":"/>
+                    <label end="7" start="5" name="vbp"/>
+                    <label end="10" start="9" name="cd"/>
+                    <label end="18" start="12" name="cd"/>
+                    <label end="25" start="20" name="nns"/>
+                    <label end="34" start="27" name="VVN"/>
+                    <label end="37" start="36" name="in"/>
+                    <label end="49" start="39" name="nn"/>
+                    <label end="51" start="51" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="25" start="9" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="3" start="3" name="NT"/>
+                    <label end="10" start="9" name="NT"/>
+                    <label end="18" start="12" name="NT"/>
+                    <label end="37" start="36" name="NT"/>
+                    <label end="51" start="51" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/06/2005 06:51:46 PDT Thu" status="MANUAL" ID="6532599">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="34" start="27" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="2796" end="25" start="9" name="Employee"/>
+                    <label cBy="RLG" feID="2804" end="49" start="36" name="Field"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="25" start="9" name="Ext"/>
+                    <label end="49" start="36" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="25" start="9" name="NP"/>
+                    <label end="49" start="36" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="7" start="5" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

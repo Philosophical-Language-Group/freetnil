@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="IDIO" name="with on.idio" ID="10941" frame="Wearing" frameID="160" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Core" abbrev="BP" name="Body_part"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Clo" name="Clothing"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="goa" name="Intended_wearing_location"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="rel" name="Relative_location"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="sou" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Core" abbrev="Wearer" name="Wearer"/>
+        </frame>
+    </header>
+    <definition>FN: wearing</definition>
+    <lexeme order="1" headword="true" breakBefore="false" POS="PREP" name="with"/>
+    <lexeme order="2" headword="false" breakBefore="false" POS="ADV" name="on"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Clothing"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Clothing"/>
+                <annoSet ID="6672752"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Time"/>
+                <annoSet ID="6672752"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Wearer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Wearer"/>
+                <annoSet ID="6672752"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Clothing"/>
+            <FE name="Time"/>
+            <FE name="Wearer"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Clothing"/>
+                <valenceUnit GF="Dep" PT="AVP" FE="Time"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Wearer"/>
+                <annoSet ID="6672752"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="3" paragNo="8" aPos="0" ID="4148259">
+            <text>The limbs and body of some large , white bird , torn savagely to pieces with the feathers still on , were littered all over it .</text>
+            <annotationSet cDate="04/30/2013 05:17:15 PDT Tue" status="UNANN" ID="6645291">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="8" start="4" name="nns"/>
+                    <label end="12" start="10" name="cc"/>
+                    <label end="17" start="14" name="nn"/>
+                    <label end="20" start="19" name="in"/>
+                    <label end="25" start="22" name="dt"/>
+                    <label end="31" start="27" name="jj"/>
+                    <label end="39" start="35" name="jj"/>
+                    <label end="44" start="41" name="nn"/>
+                    <label end="51" start="48" name="VBN"/>
+                    <label end="60" start="53" name="rb"/>
+                    <label end="63" start="62" name="to"/>
+                    <label end="70" start="65" name="nns"/>
+                    <label end="75" start="72" name="in"/>
+                    <label end="79" start="77" name="dt"/>
+                    <label end="88" start="81" name="nns"/>
+                    <label end="94" start="90" name="rb"/>
+                    <label end="97" start="96" name="rb"/>
+                    <label end="104" start="101" name="VBD"/>
+                    <label end="113" start="106" name="VBN"/>
+                    <label end="117" start="115" name="dt"/>
+                    <label end="122" start="119" name="in"/>
+                    <label end="125" start="124" name="PRP"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="08/15/2014 01:39:36 PDT Fri" status="MANUAL" ID="6672752">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="97" start="96" name="Target"/>
+                    <label cBy="MJE" end="75" start="72" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="1295" end="88" start="77" name="Clothing"/>
+                    <label cBy="MJE" feID="7040" end="94" start="90" name="Time"/>
+                    <label cBy="MJE" feID="1294" end="44" start="22" name="Wearer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="88" start="77" name="Obj"/>
+                    <label end="94" start="90" name="Dep"/>
+                    <label end="44" start="22" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="88" start="77" name="NP"/>
+                    <label end="94" start="90" name="AVP"/>
+                    <label end="44" start="22" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Prep"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

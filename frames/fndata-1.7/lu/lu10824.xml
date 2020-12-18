@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="change.v" ID="10824" frame="Change_tool" frameID="1173" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="age" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Extra-Thematic" abbrev="ite" name="Iterations"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Core" abbrev="nto" name="New_tool"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="oto" name="Old_tool"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="tos" name="Tools"/>
+        </frame>
+    </header>
+    <definition>FN: discontinue use of and begin use of another</definition>
+    <lexeme POS="V" name="change"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <annoSet ID="6646514"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Tools"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Tools"/>
+                <annoSet ID="6646514"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Tools"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Tools"/>
+                <annoSet ID="6646514"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="5" paragNo="42" aPos="0" ID="4148567">
+            <text>On a certain evening , which had been prearranged , I sent my friend final instructions , for the man was forever on the alert and continually changed his room .</text>
+            <annotationSet cDate="04/30/2013 05:23:02 PDT Tue" status="UNANN" ID="6646508">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="3" start="3" name="dt"/>
+                    <label end="11" start="5" name="jj"/>
+                    <label end="19" start="13" name="nn"/>
+                    <label end="27" start="23" name="wdt"/>
+                    <label end="31" start="29" name="VBD"/>
+                    <label end="36" start="33" name="VBN"/>
+                    <label end="48" start="38" name="VBN"/>
+                    <label end="52" start="52" name="PRP"/>
+                    <label end="57" start="54" name="VBD"/>
+                    <label end="60" start="59" name="PRP$"/>
+                    <label end="67" start="62" name="nn"/>
+                    <label end="73" start="69" name="jj"/>
+                    <label end="86" start="75" name="nns"/>
+                    <label end="92" start="90" name="in"/>
+                    <label end="96" start="94" name="dt"/>
+                    <label end="100" start="98" name="nn"/>
+                    <label end="104" start="102" name="VBD"/>
+                    <label end="112" start="106" name="rb"/>
+                    <label end="115" start="114" name="in"/>
+                    <label end="119" start="117" name="dt"/>
+                    <label end="125" start="121" name="nn"/>
+                    <label end="129" start="127" name="cc"/>
+                    <label end="141" start="131" name="rb"/>
+                    <label end="149" start="143" name="VBD"/>
+                    <label end="153" start="151" name="PRP$"/>
+                    <label end="158" start="155" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:23:04 PDT Tue" status="MANUAL" ID="6646514">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="149" start="143" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="6806" end="100" start="94" name="Agent"/>
+                    <label cBy="WMcQ" feID="6976" end="158" start="151" name="Tools"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="100" start="94" name="Ext"/>
+                    <label end="158" start="151" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="100" start="94" name="NP"/>
+                    <label end="158" start="151" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

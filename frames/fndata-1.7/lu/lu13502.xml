@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="reader.n" ID="13502" frame="Reading_perception" frameID="279" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Jerusalem" name="HistoryOfJerusalem" ID="23647"/>
+        </corpus>
+        <frame>
+            <FE fgColor="00008B" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="" name="Context"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="000000" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="000000" bgColor="00BFFF" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Rdr" name="Reader"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Phen" name="Sought_phenomenon"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Text" name="Text"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: a person who reads.</definition>
+    <lexeme POS="N" name="reader"/>
+    <semType name="Agentive_noun" ID="102"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Reader"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Reader"/>
+                <annoSet ID="6538846"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Text"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Text"/>
+                <annoSet ID="6538846"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Reader"/>
+            <FE name="Text"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Reader"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Text"/>
+                <annoSet ID="6538846"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23647" sentNo="4" paragNo="7" aPos="0" ID="4100334">
+            <text>The Temple and royal palace were adorned with gold and ivory from Africa and with cedar from Lebanon ; the beauties and glories of Jerusalem under Solomon have captivated readers of the Bible for almost 3,000 years .</text>
+            <annotationSet cDate="09/29/2006 11:00:27 PDT Fri" status="UNANN" ID="6538414">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="9" start="4" name="NP"/>
+                    <label end="13" start="11" name="cc"/>
+                    <label end="19" start="15" name="jj"/>
+                    <label end="26" start="21" name="nn"/>
+                    <label end="31" start="28" name="VBD"/>
+                    <label end="39" start="33" name="VVN"/>
+                    <label end="44" start="41" name="in"/>
+                    <label end="49" start="46" name="nn"/>
+                    <label end="53" start="51" name="cc"/>
+                    <label end="59" start="55" name="nn"/>
+                    <label end="64" start="61" name="in"/>
+                    <label end="71" start="66" name="NP"/>
+                    <label end="75" start="73" name="cc"/>
+                    <label end="80" start="77" name="in"/>
+                    <label end="86" start="82" name="nn"/>
+                    <label end="91" start="88" name="in"/>
+                    <label end="99" start="93" name="NP"/>
+                    <label end="101" start="101" name=":"/>
+                    <label end="105" start="103" name="dt"/>
+                    <label end="114" start="107" name="nns"/>
+                    <label end="118" start="116" name="cc"/>
+                    <label end="126" start="120" name="nns"/>
+                    <label end="129" start="128" name="in"/>
+                    <label end="139" start="131" name="NP"/>
+                    <label end="145" start="141" name="in"/>
+                    <label end="153" start="147" name="NP"/>
+                    <label end="158" start="155" name="VHP"/>
+                    <label end="169" start="160" name="VVN"/>
+                    <label end="177" start="171" name="nns"/>
+                    <label end="180" start="179" name="in"/>
+                    <label end="184" start="182" name="dt"/>
+                    <label end="190" start="186" name="NP"/>
+                    <label end="194" start="192" name="in"/>
+                    <label end="201" start="196" name="rb"/>
+                    <label end="207" start="203" name="cd"/>
+                    <label end="213" start="209" name="nns"/>
+                    <label end="215" start="215" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="71" start="66" name="location"/>
+                    <label end="99" start="93" name="location"/>
+                    <label end="139" start="131" name="location"/>
+                    <label end="153" start="147" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="31" start="28" name="NT"/>
+                    <label end="71" start="66" name="NT"/>
+                    <label end="99" start="93" name="NT"/>
+                    <label end="101" start="101" name="NT"/>
+                    <label end="105" start="103" name="NT"/>
+                    <label end="118" start="116" name="NT"/>
+                    <label end="129" start="128" name="NT"/>
+                    <label end="139" start="131" name="NT"/>
+                    <label end="153" start="147" name="NT"/>
+                    <label end="158" start="155" name="NT"/>
+                    <label end="184" start="182" name="NT"/>
+                    <label end="190" start="186" name="NT"/>
+                    <label end="207" start="203" name="NT"/>
+                    <label end="215" start="215" name="NT"/>
+                    <label end="49" start="46" name="Nonrelational"/>
+                    <label end="59" start="55" name="Nonrelational"/>
+                    <label end="86" start="82" name="Nonrelational"/>
+                    <label end="13" start="11" name="NT"/>
+                    <label end="75" start="73" name="NT"/>
+                    <label end="44" start="41" name="NT"/>
+                    <label end="80" start="77" name="NT"/>
+                    <label end="180" start="179" name="NT"/>
+                    <label end="53" start="51" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/16/2006 04:34:35 PDT Mon" status="MANUAL" ID="6538846">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="177" start="171" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="2409" end="177" start="171" name="Reader"/>
+                    <label cBy="KmG" feID="2410" end="190" start="179" name="Text"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="190" start="179" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="190" start="179" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

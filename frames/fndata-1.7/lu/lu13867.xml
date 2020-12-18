@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="preparation.n" ID="13867" frame="Activity_prepare" frameID="170" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Work Advances" name="workAdvances" ID="23683"/>
+        </corpus>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="Orwell_1984_p1" name="Orwell_1984_p1" ID="7"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Act" name="Activity"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agent" name="Agent"/>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Extra-Thematic" abbrev="" name="Beneficiary"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Peripheral" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Depict" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="00008B" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Event_description"/>
+            <FE fgColor="000000" bgColor="FF69B4" type="Extra-Thematic" abbrev="Ite" name="Iterations"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Means" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: the action or process of preparing or being prepared.</definition>
+    <lexeme POS="N" name="preparation"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Activity"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Activity"/>
+                <annoSet ID="2599845"/>
+                <annoSet ID="6541476"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Agent"/>
+                <annoSet ID="2599845"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Agent"/>
+                <annoSet ID="6541476"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Means"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Means"/>
+                <annoSet ID="6541476"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Activity"/>
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Activity"/>
+                <valenceUnit GF="" PT="CNI" FE="Agent"/>
+                <annoSet ID="2599845"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Activity"/>
+            <FE name="Agent"/>
+            <FE name="Means"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Activity"/>
+                <valenceUnit GF="" PT="INI" FE="Agent"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Means"/>
+                <annoSet ID="6541476"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="7" sentNo="7" paragNo="2" aPos="0" ID="312909">
+            <text>It was part of the economy drive in preparation for Hate Week .</text>
+            <annotationSet cDate="01/06/2003 10:55:06 PST Mon" status="UNANN" ID="269185">
+                <layer rank="1" name="BNC">
+                    <label end="1" start="0" name="PNP"/>
+                    <label end="5" start="3" name="VBD"/>
+                    <label end="10" start="7" name="NN1"/>
+                    <label end="13" start="12" name="PRF"/>
+                    <label end="17" start="15" name="AT0"/>
+                    <label end="25" start="19" name="NN1"/>
+                    <label end="31" start="27" name="NN1"/>
+                    <label end="34" start="33" name="PRP"/>
+                    <label end="46" start="36" name="NN1"/>
+                    <label end="50" start="48" name="PRP"/>
+                    <label end="55" start="52" name="NN1"/>
+                    <label end="60" start="57" name="NN1"/>
+                    <label end="62" start="62" name="PUN"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="07/27/2010 02:45:58 PDT Tue" status="MANUAL" ID="2599845">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="46" start="36" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="2556" itype="CNI" name="Agent"/>
+                    <label cBy="MJE" feID="2557" end="60" start="48" name="Activity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="60" start="48" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="60" start="48" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="34" start="33" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23683" sentNo="2" paragNo="4" aPos="0" ID="4100868">
+            <text>The work is preparation for Iran 's plans to install 3,000 centrifuges at the site , but so far no centrifuges have been emplaced , according to the Associated Press .</text>
+            <annotationSet cDate="02/09/2007 03:07:41 PST Fri" status="UNANN" ID="6540325">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="7" start="4" name="nn"/>
+                    <label end="10" start="9" name="VBZ"/>
+                    <label end="22" start="12" name="nn"/>
+                    <label end="26" start="24" name="in"/>
+                    <label end="31" start="28" name="NP"/>
+                    <label end="34" start="33" name="POS"/>
+                    <label end="40" start="36" name="nns"/>
+                    <label end="43" start="42" name="to"/>
+                    <label end="51" start="45" name="VV"/>
+                    <label end="57" start="53" name="cd"/>
+                    <label end="69" start="59" name="nns"/>
+                    <label end="72" start="71" name="in"/>
+                    <label end="76" start="74" name="dt"/>
+                    <label end="81" start="78" name="nn"/>
+                    <label end="83" start="83" name=","/>
+                    <label end="87" start="85" name="cc"/>
+                    <label end="90" start="89" name="rb"/>
+                    <label end="94" start="92" name="rb"/>
+                    <label end="97" start="96" name="dt"/>
+                    <label end="109" start="99" name="nns"/>
+                    <label end="114" start="111" name="VHP"/>
+                    <label end="119" start="116" name="VBN"/>
+                    <label end="128" start="121" name="VVN"/>
+                    <label end="130" start="130" name=","/>
+                    <label end="140" start="132" name="VVG"/>
+                    <label end="143" start="142" name="to"/>
+                    <label end="147" start="145" name="dt"/>
+                    <label end="158" start="149" name="NP"/>
+                    <label end="164" start="160" name="NP"/>
+                    <label end="166" start="166" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="31" start="28" name="GPE"/>
+                    <label end="164" start="149" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="10" start="9" name="NT"/>
+                    <label end="26" start="24" name="NT"/>
+                    <label end="31" start="28" name="NT"/>
+                    <label end="34" start="33" name="NT"/>
+                    <label end="43" start="42" name="NT"/>
+                    <label end="57" start="53" name="NT"/>
+                    <label end="76" start="74" name="NT"/>
+                    <label end="83" start="83" name="NT"/>
+                    <label end="87" start="85" name="NT"/>
+                    <label end="97" start="96" name="NT"/>
+                    <label end="114" start="111" name="NT"/>
+                    <label end="119" start="116" name="NT"/>
+                    <label end="130" start="130" name="NT"/>
+                    <label end="147" start="145" name="NT"/>
+                    <label end="158" start="149" name="NT"/>
+                    <label end="164" start="160" name="NT"/>
+                    <label end="166" start="166" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/27/2007 12:32:03 PST Tue" status="MANUAL" ID="6541476">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="22" start="12" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="2557" end="81" start="24" name="Activity"/>
+                    <label cBy="RLG" feID="2556" itype="INI" name="Agent"/>
+                    <label cBy="RLG" feID="2561" end="7" start="0" name="Means"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="81" start="24" name="Dep"/>
+                    <label end="7" start="0" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="81" start="24" name="PP"/>
+                    <label end="7" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="10" start="9" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

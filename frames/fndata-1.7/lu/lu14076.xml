@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="interruption.n" ID="14076" frame="Interrupt_process" frameID="1894" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="act" name="Actor"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="Cause" name="Cause"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="con" name="Concessive"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="000000" bgColor="7CCD73" type="Core" abbrev="pro" name="Process"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: the ceasing of a process by an event.</definition>
+    <lexeme POS="N" name="interruption"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Actor"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Actor"/>
+                <annoSet ID="6645429"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Process"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Process"/>
+                <annoSet ID="6645429"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Actor"/>
+            <FE name="Process"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Actor"/>
+                <valenceUnit GF="" PT="DNI" FE="Process"/>
+                <annoSet ID="6645429"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="2" paragNo="13" aPos="0" ID="4148303">
+            <text>Sufficient for me to share the sport and lend my humble help to the capture without distracting that intent brain with needless interruption .</text>
+            <annotationSet cDate="04/30/2013 05:17:40 PDT Tue" status="UNANN" ID="6645425">
+                <layer rank="1" name="PENN">
+                    <label end="9" start="0" name="jj"/>
+                    <label end="13" start="11" name="in"/>
+                    <label end="16" start="15" name="PRP"/>
+                    <label end="19" start="18" name="to"/>
+                    <label end="25" start="21" name="vb"/>
+                    <label end="29" start="27" name="dt"/>
+                    <label end="35" start="31" name="nn"/>
+                    <label end="39" start="37" name="cc"/>
+                    <label end="44" start="41" name="vb"/>
+                    <label end="47" start="46" name="PRP$"/>
+                    <label end="54" start="49" name="jj"/>
+                    <label end="59" start="56" name="nn"/>
+                    <label end="62" start="61" name="to"/>
+                    <label end="66" start="64" name="dt"/>
+                    <label end="74" start="68" name="nn"/>
+                    <label end="82" start="76" name="in"/>
+                    <label end="94" start="84" name="VBG"/>
+                    <label end="99" start="96" name="dt"/>
+                    <label end="106" start="101" name="nn"/>
+                    <label end="112" start="108" name="nn"/>
+                    <label end="117" start="114" name="in"/>
+                    <label end="126" start="119" name="jj"/>
+                    <label end="139" start="128" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:17:41 PDT Tue" status="MANUAL" ID="6645429">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="139" start="128" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="11254" itype="DNI" name="Process"/>
+                    <label cBy="MJE" feID="11259" itype="INI" name="Actor"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

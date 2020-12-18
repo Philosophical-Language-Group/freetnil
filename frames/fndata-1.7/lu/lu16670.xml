@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="in demand.a" ID="16670" frame="Popularity" frameID="2380" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz What to Do in Hong Kong" name="WhatToHongKong" ID="23758"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="" name="Evaluee"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="" name="Judge"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: popular </definition>
+    <lexeme order="1" headword="true" breakBefore="false" POS="PREP" name="in"/>
+    <lexeme order="2" headword="false" breakBefore="false" POS="N" name="demand"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Degree"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Degree"/>
+                <annoSet ID="6584811"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Evaluee"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Evaluee"/>
+                <annoSet ID="6584811"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Degree"/>
+            <FE name="Evaluee"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Degree"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Evaluee"/>
+                <annoSet ID="6584811"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23758" sentNo="2" paragNo="3" aPos="0" ID="4104034">
+            <text>Custom - made garments by skillful Hong Kong tailors are still much in demand and cost less than elsewhere for comparable garments .</text>
+            <annotationSet cDate="07/21/2008 03:48:16 PDT Mon" status="UNANN" ID="6552866">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="NP"/>
+                    <label end="7" start="7" name=":"/>
+                    <label end="12" start="9" name="VVN"/>
+                    <label end="21" start="14" name="nns"/>
+                    <label end="24" start="23" name="in"/>
+                    <label end="33" start="26" name="jj"/>
+                    <label end="38" start="35" name="NP"/>
+                    <label end="43" start="40" name="NP"/>
+                    <label end="51" start="45" name="nns"/>
+                    <label end="55" start="53" name="vbp"/>
+                    <label end="61" start="57" name="rb"/>
+                    <label end="66" start="63" name="jj"/>
+                    <label end="69" start="68" name="in"/>
+                    <label end="76" start="71" name="nn"/>
+                    <label end="80" start="78" name="cc"/>
+                    <label end="85" start="82" name="VV"/>
+                    <label end="90" start="87" name="jjr"/>
+                    <label end="95" start="92" name="in"/>
+                    <label end="105" start="97" name="rb"/>
+                    <label end="109" start="107" name="in"/>
+                    <label end="120" start="111" name="jj"/>
+                    <label end="129" start="122" name="nns"/>
+                    <label end="131" start="131" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="43" start="35" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="0" name="NT"/>
+                    <label end="7" start="7" name="NT"/>
+                    <label end="24" start="23" name="NT"/>
+                    <label end="38" start="35" name="NT"/>
+                    <label end="43" start="40" name="NT"/>
+                    <label end="55" start="53" name="NT"/>
+                    <label end="80" start="78" name="NT"/>
+                    <label end="95" start="92" name="NT"/>
+                    <label end="109" start="107" name="NT"/>
+                    <label end="131" start="131" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/04/2011 05:26:38 PDT Tue" status="MANUAL" ID="6584811">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="76" start="71" name="Target"/>
+                    <label cBy="CVa" end="69" start="68" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="14143" end="51" start="0" name="Evaluee"/>
+                    <label cBy="CVa" feID="14144" end="66" start="63" name="Degree"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="51" start="0" name="Ext"/>
+                    <label end="66" start="63" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="51" start="0" name="NP"/>
+                    <label end="66" start="63" name="AVP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

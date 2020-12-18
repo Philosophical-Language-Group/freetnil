@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="terror.n" ID="15005" frame="Fear" frameID="2052" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="ET" name="Empathy_target"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Exp" name="Experiencer"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Exr" name="Expressor"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="Par" name="Parameter"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Core" abbrev="State" name="State"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Stim" name="Stimulus"/>
+            <FE fgColor="00008B" bgColor="FFFF00" type="Peripheral" abbrev="Tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="Top" name="Topic"/>
+        </frame>
+    </header>
+    <definition>FN: a strong feeling of fear or worry</definition>
+    <lexeme POS="N" name="terror"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Experiencer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Experiencer"/>
+                <annoSet ID="6552207"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Stimulus"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Stimulus"/>
+                <annoSet ID="6552207"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Experiencer"/>
+            <FE name="Stimulus"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Experiencer"/>
+                <valenceUnit GF="" PT="DNI" FE="Stimulus"/>
+                <annoSet ID="6552207"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23692" sentNo="2" paragNo="45" aPos="0" ID="4101298">
+            <text>Many Greek islanders chose to leave rather than live in poverty and terror , and many made new homes in the United States and Australia .</text>
+            <annotationSet cDate="03/12/2007 02:52:04 PDT Mon" status="UNANN" ID="6542091">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="jj"/>
+                    <label end="9" start="5" name="jj"/>
+                    <label end="19" start="11" name="nns"/>
+                    <label end="25" start="21" name="VVD"/>
+                    <label end="28" start="27" name="to"/>
+                    <label end="34" start="30" name="VV"/>
+                    <label end="41" start="36" name="rb"/>
+                    <label end="46" start="43" name="in"/>
+                    <label end="51" start="48" name="jj"/>
+                    <label end="54" start="53" name="in"/>
+                    <label end="62" start="56" name="nn"/>
+                    <label end="66" start="64" name="cc"/>
+                    <label end="73" start="68" name="nn"/>
+                    <label end="75" start="75" name=","/>
+                    <label end="79" start="77" name="cc"/>
+                    <label end="84" start="81" name="jj"/>
+                    <label end="89" start="86" name="VVN"/>
+                    <label end="93" start="91" name="jj"/>
+                    <label end="99" start="95" name="nns"/>
+                    <label end="102" start="101" name="in"/>
+                    <label end="106" start="104" name="dt"/>
+                    <label end="113" start="108" name="NP"/>
+                    <label end="120" start="115" name="NPS"/>
+                    <label end="124" start="122" name="cc"/>
+                    <label end="134" start="126" name="NP"/>
+                    <label end="136" start="136" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="120" start="108" name="location"/>
+                    <label end="134" start="126" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="28" start="27" name="NT"/>
+                    <label end="41" start="36" name="NT"/>
+                    <label end="46" start="43" name="NT"/>
+                    <label end="54" start="53" name="NT"/>
+                    <label end="66" start="64" name="NT"/>
+                    <label end="75" start="75" name="NT"/>
+                    <label end="79" start="77" name="NT"/>
+                    <label end="106" start="104" name="NT"/>
+                    <label end="113" start="108" name="NT"/>
+                    <label end="120" start="115" name="NT"/>
+                    <label end="124" start="122" name="NT"/>
+                    <label end="134" start="126" name="NT"/>
+                    <label end="136" start="136" name="NT"/>
+                    <label end="19" start="11" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="05/28/2008 12:27:23 PDT Wed" status="MANUAL" ID="6552207">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="73" start="68" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="12524" itype="DNI" name="Experiencer"/>
+                    <label cBy="JKs" feID="12526" itype="DNI" name="Stimulus"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="unemployed.a" ID="12593" frame="Being_employed" frameID="282" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Goodwill fund-raising letter" name="110CYL200" ID="23803"/>
+        </corpus>
+        <frame>
+            <FE fgColor="00008B" bgColor="7CCD73" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Compens" name="Compensation"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="CB" name="Contract_basis"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Empee" name="Employee"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Emper" name="Employer"/>
+            <FE fgColor="000000" bgColor="FF69B4" type="Extra-Thematic" abbrev="" name="Event_description"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Field" name="Field"/>
+            <FE fgColor="800080" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="00008B" bgColor="FFD700" type="Extra-Thematic" abbrev="" name="Particular_iteration"/>
+            <FE fgColor="000000" bgColor="1E90FF" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="pla_emp" name="Place_of_employment"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="Posit" name="Position"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Rank" name="Rank"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="Task" name="Task"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Type" name="Type"/>
+        </frame>
+    </header>
+    <definition>COD: without a paid job but available to work.</definition>
+    <lexeme POS="A" name="unemployed"/>
+    <semType name="Negative" ID="99"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Employee"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Employee"/>
+                <annoSet ID="6557381"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Employer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Employer"/>
+                <annoSet ID="6557381"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Employee"/>
+            <FE name="Employer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Employee"/>
+                <valenceUnit GF="" PT="INI" FE="Employer"/>
+                <annoSet ID="6557381"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23803" sentNo="4" paragNo="6" aPos="0" ID="4106563">
+            <text>Unemployed , homeless and with a prison record , Jerry now faced going back to prison for failure to pay child support .</text>
+            <annotationSet cDate="12/03/2008 03:01:23 PST Wed" status="UNANN" ID="6557279">
+                <layer rank="1" name="PENN">
+                    <label end="9" start="0" name="jj"/>
+                    <label end="11" start="11" name=","/>
+                    <label end="20" start="13" name="jj"/>
+                    <label end="24" start="22" name="cc"/>
+                    <label end="29" start="26" name="in"/>
+                    <label end="31" start="31" name="dt"/>
+                    <label end="38" start="33" name="nn"/>
+                    <label end="45" start="40" name="nn"/>
+                    <label end="47" start="47" name=","/>
+                    <label end="53" start="49" name="NP"/>
+                    <label end="57" start="55" name="rb"/>
+                    <label end="63" start="59" name="VVD"/>
+                    <label end="69" start="65" name="VVG"/>
+                    <label end="74" start="71" name="rb"/>
+                    <label end="77" start="76" name="to"/>
+                    <label end="84" start="79" name="nn"/>
+                    <label end="88" start="86" name="in"/>
+                    <label end="96" start="90" name="nn"/>
+                    <label end="99" start="98" name="to"/>
+                    <label end="103" start="101" name="VV"/>
+                    <label end="109" start="105" name="nn"/>
+                    <label end="117" start="111" name="nn"/>
+                    <label end="119" start="119" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="53" start="49" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="11" start="11" name="NT"/>
+                    <label end="24" start="22" name="NT"/>
+                    <label end="29" start="26" name="NT"/>
+                    <label end="31" start="31" name="NT"/>
+                    <label end="47" start="47" name="NT"/>
+                    <label end="53" start="49" name="NT"/>
+                    <label end="74" start="71" name="NT"/>
+                    <label end="77" start="76" name="NT"/>
+                    <label end="88" start="86" name="NT"/>
+                    <label end="99" start="98" name="NT"/>
+                    <label end="119" start="119" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="12/08/2008 01:03:15 PST Mon" status="MANUAL" ID="6557381">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="9" start="0" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="2796" itype="DNI" name="Employee"/>
+                    <label cBy="JKs" feID="2797" itype="INI" name="Employer"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

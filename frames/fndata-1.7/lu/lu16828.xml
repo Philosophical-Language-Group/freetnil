@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Needs_SCs" POS="N" name="compromise.n" ID="16828" frame="Make_compromise" frameID="2688" totalAnnotated="8" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="med" name="Medium"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="obl" name="Obligation"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="pars" name="Parties"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="par1" name="Party_1"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="par2" name="Party_2"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="P" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="T" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Core" abbrev="top" name="Topic"/>
+        </frame>
+    </header>
+    <definition>FN: an agreement reached by both parties conceding some number of points.</definition>
+    <lexeme POS="N" name="compromise"/>
+    <valences>
+        <governor type="Sup" lemma="make">
+            <annoSet ID="6631510"/>
+            <annoSet ID="6631514"/>
+        </governor>
+        <governor type="Sup" lemma="reach">
+            <annoSet ID="6631524"/>
+        </governor>
+        <governor type="Ctrlr" lemma="propose">
+            <annoSet ID="6631534"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Obligation"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPto" FE="Obligation"/>
+                <annoSet ID="6631528"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Parties"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Parties"/>
+                <annoSet ID="6631528"/>
+            </pattern>
+            <pattern total="3">
+                <valenceUnit GF="Ext" PT="NP" FE="Parties"/>
+                <annoSet ID="6631510"/>
+                <annoSet ID="6631512"/>
+                <annoSet ID="6631524"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Party_1"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Party_1"/>
+                <annoSet ID="6631540"/>
+            </pattern>
+            <pattern total="3">
+                <valenceUnit GF="Ext" PT="NP" FE="Party_1"/>
+                <annoSet ID="6631514"/>
+                <annoSet ID="6631516"/>
+                <annoSet ID="6631534"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Party_2"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="INI" FE="Party_2"/>
+                <annoSet ID="6631514"/>
+                <annoSet ID="6631516"/>
+                <annoSet ID="6631534"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Place"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Place"/>
+                <annoSet ID="6631510"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Purpose"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPto" FE="Purpose"/>
+                <annoSet ID="6631510"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="7">
+            <FE name="Topic"/>
+            <pattern total="7">
+                <valenceUnit GF="" PT="INI" FE="Topic"/>
+                <annoSet ID="6631510"/>
+                <annoSet ID="6631512"/>
+                <annoSet ID="6631514"/>
+                <annoSet ID="6631516"/>
+                <annoSet ID="6631524"/>
+                <annoSet ID="6631534"/>
+                <annoSet ID="6631540"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Obligation"/>
+            <FE name="Parties"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPto" FE="Obligation"/>
+                <valenceUnit GF="" PT="INI" FE="Parties"/>
+                <annoSet ID="6631528"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Parties"/>
+            <FE name="Place"/>
+            <FE name="Purpose"/>
+            <FE name="Topic"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Parties"/>
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Place"/>
+                <valenceUnit GF="Dep" PT="VPto" FE="Purpose"/>
+                <valenceUnit GF="" PT="INI" FE="Topic"/>
+                <annoSet ID="6631510"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="2">
+            <FE name="Parties"/>
+            <FE name="Topic"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Parties"/>
+                <valenceUnit GF="" PT="INI" FE="Topic"/>
+                <annoSet ID="6631512"/>
+                <annoSet ID="6631524"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="3">
+            <FE name="Party_1"/>
+            <FE name="Party_2"/>
+            <FE name="Topic"/>
+            <pattern total="3">
+                <valenceUnit GF="Ext" PT="NP" FE="Party_1"/>
+                <valenceUnit GF="" PT="INI" FE="Party_2"/>
+                <valenceUnit GF="" PT="INI" FE="Topic"/>
+                <annoSet ID="6631514"/>
+                <annoSet ID="6631516"/>
+                <annoSet ID="6631534"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Party_1"/>
+            <FE name="Topic"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Party_1"/>
+                <valenceUnit GF="" PT="INI" FE="Topic"/>
+                <annoSet ID="6631540"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-Wmake-T-(1)">
+        <sentence sentNo="0" aPos="289893" ID="4141998">
+            <text>In Jordan and Yemen , authorities appear to be making compromises to stave of social explosions .</text>
+            <annotationSet cDate="06/19/2012 10:33:16 PDT Tue" status="UNANN" ID="6631509">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="8" start="3" name="NP"/>
+                    <label end="12" start="10" name="cc"/>
+                    <label end="18" start="14" name="NP"/>
+                    <label end="20" start="20" name=","/>
+                    <label end="32" start="22" name="nns"/>
+                    <label end="39" start="34" name="VVP"/>
+                    <label end="42" start="41" name="to"/>
+                    <label end="45" start="44" name="vb"/>
+                    <label end="52" start="47" name="VVG"/>
+                    <label end="64" start="54" name="nns"/>
+                    <label end="67" start="66" name="to"/>
+                    <label end="73" start="69" name="VV"/>
+                    <label end="76" start="75" name="in"/>
+                    <label end="83" start="78" name="jj"/>
+                    <label end="94" start="85" name="nns"/>
+                    <label end="96" start="96" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="8" start="3" name="location"/>
+                    <label end="18" start="14" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="8" start="3" name="NT"/>
+                    <label end="12" start="10" name="NT"/>
+                    <label end="18" start="14" name="NT"/>
+                    <label end="20" start="20" name="NT"/>
+                    <label end="42" start="41" name="NT"/>
+                    <label end="45" start="44" name="NT"/>
+                    <label end="67" start="66" name="NT"/>
+                    <label end="76" start="75" name="NT"/>
+                    <label end="96" start="96" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/19/2012 10:33:16 PDT Tue" status="MANUAL" ID="6631510">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="64" start="54" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="15372" end="18" start="0" name="Place"/>
+                    <label cBy="RLG" feID="15371" end="32" start="22" name="Parties"/>
+                    <label cBy="RLG" feID="15750" end="94" start="66" name="Purpose"/>
+                    <label cBy="RLG" feID="15368" itype="INI" name="Topic"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="18" start="0" name="Dep"/>
+                    <label end="32" start="22" name="Ext"/>
+                    <label end="94" start="66" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="18" start="0" name="PP"/>
+                    <label end="32" start="22" name="NP"/>
+                    <label end="94" start="66" name="VPto"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="52" start="47" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence sentNo="0" aPos="610165" ID="4141999">
+            <text>&quot; People have been listening to each other , making progress , making compromises , &quot; said U. S. Ambassador Zalmay Khalilzad , who is involved in the discussions and trying to push them along .</text>
+            <annotationSet cDate="06/19/2012 10:33:16 PDT Tue" status="UNANN" ID="6631511">
+                <layer rank="1" name="PENN"/>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="06/19/2012 10:33:16 PDT Tue" status="MANUAL" ID="6631512">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="80" start="70" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="15371" end="7" start="2" name="Parties"/>
+                    <label cBy="RLG" feID="15368" itype="INI" name="Topic"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="7" start="2" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="7" start="2" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="68" start="63" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence sentNo="0" aPos="200896" ID="4142000">
+            <text>Former Pentagon official Kurt Campbell said more officers are calling for deadlines after concluding that the indefinite presence of U. S. forces enables the Shiite-run Iraqi government to avoid making compromises .</text>
+            <annotationSet cDate="06/19/2012 10:33:16 PDT Tue" status="UNANN" ID="6631513">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="jj"/>
+                    <label end="14" start="7" name="NP"/>
+                    <label end="23" start="16" name="nn"/>
+                    <label end="28" start="25" name="NP"/>
+                    <label end="37" start="30" name="NP"/>
+                    <label end="42" start="39" name="VVD"/>
+                    <label end="47" start="44" name="jjr"/>
+                    <label end="56" start="49" name="nns"/>
+                    <label end="60" start="58" name="vbp"/>
+                    <label end="68" start="62" name="VVG"/>
+                    <label end="72" start="70" name="in"/>
+                    <label end="82" start="74" name="nns"/>
+                    <label end="88" start="84" name="in"/>
+                    <label end="99" start="90" name="VVG"/>
+                    <label end="104" start="101" name="IN/that"/>
+                    <label end="108" start="106" name="dt"/>
+                    <label end="119" start="110" name="jj"/>
+                    <label end="128" start="121" name="nn"/>
+                    <label end="131" start="130" name="in"/>
+                    <label end="134" start="133" name="NP"/>
+                    <label end="137" start="136" name="NP"/>
+                    <label end="144" start="139" name="nns"/>
+                    <label end="152" start="146" name="VVZ"/>
+                    <label end="156" start="154" name="dt"/>
+                    <label end="167" start="158" name="jj"/>
+                    <label end="173" start="169" name="jj"/>
+                    <label end="184" start="175" name="nn"/>
+                    <label end="187" start="186" name="to"/>
+                    <label end="193" start="189" name="VV"/>
+                    <label end="200" start="195" name="VVG"/>
+                    <label end="212" start="202" name="nns"/>
+                    <label end="214" start="214" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="14" start="7" name="organization"/>
+                    <label end="37" start="25" name="person"/>
+                    <label end="137" start="133" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="14" start="7" name="NT"/>
+                    <label end="28" start="25" name="NT"/>
+                    <label end="37" start="30" name="NT"/>
+                    <label end="60" start="58" name="NT"/>
+                    <label end="72" start="70" name="NT"/>
+                    <label end="88" start="84" name="NT"/>
+                    <label end="108" start="106" name="NT"/>
+                    <label end="131" start="130" name="NT"/>
+                    <label end="134" start="133" name="NT"/>
+                    <label end="137" start="136" name="NT"/>
+                    <label end="156" start="154" name="NT"/>
+                    <label end="187" start="186" name="NT"/>
+                    <label end="214" start="214" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/19/2012 10:33:16 PDT Tue" status="MANUAL" ID="6631514">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="212" start="202" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="15365" end="184" start="154" name="Party_1"/>
+                    <label cBy="RLG" feID="15366" itype="INI" name="Party_2"/>
+                    <label cBy="RLG" feID="15368" itype="INI" name="Topic"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="184" start="154" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="184" start="154" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="200" start="195" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="other-matched-(1)"/>
+    <subCorpus name="other-unmatched-(1)">
+        <sentence sentNo="0" aPos="996208" ID="4142001">
+            <text>&quot; I think Kadafi 's trying to hold on in the hope that the African Union can pull a rabbit out of its hat and NATO will accept some kind of compromise .</text>
+            <annotationSet cDate="06/19/2012 10:33:16 PDT Tue" status="UNANN" ID="6631515">
+                <layer rank="1" name="PENN"/>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="06/19/2012 10:33:16 PDT Tue" status="MANUAL" ID="6631516">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="149" start="140" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="15365" end="113" start="110" name="Party_1"/>
+                    <label cBy="RLG" feID="15368" itype="INI" name="Topic"/>
+                    <label cBy="RLG" feID="15366" itype="INI" name="Party_2"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="113" start="110" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="113" start="110" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="125" start="120" name="Ctrlr"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence sentNo="0" aPos="965663" ID="4142005">
+            <text>Shiite lawmaker Qassim Dawood , who is sympathetic to the Kurds , said the sides must reach a compromise , or risk jeopardizing security gains made in the last year .</text>
+            <annotationSet cDate="06/19/2012 10:33:16 PDT Tue" status="UNANN" ID="6631523">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="jj"/>
+                    <label end="14" start="7" name="nn"/>
+                    <label end="21" start="16" name="NP"/>
+                    <label end="28" start="23" name="NP"/>
+                    <label end="30" start="30" name=","/>
+                    <label end="34" start="32" name="wp"/>
+                    <label end="37" start="36" name="VBZ"/>
+                    <label end="49" start="39" name="jj"/>
+                    <label end="52" start="51" name="to"/>
+                    <label end="56" start="54" name="dt"/>
+                    <label end="62" start="58" name="nns"/>
+                    <label end="64" start="64" name=","/>
+                    <label end="69" start="66" name="VVD"/>
+                    <label end="73" start="71" name="dt"/>
+                    <label end="79" start="75" name="nns"/>
+                    <label end="84" start="81" name="md"/>
+                    <label end="90" start="86" name="VV"/>
+                    <label end="92" start="92" name="dt"/>
+                    <label end="103" start="94" name="nn"/>
+                    <label end="105" start="105" name=","/>
+                    <label end="108" start="107" name="cc"/>
+                    <label end="113" start="110" name="nn"/>
+                    <label end="126" start="115" name="VVG"/>
+                    <label end="135" start="128" name="nn"/>
+                    <label end="141" start="137" name="nns"/>
+                    <label end="146" start="143" name="VVN"/>
+                    <label end="149" start="148" name="in"/>
+                    <label end="153" start="151" name="dt"/>
+                    <label end="158" start="155" name="jj"/>
+                    <label end="163" start="160" name="nn"/>
+                    <label end="165" start="165" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="28" start="16" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="21" start="16" name="NT"/>
+                    <label end="28" start="23" name="NT"/>
+                    <label end="30" start="30" name="NT"/>
+                    <label end="34" start="32" name="NT"/>
+                    <label end="37" start="36" name="NT"/>
+                    <label end="52" start="51" name="NT"/>
+                    <label end="56" start="54" name="NT"/>
+                    <label end="64" start="64" name="NT"/>
+                    <label end="73" start="71" name="NT"/>
+                    <label end="84" start="81" name="NT"/>
+                    <label end="92" start="92" name="NT"/>
+                    <label end="105" start="105" name="NT"/>
+                    <label end="108" start="107" name="NT"/>
+                    <label end="149" start="148" name="NT"/>
+                    <label end="153" start="151" name="NT"/>
+                    <label end="165" start="165" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/19/2012 10:33:16 PDT Tue" status="MANUAL" ID="6631524">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="103" start="94" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="15371" end="79" start="71" name="Parties"/>
+                    <label cBy="RLG" feID="15368" itype="INI" name="Topic"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="79" start="71" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="79" start="71" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="90" start="86" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence sentNo="0" aPos="567009" ID="4142007">
+            <text>The White House torpedoed diplomatic initiatives to end the crisis , including a compromise , crafted by Arab leaders , to let Iraq annex a small slice of Kuwait and withdraw .</text>
+            <annotationSet cDate="06/19/2012 10:33:16 PDT Tue" status="UNANN" ID="6631527">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="8" start="4" name="NP"/>
+                    <label end="14" start="10" name="NP"/>
+                    <label end="24" start="16" name="VVN"/>
+                    <label end="35" start="26" name="jj"/>
+                    <label end="47" start="37" name="nns"/>
+                    <label end="50" start="49" name="to"/>
+                    <label end="54" start="52" name="VV"/>
+                    <label end="58" start="56" name="dt"/>
+                    <label end="65" start="60" name="nn"/>
+                    <label end="67" start="67" name=","/>
+                    <label end="77" start="69" name="VVG"/>
+                    <label end="79" start="79" name="dt"/>
+                    <label end="90" start="81" name="nn"/>
+                    <label end="92" start="92" name=","/>
+                    <label end="100" start="94" name="VVN"/>
+                    <label end="103" start="102" name="in"/>
+                    <label end="108" start="105" name="jj"/>
+                    <label end="116" start="110" name="nns"/>
+                    <label end="118" start="118" name=","/>
+                    <label end="121" start="120" name="to"/>
+                    <label end="125" start="123" name="VV"/>
+                    <label end="130" start="127" name="NP"/>
+                    <label end="136" start="132" name="nn"/>
+                    <label end="138" start="138" name="dt"/>
+                    <label end="144" start="140" name="jj"/>
+                    <label end="150" start="146" name="nn"/>
+                    <label end="153" start="152" name="in"/>
+                    <label end="160" start="155" name="NP"/>
+                    <label end="164" start="162" name="cc"/>
+                    <label end="173" start="166" name="VV"/>
+                    <label end="175" start="175" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="14" start="4" name="organization"/>
+                    <label end="130" start="127" name="location"/>
+                    <label end="160" start="155" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="8" start="4" name="NT"/>
+                    <label end="14" start="10" name="NT"/>
+                    <label end="50" start="49" name="NT"/>
+                    <label end="58" start="56" name="NT"/>
+                    <label end="67" start="67" name="NT"/>
+                    <label end="79" start="79" name="NT"/>
+                    <label end="92" start="92" name="NT"/>
+                    <label end="103" start="102" name="NT"/>
+                    <label end="118" start="118" name="NT"/>
+                    <label end="121" start="120" name="NT"/>
+                    <label end="130" start="127" name="NT"/>
+                    <label end="138" start="138" name="NT"/>
+                    <label end="153" start="152" name="NT"/>
+                    <label end="160" start="155" name="NT"/>
+                    <label end="164" start="162" name="NT"/>
+                    <label end="175" start="175" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/19/2012 10:33:16 PDT Tue" status="MANUAL" ID="6631528">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="90" start="81" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="15367" end="173" start="120" name="Obligation"/>
+                    <label cBy="RLG" feID="15371" itype="INI" name="Parties"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="173" start="120" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="173" start="120" name="VPto"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence sentNo="0" aPos="269617" ID="4142010">
+            <text>Similarly , the Kurds proposed a compromise so Allawi could head the stalled National Council for Higher Policies .</text>
+            <annotationSet cDate="06/19/2012 10:33:16 PDT Tue" status="UNANN" ID="6631533">
+                <layer rank="1" name="PENN">
+                    <label end="8" start="0" name="rb"/>
+                    <label end="10" start="10" name=","/>
+                    <label end="14" start="12" name="dt"/>
+                    <label end="20" start="16" name="nns"/>
+                    <label end="29" start="22" name="VVD"/>
+                    <label end="31" start="31" name="dt"/>
+                    <label end="42" start="33" name="nn"/>
+                    <label end="45" start="44" name="in"/>
+                    <label end="52" start="47" name="NP"/>
+                    <label end="58" start="54" name="md"/>
+                    <label end="63" start="60" name="VV"/>
+                    <label end="67" start="65" name="dt"/>
+                    <label end="75" start="69" name="VVN"/>
+                    <label end="84" start="77" name="NP"/>
+                    <label end="92" start="86" name="NP"/>
+                    <label end="96" start="94" name="in"/>
+                    <label end="103" start="98" name="NP"/>
+                    <label end="112" start="105" name="nns"/>
+                    <label end="114" start="114" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="112" start="77" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="8" start="0" name="NT"/>
+                    <label end="10" start="10" name="NT"/>
+                    <label end="14" start="12" name="NT"/>
+                    <label end="31" start="31" name="NT"/>
+                    <label end="45" start="44" name="NT"/>
+                    <label end="52" start="47" name="NT"/>
+                    <label end="58" start="54" name="NT"/>
+                    <label end="67" start="65" name="NT"/>
+                    <label end="84" start="77" name="NT"/>
+                    <label end="92" start="86" name="NT"/>
+                    <label end="96" start="94" name="NT"/>
+                    <label end="103" start="98" name="NT"/>
+                    <label end="114" start="114" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/19/2012 10:33:16 PDT Tue" status="MANUAL" ID="6631534">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="42" start="33" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="15365" end="20" start="12" name="Party_1"/>
+                    <label cBy="RLG" feID="15368" itype="INI" name="Topic"/>
+                    <label cBy="RLG" feID="15366" itype="INI" name="Party_2"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="20" start="12" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="20" start="12" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="29" start="22" name="Ctrlr"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence sentNo="0" aPos="693739" ID="4142013">
+            <text>For Azzam , reportedly one of the founders of the Palestinian militant group Hamas , there could be no compromise with the enemies of Islam : &quot; Jihad and the rifle alone .</text>
+            <annotationSet cDate="06/19/2012 10:33:17 PDT Tue" status="UNANN" ID="6631539">
+                <layer rank="1" name="PENN"/>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="06/19/2012 10:33:17 PDT Tue" status="MANUAL" ID="6631540">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="112" start="103" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="15366" end="138" start="114" name="Party_2"/>
+                    <label cBy="RLG" feID="15365" itype="INI" name="Party_1"/>
+                    <label cBy="RLG" feID="15368" itype="INI" name="Topic"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="138" start="114" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="138" start="114" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

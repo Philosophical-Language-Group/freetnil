@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Needs_SCs" POS="A" name="present.a" ID="14269" frame="Presence" frameID="1922" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp" name="bncp" ID="421"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Dublin" name="IntroOfDublin" ID="23652"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Degree" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="ent" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Core" abbrev="loc" name="Location"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: being or occurring in a particular place.</definition>
+    <lexeme POS="A" name="present"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Entity"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <annoSet ID="2586355"/>
+                <annoSet ID="6543795"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Location"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Location"/>
+                <annoSet ID="6543795"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[on]" FE="Location"/>
+                <annoSet ID="2586355"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Entity"/>
+            <FE name="Location"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <valenceUnit GF="Dep" PT="AVP" FE="Location"/>
+                <annoSet ID="6543795"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <valenceUnit GF="Dep" PT="PP[on]" FE="Location"/>
+                <annoSet ID="2586355"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-T-PPon-(1)">
+        <sentence corpID="111" docID="421" sentNo="3" paragNo="133" aPos="873914" ID="1575868">
+            <text>By 1875 , the Liverpool physiologist Richard Caton had detected tiny fluctuations in voltages present on the surface of the brains or scalps of monkeys , cats and rabbits .</text>
+            <annotationSet cDate="07/15/2010 02:07:17 PDT Thu" status="UNANN" ID="2586354">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="6" start="3" name="cd"/>
+                    <label end="8" start="8" name=","/>
+                    <label end="12" start="10" name="dt"/>
+                    <label end="22" start="14" name="NP"/>
+                    <label end="35" start="24" name="nn"/>
+                    <label end="43" start="37" name="NP"/>
+                    <label end="49" start="45" name="NP"/>
+                    <label end="53" start="51" name="VHD"/>
+                    <label end="62" start="55" name="VVN"/>
+                    <label end="67" start="64" name="jj"/>
+                    <label end="80" start="69" name="nns"/>
+                    <label end="83" start="82" name="in"/>
+                    <label end="92" start="85" name="nns"/>
+                    <label end="100" start="94" name="jj"/>
+                    <label end="103" start="102" name="in"/>
+                    <label end="107" start="105" name="dt"/>
+                    <label end="115" start="109" name="nn"/>
+                    <label end="118" start="117" name="in"/>
+                    <label end="122" start="120" name="dt"/>
+                    <label end="129" start="124" name="nns"/>
+                    <label end="132" start="131" name="cc"/>
+                    <label end="139" start="134" name="nns"/>
+                    <label end="142" start="141" name="in"/>
+                    <label end="150" start="144" name="nns"/>
+                    <label end="152" start="152" name=","/>
+                    <label end="157" start="154" name="nns"/>
+                    <label end="161" start="159" name="cc"/>
+                    <label end="169" start="163" name="nns"/>
+                    <label end="171" start="171" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="07/15/2010 02:07:17 PDT Thu" status="MANUAL" ID="2586355">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="100" start="94" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="11562" end="92" start="85" name="Entity"/>
+                    <label cBy="MLC" feID="11563" end="169" start="102" name="Location"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="92" start="85" name="Ext"/>
+                    <label end="169" start="102" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="92" start="85" name="NP"/>
+                    <label end="169" start="102" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="02-T-PPduring-(1)"/>
+    <subCorpus name="03-T-PPat-(1)"/>
+    <subCorpus name="04-T-PPin-(1)"/>
+    <subCorpus name="other-matched-(1)"/>
+    <subCorpus name="other-unmatched-(1)"/>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23652" sentNo="3" paragNo="3" aPos="0" ID="4100583">
+            <text>This busy , modern European city sits on a thousand years of history -- history is present everywhere , from elegant Merrion Square to the bullet holes on the General Post Office .</text>
+            <annotationSet cDate="11/14/2006 04:25:13 PST Tue" status="UNANN" ID="6539582">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="8" start="5" name="jj"/>
+                    <label end="10" start="10" name=","/>
+                    <label end="17" start="12" name="jj"/>
+                    <label end="26" start="19" name="jj"/>
+                    <label end="31" start="28" name="nn"/>
+                    <label end="36" start="33" name="VVZ"/>
+                    <label end="39" start="38" name="in"/>
+                    <label end="41" start="41" name="dt"/>
+                    <label end="50" start="43" name="cd"/>
+                    <label end="56" start="52" name="nns"/>
+                    <label end="59" start="58" name="in"/>
+                    <label end="67" start="61" name="nn"/>
+                    <label end="70" start="69" name=":"/>
+                    <label end="78" start="72" name="nn"/>
+                    <label end="81" start="80" name="VBZ"/>
+                    <label end="89" start="83" name="rb"/>
+                    <label end="100" start="91" name="rb"/>
+                    <label end="102" start="102" name=","/>
+                    <label end="107" start="104" name="in"/>
+                    <label end="115" start="109" name="jj"/>
+                    <label end="123" start="117" name="NP"/>
+                    <label end="130" start="125" name="NP"/>
+                    <label end="133" start="132" name="to"/>
+                    <label end="137" start="135" name="dt"/>
+                    <label end="144" start="139" name="nn"/>
+                    <label end="150" start="146" name="nns"/>
+                    <label end="153" start="152" name="in"/>
+                    <label end="157" start="155" name="dt"/>
+                    <label end="165" start="159" name="NP"/>
+                    <label end="170" start="167" name="NP"/>
+                    <label end="177" start="172" name="NP"/>
+                    <label end="179" start="179" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="130" start="117" name="location"/>
+                    <label end="177" start="159" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="10" start="10" name="NT"/>
+                    <label end="41" start="41" name="NT"/>
+                    <label end="59" start="58" name="NT"/>
+                    <label end="70" start="69" name="NT"/>
+                    <label end="81" start="80" name="NT"/>
+                    <label end="102" start="102" name="NT"/>
+                    <label end="123" start="117" name="NT"/>
+                    <label end="137" start="135" name="NT"/>
+                    <label end="153" start="152" name="NT"/>
+                    <label end="157" start="155" name="NT"/>
+                    <label end="165" start="159" name="NT"/>
+                    <label end="179" start="179" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/30/2007 02:41:13 PDT Fri" status="MANUAL" ID="6543795">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="89" start="83" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="11562" end="78" start="72" name="Entity"/>
+                    <label cBy="KmG" feID="11563" end="100" start="91" name="Location"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="78" start="72" name="Ext"/>
+                    <label end="100" start="91" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="78" start="72" name="NP"/>
+                    <label end="100" start="91" name="AVP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="81" start="80" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

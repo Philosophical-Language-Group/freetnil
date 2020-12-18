@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Vehicle" POS="N" name="tank.n" ID="8157" frame="Vehicle" frameID="429" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="WMD News 04/21/2006" name="WMDNews_042106" ID="23605"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Iti" name="Itinerary"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Prop" name="Means_of_propulsion"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Poss" name="Possessor"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="use" name="Use"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="Veh" name="Vehicle"/>
+        </frame>
+    </header>
+    <definition>COD: a heavy armoured fighting vehicle carrying guns and moving on a continuous articulated metal track.</definition>
+    <lexeme POS="N" name="tank"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Vehicle"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Vehicle"/>
+                <annoSet ID="6535153"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Vehicle"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Vehicle"/>
+                <annoSet ID="6535153"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23605" sentNo="5" paragNo="22" aPos="0" ID="4099631">
+            <text>The eight - wheeled vehicles , developed to fill a gap between infantry soldiers driving Humvees and tanks , is the Army 's next step in becoming a future fighting force .</text>
+            <annotationSet cDate="06/06/2006 02:40:12 PDT Tue" status="UNANN" ID="6534972">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="8" start="4" name="cd"/>
+                    <label end="10" start="10" name=":"/>
+                    <label end="18" start="12" name="VVN"/>
+                    <label end="27" start="20" name="nns"/>
+                    <label end="29" start="29" name=","/>
+                    <label end="39" start="31" name="VVD"/>
+                    <label end="42" start="41" name="to"/>
+                    <label end="47" start="44" name="VV"/>
+                    <label end="49" start="49" name="dt"/>
+                    <label end="53" start="51" name="nn"/>
+                    <label end="61" start="55" name="in"/>
+                    <label end="70" start="63" name="nn"/>
+                    <label end="79" start="72" name="nns"/>
+                    <label end="87" start="81" name="VVG"/>
+                    <label end="95" start="89" name="nns"/>
+                    <label end="99" start="97" name="cc"/>
+                    <label end="105" start="101" name="nns"/>
+                    <label end="107" start="107" name=","/>
+                    <label end="110" start="109" name="VBZ"/>
+                    <label end="114" start="112" name="dt"/>
+                    <label end="119" start="116" name="NP"/>
+                    <label end="122" start="121" name="POS"/>
+                    <label end="127" start="124" name="jj"/>
+                    <label end="132" start="129" name="nn"/>
+                    <label end="135" start="134" name="in"/>
+                    <label end="144" start="137" name="VVG"/>
+                    <label end="146" start="146" name="dt"/>
+                    <label end="153" start="148" name="jj"/>
+                    <label end="162" start="155" name="nn"/>
+                    <label end="168" start="164" name="nn"/>
+                    <label end="170" start="170" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="95" start="89" name="location"/>
+                    <label end="119" start="116" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="10" start="10" name="NT"/>
+                    <label end="29" start="29" name="NT"/>
+                    <label end="42" start="41" name="NT"/>
+                    <label end="49" start="49" name="NT"/>
+                    <label end="99" start="97" name="NT"/>
+                    <label end="107" start="107" name="NT"/>
+                    <label end="110" start="109" name="NT"/>
+                    <label end="114" start="112" name="NT"/>
+                    <label end="122" start="121" name="NT"/>
+                    <label end="135" start="134" name="NT"/>
+                    <label end="146" start="146" name="NT"/>
+                    <label end="170" start="170" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/09/2006 11:01:30 PDT Fri" status="MANUAL" ID="6535153">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="105" start="101" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="3958" end="105" start="101" name="Vehicle"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

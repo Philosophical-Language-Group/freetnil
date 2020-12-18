@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="stairs.n" ID="10277" frame="Connecting_architecture" frameID="1025" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Bell Ringing" name="BellRinging" ID="23009"/>
+        </corpus>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="Orwell_1984_p1" name="Orwell_1984_p1" ID="7"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="cl" name="Connected_locations"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="" name="Creator"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Dsc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="drc" name="Direction"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="gl" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="" name="Material"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Orientation" name="Orientation"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Prt" name="Part"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="src" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Peripheral" abbrev="" name="Whole"/>
+        </frame>
+    </header>
+    <definition>COD: a set of such steps leading from one floor of a building to another</definition>
+    <lexeme POS="N" name="stairs"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Part"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Part"/>
+                <annoSet ID="2598438"/>
+                <annoSet ID="4529959"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Source"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[from]" FE="Source"/>
+                <annoSet ID="4529959"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Part"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Part"/>
+                <annoSet ID="2598438"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Part"/>
+            <FE name="Source"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Part"/>
+                <valenceUnit GF="Dep" PT="PP[from]" FE="Source"/>
+                <annoSet ID="4529959"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="7" sentNo="4" paragNo="2" aPos="0" ID="312906">
+            <text>Winston made for the stairs .</text>
+            <annotationSet cDate="01/06/2003 10:55:06 PST Mon" status="UNANN" ID="269182">
+                <layer rank="1" name="BNC">
+                    <label end="6" start="0" name="NP0"/>
+                    <label end="11" start="8" name="VVD"/>
+                    <label end="15" start="13" name="PRP"/>
+                    <label end="19" start="17" name="AT0"/>
+                    <label end="26" start="21" name="NN2"/>
+                    <label end="28" start="28" name="PUN"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="07/23/2010 06:40:26 PDT Fri" status="MANUAL" ID="2598438">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="26" start="21" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="6107" end="26" start="21" name="Part"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="115" docID="23009" sentNo="3" paragNo="19" aPos="0" ID="2824242">
+            <text>`` But C.J.B. Marshall , vicar of a nearby church , feels the fault is in the stairs from the bell tower that are located next to the altar .</text>
+            <annotationSet cDate="02/05/2004 08:29:33 PST Thu" status="UNANN" ID="4528237">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="``"/>
+                    <label end="5" start="3" name="cc"/>
+                    <label end="12" start="7" name="NP"/>
+                    <label end="21" start="14" name="NP"/>
+                    <label end="23" start="23" name=","/>
+                    <label end="29" start="25" name="nn"/>
+                    <label end="32" start="31" name="in"/>
+                    <label end="34" start="34" name="dt"/>
+                    <label end="41" start="36" name="jj"/>
+                    <label end="48" start="43" name="nn"/>
+                    <label end="50" start="50" name=","/>
+                    <label end="56" start="52" name="VVZ"/>
+                    <label end="60" start="58" name="dt"/>
+                    <label end="66" start="62" name="nn"/>
+                    <label end="69" start="68" name="VBZ"/>
+                    <label end="72" start="71" name="in"/>
+                    <label end="76" start="74" name="dt"/>
+                    <label end="83" start="78" name="nns"/>
+                    <label end="88" start="85" name="in"/>
+                    <label end="92" start="90" name="dt"/>
+                    <label end="97" start="94" name="nn"/>
+                    <label end="103" start="99" name="nn"/>
+                    <label end="108" start="105" name="wdt"/>
+                    <label end="112" start="110" name="vbp"/>
+                    <label end="120" start="114" name="VVN"/>
+                    <label end="125" start="122" name="jj"/>
+                    <label end="128" start="127" name="to"/>
+                    <label end="132" start="130" name="dt"/>
+                    <label end="138" start="134" name="nn"/>
+                    <label end="140" start="140" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="21" start="7" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="23" start="23" name="NT"/>
+                    <label end="50" start="50" name="NT"/>
+                    <label end="69" start="68" name="NT"/>
+                    <label end="72" start="71" name="NT"/>
+                    <label end="112" start="110" name="NT"/>
+                    <label end="140" start="140" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="12" start="7" name="NT"/>
+                    <label end="21" start="14" name="NT"/>
+                    <label end="32" start="31" name="NT"/>
+                    <label end="34" start="34" name="NT"/>
+                    <label end="60" start="58" name="NT"/>
+                    <label end="76" start="74" name="NT"/>
+                    <label end="88" start="85" name="NT"/>
+                    <label end="92" start="90" name="NT"/>
+                    <label end="108" start="105" name="NT"/>
+                    <label end="132" start="130" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/19/2004 03:26:15 PDT Thu" status="MANUAL" ID="4529959">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="83" start="78" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="6107" end="83" start="78" name="Part"/>
+                    <label cBy="MJE" feID="6113" end="103" start="85" name="Source"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="103" start="85" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="103" start="85" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

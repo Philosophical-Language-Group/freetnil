@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="open.v" ID="16542" frame="Activity_start" frameID="146" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz What to Do in Hong Kong" name="WhatToHongKong" ID="23758"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Act" name="Activity"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Age" name="Agent"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="Cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Co-t" name="Co-timed_event"/>
+            <FE fgColor="000000" bgColor="9F79EE" type="Extra-Thematic" abbrev="Cf" name="Communicative_force"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="Con" name="Concessive"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Extra-Thematic" abbrev="Coe" name="Containing_event"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Depict" name="Depictive"/>
+            <FE fgColor="000000" bgColor="7CCD7C" type="Extra-Thematic" abbrev="Eve" name="Event_description"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Extra-Thematic" abbrev="New" name="New_situation"/>
+            <FE fgColor="000000" bgColor="FF69B4" type="Extra-Thematic" abbrev="Par" name="Particular_iteration"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: begin an attack (esp. with "fire").</definition>
+    <lexeme POS="V" name="open"/>
+    <semType name="Bound_LU" ID="223"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Activity"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Activity"/>
+                <annoSet ID="6584779"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <annoSet ID="6584779"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[until]" FE="Time"/>
+                <annoSet ID="6584779"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Activity"/>
+            <FE name="Agent"/>
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Activity"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="Dep" PT="PP[until]" FE="Time"/>
+                <annoSet ID="6584779"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23758" sentNo="1" paragNo="5" aPos="0" ID="4104038">
+            <text>Stores do not open until 10 am or later , but shopping goes on into the evening , up to 9:30 pm .</text>
+            <annotationSet cDate="07/21/2008 03:48:16 PDT Mon" status="UNANN" ID="6552870">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="nns"/>
+                    <label end="8" start="7" name="VVP"/>
+                    <label end="12" start="10" name="rb"/>
+                    <label end="17" start="14" name="VV"/>
+                    <label end="23" start="19" name="in"/>
+                    <label end="26" start="25" name="cd"/>
+                    <label end="29" start="28" name="rb"/>
+                    <label end="32" start="31" name="cc"/>
+                    <label end="38" start="34" name="rb"/>
+                    <label end="40" start="40" name=","/>
+                    <label end="44" start="42" name="cc"/>
+                    <label end="53" start="46" name="nn"/>
+                    <label end="58" start="55" name="VVZ"/>
+                    <label end="61" start="60" name="in"/>
+                    <label end="66" start="63" name="in"/>
+                    <label end="70" start="68" name="dt"/>
+                    <label end="78" start="72" name="nn"/>
+                    <label end="80" start="80" name=","/>
+                    <label end="83" start="82" name="rb"/>
+                    <label end="86" start="85" name="to"/>
+                    <label end="91" start="88" name="cd"/>
+                    <label end="94" start="93" name="nn"/>
+                    <label end="96" start="96" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="29" start="25" name="time"/>
+                    <label end="94" start="88" name="time"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="8" start="7" name="NT"/>
+                    <label end="12" start="10" name="NT"/>
+                    <label end="26" start="25" name="NT"/>
+                    <label end="29" start="28" name="NT"/>
+                    <label end="32" start="31" name="NT"/>
+                    <label end="40" start="40" name="NT"/>
+                    <label end="66" start="63" name="NT"/>
+                    <label end="70" start="68" name="NT"/>
+                    <label end="80" start="80" name="NT"/>
+                    <label end="91" start="88" name="NT"/>
+                    <label end="96" start="96" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/03/2011 06:22:11 PDT Mon" status="MANUAL" ID="6584779">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="17" start="14" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="2542" end="5" start="0" name="Agent"/>
+                    <label cBy="CVa" feID="2085" itype="INI" name="Activity"/>
+                    <label cBy="CVa" feID="1160" end="38" start="19" name="Time"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="5" start="0" name="Ext"/>
+                    <label end="38" start="19" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="5" start="0" name="NP"/>
+                    <label end="38" start="19" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

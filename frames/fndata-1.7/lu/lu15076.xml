@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="mainland.n" ID="15076" frame="Locative_relation" frameID="199" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="" name="Accessibility"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="" name="Deixis"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="Dir" name="Direction"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Extra-Thematic" abbrev="" name="Directness"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dist" name="Distance"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Fig" name="Figure"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core-Unexpressed" abbrev="" name="Figures"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Grnd" name="Ground"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Core" abbrev="" name="Profiled_region"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Region_quantification"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Temporal_profile"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: the main geographical part of a country, exclusive of islands. </definition>
+    <lexeme POS="N" name="mainland"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Figure"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Figure"/>
+                <annoSet ID="6558708"/>
+                <annoSet ID="6558713"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Ground"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Ground"/>
+                <annoSet ID="6558708"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Ground"/>
+                <annoSet ID="6558713"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Figure"/>
+            <FE name="Ground"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Figure"/>
+                <valenceUnit GF="Dep" PT="A" FE="Ground"/>
+                <annoSet ID="6558708"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Figure"/>
+                <valenceUnit GF="" PT="DNI" FE="Ground"/>
+                <annoSet ID="6558713"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23692" sentNo="4" paragNo="12" aPos="0" ID="4101198">
+            <text>At the same time , city-states began to grow in influence on the southern Greek mainland .</text>
+            <annotationSet cDate="03/12/2007 02:51:02 PDT Mon" status="UNANN" ID="6541991">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="10" start="7" name="jj"/>
+                    <label end="15" start="12" name="nn"/>
+                    <label end="17" start="17" name=","/>
+                    <label end="29" start="19" name="nns"/>
+                    <label end="35" start="31" name="VVD"/>
+                    <label end="38" start="37" name="to"/>
+                    <label end="43" start="40" name="VV"/>
+                    <label end="46" start="45" name="in"/>
+                    <label end="56" start="48" name="nn"/>
+                    <label end="59" start="58" name="in"/>
+                    <label end="63" start="61" name="dt"/>
+                    <label end="72" start="65" name="jj"/>
+                    <label end="78" start="74" name="jj"/>
+                    <label end="87" start="80" name="nn"/>
+                    <label end="89" start="89" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="17" start="17" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="46" start="45" name="NT"/>
+                    <label end="63" start="61" name="NT"/>
+                    <label end="89" start="89" name="NT"/>
+                    <label end="10" start="7" name="NT"/>
+                    <label end="15" start="12" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/20/2009 11:53:26 PDT Mon" status="MANUAL" ID="6558708">
+                <layer rank="1" name="Target">
+                    <label cBy="DYo" end="87" start="80" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="DYo" feID="1622" end="87" start="80" name="Figure"/>
+                    <label cBy="DYo" feID="1621" end="78" start="74" name="Ground"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="78" start="74" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="78" start="74" name="A"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23692" sentNo="1" paragNo="13" aPos="0" ID="4101201">
+            <text>The new culture spread throughout the Mediterranean , helped by a huge increase in migration from the mainland to new settlements such as Carthage , a Greek city on the African coast of the Mediterranean .</text>
+            <annotationSet cDate="03/12/2007 02:51:03 PDT Mon" status="UNANN" ID="6541994">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="6" start="4" name="jj"/>
+                    <label end="14" start="8" name="nn"/>
+                    <label end="21" start="16" name="nn"/>
+                    <label end="32" start="23" name="in"/>
+                    <label end="36" start="34" name="dt"/>
+                    <label end="50" start="38" name="NP"/>
+                    <label end="52" start="52" name=","/>
+                    <label end="59" start="54" name="VVD"/>
+                    <label end="62" start="61" name="in"/>
+                    <label end="64" start="64" name="dt"/>
+                    <label end="69" start="66" name="jj"/>
+                    <label end="78" start="71" name="nn"/>
+                    <label end="81" start="80" name="in"/>
+                    <label end="91" start="83" name="nn"/>
+                    <label end="96" start="93" name="in"/>
+                    <label end="100" start="98" name="dt"/>
+                    <label end="109" start="102" name="nn"/>
+                    <label end="112" start="111" name="to"/>
+                    <label end="116" start="114" name="jj"/>
+                    <label end="128" start="118" name="nns"/>
+                    <label end="133" start="130" name="jj"/>
+                    <label end="136" start="135" name="in"/>
+                    <label end="145" start="138" name="NP"/>
+                    <label end="147" start="147" name=","/>
+                    <label end="149" start="149" name="dt"/>
+                    <label end="155" start="151" name="jj"/>
+                    <label end="160" start="157" name="nn"/>
+                    <label end="163" start="162" name="in"/>
+                    <label end="167" start="165" name="dt"/>
+                    <label end="175" start="169" name="jj"/>
+                    <label end="181" start="177" name="nn"/>
+                    <label end="184" start="183" name="in"/>
+                    <label end="188" start="186" name="dt"/>
+                    <label end="202" start="190" name="NP"/>
+                    <label end="204" start="204" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="50" start="38" name="location"/>
+                    <label end="145" start="138" name="location"/>
+                    <label end="202" start="190" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="32" start="23" name="NT"/>
+                    <label end="36" start="34" name="NT"/>
+                    <label end="50" start="38" name="NT"/>
+                    <label end="52" start="52" name="NT"/>
+                    <label end="62" start="61" name="NT"/>
+                    <label end="64" start="64" name="NT"/>
+                    <label end="81" start="80" name="NT"/>
+                    <label end="96" start="93" name="NT"/>
+                    <label end="100" start="98" name="NT"/>
+                    <label end="112" start="111" name="NT"/>
+                    <label end="136" start="135" name="NT"/>
+                    <label end="145" start="138" name="NT"/>
+                    <label end="147" start="147" name="NT"/>
+                    <label end="149" start="149" name="NT"/>
+                    <label end="167" start="165" name="NT"/>
+                    <label end="184" start="183" name="NT"/>
+                    <label end="188" start="186" name="NT"/>
+                    <label end="202" start="190" name="NT"/>
+                    <label end="204" start="204" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/20/2009 01:54:10 PDT Mon" status="MANUAL" ID="6558713">
+                <layer rank="1" name="Target">
+                    <label cBy="DYo" end="109" start="102" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="DYo" feID="1622" end="109" start="102" name="Figure"/>
+                    <label cBy="DYo" feID="1621" itype="DNI" name="Ground"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

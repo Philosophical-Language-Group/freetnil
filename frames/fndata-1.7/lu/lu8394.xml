@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="contract.n" ID="8394" frame="Documents" frameID="560" totalAnnotated="5" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Nuclear" name="Iran_Nuclear" ID="23511"/>
+        </corpus>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="Iran-related Questions" name="IranRelatedQuestions" ID="23541"/>
+        </corpus>
+        <corpus description="AQUAINT Knowledge-Based Evaluation Texts" name="KBEval" ID="185">
+            <document description="MIT" name="MIT" ID="23580"/>
+        </corpus>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="wsj_1640.mrg-NEW" name="wsj_1640.mrg-NEW" ID="23727"/>
+            <document description="AFGP-2002-600045-Trans" name="AFGP-2002-600045-Trans" ID="23740"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="Bea" name="Bearer"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Do" name="Document"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Iss" name="Issuer"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="" name="Medium"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Core" abbrev="Obl" name="Obligation"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Rig" name="Right"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="Spec" name="Specification"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="Sta" name="Status"/>
+        </frame>
+    </header>
+    <definition>FN: a legally binding written agreement</definition>
+    <lexeme POS="N" name="contract"/>
+    <valences>
+        <governor type="Ctrlr" lemma="award">
+            <annoSet ID="6532177"/>
+        </governor>
+        <governor type="Ctrlr" lemma="get">
+            <annoSet ID="6549184"/>
+        </governor>
+        <FERealization total="2">
+            <FE name="Bearer"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Bearer"/>
+                <annoSet ID="6532177"/>
+                <annoSet ID="6549184"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Document"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="DEN" FE="Document"/>
+                <annoSet ID="6523229"/>
+                <annoSet ID="6549184"/>
+                <annoSet ID="6550314"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Issuer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Issuer"/>
+                <annoSet ID="6549184"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Obligation"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="VPto" FE="Obligation"/>
+                <annoSet ID="6523229"/>
+                <annoSet ID="6532177"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="N" FE="Obligation"/>
+                <annoSet ID="6527264"/>
+                <annoSet ID="6550314"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="Poss" FE="Obligation"/>
+                <annoSet ID="6527264"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Specification"/>
+            <pattern total="1">
+                <valenceUnit GF="Quant" PT="Num" FE="Specification"/>
+                <annoSet ID="6523229"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Bearer"/>
+            <FE name="Document"/>
+            <FE name="Issuer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Bearer"/>
+                <valenceUnit GF="" PT="DEN" FE="Document"/>
+                <valenceUnit GF="" PT="DNI" FE="Issuer"/>
+                <annoSet ID="6549184"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Bearer"/>
+            <FE name="Obligation"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Bearer"/>
+                <valenceUnit GF="Dep" PT="VPto" FE="Obligation"/>
+                <annoSet ID="6532177"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Document"/>
+            <FE name="Obligation"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Document"/>
+                <valenceUnit GF="Dep" PT="N" FE="Obligation"/>
+                <annoSet ID="6550314"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Document"/>
+            <FE name="Obligation"/>
+            <FE name="Specification"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Document"/>
+                <valenceUnit GF="Dep" PT="VPto" FE="Obligation"/>
+                <valenceUnit GF="Quant" PT="Num" FE="Specification"/>
+                <annoSet ID="6523229"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Obligation"/>
+            <FE name="Obligation"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Obligation"/>
+                <valenceUnit GF="Dep" PT="Poss" FE="Obligation"/>
+                <annoSet ID="6527264"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23511" sentNo="3" paragNo="6" aPos="0" ID="4096588">
+            <text>Also in 1976 , the government signed a $700 million contract to purchase uranium yellowcake from South Africa and sent Iranian technicians abroad for training in nuclear sciences .</text>
+            <annotationSet cDate="02/23/2005 06:30:32 PST Wed" status="UNANN" ID="6522122">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="rb"/>
+                    <label end="6" start="5" name="in"/>
+                    <label end="11" start="8" name="cd"/>
+                    <label end="13" start="13" name=","/>
+                    <label end="17" start="15" name="dt"/>
+                    <label end="28" start="19" name="nn"/>
+                    <label end="35" start="30" name="VVD"/>
+                    <label end="37" start="37" name="dt"/>
+                    <label end="42" start="39" name="jj"/>
+                    <label end="50" start="44" name="cd"/>
+                    <label end="59" start="52" name="nn"/>
+                    <label end="62" start="61" name="to"/>
+                    <label end="71" start="64" name="VV"/>
+                    <label end="79" start="73" name="nn"/>
+                    <label end="90" start="81" name="nn"/>
+                    <label end="95" start="92" name="in"/>
+                    <label end="101" start="97" name="NP"/>
+                    <label end="108" start="103" name="NP"/>
+                    <label end="112" start="110" name="cc"/>
+                    <label end="117" start="114" name="VVD"/>
+                    <label end="125" start="119" name="jj"/>
+                    <label end="137" start="127" name="nns"/>
+                    <label end="144" start="139" name="rb"/>
+                    <label end="148" start="146" name="in"/>
+                    <label end="157" start="150" name="nn"/>
+                    <label end="160" start="159" name="in"/>
+                    <label end="168" start="162" name="jj"/>
+                    <label end="177" start="170" name="nns"/>
+                    <label end="179" start="179" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="11" start="8" name="date"/>
+                    <label end="50" start="39" name="money"/>
+                    <label end="108" start="97" name="GPE"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="5" name="NT"/>
+                    <label end="11" start="8" name="NT"/>
+                    <label end="13" start="13" name="NT"/>
+                    <label end="17" start="15" name="NT"/>
+                    <label end="37" start="37" name="NT"/>
+                    <label end="50" start="44" name="NT"/>
+                    <label end="62" start="61" name="NT"/>
+                    <label end="95" start="92" name="NT"/>
+                    <label end="101" start="97" name="NT"/>
+                    <label end="108" start="103" name="NT"/>
+                    <label end="112" start="110" name="NT"/>
+                    <label end="148" start="146" name="NT"/>
+                    <label end="160" start="159" name="NT"/>
+                    <label end="179" start="179" name="NT"/>
+                    <label end="3" start="0" name="NT"/>
+                    <label end="144" start="139" name="NT"/>
+                    <label end="168" start="162" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/02/2005 12:11:26 PST Wed" status="MANUAL" ID="6523229">
+                <layer rank="1" name="Target">
+                    <label cBy="CHg" end="59" start="52" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CHg" feID="4192" end="59" start="52" name="Document"/>
+                    <label cBy="CHg" feID="4188" end="108" start="61" name="Obligation"/>
+                    <label cBy="CHg" feID="4191" end="50" start="39" name="Specification"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="108" start="61" name="Dep"/>
+                    <label end="50" start="39" name="Quant"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="108" start="61" name="VPto"/>
+                    <label end="50" start="39" name="Num"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="175" docID="23541" sentNo="1" paragNo="33" aPos="0" ID="4097335">
+            <text>Argentina signs a $5.5 million contract to supply Iran with a new core for the research reactor at Tehran University and 20% enriched uranium .</text>
+            <annotationSet cDate="05/27/2005 08:08:10 PDT Fri" status="UNANN" ID="6526029">
+                <layer rank="1" name="PENN">
+                    <label end="8" start="0" name="NP"/>
+                    <label end="14" start="10" name="VVZ"/>
+                    <label end="16" start="16" name="dt"/>
+                    <label end="21" start="18" name="nn"/>
+                    <label end="29" start="23" name="cd"/>
+                    <label end="38" start="31" name="nn"/>
+                    <label end="41" start="40" name="to"/>
+                    <label end="48" start="43" name="VV"/>
+                    <label end="53" start="50" name="NP"/>
+                    <label end="58" start="55" name="in"/>
+                    <label end="60" start="60" name="dt"/>
+                    <label end="64" start="62" name="jj"/>
+                    <label end="69" start="66" name="nn"/>
+                    <label end="73" start="71" name="in"/>
+                    <label end="77" start="75" name="dt"/>
+                    <label end="86" start="79" name="nn"/>
+                    <label end="94" start="88" name="nn"/>
+                    <label end="97" start="96" name="in"/>
+                    <label end="104" start="99" name="NP"/>
+                    <label end="115" start="106" name="NP"/>
+                    <label end="119" start="117" name="cc"/>
+                    <label end="123" start="121" name="cd"/>
+                    <label end="132" start="125" name="VVN"/>
+                    <label end="140" start="134" name="nn"/>
+                    <label end="142" start="142" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="8" start="0" name="location"/>
+                    <label end="29" start="18" name="money"/>
+                    <label end="53" start="50" name="location"/>
+                    <label end="115" start="99" name="location"/>
+                    <label end="123" start="121" name="percent"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="8" start="0" name="NT"/>
+                    <label end="16" start="16" name="NT"/>
+                    <label end="29" start="23" name="NT"/>
+                    <label end="41" start="40" name="NT"/>
+                    <label end="53" start="50" name="NT"/>
+                    <label end="58" start="55" name="NT"/>
+                    <label end="60" start="60" name="NT"/>
+                    <label end="73" start="71" name="NT"/>
+                    <label end="77" start="75" name="NT"/>
+                    <label end="97" start="96" name="NT"/>
+                    <label end="104" start="99" name="NT"/>
+                    <label end="119" start="117" name="NT"/>
+                    <label end="123" start="121" name="NT"/>
+                    <label end="142" start="142" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/02/2005 12:24:51 PDT Thu" status="MANUAL" ID="6527264">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="38" start="31" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="4188" end="29" start="18" name="Obligation"/>
+                    <label cBy="RLG" feID="4188" end="140" start="40" name="Obligation"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="29" start="18" name="Dep"/>
+                    <label end="140" start="40" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="29" start="18" name="N"/>
+                    <label end="140" start="40" name="Poss"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="185" docID="23580" sentNo="2" paragNo="2" aPos="0" ID="4099009">
+            <text>The Defense Department has awarded BioPort Corporation a contract to manufacture , test , bottle and store anthrax vaccine , the company has announced .</text>
+            <annotationSet cDate="10/05/2005 01:34:58 PDT Wed" status="UNANN" ID="6531750">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="10" start="4" name="NP"/>
+                    <label end="21" start="12" name="NP"/>
+                    <label end="25" start="23" name="VHZ"/>
+                    <label end="33" start="27" name="VVN"/>
+                    <label end="41" start="35" name="NP"/>
+                    <label end="53" start="43" name="NP"/>
+                    <label end="55" start="55" name="dt"/>
+                    <label end="64" start="57" name="nn"/>
+                    <label end="67" start="66" name="to"/>
+                    <label end="79" start="69" name="VV"/>
+                    <label end="81" start="81" name=","/>
+                    <label end="86" start="83" name="VV"/>
+                    <label end="88" start="88" name=","/>
+                    <label end="95" start="90" name="VV"/>
+                    <label end="99" start="97" name="cc"/>
+                    <label end="105" start="101" name="VV"/>
+                    <label end="113" start="107" name="nn"/>
+                    <label end="121" start="115" name="nn"/>
+                    <label end="123" start="123" name=","/>
+                    <label end="127" start="125" name="dt"/>
+                    <label end="135" start="129" name="nn"/>
+                    <label end="139" start="137" name="VHZ"/>
+                    <label end="149" start="141" name="VVN"/>
+                    <label end="151" start="151" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="21" start="4" name="organization"/>
+                    <label end="53" start="35" name="organization"/>
+                    <label end="113" start="107" name="WEA"/>
+                    <label end="135" start="125" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="10" start="4" name="NT"/>
+                    <label end="21" start="12" name="NT"/>
+                    <label end="25" start="23" name="NT"/>
+                    <label end="41" start="35" name="NT"/>
+                    <label end="53" start="43" name="NT"/>
+                    <label end="55" start="55" name="NT"/>
+                    <label end="67" start="66" name="NT"/>
+                    <label end="81" start="81" name="NT"/>
+                    <label end="88" start="88" name="NT"/>
+                    <label end="99" start="97" name="NT"/>
+                    <label end="123" start="123" name="NT"/>
+                    <label end="127" start="125" name="NT"/>
+                    <label end="139" start="137" name="NT"/>
+                    <label end="151" start="151" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/06/2005 01:46:16 PDT Thu" status="MANUAL" ID="6532177">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="64" start="57" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="4188" end="121" start="66" name="Obligation"/>
+                    <label cBy="JKR" feID="4181" end="53" start="35" name="Bearer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="121" start="66" name="Dep"/>
+                    <label end="53" start="35" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="121" start="66" name="VPto"/>
+                    <label end="53" start="35" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="33" start="27" name="Ctrlr"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="205" docID="23727" sentNo="9" paragNo="5" aPos="0" ID="4101866">
+            <text>The Soviets ' eavesdropping paid off , however , because they got the contract .</text>
+            <annotationSet cDate="08/15/2007 04:21:54 PDT Wed" status="UNANN" ID="6545624">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="10" start="4" name="NPS"/>
+                    <label end="12" start="12" name="POS"/>
+                    <label end="26" start="14" name="nn"/>
+                    <label end="31" start="28" name="VVN"/>
+                    <label end="35" start="33" name="rp"/>
+                    <label end="37" start="37" name=","/>
+                    <label end="45" start="39" name="rb"/>
+                    <label end="47" start="47" name=","/>
+                    <label end="55" start="49" name="in"/>
+                    <label end="60" start="57" name="PP"/>
+                    <label end="64" start="62" name="VVD"/>
+                    <label end="68" start="66" name="dt"/>
+                    <label end="77" start="70" name="nn"/>
+                    <label end="79" start="79" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="10" start="4" name="NT"/>
+                    <label end="12" start="12" name="NT"/>
+                    <label end="35" start="33" name="NT"/>
+                    <label end="37" start="37" name="NT"/>
+                    <label end="45" start="39" name="NT"/>
+                    <label end="47" start="47" name="NT"/>
+                    <label end="55" start="49" name="NT"/>
+                    <label end="60" start="57" name="NT"/>
+                    <label end="68" start="66" name="NT"/>
+                    <label end="79" start="79" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/29/2007 03:13:01 PDT Mon" status="MANUAL" ID="6549184">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="77" start="70" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="4192" end="77" start="70" name="Document"/>
+                    <label cBy="JKs" feID="4181" end="60" start="57" name="Bearer"/>
+                    <label cBy="JKs" feID="4187" itype="DNI" name="Issuer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="60" start="57" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="60" start="57" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="64" start="62" name="Ctrlr"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="205" docID="23740" sentNo="1" paragNo="4" aPos="0" ID="4103213">
+            <text>This is an employment contract between AL QAEDA and a potential recruit .</text>
+            <annotationSet cDate="08/24/2007 01:46:46 PDT Fri" status="UNANN" ID="6547036">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="6" start="5" name="VBZ"/>
+                    <label end="9" start="8" name="dt"/>
+                    <label end="20" start="11" name="nn"/>
+                    <label end="29" start="22" name="nn"/>
+                    <label end="37" start="31" name="in"/>
+                    <label end="40" start="39" name="NP"/>
+                    <label end="46" start="42" name="NP"/>
+                    <label end="50" start="48" name="cc"/>
+                    <label end="52" start="52" name="dt"/>
+                    <label end="62" start="54" name="jj"/>
+                    <label end="70" start="64" name="nn"/>
+                    <label end="72" start="72" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="46" start="39" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="6" start="5" name="NT"/>
+                    <label end="9" start="8" name="NT"/>
+                    <label end="40" start="39" name="NT"/>
+                    <label end="46" start="42" name="NT"/>
+                    <label end="50" start="48" name="NT"/>
+                    <label end="52" start="52" name="NT"/>
+                    <label end="72" start="72" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/06/2007 03:34:40 PST Tue" status="MANUAL" ID="6550314">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="29" start="22" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="4192" end="29" start="22" name="Document"/>
+                    <label cBy="JKs" feID="4188" end="20" start="11" name="Obligation"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="20" start="11" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="20" start="11" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

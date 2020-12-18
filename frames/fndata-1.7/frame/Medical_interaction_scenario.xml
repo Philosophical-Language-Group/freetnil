@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="MJE" cDate="03/05/2012 04:41:43 PST Mon" name="Medical_interaction_scenario" ID="2708" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;A &lt;fen&gt;Patient&lt;/fen&gt; interacts with one or more &lt;fen&gt;Medic&lt;/fen&gt;s (doctors, nurses, and/or EMTs with a responsibility for the &lt;fen&gt;Patient&lt;/fen&gt;'s health) so that the &lt;fen&gt;Medic&lt;/fen&gt;s can determine the health status of the &lt;fen&gt;Patient&lt;/fen&gt; and maintain or restore the &lt;fen&gt;Patient&lt;/fen&gt;'s health as necessary. 
+&lt;ex&gt;&lt;/ex&gt;
+Usually, the &lt;fen&gt;Patient&lt;/fen&gt; has an &lt;fen&gt;Affliction&lt;/fen&gt;, a medical problem that motivates or necessitates their coming into the care of a &lt;fen&gt;Medic&lt;/fen&gt;. At a minimum, the &lt;fen&gt;Patient&lt;/fen&gt; has a single interaction with a &lt;fen&gt;Medic&lt;/fen&gt;, but usually the &lt;fen&gt;Patient&lt;/fen&gt; has a relationship with the &lt;fen&gt;Medic&lt;/fen&gt; or group of medical professionals who either have responsibility for helping them with their specific &lt;fen&gt;Affliction&lt;/fen&gt; or for their health in general. Medical interactions normally take place at a &lt;fen&gt;Medical_center&lt;/fen&gt; (a hospital or doctor's office), but in cases where the &lt;fen&gt;Patient&lt;/fen&gt; suffers a sudden catastrophic &lt;fen&gt;Affliction&lt;/fen&gt;, the &lt;fen&gt;Patient&lt;/fen&gt; may be taken into the care of EMTs, who act as their &lt;fen&gt;Medic&lt;/fen&gt; until reaching a medical center.
+&lt;ex&gt;&lt;/ex&gt;
+In some cases, the &lt;fen&gt;Body_system&lt;/fen&gt; that has a problem is mentioned in place of the &lt;fen&gt;Affliction&lt;/fen&gt;.
+
+&lt;ex&gt;&lt;fex name="Medic"&gt;Her&lt;/fex&gt; three &lt;fex name="Body_system"&gt;cardiac&lt;/fex&gt; &lt;fex name="Patient"&gt;&lt;t&gt;patients&lt;/t&gt;&lt;/fex&gt; take up all her time.&lt;/ex&gt;
+&lt;ex&gt;&lt;fex name="Medic"&gt;Our doctors&lt;/fex&gt; &lt;m&gt;provide&lt;/m&gt; the best &lt;t&gt;healthcare&lt;/t&gt; on the planet.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="MJE" cDate="03/05/2012 04:41:43 PST Mon" abbrev="Prof" name="Medic" ID="15505">
+        <definition>&lt;def-root&gt;The medical professional who has responsibility for the care of the &lt;fen&gt;Patient&lt;/fen&gt;
+&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Core" cBy="MJE" cDate="03/05/2012 04:41:43 PST Mon" abbrev="aff" name="Affliction" ID="15506">
+        <definition>&lt;def-root&gt;The particular disorder that the &lt;fen&gt;Patient&lt;/fen&gt; is suffering from and the the &lt;fen&gt;Medic&lt;/fen&gt; treats.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="03/05/2012 04:41:43 PST Mon" abbrev="bod" name="Body_system" ID="15507">
+        <definition>&lt;def-root&gt;The part of the &lt;fen&gt;Patient&lt;/fen&gt;'s body that is being treated.  
+
+&lt;ex&gt;&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="03/05/2012 04:41:43 PST Mon" abbrev="pla" name="Medical_center" ID="15513">
+        <definition>&lt;def-root&gt;The place visited by the &lt;fen&gt;Patient&lt;/fen&gt; and where the &lt;fen&gt;Medic&lt;/fen&gt; works.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="800080" fgColor="FFFFFF" coreType="Core" cBy="MJE" cDate="03/05/2012 06:35:49 PST Mon" abbrev="" name="Patient" ID="15516">
+        <definition>&lt;def-root&gt;The person who is under the care of a &lt;fen&gt;Medic&lt;/fen&gt; or other form of medical professional.&lt;/def-root&gt;</definition>
+    </FE>
+    <frameRelation type="Inherits from"/>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses">
+        <relatedFrame ID="50">Cure</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Used by">
+        <relatedFrame ID="255">Medical_professionals</relatedFrame>
+        <relatedFrame ID="256">Medical_specialties</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="Created" POS="N" name="patient.n" ID="16929" lemmaID="28058" cBy="MJE" cDate="03/05/2012 06:40:36 PST Mon">
+        <definition>FN: a person under the care of a medical professional.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="patient"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="doctor.n" ID="16930" lemmaID="11360" cBy="MJE" cDate="03/05/2012 06:42:25 PST Mon">
+        <definition>FN: a person licensed to provide the widest range of treatment and most definitive medical advice.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="doctor"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="nurse.n" ID="16931" lemmaID="26292" cBy="MJE" cDate="03/05/2012 06:46:35 PST Mon">
+        <definition>FN: a person licensed for administering limited forms of medical treatment and advice.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="nurse"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="surgeon.n" ID="16932" lemmaID="38976" cBy="MJE" cDate="03/05/2012 06:48:17 PST Mon">
+        <definition>FN: a physician who specializes in physically intervening with the inside of a patient's body.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="surgeon"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="medical care.n" ID="16936" lemmaID="51498" cBy="MJE" cDate="03/06/2012 02:03:46 PST Tue">
+        <definition>FN: supervision by a medical professional</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="A" name="medical"/>
+        <lexeme order="2" headword="true" breakBefore="false" POS="N" name="care"/>
+    </lexUnit>
+</frame>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="expense.n" ID="9192" frame="Expensiveness" frameID="83" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="WMD News 06/26/2006" name="WMDNews_062606" ID="23621"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Pymt" name="Asset"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Gds" name="Goods"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="" name="Intended_event"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Ori" name="Origin"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Pyr" name="Payer"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="" name="Rate"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="T" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: cost incurred or required.</definition>
+    <lexeme POS="N" name="expense"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Goods"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Goods"/>
+                <annoSet ID="6537003"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Goods"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Goods"/>
+                <annoSet ID="6537003"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23621" sentNo="4" paragNo="7" aPos="0" ID="4099755">
+            <text>This designation provides companies with financial and regulatory benefits during the course of orphan drug development , including tax credits related to clinical trial expenses and a possible exemption from the FDA - user fee .</text>
+            <annotationSet cDate="07/18/2006 02:44:50 PDT Tue" status="UNANN" ID="6536841">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="15" start="5" name="nn"/>
+                    <label end="24" start="17" name="VVZ"/>
+                    <label end="34" start="26" name="nns"/>
+                    <label end="39" start="36" name="in"/>
+                    <label end="49" start="41" name="jj"/>
+                    <label end="53" start="51" name="cc"/>
+                    <label end="64" start="55" name="jj"/>
+                    <label end="73" start="66" name="nns"/>
+                    <label end="80" start="75" name="in"/>
+                    <label end="84" start="82" name="dt"/>
+                    <label end="91" start="86" name="nn"/>
+                    <label end="94" start="93" name="in"/>
+                    <label end="101" start="96" name="nn"/>
+                    <label end="106" start="103" name="nn"/>
+                    <label end="118" start="108" name="nn"/>
+                    <label end="120" start="120" name=","/>
+                    <label end="130" start="122" name="VVG"/>
+                    <label end="134" start="132" name="nn"/>
+                    <label end="142" start="136" name="nns"/>
+                    <label end="150" start="144" name="VVN"/>
+                    <label end="153" start="152" name="to"/>
+                    <label end="162" start="155" name="jj"/>
+                    <label end="168" start="164" name="nn"/>
+                    <label end="177" start="170" name="nns"/>
+                    <label end="181" start="179" name="cc"/>
+                    <label end="183" start="183" name="dt"/>
+                    <label end="192" start="185" name="jj"/>
+                    <label end="202" start="194" name="nn"/>
+                    <label end="207" start="204" name="in"/>
+                    <label end="211" start="209" name="dt"/>
+                    <label end="215" start="213" name="NP"/>
+                    <label end="217" start="217" name=":"/>
+                    <label end="222" start="219" name="nn"/>
+                    <label end="226" start="224" name="nn"/>
+                    <label end="228" start="228" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="215" start="213" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="39" start="36" name="NT"/>
+                    <label end="53" start="51" name="NT"/>
+                    <label end="84" start="82" name="NT"/>
+                    <label end="94" start="93" name="NT"/>
+                    <label end="120" start="120" name="NT"/>
+                    <label end="153" start="152" name="NT"/>
+                    <label end="181" start="179" name="NT"/>
+                    <label end="183" start="183" name="NT"/>
+                    <label end="207" start="204" name="NT"/>
+                    <label end="211" start="209" name="NT"/>
+                    <label end="215" start="213" name="NT"/>
+                    <label end="217" start="217" name="NT"/>
+                    <label end="228" start="228" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/21/2006 11:42:09 PDT Fri" status="MANUAL" ID="6537003">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="177" start="170" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="382" end="168" start="155" name="Goods"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="168" start="155" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="168" start="155" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

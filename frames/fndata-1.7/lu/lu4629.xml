@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="therapy.n" ID="4629" frame="Medical_specialties" frameID="256" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Loma Prieta" name="LomaPrieta" ID="23013"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="aff" name="Affliction"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="bod" name="Body_system"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Spec" name="Specialty"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Type" name="Type"/>
+        </frame>
+    </header>
+    <definition>COD: treatment intended to relieve or heal a disorder. </definition>
+    <lexeme POS="N" name="therapy"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Specialty"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Specialty"/>
+                <annoSet ID="4529016"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Specialty"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Specialty"/>
+                <annoSet ID="4529016"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23013" sentNo="1" paragNo="26" aPos="0" ID="2824498">
+            <text>6:50 a.m. CAROLG : I was just sitting down to meet with some new therapy clients , a couple , and the building started shaking like crazy .</text>
+            <annotationSet cDate="02/05/2004 08:30:55 PST Thu" status="UNANN" ID="4528493">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="cd"/>
+                    <label end="8" start="5" name="rb"/>
+                    <label end="15" start="10" name="NP"/>
+                    <label end="17" start="17" name=":"/>
+                    <label end="19" start="19" name="PP"/>
+                    <label end="23" start="21" name="VBD"/>
+                    <label end="28" start="25" name="rb"/>
+                    <label end="36" start="30" name="VVG"/>
+                    <label end="41" start="38" name="rb"/>
+                    <label end="44" start="43" name="to"/>
+                    <label end="49" start="46" name="VV"/>
+                    <label end="54" start="51" name="in"/>
+                    <label end="59" start="56" name="dt"/>
+                    <label end="63" start="61" name="jj"/>
+                    <label end="71" start="65" name="nn"/>
+                    <label end="79" start="73" name="nns"/>
+                    <label end="81" start="81" name=","/>
+                    <label end="83" start="83" name="dt"/>
+                    <label end="90" start="85" name="nn"/>
+                    <label end="92" start="92" name=","/>
+                    <label end="96" start="94" name="cc"/>
+                    <label end="100" start="98" name="dt"/>
+                    <label end="109" start="102" name="nn"/>
+                    <label end="117" start="111" name="VVD"/>
+                    <label end="125" start="119" name="VVG"/>
+                    <label end="130" start="127" name="in"/>
+                    <label end="136" start="132" name="jj"/>
+                    <label end="138" start="138" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="8" start="0" name="time"/>
+                    <label end="15" start="10" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="8" start="5" name="NT"/>
+                    <label end="17" start="17" name="NT"/>
+                    <label end="23" start="21" name="NT"/>
+                    <label end="28" start="25" name="NT"/>
+                    <label end="44" start="43" name="NT"/>
+                    <label end="81" start="81" name="NT"/>
+                    <label end="92" start="92" name="NT"/>
+                    <label end="138" start="138" name="NT"/>
+                    <label end="3" start="0" name="NT"/>
+                    <label end="15" start="10" name="NT"/>
+                    <label end="19" start="19" name="NT"/>
+                    <label end="83" start="83" name="NT"/>
+                    <label end="96" start="94" name="NT"/>
+                    <label end="100" start="98" name="NT"/>
+                    <label end="130" start="127" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/08/2004 05:06:11 PDT Thu" status="MANUAL" ID="4529016">
+                <layer rank="1" name="Target">
+                    <label cBy="cir" end="71" start="65" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="cir" feID="3618" end="71" start="65" name="Specialty"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

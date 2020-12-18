@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="munitions.n" ID="12463" frame="Ammunition" frameID="1565" totalAnnotated="4" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Russia Introduction" name="Russia_Introduction" ID="23563"/>
+            <document description="North Korea Chemical Overview" name="NorthKorea_ChemicalOverview" ID="23611"/>
+            <document description="WMD News 06/26/2006" name="WMDNews_062606" ID="23621"/>
+        </corpus>
+        <corpus description="AQUAINT Knowledge-Based Evaluation Texts" name="KBEval" ID="185">
+            <document description="lcch" name="lcch" ID="23574"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="amm" name="Ammunition"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="cre" name="Creator"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Peripheral" abbrev="mat" name="Material"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time_of_creation"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="" name="Type"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="Use" name="Use"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="" name="Weapon"/>
+        </frame>
+    </header>
+    <definition>FN: ammunition and single-use weapons</definition>
+    <lexeme POS="N" name="munitions"/>
+    <valences>
+        <FERealization total="4">
+            <FE name="Ammunition"/>
+            <pattern total="4">
+                <valenceUnit GF="" PT="DEN" FE="Ammunition"/>
+                <annoSet ID="6529296"/>
+                <annoSet ID="6532154"/>
+                <annoSet ID="6536008"/>
+                <annoSet ID="6537039"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Type"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Type"/>
+                <annoSet ID="6537039"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="N" FE="Type"/>
+                <annoSet ID="6529296"/>
+                <annoSet ID="6532154"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Ammunition"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Ammunition"/>
+                <annoSet ID="6536008"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="3">
+            <FE name="Ammunition"/>
+            <FE name="Type"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Ammunition"/>
+                <valenceUnit GF="Dep" PT="A" FE="Type"/>
+                <annoSet ID="6537039"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Ammunition"/>
+                <valenceUnit GF="Dep" PT="N" FE="Type"/>
+                <annoSet ID="6529296"/>
+                <annoSet ID="6532154"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23563" sentNo="3" paragNo="8" aPos="0" ID="4097788">
+            <text>Russia inherited the declared Soviet stockpile of 40,000 metric tons of CW munitions and agents stored in bulk .</text>
+            <annotationSet cDate="08/01/2005 12:27:48 PDT Mon" status="UNANN" ID="6528763">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="NP"/>
+                    <label end="15" start="7" name="VVD"/>
+                    <label end="19" start="17" name="dt"/>
+                    <label end="28" start="21" name="VVN"/>
+                    <label end="35" start="30" name="jj"/>
+                    <label end="45" start="37" name="nn"/>
+                    <label end="48" start="47" name="in"/>
+                    <label end="55" start="50" name="cd"/>
+                    <label end="62" start="57" name="jj"/>
+                    <label end="67" start="64" name="nns"/>
+                    <label end="70" start="69" name="in"/>
+                    <label end="73" start="72" name="jj"/>
+                    <label end="83" start="75" name="nn"/>
+                    <label end="87" start="85" name="cc"/>
+                    <label end="94" start="89" name="nns"/>
+                    <label end="101" start="96" name="VVN"/>
+                    <label end="104" start="103" name="in"/>
+                    <label end="109" start="106" name="nn"/>
+                    <label end="111" start="111" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="5" start="0" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="0" name="NT"/>
+                    <label end="19" start="17" name="NT"/>
+                    <label end="48" start="47" name="NT"/>
+                    <label end="55" start="50" name="NT"/>
+                    <label end="70" start="69" name="NT"/>
+                    <label end="87" start="85" name="NT"/>
+                    <label end="104" start="103" name="NT"/>
+                    <label end="111" start="111" name="NT"/>
+                    <label end="35" start="30" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/04/2005 02:44:09 PDT Thu" status="MANUAL" ID="6529296">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="83" start="75" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="8529" end="73" start="72" name="Type"/>
+                    <label cBy="RLG" feID="8524" end="83" start="75" name="Ammunition"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="73" start="72" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="73" start="72" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="185" docID="23574" sentNo="2" paragNo="16" aPos="0" ID="4098240">
+            <text>Russia currently lacks the necessary capacity to dispose of its chemical munitions .</text>
+            <annotationSet cDate="10/05/2005 01:26:16 PDT Wed" status="UNANN" ID="6530981">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="NP"/>
+                    <label end="15" start="7" name="rb"/>
+                    <label end="21" start="17" name="VVZ"/>
+                    <label end="25" start="23" name="dt"/>
+                    <label end="35" start="27" name="jj"/>
+                    <label end="44" start="37" name="nn"/>
+                    <label end="47" start="46" name="to"/>
+                    <label end="55" start="49" name="VV"/>
+                    <label end="58" start="57" name="in"/>
+                    <label end="62" start="60" name="PP$"/>
+                    <label end="71" start="64" name="nn"/>
+                    <label end="81" start="73" name="VVZ"/>
+                    <label end="83" start="83" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="5" start="0" name="GPE"/>
+                    <label end="81" start="64" name="WEA"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="0" name="NT"/>
+                    <label end="15" start="7" name="NT"/>
+                    <label end="25" start="23" name="NT"/>
+                    <label end="47" start="46" name="NT"/>
+                    <label end="58" start="57" name="NT"/>
+                    <label end="62" start="60" name="NT"/>
+                    <label end="83" start="83" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/06/2005 12:07:37 PDT Thu" status="MANUAL" ID="6532154">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="81" start="73" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="8524" end="81" start="73" name="Ammunition"/>
+                    <label cBy="MJE" feID="8529" end="71" start="64" name="Type"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="71" start="64" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="71" start="64" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23611" sentNo="3" paragNo="2" aPos="0" ID="4099661">
+            <text>It is not clear , however , if this amount includes the munitions or only the CW agents themselves .</text>
+            <annotationSet cDate="06/27/2006 04:44:52 PDT Tue" status="UNANN" ID="6535869">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="4" start="3" name="VBZ"/>
+                    <label end="8" start="6" name="rb"/>
+                    <label end="14" start="10" name="jj"/>
+                    <label end="16" start="16" name=","/>
+                    <label end="24" start="18" name="rb"/>
+                    <label end="26" start="26" name=","/>
+                    <label end="29" start="28" name="in"/>
+                    <label end="34" start="31" name="dt"/>
+                    <label end="41" start="36" name="nn"/>
+                    <label end="50" start="43" name="VVZ"/>
+                    <label end="54" start="52" name="dt"/>
+                    <label end="64" start="56" name="nn"/>
+                    <label end="67" start="66" name="cc"/>
+                    <label end="72" start="69" name="rb"/>
+                    <label end="76" start="74" name="dt"/>
+                    <label end="79" start="78" name="jj"/>
+                    <label end="86" start="81" name="nns"/>
+                    <label end="97" start="88" name="PP"/>
+                    <label end="99" start="99" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="79" start="78" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="4" start="3" name="NT"/>
+                    <label end="8" start="6" name="NT"/>
+                    <label end="16" start="16" name="NT"/>
+                    <label end="24" start="18" name="NT"/>
+                    <label end="26" start="26" name="NT"/>
+                    <label end="29" start="28" name="NT"/>
+                    <label end="34" start="31" name="NT"/>
+                    <label end="54" start="52" name="NT"/>
+                    <label end="67" start="66" name="NT"/>
+                    <label end="72" start="69" name="NT"/>
+                    <label end="76" start="74" name="NT"/>
+                    <label end="97" start="88" name="NT"/>
+                    <label end="99" start="99" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/29/2006 11:24:29 PDT Thu" status="MANUAL" ID="6536008">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="64" start="56" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="8524" end="64" start="56" name="Ammunition"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23621" sentNo="4" paragNo="10" aPos="0" ID="4099763">
+            <text>I 'm proud of their efforts to work safely as they safely destroy the chemical munitions that Anniston Chemical Activity stores .</text>
+            <annotationSet cDate="07/18/2006 02:44:53 PDT Tue" status="UNANN" ID="6536849">
+                <layer rank="1" name="PENN">
+                    <label end="0" start="0" name="PP"/>
+                    <label end="3" start="2" name="vbp"/>
+                    <label end="9" start="5" name="jj"/>
+                    <label end="12" start="11" name="in"/>
+                    <label end="18" start="14" name="PP$"/>
+                    <label end="26" start="20" name="nns"/>
+                    <label end="29" start="28" name="to"/>
+                    <label end="34" start="31" name="VV"/>
+                    <label end="41" start="36" name="rb"/>
+                    <label end="44" start="43" name="in"/>
+                    <label end="49" start="46" name="PP"/>
+                    <label end="56" start="51" name="rb"/>
+                    <label end="64" start="58" name="VV"/>
+                    <label end="68" start="66" name="dt"/>
+                    <label end="77" start="70" name="nn"/>
+                    <label end="87" start="79" name="VVZ"/>
+                    <label end="92" start="89" name="in"/>
+                    <label end="101" start="94" name="NP"/>
+                    <label end="110" start="103" name="NP"/>
+                    <label end="119" start="112" name="nn"/>
+                    <label end="126" start="121" name="nns"/>
+                    <label end="128" start="128" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="119" start="94" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="0" start="0" name="NT"/>
+                    <label end="3" start="2" name="NT"/>
+                    <label end="12" start="11" name="NT"/>
+                    <label end="18" start="14" name="NT"/>
+                    <label end="29" start="28" name="NT"/>
+                    <label end="44" start="43" name="NT"/>
+                    <label end="49" start="46" name="NT"/>
+                    <label end="68" start="66" name="NT"/>
+                    <label end="92" start="89" name="NT"/>
+                    <label end="101" start="94" name="NT"/>
+                    <label end="128" start="128" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/21/2006 02:40:52 PDT Fri" status="MANUAL" ID="6537039">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="87" start="79" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="8529" end="77" start="70" name="Type"/>
+                    <label cBy="KmG" feID="8524" end="87" start="79" name="Ammunition"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="77" start="70" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="77" start="70" name="A"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

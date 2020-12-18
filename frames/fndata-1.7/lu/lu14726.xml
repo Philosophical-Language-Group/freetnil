@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="reputation.n" ID="14726" frame="Fame" frameID="1880" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Las Vegas" name="HistoryOfLasVegas" ID="23691"/>
+            <document description="Berlitz Intro of Hong Kong" name="IntroHongKong" ID="23757"/>
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="" name="Degree"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Ent" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="rea" name="Reason"/>
+            <FE fgColor="006400" bgColor="FFFF00" type="Extra-Thematic" abbrev="Rol" name="Role"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="Tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: the opinion of others directed towards an Entity</definition>
+    <lexeme POS="N" name="reputation"/>
+    <valences>
+        <FERealization total="3">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Entity"/>
+                <annoSet ID="6560377"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="Gen" PT="Poss" FE="Entity"/>
+                <annoSet ID="6551787"/>
+                <annoSet ID="6553122"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Reason"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Reason"/>
+                <annoSet ID="6560377"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Reason"/>
+                <annoSet ID="6553122"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[as]" FE="Reason"/>
+                <annoSet ID="6551787"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="3">
+            <FE name="Entity"/>
+            <FE name="Reason"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Entity"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Reason"/>
+                <annoSet ID="6560377"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Entity"/>
+                <valenceUnit GF="" PT="DNI" FE="Reason"/>
+                <annoSet ID="6553122"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Entity"/>
+                <valenceUnit GF="Dep" PT="PP[as]" FE="Reason"/>
+                <annoSet ID="6551787"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23691" sentNo="5" paragNo="25" aPos="0" ID="4101102">
+            <text>Thus originated Las Vegas 's reputation as an adult theme park .</text>
+            <annotationSet cDate="03/12/2007 02:47:05 PDT Mon" status="UNANN" ID="6541895">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="rb"/>
+                    <label end="14" start="5" name="VVN"/>
+                    <label end="18" start="16" name="NP"/>
+                    <label end="24" start="20" name="NP"/>
+                    <label end="27" start="26" name="POS"/>
+                    <label end="38" start="29" name="nn"/>
+                    <label end="41" start="40" name="in"/>
+                    <label end="44" start="43" name="dt"/>
+                    <label end="50" start="46" name="nn"/>
+                    <label end="56" start="52" name="nn"/>
+                    <label end="61" start="58" name="nn"/>
+                    <label end="63" start="63" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="24" start="16" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="18" start="16" name="NT"/>
+                    <label end="24" start="20" name="NT"/>
+                    <label end="27" start="26" name="NT"/>
+                    <label end="41" start="40" name="NT"/>
+                    <label end="44" start="43" name="NT"/>
+                    <label end="63" start="63" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/05/2008 03:00:09 PST Wed" status="MANUAL" ID="6551787">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="38" start="29" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="11110" end="27" start="16" name="Entity"/>
+                    <label cBy="JKs" feID="11120" end="61" start="40" name="Reason"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="27" start="16" name="Gen"/>
+                    <label end="61" start="40" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="27" start="16" name="Poss"/>
+                    <label end="61" start="40" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23757" sentNo="6" paragNo="2" aPos="0" ID="4103995">
+            <text>You 'll find Hong Kong easy to get around , the people helpful , English spoken everywhere , and food that lives up to its reputation .</text>
+            <annotationSet cDate="07/21/2008 03:12:17 PDT Mon" status="UNANN" ID="6552807">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="PP"/>
+                    <label end="6" start="4" name="md"/>
+                    <label end="11" start="8" name="VV"/>
+                    <label end="16" start="13" name="NP"/>
+                    <label end="21" start="18" name="NP"/>
+                    <label end="26" start="23" name="jj"/>
+                    <label end="29" start="28" name="to"/>
+                    <label end="33" start="31" name="VV"/>
+                    <label end="40" start="35" name="rp"/>
+                    <label end="42" start="42" name=","/>
+                    <label end="46" start="44" name="dt"/>
+                    <label end="53" start="48" name="nns"/>
+                    <label end="61" start="55" name="jj"/>
+                    <label end="63" start="63" name=","/>
+                    <label end="71" start="65" name="jj"/>
+                    <label end="78" start="73" name="VVN"/>
+                    <label end="89" start="80" name="rb"/>
+                    <label end="91" start="91" name=","/>
+                    <label end="95" start="93" name="cc"/>
+                    <label end="100" start="97" name="nn"/>
+                    <label end="105" start="102" name="wdt"/>
+                    <label end="111" start="107" name="VVZ"/>
+                    <label end="114" start="113" name="rp"/>
+                    <label end="117" start="116" name="to"/>
+                    <label end="121" start="119" name="PP$"/>
+                    <label end="132" start="123" name="nn"/>
+                    <label end="134" start="134" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="21" start="13" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="6" start="4" name="NT"/>
+                    <label end="16" start="13" name="NT"/>
+                    <label end="21" start="18" name="NT"/>
+                    <label end="29" start="28" name="NT"/>
+                    <label end="40" start="35" name="NT"/>
+                    <label end="42" start="42" name="NT"/>
+                    <label end="46" start="44" name="NT"/>
+                    <label end="63" start="63" name="NT"/>
+                    <label end="91" start="91" name="NT"/>
+                    <label end="95" start="93" name="NT"/>
+                    <label end="105" start="102" name="NT"/>
+                    <label end="114" start="113" name="NT"/>
+                    <label end="117" start="116" name="NT"/>
+                    <label end="121" start="119" name="NT"/>
+                    <label end="134" start="134" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/21/2008 04:50:18 PDT Mon" status="MANUAL" ID="6553122">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="132" start="123" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="11120" itype="DNI" name="Reason"/>
+                    <label cBy="JKs" feID="11110" end="121" start="119" name="Entity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="121" start="119" name="Gen"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="121" start="119" name="Poss"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23771" sentNo="3" paragNo="137" aPos="0" ID="4106289">
+            <text>The Cantonese love to eat and have the reputation of eating almost anything that walks on four legs .</text>
+            <annotationSet cDate="07/25/2008 01:21:33 PDT Fri" status="UNANN" ID="6555379">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="12" start="4" name="NP"/>
+                    <label end="17" start="14" name="nn"/>
+                    <label end="20" start="19" name="to"/>
+                    <label end="24" start="22" name="VV"/>
+                    <label end="28" start="26" name="cc"/>
+                    <label end="33" start="30" name="VHP"/>
+                    <label end="37" start="35" name="dt"/>
+                    <label end="48" start="39" name="nn"/>
+                    <label end="51" start="50" name="in"/>
+                    <label end="58" start="53" name="VVG"/>
+                    <label end="65" start="60" name="rb"/>
+                    <label end="74" start="67" name="nn"/>
+                    <label end="79" start="76" name="wdt"/>
+                    <label end="85" start="81" name="VVZ"/>
+                    <label end="88" start="87" name="in"/>
+                    <label end="93" start="90" name="cd"/>
+                    <label end="98" start="95" name="nns"/>
+                    <label end="100" start="100" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="12" start="4" name="NT"/>
+                    <label end="20" start="19" name="NT"/>
+                    <label end="28" start="26" name="NT"/>
+                    <label end="37" start="35" name="NT"/>
+                    <label end="51" start="50" name="NT"/>
+                    <label end="65" start="60" name="NT"/>
+                    <label end="79" start="76" name="NT"/>
+                    <label end="88" start="87" name="NT"/>
+                    <label end="100" start="100" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/19/2011 05:33:20 PST Wed" status="MANUAL" ID="6560377">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="48" start="39" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="11110" itype="DNI" name="Entity"/>
+                    <label cBy="MLC" feID="11120" end="98" start="50" name="Reason"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="98" start="50" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="98" start="50" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

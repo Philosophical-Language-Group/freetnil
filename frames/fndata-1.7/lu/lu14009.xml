@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="citadel.n" ID="14009" frame="Buildings" frameID="173" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="" name="Building"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Extra-Thematic" abbrev="Cre" name="Creator"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="" name="Function"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="Mat" name="Material"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD73" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="000000" bgColor="1E90FF" type="Extra-Thematic" abbrev="pos" name="Possessor"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="" name="Relative_location"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="toc" name="Time_of_creation"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="" name="Type"/>
+        </frame>
+    </header>
+    <definition>COD: a fortress protecting or dominating a city.</definition>
+    <lexeme POS="N" name="citadel"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Building"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Building"/>
+                <annoSet ID="6542865"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Building"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Building"/>
+                <annoSet ID="6542865"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23692" sentNo="3" paragNo="30" aPos="0" ID="4101255">
+            <text>They began the process of building their strong citadels , and reinforcing the Christian faith on the islands .</text>
+            <annotationSet cDate="03/12/2007 02:51:27 PDT Mon" status="UNANN" ID="6542048">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="PP"/>
+                    <label end="9" start="5" name="VVD"/>
+                    <label end="13" start="11" name="dt"/>
+                    <label end="21" start="15" name="nn"/>
+                    <label end="24" start="23" name="in"/>
+                    <label end="33" start="26" name="VVG"/>
+                    <label end="39" start="35" name="PP$"/>
+                    <label end="46" start="41" name="jj"/>
+                    <label end="55" start="48" name="nns"/>
+                    <label end="57" start="57" name=","/>
+                    <label end="61" start="59" name="cc"/>
+                    <label end="73" start="63" name="VVG"/>
+                    <label end="77" start="75" name="dt"/>
+                    <label end="87" start="79" name="jj"/>
+                    <label end="93" start="89" name="nn"/>
+                    <label end="96" start="95" name="in"/>
+                    <label end="100" start="98" name="dt"/>
+                    <label end="108" start="102" name="nns"/>
+                    <label end="110" start="110" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="13" start="11" name="NT"/>
+                    <label end="24" start="23" name="NT"/>
+                    <label end="39" start="35" name="NT"/>
+                    <label end="57" start="57" name="NT"/>
+                    <label end="61" start="59" name="NT"/>
+                    <label end="77" start="75" name="NT"/>
+                    <label end="100" start="98" name="NT"/>
+                    <label end="110" start="110" name="NT"/>
+                    <label end="93" start="89" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/20/2007 03:40:29 PDT Tue" status="MANUAL" ID="6542865">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="55" start="48" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="6037" end="55" start="48" name="Building"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

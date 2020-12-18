@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="alternative.n" ID="14406" frame="Alternatives" frameID="1931" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="" name="Number_of_possibilities"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="" name="Salient_entity"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="" name="Situation"/>
+        </frame>
+    </header>
+    <definition>COD: one of two or more available possibilities.</definition>
+    <lexeme POS="N" name="alternative"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Agent"/>
+                <annoSet ID="6555574"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Situation"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Situation"/>
+                <annoSet ID="6555574"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Situation"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Agent"/>
+                <valenceUnit GF="" PT="DNI" FE="Situation"/>
+                <annoSet ID="6555574"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23771" sentNo="5" paragNo="7" aPos="0" ID="4105825">
+            <text>Despite protests by preservationists , there was little alternative .</text>
+            <annotationSet cDate="07/25/2008 01:18:04 PDT Fri" status="UNANN" ID="6554915">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="in"/>
+                    <label end="15" start="8" name="nns"/>
+                    <label end="18" start="17" name="in"/>
+                    <label end="35" start="20" name="nns"/>
+                    <label end="37" start="37" name=","/>
+                    <label end="43" start="39" name="ex"/>
+                    <label end="47" start="45" name="VBD"/>
+                    <label end="54" start="49" name="rb"/>
+                    <label end="66" start="56" name="jj"/>
+                    <label end="68" start="68" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="0" name="NT"/>
+                    <label end="18" start="17" name="NT"/>
+                    <label end="37" start="37" name="NT"/>
+                    <label end="54" start="49" name="NT"/>
+                    <label end="68" start="68" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/28/2008 05:00:18 PDT Mon" status="MANUAL" ID="6555574">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="66" start="56" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="11643" itype="DNI" name="Agent"/>
+                    <label cBy="JKs" feID="11642" itype="DNI" name="Situation"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other">
+                    <label end="43" start="39" name="Null"/>
+                </layer>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="47" start="45" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Finished_Initial" POS="V" name="lure.v" ID="1952" frame="Manipulate_into_doing" frameID="92" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Missile" name="Iran_Missile" ID="23512"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Goods" name="Goods"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Manip" name="Manipulator"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="Mann" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Action" name="Resulting_action"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Victim" name="Victim"/>
+        </frame>
+    </header>
+    <definition>COD: tempt to do something or to go somewhere</definition>
+    <lexeme POS="V" name="lure"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Manipulator"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Manipulator"/>
+                <annoSet ID="6525086"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Resulting_action"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Resulting_action"/>
+                <annoSet ID="6525086"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Victim"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Victim"/>
+                <annoSet ID="6525086"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Manipulator"/>
+            <FE name="Resulting_action"/>
+            <FE name="Victim"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Manipulator"/>
+                <valenceUnit GF="Dep" PT="AVP" FE="Resulting_action"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Victim"/>
+                <annoSet ID="6525086"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23512" sentNo="2" paragNo="32" aPos="0" ID="4096831">
+            <text>In addition , Iran has made a concerted effort to lure back scientists and technical experts who fled the country at the time of the Islamic revolution .</text>
+            <annotationSet cDate="02/25/2005 12:23:32 PST Fri" status="UNANN" ID="6522496">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="10" start="3" name="nn"/>
+                    <label end="12" start="12" name=","/>
+                    <label end="17" start="14" name="NP"/>
+                    <label end="21" start="19" name="VHZ"/>
+                    <label end="26" start="23" name="VVN"/>
+                    <label end="28" start="28" name="dt"/>
+                    <label end="38" start="30" name="jj"/>
+                    <label end="45" start="40" name="nn"/>
+                    <label end="48" start="47" name="to"/>
+                    <label end="53" start="50" name="VV"/>
+                    <label end="58" start="55" name="rp"/>
+                    <label end="69" start="60" name="nns"/>
+                    <label end="73" start="71" name="cc"/>
+                    <label end="83" start="75" name="jj"/>
+                    <label end="91" start="85" name="nns"/>
+                    <label end="95" start="93" name="wp"/>
+                    <label end="100" start="97" name="VVD"/>
+                    <label end="104" start="102" name="dt"/>
+                    <label end="112" start="106" name="nn"/>
+                    <label end="115" start="114" name="in"/>
+                    <label end="119" start="117" name="dt"/>
+                    <label end="124" start="121" name="nn"/>
+                    <label end="127" start="126" name="in"/>
+                    <label end="131" start="129" name="dt"/>
+                    <label end="139" start="133" name="jj"/>
+                    <label end="150" start="141" name="nn"/>
+                    <label end="152" start="152" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="17" start="14" name="GPE"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="12" start="12" name="NT"/>
+                    <label end="17" start="14" name="NT"/>
+                    <label end="28" start="28" name="NT"/>
+                    <label end="48" start="47" name="NT"/>
+                    <label end="58" start="55" name="NT"/>
+                    <label end="73" start="71" name="NT"/>
+                    <label end="95" start="93" name="NT"/>
+                    <label end="104" start="102" name="NT"/>
+                    <label end="115" start="114" name="NT"/>
+                    <label end="119" start="117" name="NT"/>
+                    <label end="127" start="126" name="NT"/>
+                    <label end="131" start="129" name="NT"/>
+                    <label end="152" start="152" name="NT"/>
+                    <label end="21" start="19" name="NT"/>
+                    <label end="26" start="23" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/17/2005 02:53:48 PST Thu" status="MANUAL" ID="6525086">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="53" start="50" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="437" end="150" start="60" name="Victim"/>
+                    <label cBy="RLG" feID="438" end="58" start="55" name="Resulting_action"/>
+                    <label cBy="RLG" feID="436" end="17" start="14" name="Manipulator"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="150" start="60" name="Obj"/>
+                    <label end="58" start="55" name="Dep"/>
+                    <label end="17" start="14" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="150" start="60" name="NP"/>
+                    <label end="58" start="55" name="AVP"/>
+                    <label end="17" start="14" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

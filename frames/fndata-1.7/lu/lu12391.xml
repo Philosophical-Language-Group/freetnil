@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Origin" POS="A" name="finnish.a" ID="12391" frame="Origin" frameID="1103" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Chemical" name="Iran_Chemical" ID="23514"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="ent" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="ori" name="Origin"/>
+        </frame>
+    </header>
+    <definition>COD: of or relating to the Finns or their language.</definition>
+    <lexeme POS="A" name="finnish"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Entity"/>
+                <annoSet ID="6528412"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Origin"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Origin"/>
+                <annoSet ID="6528412"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Entity"/>
+            <FE name="Origin"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Entity"/>
+                <valenceUnit GF="" PT="--" FE="Origin"/>
+                <annoSet ID="6528412"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23514" sentNo="1" paragNo="37" aPos="0" ID="4097106">
+            <text>In 1984 , South Korea supplied Iran with copies of the Finnish Kemira respirators , which proved to be deficient .</text>
+            <annotationSet cDate="02/25/2005 12:43:18 PST Fri" status="UNANN" ID="6522771">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="6" start="3" name="cd"/>
+                    <label end="8" start="8" name=","/>
+                    <label end="14" start="10" name="NP"/>
+                    <label end="20" start="16" name="NP"/>
+                    <label end="29" start="22" name="VVD"/>
+                    <label end="34" start="31" name="NP"/>
+                    <label end="39" start="36" name="in"/>
+                    <label end="46" start="41" name="nns"/>
+                    <label end="49" start="48" name="in"/>
+                    <label end="53" start="51" name="dt"/>
+                    <label end="61" start="55" name="jj"/>
+                    <label end="68" start="63" name="NP"/>
+                    <label end="80" start="70" name="nns"/>
+                    <label end="82" start="82" name=","/>
+                    <label end="88" start="84" name="wdt"/>
+                    <label end="95" start="90" name="VVD"/>
+                    <label end="98" start="97" name="to"/>
+                    <label end="101" start="100" name="vb"/>
+                    <label end="111" start="103" name="jj"/>
+                    <label end="113" start="113" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="6" start="3" name="date"/>
+                    <label end="20" start="10" name="GPE"/>
+                    <label end="34" start="31" name="GPE"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="6" start="3" name="NT"/>
+                    <label end="8" start="8" name="NT"/>
+                    <label end="14" start="10" name="NT"/>
+                    <label end="20" start="16" name="NT"/>
+                    <label end="34" start="31" name="NT"/>
+                    <label end="39" start="36" name="NT"/>
+                    <label end="49" start="48" name="NT"/>
+                    <label end="53" start="51" name="NT"/>
+                    <label end="68" start="63" name="NT"/>
+                    <label end="82" start="82" name="NT"/>
+                    <label end="88" start="84" name="NT"/>
+                    <label end="98" start="97" name="NT"/>
+                    <label end="113" start="113" name="NT"/>
+                    <label end="101" start="100" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/12/2005 02:04:42 PDT Tue" status="MANUAL" ID="6528412">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="61" start="55" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="6525" end="61" start="55" name="Origin"/>
+                    <label cBy="KmG" feID="6524" end="80" start="63" name="Entity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="80" start="63" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="80" start="63" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

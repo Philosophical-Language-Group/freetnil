@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="effect.v" ID="17292" frame="Accomplishment" frameID="1519" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agt" name="Agent"/>
+            <FE fgColor="000000" bgColor="00BFFF" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="dom" name="Domain"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Peripheral" abbrev="" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="goa" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="Ins" name="Instrument"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="" name="Outcome"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="" name="Particular_iteration"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: to cause something to be done</definition>
+    <lexeme POS="V" name="effect"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Agent"/>
+                <annoSet ID="6645518"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Goal"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Goal"/>
+                <annoSet ID="6645518"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Goal"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Agent"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Goal"/>
+                <annoSet ID="6645518"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="2" paragNo="15" aPos="0" ID="4148321">
+            <text>&quot; Great excitement was caused in Esher and the neighbouring district when it was learned late last night that an arrest had been effected in connection with the Oxshott murder .</text>
+            <annotationSet cDate="04/30/2013 05:17:59 PDT Tue" status="UNANN" ID="6645510">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="2" name="jj"/>
+                    <label end="17" start="8" name="nn"/>
+                    <label end="21" start="19" name="VBD"/>
+                    <label end="28" start="23" name="VBN"/>
+                    <label end="31" start="30" name="in"/>
+                    <label end="37" start="33" name="NNP"/>
+                    <label end="41" start="39" name="cc"/>
+                    <label end="45" start="43" name="dt"/>
+                    <label end="58" start="47" name="VBG"/>
+                    <label end="67" start="60" name="nn"/>
+                    <label end="72" start="69" name="wrb"/>
+                    <label end="75" start="74" name="PRP"/>
+                    <label end="79" start="77" name="VBD"/>
+                    <label end="87" start="81" name="VBN"/>
+                    <label end="92" start="89" name="rb"/>
+                    <label end="97" start="94" name="jj"/>
+                    <label end="103" start="99" name="nn"/>
+                    <label end="108" start="105" name="in"/>
+                    <label end="111" start="110" name="dt"/>
+                    <label end="118" start="113" name="nn"/>
+                    <label end="122" start="120" name="VBD"/>
+                    <label end="127" start="124" name="VBN"/>
+                    <label end="136" start="129" name="VBN"/>
+                    <label end="139" start="138" name="in"/>
+                    <label end="150" start="141" name="nn"/>
+                    <label end="155" start="152" name="in"/>
+                    <label end="159" start="157" name="dt"/>
+                    <label end="167" start="161" name="NNP"/>
+                    <label end="174" start="169" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:18:01 PDT Tue" status="MANUAL" ID="6645518">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="136" start="129" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="8283" itype="INI" name="Agent"/>
+                    <label cBy="EGp" feID="8305" end="118" start="110" name="Goal"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="118" start="110" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="118" start="110" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="call.n" ID="14630" frame="Visiting" frameID="1911" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="CNN_AARONBROWN_ENG_20051101_215800.partial-NEW" name="CNN_AARONBROWN_ENG_20051101_215800.partial-NEW" ID="23733"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Agent"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="Dep" name="Dependent_state"/>
+            <FE fgColor="FF0000" bgColor="800080" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="" name="Entity"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Extra-Thematic" abbrev="fre" name="Frequency"/>
+            <FE fgColor="000000" bgColor="00BFFF" type="Extra-Thematic" abbrev="ite" name="Iterations"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="" name="Normal_location"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: a visit</definition>
+    <lexeme POS="N" name="call"/>
+    <valences>
+        <governor type="Sup" lemma="make">
+            <annoSet ID="6550425"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <annoSet ID="6550425"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Entity"/>
+                <annoSet ID="6550425"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Place"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Place"/>
+                <annoSet ID="6550425"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Entity"/>
+            <FE name="Place"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="" PT="DNI" FE="Entity"/>
+                <valenceUnit GF="Dep" PT="N" FE="Place"/>
+                <annoSet ID="6550425"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23733" sentNo="3" paragNo="42" aPos="0" ID="4102486">
+            <text>I made a free house call for you doctor .</text>
+            <annotationSet cDate="08/17/2007 03:25:04 PDT Fri" status="UNANN" ID="6546268">
+                <layer rank="1" name="PENN">
+                    <label end="0" start="0" name="PP"/>
+                    <label end="5" start="2" name="VVD"/>
+                    <label end="7" start="7" name="dt"/>
+                    <label end="12" start="9" name="jj"/>
+                    <label end="18" start="14" name="nn"/>
+                    <label end="23" start="20" name="nn"/>
+                    <label end="27" start="25" name="in"/>
+                    <label end="31" start="29" name="PP"/>
+                    <label end="38" start="33" name="nn"/>
+                    <label end="40" start="40" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="0" start="0" name="NT"/>
+                    <label end="7" start="7" name="NT"/>
+                    <label end="27" start="25" name="NT"/>
+                    <label end="31" start="29" name="NT"/>
+                    <label end="40" start="40" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/07/2007 01:41:12 PST Wed" status="MANUAL" ID="6550425">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="23" start="20" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="11435" end="0" start="0" name="Agent"/>
+                    <label cBy="KmG" feID="11436" itype="DNI" name="Entity"/>
+                    <label cBy="KmG" feID="11491" end="18" start="14" name="Place"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="0" start="0" name="Ext"/>
+                    <label end="18" start="14" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="0" start="0" name="NP"/>
+                    <label end="18" start="14" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="5" start="2" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

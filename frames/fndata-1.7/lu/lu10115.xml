@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="advance.v" ID="10115" frame="Change_event_time" frameID="691" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Bell Ringing" name="BellRinging" ID="23009"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Core" abbrev="" name="Cause"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Destination_event"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD73" type="Peripheral" abbrev="" name="Destination_time"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="" name="Interval"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="" name="Landmark_time"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: cause to occur at an earlier date than planned.</definition>
+    <lexeme POS="V" name="advance"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <annoSet ID="4529921"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Event"/>
+                <annoSet ID="4529921"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Event"/>
+                <annoSet ID="4529921"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23009" sentNo="2" paragNo="13" aPos="0" ID="2824226">
+            <text>Skilled ringers use their wrists to advance or retard the next swing , so that one bell can swap places with another in the following change .</text>
+            <annotationSet cDate="02/05/2004 08:29:28 PST Thu" status="UNANN" ID="4528221">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="jj"/>
+                    <label end="14" start="8" name="nns"/>
+                    <label end="18" start="16" name="VVP"/>
+                    <label end="24" start="20" name="PP$"/>
+                    <label end="31" start="26" name="nns"/>
+                    <label end="34" start="33" name="to"/>
+                    <label end="42" start="36" name="VV"/>
+                    <label end="45" start="44" name="cc"/>
+                    <label end="52" start="47" name="VV"/>
+                    <label end="56" start="54" name="dt"/>
+                    <label end="61" start="58" name="jj"/>
+                    <label end="67" start="63" name="nn"/>
+                    <label end="69" start="69" name=","/>
+                    <label end="72" start="71" name="rb"/>
+                    <label end="77" start="74" name="in"/>
+                    <label end="81" start="79" name="cd"/>
+                    <label end="86" start="83" name="nn"/>
+                    <label end="90" start="88" name="md"/>
+                    <label end="95" start="92" name="VV"/>
+                    <label end="102" start="97" name="nns"/>
+                    <label end="107" start="104" name="in"/>
+                    <label end="115" start="109" name="dt"/>
+                    <label end="118" start="117" name="in"/>
+                    <label end="122" start="120" name="dt"/>
+                    <label end="132" start="124" name="VVG"/>
+                    <label end="139" start="134" name="nn"/>
+                    <label end="141" start="141" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="34" start="33" name="NT"/>
+                    <label end="69" start="69" name="NT"/>
+                    <label end="72" start="71" name="NT"/>
+                    <label end="118" start="117" name="NT"/>
+                    <label end="141" start="141" name="NT"/>
+                    <label end="24" start="20" name="NT"/>
+                    <label end="45" start="44" name="NT"/>
+                    <label end="56" start="54" name="NT"/>
+                    <label end="77" start="74" name="NT"/>
+                    <label end="90" start="88" name="NT"/>
+                    <label end="107" start="104" name="NT"/>
+                    <label end="122" start="120" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/19/2004 12:20:50 PDT Thu" status="MANUAL" ID="4529921">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="42" start="36" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="4577" end="14" start="0" name="Agent"/>
+                    <label cBy="MJE" feID="4579" end="67" start="54" name="Event"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="14" start="0" name="Ext"/>
+                    <label end="67" start="54" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="14" start="0" name="NP"/>
+                    <label end="67" start="54" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

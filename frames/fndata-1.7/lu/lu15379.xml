@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Vehicle" POS="N" name="yacht.n" ID="15379" frame="Vehicle" frameID="429" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Hong Kong" name="IntroHongKong" ID="23757"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Iti" name="Itinerary"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Prop" name="Means_of_propulsion"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Poss" name="Possessor"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="use" name="Use"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="Veh" name="Vehicle"/>
+        </frame>
+    </header>
+    <definition>COD: a boat with sails and sometimes an engine, used for either racing or travelling on for pleasure:</definition>
+    <lexeme POS="N" name="yacht"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Vehicle"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Vehicle"/>
+                <annoSet ID="6559712"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Vehicle"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Vehicle"/>
+                <annoSet ID="6559712"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23757" sentNo="1" paragNo="10" aPos="0" ID="4104019">
+            <text>Sightseeing in Hong Kong starts at sea level with the enthralling water traffic?—?a mix of freighters , ferries , tugs , junks , and yachts .</text>
+            <annotationSet cDate="07/21/2008 03:12:23 PDT Mon" status="UNANN" ID="6552831">
+                <layer rank="1" name="PENN">
+                    <label end="10" start="0" name="nn"/>
+                    <label end="13" start="12" name="in"/>
+                    <label end="18" start="15" name="NP"/>
+                    <label end="23" start="20" name="NP"/>
+                    <label end="30" start="25" name="VVZ"/>
+                    <label end="33" start="32" name="in"/>
+                    <label end="37" start="35" name="nn"/>
+                    <label end="43" start="39" name="nn"/>
+                    <label end="48" start="45" name="in"/>
+                    <label end="52" start="50" name="dt"/>
+                    <label end="64" start="54" name="VVG"/>
+                    <label end="70" start="66" name="nn"/>
+                    <label end="82" start="72" name="nn"/>
+                    <label end="86" start="84" name="nn"/>
+                    <label end="89" start="88" name="in"/>
+                    <label end="100" start="91" name="nns"/>
+                    <label end="102" start="102" name=","/>
+                    <label end="110" start="104" name="nns"/>
+                    <label end="112" start="112" name=","/>
+                    <label end="117" start="114" name="nns"/>
+                    <label end="119" start="119" name=","/>
+                    <label end="125" start="121" name="nns"/>
+                    <label end="127" start="127" name=","/>
+                    <label end="131" start="129" name="cc"/>
+                    <label end="138" start="133" name="nns"/>
+                    <label end="140" start="140" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="23" start="15" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="18" start="15" name="NT"/>
+                    <label end="23" start="20" name="NT"/>
+                    <label end="48" start="45" name="NT"/>
+                    <label end="52" start="50" name="NT"/>
+                    <label end="89" start="88" name="NT"/>
+                    <label end="102" start="102" name="NT"/>
+                    <label end="112" start="112" name="NT"/>
+                    <label end="119" start="119" name="NT"/>
+                    <label end="127" start="127" name="NT"/>
+                    <label end="131" start="129" name="NT"/>
+                    <label end="140" start="140" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="12/08/2010 02:07:39 PST Wed" status="MANUAL" ID="6559712">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="138" start="133" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="3958" end="138" start="133" name="Vehicle"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

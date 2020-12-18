@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="finished.a" ID="5763" frame="Activity_done_state" frameID="182" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Jerusalem" name="HistoryOfJerusalem" ID="23647"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Act" name="Activity"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agent" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: having nothing more to be done</definition>
+    <lexeme POS="A" name="finished"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Activity"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Activity"/>
+                <annoSet ID="6538897"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Agent"/>
+                <annoSet ID="6538897"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Time"/>
+                <annoSet ID="6538897"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Activity"/>
+            <FE name="Agent"/>
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Activity"/>
+                <valenceUnit GF="" PT="CNI" FE="Agent"/>
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Time"/>
+                <annoSet ID="6538897"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23647" sentNo="2" paragNo="9" aPos="0" ID="4100343">
+            <text>The Second Temple was finished in 515 b.c. , but much of the city still lay in ruins .</text>
+            <annotationSet cDate="09/29/2006 11:00:34 PDT Fri" status="UNANN" ID="6538423">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="9" start="4" name="NP"/>
+                    <label end="16" start="11" name="NP"/>
+                    <label end="20" start="18" name="VBD"/>
+                    <label end="29" start="22" name="VVN"/>
+                    <label end="32" start="31" name="in"/>
+                    <label end="36" start="34" name="cd"/>
+                    <label end="41" start="38" name="nn"/>
+                    <label end="43" start="43" name=","/>
+                    <label end="47" start="45" name="cc"/>
+                    <label end="52" start="49" name="rb"/>
+                    <label end="55" start="54" name="in"/>
+                    <label end="59" start="57" name="dt"/>
+                    <label end="64" start="61" name="nn"/>
+                    <label end="70" start="66" name="rb"/>
+                    <label end="74" start="72" name="VVD"/>
+                    <label end="77" start="76" name="in"/>
+                    <label end="83" start="79" name="nns"/>
+                    <label end="85" start="85" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="16" start="4" name="organization"/>
+                    <label end="41" start="34" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="9" start="4" name="NT"/>
+                    <label end="16" start="11" name="NT"/>
+                    <label end="20" start="18" name="NT"/>
+                    <label end="32" start="31" name="NT"/>
+                    <label end="36" start="34" name="NT"/>
+                    <label end="43" start="43" name="NT"/>
+                    <label end="59" start="57" name="NT"/>
+                    <label end="85" start="85" name="NT"/>
+                    <label end="77" start="76" name="NT"/>
+                    <label end="47" start="45" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/18/2006 01:14:17 PDT Wed" status="MANUAL" ID="6538897">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="29" start="22" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="2754" end="16" start="0" name="Activity"/>
+                    <label cBy="KmG" feID="10386" end="41" start="31" name="Time"/>
+                    <label cBy="KmG" feID="1416" itype="CNI" name="Agent"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="16" start="0" name="Ext"/>
+                    <label end="41" start="31" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="41" start="31" name="PP"/>
+                    <label end="16" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="20" start="18" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

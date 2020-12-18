@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="optimistic.a" ID="16989" frame="Attitude_description" frameID="2713" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_3" name="Fires_3" ID="25618"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Att" name="Attitude"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Cog" name="Cognizer"/>
+            <FE fgColor="000000" bgColor="FF00FF" type="Peripheral" abbrev="Deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="State" name="State_of_affairs"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: having a good outlook</definition>
+    <lexeme POS="A" name="optimistic"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Attitude"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Attitude"/>
+                <annoSet ID="6672440"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <annoSet ID="6672440"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Degree"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Degree"/>
+                <annoSet ID="6672440"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="Sub" FE="Degree"/>
+                <annoSet ID="6672440"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="State_of_affairs"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="State_of_affairs"/>
+                <annoSet ID="6672440"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Time"/>
+                <annoSet ID="6672440"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Attitude"/>
+            <FE name="Cognizer"/>
+            <FE name="Degree"/>
+            <FE name="Degree"/>
+            <FE name="State_of_affairs"/>
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Attitude"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <valenceUnit GF="Dep" PT="AVP" FE="Degree"/>
+                <valenceUnit GF="Dep" PT="Sub" FE="Degree"/>
+                <valenceUnit GF="" PT="INI" FE="State_of_affairs"/>
+                <valenceUnit GF="Dep" PT="NP" FE="Time"/>
+                <annoSet ID="6672440"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25618" sentNo="1" paragNo="9" aPos="0" ID="4165005">
+            <text>'' I 'm feeling a lot more optimistic today than I did yesterday .</text>
+            <annotationSet cDate="07/17/2014 11:43:49 PDT Thu" status="UNANN" ID="6669175">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="''"/>
+                    <label end="3" start="3" name="PP"/>
+                    <label end="6" start="5" name="vbp"/>
+                    <label end="14" start="8" name="VVG"/>
+                    <label end="16" start="16" name="dt"/>
+                    <label end="20" start="18" name="nn"/>
+                    <label end="25" start="22" name="rbr"/>
+                    <label end="36" start="27" name="jj"/>
+                    <label end="42" start="38" name="nn"/>
+                    <label end="47" start="44" name="in"/>
+                    <label end="49" start="49" name="PP"/>
+                    <label end="53" start="51" name="VVD"/>
+                    <label end="63" start="55" name="nn"/>
+                    <label end="65" start="65" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="3" start="3" name="NT"/>
+                    <label end="6" start="5" name="NT"/>
+                    <label end="47" start="44" name="NT"/>
+                    <label end="49" start="49" name="NT"/>
+                    <label end="53" start="51" name="NT"/>
+                    <label end="65" start="65" name="NT"/>
+                    <label end="25" start="22" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/28/2014 06:42:22 PDT Mon" status="MANUAL" ID="6672440">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="36" start="27" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="15553" end="36" start="27" name="Attitude"/>
+                    <label cBy="MJE" feID="15552" end="3" start="3" name="Cognizer"/>
+                    <label cBy="MJE" feID="15555" end="25" start="16" name="Degree"/>
+                    <label cBy="MJE" feID="15554" itype="INI" name="State_of_affairs"/>
+                    <label cBy="MJE" feID="15933" end="42" start="38" name="Time"/>
+                    <label cBy="MJE" feID="15555" end="63" start="44" name="Degree"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="3" start="3" name="Ext"/>
+                    <label end="25" start="16" name="Dep"/>
+                    <label end="42" start="38" name="Dep"/>
+                    <label end="63" start="44" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="3" start="3" name="NP"/>
+                    <label end="25" start="16" name="AVP"/>
+                    <label end="42" start="38" name="NP"/>
+                    <label end="63" start="44" name="Sub"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

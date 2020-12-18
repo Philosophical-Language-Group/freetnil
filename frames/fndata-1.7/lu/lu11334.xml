@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="boundary.n" ID="11334" frame="Boundary" frameID="329" totalAnnotated="5" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Jerusalem" name="HistoryOfJerusalem" ID="23647"/>
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Bound" name="Boundary"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Ents" name="Entities"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Ent" name="Entity"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Peripheral" abbrev="rel_loc" name="Relative_location"/>
+        </frame>
+    </header>
+    <definition>COD: a line marking the limits of an area.</definition>
+    <lexeme POS="N" name="boundary"/>
+    <valences>
+        <governor type="Ctrlr" lemma="mark">
+            <annoSet ID="6559933"/>
+        </governor>
+        <FERealization total="5">
+            <FE name="Boundary"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="DEN" FE="Boundary"/>
+                <annoSet ID="6539381"/>
+                <annoSet ID="6542937"/>
+                <annoSet ID="6561367"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Boundary"/>
+                <annoSet ID="6560285"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Boundary"/>
+                <annoSet ID="6559933"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="5">
+            <FE name="Entities"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="DNI" FE="Entities"/>
+                <annoSet ID="6539381"/>
+                <annoSet ID="6542937"/>
+                <annoSet ID="6560285"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="PP[between]" FE="Entities"/>
+                <annoSet ID="6559933"/>
+                <annoSet ID="6561367"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Boundary"/>
+            <FE name="Boundary"/>
+            <FE name="Entities"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Boundary"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Boundary"/>
+                <valenceUnit GF="Dep" PT="PP[between]" FE="Entities"/>
+                <annoSet ID="6559933"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="4">
+            <FE name="Boundary"/>
+            <FE name="Entities"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Boundary"/>
+                <valenceUnit GF="" PT="DNI" FE="Entities"/>
+                <annoSet ID="6539381"/>
+                <annoSet ID="6542937"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Boundary"/>
+                <valenceUnit GF="Dep" PT="PP[between]" FE="Entities"/>
+                <annoSet ID="6561367"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Boundary"/>
+                <valenceUnit GF="" PT="DNI" FE="Entities"/>
+                <annoSet ID="6560285"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23647" sentNo="2" paragNo="29" aPos="0" ID="4100430">
+            <text>Political and religious boundaries were aggravated by occasional incidents of terrorism or sniping until the Six Day War in June 1967 .</text>
+            <annotationSet cDate="09/29/2006 11:01:32 PDT Fri" status="UNANN" ID="6538510">
+                <layer rank="1" name="PENN">
+                    <label end="8" start="0" name="jj"/>
+                    <label end="12" start="10" name="cc"/>
+                    <label end="22" start="14" name="jj"/>
+                    <label end="33" start="24" name="nns"/>
+                    <label end="38" start="35" name="VBD"/>
+                    <label end="49" start="40" name="VVN"/>
+                    <label end="52" start="51" name="in"/>
+                    <label end="63" start="54" name="jj"/>
+                    <label end="73" start="65" name="nns"/>
+                    <label end="76" start="75" name="in"/>
+                    <label end="86" start="78" name="nn"/>
+                    <label end="89" start="88" name="cc"/>
+                    <label end="97" start="91" name="nn"/>
+                    <label end="103" start="99" name="in"/>
+                    <label end="107" start="105" name="dt"/>
+                    <label end="111" start="109" name="cd"/>
+                    <label end="115" start="113" name="NP"/>
+                    <label end="119" start="117" name="NP"/>
+                    <label end="122" start="121" name="in"/>
+                    <label end="127" start="124" name="NP"/>
+                    <label end="132" start="129" name="cd"/>
+                    <label end="134" start="134" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="132" start="124" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="12" start="10" name="NT"/>
+                    <label end="38" start="35" name="NT"/>
+                    <label end="52" start="51" name="NT"/>
+                    <label end="76" start="75" name="NT"/>
+                    <label end="89" start="88" name="NT"/>
+                    <label end="107" start="105" name="NT"/>
+                    <label end="111" start="109" name="NT"/>
+                    <label end="115" start="113" name="NT"/>
+                    <label end="119" start="117" name="NT"/>
+                    <label end="122" start="121" name="NT"/>
+                    <label end="132" start="129" name="NT"/>
+                    <label end="134" start="134" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/08/2006 02:32:00 PST Wed" status="MANUAL" ID="6539381">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="33" start="24" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="3678" end="33" start="24" name="Boundary"/>
+                    <label cBy="KmG" feID="3680" itype="DNI" name="Entities"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23692" sentNo="2" paragNo="35" aPos="0" ID="4101267">
+            <text>In 1770 , Russia came to aid the Greeks ( defined by their Orthodox religion rather than by historical geographical boundaries ) , declaring war on the Ottoman Empire and occupying several Aegean islands until 1774 .</text>
+            <annotationSet cDate="03/12/2007 02:51:31 PDT Mon" status="UNANN" ID="6542060">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="6" start="3" name="cd"/>
+                    <label end="8" start="8" name=","/>
+                    <label end="15" start="10" name="NP"/>
+                    <label end="20" start="17" name="VVD"/>
+                    <label end="23" start="22" name="to"/>
+                    <label end="27" start="25" name="VV"/>
+                    <label end="31" start="29" name="dt"/>
+                    <label end="38" start="33" name="NPS"/>
+                    <label end="40" start="40" name="("/>
+                    <label end="48" start="42" name="VVN"/>
+                    <label end="51" start="50" name="in"/>
+                    <label end="57" start="53" name="PP$"/>
+                    <label end="66" start="59" name="NP"/>
+                    <label end="75" start="68" name="nn"/>
+                    <label end="82" start="77" name="rb"/>
+                    <label end="87" start="84" name="in"/>
+                    <label end="90" start="89" name="in"/>
+                    <label end="101" start="92" name="jj"/>
+                    <label end="114" start="103" name="jj"/>
+                    <label end="125" start="116" name="nns"/>
+                    <label end="127" start="127" name=")"/>
+                    <label end="129" start="129" name=","/>
+                    <label end="139" start="131" name="VVG"/>
+                    <label end="143" start="141" name="nn"/>
+                    <label end="146" start="145" name="in"/>
+                    <label end="150" start="148" name="dt"/>
+                    <label end="158" start="152" name="NP"/>
+                    <label end="165" start="160" name="NP"/>
+                    <label end="169" start="167" name="cc"/>
+                    <label end="179" start="171" name="jj"/>
+                    <label end="187" start="181" name="jj"/>
+                    <label end="194" start="189" name="jj"/>
+                    <label end="202" start="196" name="nns"/>
+                    <label end="208" start="204" name="in"/>
+                    <label end="213" start="210" name="cd"/>
+                    <label end="215" start="215" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="6" start="3" name="date"/>
+                    <label end="15" start="10" name="GPE"/>
+                    <label end="202" start="189" name="location"/>
+                    <label end="213" start="210" name="date"/>
+                    <label end="165" start="152" name="GPE"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="3" name="NT"/>
+                    <label end="8" start="8" name="NT"/>
+                    <label end="15" start="10" name="NT"/>
+                    <label end="23" start="22" name="NT"/>
+                    <label end="31" start="29" name="NT"/>
+                    <label end="40" start="40" name="NT"/>
+                    <label end="51" start="50" name="NT"/>
+                    <label end="57" start="53" name="NT"/>
+                    <label end="66" start="59" name="NT"/>
+                    <label end="82" start="77" name="NT"/>
+                    <label end="87" start="84" name="NT"/>
+                    <label end="90" start="89" name="NT"/>
+                    <label end="127" start="127" name="NT"/>
+                    <label end="129" start="129" name="NT"/>
+                    <label end="146" start="145" name="NT"/>
+                    <label end="150" start="148" name="NT"/>
+                    <label end="158" start="152" name="NT"/>
+                    <label end="169" start="167" name="NT"/>
+                    <label end="208" start="204" name="NT"/>
+                    <label end="213" start="210" name="NT"/>
+                    <label end="215" start="215" name="NT"/>
+                    <label end="75" start="68" name="Nonrelational"/>
+                    <label end="194" start="189" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/21/2007 10:46:39 PDT Wed" status="MANUAL" ID="6542937">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="125" start="116" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="3680" itype="DNI" name="Entities"/>
+                    <label cBy="KmG" feID="3678" end="127" start="116" name="Boundary"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23771" sentNo="1" paragNo="54" aPos="0" ID="4105985">
+            <text>Nathan Road goes all the way up to Boundary Street , which marks the boundary between Kowloon and the New Territories .</text>
+            <annotationSet cDate="07/25/2008 01:18:51 PDT Fri" status="UNANN" ID="6555075">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="NP"/>
+                    <label end="10" start="7" name="NP"/>
+                    <label end="15" start="12" name="VVZ"/>
+                    <label end="19" start="17" name="pdt"/>
+                    <label end="23" start="21" name="dt"/>
+                    <label end="27" start="25" name="nn"/>
+                    <label end="30" start="29" name="rb"/>
+                    <label end="33" start="32" name="to"/>
+                    <label end="42" start="35" name="NP"/>
+                    <label end="49" start="44" name="NP"/>
+                    <label end="51" start="51" name=","/>
+                    <label end="57" start="53" name="wdt"/>
+                    <label end="63" start="59" name="VVZ"/>
+                    <label end="67" start="65" name="dt"/>
+                    <label end="76" start="69" name="nn"/>
+                    <label end="84" start="78" name="in"/>
+                    <label end="92" start="86" name="NP"/>
+                    <label end="96" start="94" name="cc"/>
+                    <label end="100" start="98" name="dt"/>
+                    <label end="104" start="102" name="NP"/>
+                    <label end="116" start="106" name="NP"/>
+                    <label end="118" start="118" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="10" start="0" name="person"/>
+                    <label end="49" start="35" name="location"/>
+                    <label end="92" start="86" name="location"/>
+                    <label end="116" start="102" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="0" name="NT"/>
+                    <label end="19" start="17" name="NT"/>
+                    <label end="23" start="21" name="NT"/>
+                    <label end="42" start="35" name="NT"/>
+                    <label end="51" start="51" name="NT"/>
+                    <label end="57" start="53" name="NT"/>
+                    <label end="67" start="65" name="NT"/>
+                    <label end="92" start="86" name="NT"/>
+                    <label end="96" start="94" name="NT"/>
+                    <label end="100" start="98" name="NT"/>
+                    <label end="118" start="118" name="NT"/>
+                    <label end="30" start="29" name="NT"/>
+                    <label end="33" start="32" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/13/2011 11:00:37 PST Thu" status="MANUAL" ID="6559933">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="76" start="69" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="3680" end="116" start="78" name="Entities"/>
+                    <label cBy="AlK" feID="3678" end="49" start="35" name="Boundary"/>
+                    <label cBy="AlK" feID="3678" end="57" start="53" name="Boundary"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="116" start="78" name="Dep"/>
+                    <label end="49" start="35" name="Ext"/>
+                    <label end="57" start="53" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="116" start="78" name="PP"/>
+                    <label end="49" start="35" name="NP"/>
+                    <label end="57" start="53" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other">
+                    <label end="57" start="53" name="Rel"/>
+                    <label end="49" start="35" name="Ant"/>
+                </layer>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="63" start="59" name="Ctrlr"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23771" sentNo="2" paragNo="143" aPos="0" ID="4106306">
+            <text>Visitors need a visa to enter China , and must disembark at the border ( now called `` boundary '' ) checkpoint , Lo Wai .</text>
+            <annotationSet cDate="07/25/2008 01:21:46 PDT Fri" status="UNANN" ID="6555396">
+                <layer rank="1" name="PENN">
+                    <label end="7" start="0" name="nns"/>
+                    <label end="12" start="9" name="VVP"/>
+                    <label end="14" start="14" name="dt"/>
+                    <label end="19" start="16" name="nn"/>
+                    <label end="22" start="21" name="to"/>
+                    <label end="28" start="24" name="VV"/>
+                    <label end="34" start="30" name="NP"/>
+                    <label end="36" start="36" name=","/>
+                    <label end="40" start="38" name="cc"/>
+                    <label end="45" start="42" name="md"/>
+                    <label end="55" start="47" name="VV"/>
+                    <label end="58" start="57" name="in"/>
+                    <label end="62" start="60" name="dt"/>
+                    <label end="69" start="64" name="nn"/>
+                    <label end="71" start="71" name="("/>
+                    <label end="75" start="73" name="rb"/>
+                    <label end="82" start="77" name="VVN"/>
+                    <label end="85" start="84" name="``"/>
+                    <label end="94" start="87" name="nn"/>
+                    <label end="97" start="96" name="''"/>
+                    <label end="99" start="99" name=")"/>
+                    <label end="110" start="101" name="nn"/>
+                    <label end="112" start="112" name=","/>
+                    <label end="115" start="114" name="NP"/>
+                    <label end="119" start="117" name="NP"/>
+                    <label end="121" start="121" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="34" start="30" name="location"/>
+                    <label end="119" start="114" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="14" start="14" name="NT"/>
+                    <label end="22" start="21" name="NT"/>
+                    <label end="34" start="30" name="NT"/>
+                    <label end="36" start="36" name="NT"/>
+                    <label end="40" start="38" name="NT"/>
+                    <label end="58" start="57" name="NT"/>
+                    <label end="62" start="60" name="NT"/>
+                    <label end="71" start="71" name="NT"/>
+                    <label end="75" start="73" name="NT"/>
+                    <label end="85" start="84" name="NT"/>
+                    <label end="97" start="96" name="NT"/>
+                    <label end="99" start="99" name="NT"/>
+                    <label end="112" start="112" name="NT"/>
+                    <label end="115" start="114" name="NT"/>
+                    <label end="119" start="117" name="NT"/>
+                    <label end="121" start="121" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/19/2011 04:00:08 PST Wed" status="MANUAL" ID="6560285">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="94" start="87" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="3678" end="110" start="101" name="Boundary"/>
+                    <label cBy="MLC" feID="3680" itype="DNI" name="Entities"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="110" start="101" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="110" start="101" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23771" sentNo="6" paragNo="111" aPos="0" ID="4106180">
+            <text>The Barrier Gate ( Portas do Cerco ) , which was built more than a century ago , marks the boundary between the enclave of Macau and the People's Republic of China .</text>
+            <annotationSet cDate="07/25/2008 01:20:29 PDT Fri" status="UNANN" ID="6555270">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="10" start="4" name="NP"/>
+                    <label end="15" start="12" name="NP"/>
+                    <label end="17" start="17" name="("/>
+                    <label end="24" start="19" name="NP"/>
+                    <label end="27" start="26" name="VVP"/>
+                    <label end="33" start="29" name="NP"/>
+                    <label end="35" start="35" name=")"/>
+                    <label end="37" start="37" name=","/>
+                    <label end="43" start="39" name="wdt"/>
+                    <label end="47" start="45" name="VBD"/>
+                    <label end="53" start="49" name="VVN"/>
+                    <label end="58" start="55" name="rbr"/>
+                    <label end="63" start="60" name="in"/>
+                    <label end="65" start="65" name="dt"/>
+                    <label end="73" start="67" name="nn"/>
+                    <label end="77" start="75" name="rb"/>
+                    <label end="79" start="79" name=","/>
+                    <label end="85" start="81" name="VVZ"/>
+                    <label end="89" start="87" name="dt"/>
+                    <label end="98" start="91" name="nn"/>
+                    <label end="106" start="100" name="in"/>
+                    <label end="110" start="108" name="dt"/>
+                    <label end="118" start="112" name="nn"/>
+                    <label end="121" start="120" name="in"/>
+                    <label end="127" start="123" name="NP"/>
+                    <label end="131" start="129" name="cc"/>
+                    <label end="135" start="133" name="dt"/>
+                    <label end="144" start="137" name="NP"/>
+                    <label end="153" start="146" name="NP"/>
+                    <label end="156" start="155" name="in"/>
+                    <label end="162" start="158" name="NP"/>
+                    <label end="164" start="164" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="15" start="4" name="location"/>
+                    <label end="33" start="19" name="organization"/>
+                    <label end="127" start="123" name="location"/>
+                    <label end="162" start="137" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="10" start="4" name="NT"/>
+                    <label end="17" start="17" name="NT"/>
+                    <label end="24" start="19" name="NT"/>
+                    <label end="27" start="26" name="NT"/>
+                    <label end="33" start="29" name="NT"/>
+                    <label end="35" start="35" name="NT"/>
+                    <label end="37" start="37" name="NT"/>
+                    <label end="43" start="39" name="NT"/>
+                    <label end="47" start="45" name="NT"/>
+                    <label end="58" start="55" name="NT"/>
+                    <label end="63" start="60" name="NT"/>
+                    <label end="65" start="65" name="NT"/>
+                    <label end="79" start="79" name="NT"/>
+                    <label end="89" start="87" name="NT"/>
+                    <label end="110" start="108" name="NT"/>
+                    <label end="121" start="120" name="NT"/>
+                    <label end="127" start="123" name="NT"/>
+                    <label end="131" start="129" name="NT"/>
+                    <label end="135" start="133" name="NT"/>
+                    <label end="144" start="137" name="NT"/>
+                    <label end="153" start="146" name="NT"/>
+                    <label end="156" start="155" name="NT"/>
+                    <label end="162" start="158" name="NT"/>
+                    <label end="164" start="164" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/27/2011 01:29:22 PST Thu" status="MANUAL" ID="6561367">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="98" start="91" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="3678" end="98" start="91" name="Boundary"/>
+                    <label cBy="MLC" feID="3680" end="162" start="100" name="Entities"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="162" start="100" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="162" start="100" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="relationship.n" ID="17685" frame="Personal_relationship" frameID="102" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Peripheral" abbrev="" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Means" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="" name="Partners"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Partner_1" name="Partner_1"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Partner_2" name="Partner_2"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="rel" name="Relationship"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Peripheral" abbrev="Src" name="Source_of_relationship"/>
+        </frame>
+    </header>
+    <definition>FN: An established romantic, sexual, or platonic connection</definition>
+    <lexeme POS="N" name="relationship"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Duration"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Duration"/>
+                <annoSet ID="6672887"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Partners"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="NP" FE="Partners"/>
+                <annoSet ID="6672887"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Relationship"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Relationship"/>
+                <annoSet ID="6672887"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Duration"/>
+            <FE name="Partners"/>
+            <FE name="Relationship"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Duration"/>
+                <valenceUnit GF="Gen" PT="NP" FE="Partners"/>
+                <valenceUnit GF="" PT="DEN" FE="Relationship"/>
+                <annoSet ID="6672887"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added"/>
+</lexUnit>

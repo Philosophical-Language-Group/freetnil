@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="leave.v" ID="14569" frame="Quitting" frameID="325" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="AFGP-2002-600045-Trans" name="AFGP-2002-600045-Trans" ID="23740"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Empee" name="Employee"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Emper" name="Employer"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Field" name="Field"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Peripheral" abbrev="Means" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="Posit" name="Position"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: quit a job</definition>
+    <lexeme POS="V" name="leave"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Employee"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Employee"/>
+                <annoSet ID="6550620"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Employer"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Employer"/>
+                <annoSet ID="6550620"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Explanation"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[without]" FE="Explanation"/>
+                <annoSet ID="6550620"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Employee"/>
+            <FE name="Employee"/>
+            <FE name="Employer"/>
+            <FE name="Explanation"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Employee"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Employee"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Employer"/>
+                <valenceUnit GF="Dep" PT="PP[without]" FE="Explanation"/>
+                <annoSet ID="6550620"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23740" sentNo="8" paragNo="15" aPos="0" ID="4103247">
+            <text>5- The brother who wants to leave AL-QAEDA without a legitimate excuse does not qualify for financial assistance or any of the previously mentioned privileges .</text>
+            <annotationSet cDate="08/24/2007 01:46:57 PDT Fri" status="UNANN" ID="6547070">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="cd"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="13" start="7" name="nn"/>
+                    <label end="17" start="15" name="wp"/>
+                    <label end="23" start="19" name="VVZ"/>
+                    <label end="26" start="25" name="to"/>
+                    <label end="32" start="28" name="VV"/>
+                    <label end="41" start="34" name="NP"/>
+                    <label end="49" start="43" name="in"/>
+                    <label end="51" start="51" name="dt"/>
+                    <label end="62" start="53" name="jj"/>
+                    <label end="69" start="64" name="nn"/>
+                    <label end="74" start="71" name="VVZ"/>
+                    <label end="78" start="76" name="rb"/>
+                    <label end="86" start="80" name="VV"/>
+                    <label end="90" start="88" name="in"/>
+                    <label end="100" start="92" name="jj"/>
+                    <label end="111" start="102" name="nn"/>
+                    <label end="114" start="113" name="cc"/>
+                    <label end="118" start="116" name="dt"/>
+                    <label end="121" start="120" name="in"/>
+                    <label end="125" start="123" name="dt"/>
+                    <label end="136" start="127" name="rb"/>
+                    <label end="146" start="138" name="VVN"/>
+                    <label end="157" start="148" name="nns"/>
+                    <label end="159" start="159" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="41" start="34" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="17" start="15" name="NT"/>
+                    <label end="26" start="25" name="NT"/>
+                    <label end="41" start="34" name="NT"/>
+                    <label end="49" start="43" name="NT"/>
+                    <label end="51" start="51" name="NT"/>
+                    <label end="74" start="71" name="NT"/>
+                    <label end="78" start="76" name="NT"/>
+                    <label end="90" start="88" name="NT"/>
+                    <label end="114" start="113" name="NT"/>
+                    <label end="121" start="120" name="NT"/>
+                    <label end="125" start="123" name="NT"/>
+                    <label end="159" start="159" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/08/2007 02:41:19 PST Thu" status="MANUAL" ID="6550620">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="32" start="28" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="2831" end="41" start="34" name="Employer"/>
+                    <label cBy="JKs" feID="2830" end="13" start="3" name="Employee"/>
+                    <label cBy="JKs" feID="2830" end="17" start="15" name="Employee"/>
+                    <label cBy="JKs" feID="2849" end="69" start="43" name="Explanation"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="41" start="34" name="Obj"/>
+                    <label end="13" start="3" name="Ext"/>
+                    <label end="17" start="15" name="Ext"/>
+                    <label end="69" start="43" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="41" start="34" name="NP"/>
+                    <label end="13" start="3" name="NP"/>
+                    <label end="17" start="15" name="NP"/>
+                    <label end="69" start="43" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other">
+                    <label end="13" start="3" name="Ant"/>
+                    <label end="17" start="15" name="Rel"/>
+                </layer>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

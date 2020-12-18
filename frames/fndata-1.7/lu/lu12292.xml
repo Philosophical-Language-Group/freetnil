@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="estimation.n" ID="12292" frame="Estimated_value" frameID="1516" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="CNN_AARONBROWN_ENG_20051101_215800.partial-NEW" name="CNN_AARONBROWN_ENG_20051101_215800.partial-NEW" ID="23733"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="d0d0d0" type="Core" abbrev="est" name="Estimation"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="evi" name="Evidence"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="ite" name="Item"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="que" name="Question"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="val" name="Value"/>
+        </frame>
+    </header>
+    <definition>FN: approximate calculation (of a feature's value)</definition>
+    <lexeme POS="N" name="estimation"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Cognizer"/>
+                <annoSet ID="6549216"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Estimation"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Estimation"/>
+                <annoSet ID="6549216"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Item"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Item"/>
+                <annoSet ID="6549216"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="Estimation"/>
+            <FE name="Item"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Cognizer"/>
+                <valenceUnit GF="" PT="DEN" FE="Estimation"/>
+                <valenceUnit GF="" PT="DNI" FE="Item"/>
+                <annoSet ID="6549216"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23733" sentNo="2" paragNo="30" aPos="0" ID="4102453">
+            <text>Does it go far enough in your estimation ?</text>
+            <annotationSet cDate="08/17/2007 03:24:55 PDT Fri" status="UNANN" ID="6546235">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="VVZ"/>
+                    <label end="6" start="5" name="PP"/>
+                    <label end="9" start="8" name="VV"/>
+                    <label end="13" start="11" name="rb"/>
+                    <label end="20" start="15" name="rb"/>
+                    <label end="23" start="22" name="in"/>
+                    <label end="28" start="25" name="PP$"/>
+                    <label end="39" start="30" name="nn"/>
+                    <label end="41" start="41" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="5" name="NT"/>
+                    <label end="13" start="11" name="NT"/>
+                    <label end="20" start="15" name="NT"/>
+                    <label end="23" start="22" name="NT"/>
+                    <label end="28" start="25" name="NT"/>
+                    <label end="41" start="41" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/29/2007 03:48:30 PDT Mon" status="MANUAL" ID="6549216">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="39" start="30" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="8259" end="28" start="25" name="Cognizer"/>
+                    <label cBy="KmG" feID="8266" end="39" start="30" name="Estimation"/>
+                    <label cBy="KmG" feID="8262" itype="DNI" name="Item"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="28" start="25" name="Gen"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="28" start="25" name="Poss"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

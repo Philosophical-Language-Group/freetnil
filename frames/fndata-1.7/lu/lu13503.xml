@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="commonwealth.n" ID="13503" frame="Political_locales" frameID="195" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Jerusalem" name="HistoryOfJerusalem" ID="23647"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Constp" name="Constituent_parts"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Peripheral" abbrev="ContP" name="Container_possessor"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="Lcl" name="Locale"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Name" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Peripheral" abbrev="pop" name="Population"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="RelLoc" name="Relative_location"/>
+        </frame>
+    </header>
+    <definition>COD: an independent state or community, especially a democratic republic.</definition>
+    <lexeme POS="N" name="commonwealth"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Locale"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Locale"/>
+                <annoSet ID="6538946"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Population"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Population"/>
+                <annoSet ID="6538946"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Locale"/>
+            <FE name="Population"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Locale"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Population"/>
+                <annoSet ID="6538946"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23647" sentNo="4" paragNo="10" aPos="0" ID="4100347">
+            <text>The Hasmonean dynasty , descendants of the Maccabee family , ruled an independent Jewish Commonwealth that stretched from the Negev to the Galilee .</text>
+            <annotationSet cDate="09/29/2006 11:00:38 PDT Fri" status="UNANN" ID="6538427">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="12" start="4" name="NP"/>
+                    <label end="20" start="14" name="nn"/>
+                    <label end="22" start="22" name=","/>
+                    <label end="34" start="24" name="nns"/>
+                    <label end="37" start="36" name="in"/>
+                    <label end="41" start="39" name="dt"/>
+                    <label end="50" start="43" name="NP"/>
+                    <label end="57" start="52" name="nn"/>
+                    <label end="59" start="59" name=","/>
+                    <label end="65" start="61" name="VVD"/>
+                    <label end="68" start="67" name="dt"/>
+                    <label end="80" start="70" name="jj"/>
+                    <label end="87" start="82" name="jj"/>
+                    <label end="100" start="89" name="nn"/>
+                    <label end="105" start="102" name="wdt"/>
+                    <label end="115" start="107" name="VVD"/>
+                    <label end="120" start="117" name="in"/>
+                    <label end="124" start="122" name="dt"/>
+                    <label end="130" start="126" name="NP"/>
+                    <label end="133" start="132" name="to"/>
+                    <label end="137" start="135" name="dt"/>
+                    <label end="145" start="139" name="NP"/>
+                    <label end="147" start="147" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="12" start="4" name="person"/>
+                    <label end="50" start="43" name="person"/>
+                    <label end="130" start="126" name="location"/>
+                    <label end="145" start="139" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="12" start="4" name="NT"/>
+                    <label end="22" start="22" name="NT"/>
+                    <label end="37" start="36" name="NT"/>
+                    <label end="41" start="39" name="NT"/>
+                    <label end="50" start="43" name="NT"/>
+                    <label end="59" start="59" name="NT"/>
+                    <label end="68" start="67" name="NT"/>
+                    <label end="105" start="102" name="NT"/>
+                    <label end="124" start="122" name="NT"/>
+                    <label end="130" start="126" name="NT"/>
+                    <label end="133" start="132" name="NT"/>
+                    <label end="137" start="135" name="NT"/>
+                    <label end="145" start="139" name="NT"/>
+                    <label end="147" start="147" name="NT"/>
+                    <label end="120" start="117" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/20/2006 03:46:14 PDT Fri" status="MANUAL" ID="6538946">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="100" start="89" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="1583" end="100" start="89" name="Locale"/>
+                    <label cBy="KmG" feID="7205" end="87" start="82" name="Population"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="87" start="82" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="87" start="82" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

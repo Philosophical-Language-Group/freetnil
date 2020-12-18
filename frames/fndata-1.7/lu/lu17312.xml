@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="ADV" name="undoubtedly.adv" ID="17312" frame="Likelihood" frameID="114" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Evt" name="Hypothetical_event"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="000000" bgColor="7CCD7C" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: without a feeling of uncertainty</definition>
+    <lexeme POS="ADV" name="undoubtedly"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Hypothetical_event"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Hypothetical_event"/>
+                <annoSet ID="6645861"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="VPfin" FE="Hypothetical_event"/>
+                <annoSet ID="6645861"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Hypothetical_event"/>
+            <FE name="Hypothetical_event"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Hypothetical_event"/>
+                <valenceUnit GF="Ext" PT="VPfin" FE="Hypothetical_event"/>
+                <annoSet ID="6645861"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="3" paragNo="24" aPos="0" ID="4148403">
+            <text>His friend and secretary , Mr . Lucas , is undoubtedly a foreigner , chocolate brown , wily , suave , and catlike , with a poisonous gentleness of speech .</text>
+            <annotationSet cDate="04/30/2013 05:19:30 PDT Tue" status="UNANN" ID="6645858">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="PRP$"/>
+                    <label end="9" start="4" name="nn"/>
+                    <label end="13" start="11" name="cc"/>
+                    <label end="23" start="15" name="nn"/>
+                    <label end="28" start="27" name="NNP"/>
+                    <label end="36" start="32" name="NNP"/>
+                    <label end="41" start="40" name="VBZ"/>
+                    <label end="53" start="43" name="rb"/>
+                    <label end="55" start="55" name="dt"/>
+                    <label end="65" start="57" name="nn"/>
+                    <label end="77" start="69" name="nn"/>
+                    <label end="83" start="79" name="jj"/>
+                    <label end="90" start="87" name="jj"/>
+                    <label end="98" start="94" name="jj"/>
+                    <label end="104" start="102" name="cc"/>
+                    <label end="112" start="106" name="jj"/>
+                    <label end="119" start="116" name="in"/>
+                    <label end="121" start="121" name="dt"/>
+                    <label end="131" start="123" name="jj"/>
+                    <label end="142" start="133" name="nn"/>
+                    <label end="145" start="144" name="in"/>
+                    <label end="152" start="147" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:19:31 PDT Tue" status="MANUAL" ID="6645861">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="53" start="43" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="WMcQ" feID="563" end="41" start="0" name="Hypothetical_event"/>
+                    <label cBy="WMcQ" feID="563" end="65" start="55" name="Hypothetical_event"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="41" start="0" name="Ext"/>
+                    <label end="65" start="55" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="41" start="0" name="VPfin"/>
+                    <label end="65" start="55" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

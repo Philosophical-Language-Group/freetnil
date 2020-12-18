@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="calm.a" ID="10876" frame="Experiencer_focus" frameID="48" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Loma Prieta" name="LomaPrieta" ID="23013"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Cont" name="Content"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Event" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Exp" name="Experiencer"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core-Unexpressed" abbrev="Expr" name="Expressor"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="Par" name="Parameter"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core-Unexpressed" abbrev="State" name="State"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Top" name="Topic"/>
+        </frame>
+    </header>
+    <definition>COD: peaceful and undisturbed</definition>
+    <lexeme POS="A" name="calm"/>
+    <valences>
+        <governor type="Ctrlr" lemma="look">
+            <annoSet ID="4531261"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Content"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Content"/>
+                <annoSet ID="4531261"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Experiencer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Experiencer"/>
+                <annoSet ID="4531261"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Content"/>
+            <FE name="Experiencer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Content"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Experiencer"/>
+                <annoSet ID="4531261"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23013" sentNo="5" paragNo="20" aPos="0" ID="2824485">
+            <text>Everyone looked calm , but there was this surreal low level of confusion as the aftershocks continued .</text>
+            <annotationSet cDate="02/05/2004 08:30:51 PST Thu" status="UNANN" ID="4528480">
+                <layer rank="1" name="PENN">
+                    <label end="7" start="0" name="nn"/>
+                    <label end="14" start="9" name="VVD"/>
+                    <label end="19" start="16" name="jj"/>
+                    <label end="21" start="21" name=","/>
+                    <label end="25" start="23" name="cc"/>
+                    <label end="31" start="27" name="ex"/>
+                    <label end="35" start="33" name="VBD"/>
+                    <label end="40" start="37" name="dt"/>
+                    <label end="48" start="42" name="jj"/>
+                    <label end="52" start="50" name="jj"/>
+                    <label end="58" start="54" name="nn"/>
+                    <label end="61" start="60" name="in"/>
+                    <label end="71" start="63" name="nn"/>
+                    <label end="74" start="73" name="in"/>
+                    <label end="78" start="76" name="dt"/>
+                    <label end="90" start="80" name="nns"/>
+                    <label end="100" start="92" name="VVD"/>
+                    <label end="102" start="102" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="21" start="21" name="NT"/>
+                    <label end="102" start="102" name="NT"/>
+                    <label end="25" start="23" name="NT"/>
+                    <label end="40" start="37" name="NT"/>
+                    <label end="61" start="60" name="NT"/>
+                    <label end="74" start="73" name="NT"/>
+                    <label end="78" start="76" name="NT"/>
+                    <label end="7" start="0" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/08/2010 01:23:21 PDT Thu" status="MANUAL" ID="4531261">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="19" start="16" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="201" end="7" start="0" name="Experiencer"/>
+                    <label cBy="AlK" feID="202" itype="INI" name="Content"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="7" start="0" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="7" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="14" start="9" name="Ctrlr"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

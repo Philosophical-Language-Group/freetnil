@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="near thing.a" ID="11806" frame="Difficulty" frameID="375" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="SemAnno_1" name="SemAnno_1" ID="23532"/>
+        </corpus>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="wsj_2465" name="wsj_2465" ID="23722"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Activity" name="Activity"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="Circumstances" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degree" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Experiencer" name="Experiencer"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Peripheral" abbrev="Parameter" name="Parameter"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="sta" name="Standard"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: an event which occurs despite fears that it might not occur</definition>
+    <lexeme order="1" headword="false" breakBefore="false" POS="A" name="near"/>
+    <lexeme order="2" headword="true" breakBefore="false" POS="N" name="thing"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Activity"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Activity"/>
+                <annoSet ID="6525554"/>
+                <annoSet ID="6547515"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Experiencer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Experiencer"/>
+                <annoSet ID="6525554"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Experiencer"/>
+                <annoSet ID="6547515"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Activity"/>
+            <FE name="Experiencer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Activity"/>
+                <valenceUnit GF="" PT="DNI" FE="Experiencer"/>
+                <annoSet ID="6525554"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Activity"/>
+                <valenceUnit GF="" PT="INI" FE="Experiencer"/>
+                <annoSet ID="6547515"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="23532" sentNo="1" paragNo="1" aPos="0" ID="4097205">
+            <text>The struggle against the drug lords in Colombia will be a near thing .</text>
+            <annotationSet cDate="04/08/2005 01:17:48 PDT Fri" status="UNANN" ID="6525489">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="11" start="4" name="nn"/>
+                    <label end="19" start="13" name="in"/>
+                    <label end="23" start="21" name="dt"/>
+                    <label end="28" start="25" name="nn"/>
+                    <label end="34" start="30" name="nns"/>
+                    <label end="37" start="36" name="in"/>
+                    <label end="46" start="39" name="NP"/>
+                    <label end="51" start="48" name="md"/>
+                    <label end="54" start="53" name="vb"/>
+                    <label end="56" start="56" name="dt"/>
+                    <label end="61" start="58" name="jj"/>
+                    <label end="67" start="63" name="nn"/>
+                    <label end="69" start="69" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="46" start="39" name="GPE"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="19" start="13" name="NT"/>
+                    <label end="23" start="21" name="NT"/>
+                    <label end="37" start="36" name="NT"/>
+                    <label end="46" start="39" name="NT"/>
+                    <label end="51" start="48" name="NT"/>
+                    <label end="54" start="53" name="NT"/>
+                    <label end="56" start="56" name="NT"/>
+                    <label end="69" start="69" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="04/10/2005 03:53:40 PDT Sun" status="MANUAL" ID="6525554">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="61" start="58" name="Target"/>
+                    <label cBy="EGp" end="67" start="63" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="Pam" feID="3365" itype="DNI" name="Experiencer"/>
+                    <label cBy="Pam" feID="3360" end="46" start="0" name="Activity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="46" start="0" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="46" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="54" start="53" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="205" docID="23722" sentNo="1" paragNo="10" aPos="0" ID="4101589">
+            <text>The struggle against the drug lords in Colombia will be a near thing .</text>
+            <annotationSet cDate="08/15/2007 03:54:51 PDT Wed" status="UNANN" ID="6545347">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="11" start="4" name="nn"/>
+                    <label end="19" start="13" name="in"/>
+                    <label end="23" start="21" name="dt"/>
+                    <label end="28" start="25" name="nn"/>
+                    <label end="34" start="30" name="nns"/>
+                    <label end="37" start="36" name="in"/>
+                    <label end="46" start="39" name="NP"/>
+                    <label end="51" start="48" name="md"/>
+                    <label end="54" start="53" name="vb"/>
+                    <label end="56" start="56" name="dt"/>
+                    <label end="61" start="58" name="jj"/>
+                    <label end="67" start="63" name="nn"/>
+                    <label end="69" start="69" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="46" start="39" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="19" start="13" name="NT"/>
+                    <label end="23" start="21" name="NT"/>
+                    <label end="37" start="36" name="NT"/>
+                    <label end="46" start="39" name="NT"/>
+                    <label end="51" start="48" name="NT"/>
+                    <label end="54" start="53" name="NT"/>
+                    <label end="56" start="56" name="NT"/>
+                    <label end="69" start="69" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="09/05/2007 03:04:26 PDT Wed" status="MANUAL" ID="6547515">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="61" start="58" name="Target"/>
+                    <label cBy="RLG" end="67" start="63" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="3360" end="46" start="0" name="Activity"/>
+                    <label cBy="RLG" feID="3365" itype="INI" name="Experiencer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="46" start="0" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="46" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="54" start="53" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

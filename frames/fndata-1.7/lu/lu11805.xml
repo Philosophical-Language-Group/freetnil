@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Role" POS="N" name="drug lord.n" ID="11805" frame="Leadership" frameID="73" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="SemAnno_1" name="SemAnno_1" ID="23532"/>
+        </corpus>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="wsj_2465" name="wsj_2465" ID="23722"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="act" name="Activity"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="Dom" name="Domain"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="gov" name="Governed"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="lea" name="Leader"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Role" name="Role"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Typ" name="Type"/>
+        </frame>
+    </header>
+    <definition>FN: The leader of a criminal organization which traffics in illegal drugs</definition>
+    <lexeme order="1" headword="false" breakBefore="false" POS="N" name="drug"/>
+    <lexeme order="2" headword="true" breakBefore="false" POS="N" name="lord"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Governed"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Governed"/>
+                <annoSet ID="6525553"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Leader"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Leader"/>
+                <annoSet ID="6525553"/>
+                <annoSet ID="6549473"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Governed"/>
+            <FE name="Leader"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Governed"/>
+                <valenceUnit GF="" PT="DEN" FE="Leader"/>
+                <annoSet ID="6525553"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Leader"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Leader"/>
+                <annoSet ID="6549473"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="23532" sentNo="1" paragNo="1" aPos="0" ID="4097205">
+            <text>The struggle against the drug lords in Colombia will be a near thing .</text>
+            <annotationSet cDate="04/08/2005 01:17:48 PDT Fri" status="UNANN" ID="6525489">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="11" start="4" name="nn"/>
+                    <label end="19" start="13" name="in"/>
+                    <label end="23" start="21" name="dt"/>
+                    <label end="28" start="25" name="nn"/>
+                    <label end="34" start="30" name="nns"/>
+                    <label end="37" start="36" name="in"/>
+                    <label end="46" start="39" name="NP"/>
+                    <label end="51" start="48" name="md"/>
+                    <label end="54" start="53" name="vb"/>
+                    <label end="56" start="56" name="dt"/>
+                    <label end="61" start="58" name="jj"/>
+                    <label end="67" start="63" name="nn"/>
+                    <label end="69" start="69" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="46" start="39" name="GPE"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="19" start="13" name="NT"/>
+                    <label end="23" start="21" name="NT"/>
+                    <label end="37" start="36" name="NT"/>
+                    <label end="46" start="39" name="NT"/>
+                    <label end="51" start="48" name="NT"/>
+                    <label end="54" start="53" name="NT"/>
+                    <label end="56" start="56" name="NT"/>
+                    <label end="69" start="69" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="04/10/2005 03:53:08 PDT Sun" status="MANUAL" ID="6525553">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="28" start="25" name="Target"/>
+                    <label cBy="EGp" end="34" start="30" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="Pam" feID="347" end="34" start="25" name="Leader"/>
+                    <label cBy="Pam" feID="6431" itype="INI" name="Governed"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="205" docID="23722" sentNo="1" paragNo="3" aPos="0" ID="4101570">
+            <text>The drug lords who claimed responsibility said they would blow up the Bogota newspaper 's offices if it continued to distribute in Medellin .</text>
+            <annotationSet cDate="08/15/2007 03:54:45 PDT Wed" status="UNANN" ID="6545328">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="7" start="4" name="nn"/>
+                    <label end="13" start="9" name="nns"/>
+                    <label end="17" start="15" name="wp"/>
+                    <label end="25" start="19" name="VVD"/>
+                    <label end="40" start="27" name="nn"/>
+                    <label end="45" start="42" name="VVD"/>
+                    <label end="50" start="47" name="PP"/>
+                    <label end="56" start="52" name="md"/>
+                    <label end="61" start="58" name="VV"/>
+                    <label end="64" start="63" name="rp"/>
+                    <label end="68" start="66" name="dt"/>
+                    <label end="75" start="70" name="NP"/>
+                    <label end="85" start="77" name="nn"/>
+                    <label end="88" start="87" name="POS"/>
+                    <label end="96" start="90" name="nns"/>
+                    <label end="99" start="98" name="in"/>
+                    <label end="102" start="101" name="PP"/>
+                    <label end="112" start="104" name="VVD"/>
+                    <label end="115" start="114" name="to"/>
+                    <label end="126" start="117" name="VV"/>
+                    <label end="129" start="128" name="in"/>
+                    <label end="138" start="131" name="NP"/>
+                    <label end="140" start="140" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="75" start="70" name="location"/>
+                    <label end="138" start="131" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="17" start="15" name="NT"/>
+                    <label end="50" start="47" name="NT"/>
+                    <label end="56" start="52" name="NT"/>
+                    <label end="64" start="63" name="NT"/>
+                    <label end="68" start="66" name="NT"/>
+                    <label end="75" start="70" name="NT"/>
+                    <label end="88" start="87" name="NT"/>
+                    <label end="99" start="98" name="NT"/>
+                    <label end="102" start="101" name="NT"/>
+                    <label end="115" start="114" name="NT"/>
+                    <label end="138" start="131" name="NT"/>
+                    <label end="140" start="140" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/30/2007 03:45:45 PDT Tue" status="MANUAL" ID="6549473">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="7" start="4" name="Target"/>
+                    <label cBy="EGp" end="13" start="9" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="347" end="13" start="4" name="Leader"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

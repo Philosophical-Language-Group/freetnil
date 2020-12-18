@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Unit" POS="N" name="school year.n" ID="7345" frame="Calendric_unit" frameID="229" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Polemic Progressive Education" name="PolemicProgressiveEducation" ID="23011"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="cou" name="Count"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="LM" name="Landmark_period"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="Name" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="RelT" name="Relative_time"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="sal_eve" name="Salient_event"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Extra-Thematic" abbrev="TR" name="Trajector_event"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="uni" name="Unit"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="Whole" name="Whole"/>
+        </frame>
+    </header>
+    <definition>FN: a period of time when school is held, which starts after a summer and ends before the next summer. </definition>
+    <lexeme order="1" headword="false" breakBefore="false" POS="N" name="school"/>
+    <lexeme order="2" headword="true" breakBefore="false" POS="N" name="year"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Relative_time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Relative_time"/>
+                <annoSet ID="4531347"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Unit"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Unit"/>
+                <annoSet ID="4531347"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Relative_time"/>
+            <FE name="Unit"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Relative_time"/>
+                <valenceUnit GF="" PT="DEN" FE="Unit"/>
+                <annoSet ID="4531347"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23011" sentNo="5" paragNo="10" aPos="0" ID="2824340">
+            <text>What Gov. Clinton is advocating , in effect , is extending the educational system down to the pre-kindergarten years .</text>
+            <annotationSet cDate="02/05/2004 08:30:04 PST Thu" status="UNANN" ID="4528335">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="wp"/>
+                    <label end="8" start="5" name="NP"/>
+                    <label end="16" start="10" name="NP"/>
+                    <label end="19" start="18" name="VBZ"/>
+                    <label end="30" start="21" name="VVG"/>
+                    <label end="32" start="32" name=","/>
+                    <label end="35" start="34" name="in"/>
+                    <label end="42" start="37" name="nn"/>
+                    <label end="44" start="44" name=","/>
+                    <label end="47" start="46" name="VBZ"/>
+                    <label end="57" start="49" name="VVG"/>
+                    <label end="61" start="59" name="dt"/>
+                    <label end="73" start="63" name="jj"/>
+                    <label end="80" start="75" name="nn"/>
+                    <label end="85" start="82" name="rb"/>
+                    <label end="88" start="87" name="to"/>
+                    <label end="92" start="90" name="dt"/>
+                    <label end="109" start="94" name="nn"/>
+                    <label end="115" start="111" name="nns"/>
+                    <label end="117" start="117" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="16" start="5" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="19" start="18" name="NT"/>
+                    <label end="32" start="32" name="NT"/>
+                    <label end="35" start="34" name="NT"/>
+                    <label end="44" start="44" name="NT"/>
+                    <label end="47" start="46" name="NT"/>
+                    <label end="85" start="82" name="NT"/>
+                    <label end="88" start="87" name="NT"/>
+                    <label end="117" start="117" name="NT"/>
+                    <label end="3" start="0" name="NT"/>
+                    <label end="8" start="5" name="NT"/>
+                    <label end="16" start="10" name="NT"/>
+                    <label end="61" start="59" name="NT"/>
+                    <label end="92" start="90" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/12/2010 05:49:48 PDT Mon" status="MANUAL" ID="4531347">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="115" start="111" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="1993" end="109" start="94" name="Relative_time"/>
+                    <label cBy="MLC" feID="10331" end="115" start="111" name="Unit"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="109" start="94" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="109" start="94" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

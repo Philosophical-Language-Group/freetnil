@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Text" POS="N" name="edition.n" ID="5608" frame="Text" frameID="298" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="wsj_2465" name="wsj_2465" ID="23722"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Peripheral" abbrev="Author" name="Author"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="Ben" name="Beneficiary"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="Cont_text" name="Containing_text"/>
+            <FE fgColor="000000" bgColor="FFD700" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Genre" name="Genre"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Mat" name="Material"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="Medium" name="Medium"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="Cmpnt" name="Subpart"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Core" abbrev="Text" name="Text"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="Time" name="Time_of_creation"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="Title" name="Title"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Top" name="Topic"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Use" name="Use"/>
+        </frame>
+    </header>
+    <definition>COD: a particular form or version of a published text. </definition>
+    <lexeme POS="N" name="edition"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Text"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Text"/>
+                <annoSet ID="6549567"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time_of_creation"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Time_of_creation"/>
+                <annoSet ID="6549567"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Text"/>
+            <FE name="Time_of_creation"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Text"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Time_of_creation"/>
+                <annoSet ID="6549567"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23722" sentNo="1" paragNo="5" aPos="0" ID="4101576">
+            <text>The publishers in Monterrey command no battalions , but they agreed to express their outrage with editorials in today 's editions .</text>
+            <annotationSet cDate="08/15/2007 03:54:47 PDT Wed" status="UNANN" ID="6545334">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="13" start="4" name="nns"/>
+                    <label end="16" start="15" name="in"/>
+                    <label end="26" start="18" name="NP"/>
+                    <label end="34" start="28" name="VVP"/>
+                    <label end="37" start="36" name="dt"/>
+                    <label end="48" start="39" name="nns"/>
+                    <label end="50" start="50" name=","/>
+                    <label end="54" start="52" name="cc"/>
+                    <label end="59" start="56" name="PP"/>
+                    <label end="66" start="61" name="VVD"/>
+                    <label end="69" start="68" name="to"/>
+                    <label end="77" start="71" name="VV"/>
+                    <label end="83" start="79" name="PP$"/>
+                    <label end="91" start="85" name="nn"/>
+                    <label end="96" start="93" name="in"/>
+                    <label end="107" start="98" name="nns"/>
+                    <label end="110" start="109" name="in"/>
+                    <label end="116" start="112" name="nn"/>
+                    <label end="119" start="118" name="POS"/>
+                    <label end="128" start="121" name="nns"/>
+                    <label end="130" start="130" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="26" start="18" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="26" start="18" name="NT"/>
+                    <label end="50" start="50" name="NT"/>
+                    <label end="54" start="52" name="NT"/>
+                    <label end="59" start="56" name="NT"/>
+                    <label end="69" start="68" name="NT"/>
+                    <label end="83" start="79" name="NT"/>
+                    <label end="96" start="93" name="NT"/>
+                    <label end="119" start="118" name="NT"/>
+                    <label end="130" start="130" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/31/2007 04:56:33 PDT Wed" status="MANUAL" ID="6549567">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="128" start="121" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="2545" end="128" start="121" name="Text"/>
+                    <label cBy="JKs" feID="2547" end="119" start="112" name="Time_of_creation"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="119" start="112" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="119" start="112" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

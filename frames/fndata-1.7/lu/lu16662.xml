@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="store.n" ID="16662" frame="Businesses" frameID="365" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz What to Do in Hong Kong" name="WhatToHongKong" ID="23758"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Busn" name="Business"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="BName" name="Business_name"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Prd" name="Product"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Pptr" name="Proprietor"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="ServP" name="Service_provider"/>
+        </frame>
+    </header>
+    <definition>FN: a place or shop where items can be purchased</definition>
+    <lexeme POS="N" name="store"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Business"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Business"/>
+                <annoSet ID="6584777"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Business"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Business"/>
+                <annoSet ID="6584777"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23758" sentNo="1" paragNo="5" aPos="0" ID="4104038">
+            <text>Stores do not open until 10 am or later , but shopping goes on into the evening , up to 9:30 pm .</text>
+            <annotationSet cDate="07/21/2008 03:48:16 PDT Mon" status="UNANN" ID="6552870">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="nns"/>
+                    <label end="8" start="7" name="VVP"/>
+                    <label end="12" start="10" name="rb"/>
+                    <label end="17" start="14" name="VV"/>
+                    <label end="23" start="19" name="in"/>
+                    <label end="26" start="25" name="cd"/>
+                    <label end="29" start="28" name="rb"/>
+                    <label end="32" start="31" name="cc"/>
+                    <label end="38" start="34" name="rb"/>
+                    <label end="40" start="40" name=","/>
+                    <label end="44" start="42" name="cc"/>
+                    <label end="53" start="46" name="nn"/>
+                    <label end="58" start="55" name="VVZ"/>
+                    <label end="61" start="60" name="in"/>
+                    <label end="66" start="63" name="in"/>
+                    <label end="70" start="68" name="dt"/>
+                    <label end="78" start="72" name="nn"/>
+                    <label end="80" start="80" name=","/>
+                    <label end="83" start="82" name="rb"/>
+                    <label end="86" start="85" name="to"/>
+                    <label end="91" start="88" name="cd"/>
+                    <label end="94" start="93" name="nn"/>
+                    <label end="96" start="96" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="29" start="25" name="time"/>
+                    <label end="94" start="88" name="time"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="8" start="7" name="NT"/>
+                    <label end="12" start="10" name="NT"/>
+                    <label end="26" start="25" name="NT"/>
+                    <label end="29" start="28" name="NT"/>
+                    <label end="32" start="31" name="NT"/>
+                    <label end="40" start="40" name="NT"/>
+                    <label end="66" start="63" name="NT"/>
+                    <label end="70" start="68" name="NT"/>
+                    <label end="80" start="80" name="NT"/>
+                    <label end="91" start="88" name="NT"/>
+                    <label end="96" start="96" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/03/2011 06:08:47 PDT Mon" status="MANUAL" ID="6584777">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="5" start="0" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="3385" end="5" start="0" name="Business"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

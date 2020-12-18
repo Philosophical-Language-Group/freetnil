@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="insurgent.n" ID="16427" frame="Rebellion" frameID="2584" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="curl" name="Current_leadership"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="curo" name="Current_order"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="new" name="New_order"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="reb" name="Rebel"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="res" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: a person participating in a violent rebellion.</definition>
+    <lexeme POS="N" name="insurgent"/>
+    <semType name="Agentive_noun" ID="102"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Current_leadership"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Current_leadership"/>
+                <annoSet ID="6646329"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Rebel"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Rebel"/>
+                <annoSet ID="6646329"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Current_leadership"/>
+            <FE name="Rebel"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Current_leadership"/>
+                <valenceUnit GF="Dep" PT="NP" FE="Rebel"/>
+                <annoSet ID="6646329"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="5" paragNo="37" aPos="0" ID="4148522">
+            <text>It was an empty palace which was stormed by the insurgents next day .</text>
+            <annotationSet cDate="04/30/2013 05:21:52 PDT Tue" status="UNANN" ID="6646325">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PRP"/>
+                    <label end="5" start="3" name="VBD"/>
+                    <label end="8" start="7" name="dt"/>
+                    <label end="14" start="10" name="jj"/>
+                    <label end="21" start="16" name="nn"/>
+                    <label end="27" start="23" name="wdt"/>
+                    <label end="31" start="29" name="VBD"/>
+                    <label end="39" start="33" name="VBN"/>
+                    <label end="42" start="41" name="in"/>
+                    <label end="46" start="44" name="dt"/>
+                    <label end="57" start="48" name="nns"/>
+                    <label end="62" start="59" name="jj"/>
+                    <label end="66" start="64" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:21:54 PDT Tue" status="MANUAL" ID="6646329">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="57" start="48" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="14563" end="57" start="48" name="Rebel"/>
+                    <label cBy="EGp" feID="14564" itype="DNI" name="Current_leadership"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="57" start="48" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="57" start="48" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

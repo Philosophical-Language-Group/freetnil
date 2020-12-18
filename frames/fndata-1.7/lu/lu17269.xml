@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="deal.n" ID="17269" frame="Quantified_mass" frameID="189" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Ind" name="Individuals"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="M" name="Mass"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Qua" name="Quantity"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Peripheral" abbrev="" name="Q_prop"/>
+        </frame>
+    </header>
+    <definition>FN: a large but unspecified amount; usually used with 'good' or 'great'</definition>
+    <lexeme POS="N" name="deal"/>
+    <semType name="Bound_LU" ID="223"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Mass"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="PP[of]" FE="Mass"/>
+                <annoSet ID="6645212"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Quantity"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Quantity"/>
+                <annoSet ID="6645212"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Mass"/>
+            <FE name="Quantity"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="PP[of]" FE="Mass"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Quantity"/>
+                <annoSet ID="6645212"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="2" paragNo="6" aPos="0" ID="4148240">
+            <text>A good deal of clothing with the stamp of Marx and Co .</text>
+            <annotationSet cDate="04/30/2013 05:17:00 PDT Tue" status="UNANN" ID="6645210">
+                <layer rank="1" name="PENN">
+                    <label end="0" start="0" name="dt"/>
+                    <label end="5" start="2" name="jj"/>
+                    <label end="10" start="7" name="nn"/>
+                    <label end="13" start="12" name="in"/>
+                    <label end="22" start="15" name="nn"/>
+                    <label end="27" start="24" name="in"/>
+                    <label end="31" start="29" name="dt"/>
+                    <label end="37" start="33" name="nn"/>
+                    <label end="40" start="39" name="in"/>
+                    <label end="45" start="42" name="NNP"/>
+                    <label end="49" start="47" name="cc"/>
+                    <label end="52" start="51" name="NNP"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:17:00 PDT Tue" status="MANUAL" ID="6645212">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="10" start="7" name="Target"/>
+                </layer>
+                <layer rank="1" name="Target"/>
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="0" start="0" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="1550" end="10" start="0" name="Quantity"/>
+                    <label cBy="EGp" feID="1551" end="54" start="12" name="Mass"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="10" start="0" name="Ext"/>
+                    <label end="54" start="12" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="10" start="0" name="NP"/>
+                    <label end="54" start="12" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

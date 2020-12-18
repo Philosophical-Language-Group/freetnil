@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="jew.n" ID="14928" frame="People_by_religion" frameID="1021" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Jamaica" name="IntroJamaica" ID="23754"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Age" name="Age"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Eth" name="Ethnicity"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Ori" name="Origin"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Pers_char" name="Persistent_characteristic"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Person" name="Person"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Core" abbrev="rel" name="Religion"/>
+        </frame>
+    </header>
+    <definition>FN: a follower of Judaism</definition>
+    <lexeme POS="N" name="jew"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Origin"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Origin"/>
+                <annoSet ID="6555774"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Person"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Person"/>
+                <annoSet ID="6555774"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Origin"/>
+            <FE name="Person"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Origin"/>
+                <valenceUnit GF="" PT="DEN" FE="Person"/>
+                <annoSet ID="6555774"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23754" sentNo="1" paragNo="7" aPos="0" ID="4103858">
+            <text>Today Jamaican population is a mixture of African and English , with Spanish , Indian , and a smattering of Portuguese Jews , Germans , Welsh , and Scots .</text>
+            <annotationSet cDate="07/17/2008 06:09:56 PDT Thu" status="UNANN" ID="6552665">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="nn"/>
+                    <label end="13" start="6" name="jj"/>
+                    <label end="24" start="15" name="nn"/>
+                    <label end="27" start="26" name="VBZ"/>
+                    <label end="29" start="29" name="dt"/>
+                    <label end="37" start="31" name="nn"/>
+                    <label end="40" start="39" name="in"/>
+                    <label end="48" start="42" name="NP"/>
+                    <label end="52" start="50" name="cc"/>
+                    <label end="60" start="54" name="NP"/>
+                    <label end="62" start="62" name=","/>
+                    <label end="67" start="64" name="in"/>
+                    <label end="75" start="69" name="NP"/>
+                    <label end="77" start="77" name=","/>
+                    <label end="84" start="79" name="NP"/>
+                    <label end="86" start="86" name=","/>
+                    <label end="90" start="88" name="cc"/>
+                    <label end="92" start="92" name="dt"/>
+                    <label end="103" start="94" name="nn"/>
+                    <label end="106" start="105" name="in"/>
+                    <label end="117" start="108" name="NP"/>
+                    <label end="122" start="119" name="NPS"/>
+                    <label end="124" start="124" name=","/>
+                    <label end="132" start="126" name="NPS"/>
+                    <label end="134" start="134" name=","/>
+                    <label end="140" start="136" name="NP"/>
+                    <label end="142" start="142" name=","/>
+                    <label end="146" start="144" name="cc"/>
+                    <label end="152" start="148" name="nns"/>
+                    <label end="154" start="154" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="27" start="26" name="NT"/>
+                    <label end="29" start="29" name="NT"/>
+                    <label end="40" start="39" name="NT"/>
+                    <label end="52" start="50" name="NT"/>
+                    <label end="62" start="62" name="NT"/>
+                    <label end="67" start="64" name="NT"/>
+                    <label end="77" start="77" name="NT"/>
+                    <label end="86" start="86" name="NT"/>
+                    <label end="90" start="88" name="NT"/>
+                    <label end="92" start="92" name="NT"/>
+                    <label end="106" start="105" name="NT"/>
+                    <label end="124" start="124" name="NT"/>
+                    <label end="134" start="134" name="NT"/>
+                    <label end="142" start="142" name="NT"/>
+                    <label end="146" start="144" name="NT"/>
+                    <label end="154" start="154" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/05/2008 01:21:55 PDT Tue" status="MANUAL" ID="6555774">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="122" start="119" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="6071" end="122" start="119" name="Person"/>
+                    <label cBy="CVa" feID="6070" end="117" start="108" name="Origin"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="117" start="108" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="117" start="108" name="A"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

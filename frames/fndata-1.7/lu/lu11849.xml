@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Add_Annotation" POS="V" name="singe.v" ID="11849" frame="Absorb_heat" frameID="830" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp=861" name="bncp=861" ID="17784"/>
+            <document description="bncp=2702" name="bncp=2702" ID="20021"/>
+            <document description="bncp=1937" name="bncp=1937" ID="20273"/>
+        </corpus>
+        <frame>
+            <FE fgColor="000000" bgColor="7CCD73" type="Extra-Thematic" abbrev="Cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="" name="Container"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Depictive"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="ent" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="" name="Heat_source"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="" name="Medium"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="000000" bgColor="FF69B4" type="Extra-Thematic" abbrev="Pur" name="Purpose"/>
+            <FE fgColor="000000" bgColor="9F79EE" type="Extra-Thematic" abbrev="Res" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="tem" name="Temperature"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: be burnt lightly or superficially, usually by a flame.</definition>
+    <lexeme POS="V" name="singe"/>
+    <valences>
+        <FERealization total="3">
+            <FE name="Entity"/>
+            <pattern total="3">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <annoSet ID="6572753"/>
+                <annoSet ID="6572755"/>
+                <annoSet ID="6572765"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Heat_source"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="DNI" FE="Heat_source"/>
+                <annoSet ID="6572753"/>
+                <annoSet ID="6572755"/>
+                <annoSet ID="6572765"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="3">
+            <FE name="Entity"/>
+            <FE name="Heat_source"/>
+            <pattern total="3">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <valenceUnit GF="" PT="DNI" FE="Heat_source"/>
+                <annoSet ID="6572753"/>
+                <annoSet ID="6572755"/>
+                <annoSet ID="6572765"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-object-(1)"/>
+    <subCorpus name="02-other-matched-(1)"/>
+    <subCorpus name="03-other-unmatched-(1)">
+        <sentence corpID="111" docID="20021" sentNo="8" paragNo="779" aPos="0" ID="4112645">
+            <text>She sizzled and singed , then the fire began to take a hold and flames leapt across her skin .</text>
+            <annotationSet cDate="07/05/2011 06:02:28 PDT Tue" status="UNANN" ID="6572752">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="PP"/>
+                    <label end="10" start="4" name="VVD"/>
+                    <label end="14" start="12" name="cc"/>
+                    <label end="21" start="16" name="VVD"/>
+                    <label end="23" start="23" name=","/>
+                    <label end="28" start="25" name="rb"/>
+                    <label end="32" start="30" name="dt"/>
+                    <label end="37" start="34" name="nn"/>
+                    <label end="43" start="39" name="VVD"/>
+                    <label end="46" start="45" name="to"/>
+                    <label end="51" start="48" name="VV"/>
+                    <label end="53" start="53" name="dt"/>
+                    <label end="58" start="55" name="nn"/>
+                    <label end="62" start="60" name="cc"/>
+                    <label end="69" start="64" name="nns"/>
+                    <label end="75" start="71" name="VVD"/>
+                    <label end="82" start="77" name="in"/>
+                    <label end="86" start="84" name="PP$"/>
+                    <label end="91" start="88" name="nn"/>
+                    <label end="93" start="93" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="07/05/2011 06:02:29 PDT Tue" status="MANUAL" ID="6572753">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="21" start="16" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="PKe" feID="5611" end="2" start="0" name="Entity"/>
+                    <label cBy="PKe" feID="5613" itype="DNI" name="Heat_source"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="2" start="0" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="2" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="17784" sentNo="4" paragNo="518" aPos="0" ID="4112646">
+            <text>He once caught a pigeon , but it was mostly sparrows so small that , when he laid them on the embers to cook , they were ready by the time the feathers had singed and were hardly worth even sharing , except with the twins who insisted .</text>
+            <annotationSet cDate="07/05/2011 06:02:29 PDT Tue" status="UNANN" ID="6572754">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="6" start="3" name="rb"/>
+                    <label end="13" start="8" name="VVD"/>
+                    <label end="15" start="15" name="dt"/>
+                    <label end="22" start="17" name="nn"/>
+                    <label end="24" start="24" name=","/>
+                    <label end="28" start="26" name="cc"/>
+                    <label end="31" start="30" name="PP"/>
+                    <label end="35" start="33" name="VBD"/>
+                    <label end="42" start="37" name="rb"/>
+                    <label end="51" start="44" name="nns"/>
+                    <label end="54" start="53" name="rb"/>
+                    <label end="60" start="56" name="jj"/>
+                    <label end="65" start="62" name="in"/>
+                    <label end="67" start="67" name=","/>
+                    <label end="72" start="69" name="wrb"/>
+                    <label end="75" start="74" name="PP"/>
+                    <label end="80" start="77" name="VVD"/>
+                    <label end="85" start="82" name="PP"/>
+                    <label end="88" start="87" name="in"/>
+                    <label end="92" start="90" name="dt"/>
+                    <label end="99" start="94" name="nns"/>
+                    <label end="102" start="101" name="to"/>
+                    <label end="107" start="104" name="VV"/>
+                    <label end="109" start="109" name=","/>
+                    <label end="114" start="111" name="PP"/>
+                    <label end="119" start="116" name="VBD"/>
+                    <label end="125" start="121" name="jj"/>
+                    <label end="128" start="127" name="in"/>
+                    <label end="132" start="130" name="dt"/>
+                    <label end="137" start="134" name="nn"/>
+                    <label end="141" start="139" name="dt"/>
+                    <label end="150" start="143" name="nns"/>
+                    <label end="154" start="152" name="VHD"/>
+                    <label end="161" start="156" name="VVN"/>
+                    <label end="165" start="163" name="cc"/>
+                    <label end="170" start="167" name="VBD"/>
+                    <label end="177" start="172" name="rb"/>
+                    <label end="183" start="179" name="jj"/>
+                    <label end="188" start="185" name="rb"/>
+                    <label end="196" start="190" name="nn"/>
+                    <label end="198" start="198" name=","/>
+                    <label end="205" start="200" name="in"/>
+                    <label end="210" start="207" name="in"/>
+                    <label end="214" start="212" name="dt"/>
+                    <label end="220" start="216" name="nns"/>
+                    <label end="224" start="222" name="wp"/>
+                    <label end="233" start="226" name="VVD"/>
+                    <label end="235" start="235" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="07/05/2011 06:02:29 PDT Tue" status="MANUAL" ID="6572755">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="161" start="156" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="PKe" feID="5611" end="150" start="139" name="Entity"/>
+                    <label cBy="PKe" feID="5613" itype="DNI" name="Heat_source"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="150" start="139" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="150" start="139" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="20273" sentNo="1" paragNo="665" aPos="0" ID="4112651">
+            <text>Other investors perished ; or , at the very least , watched helplessly as their assets , like trees in the path of a firestorm , wilted , singed , then were consumed .</text>
+            <annotationSet cDate="07/05/2011 06:02:29 PDT Tue" status="UNANN" ID="6572764">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="jj"/>
+                    <label end="14" start="6" name="nns"/>
+                    <label end="23" start="16" name="VVN"/>
+                    <label end="25" start="25" name=":"/>
+                    <label end="28" start="27" name="cc"/>
+                    <label end="30" start="30" name=","/>
+                    <label end="33" start="32" name="in"/>
+                    <label end="37" start="35" name="dt"/>
+                    <label end="42" start="39" name="rb"/>
+                    <label end="48" start="44" name="jjs"/>
+                    <label end="50" start="50" name=","/>
+                    <label end="58" start="52" name="VVN"/>
+                    <label end="69" start="60" name="rb"/>
+                    <label end="72" start="71" name="in"/>
+                    <label end="78" start="74" name="PP$"/>
+                    <label end="85" start="80" name="nns"/>
+                    <label end="87" start="87" name=","/>
+                    <label end="92" start="89" name="in"/>
+                    <label end="98" start="94" name="nns"/>
+                    <label end="101" start="100" name="in"/>
+                    <label end="105" start="103" name="dt"/>
+                    <label end="110" start="107" name="nn"/>
+                    <label end="113" start="112" name="in"/>
+                    <label end="115" start="115" name="dt"/>
+                    <label end="125" start="117" name="nn"/>
+                    <label end="127" start="127" name=","/>
+                    <label end="134" start="129" name="VVD"/>
+                    <label end="136" start="136" name=","/>
+                    <label end="143" start="138" name="VVD"/>
+                    <label end="145" start="145" name=","/>
+                    <label end="150" start="147" name="rb"/>
+                    <label end="155" start="152" name="VBD"/>
+                    <label end="164" start="157" name="VVN"/>
+                    <label end="166" start="166" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="07/05/2011 06:02:30 PDT Tue" status="MANUAL" ID="6572765">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="143" start="138" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="PKe" feID="5611" end="85" start="74" name="Entity"/>
+                    <label cBy="PKe" feID="5613" itype="DNI" name="Heat_source"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="85" start="74" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="85" start="74" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

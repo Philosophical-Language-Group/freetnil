@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="ADV" name="left.adv" ID="12496" frame="Direction" frameID="215" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Election Victory" name="ElectionVictory" ID="23010"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="" name="Distance"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dom" name="Domain"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Extra-Thematic" abbrev="Ind" name="Independent_variable"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Bse" name="Landmark"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Path" name="Path"/>
+        </frame>
+    </header>
+    <definition>COD: on or to the left side.</definition>
+    <lexeme POS="ADV" name="left"/>
+    <semType name="Viewpoint_leftward" ID="137"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Landmark"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Landmark"/>
+                <annoSet ID="4530434"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Path"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Path"/>
+                <annoSet ID="4530434"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Landmark"/>
+            <FE name="Path"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Landmark"/>
+                <valenceUnit GF="" PT="--" FE="Path"/>
+                <annoSet ID="4530434"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23010" sentNo="3" paragNo="1" aPos="0" ID="2824269">
+            <text>He should consider his victory a mandate to continue his growth-oriented economic reforms and not a demand that he move further left .</text>
+            <annotationSet cDate="02/05/2004 08:29:42 PST Thu" status="UNANN" ID="4528264">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="8" start="3" name="md"/>
+                    <label end="17" start="10" name="VV"/>
+                    <label end="21" start="19" name="PP$"/>
+                    <label end="29" start="23" name="nn"/>
+                    <label end="31" start="31" name="dt"/>
+                    <label end="39" start="33" name="nn"/>
+                    <label end="42" start="41" name="to"/>
+                    <label end="51" start="44" name="VV"/>
+                    <label end="55" start="53" name="PP$"/>
+                    <label end="71" start="57" name="jj"/>
+                    <label end="80" start="73" name="jj"/>
+                    <label end="88" start="82" name="nns"/>
+                    <label end="92" start="90" name="cc"/>
+                    <label end="96" start="94" name="rb"/>
+                    <label end="98" start="98" name="dt"/>
+                    <label end="105" start="100" name="nn"/>
+                    <label end="110" start="107" name="in"/>
+                    <label end="113" start="112" name="PP"/>
+                    <label end="118" start="115" name="VVP"/>
+                    <label end="126" start="120" name="rb"/>
+                    <label end="131" start="128" name="VVN"/>
+                    <label end="133" start="133" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="42" start="41" name="NT"/>
+                    <label end="133" start="133" name="NT"/>
+                    <label end="1" start="0" name="NT"/>
+                    <label end="21" start="19" name="NT"/>
+                    <label end="31" start="31" name="NT"/>
+                    <label end="55" start="53" name="NT"/>
+                    <label end="92" start="90" name="NT"/>
+                    <label end="98" start="98" name="NT"/>
+                    <label end="110" start="107" name="NT"/>
+                    <label end="113" start="112" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/18/2005 07:04:08 PDT Mon" status="MANUAL" ID="4530434">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="131" start="128" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="3690" end="131" start="128" name="Path"/>
+                    <label cBy="JKR" feID="3689" itype="DNI" name="Landmark"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent">
+                    <label end="0" start="0" name="Metaphor"/>
+                </layer>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

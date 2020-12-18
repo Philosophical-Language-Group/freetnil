@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="hospitality.n" ID="14470" frame="Hospitality" frameID="1970" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Dublin" name="IntroOfDublin" ID="23652"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Beh" name="Behavior"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="Exp" name="Expressor"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="gue" name="Guest"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="hos" name="Host"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core-Unexpressed" abbrev="jud" name="Judge"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manner" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Gr" name="Topic"/>
+        </frame>
+    </header>
+    <definition>FN: willingness to warmly and coridally accept guests.</definition>
+    <lexeme POS="N" name="hospitality"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Behavior"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Behavior"/>
+                <annoSet ID="6551632"/>
+                <annoSet ID="6551633"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Expressor"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Expressor"/>
+                <annoSet ID="6551632"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Expressor"/>
+                <annoSet ID="6551633"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Guest"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="INI" FE="Guest"/>
+                <annoSet ID="6551632"/>
+                <annoSet ID="6551633"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Host"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Host"/>
+                <annoSet ID="6551632"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Host"/>
+                <annoSet ID="6551633"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Topic"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="INI" FE="Topic"/>
+                <annoSet ID="6551632"/>
+                <annoSet ID="6551633"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Behavior"/>
+            <FE name="Expressor"/>
+            <FE name="Guest"/>
+            <FE name="Host"/>
+            <FE name="Topic"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Behavior"/>
+                <valenceUnit GF="" PT="DNI" FE="Expressor"/>
+                <valenceUnit GF="" PT="INI" FE="Guest"/>
+                <valenceUnit GF="" PT="INI" FE="Host"/>
+                <valenceUnit GF="" PT="INI" FE="Topic"/>
+                <annoSet ID="6551632"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Behavior"/>
+                <valenceUnit GF="" PT="INI" FE="Expressor"/>
+                <valenceUnit GF="" PT="INI" FE="Guest"/>
+                <valenceUnit GF="" PT="DNI" FE="Host"/>
+                <valenceUnit GF="" PT="INI" FE="Topic"/>
+                <annoSet ID="6551633"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23652" sentNo="2" paragNo="3" aPos="0" ID="4100582">
+            <text>The proverbial hospitality and warm welcome are still here .</text>
+            <annotationSet cDate="11/14/2006 04:25:12 PST Tue" status="UNANN" ID="6539581">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="13" start="4" name="jj"/>
+                    <label end="25" start="15" name="nn"/>
+                    <label end="29" start="27" name="cc"/>
+                    <label end="34" start="31" name="jj"/>
+                    <label end="42" start="36" name="nn"/>
+                    <label end="46" start="44" name="vbp"/>
+                    <label end="52" start="48" name="rb"/>
+                    <label end="57" start="54" name="rb"/>
+                    <label end="59" start="59" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="29" start="27" name="NT"/>
+                    <label end="46" start="44" name="NT"/>
+                    <label end="59" start="59" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/20/2008 03:09:17 PST Wed" status="MANUAL" ID="6551632">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="25" start="15" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="11875" itype="INI" name="Host"/>
+                    <label cBy="JKs" feID="11876" itype="INI" name="Guest"/>
+                    <label cBy="JKs" feID="11877" end="25" start="15" name="Behavior"/>
+                    <label cBy="JKs" feID="11880" itype="DNI" name="Expressor"/>
+                    <label cBy="JKs" feID="11879" itype="INI" name="Topic"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23652" sentNo="3" paragNo="13" aPos="0" ID="4100620">
+            <text>Many shops , and also hotels and guest houses , have been owned and managed by the same families for years , and theirs is the welcome of traditional Dublin hospitality .</text>
+            <annotationSet cDate="11/14/2006 04:25:25 PST Tue" status="UNANN" ID="6539619">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="jj"/>
+                    <label end="9" start="5" name="nns"/>
+                    <label end="11" start="11" name=","/>
+                    <label end="15" start="13" name="cc"/>
+                    <label end="20" start="17" name="rb"/>
+                    <label end="27" start="22" name="nns"/>
+                    <label end="31" start="29" name="cc"/>
+                    <label end="37" start="33" name="nn"/>
+                    <label end="44" start="39" name="nns"/>
+                    <label end="46" start="46" name=","/>
+                    <label end="51" start="48" name="VHP"/>
+                    <label end="56" start="53" name="VBN"/>
+                    <label end="62" start="58" name="VVN"/>
+                    <label end="66" start="64" name="cc"/>
+                    <label end="74" start="68" name="VVN"/>
+                    <label end="77" start="76" name="in"/>
+                    <label end="81" start="79" name="dt"/>
+                    <label end="86" start="83" name="jj"/>
+                    <label end="95" start="88" name="nns"/>
+                    <label end="99" start="97" name="in"/>
+                    <label end="105" start="101" name="nns"/>
+                    <label end="107" start="107" name=","/>
+                    <label end="111" start="109" name="cc"/>
+                    <label end="118" start="113" name="PP"/>
+                    <label end="121" start="120" name="VBZ"/>
+                    <label end="125" start="123" name="dt"/>
+                    <label end="133" start="127" name="nn"/>
+                    <label end="136" start="135" name="in"/>
+                    <label end="148" start="138" name="jj"/>
+                    <label end="155" start="150" name="NP"/>
+                    <label end="167" start="157" name="nn"/>
+                    <label end="169" start="169" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="155" start="150" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="11" start="11" name="NT"/>
+                    <label end="15" start="13" name="NT"/>
+                    <label end="31" start="29" name="NT"/>
+                    <label end="46" start="46" name="NT"/>
+                    <label end="51" start="48" name="NT"/>
+                    <label end="56" start="53" name="NT"/>
+                    <label end="66" start="64" name="NT"/>
+                    <label end="77" start="76" name="NT"/>
+                    <label end="81" start="79" name="NT"/>
+                    <label end="99" start="97" name="NT"/>
+                    <label end="107" start="107" name="NT"/>
+                    <label end="111" start="109" name="NT"/>
+                    <label end="118" start="113" name="NT"/>
+                    <label end="121" start="120" name="NT"/>
+                    <label end="125" start="123" name="NT"/>
+                    <label end="136" start="135" name="NT"/>
+                    <label end="155" start="150" name="NT"/>
+                    <label end="169" start="169" name="NT"/>
+                    <label end="20" start="17" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/20/2008 03:11:30 PST Wed" status="MANUAL" ID="6551633">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="167" start="157" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="11877" end="167" start="157" name="Behavior"/>
+                    <label cBy="JKs" feID="11875" itype="DNI" name="Host"/>
+                    <label cBy="JKs" feID="11876" itype="INI" name="Guest"/>
+                    <label cBy="JKs" feID="11880" itype="INI" name="Expressor"/>
+                    <label cBy="JKs" feID="11879" itype="INI" name="Topic"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

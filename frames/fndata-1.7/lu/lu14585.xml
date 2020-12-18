@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="deceptive.a" ID="14585" frame="Prevarication" frameID="287" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="AFGP-2002-602187-Trans" name="AFGP-2002-602187-Trans" ID="23743"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Add" name="Addressee"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Peripheral" abbrev="Freq" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="000000" bgColor="FF69B4" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Spkr" name="Speaker"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Top" name="Topic"/>
+        </frame>
+    </header>
+    <definition>FN: to not be revealing the truth</definition>
+    <lexeme POS="A" name="deceptive"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Addressee"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Addressee"/>
+                <annoSet ID="6550783"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Speaker"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Speaker"/>
+                <annoSet ID="6550783"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Topic"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Topic"/>
+                <annoSet ID="6550783"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Addressee"/>
+            <FE name="Speaker"/>
+            <FE name="Topic"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Addressee"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Speaker"/>
+                <valenceUnit GF="" PT="DNI" FE="Topic"/>
+                <annoSet ID="6550783"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23743" sentNo="2" paragNo="6" aPos="0" ID="4103464">
+            <text>This behavior and not the edict itself forced them to be deceptive .</text>
+            <annotationSet cDate="08/24/2007 02:44:56 PDT Fri" status="UNANN" ID="6547287">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="12" start="5" name="nn"/>
+                    <label end="16" start="14" name="cc"/>
+                    <label end="20" start="18" name="rb"/>
+                    <label end="24" start="22" name="dt"/>
+                    <label end="30" start="26" name="nn"/>
+                    <label end="37" start="32" name="PP"/>
+                    <label end="44" start="39" name="VVD"/>
+                    <label end="49" start="46" name="PP"/>
+                    <label end="52" start="51" name="to"/>
+                    <label end="55" start="54" name="vb"/>
+                    <label end="65" start="57" name="jj"/>
+                    <label end="67" start="67" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="16" start="14" name="NT"/>
+                    <label end="20" start="18" name="NT"/>
+                    <label end="24" start="22" name="NT"/>
+                    <label end="37" start="32" name="NT"/>
+                    <label end="49" start="46" name="NT"/>
+                    <label end="52" start="51" name="NT"/>
+                    <label end="55" start="54" name="NT"/>
+                    <label end="67" start="67" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/09/2007 04:06:51 PST Fri" status="MANUAL" ID="6550783">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="65" start="57" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="2490" end="49" start="46" name="Speaker"/>
+                    <label cBy="JKs" feID="2491" itype="DNI" name="Addressee"/>
+                    <label cBy="JKs" feID="2492" itype="DNI" name="Topic"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="49" start="46" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="49" start="46" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="55" start="54" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

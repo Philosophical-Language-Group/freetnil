@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="New" POS="N" name="miner.n" ID="16126" frame="Mining" frameID="2285" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Las Vegas" name="HistoryOfLasVegas" ID="23691"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="min" name="Miner"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="" name="Outcome"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="sou" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="res" name="Resource"/>
+            <FE fgColor="000000" bgColor="FFD700" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: an entity that extracts a valuable resource from the earth.</definition>
+    <lexeme POS="N" name="miner"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Miner"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Miner"/>
+                <annoSet ID="6562595"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Resource"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Resource"/>
+                <annoSet ID="6562595"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Miner"/>
+            <FE name="Resource"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Miner"/>
+                <valenceUnit GF="" PT="INI" FE="Resource"/>
+                <annoSet ID="6562595"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-object_of-(1)"/>
+    <subCorpus name="02-n_modifier-(1)"/>
+    <subCorpus name="03-modifies-(1)"/>
+    <subCorpus name="04-other-matched-(1)"/>
+    <subCorpus name="05-other-unmatched-(1)"/>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23691" sentNo="4" paragNo="10" aPos="0" ID="4101050">
+            <text>Additional pressures from arriving miners pushed the missionaries ' plight beyond recovery .</text>
+            <annotationSet cDate="03/12/2007 02:46:36 PDT Mon" status="UNANN" ID="6541843">
+                <layer rank="1" name="PENN">
+                    <label end="9" start="0" name="jj"/>
+                    <label end="19" start="11" name="nns"/>
+                    <label end="24" start="21" name="in"/>
+                    <label end="33" start="26" name="VVG"/>
+                    <label end="40" start="35" name="nns"/>
+                    <label end="47" start="42" name="VVD"/>
+                    <label end="51" start="49" name="dt"/>
+                    <label end="64" start="53" name="nns"/>
+                    <label end="66" start="66" name="POS"/>
+                    <label end="73" start="68" name="nn"/>
+                    <label end="80" start="75" name="in"/>
+                    <label end="89" start="82" name="nn"/>
+                    <label end="91" start="91" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="24" start="21" name="NT"/>
+                    <label end="51" start="49" name="NT"/>
+                    <label end="66" start="66" name="NT"/>
+                    <label end="91" start="91" name="NT"/>
+                    <label end="64" start="53" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="05/03/2011 04:40:34 PDT Tue" status="MANUAL" ID="6562595">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="40" start="35" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="13821" end="40" start="35" name="Miner"/>
+                    <label cBy="MLC" feID="13822" itype="INI" name="Resource"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

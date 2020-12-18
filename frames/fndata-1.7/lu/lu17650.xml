@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="criminal.a" ID="17650" frame="Legality" frameID="501" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_10" name="Fires_10" ID="25625"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Act" name="Action"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Cod" name="Code"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="Obj" name="Object"/>
+        </frame>
+    </header>
+    <definition>FN: forbidden by law</definition>
+    <lexeme POS="A" name="criminal"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Action"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Action"/>
+                <annoSet ID="6671565"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Action"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Action"/>
+                <annoSet ID="6671565"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25625" sentNo="2" paragNo="4" aPos="0" ID="4165593">
+            <text>Authorities are calling the fires `` criminal acts . ''</text>
+            <annotationSet cDate="07/21/2014 11:09:18 PDT Mon" status="UNANN" ID="6670849">
+                <layer rank="1" name="PENN">
+                    <label end="10" start="0" name="nns"/>
+                    <label end="14" start="12" name="vbp"/>
+                    <label end="22" start="16" name="VVG"/>
+                    <label end="26" start="24" name="dt"/>
+                    <label end="32" start="28" name="nns"/>
+                    <label end="35" start="34" name="``"/>
+                    <label end="44" start="37" name="jj"/>
+                    <label end="49" start="46" name="nns"/>
+                    <label end="51" start="51" name="sent"/>
+                    <label end="54" start="53" name="''"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="14" start="12" name="NT"/>
+                    <label end="26" start="24" name="NT"/>
+                    <label end="35" start="34" name="NT"/>
+                    <label end="51" start="51" name="NT"/>
+                    <label end="54" start="53" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/21/2014 04:51:02 PDT Mon" status="MANUAL" ID="6671565">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="44" start="37" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="4042" end="49" start="46" name="Action"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="49" start="46" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="49" start="46" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

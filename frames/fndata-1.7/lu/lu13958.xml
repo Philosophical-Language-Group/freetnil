@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="Dubliner.n" ID="13958" frame="People_by_origin" frameID="974" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Dublin" name="IntroOfDublin" ID="23652"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Age" name="Age"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Peripheral" abbrev="coa" name="Context_of_acquaintance"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Eth" name="Ethnicity"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Ori" name="Origin"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Pers_char" name="Persistent_characteristic"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Person" name="Person"/>
+        </frame>
+    </header>
+    <definition>FN: A person from or residing in Dublin. </definition>
+    <lexeme POS="N" name="Dubliner"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Origin"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="2nd" FE="Origin"/>
+                <annoSet ID="6542135"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Person"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Person"/>
+                <annoSet ID="6542135"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Origin"/>
+            <FE name="Person"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="2nd" FE="Origin"/>
+                <valenceUnit GF="" PT="DEN" FE="Person"/>
+                <annoSet ID="6542135"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23652" sentNo="4" paragNo="20" aPos="0" ID="4100638">
+            <text>However , young and old , stranger and Dubliner rub shoulders quite happily .</text>
+            <annotationSet cDate="11/14/2006 04:25:31 PST Tue" status="UNANN" ID="6539637">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="rb"/>
+                    <label end="8" start="8" name=","/>
+                    <label end="14" start="10" name="jj"/>
+                    <label end="18" start="16" name="cc"/>
+                    <label end="22" start="20" name="jj"/>
+                    <label end="24" start="24" name=","/>
+                    <label end="33" start="26" name="nn"/>
+                    <label end="37" start="35" name="cc"/>
+                    <label end="46" start="39" name="nn"/>
+                    <label end="50" start="48" name="nn"/>
+                    <label end="60" start="52" name="nns"/>
+                    <label end="66" start="62" name="rb"/>
+                    <label end="74" start="68" name="rb"/>
+                    <label end="76" start="76" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="0" name="NT"/>
+                    <label end="8" start="8" name="NT"/>
+                    <label end="18" start="16" name="NT"/>
+                    <label end="24" start="24" name="NT"/>
+                    <label end="37" start="35" name="NT"/>
+                    <label end="66" start="62" name="NT"/>
+                    <label end="76" start="76" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/13/2007 10:39:58 PDT Tue" status="MANUAL" ID="6542135">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="46" start="39" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="5944" end="46" start="39" name="Person"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+                <layer rank="2" name="FE">
+                    <label cBy="KmG" feID="5943" end="46" start="39" name="Origin"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

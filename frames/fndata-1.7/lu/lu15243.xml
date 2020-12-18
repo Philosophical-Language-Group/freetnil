@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="ADV" name="carefully.adv" ID="15243" frame="Mental_property" frameID="29" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Behv" name="Behavior"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="" name="Domain"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="jud" name="Judge"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Prac" name="Practice"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Prot" name="Protagonist"/>
+        </frame>
+    </header>
+    <definition>FN: with sufficient attention</definition>
+    <lexeme POS="ADV" name="carefully"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Behavior"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="A" FE="Behavior"/>
+                <annoSet ID="6562199"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Protagonist"/>
+                <annoSet ID="6562199"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Behavior"/>
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="A" FE="Behavior"/>
+                <valenceUnit GF="" PT="INI" FE="Protagonist"/>
+                <annoSet ID="6562199"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23771" sentNo="7" paragNo="125" aPos="0" ID="4106235">
+            <text>The river also irrigates the carefully tended surrounding farmlands , creating a beautifully lush , subtropical scene .</text>
+            <annotationSet cDate="07/25/2008 01:21:00 PDT Fri" status="UNANN" ID="6555325">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="8" start="4" name="nn"/>
+                    <label end="13" start="10" name="rb"/>
+                    <label end="23" start="15" name="VVZ"/>
+                    <label end="27" start="25" name="dt"/>
+                    <label end="37" start="29" name="rb"/>
+                    <label end="44" start="39" name="VVN"/>
+                    <label end="56" start="46" name="VVG"/>
+                    <label end="66" start="58" name="nns"/>
+                    <label end="68" start="68" name=","/>
+                    <label end="77" start="70" name="VVG"/>
+                    <label end="79" start="79" name="dt"/>
+                    <label end="91" start="81" name="rb"/>
+                    <label end="96" start="93" name="jj"/>
+                    <label end="98" start="98" name=","/>
+                    <label end="110" start="100" name="jj"/>
+                    <label end="116" start="112" name="nn"/>
+                    <label end="118" start="118" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="13" start="10" name="NT"/>
+                    <label end="27" start="25" name="NT"/>
+                    <label end="68" start="68" name="NT"/>
+                    <label end="79" start="79" name="NT"/>
+                    <label end="91" start="81" name="NT"/>
+                    <label end="98" start="98" name="NT"/>
+                    <label end="118" start="118" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/16/2011 03:31:11 PST Wed" status="MANUAL" ID="6562199">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="37" start="29" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="121" end="44" start="39" name="Behavior"/>
+                    <label cBy="MLC" feID="120" itype="INI" name="Protagonist"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="44" start="39" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="44" start="39" name="A"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

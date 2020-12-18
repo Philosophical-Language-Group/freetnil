@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Origin" POS="N" name="Californian.n" ID="10547" frame="People_by_origin" frameID="974" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Loma Prieta" name="LomaPrieta" ID="23013"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Age" name="Age"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Peripheral" abbrev="coa" name="Context_of_acquaintance"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Eth" name="Ethnicity"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Ori" name="Origin"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Pers_char" name="Persistent_characteristic"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Person" name="Person"/>
+        </frame>
+    </header>
+    <definition>FN: a person from California</definition>
+    <lexeme POS="N" name="Californian"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Origin"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Origin"/>
+                <annoSet ID="4528720"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Person"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Person"/>
+                <annoSet ID="4528720"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Origin"/>
+            <FE name="Person"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Origin"/>
+                <valenceUnit GF="" PT="DEN" FE="Person"/>
+                <annoSet ID="4528720"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23013" sentNo="1" paragNo="2" aPos="0" ID="2824425">
+            <text>Hundreds of Californians made their way to their computers after the quake , and checked in with each other on electronic bulletin boards , which link computers CB-radio-style , via phone lines .</text>
+            <annotationSet cDate="02/05/2004 08:30:37 PST Thu" status="UNANN" ID="4528420">
+                <layer rank="1" name="PENN">
+                    <label end="7" start="0" name="nns"/>
+                    <label end="10" start="9" name="in"/>
+                    <label end="23" start="12" name="NPS"/>
+                    <label end="28" start="25" name="VVD"/>
+                    <label end="34" start="30" name="PP$"/>
+                    <label end="38" start="36" name="nn"/>
+                    <label end="41" start="40" name="to"/>
+                    <label end="47" start="43" name="PP$"/>
+                    <label end="57" start="49" name="nns"/>
+                    <label end="63" start="59" name="in"/>
+                    <label end="67" start="65" name="dt"/>
+                    <label end="73" start="69" name="nn"/>
+                    <label end="75" start="75" name=","/>
+                    <label end="79" start="77" name="cc"/>
+                    <label end="87" start="81" name="VVD"/>
+                    <label end="90" start="89" name="in"/>
+                    <label end="95" start="92" name="in"/>
+                    <label end="100" start="97" name="dt"/>
+                    <label end="106" start="102" name="jj"/>
+                    <label end="109" start="108" name="in"/>
+                    <label end="120" start="111" name="jj"/>
+                    <label end="129" start="122" name="nn"/>
+                    <label end="136" start="131" name="nns"/>
+                    <label end="138" start="138" name=","/>
+                    <label end="144" start="140" name="wdt"/>
+                    <label end="149" start="146" name="VVP"/>
+                    <label end="159" start="151" name="nns"/>
+                    <label end="174" start="161" name="nn"/>
+                    <label end="176" start="176" name=","/>
+                    <label end="180" start="178" name="in"/>
+                    <label end="186" start="182" name="nn"/>
+                    <label end="192" start="188" name="nns"/>
+                    <label end="194" start="194" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="75" start="75" name="NT"/>
+                    <label end="90" start="89" name="NT"/>
+                    <label end="138" start="138" name="NT"/>
+                    <label end="176" start="176" name="NT"/>
+                    <label end="194" start="194" name="NT"/>
+                    <label end="10" start="9" name="NT"/>
+                    <label end="34" start="30" name="NT"/>
+                    <label end="47" start="43" name="NT"/>
+                    <label end="67" start="65" name="NT"/>
+                    <label end="79" start="77" name="NT"/>
+                    <label end="95" start="92" name="NT"/>
+                    <label end="100" start="97" name="NT"/>
+                    <label end="144" start="140" name="NT"/>
+                    <label end="180" start="178" name="NT"/>
+                    <label end="106" start="102" name="NT"/>
+                    <label end="57" start="49" name="Nonrelational"/>
+                    <label end="159" start="151" name="Nonrelational"/>
+                    <label end="192" start="188" name="Nonrelational"/>
+                    <label end="186" start="182" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/02/2004 11:57:20 PDT Fri" status="MANUAL" ID="4528720">
+                <layer rank="1" name="Target">
+                    <label cBy="MHa" end="23" start="12" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MHa" feID="5944" end="23" start="12" name="Person"/>
+                    <label cBy="MHa" feID="5943" itype="INI" name="Origin"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="friendship.n" ID="9040" frame="Personal_relationship" frameID="102" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="North Korea Nuclear Overview" name="NorthKorea_NuclearOverview" ID="23562"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Peripheral" abbrev="" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Means" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="" name="Partners"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Partner_1" name="Partner_1"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Partner_2" name="Partner_2"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="rel" name="Relationship"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Peripheral" abbrev="Src" name="Source_of_relationship"/>
+        </frame>
+    </header>
+    <definition>FN: the relationship between friends</definition>
+    <lexeme POS="N" name="friendship"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Partner_1"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Partner_1"/>
+                <annoSet ID="6530027"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Partner_2"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[with]" FE="Partner_2"/>
+                <annoSet ID="6530027"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Partners"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Partners"/>
+                <annoSet ID="6560870"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Partner_1"/>
+            <FE name="Partner_2"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Partner_1"/>
+                <valenceUnit GF="Dep" PT="PP[with]" FE="Partner_2"/>
+                <annoSet ID="6530027"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Partners"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Partners"/>
+                <annoSet ID="6560870"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23562" sentNo="2" paragNo="18" aPos="0" ID="4097699">
+            <text>In 1961 , Pyongyang signed `` treaties of friendship , cooperation , and mutual assistance '' with both Moscow and Beijing , but events led Kim to question the credibility of these alliances .</text>
+            <annotationSet cDate="08/01/2005 12:16:10 PDT Mon" status="UNANN" ID="6528673">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="6" start="3" name="cd"/>
+                    <label end="8" start="8" name=","/>
+                    <label end="18" start="10" name="NP"/>
+                    <label end="25" start="20" name="VVD"/>
+                    <label end="28" start="27" name="``"/>
+                    <label end="37" start="30" name="nns"/>
+                    <label end="40" start="39" name="in"/>
+                    <label end="51" start="42" name="nn"/>
+                    <label end="53" start="53" name=","/>
+                    <label end="65" start="55" name="nn"/>
+                    <label end="67" start="67" name=","/>
+                    <label end="71" start="69" name="cc"/>
+                    <label end="78" start="73" name="jj"/>
+                    <label end="89" start="80" name="nn"/>
+                    <label end="92" start="91" name="''"/>
+                    <label end="97" start="94" name="in"/>
+                    <label end="102" start="99" name="dt"/>
+                    <label end="109" start="104" name="NP"/>
+                    <label end="113" start="111" name="cc"/>
+                    <label end="121" start="115" name="NP"/>
+                    <label end="123" start="123" name=","/>
+                    <label end="127" start="125" name="cc"/>
+                    <label end="134" start="129" name="nns"/>
+                    <label end="138" start="136" name="VVD"/>
+                    <label end="142" start="140" name="NP"/>
+                    <label end="145" start="144" name="to"/>
+                    <label end="154" start="147" name="VV"/>
+                    <label end="158" start="156" name="dt"/>
+                    <label end="170" start="160" name="nn"/>
+                    <label end="173" start="172" name="in"/>
+                    <label end="179" start="175" name="dt"/>
+                    <label end="189" start="181" name="nns"/>
+                    <label end="191" start="191" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="6" start="3" name="date"/>
+                    <label end="18" start="10" name="location"/>
+                    <label end="109" start="104" name="location"/>
+                    <label end="121" start="115" name="location"/>
+                    <label end="142" start="140" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="6" start="3" name="NT"/>
+                    <label end="8" start="8" name="NT"/>
+                    <label end="18" start="10" name="NT"/>
+                    <label end="28" start="27" name="NT"/>
+                    <label end="40" start="39" name="NT"/>
+                    <label end="53" start="53" name="NT"/>
+                    <label end="67" start="67" name="NT"/>
+                    <label end="71" start="69" name="NT"/>
+                    <label end="92" start="91" name="NT"/>
+                    <label end="97" start="94" name="NT"/>
+                    <label end="102" start="99" name="NT"/>
+                    <label end="109" start="104" name="NT"/>
+                    <label end="113" start="111" name="NT"/>
+                    <label end="121" start="115" name="NT"/>
+                    <label end="123" start="123" name="NT"/>
+                    <label end="127" start="125" name="NT"/>
+                    <label end="142" start="140" name="NT"/>
+                    <label end="145" start="144" name="NT"/>
+                    <label end="158" start="156" name="NT"/>
+                    <label end="173" start="172" name="NT"/>
+                    <label end="179" start="175" name="NT"/>
+                    <label end="191" start="191" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/10/2005 03:17:38 PDT Wed" status="MANUAL" ID="6530027">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="51" start="42" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="488" end="121" start="94" name="Partner_2"/>
+                    <label cBy="JKR" feID="487" itype="DNI" name="Partner_1"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="121" start="94" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="121" start="94" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23771" sentNo="1" paragNo="100" aPos="0" ID="4106133">
+            <text>The grandstand situated on the seaside road , the Avenida da Amizade ( Friendship Avenue ) , marks the finishing line for the Macau Grand Prix , the international car - racing event held here every November .</text>
+            <annotationSet cDate="07/25/2008 01:20:01 PDT Fri" status="UNANN" ID="6555223">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="13" start="4" name="nn"/>
+                    <label end="22" start="15" name="VVN"/>
+                    <label end="25" start="24" name="in"/>
+                    <label end="29" start="27" name="dt"/>
+                    <label end="37" start="31" name="nn"/>
+                    <label end="42" start="39" name="nn"/>
+                    <label end="44" start="44" name=","/>
+                    <label end="48" start="46" name="dt"/>
+                    <label end="56" start="50" name="NP"/>
+                    <label end="59" start="58" name="NP"/>
+                    <label end="67" start="61" name="NP"/>
+                    <label end="69" start="69" name="("/>
+                    <label end="80" start="71" name="nn"/>
+                    <label end="87" start="82" name="NP"/>
+                    <label end="89" start="89" name=")"/>
+                    <label end="91" start="91" name=","/>
+                    <label end="97" start="93" name="VVZ"/>
+                    <label end="101" start="99" name="dt"/>
+                    <label end="111" start="103" name="jj"/>
+                    <label end="116" start="113" name="nn"/>
+                    <label end="120" start="118" name="in"/>
+                    <label end="124" start="122" name="dt"/>
+                    <label end="130" start="126" name="NP"/>
+                    <label end="136" start="132" name="NP"/>
+                    <label end="141" start="138" name="NP"/>
+                    <label end="143" start="143" name=","/>
+                    <label end="147" start="145" name="dt"/>
+                    <label end="161" start="149" name="jj"/>
+                    <label end="165" start="163" name="nn"/>
+                    <label end="167" start="167" name=":"/>
+                    <label end="174" start="169" name="VVG"/>
+                    <label end="180" start="176" name="nn"/>
+                    <label end="185" start="182" name="VVD"/>
+                    <label end="190" start="187" name="rb"/>
+                    <label end="196" start="192" name="dt"/>
+                    <label end="205" start="198" name="NP"/>
+                    <label end="207" start="207" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="67" start="50" name="organization"/>
+                    <label end="87" start="71" name="organization"/>
+                    <label end="130" start="126" name="location"/>
+                    <label end="205" start="198" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="29" start="27" name="NT"/>
+                    <label end="44" start="44" name="NT"/>
+                    <label end="48" start="46" name="NT"/>
+                    <label end="56" start="50" name="NT"/>
+                    <label end="59" start="58" name="NT"/>
+                    <label end="67" start="61" name="NT"/>
+                    <label end="69" start="69" name="NT"/>
+                    <label end="89" start="89" name="NT"/>
+                    <label end="91" start="91" name="NT"/>
+                    <label end="101" start="99" name="NT"/>
+                    <label end="120" start="118" name="NT"/>
+                    <label end="124" start="122" name="NT"/>
+                    <label end="130" start="126" name="NT"/>
+                    <label end="136" start="132" name="NT"/>
+                    <label end="141" start="138" name="NT"/>
+                    <label end="143" start="143" name="NT"/>
+                    <label end="147" start="145" name="NT"/>
+                    <label end="167" start="167" name="NT"/>
+                    <label end="207" start="207" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/24/2011 02:30:35 PST Mon" status="MANUAL" ID="6560870">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="80" start="71" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="489" itype="INI" name="Partners"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Direction" POS="A" name="then.a" ID="14528" frame="Time_vector" frameID="379" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="20000410_nyt-NEW" name="20000410_nyt-NEW" ID="23701"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Direction" name="Direction"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Distance" name="Distance"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Core" abbrev="Evt" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="lan" name="Landmark_event"/>
+        </frame>
+    </header>
+    <definition>FN: being (something) at an earlier time</definition>
+    <lexeme POS="A" name="then"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Direction"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Direction"/>
+                <annoSet ID="6548810"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Landmark_event"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Landmark_event"/>
+                <annoSet ID="6548810"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Direction"/>
+            <FE name="Landmark_event"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Direction"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Landmark_event"/>
+                <annoSet ID="6548810"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23701" sentNo="2" paragNo="7" aPos="0" ID="4101316">
+            <text>The last visitor was then- U.S. Rep . Bill Richardson of New Mexico , who went to help a pair of U.S. oilmen in diplomatic trouble .</text>
+            <annotationSet cDate="08/02/2007 08:10:14 PDT Thu" status="UNANN" ID="6544504">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="7" start="4" name="jj"/>
+                    <label end="15" start="9" name="nn"/>
+                    <label end="19" start="17" name="VBD"/>
+                    <label end="25" start="21" name="NP"/>
+                    <label end="30" start="27" name="NP"/>
+                    <label end="34" start="32" name="NP"/>
+                    <label end="36" start="36" name="sent"/>
+                    <label end="41" start="38" name="NP"/>
+                    <label end="52" start="43" name="NP"/>
+                    <label end="55" start="54" name="in"/>
+                    <label end="59" start="57" name="NP"/>
+                    <label end="66" start="61" name="NP"/>
+                    <label end="68" start="68" name=","/>
+                    <label end="72" start="70" name="wp"/>
+                    <label end="77" start="74" name="VVD"/>
+                    <label end="80" start="79" name="to"/>
+                    <label end="85" start="82" name="VV"/>
+                    <label end="87" start="87" name="dt"/>
+                    <label end="92" start="89" name="nn"/>
+                    <label end="95" start="94" name="in"/>
+                    <label end="100" start="97" name="NP"/>
+                    <label end="107" start="102" name="nns"/>
+                    <label end="110" start="109" name="in"/>
+                    <label end="121" start="112" name="jj"/>
+                    <label end="129" start="123" name="nn"/>
+                    <label end="131" start="131" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="30" start="27" name="location"/>
+                    <label end="52" start="38" name="person"/>
+                    <label end="66" start="57" name="location"/>
+                    <label end="100" start="97" name="GPE"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="19" start="17" name="NT"/>
+                    <label end="34" start="32" name="NT"/>
+                    <label end="36" start="36" name="NT"/>
+                    <label end="41" start="38" name="NT"/>
+                    <label end="52" start="43" name="NT"/>
+                    <label end="59" start="57" name="NT"/>
+                    <label end="66" start="61" name="NT"/>
+                    <label end="68" start="68" name="NT"/>
+                    <label end="72" start="70" name="NT"/>
+                    <label end="80" start="79" name="NT"/>
+                    <label end="87" start="87" name="NT"/>
+                    <label end="95" start="94" name="NT"/>
+                    <label end="100" start="97" name="NT"/>
+                    <label end="110" start="109" name="NT"/>
+                    <label end="131" start="131" name="NT"/>
+                    <label end="30" start="27" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/24/2007 04:28:58 PDT Wed" status="MANUAL" ID="6548810">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="25" start="21" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="3396" end="15" start="0" name="Landmark_event"/>
+                    <label cBy="JKs" feID="3398" end="25" start="21" name="Direction"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="15" start="0" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="15" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="dawning.n" ID="13979" frame="Temporal_subregion" frameID="1470" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="subpar" name="Subpart"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="subpp" name="Subpart_property"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="tim" name="Time_period"/>
+        </frame>
+    </header>
+    <definition>COD: the beginning or first appearance of something.</definition>
+    <lexeme POS="N" name="dawning"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Subpart"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Subpart"/>
+                <annoSet ID="6543624"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Time"/>
+                <annoSet ID="6543624"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time_period"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Time_period"/>
+                <annoSet ID="6543624"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Subpart"/>
+            <FE name="Time"/>
+            <FE name="Time_period"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Subpart"/>
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Time"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Time_period"/>
+                <annoSet ID="6543624"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23692" sentNo="4" paragNo="6" aPos="0" ID="4101182">
+            <text>The people farmed and fished ; on the dawning of the Bronze Age in 2700 b.c. , they began to work with metals .</text>
+            <annotationSet cDate="03/12/2007 02:50:55 PDT Mon" status="UNANN" ID="6541975">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="9" start="4" name="nns"/>
+                    <label end="16" start="11" name="VVN"/>
+                    <label end="20" start="18" name="cc"/>
+                    <label end="27" start="22" name="VVN"/>
+                    <label end="29" start="29" name=":"/>
+                    <label end="32" start="31" name="in"/>
+                    <label end="36" start="34" name="dt"/>
+                    <label end="44" start="38" name="VVG"/>
+                    <label end="47" start="46" name="in"/>
+                    <label end="51" start="49" name="dt"/>
+                    <label end="58" start="53" name="nn"/>
+                    <label end="62" start="60" name="NP"/>
+                    <label end="65" start="64" name="in"/>
+                    <label end="70" start="67" name="cd"/>
+                    <label end="75" start="72" name="nn"/>
+                    <label end="77" start="77" name=","/>
+                    <label end="82" start="79" name="PP"/>
+                    <label end="88" start="84" name="VVD"/>
+                    <label end="91" start="90" name="to"/>
+                    <label end="96" start="93" name="VV"/>
+                    <label end="101" start="98" name="in"/>
+                    <label end="108" start="103" name="nns"/>
+                    <label end="110" start="110" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="75" start="67" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="20" start="18" name="NT"/>
+                    <label end="29" start="29" name="NT"/>
+                    <label end="32" start="31" name="NT"/>
+                    <label end="36" start="34" name="NT"/>
+                    <label end="47" start="46" name="NT"/>
+                    <label end="51" start="49" name="NT"/>
+                    <label end="70" start="67" name="NT"/>
+                    <label end="77" start="77" name="NT"/>
+                    <label end="82" start="79" name="NT"/>
+                    <label end="91" start="90" name="NT"/>
+                    <label end="101" start="98" name="NT"/>
+                    <label end="110" start="110" name="NT"/>
+                    <label end="58" start="53" name="Nonrelational"/>
+                    <label end="75" start="72" name="NT"/>
+                    <label end="108" start="103" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/28/2007 10:01:43 PDT Wed" status="MANUAL" ID="6543624">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="44" start="38" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="8055" end="62" start="46" name="Time_period"/>
+                    <label cBy="KmG" feID="11214" end="75" start="64" name="Time"/>
+                    <label cBy="KmG" feID="8053" end="44" start="38" name="Subpart"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="62" start="46" name="Dep"/>
+                    <label end="75" start="64" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="62" start="46" name="PP"/>
+                    <label end="75" start="64" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

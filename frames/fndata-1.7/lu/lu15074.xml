@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="usher in.v" ID="15074" frame="Sign" frameID="428" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+        </corpus>
+        <frame>
+            <FE fgColor="000000" bgColor="FFD700" type="Peripheral" abbrev="D" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="F" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Indicated" name="Indicated"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Indicator" name="Indicator"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Rel" name="Reliability"/>
+        </frame>
+    </header>
+    <definition>FN: to be part of a larger cause that brings about a later state of affairs. </definition>
+    <lexeme order="1" headword="true" breakBefore="false" POS="V" name="usher"/>
+    <lexeme order="2" headword="false" breakBefore="true" POS="PREP" name="in"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Indicated"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Indicated"/>
+                <annoSet ID="6552295"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Indicator"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Indicator"/>
+                <annoSet ID="6552295"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Indicated"/>
+            <FE name="Indicator"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Indicated"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Indicator"/>
+                <annoSet ID="6552295"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23692" sentNo="5" paragNo="20" aPos="0" ID="4101224">
+            <text>His rise to power ushered in the Hellenistic period .</text>
+            <annotationSet cDate="03/12/2007 02:51:13 PDT Mon" status="UNANN" ID="6542017">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="PP$"/>
+                    <label end="7" start="4" name="nn"/>
+                    <label end="10" start="9" name="to"/>
+                    <label end="16" start="12" name="nn"/>
+                    <label end="24" start="18" name="VVD"/>
+                    <label end="27" start="26" name="in"/>
+                    <label end="31" start="29" name="dt"/>
+                    <label end="43" start="33" name="jj"/>
+                    <label end="50" start="45" name="nn"/>
+                    <label end="52" start="52" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="10" start="9" name="NT"/>
+                    <label end="31" start="29" name="NT"/>
+                    <label end="52" start="52" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/06/2008 03:33:54 PDT Fri" status="MANUAL" ID="6552295">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="24" start="18" name="Target"/>
+                    <label cBy="EGp" end="27" start="26" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="3954" end="50" start="29" name="Indicated"/>
+                    <label cBy="KmG" feID="3953" end="16" start="0" name="Indicator"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="50" start="29" name="Obj"/>
+                    <label end="16" start="0" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="50" start="29" name="NP"/>
+                    <label end="16" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

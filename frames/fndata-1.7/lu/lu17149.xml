@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="New" POS="V" name="shrink.v" ID="17149" frame="Posture" frameID="18" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp=893" name="bncp=893" ID="18903"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agt" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="Res" name="Dependent_state"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Extra-Thematic" abbrev="Depict" name="Depictive"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Peripheral" abbrev="" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="Loc" name="Location"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="0000FF" bgColor="d0d0d0" type="Core" abbrev="poc" name="Point_of_contact"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: To reconfigure the body into a fetal position or into a smaller size.</definition>
+    <lexeme POS="V" name="shrink"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <annoSet ID="6635576"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Dependent_state"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[into]" FE="Dependent_state"/>
+                <annoSet ID="6635576"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Point_of_contact"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Point_of_contact"/>
+                <annoSet ID="6635576"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Dependent_state"/>
+            <FE name="Point_of_contact"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="Dep" PT="PP[into]" FE="Dependent_state"/>
+                <valenceUnit GF="" PT="INI" FE="Point_of_contact"/>
+                <annoSet ID="6635576"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-pp_into-p-(1)"/>
+    <subCorpus name="02-other-matched-(1)"/>
+    <subCorpus name="03-other-unmatched-(1)">
+        <sentence corpID="111" docID="18903" sentNo="1" paragNo="564" aPos="0" ID="4144596">
+            <text>The young man suddenly seemed to shrink into himself , and turned a face imprinted with fear towards Montgomery .</text>
+            <annotationSet cDate="06/28/2012 03:10:51 PDT Thu" status="UNANN" ID="6635575">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="8" start="4" name="jj"/>
+                    <label end="12" start="10" name="nn"/>
+                    <label end="21" start="14" name="rb"/>
+                    <label end="28" start="23" name="VVD"/>
+                    <label end="31" start="30" name="to"/>
+                    <label end="38" start="33" name="VV"/>
+                    <label end="43" start="40" name="in"/>
+                    <label end="51" start="45" name="PP"/>
+                    <label end="53" start="53" name=","/>
+                    <label end="57" start="55" name="cc"/>
+                    <label end="64" start="59" name="VVD"/>
+                    <label end="66" start="66" name="dt"/>
+                    <label end="71" start="68" name="nn"/>
+                    <label end="81" start="73" name="VVN"/>
+                    <label end="86" start="83" name="in"/>
+                    <label end="91" start="88" name="nn"/>
+                    <label end="99" start="93" name="in"/>
+                    <label end="110" start="101" name="NP"/>
+                    <label end="112" start="112" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="06/28/2012 03:10:51 PDT Thu" status="MANUAL" ID="6635576">
+                <layer rank="1" name="Target">
+                    <label cBy="PKe" end="38" start="33" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="PKe" feID="5020" itype="INI" name="Point_of_contact"/>
+                    <label cBy="PKe" feID="81" end="12" start="0" name="Agent"/>
+                    <label cBy="PKe" feID="3949" end="51" start="40" name="Dependent_state"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="12" start="0" name="Ext"/>
+                    <label end="51" start="40" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="12" start="0" name="NP"/>
+                    <label end="51" start="40" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="01-pp_into-p-(3)"/>
+    <subCorpus name="02-other-matched-(3)"/>
+    <subCorpus name="03-other-unmatched-(3)"/>
+</lexUnit>

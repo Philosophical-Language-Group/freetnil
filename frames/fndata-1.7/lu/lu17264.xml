@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="bitterness.n" ID="17264" frame="Emotion_directed" frameID="46" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="ET" name="Empathy_target"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="Event" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Exp" name="Experiencer"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Exr" name="Expressor"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="" name="Parameter"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Core" abbrev="State" name="State"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Stim" name="Stimulus"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="Top" name="Topic"/>
+        </frame>
+    </header>
+    <definition>FN: the state of being resentful</definition>
+    <lexeme POS="N" name="bitterness"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Experiencer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Experiencer"/>
+                <annoSet ID="6646035"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Stimulus"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[against]" FE="Stimulus"/>
+                <annoSet ID="6646035"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Experiencer"/>
+            <FE name="Stimulus"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Experiencer"/>
+                <valenceUnit GF="Dep" PT="PP[against]" FE="Stimulus"/>
+                <annoSet ID="6646035"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="8" paragNo="28" aPos="0" ID="4148444">
+            <text>Still , in her heart , she must retain bitterness and hatred against those who had killed him and would presumably help so far as she could to have revenge upon them .</text>
+            <annotationSet cDate="04/30/2013 05:20:19 PDT Tue" status="UNANN" ID="6646031">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="rb"/>
+                    <label end="9" start="8" name="in"/>
+                    <label end="13" start="11" name="PRP$"/>
+                    <label end="19" start="15" name="nn"/>
+                    <label end="25" start="23" name="PRP"/>
+                    <label end="30" start="27" name="md"/>
+                    <label end="37" start="32" name="vb"/>
+                    <label end="48" start="39" name="nn"/>
+                    <label end="52" start="50" name="cc"/>
+                    <label end="59" start="54" name="nn"/>
+                    <label end="67" start="61" name="in"/>
+                    <label end="73" start="69" name="dt"/>
+                    <label end="77" start="75" name="wp"/>
+                    <label end="81" start="79" name="VBD"/>
+                    <label end="88" start="83" name="VBN"/>
+                    <label end="92" start="90" name="PRP"/>
+                    <label end="96" start="94" name="cc"/>
+                    <label end="102" start="98" name="md"/>
+                    <label end="113" start="104" name="rb"/>
+                    <label end="118" start="115" name="vb"/>
+                    <label end="121" start="120" name="rb"/>
+                    <label end="125" start="123" name="rb"/>
+                    <label end="128" start="127" name="in"/>
+                    <label end="132" start="130" name="PRP"/>
+                    <label end="138" start="134" name="md"/>
+                    <label end="141" start="140" name="to"/>
+                    <label end="146" start="143" name="vb"/>
+                    <label end="154" start="148" name="nn"/>
+                    <label end="159" start="156" name="in"/>
+                    <label end="164" start="161" name="PRP"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:20:21 PDT Tue" status="MANUAL" ID="6646035">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="48" start="39" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="194" end="25" start="23" name="Experiencer"/>
+                    <label cBy="EGp" feID="197" end="92" start="61" name="Stimulus"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="25" start="23" name="Ext"/>
+                    <label end="92" start="61" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="25" start="23" name="NP"/>
+                    <label end="92" start="61" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

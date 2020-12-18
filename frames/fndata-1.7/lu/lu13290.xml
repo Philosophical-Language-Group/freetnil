@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="rate.n" ID="13290" frame="Speed_description" frameID="966" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Loma Prieta" name="LomaPrieta" ID="23013"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="Att" name="Attribute"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="Cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Core" abbrev="Deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Ent" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Spe" name="Speed"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="Tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: the speed with which something moves, happens, or changes.</definition>
+    <lexeme POS="N" name="rate"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Entity"/>
+                <annoSet ID="4531260"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Speed"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Speed"/>
+                <annoSet ID="4531260"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Entity"/>
+            <FE name="Speed"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Entity"/>
+                <valenceUnit GF="" PT="DEN" FE="Speed"/>
+                <annoSet ID="4531260"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23013" sentNo="4" paragNo="20" aPos="0" ID="2824484">
+            <text>Amazing what it does to one 's heart rate and one 's short-term memory .</text>
+            <annotationSet cDate="02/05/2004 08:30:50 PST Thu" status="UNANN" ID="4528479">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="jj"/>
+                    <label end="11" start="8" name="wp"/>
+                    <label end="14" start="13" name="PP"/>
+                    <label end="19" start="16" name="VVZ"/>
+                    <label end="22" start="21" name="to"/>
+                    <label end="26" start="24" name="nn"/>
+                    <label end="29" start="28" name="POS"/>
+                    <label end="35" start="31" name="nn"/>
+                    <label end="40" start="37" name="nn"/>
+                    <label end="44" start="42" name="cc"/>
+                    <label end="48" start="46" name="nn"/>
+                    <label end="51" start="50" name="POS"/>
+                    <label end="62" start="53" name="jj"/>
+                    <label end="69" start="64" name="nn"/>
+                    <label end="71" start="71" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="19" start="16" name="NT"/>
+                    <label end="22" start="21" name="NT"/>
+                    <label end="71" start="71" name="NT"/>
+                    <label end="11" start="8" name="NT"/>
+                    <label end="14" start="13" name="NT"/>
+                    <label end="29" start="28" name="NT"/>
+                    <label end="44" start="42" name="NT"/>
+                    <label end="51" start="50" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/08/2010 01:22:33 PDT Thu" status="MANUAL" ID="4531260">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="40" start="37" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="5902" end="35" start="31" name="Entity"/>
+                    <label cBy="AlK" feID="5904" end="40" start="37" name="Speed"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="35" start="31" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="35" start="31" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

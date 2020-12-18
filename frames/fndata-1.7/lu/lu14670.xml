@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="clan.n" ID="14670" frame="Kinship" frameID="104" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Alter"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="" name="Ego"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="" name="Relatives"/>
+        </frame>
+    </header>
+    <definition>FN: group of people who are related by blood or by marriage</definition>
+    <lexeme POS="N" name="clan"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Relatives"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Relatives"/>
+                <annoSet ID="6552200"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Relatives"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Relatives"/>
+                <annoSet ID="6552200"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23692" sentNo="5" paragNo="22" aPos="0" ID="4101230">
+            <text>Cleopatra was a member of this famous ruling clan .</text>
+            <annotationSet cDate="03/12/2007 02:51:15 PDT Mon" status="UNANN" ID="6542023">
+                <layer rank="1" name="PENN">
+                    <label end="8" start="0" name="NP"/>
+                    <label end="12" start="10" name="VBD"/>
+                    <label end="14" start="14" name="dt"/>
+                    <label end="21" start="16" name="nn"/>
+                    <label end="24" start="23" name="in"/>
+                    <label end="29" start="26" name="dt"/>
+                    <label end="36" start="31" name="jj"/>
+                    <label end="43" start="38" name="nn"/>
+                    <label end="48" start="45" name="nn"/>
+                    <label end="50" start="50" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="8" start="0" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="8" start="0" name="NT"/>
+                    <label end="12" start="10" name="NT"/>
+                    <label end="14" start="14" name="NT"/>
+                    <label end="24" start="23" name="NT"/>
+                    <label end="29" start="26" name="NT"/>
+                    <label end="50" start="50" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="05/23/2008 02:41:01 PDT Fri" status="MANUAL" ID="6552200">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="48" start="45" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="518" end="48" start="45" name="Relatives"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

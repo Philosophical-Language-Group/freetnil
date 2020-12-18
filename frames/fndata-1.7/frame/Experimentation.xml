@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="CVa" cDate="11/08/2011 04:46:49 PST Tue" name="Experimentation" ID="2683" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;An &lt;fen&gt;Experimenter&lt;/fen&gt; conducts an &lt;fen&gt;Experiment&lt;/fen&gt; based on a &lt;fen&gt;Hypothesis&lt;/fen&gt;.  This &lt;fen&gt;Experiment&lt;/fen&gt; contains a &lt;fen&gt;Control_group&lt;/fen&gt; or &lt;fen&gt;Control_group_member&lt;/fen&gt; which is compared with a &lt;fen&gt;Treatment_group&lt;/fen&gt; or &lt;fen&gt;Treated_individual&lt;/fen&gt; in order to determine the &lt;fen&gt;Result&lt;/fen&gt;.
+&lt;ex&gt;&lt;/ex&gt;
+&lt;ex&gt;&lt;fex name="Experimenter"&gt;Johann's&lt;/fex&gt; &lt;t&gt;&lt;fex name="Experiment"&gt;experiment&lt;/fex&gt;&lt;/t&gt; &lt;fex name="Result"&gt;proved the new drug was effective in treating the disease&lt;/fex&gt;.&lt;/ex&gt;
+
+&lt;ex&gt;Jacob placed the &lt;t&gt;&lt;fex name="Control_group"&gt;control group&lt;/fex&gt;&lt;/t&gt; under a strong light for 20 hours each day.&lt;/ex&gt; 
+
+&lt;ex&gt;&lt;fex name="Experimenter"&gt;Rolf&lt;/fex&gt; &lt;t&gt;tested&lt;/t&gt; &lt;fex name="Hyp"&gt;his hypothesis&lt;/fex&gt; &lt;fex name="Place"&gt;in Vienna&lt;/fex&gt; &lt;fex name="Time"&gt;in 1973&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    <semType name="Non-perspectivalized_frame" ID="52"/>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="CVa" cDate="11/08/2011 04:58:49 PST Tue" abbrev="Exp" name="Experimenter" ID="15286">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Experimenter&lt;/fen&gt; is the individual conducting the &lt;fen&gt;Experiment&lt;/fen&gt;.
+&lt;ex&gt;&lt;fex name="Experimenter"&gt;Justin's&lt;/fex&gt; &lt;t&gt;experiment&lt;/t&gt; turned out to be rather successful.&lt;/ex&gt;
+
+&lt;ex&gt;&lt;fex name="Experimenter"&gt;The professor&lt;/fex&gt; performed an interesting &lt;t&gt;experiment&lt;/t&gt; for the class. &lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="Sentient" ID="5"/>
+    </FE>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Core" cBy="CVa" cDate="11/08/2011 05:04:57 PST Tue" abbrev="Con" name="Control_group" ID="15288">
+        <definition>&lt;def-root&gt;The group of entities in the &lt;fen&gt;Experiment&lt;/fen&gt; which have not been treated and are compared to the &lt;fen&gt;Treatment_group&lt;/fen&gt; or &lt;fen&gt;Treated_individual&lt;/fen&gt;.
+&lt;ex&gt;&lt;/ex&gt;
+
+&lt;ex&gt;The &lt;fex name="Control_group"&gt;&lt;t&gt;control&lt;/t&gt;&lt;/fex&gt; in George's experiment consisted of 17 mice.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <excludesFE name="Control_group_member" ID="15289"/>
+    </FE>
+    <FE bgColor="00BFFF" fgColor="FFFFFF" coreType="Core" cBy="CVa" cDate="11/08/2011 05:08:59 PST Tue" abbrev="" name="Control_group_member" ID="15289">
+        <definition>&lt;def-root&gt;An individual entity of the &lt;fen&gt;Experiment&lt;/fen&gt; which is left untreated and then compared with the &lt;fen&gt;Treatment_group&lt;/fen&gt; or the &lt;fen&gt;Treated_individual&lt;/fen&gt;.
+
+&lt;ex&gt;&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <excludesFE name="Control_group" ID="15288"/>
+    </FE>
+    <FE bgColor="FFFF00" fgColor="000000" coreType="Core" cBy="CVa" cDate="11/08/2011 05:13:34 PST Tue" abbrev="" name="Treatment_group" ID="15290">
+        <definition>&lt;def-root&gt;A group of subjects that receive Treatment and are compared to the &lt;fen&gt;Control_group&lt;/fen&gt; or &lt;fex name="Controlled_individual"&gt;Controlled_individuals&lt;/fex&gt;.
+&lt;ex&gt;&lt;/ex&gt;
+&lt;ex&gt;The &lt;t&gt;experiment's&lt;/t&gt; &lt;fex name="Treatment_group"&gt;rats who received a dose of the drug every hour&lt;/fex&gt; did not live to see the next day. &lt;fex name="Experimenter"&gt;DNI&lt;/fex&gt;&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <excludesFE name="Treated_individual" ID="15291"/>
+    </FE>
+    <FE bgColor="800080" fgColor="FFFFFF" coreType="Core" cBy="CVa" cDate="11/08/2011 05:16:36 PST Tue" abbrev="" name="Treated_individual" ID="15291">
+        <definition>&lt;def-root&gt;An individual subject that receives treatment and is then compared to the &lt;fen&gt;Control_group&lt;/fen&gt; or &lt;fen&gt;Controlled_individual&lt;/fen&gt;.
+
+&lt;ex&gt;&lt;fex name="Treated_individual"&gt;One rat's&lt;/fex&gt; &lt;t&gt;treatment&lt;/t&gt; caused it to outlive the rats of the control group.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <excludesFE name="Treatment_group" ID="15290"/>
+    </FE>
+    <FE bgColor="A52A2A" fgColor="FFFFFF" coreType="Peripheral" cBy="CVa" cDate="11/09/2011 04:39:17 PST Wed" abbrev="Dur" name="Duration" ID="15293">
+        <definition>&lt;def-root&gt;The amount of time the &lt;fen&gt;Experiment&lt;/fen&gt; lasts.
+
+&lt;ex&gt;&lt;fex name="Duration"&gt;The six week long&lt;/fex&gt; &lt;t&gt;study&lt;/t&gt; was published in a prominent scientific journal.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="A9A9A9" fgColor="000000" coreType="Peripheral" cBy="CVa" cDate="11/09/2011 04:40:59 PST Wed" abbrev="" name="Place" ID="15294">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Place&lt;/fen&gt; in which the &lt;fen&gt;Experiment&lt;/fen&gt; is conducted.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="9F79EE" fgColor="000000" coreType="Peripheral" cBy="CVa" cDate="11/09/2011 04:42:58 PST Wed" abbrev="" name="Time" ID="15295">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Time&lt;/fen&gt; at which the &lt;fen&gt;Experimenter&lt;/fen&gt; conducts the &lt;fen&gt;Experiment&lt;/fen&gt;.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FF00FF" fgColor="FFFFFF" coreType="Peripheral" cBy="CVa" cDate="11/15/2011 12:12:33 PST Tue" abbrev="Phen" name="Phenomenon" ID="15298">
+        <definition>&lt;def-root&gt;A property that belongs to either the &lt;fen&gt;Control_group&lt;/fen&gt; or the &lt;fen&gt;Treatment_group&lt;/fen&gt;.  Usually expressed by a PP.
+&lt;ex&gt;The &lt;t&gt;control&lt;/t&gt; &lt;fex name="Phen"&gt;for the problem of imprecise sensing&lt;/fex&gt; is currently being monitored. &lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="90876C" fgColor="FFFFFF" coreType="Peripheral" cBy="CVa" cDate="11/15/2011 12:45:43 PST Tue" abbrev="Res" name="Result" ID="15299">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Result&lt;/fen&gt; depicts the outcome of the &lt;fen&gt;Experiment&lt;/fen&gt;.
+&lt;ex&gt;The &lt;t&gt;experiment&lt;/t&gt; &lt;fex name="Result"&gt;proves the new drug is effective treating the disease&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="7FFF00" fgColor="000000" coreType="Peripheral" cBy="CVa" cDate="11/15/2011 12:58:14 PST Tue" abbrev="Des" name="Descriptor" ID="15300">
+        <definition>&lt;def-root&gt;A &lt;fen&gt;Descriptor&lt;/fen&gt; identifies a characteristic or description of the &lt;fen&gt;Experiment&lt;/fen&gt; or the &lt;fen&gt;Subjects&lt;/fen&gt; not captured by any other frame element.
+&lt;ex&gt;Mica's &lt;fex name="Descriptor"&gt;clever&lt;/fex&gt; &lt;t&gt;study&lt;/t&gt; was conducted in 2011.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Core" cBy="CVa" cDate="11/15/2011 01:05:42 PST Tue" abbrev="Exp" name="Experiment" ID="15301">
+        <definition>&lt;def-root&gt;The test or &lt;fen&gt;Experiment&lt;/fen&gt; conducted by the &lt;fen&gt;Experimenter&lt;/fen&gt; using a &lt;fen&gt;Control_group&lt;/fen&gt; and a &lt;fen&gt;Treatment_group&lt;/fen&gt;.
+&lt;ex&gt;&lt;/ex&gt;
+&lt;ex&gt;Jeff's &lt;t&gt;&lt;fex name="Experiment"&gt;experiment&lt;/fex&gt;&lt;/t&gt;showed the drug to be harmful to human health.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FFA500" fgColor="000000" coreType="Core" cBy="CVa" cDate="11/15/2011 03:51:19 PST Tue" abbrev="Hyp" name="Hypothesis" ID="15302">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Hypothesis&lt;/fen&gt; is a conjecture as to the result of an &lt;fen&gt;Experiment&lt;/fen&gt;.  The &lt;fen&gt;Experiment&lt;/fen&gt; takes place in order to prove the &lt;fen&gt;Hypothesis&lt;/fen&gt; as correct or incorrect.  
+&lt;ex&gt;Katrina &lt;t&gt;tested&lt;/t&gt; &lt;fex name="Hyp"&gt;her hypothesis&lt;/fex&gt; yesterday afternoon. &lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="EEE8AA" fgColor="000000" coreType="Core" cBy="CVa" cDate="11/16/2011 06:48:19 PST Wed" abbrev="Sub" name="Subjects" ID="15304">
+        <definition>&lt;def-root&gt;In this frame &lt;fen&gt;Control_group&lt;/fen&gt; and &lt;fen&gt;Treatment_group&lt;/fen&gt; can be combined and expressed as &lt;fen&gt;Subjects&lt;/fen&gt;.  This FE can also be used for a generic individual on whom the &lt;fen&gt;Experiment&lt;/fen&gt; is being conducted (see second example).
+&lt;ex&gt;They were hoping to conduct an &lt;t&gt;experiment&lt;/t&gt; &lt;fex name="Subjects"&gt;on the albino rats&lt;/fex&gt;.&lt;/ex&gt;
+&lt;ex&gt;The &lt;t&gt;&lt;fex name="Subjects"&gt;subject&lt;/fex&gt;&lt;/t&gt; was asked to respond as quickly as possible to the stimuli in front of him.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="2E8B57" fgColor="FFFFFF" coreType="Peripheral" cBy="CVa" cDate="11/21/2011 03:54:52 PST Mon" abbrev="Inst" name="Instrument" ID="15305">
+        <definition>&lt;def-root&gt;A tool used in conducting the &lt;fen&gt;Experiment&lt;/fen&gt;.  Usually expressed by a with-PP.
+&lt;ex&gt;Silke &lt;t&gt;experimented&lt;/t&gt; &lt;fex name="Inst"&gt;with chemical insecticides&lt;/fex&gt;. &lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="1E90FF" fgColor="FFFFFF" coreType="Core" cBy="CVa" cDate="11/21/2011 04:24:36 PST Mon" abbrev="Top" name="Topic" ID="15306">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Topic&lt;/fen&gt; is the subject that the &lt;fen&gt;Experiment&lt;/fen&gt; is studying.
+&lt;ex&gt;Jimmy conducted an &lt;t&gt;experiment&lt;/t&gt; &lt;fex name="Topic"&gt;on tropical plants in non-tropical environments&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FEcoreSet>
+        <memberFE name="Subjects" ID="15304"/>
+        <memberFE name="Topic" ID="15306"/>
+        <memberFE name="Treatment_group" ID="15290"/>
+        <memberFE name="Control_group" ID="15288"/>
+    </FEcoreSet>
+    <frameRelation type="Inherits from"/>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses">
+        <relatedFrame ID="31">Scrutiny</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="Finished_Initial" POS="N" name="control.n" ID="16787" lemmaID="8148" cBy="CVa" cDate="11/09/2011 04:45:50 PST Wed">
+        <definition>FN: a subject or group of subjects in an experiment which are left untreated and are then compared with treated subjects in order to validate or invalidate a hypothesis</definition>
+        <sentenceCount annotated="15" total="129"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="control"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="control group.n" ID="16788" lemmaID="51467" cBy="CVa" cDate="11/09/2011 04:54:34 PST Wed">
+        <definition>FN:  a group of subjects in an experiment which are left untreated and are then compared with treated subjects in order to validate or invalidate a hypothesis</definition>
+        <sentenceCount annotated="3" total="3"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="N" name="control"/>
+        <lexeme order="2" headword="false" breakBefore="false" POS="N" name="group"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="N" name="experiment.n" ID="16793" lemmaID="13540" cBy="CVa" cDate="11/15/2011 01:03:00 PST Tue">
+        <definition>FN: a test under controlled conditions conducted in order to prove or disprove a hypothesis</definition>
+        <sentenceCount annotated="14" total="136"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="experiment"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="N" name="study.n" ID="16794" lemmaID="38433" cBy="CVa" cDate="11/15/2011 01:16:01 PST Tue">
+        <definition>FN: an experiment conducted under controlled conditions in order to prove or disprove a hypothesis</definition>
+        <sentenceCount annotated="15" total="140"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="study"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="treatment.n" ID="16795" lemmaID="41138" cBy="CVa" cDate="11/15/2011 02:06:20 PST Tue">
+        <definition>FN: the applying of a substance or a process in a scientific experiment to an individual or group of individuals</definition>
+        <sentenceCount annotated="0" total="100"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="treatment"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="V" name="test.v" ID="16796" lemmaID="39951" cBy="CVa" cDate="11/15/2011 04:12:11 PST Tue">
+        <definition>FN: to conduct an experiment in order to prove a hypothesis right or wrong</definition>
+        <sentenceCount annotated="6" total="60"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="test"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="V" name="experiment.v" ID="16797" lemmaID="13541" cBy="CVa" cDate="11/15/2011 04:14:50 PST Tue">
+        <definition>FN: to determine whether a  hypothesis is correct by conducting a test or experiment </definition>
+        <sentenceCount annotated="16" total="73"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="experiment"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="N" name="subject.n" ID="16798" lemmaID="38523" cBy="CVa" cDate="11/21/2011 06:00:25 PST Mon">
+        <definition>FN: an individual who is being studied in an experiment</definition>
+        <sentenceCount annotated="16" total="60"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="subject"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="N" name="hypothesis.n" ID="16816" lemmaID="18805" cBy="CVa" cDate="12/06/2011 02:25:06 PST Tue">
+        <definition>FN: a conjecture which explains a phenomenon and can be tested by experimentation</definition>
+        <sentenceCount annotated="15" total="50"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="hypothesis"/>
+    </lexUnit>
+</frame>

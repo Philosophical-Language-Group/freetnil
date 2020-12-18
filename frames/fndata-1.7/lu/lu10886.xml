@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="signal.n" ID="10886" frame="Gesture" frameID="36" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Bell Ringing" name="BellRinging" ID="23009"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Add" name="Addressee"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="B-p" name="Body_part"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Com" name="Communicator"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Core" abbrev="" name="Indicated_entity"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Peripheral" abbrev="" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Msg" name="Message"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: a gesture conveying information or an instruction</definition>
+    <lexeme POS="N" name="signal"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Addressee"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Addressee"/>
+                <annoSet ID="4529862"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Communicator"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Communicator"/>
+                <annoSet ID="4529862"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Message"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Message"/>
+                <annoSet ID="4529862"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Addressee"/>
+            <FE name="Communicator"/>
+            <FE name="Message"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Addressee"/>
+                <valenceUnit GF="" PT="INI" FE="Communicator"/>
+                <valenceUnit GF="" PT="DNI" FE="Message"/>
+                <annoSet ID="4529862"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23009" sentNo="2" paragNo="11" aPos="0" ID="2824217">
+            <text>Then , at a signal , the ringers begin varying the order in which the bells sound without altering the steady rhythm of the striking .</text>
+            <annotationSet cDate="02/05/2004 08:29:25 PST Thu" status="UNANN" ID="4528212">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="rb"/>
+                    <label end="5" start="5" name=","/>
+                    <label end="8" start="7" name="in"/>
+                    <label end="10" start="10" name="dt"/>
+                    <label end="17" start="12" name="nn"/>
+                    <label end="19" start="19" name=","/>
+                    <label end="23" start="21" name="dt"/>
+                    <label end="31" start="25" name="nns"/>
+                    <label end="37" start="33" name="VVP"/>
+                    <label end="45" start="39" name="VVG"/>
+                    <label end="49" start="47" name="dt"/>
+                    <label end="55" start="51" name="nn"/>
+                    <label end="58" start="57" name="in"/>
+                    <label end="64" start="60" name="wdt"/>
+                    <label end="68" start="66" name="dt"/>
+                    <label end="74" start="70" name="nns"/>
+                    <label end="80" start="76" name="VVP"/>
+                    <label end="88" start="82" name="in"/>
+                    <label end="97" start="90" name="VVG"/>
+                    <label end="101" start="99" name="dt"/>
+                    <label end="108" start="103" name="jj"/>
+                    <label end="115" start="110" name="nn"/>
+                    <label end="118" start="117" name="in"/>
+                    <label end="122" start="120" name="dt"/>
+                    <label end="131" start="124" name="jj"/>
+                    <label end="133" start="133" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="5" start="5" name="NT"/>
+                    <label end="19" start="19" name="NT"/>
+                    <label end="58" start="57" name="NT"/>
+                    <label end="133" start="133" name="NT"/>
+                    <label end="8" start="7" name="NT"/>
+                    <label end="10" start="10" name="NT"/>
+                    <label end="23" start="21" name="NT"/>
+                    <label end="49" start="47" name="NT"/>
+                    <label end="64" start="60" name="NT"/>
+                    <label end="68" start="66" name="NT"/>
+                    <label end="88" start="82" name="NT"/>
+                    <label end="101" start="99" name="NT"/>
+                    <label end="118" start="117" name="NT"/>
+                    <label end="122" start="120" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/19/2004 10:16:07 PDT Thu" status="MANUAL" ID="4529862">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="17" start="12" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="149" itype="INI" name="Communicator"/>
+                    <label cBy="MJE" feID="150" itype="INI" name="Addressee"/>
+                    <label cBy="MJE" feID="151" itype="DNI" name="Message"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

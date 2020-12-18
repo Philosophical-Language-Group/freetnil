@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="trouble.n" ID="14612" frame="Experiencer_obj" frameID="47" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Slate magazine article: Stephanopoulos Crimes" name="StephanopoulosCrimes" ID="23642"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="Circ" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Exp" name="Experiencer"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="Result" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Stimulus" name="Stimulus"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: a feeling of being disturbed</definition>
+    <lexeme POS="N" name="trouble"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Experiencer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Experiencer"/>
+                <annoSet ID="6549665"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Stimulus"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="Sfin" FE="Stimulus"/>
+                <annoSet ID="6549665"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Experiencer"/>
+            <FE name="Stimulus"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Experiencer"/>
+                <valenceUnit GF="Dep" PT="Sfin" FE="Stimulus"/>
+                <annoSet ID="6549665"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23642" sentNo="1" paragNo="4" aPos="0" ID="4103610">
+            <text>The trouble is that Stephanopoulos himself helped propagate those lies in the first place .</text>
+            <annotationSet cDate="11/01/2007 12:52:44 PDT Thu" status="UNANN" ID="6549650">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="10" start="4" name="nn"/>
+                    <label end="13" start="12" name="VBZ"/>
+                    <label end="18" start="15" name="in"/>
+                    <label end="33" start="20" name="NP"/>
+                    <label end="41" start="35" name="PP"/>
+                    <label end="48" start="43" name="VVD"/>
+                    <label end="58" start="50" name="VV"/>
+                    <label end="64" start="60" name="dt"/>
+                    <label end="69" start="66" name="VVZ"/>
+                    <label end="72" start="71" name="in"/>
+                    <label end="76" start="74" name="dt"/>
+                    <label end="82" start="78" name="jj"/>
+                    <label end="88" start="84" name="nn"/>
+                    <label end="90" start="90" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="33" start="20" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="13" start="12" name="NT"/>
+                    <label end="18" start="15" name="NT"/>
+                    <label end="33" start="20" name="NT"/>
+                    <label end="41" start="35" name="NT"/>
+                    <label end="64" start="60" name="NT"/>
+                    <label end="72" start="71" name="NT"/>
+                    <label end="76" start="74" name="NT"/>
+                    <label end="90" start="90" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/01/2007 01:23:31 PDT Thu" status="MANUAL" ID="6549665">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="10" start="4" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="199" end="88" start="15" name="Stimulus"/>
+                    <label cBy="KmG" feID="198" itype="DNI" name="Experiencer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="88" start="15" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="88" start="15" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="13" start="12" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

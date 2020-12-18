@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="New" POS="V" name="extract.v" ID="16127" frame="Mining" frameID="2285" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp=2217" name="bncp=2217" ID="19853"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="min" name="Miner"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="" name="Outcome"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="sou" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="res" name="Resource"/>
+            <FE fgColor="000000" bgColor="FFD700" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: the process of removing resources from the earth.</definition>
+    <lexeme POS="V" name="extract"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Miner"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Miner"/>
+                <annoSet ID="2613696"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Resource"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Resource"/>
+                <annoSet ID="2613696"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Miner"/>
+            <FE name="Resource"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Miner"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Resource"/>
+                <annoSet ID="2613696"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-oil+substance+gold-(1)">
+        <sentence corpID="111" docID="19853" sentNo="2" paragNo="166" aPos="0" ID="1588254">
+            <text>By extracting the oil too quickly , the engineer risks losing touch with the larger deposit and having to drill again .</text>
+            <annotationSet cDate="10/08/2010 02:57:15 PDT Fri" status="UNANN" ID="2613695">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="12" start="3" name="VVG"/>
+                    <label end="16" start="14" name="dt"/>
+                    <label end="20" start="18" name="nn"/>
+                    <label end="24" start="22" name="rb"/>
+                    <label end="32" start="26" name="rb"/>
+                    <label end="34" start="34" name=","/>
+                    <label end="38" start="36" name="dt"/>
+                    <label end="47" start="40" name="nn"/>
+                    <label end="53" start="49" name="nns"/>
+                    <label end="60" start="55" name="VVG"/>
+                    <label end="66" start="62" name="nn"/>
+                    <label end="71" start="68" name="in"/>
+                    <label end="75" start="73" name="dt"/>
+                    <label end="82" start="77" name="jjr"/>
+                    <label end="90" start="84" name="nn"/>
+                    <label end="94" start="92" name="cc"/>
+                    <label end="101" start="96" name="VHG"/>
+                    <label end="104" start="103" name="to"/>
+                    <label end="110" start="106" name="VV"/>
+                    <label end="116" start="112" name="rb"/>
+                    <label end="118" start="118" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="10/08/2010 02:57:16 PDT Fri" status="MANUAL" ID="2613696">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="12" start="3" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="13822" end="20" start="14" name="Resource"/>
+                    <label cBy="MLC" feID="13821" itype="DNI" name="Miner"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="20" start="14" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="20" start="14" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="02-pp_from-p-(1)"/>
+    <subCorpus name="03-object-(1)"/>
+    <subCorpus name="04-other-matched-(1)"/>
+    <subCorpus name="05-other-unmatched-(1)"/>
+</lexUnit>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="print.v" ID="5213" frame="Text_creation" frameID="278" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="AFGP-2002-602187-Trans" name="AFGP-2002-602187-Trans" ID="23743"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Extra-Thematic" abbrev="Addressee" name="Addressee"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Author" name="Author"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Ben" name="Beneficiary"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="Cmpnt" name="Components"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Depict" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="For" name="Form"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="Ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="" name="Medium"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="text" name="Text"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: write clearly without joining the letters. </definition>
+    <lexeme POS="V" name="print"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Author"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Author"/>
+                <annoSet ID="6547862"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Form"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[on]" FE="Form"/>
+                <annoSet ID="6547862"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Text"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Text"/>
+                <annoSet ID="6547862"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Author"/>
+            <FE name="Form"/>
+            <FE name="Text"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Author"/>
+                <valenceUnit GF="Dep" PT="PP[on]" FE="Form"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Text"/>
+                <annoSet ID="6547862"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23743" sentNo="2" paragNo="9" aPos="0" ID="4103472">
+            <text>Please print it on a thin paper ; may God reward you .</text>
+            <annotationSet cDate="08/24/2007 02:44:58 PDT Fri" status="UNANN" ID="6547295">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="VV"/>
+                    <label end="11" start="7" name="VV"/>
+                    <label end="14" start="13" name="PP"/>
+                    <label end="17" start="16" name="in"/>
+                    <label end="19" start="19" name="dt"/>
+                    <label end="24" start="21" name="jj"/>
+                    <label end="30" start="26" name="nn"/>
+                    <label end="32" start="32" name=":"/>
+                    <label end="36" start="34" name="md"/>
+                    <label end="40" start="38" name="NP"/>
+                    <label end="47" start="42" name="VV"/>
+                    <label end="51" start="49" name="PP"/>
+                    <label end="53" start="53" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="40" start="38" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="14" start="13" name="NT"/>
+                    <label end="17" start="16" name="NT"/>
+                    <label end="19" start="19" name="NT"/>
+                    <label end="32" start="32" name="NT"/>
+                    <label end="40" start="38" name="NT"/>
+                    <label end="51" start="49" name="NT"/>
+                    <label end="53" start="53" name="NT"/>
+                    <label end="30" start="26" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="09/17/2007 11:23:04 PDT Mon" status="MANUAL" ID="6547862">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="11" start="7" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="2428" itype="CNI" name="Author"/>
+                    <label cBy="KmG" feID="2430" end="14" start="13" name="Text"/>
+                    <label cBy="KmG" feID="4290" end="30" start="16" name="Form"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="14" start="13" name="Obj"/>
+                    <label end="30" start="16" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="14" start="13" name="NP"/>
+                    <label end="30" start="16" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

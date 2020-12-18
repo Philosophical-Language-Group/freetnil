@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="ADV" name="quickly.adv" ID="17636" frame="Taking_time" frameID="967" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_6" name="Fires_6" ID="25621"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="" name="Activity"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="att" name="Attribute"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Core" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="" name="Time_length"/>
+        </frame>
+    </header>
+    <definition>FN: in a fast manner</definition>
+    <lexeme POS="ADV" name="quickly"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Activity"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Activity"/>
+                <annoSet ID="6670805"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPbrst" FE="Activity"/>
+                <annoSet ID="6670805"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Activity"/>
+            <FE name="Activity"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Activity"/>
+                <valenceUnit GF="Dep" PT="VPbrst" FE="Activity"/>
+                <annoSet ID="6670805"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25621" sentNo="1" paragNo="5" aPos="0" ID="4165045">
+            <text>It quickly spread to the first floor where the main bathroom was destroyed .</text>
+            <annotationSet cDate="07/17/2014 11:44:31 PDT Thu" status="UNANN" ID="6669215">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="9" start="3" name="rb"/>
+                    <label end="16" start="11" name="VVD"/>
+                    <label end="19" start="18" name="to"/>
+                    <label end="23" start="21" name="dt"/>
+                    <label end="29" start="25" name="jj"/>
+                    <label end="35" start="31" name="nn"/>
+                    <label end="41" start="37" name="wrb"/>
+                    <label end="45" start="43" name="dt"/>
+                    <label end="50" start="47" name="jj"/>
+                    <label end="59" start="52" name="nn"/>
+                    <label end="63" start="61" name="VBD"/>
+                    <label end="73" start="65" name="VVN"/>
+                    <label end="75" start="75" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="19" start="18" name="NT"/>
+                    <label end="23" start="21" name="NT"/>
+                    <label end="41" start="37" name="NT"/>
+                    <label end="45" start="43" name="NT"/>
+                    <label end="63" start="61" name="NT"/>
+                    <label end="75" start="75" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/21/2014 10:04:39 PDT Mon" status="MANUAL" ID="6670805">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="9" start="3" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="5908" end="1" start="0" name="Activity"/>
+                    <label cBy="CVa" feID="5908" end="73" start="11" name="Activity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="1" start="0" name="Ext"/>
+                    <label end="73" start="11" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="1" start="0" name="NP"/>
+                    <label end="73" start="11" name="VPbrst"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

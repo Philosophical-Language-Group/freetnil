@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="element.n" ID="14622" frame="Ingredients" frameID="1348" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Election Victory" name="ElectionVictory" ID="23010"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="mat" name="Material"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Extra-Thematic" abbrev="Nam" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="sou" name="Origin"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="pro" name="Product"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="typ" name="Type"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="use" name="Use"/>
+        </frame>
+    </header>
+    <definition>FN: the most basic factor or part that makes up something</definition>
+    <lexeme POS="N" name="element"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Descriptor"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Descriptor"/>
+                <annoSet ID="6549719"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Material"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="DEN" FE="Material"/>
+                <annoSet ID="4531186"/>
+                <annoSet ID="6549719"/>
+                <annoSet ID="6561527"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Product"/>
+            <pattern total="3">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Product"/>
+                <annoSet ID="4531186"/>
+                <annoSet ID="6549719"/>
+                <annoSet ID="6561527"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Use"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Use"/>
+                <annoSet ID="6549719"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Descriptor"/>
+            <FE name="Material"/>
+            <FE name="Product"/>
+            <FE name="Use"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Descriptor"/>
+                <valenceUnit GF="" PT="DEN" FE="Material"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Product"/>
+                <valenceUnit GF="" PT="INI" FE="Use"/>
+                <annoSet ID="6549719"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="2">
+            <FE name="Material"/>
+            <FE name="Product"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Material"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Product"/>
+                <annoSet ID="4531186"/>
+                <annoSet ID="6561527"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23010" sentNo="2" paragNo="7" aPos="0" ID="2824291">
+            <text>They , as well as numerous Latin American and East European countries that hope to adopt elements of the Spanish model , are supporting the direction Spain is taking .</text>
+            <annotationSet cDate="02/05/2004 08:29:48 PST Thu" status="UNANN" ID="4528286">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="PP"/>
+                    <label end="5" start="5" name=","/>
+                    <label end="8" start="7" name="rb"/>
+                    <label end="13" start="10" name="rb"/>
+                    <label end="16" start="15" name="in"/>
+                    <label end="25" start="18" name="jj"/>
+                    <label end="31" start="27" name="NP"/>
+                    <label end="40" start="33" name="NP"/>
+                    <label end="44" start="42" name="cc"/>
+                    <label end="49" start="46" name="NP"/>
+                    <label end="58" start="51" name="NP"/>
+                    <label end="68" start="60" name="nns"/>
+                    <label end="73" start="70" name="wdt"/>
+                    <label end="78" start="75" name="VVP"/>
+                    <label end="81" start="80" name="to"/>
+                    <label end="87" start="83" name="VV"/>
+                    <label end="96" start="89" name="nns"/>
+                    <label end="99" start="98" name="in"/>
+                    <label end="103" start="101" name="dt"/>
+                    <label end="111" start="105" name="jj"/>
+                    <label end="117" start="113" name="nn"/>
+                    <label end="119" start="119" name=","/>
+                    <label end="123" start="121" name="vbp"/>
+                    <label end="134" start="125" name="VVG"/>
+                    <label end="138" start="136" name="dt"/>
+                    <label end="148" start="140" name="nn"/>
+                    <label end="154" start="150" name="NP"/>
+                    <label end="157" start="156" name="VBZ"/>
+                    <label end="164" start="159" name="VVG"/>
+                    <label end="166" start="166" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="68" start="27" name="GPE"/>
+                    <label end="154" start="150" name="GPE"/>
+                    <label end="111" start="105" name="GPE"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="5" name="NT"/>
+                    <label end="8" start="7" name="NT"/>
+                    <label end="13" start="10" name="NT"/>
+                    <label end="81" start="80" name="NT"/>
+                    <label end="119" start="119" name="NT"/>
+                    <label end="123" start="121" name="NT"/>
+                    <label end="157" start="156" name="NT"/>
+                    <label end="166" start="166" name="NT"/>
+                    <label end="3" start="0" name="NT"/>
+                    <label end="16" start="15" name="NT"/>
+                    <label end="31" start="27" name="NT"/>
+                    <label end="40" start="33" name="NT"/>
+                    <label end="44" start="42" name="NT"/>
+                    <label end="49" start="46" name="NT"/>
+                    <label end="58" start="51" name="NT"/>
+                    <label end="73" start="70" name="NT"/>
+                    <label end="99" start="98" name="NT"/>
+                    <label end="103" start="101" name="NT"/>
+                    <label end="138" start="136" name="NT"/>
+                    <label end="154" start="150" name="NT"/>
+                    <label end="111" start="105" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/01/2010 04:41:21 PDT Thu" status="MANUAL" ID="4531186">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="96" start="89" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="7630" end="117" start="98" name="Product"/>
+                    <label cBy="AlK" feID="7625" end="96" start="89" name="Material"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="117" start="98" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="117" start="98" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23692" sentNo="1" paragNo="4" aPos="0" ID="4101176">
+            <text>The basic elements of life in the Aegean began to come together as early as 5000 b.c. , and were already in place by the late Bronze Age ( c. 2700 b.c. ) .</text>
+            <annotationSet cDate="03/12/2007 02:50:53 PDT Mon" status="UNANN" ID="6541969">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="8" start="4" name="jj"/>
+                    <label end="17" start="10" name="nns"/>
+                    <label end="20" start="19" name="in"/>
+                    <label end="25" start="22" name="nn"/>
+                    <label end="28" start="27" name="in"/>
+                    <label end="32" start="30" name="dt"/>
+                    <label end="39" start="34" name="NP"/>
+                    <label end="45" start="41" name="VVD"/>
+                    <label end="48" start="47" name="to"/>
+                    <label end="53" start="50" name="VV"/>
+                    <label end="62" start="55" name="rb"/>
+                    <label end="65" start="64" name="rb"/>
+                    <label end="71" start="67" name="jj"/>
+                    <label end="74" start="73" name="in"/>
+                    <label end="79" start="76" name="cd"/>
+                    <label end="84" start="81" name="nn"/>
+                    <label end="86" start="86" name=","/>
+                    <label end="90" start="88" name="cc"/>
+                    <label end="95" start="92" name="VBD"/>
+                    <label end="103" start="97" name="rb"/>
+                    <label end="106" start="105" name="in"/>
+                    <label end="112" start="108" name="nn"/>
+                    <label end="115" start="114" name="in"/>
+                    <label end="119" start="117" name="dt"/>
+                    <label end="124" start="121" name="jj"/>
+                    <label end="131" start="126" name="nn"/>
+                    <label end="135" start="133" name="NP"/>
+                    <label end="137" start="137" name="("/>
+                    <label end="140" start="139" name="NP"/>
+                    <label end="145" start="142" name="cd"/>
+                    <label end="150" start="147" name="nn"/>
+                    <label end="152" start="152" name=")"/>
+                    <label end="154" start="154" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="39" start="34" name="location"/>
+                    <label end="84" start="76" name="date"/>
+                    <label end="150" start="139" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="20" start="19" name="NT"/>
+                    <label end="32" start="30" name="NT"/>
+                    <label end="39" start="34" name="NT"/>
+                    <label end="48" start="47" name="NT"/>
+                    <label end="65" start="64" name="NT"/>
+                    <label end="74" start="73" name="NT"/>
+                    <label end="79" start="76" name="NT"/>
+                    <label end="86" start="86" name="NT"/>
+                    <label end="90" start="88" name="NT"/>
+                    <label end="95" start="92" name="NT"/>
+                    <label end="106" start="105" name="NT"/>
+                    <label end="115" start="114" name="NT"/>
+                    <label end="119" start="117" name="NT"/>
+                    <label end="137" start="137" name="NT"/>
+                    <label end="140" start="139" name="NT"/>
+                    <label end="145" start="142" name="NT"/>
+                    <label end="152" start="152" name="NT"/>
+                    <label end="154" start="154" name="NT"/>
+                    <label end="25" start="22" name="Nonrelational"/>
+                    <label end="131" start="126" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/01/2007 03:53:34 PDT Thu" status="MANUAL" ID="6549719">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="17" start="10" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="7628" end="8" start="4" name="Descriptor"/>
+                    <label cBy="JKs" feID="7625" end="17" start="10" name="Material"/>
+                    <label cBy="JKs" feID="7630" end="39" start="19" name="Product"/>
+                    <label cBy="DYo" feID="7629" itype="INI" name="Use"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="8" start="4" name="Dep"/>
+                    <label end="39" start="19" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="8" start="4" name="AJP"/>
+                    <label end="39" start="19" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23771" sentNo="4" paragNo="82" aPos="0" ID="4106074">
+            <text>That era is gone now , but other elements of the island 's old life are preserved .</text>
+            <annotationSet cDate="07/25/2008 01:19:32 PDT Fri" status="UNANN" ID="6555164">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="7" start="5" name="nn"/>
+                    <label end="10" start="9" name="VBZ"/>
+                    <label end="15" start="12" name="VVN"/>
+                    <label end="19" start="17" name="rb"/>
+                    <label end="21" start="21" name=","/>
+                    <label end="25" start="23" name="cc"/>
+                    <label end="31" start="27" name="jj"/>
+                    <label end="40" start="33" name="nns"/>
+                    <label end="43" start="42" name="in"/>
+                    <label end="47" start="45" name="dt"/>
+                    <label end="54" start="49" name="nn"/>
+                    <label end="57" start="56" name="POS"/>
+                    <label end="61" start="59" name="jj"/>
+                    <label end="66" start="63" name="nn"/>
+                    <label end="70" start="68" name="vbp"/>
+                    <label end="80" start="72" name="VVN"/>
+                    <label end="82" start="82" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="10" start="9" name="NT"/>
+                    <label end="21" start="21" name="NT"/>
+                    <label end="43" start="42" name="NT"/>
+                    <label end="47" start="45" name="NT"/>
+                    <label end="57" start="56" name="NT"/>
+                    <label end="70" start="68" name="NT"/>
+                    <label end="82" start="82" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/27/2011 04:47:29 PST Thu" status="MANUAL" ID="6561527">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="40" start="33" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="7630" end="66" start="42" name="Product"/>
+                    <label cBy="AlK" feID="7625" end="40" start="33" name="Material"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="66" start="42" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="66" start="42" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

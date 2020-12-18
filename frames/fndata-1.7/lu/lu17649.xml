@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Needs_SCs" POS="NUM" name="nine.num" ID="17649" frame="Cardinal_numbers" frameID="218" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_10" name="Fires_10" ID="25625"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="" name="Composite_number"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="Entity" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="mul" name="Multiplier"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Core" abbrev="Num" name="Number"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="deg" name="Precision"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="uni" name="Unit"/>
+        </frame>
+    </header>
+    <definition>FN: the number that is 8 + 1</definition>
+    <lexeme POS="NUM" name="nine"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Entity"/>
+                <annoSet ID="6671559"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Number"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Number"/>
+                <annoSet ID="6671559"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Entity"/>
+            <FE name="Number"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Entity"/>
+                <valenceUnit GF="" PT="--" FE="Number"/>
+                <annoSet ID="6671559"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25625" sentNo="2" paragNo="3" aPos="0" ID="4165591">
+            <text>Local fire departments put the current death toll at at least 37 , nine of which were children .</text>
+            <annotationSet cDate="07/21/2014 11:09:18 PDT Mon" status="UNANN" ID="6670847">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="jj"/>
+                    <label end="9" start="6" name="nn"/>
+                    <label end="21" start="11" name="nns"/>
+                    <label end="25" start="23" name="VVD"/>
+                    <label end="29" start="27" name="dt"/>
+                    <label end="37" start="31" name="jj"/>
+                    <label end="43" start="39" name="nn"/>
+                    <label end="48" start="45" name="nn"/>
+                    <label end="51" start="50" name="in"/>
+                    <label end="54" start="53" name="in"/>
+                    <label end="60" start="56" name="jjs"/>
+                    <label end="63" start="62" name="cd"/>
+                    <label end="65" start="65" name=","/>
+                    <label end="70" start="67" name="cd"/>
+                    <label end="73" start="72" name="in"/>
+                    <label end="79" start="75" name="wdt"/>
+                    <label end="84" start="81" name="VBD"/>
+                    <label end="93" start="86" name="nns"/>
+                    <label end="95" start="95" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="29" start="27" name="NT"/>
+                    <label end="51" start="50" name="NT"/>
+                    <label end="63" start="62" name="NT"/>
+                    <label end="65" start="65" name="NT"/>
+                    <label end="73" start="72" name="NT"/>
+                    <label end="79" start="75" name="NT"/>
+                    <label end="84" start="81" name="NT"/>
+                    <label end="95" start="95" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/21/2014 04:47:29 PDT Mon" status="MANUAL" ID="6671559">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="70" start="67" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="3622" end="70" start="67" name="Number"/>
+                    <label cBy="CVa" feID="3623" end="79" start="72" name="Entity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="79" start="72" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="79" start="72" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

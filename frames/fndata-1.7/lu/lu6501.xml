@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="fit.v" ID="6501" frame="Suitability" frameID="368" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Eva" name="Evaluee"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="User" name="User"/>
+        </frame>
+    </header>
+    <definition>COD: be or make suitable for. </definition>
+    <lexeme POS="V" name="fit"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Degree"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Degree"/>
+                <annoSet ID="6561835"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Evaluee"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Evaluee"/>
+                <annoSet ID="6561835"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Purpose"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Purpose"/>
+                <annoSet ID="6561835"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Degree"/>
+            <FE name="Evaluee"/>
+            <FE name="Purpose"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Degree"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Evaluee"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Purpose"/>
+                <annoSet ID="6561835"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23771" sentNo="3" paragNo="92" aPos="0" ID="4106105">
+            <text>Lucky Macau fit the specifications exactly .</text>
+            <annotationSet cDate="07/25/2008 01:19:47 PDT Fri" status="UNANN" ID="6555195">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="NP"/>
+                    <label end="10" start="6" name="NP"/>
+                    <label end="14" start="12" name="VVP"/>
+                    <label end="18" start="16" name="dt"/>
+                    <label end="33" start="20" name="nns"/>
+                    <label end="41" start="35" name="rb"/>
+                    <label end="43" start="43" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="10" start="6" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="10" start="6" name="NT"/>
+                    <label end="18" start="16" name="NT"/>
+                    <label end="43" start="43" name="NT"/>
+                    <label end="41" start="35" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/31/2011 01:32:25 PST Mon" status="MANUAL" ID="6561835">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="14" start="12" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="3340" end="10" start="0" name="Evaluee"/>
+                    <label cBy="AlK" feID="3342" end="33" start="16" name="Purpose"/>
+                    <label cBy="AlK" feID="3341" end="41" start="35" name="Degree"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="10" start="0" name="Ext"/>
+                    <label end="33" start="16" name="Obj"/>
+                    <label end="41" start="35" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="10" start="0" name="NP"/>
+                    <label end="33" start="16" name="NP"/>
+                    <label end="41" start="35" name="AVP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

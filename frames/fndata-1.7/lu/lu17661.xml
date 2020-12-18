@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="supervisor.n" ID="17661" frame="Leadership" frameID="73" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_4" name="Fires_4" ID="25619"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="act" name="Activity"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="Dom" name="Domain"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="gov" name="Governed"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="lea" name="Leader"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Role" name="Role"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Typ" name="Type"/>
+        </frame>
+    </header>
+    <definition>FN: person in charge of a limited jurisdiction, often a county or city.</definition>
+    <lexeme POS="N" name="supervisor"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Governed"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Governed"/>
+                <annoSet ID="6672457"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Leader"/>
+            <pattern total="1">
+                <valenceUnit GF="Appositive" PT="NP" FE="Leader"/>
+                <annoSet ID="6672457"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Role"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Role"/>
+                <annoSet ID="6672457"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Governed"/>
+            <FE name="Leader"/>
+            <FE name="Role"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Governed"/>
+                <valenceUnit GF="Appositive" PT="NP" FE="Leader"/>
+                <valenceUnit GF="" PT="DEN" FE="Role"/>
+                <annoSet ID="6672457"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25619" sentNo="1" paragNo="7" aPos="0" ID="4165017">
+            <text>Los Angeles County Supervisor Zev Yaroslavsky stated , `` Whether you live in a mobile home park or you live in an estate , when you lose your home it 's devastating . ''</text>
+            <annotationSet cDate="07/17/2014 11:44:03 PDT Thu" status="UNANN" ID="6669187">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="NP"/>
+                    <label end="10" start="4" name="NP"/>
+                    <label end="17" start="12" name="NP"/>
+                    <label end="28" start="19" name="NP"/>
+                    <label end="32" start="30" name="NP"/>
+                    <label end="44" start="34" name="NP"/>
+                    <label end="51" start="46" name="VVD"/>
+                    <label end="53" start="53" name=","/>
+                    <label end="56" start="55" name="``"/>
+                    <label end="64" start="58" name="in"/>
+                    <label end="68" start="66" name="PP"/>
+                    <label end="73" start="70" name="VVP"/>
+                    <label end="76" start="75" name="in"/>
+                    <label end="78" start="78" name="dt"/>
+                    <label end="85" start="80" name="jj"/>
+                    <label end="90" start="87" name="nn"/>
+                    <label end="95" start="92" name="nn"/>
+                    <label end="98" start="97" name="cc"/>
+                    <label end="102" start="100" name="PP"/>
+                    <label end="107" start="104" name="VVP"/>
+                    <label end="110" start="109" name="in"/>
+                    <label end="113" start="112" name="dt"/>
+                    <label end="120" start="115" name="nn"/>
+                    <label end="122" start="122" name=","/>
+                    <label end="127" start="124" name="wrb"/>
+                    <label end="131" start="129" name="PP"/>
+                    <label end="136" start="133" name="VVP"/>
+                    <label end="141" start="138" name="PP$"/>
+                    <label end="146" start="143" name="nn"/>
+                    <label end="149" start="148" name="PP"/>
+                    <label end="152" start="151" name="VBZ"/>
+                    <label end="164" start="154" name="jj"/>
+                    <label end="166" start="166" name="sent"/>
+                    <label end="169" start="168" name="''"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="17" start="0" name="location"/>
+                    <label end="44" start="30" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="10" start="4" name="NT"/>
+                    <label end="17" start="12" name="NT"/>
+                    <label end="32" start="30" name="NT"/>
+                    <label end="44" start="34" name="NT"/>
+                    <label end="53" start="53" name="NT"/>
+                    <label end="56" start="55" name="NT"/>
+                    <label end="64" start="58" name="NT"/>
+                    <label end="68" start="66" name="NT"/>
+                    <label end="76" start="75" name="NT"/>
+                    <label end="78" start="78" name="NT"/>
+                    <label end="98" start="97" name="NT"/>
+                    <label end="102" start="100" name="NT"/>
+                    <label end="110" start="109" name="NT"/>
+                    <label end="113" start="112" name="NT"/>
+                    <label end="122" start="122" name="NT"/>
+                    <label end="127" start="124" name="NT"/>
+                    <label end="131" start="129" name="NT"/>
+                    <label end="141" start="138" name="NT"/>
+                    <label end="149" start="148" name="NT"/>
+                    <label end="152" start="151" name="NT"/>
+                    <label end="166" start="166" name="NT"/>
+                    <label end="169" start="168" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/29/2014 02:19:25 PDT Tue" status="MANUAL" ID="6672457">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="28" start="19" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="349" end="28" start="19" name="Role"/>
+                    <label cBy="MJE" feID="6431" end="17" start="0" name="Governed"/>
+                    <label cBy="MJE" feID="347" end="44" start="30" name="Leader"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="17" start="0" name="Dep"/>
+                    <label end="44" start="30" name="Appositive"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="17" start="0" name="N"/>
+                    <label end="44" start="30" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="unchanged.a" ID="18723" frame="Change_post-state" frameID="3011" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="Examples4-5" name="Examples4-5" ID="25743"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="Entity" name="Entity"/>
+        </frame>
+    </header>
+    <definition>FN: describes entities which have not undgone a change (in a situation in which change might be considered possible).</definition>
+    <lexeme POS="A" name="unchanged"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <annoSet ID="6774304"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <annoSet ID="6774304"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25743" sentNo="1" paragNo="6" aPos="0" ID="4217211">
+            <text>In a statement , President Jacob Zuma said Mandela 's condition was unchanged .</text>
+            <annotationSet cDate="06/03/2016 05:15:28 PDT Fri" status="UNANN" ID="6774132">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="3" start="3" name="dt"/>
+                    <label end="13" start="5" name="nn"/>
+                    <label end="15" start="15" name=","/>
+                    <label end="25" start="17" name="NP"/>
+                    <label end="31" start="27" name="NP"/>
+                    <label end="36" start="33" name="NP"/>
+                    <label end="41" start="38" name="VVD"/>
+                    <label end="49" start="43" name="NP"/>
+                    <label end="52" start="51" name="POS"/>
+                    <label end="62" start="54" name="nn"/>
+                    <label end="66" start="64" name="VBD"/>
+                    <label end="76" start="68" name="jj"/>
+                    <label end="78" start="78" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="36" start="27" name="person"/>
+                    <label end="49" start="43" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="3" start="3" name="NT"/>
+                    <label end="15" start="15" name="NT"/>
+                    <label end="31" start="27" name="NT"/>
+                    <label end="36" start="33" name="NT"/>
+                    <label end="49" start="43" name="NT"/>
+                    <label end="52" start="51" name="NT"/>
+                    <label end="66" start="64" name="NT"/>
+                    <label end="78" start="78" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/14/2016 10:33:21 PDT Tue" status="MANUAL" ID="6774304">
+                <layer rank="1" name="Target">
+                    <label cBy="CFB" end="76" start="68" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CFB" feID="16833" end="62" start="43" name="Entity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="62" start="43" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="62" start="43" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="66" start="64" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="dubious.a" ID="8228" frame="Being_questionable" frameID="531" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Polemic Progressive Education" name="PolemicProgressiveEducation" ID="23011"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Act" name="Behavior"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Ent" name="Entity"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Peripheral" abbrev="" name="Judge"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="soc" name="Social_actor"/>
+        </frame>
+    </header>
+    <definition>COD: not to be relied upon.</definition>
+    <lexeme POS="A" name="dubious"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Behavior"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Behavior"/>
+                <annoSet ID="4529431"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Behavior"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Behavior"/>
+                <annoSet ID="4529431"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23011" sentNo="3" paragNo="16" aPos="0" ID="2824366">
+            <text>They are based on dubious psychological and sociological theories rather than on educational experience .</text>
+            <annotationSet cDate="02/05/2004 08:30:12 PST Thu" status="UNANN" ID="4528361">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="PP"/>
+                    <label end="7" start="5" name="vbp"/>
+                    <label end="13" start="9" name="VVN"/>
+                    <label end="16" start="15" name="in"/>
+                    <label end="24" start="18" name="jj"/>
+                    <label end="38" start="26" name="jj"/>
+                    <label end="42" start="40" name="cc"/>
+                    <label end="55" start="44" name="jj"/>
+                    <label end="64" start="57" name="nns"/>
+                    <label end="71" start="66" name="rb"/>
+                    <label end="76" start="73" name="in"/>
+                    <label end="79" start="78" name="in"/>
+                    <label end="91" start="81" name="jj"/>
+                    <label end="102" start="93" name="nn"/>
+                    <label end="104" start="104" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="7" start="5" name="NT"/>
+                    <label end="71" start="66" name="NT"/>
+                    <label end="104" start="104" name="NT"/>
+                    <label end="3" start="0" name="NT"/>
+                    <label end="16" start="15" name="NT"/>
+                    <label end="42" start="40" name="NT"/>
+                    <label end="76" start="73" name="NT"/>
+                    <label end="79" start="78" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/19/2004 04:09:51 PDT Mon" status="MANUAL" ID="4529431">
+                <layer rank="1" name="Target">
+                    <label cBy="CHg" end="24" start="18" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CHg" feID="4142" end="64" start="57" name="Behavior"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="64" start="57" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="64" start="57" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

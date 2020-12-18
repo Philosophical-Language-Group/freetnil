@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="term.v" ID="11196" frame="Labeling" frameID="1250" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="Iran-related Questions" name="IranRelatedQuestions" ID="23541"/>
+        </corpus>
+        <frame>
+            <FE fgColor="000000" bgColor="90876C" type="Extra-Thematic" abbrev="dura" name="Duration_of_final_state"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="ent" name="Entity"/>
+            <FE fgColor="000000" bgColor="00BFFF" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="lab" name="Label"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="med" name="Medium"/>
+            <FE fgColor="000000" bgColor="FF69B4" type="Extra-Thematic" abbrev="part" name="Particular_iteration"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="spe" name="Speaker"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: apply a specified label to</definition>
+    <lexeme POS="V" name="term"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Entity"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <annoSet ID="6526865"/>
+                <annoSet ID="6527002"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Label"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="AJP" FE="Label"/>
+                <annoSet ID="6526865"/>
+                <annoSet ID="6527002"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Speaker"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="PP[by]" FE="Speaker"/>
+                <annoSet ID="6526865"/>
+                <annoSet ID="6527002"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Entity"/>
+            <FE name="Label"/>
+            <FE name="Speaker"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Label"/>
+                <valenceUnit GF="Dep" PT="PP[by]" FE="Speaker"/>
+                <annoSet ID="6526865"/>
+                <annoSet ID="6527002"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="23541" sentNo="2" paragNo="136" aPos="0" ID="4097472">
+            <text>These reports are termed speculative by a nuclear industry journal ( 7198 ) .</text>
+            <annotationSet cDate="05/27/2005 08:09:01 PDT Fri" status="UNANN" ID="6526166">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="dt"/>
+                    <label end="12" start="6" name="nns"/>
+                    <label end="16" start="14" name="vbp"/>
+                    <label end="23" start="18" name="VVN"/>
+                    <label end="35" start="25" name="jj"/>
+                    <label end="38" start="37" name="in"/>
+                    <label end="40" start="40" name="dt"/>
+                    <label end="48" start="42" name="jj"/>
+                    <label end="57" start="50" name="nn"/>
+                    <label end="65" start="59" name="nn"/>
+                    <label end="67" start="67" name="("/>
+                    <label end="72" start="69" name="cd"/>
+                    <label end="74" start="74" name=")"/>
+                    <label end="76" start="76" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="4" start="0" name="NT"/>
+                    <label end="16" start="14" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="40" start="40" name="NT"/>
+                    <label end="67" start="67" name="NT"/>
+                    <label end="72" start="69" name="NT"/>
+                    <label end="74" start="74" name="NT"/>
+                    <label end="76" start="76" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/01/2005 07:10:11 PDT Wed" status="MANUAL" ID="6526865">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="23" start="18" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="7243" end="12" start="0" name="Entity"/>
+                    <label cBy="JKR" feID="7242" end="65" start="37" name="Speaker"/>
+                    <label cBy="JKR" feID="7244" end="35" start="25" name="Label"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="12" start="0" name="Ext"/>
+                    <label end="65" start="37" name="Dep"/>
+                    <label end="35" start="25" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="12" start="0" name="NP"/>
+                    <label end="65" start="37" name="PP"/>
+                    <label end="35" start="25" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="175" docID="23541" sentNo="1" paragNo="91" aPos="0" ID="4097414">
+            <text>These reports are termed speculative by a nuclear industry journal ( 7198 ) .</text>
+            <annotationSet cDate="05/27/2005 08:08:34 PDT Fri" status="UNANN" ID="6526108">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="dt"/>
+                    <label end="12" start="6" name="nns"/>
+                    <label end="16" start="14" name="vbp"/>
+                    <label end="23" start="18" name="VVN"/>
+                    <label end="35" start="25" name="jj"/>
+                    <label end="38" start="37" name="in"/>
+                    <label end="40" start="40" name="dt"/>
+                    <label end="48" start="42" name="jj"/>
+                    <label end="57" start="50" name="nn"/>
+                    <label end="65" start="59" name="nn"/>
+                    <label end="67" start="67" name="("/>
+                    <label end="72" start="69" name="cd"/>
+                    <label end="74" start="74" name=")"/>
+                    <label end="76" start="76" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="4" start="0" name="NT"/>
+                    <label end="16" start="14" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="40" start="40" name="NT"/>
+                    <label end="67" start="67" name="NT"/>
+                    <label end="72" start="69" name="NT"/>
+                    <label end="74" start="74" name="NT"/>
+                    <label end="76" start="76" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/01/2005 09:20:31 PDT Wed" status="MANUAL" ID="6527002">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="23" start="18" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="7243" end="12" start="0" name="Entity"/>
+                    <label cBy="JKR" feID="7244" end="35" start="25" name="Label"/>
+                    <label cBy="JKR" feID="7242" end="65" start="37" name="Speaker"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="12" start="0" name="Ext"/>
+                    <label end="35" start="25" name="Dep"/>
+                    <label end="65" start="37" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="12" start="0" name="NP"/>
+                    <label end="35" start="25" name="AJP"/>
+                    <label end="65" start="37" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

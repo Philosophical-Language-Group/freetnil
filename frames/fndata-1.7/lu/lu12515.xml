@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="import [entity].n" ID="12515" frame="Importing" frameID="1567" totalAnnotated="5" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Chemical" name="Iran_Chemical" ID="23514"/>
+            <document description="North Korea Nuclear Overview" name="NorthKorea_NuclearOverview" ID="23562"/>
+        </corpus>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="StatCan Trade Balance" name="tradeBalance020417" ID="23841"/>
+        </corpus>
+        <frame>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Extra-Thematic" abbrev="" name="Beneficiary"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Src" name="Exporting_area"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Goods" name="Goods"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agt" name="Importer"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Goal" name="Importing_area"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="part" name="Particular_iteration"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="Path" name="Path"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="Veh" name="Vehicle"/>
+        </frame>
+    </header>
+    <definition>COD: an imported commodity, article, or service.</definition>
+    <lexeme POS="N" name="import"/>
+    <valences>
+        <FERealization total="3">
+            <FE name="Exporting_area"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="INI" FE="Exporting_area"/>
+                <annoSet ID="6530035"/>
+                <annoSet ID="6559600"/>
+                <annoSet ID="6559604"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="5">
+            <FE name="Goods"/>
+            <pattern total="4">
+                <valenceUnit GF="" PT="DEN" FE="Goods"/>
+                <annoSet ID="6524096"/>
+                <annoSet ID="6524642"/>
+                <annoSet ID="6530035"/>
+                <annoSet ID="6559604"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Goods"/>
+                <annoSet ID="6559600"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Importer"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DNI" FE="Importer"/>
+                <annoSet ID="6559600"/>
+                <annoSet ID="6559604"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Importer"/>
+                <annoSet ID="6530035"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Importing_area"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="INI" FE="Importing_area"/>
+                <annoSet ID="6530035"/>
+                <annoSet ID="6559600"/>
+                <annoSet ID="6559604"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Importing_area"/>
+                <annoSet ID="6524642"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="3">
+            <FE name="Exporting_area"/>
+            <FE name="Goods"/>
+            <FE name="Importer"/>
+            <FE name="Importing_area"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Exporting_area"/>
+                <valenceUnit GF="" PT="DEN" FE="Goods"/>
+                <valenceUnit GF="" PT="DNI" FE="Importer"/>
+                <valenceUnit GF="" PT="INI" FE="Importing_area"/>
+                <annoSet ID="6559604"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Exporting_area"/>
+                <valenceUnit GF="" PT="DEN" FE="Goods"/>
+                <valenceUnit GF="" PT="INI" FE="Importer"/>
+                <valenceUnit GF="" PT="INI" FE="Importing_area"/>
+                <annoSet ID="6530035"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Exporting_area"/>
+                <valenceUnit GF="Dep" PT="N" FE="Goods"/>
+                <valenceUnit GF="" PT="DNI" FE="Importer"/>
+                <valenceUnit GF="" PT="INI" FE="Importing_area"/>
+                <annoSet ID="6559600"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Goods"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Goods"/>
+                <annoSet ID="6524096"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Goods"/>
+            <FE name="Importing_area"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Goods"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Importing_area"/>
+                <annoSet ID="6524642"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23514" sentNo="5" paragNo="47" aPos="0" ID="4097124">
+            <text>Imports such as thiodyglycol and thionyl chloride can be applied towards legitimate purposes such as dyes , textiles , and pesticides or can be diverted towards an illicit CW program .</text>
+            <annotationSet cDate="02/25/2005 12:43:21 PST Fri" status="UNANN" ID="6522789">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="nns"/>
+                    <label end="11" start="8" name="jj"/>
+                    <label end="14" start="13" name="in"/>
+                    <label end="27" start="16" name="nn"/>
+                    <label end="31" start="29" name="cc"/>
+                    <label end="39" start="33" name="nn"/>
+                    <label end="48" start="41" name="nn"/>
+                    <label end="52" start="50" name="md"/>
+                    <label end="55" start="54" name="vb"/>
+                    <label end="63" start="57" name="VVN"/>
+                    <label end="71" start="65" name="in"/>
+                    <label end="82" start="73" name="jj"/>
+                    <label end="91" start="84" name="nns"/>
+                    <label end="96" start="93" name="jj"/>
+                    <label end="99" start="98" name="in"/>
+                    <label end="104" start="101" name="nns"/>
+                    <label end="106" start="106" name=","/>
+                    <label end="115" start="108" name="nns"/>
+                    <label end="117" start="117" name=","/>
+                    <label end="121" start="119" name="cc"/>
+                    <label end="132" start="123" name="nns"/>
+                    <label end="135" start="134" name="cc"/>
+                    <label end="139" start="137" name="md"/>
+                    <label end="142" start="141" name="vb"/>
+                    <label end="151" start="144" name="VVN"/>
+                    <label end="159" start="153" name="in"/>
+                    <label end="162" start="161" name="dt"/>
+                    <label end="170" start="164" name="jj"/>
+                    <label end="173" start="172" name="jj"/>
+                    <label end="181" start="175" name="nn"/>
+                    <label end="183" start="183" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="173" start="172" name="WEA"/>
+                    <label end="27" start="16" name="WEA"/>
+                    <label end="48" start="33" name="WEA"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="14" start="13" name="NT"/>
+                    <label end="31" start="29" name="NT"/>
+                    <label end="52" start="50" name="NT"/>
+                    <label end="71" start="65" name="NT"/>
+                    <label end="99" start="98" name="NT"/>
+                    <label end="106" start="106" name="NT"/>
+                    <label end="117" start="117" name="NT"/>
+                    <label end="121" start="119" name="NT"/>
+                    <label end="135" start="134" name="NT"/>
+                    <label end="139" start="137" name="NT"/>
+                    <label end="159" start="153" name="NT"/>
+                    <label end="162" start="161" name="NT"/>
+                    <label end="183" start="183" name="NT"/>
+                    <label end="55" start="54" name="NT"/>
+                    <label end="142" start="141" name="NT"/>
+                    <label end="11" start="8" name="NT"/>
+                    <label end="96" start="93" name="NT"/>
+                    <label end="48" start="33" name="Nonrelational"/>
+                    <label end="115" start="108" name="Nonrelational"/>
+                    <label end="104" start="101" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/08/2005 08:08:19 PST Tue" status="MANUAL" ID="6524096">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="6" start="0" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="8544" end="6" start="0" name="Goods"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23514" sentNo="1" paragNo="17" aPos="0" ID="4097050">
+            <text>Major Suppliers / Major Exporters The following summary lists key Iranian imports within the realm of its CW program .</text>
+            <annotationSet cDate="02/25/2005 12:43:06 PST Fri" status="UNANN" ID="6522715">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="jj"/>
+                    <label end="14" start="6" name="nns"/>
+                    <label end="16" start="16" name="sym"/>
+                    <label end="22" start="18" name="jj"/>
+                    <label end="32" start="24" name="nns"/>
+                    <label end="36" start="34" name="dt"/>
+                    <label end="46" start="38" name="VVG"/>
+                    <label end="54" start="48" name="nn"/>
+                    <label end="60" start="56" name="VVZ"/>
+                    <label end="64" start="62" name="jj"/>
+                    <label end="72" start="66" name="jj"/>
+                    <label end="80" start="74" name="nns"/>
+                    <label end="87" start="82" name="in"/>
+                    <label end="91" start="89" name="dt"/>
+                    <label end="97" start="93" name="nn"/>
+                    <label end="100" start="99" name="in"/>
+                    <label end="104" start="102" name="PP$"/>
+                    <label end="107" start="106" name="jj"/>
+                    <label end="115" start="109" name="nn"/>
+                    <label end="117" start="117" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="32" start="18" name="organization"/>
+                    <label end="107" start="106" name="WEA"/>
+                    <label end="14" start="0" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="16" start="16" name="NT"/>
+                    <label end="36" start="34" name="NT"/>
+                    <label end="87" start="82" name="NT"/>
+                    <label end="91" start="89" name="NT"/>
+                    <label end="100" start="99" name="NT"/>
+                    <label end="104" start="102" name="NT"/>
+                    <label end="117" start="117" name="NT"/>
+                    <label end="72" start="66" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/11/2005 02:19:05 PST Fri" status="MANUAL" ID="6524642">
+                <layer rank="1" name="Target">
+                    <label cBy="Pam" end="80" start="74" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="Pam" feID="8549" end="72" start="66" name="Importing_area"/>
+                    <label cBy="Pam" feID="8544" end="80" start="74" name="Goods"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="72" start="66" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="72" start="66" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23562" sentNo="4" paragNo="18" aPos="0" ID="4097701">
+            <text>Only two months later , the Korean Workers' Party Central Committee adopted policies to strengthen the military and to implement import - substitution programs to reduce dependency on arms imports .</text>
+            <annotationSet cDate="08/01/2005 12:16:12 PDT Mon" status="UNANN" ID="6528675">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="rb"/>
+                    <label end="7" start="5" name="cd"/>
+                    <label end="14" start="9" name="nns"/>
+                    <label end="20" start="16" name="rb"/>
+                    <label end="22" start="22" name=","/>
+                    <label end="26" start="24" name="dt"/>
+                    <label end="33" start="28" name="jj"/>
+                    <label end="42" start="35" name="NP"/>
+                    <label end="48" start="44" name="NP"/>
+                    <label end="56" start="50" name="NP"/>
+                    <label end="66" start="58" name="NP"/>
+                    <label end="74" start="68" name="VVD"/>
+                    <label end="83" start="76" name="nns"/>
+                    <label end="86" start="85" name="to"/>
+                    <label end="97" start="88" name="VV"/>
+                    <label end="101" start="99" name="dt"/>
+                    <label end="110" start="103" name="nn"/>
+                    <label end="114" start="112" name="cc"/>
+                    <label end="117" start="116" name="to"/>
+                    <label end="127" start="119" name="VV"/>
+                    <label end="134" start="129" name="nn"/>
+                    <label end="136" start="136" name=":"/>
+                    <label end="149" start="138" name="nn"/>
+                    <label end="158" start="151" name="nns"/>
+                    <label end="161" start="160" name="to"/>
+                    <label end="168" start="163" name="VV"/>
+                    <label end="179" start="170" name="nn"/>
+                    <label end="182" start="181" name="in"/>
+                    <label end="187" start="184" name="nns"/>
+                    <label end="195" start="189" name="nns"/>
+                    <label end="197" start="197" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="66" start="28" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="7" start="5" name="NT"/>
+                    <label end="22" start="22" name="NT"/>
+                    <label end="26" start="24" name="NT"/>
+                    <label end="42" start="35" name="NT"/>
+                    <label end="48" start="44" name="NT"/>
+                    <label end="56" start="50" name="NT"/>
+                    <label end="66" start="58" name="NT"/>
+                    <label end="86" start="85" name="NT"/>
+                    <label end="101" start="99" name="NT"/>
+                    <label end="114" start="112" name="NT"/>
+                    <label end="117" start="116" name="NT"/>
+                    <label end="136" start="136" name="NT"/>
+                    <label end="161" start="160" name="NT"/>
+                    <label end="182" start="181" name="NT"/>
+                    <label end="197" start="197" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/10/2005 03:29:52 PDT Wed" status="MANUAL" ID="6530035">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="134" start="129" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="8544" end="134" start="129" name="Goods"/>
+                    <label cBy="JKR" feID="8540" itype="INI" name="Importer"/>
+                    <label cBy="JKR" feID="8549" itype="INI" name="Importing_area"/>
+                    <label cBy="JKR" feID="8551" itype="INI" name="Exporting_area"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="175" docID="23841" sentNo="1" paragNo="4" aPos="0" ID="4107453">
+            <text>Merchandise imports , however , rose 5.1% from January , almost twice the pace of exports , to $29.1 billion .</text>
+            <annotationSet cDate="10/25/2010 04:55:26 PDT Mon" status="UNANN" ID="6559550">
+                <layer rank="1" name="PENN">
+                    <label end="10" start="0" name="nn"/>
+                    <label end="18" start="12" name="nns"/>
+                    <label end="20" start="20" name=","/>
+                    <label end="28" start="22" name="rb"/>
+                    <label end="30" start="30" name=","/>
+                    <label end="35" start="32" name="VVD"/>
+                    <label end="40" start="37" name="cd"/>
+                    <label end="45" start="42" name="in"/>
+                    <label end="53" start="47" name="NP"/>
+                    <label end="55" start="55" name=","/>
+                    <label end="62" start="57" name="rb"/>
+                    <label end="68" start="64" name="rb"/>
+                    <label end="72" start="70" name="dt"/>
+                    <label end="77" start="74" name="nn"/>
+                    <label end="80" start="79" name="in"/>
+                    <label end="88" start="82" name="nns"/>
+                    <label end="90" start="90" name=","/>
+                    <label end="93" start="92" name="to"/>
+                    <label end="99" start="95" name="jj"/>
+                    <label end="107" start="101" name="cd"/>
+                    <label end="109" start="109" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="40" start="37" name="percent"/>
+                    <label end="53" start="47" name="date"/>
+                    <label end="107" start="95" name="money"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="20" start="20" name="NT"/>
+                    <label end="30" start="30" name="NT"/>
+                    <label end="40" start="37" name="NT"/>
+                    <label end="55" start="55" name="NT"/>
+                    <label end="72" start="70" name="NT"/>
+                    <label end="80" start="79" name="NT"/>
+                    <label end="90" start="90" name="NT"/>
+                    <label end="93" start="92" name="NT"/>
+                    <label end="109" start="109" name="NT"/>
+                    <label end="45" start="42" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/27/2010 03:50:44 PDT Wed" status="MANUAL" ID="6559600">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="18" start="12" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="8544" end="10" start="0" name="Goods"/>
+                    <label cBy="MLC" feID="8551" itype="INI" name="Exporting_area"/>
+                    <label cBy="MLC" feID="8549" itype="INI" name="Importing_area"/>
+                    <label cBy="MLC" feID="8540" itype="DNI" name="Importer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="10" start="0" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="10" start="0" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="175" docID="23841" sentNo="2" paragNo="4" aPos="0" ID="4107454">
+            <text>It was the strongest monthly rate of growth in imports since August 1998 .</text>
+            <annotationSet cDate="10/25/2010 04:55:27 PDT Mon" status="UNANN" ID="6559551">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="5" start="3" name="VBD"/>
+                    <label end="9" start="7" name="dt"/>
+                    <label end="19" start="11" name="jjs"/>
+                    <label end="27" start="21" name="jj"/>
+                    <label end="32" start="29" name="nn"/>
+                    <label end="35" start="34" name="in"/>
+                    <label end="42" start="37" name="nn"/>
+                    <label end="45" start="44" name="in"/>
+                    <label end="53" start="47" name="nns"/>
+                    <label end="59" start="55" name="in"/>
+                    <label end="66" start="61" name="NP"/>
+                    <label end="71" start="68" name="cd"/>
+                    <label end="73" start="73" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="71" start="61" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="9" start="7" name="NT"/>
+                    <label end="35" start="34" name="NT"/>
+                    <label end="71" start="68" name="NT"/>
+                    <label end="73" start="73" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/27/2010 03:59:41 PDT Wed" status="MANUAL" ID="6559604">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="53" start="47" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="8544" end="53" start="47" name="Goods"/>
+                    <label cBy="MLC" feID="8551" itype="INI" name="Exporting_area"/>
+                    <label cBy="MLC" feID="8549" itype="INI" name="Importing_area"/>
+                    <label cBy="MLC" feID="8540" itype="DNI" name="Importer"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

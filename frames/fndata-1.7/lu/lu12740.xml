@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="opinion.n" ID="12740" frame="Regard" frameID="1400" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Polemic Progressive Education" name="PolemicProgressiveEducation" ID="23011"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="eva" name="Evaluee"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="ext" name="Extent_of_acclaim"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="jud" name="Judgment"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="rol" name="Role"/>
+        </frame>
+    </header>
+    <definition>COD: an estimation of quality or worth</definition>
+    <lexeme POS="N" name="opinion"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Cognizer"/>
+                <annoSet ID="4530607"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Evaluee"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Evaluee"/>
+                <annoSet ID="4530607"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Judgment"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Judgment"/>
+                <annoSet ID="4530607"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="Evaluee"/>
+            <FE name="Judgment"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Cognizer"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Evaluee"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Judgment"/>
+                <annoSet ID="4530607"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23011" sentNo="6" paragNo="2" aPos="0" ID="2824303">
+            <text>`` The result is a generation of young people whose ignorance and intellectual incompetence is matched only by their good opinion of themselves .</text>
+            <annotationSet cDate="02/05/2004 08:29:52 PST Thu" status="UNANN" ID="4528298">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="``"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="12" start="7" name="nn"/>
+                    <label end="15" start="14" name="VBZ"/>
+                    <label end="17" start="17" name="dt"/>
+                    <label end="28" start="19" name="nn"/>
+                    <label end="31" start="30" name="in"/>
+                    <label end="37" start="33" name="jj"/>
+                    <label end="44" start="39" name="nns"/>
+                    <label end="50" start="46" name="wp$"/>
+                    <label end="60" start="52" name="nn"/>
+                    <label end="64" start="62" name="cc"/>
+                    <label end="77" start="66" name="jj"/>
+                    <label end="90" start="79" name="nn"/>
+                    <label end="93" start="92" name="VBZ"/>
+                    <label end="101" start="95" name="VVN"/>
+                    <label end="106" start="103" name="rb"/>
+                    <label end="109" start="108" name="in"/>
+                    <label end="115" start="111" name="PP$"/>
+                    <label end="120" start="117" name="jj"/>
+                    <label end="128" start="122" name="nn"/>
+                    <label end="131" start="130" name="in"/>
+                    <label end="142" start="133" name="PP"/>
+                    <label end="144" start="144" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="15" start="14" name="NT"/>
+                    <label end="93" start="92" name="NT"/>
+                    <label end="106" start="103" name="NT"/>
+                    <label end="144" start="144" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="17" start="17" name="NT"/>
+                    <label end="31" start="30" name="NT"/>
+                    <label end="50" start="46" name="NT"/>
+                    <label end="64" start="62" name="NT"/>
+                    <label end="109" start="108" name="NT"/>
+                    <label end="115" start="111" name="NT"/>
+                    <label end="131" start="130" name="NT"/>
+                    <label end="142" start="133" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/26/2005 04:55:40 PDT Fri" status="MANUAL" ID="4530607">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="128" start="122" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="7851" end="120" start="117" name="Judgment"/>
+                    <label cBy="RLG" feID="7841" end="142" start="130" name="Evaluee"/>
+                    <label cBy="RLG" feID="7840" end="115" start="111" name="Cognizer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="120" start="117" name="Dep"/>
+                    <label end="142" start="130" name="Dep"/>
+                    <label end="115" start="111" name="Gen"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="120" start="117" name="AJP"/>
+                    <label end="142" start="130" name="PP"/>
+                    <label end="115" start="111" name="Poss"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

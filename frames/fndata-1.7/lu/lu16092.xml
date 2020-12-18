@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="ADV" name="rapidly.adv" ID="16092" frame="Rate_description" frameID="2421" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="journal_christine" name="journal_christine" ID="23936"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Evt" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="" name="Rate"/>
+        </frame>
+    </header>
+    <definition>FN: at a higher than expected rate</definition>
+    <lexeme POS="ADV" name="rapidly"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Degree"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Degree"/>
+                <annoSet ID="6574447"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="Sfin" FE="Event"/>
+                <annoSet ID="6574447"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Rate"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Rate"/>
+                <annoSet ID="6574447"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Degree"/>
+            <FE name="Event"/>
+            <FE name="Rate"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Degree"/>
+                <valenceUnit GF="Ext" PT="Sfin" FE="Event"/>
+                <valenceUnit GF="" PT="--" FE="Rate"/>
+                <annoSet ID="6574447"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23936" sentNo="3" paragNo="6" aPos="0" ID="4112803">
+            <text>The proportional change in the number of publications , using 1990 as a comparison , revealed that scientific publishing in Latin America increased the most rapidly in the Americas , far outpacing the United States and Canada ( Figure 1 ) .</text>
+            <annotationSet cDate="07/06/2011 06:26:41 PDT Wed" status="UNANN" ID="6573031">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="15" start="4" name="jj"/>
+                    <label end="22" start="17" name="nn"/>
+                    <label end="25" start="24" name="in"/>
+                    <label end="29" start="27" name="dt"/>
+                    <label end="36" start="31" name="nn"/>
+                    <label end="39" start="38" name="in"/>
+                    <label end="52" start="41" name="nns"/>
+                    <label end="54" start="54" name=","/>
+                    <label end="60" start="56" name="VVG"/>
+                    <label end="65" start="62" name="cd"/>
+                    <label end="68" start="67" name="in"/>
+                    <label end="70" start="70" name="dt"/>
+                    <label end="81" start="72" name="nn"/>
+                    <label end="83" start="83" name=","/>
+                    <label end="92" start="85" name="VVD"/>
+                    <label end="97" start="94" name="IN/that"/>
+                    <label end="108" start="99" name="jj"/>
+                    <label end="119" start="110" name="nn"/>
+                    <label end="122" start="121" name="in"/>
+                    <label end="128" start="124" name="NP"/>
+                    <label end="136" start="130" name="NP"/>
+                    <label end="146" start="138" name="VVD"/>
+                    <label end="150" start="148" name="dt"/>
+                    <label end="155" start="152" name="rbs"/>
+                    <label end="163" start="157" name="rb"/>
+                    <label end="166" start="165" name="in"/>
+                    <label end="170" start="168" name="dt"/>
+                    <label end="179" start="172" name="NPS"/>
+                    <label end="181" start="181" name=","/>
+                    <label end="185" start="183" name="rb"/>
+                    <label end="195" start="187" name="VVG"/>
+                    <label end="199" start="197" name="dt"/>
+                    <label end="206" start="201" name="NP"/>
+                    <label end="213" start="208" name="NPS"/>
+                    <label end="217" start="215" name="cc"/>
+                    <label end="224" start="219" name="NP"/>
+                    <label end="226" start="226" name="("/>
+                    <label end="233" start="228" name="NP"/>
+                    <label end="235" start="235" name="cd"/>
+                    <label end="237" start="237" name=")"/>
+                    <label end="239" start="239" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="65" start="62" name="date"/>
+                    <label end="136" start="124" name="location"/>
+                    <label end="179" start="168" name="location"/>
+                    <label end="213" start="201" name="location"/>
+                    <label end="224" start="219" name="location"/>
+                    <label end="235" start="228" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="25" start="24" name="NT"/>
+                    <label end="29" start="27" name="NT"/>
+                    <label end="39" start="38" name="NT"/>
+                    <label end="54" start="54" name="NT"/>
+                    <label end="65" start="62" name="NT"/>
+                    <label end="68" start="67" name="NT"/>
+                    <label end="70" start="70" name="NT"/>
+                    <label end="83" start="83" name="NT"/>
+                    <label end="122" start="121" name="NT"/>
+                    <label end="128" start="124" name="NT"/>
+                    <label end="136" start="130" name="NT"/>
+                    <label end="150" start="148" name="NT"/>
+                    <label end="155" start="152" name="NT"/>
+                    <label end="170" start="168" name="NT"/>
+                    <label end="179" start="172" name="NT"/>
+                    <label end="181" start="181" name="NT"/>
+                    <label end="185" start="183" name="NT"/>
+                    <label end="199" start="197" name="NT"/>
+                    <label end="206" start="201" name="NT"/>
+                    <label end="213" start="208" name="NT"/>
+                    <label end="217" start="215" name="NT"/>
+                    <label end="224" start="219" name="NT"/>
+                    <label end="226" start="226" name="NT"/>
+                    <label end="233" start="228" name="NT"/>
+                    <label end="235" start="235" name="NT"/>
+                    <label end="237" start="237" name="NT"/>
+                    <label end="239" start="239" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/12/2011 04:40:22 PDT Tue" status="MANUAL" ID="6574447">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="163" start="157" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="14211" end="146" start="99" name="Event"/>
+                    <label cBy="CVa" feID="14212" end="163" start="157" name="Rate"/>
+                    <label cBy="CVa" feID="14213" end="155" start="152" name="Degree"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="146" start="99" name="Ext"/>
+                    <label end="155" start="152" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="146" start="99" name="Sfin"/>
+                    <label end="155" start="152" name="AVP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

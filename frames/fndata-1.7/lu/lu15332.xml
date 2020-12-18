@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="counter.v" ID="15332" frame="Thwarting" frameID="518" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Act" name="Action"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Dgr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD73" type="Extra-Thematic" abbrev="" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="P_cause" name="Preventing_cause"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Protag" name="Protagonist"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: take action to prevent an opponent's action from succeeding; stop some SOA (either in progress or anticipated)</definition>
+    <lexeme POS="V" name="counter"/>
+    <valences>
+        <FERealization total="3">
+            <FE name="Action"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Action"/>
+                <annoSet ID="6558702"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="Obj" PT="NP" FE="Action"/>
+                <annoSet ID="6558635"/>
+                <annoSet ID="6558672"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Preventing_cause"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Preventing_cause"/>
+                <annoSet ID="6558702"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="Sfin" FE="Preventing_cause"/>
+                <annoSet ID="6558635"/>
+                <annoSet ID="6558672"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Protagonist"/>
+                <annoSet ID="6558702"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Action"/>
+            <FE name="Preventing_cause"/>
+            <pattern total="2">
+                <valenceUnit GF="Obj" PT="NP" FE="Action"/>
+                <valenceUnit GF="Ext" PT="Sfin" FE="Preventing_cause"/>
+                <annoSet ID="6558635"/>
+                <annoSet ID="6558672"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Action"/>
+            <FE name="Preventing_cause"/>
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Action"/>
+                <valenceUnit GF="" PT="CNI" FE="Preventing_cause"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Protagonist"/>
+                <annoSet ID="6558702"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23692" sentNo="2" paragNo="28" aPos="0" ID="4101247">
+            <text>To counter this , the populations moved from their homes on the coast and built settlements inland , out of sight of the raiding parties .</text>
+            <annotationSet cDate="03/12/2007 02:51:23 PDT Mon" status="UNANN" ID="6542040">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="to"/>
+                    <label end="9" start="3" name="VV"/>
+                    <label end="14" start="11" name="dt"/>
+                    <label end="16" start="16" name=","/>
+                    <label end="20" start="18" name="dt"/>
+                    <label end="32" start="22" name="nns"/>
+                    <label end="38" start="34" name="VVN"/>
+                    <label end="43" start="40" name="in"/>
+                    <label end="49" start="45" name="PP$"/>
+                    <label end="55" start="51" name="nns"/>
+                    <label end="58" start="57" name="in"/>
+                    <label end="62" start="60" name="dt"/>
+                    <label end="68" start="64" name="nn"/>
+                    <label end="72" start="70" name="cc"/>
+                    <label end="78" start="74" name="VVN"/>
+                    <label end="90" start="80" name="nns"/>
+                    <label end="97" start="92" name="rb"/>
+                    <label end="99" start="99" name=","/>
+                    <label end="103" start="101" name="rb"/>
+                    <label end="106" start="105" name="in"/>
+                    <label end="112" start="108" name="nn"/>
+                    <label end="115" start="114" name="in"/>
+                    <label end="119" start="117" name="dt"/>
+                    <label end="127" start="121" name="nn"/>
+                    <label end="135" start="129" name="nns"/>
+                    <label end="137" start="137" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="14" start="11" name="NT"/>
+                    <label end="16" start="16" name="NT"/>
+                    <label end="20" start="18" name="NT"/>
+                    <label end="43" start="40" name="NT"/>
+                    <label end="49" start="45" name="NT"/>
+                    <label end="62" start="60" name="NT"/>
+                    <label end="72" start="70" name="NT"/>
+                    <label end="99" start="99" name="NT"/>
+                    <label end="103" start="101" name="NT"/>
+                    <label end="106" start="105" name="NT"/>
+                    <label end="115" start="114" name="NT"/>
+                    <label end="119" start="117" name="NT"/>
+                    <label end="137" start="137" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="05/08/2009 02:16:27 PDT Fri" status="MANUAL" ID="6558635">
+                <layer rank="1" name="Target">
+                    <label cBy="CFB" end="9" start="3" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CFB" feID="4101" end="14" start="11" name="Action"/>
+                    <label cBy="CFB" feID="4099" end="135" start="18" name="Preventing_cause"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="14" start="11" name="Obj"/>
+                    <label end="135" start="18" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="14" start="11" name="NP"/>
+                    <label end="135" start="18" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23692" sentNo="2" paragNo="26" aPos="0" ID="4101239">
+            <text>In an attempt to counter a threat from the Saracen Muslims , a new potent religious force from the East , the Byzantine army forcefully enlisted the men of the islands .</text>
+            <annotationSet cDate="03/12/2007 02:51:19 PDT Mon" status="UNANN" ID="6542032">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="4" start="3" name="dt"/>
+                    <label end="12" start="6" name="nn"/>
+                    <label end="15" start="14" name="to"/>
+                    <label end="23" start="17" name="VV"/>
+                    <label end="25" start="25" name="dt"/>
+                    <label end="32" start="27" name="nn"/>
+                    <label end="37" start="34" name="in"/>
+                    <label end="41" start="39" name="dt"/>
+                    <label end="49" start="43" name="jj"/>
+                    <label end="57" start="51" name="NPS"/>
+                    <label end="59" start="59" name=","/>
+                    <label end="61" start="61" name="dt"/>
+                    <label end="65" start="63" name="jj"/>
+                    <label end="72" start="67" name="jj"/>
+                    <label end="82" start="74" name="jj"/>
+                    <label end="88" start="84" name="nn"/>
+                    <label end="93" start="90" name="in"/>
+                    <label end="97" start="95" name="dt"/>
+                    <label end="102" start="99" name="NP"/>
+                    <label end="104" start="104" name=","/>
+                    <label end="108" start="106" name="dt"/>
+                    <label end="118" start="110" name="jj"/>
+                    <label end="123" start="120" name="nn"/>
+                    <label end="134" start="125" name="rb"/>
+                    <label end="143" start="136" name="VVD"/>
+                    <label end="147" start="145" name="dt"/>
+                    <label end="151" start="149" name="nns"/>
+                    <label end="154" start="153" name="in"/>
+                    <label end="158" start="156" name="dt"/>
+                    <label end="166" start="160" name="nns"/>
+                    <label end="168" start="168" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="4" start="3" name="NT"/>
+                    <label end="15" start="14" name="NT"/>
+                    <label end="25" start="25" name="NT"/>
+                    <label end="37" start="34" name="NT"/>
+                    <label end="41" start="39" name="NT"/>
+                    <label end="59" start="59" name="NT"/>
+                    <label end="61" start="61" name="NT"/>
+                    <label end="93" start="90" name="NT"/>
+                    <label end="97" start="95" name="NT"/>
+                    <label end="104" start="104" name="NT"/>
+                    <label end="108" start="106" name="NT"/>
+                    <label end="134" start="125" name="NT"/>
+                    <label end="147" start="145" name="NT"/>
+                    <label end="154" start="153" name="NT"/>
+                    <label end="158" start="156" name="NT"/>
+                    <label end="168" start="168" name="NT"/>
+                    <label end="49" start="43" name="NT"/>
+                    <label end="118" start="110" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/14/2009 03:48:18 PDT Tue" status="MANUAL" ID="6558672">
+                <layer rank="1" name="Target">
+                    <label cBy="AnW" end="23" start="17" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AnW" feID="4101" end="102" start="25" name="Action"/>
+                    <label cBy="AnW" feID="4099" end="166" start="106" name="Preventing_cause"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="102" start="25" name="Obj"/>
+                    <label end="166" start="106" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="102" start="25" name="NP"/>
+                    <label end="166" start="106" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23692" sentNo="1" paragNo="27" aPos="0" ID="4101242">
+            <text>As the Byzantine Empire weakened at the end of the first millennium , Crusader forces were sent from Western Europe to counter the Muslim forces and retake Jerusalem for the Christian faith .</text>
+            <annotationSet cDate="03/12/2007 02:51:20 PDT Mon" status="UNANN" ID="6542035">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="15" start="7" name="jj"/>
+                    <label end="22" start="17" name="nn"/>
+                    <label end="31" start="24" name="VVN"/>
+                    <label end="34" start="33" name="in"/>
+                    <label end="38" start="36" name="dt"/>
+                    <label end="42" start="40" name="nn"/>
+                    <label end="45" start="44" name="in"/>
+                    <label end="49" start="47" name="dt"/>
+                    <label end="55" start="51" name="jj"/>
+                    <label end="66" start="57" name="nn"/>
+                    <label end="68" start="68" name=","/>
+                    <label end="77" start="70" name="NP"/>
+                    <label end="84" start="79" name="nns"/>
+                    <label end="89" start="86" name="VBD"/>
+                    <label end="94" start="91" name="VVN"/>
+                    <label end="99" start="96" name="in"/>
+                    <label end="107" start="101" name="NP"/>
+                    <label end="114" start="109" name="NP"/>
+                    <label end="117" start="116" name="to"/>
+                    <label end="125" start="119" name="VV"/>
+                    <label end="129" start="127" name="dt"/>
+                    <label end="136" start="131" name="jj"/>
+                    <label end="143" start="138" name="nns"/>
+                    <label end="147" start="145" name="cc"/>
+                    <label end="154" start="149" name="VV"/>
+                    <label end="164" start="156" name="NP"/>
+                    <label end="168" start="166" name="in"/>
+                    <label end="172" start="170" name="dt"/>
+                    <label end="182" start="174" name="jj"/>
+                    <label end="188" start="184" name="nn"/>
+                    <label end="190" start="190" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="77" start="70" name="organization"/>
+                    <label end="114" start="101" name="location"/>
+                    <label end="164" start="156" name="location"/>
+                    <label end="22" start="7" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="34" start="33" name="NT"/>
+                    <label end="38" start="36" name="NT"/>
+                    <label end="45" start="44" name="NT"/>
+                    <label end="49" start="47" name="NT"/>
+                    <label end="68" start="68" name="NT"/>
+                    <label end="77" start="70" name="NT"/>
+                    <label end="89" start="86" name="NT"/>
+                    <label end="99" start="96" name="NT"/>
+                    <label end="117" start="116" name="NT"/>
+                    <label end="129" start="127" name="NT"/>
+                    <label end="147" start="145" name="NT"/>
+                    <label end="164" start="156" name="NT"/>
+                    <label end="168" start="166" name="NT"/>
+                    <label end="172" start="170" name="NT"/>
+                    <label end="190" start="190" name="NT"/>
+                    <label end="15" start="7" name="NT"/>
+                    <label end="188" start="184" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/17/2009 11:26:17 PDT Fri" status="MANUAL" ID="6558702">
+                <layer rank="1" name="Target">
+                    <label cBy="AnW" end="125" start="119" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AnW" feID="4100" end="143" start="127" name="Protagonist"/>
+                    <label cBy="AnW" feID="4101" itype="INI" name="Action"/>
+                    <label cBy="AnW" feID="4099" itype="CNI" name="Preventing_cause"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="143" start="127" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="143" start="127" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

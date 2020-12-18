@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="influential.a" ID="10439" frame="Subjective_influence" frameID="1083" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Jamaica" name="IntroJamaica" ID="23754"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="act" name="Action"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Age" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="beh" name="Behavior"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="des" name="Descriptor"/>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Peripheral" abbrev="dom" name="Domain"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="ent" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Extra-Thematic" abbrev="Eve" name="Event_description"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="pro" name="Product"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Core" abbrev="sit" name="Situation"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: having great influence</definition>
+    <lexeme POS="A" name="influential"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Cognizer"/>
+                <annoSet ID="6558970"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Entity"/>
+                <annoSet ID="6558970"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Cognizer"/>
+                <valenceUnit GF="Head" PT="N" FE="Entity"/>
+                <annoSet ID="6558970"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23754" sentNo="2" paragNo="11" aPos="0" ID="4103878">
+            <text>It still revels in its own identity , which is now internationally recognized through such influential cultural products as the Rastafarian religion and reggae music .</text>
+            <annotationSet cDate="07/17/2008 06:10:01 PDT Thu" status="UNANN" ID="6552685">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="7" start="3" name="rb"/>
+                    <label end="14" start="9" name="nns"/>
+                    <label end="17" start="16" name="in"/>
+                    <label end="21" start="19" name="PP$"/>
+                    <label end="25" start="23" name="jj"/>
+                    <label end="34" start="27" name="nn"/>
+                    <label end="36" start="36" name=","/>
+                    <label end="42" start="38" name="wdt"/>
+                    <label end="45" start="44" name="VBZ"/>
+                    <label end="49" start="47" name="rb"/>
+                    <label end="65" start="51" name="rb"/>
+                    <label end="76" start="67" name="VVN"/>
+                    <label end="84" start="78" name="in"/>
+                    <label end="89" start="86" name="jj"/>
+                    <label end="101" start="91" name="jj"/>
+                    <label end="110" start="103" name="jj"/>
+                    <label end="119" start="112" name="nns"/>
+                    <label end="122" start="121" name="in"/>
+                    <label end="126" start="124" name="dt"/>
+                    <label end="138" start="128" name="jj"/>
+                    <label end="147" start="140" name="nn"/>
+                    <label end="151" start="149" name="cc"/>
+                    <label end="158" start="153" name="nn"/>
+                    <label end="164" start="160" name="nn"/>
+                    <label end="166" start="166" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="17" start="16" name="NT"/>
+                    <label end="21" start="19" name="NT"/>
+                    <label end="36" start="36" name="NT"/>
+                    <label end="42" start="38" name="NT"/>
+                    <label end="45" start="44" name="NT"/>
+                    <label end="84" start="78" name="NT"/>
+                    <label end="122" start="121" name="NT"/>
+                    <label end="126" start="124" name="NT"/>
+                    <label end="151" start="149" name="NT"/>
+                    <label end="166" start="166" name="NT"/>
+                    <label end="89" start="86" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/04/2009 04:04:06 PST Wed" status="MANUAL" ID="6558970">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="101" start="91" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="6311" itype="INI" name="Cognizer"/>
+                    <label cBy="AlK" feID="6313" end="119" start="112" name="Entity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="119" start="112" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="119" start="112" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

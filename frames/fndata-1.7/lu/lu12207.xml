@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="bind.v" ID="12207" frame="Imposing_obligation" frameID="1494" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="North Korea Nuclear Overview" name="NorthKorea_NuclearOverview" ID="23562"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="con" name="Condition"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="dut" name="Duty"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="obl" name="Obligator"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Core" abbrev="pri" name="Principle"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="Resp" name="Responsible_party"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Core" abbrev="sit" name="Situation"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: impose a legal or contractual obligation on.</definition>
+    <lexeme POS="V" name="bind"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Duty"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPto" FE="Duty"/>
+                <annoSet ID="6530133"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Principle"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Principle"/>
+                <annoSet ID="6530133"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Responsible_party"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Responsible_party"/>
+                <annoSet ID="6530133"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Duty"/>
+            <FE name="Principle"/>
+            <FE name="Responsible_party"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPto" FE="Duty"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Principle"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Responsible_party"/>
+                <annoSet ID="6530133"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23562" sentNo="3" paragNo="23" aPos="0" ID="4097720">
+            <text>The agreement also bound the two sides to forgo the possession of `` nuclear reprocessing and uranium enrichment facilities . ''</text>
+            <annotationSet cDate="08/01/2005 12:16:28 PDT Mon" status="UNANN" ID="6528694">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="12" start="4" name="nn"/>
+                    <label end="17" start="14" name="rb"/>
+                    <label end="23" start="19" name="VVN"/>
+                    <label end="27" start="25" name="dt"/>
+                    <label end="31" start="29" name="cd"/>
+                    <label end="37" start="33" name="nns"/>
+                    <label end="40" start="39" name="to"/>
+                    <label end="46" start="42" name="VV"/>
+                    <label end="50" start="48" name="dt"/>
+                    <label end="61" start="52" name="nn"/>
+                    <label end="64" start="63" name="in"/>
+                    <label end="67" start="66" name="``"/>
+                    <label end="75" start="69" name="jj"/>
+                    <label end="88" start="77" name="VVG"/>
+                    <label end="92" start="90" name="cc"/>
+                    <label end="100" start="94" name="nn"/>
+                    <label end="111" start="102" name="nn"/>
+                    <label end="122" start="113" name="nns"/>
+                    <label end="124" start="124" name="sent"/>
+                    <label end="127" start="126" name="''"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="17" start="14" name="NT"/>
+                    <label end="27" start="25" name="NT"/>
+                    <label end="31" start="29" name="NT"/>
+                    <label end="40" start="39" name="NT"/>
+                    <label end="50" start="48" name="NT"/>
+                    <label end="64" start="63" name="NT"/>
+                    <label end="67" start="66" name="NT"/>
+                    <label end="92" start="90" name="NT"/>
+                    <label end="124" start="124" name="NT"/>
+                    <label end="127" start="126" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/10/2005 05:47:49 PDT Wed" status="MANUAL" ID="6530133">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="23" start="19" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="8156" end="12" start="0" name="Principle"/>
+                    <label cBy="JKR" feID="8148" end="37" start="25" name="Responsible_party"/>
+                    <label cBy="JKR" feID="8149" end="122" start="39" name="Duty"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="12" start="0" name="Ext"/>
+                    <label end="37" start="25" name="Obj"/>
+                    <label end="122" start="39" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="12" start="0" name="NP"/>
+                    <label end="37" start="25" name="NP"/>
+                    <label end="122" start="39" name="VPto"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

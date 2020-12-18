@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="preservation.n" ID="6037" frame="Preserving" frameID="339" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Dublin" name="IntroOfDublin" ID="23652"/>
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agt" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Depict" name="Depictive"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="Ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Means" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="Med" name="Medium"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Pat" name="Patient"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="0000FF" bgColor="EEE8AA" type="Extra-Thematic" abbrev="Result" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: the action of preventing (food) from decomposing.</definition>
+    <lexeme POS="N" name="preservation"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Agent"/>
+                <annoSet ID="6561734"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Medium"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Medium"/>
+                <annoSet ID="6561734"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Patient"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Patient"/>
+                <annoSet ID="6561734"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Patient"/>
+                <annoSet ID="6539711"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Patient"/>
+                <annoSet ID="6560486"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Medium"/>
+            <FE name="Patient"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Agent"/>
+                <valenceUnit GF="" PT="INI" FE="Medium"/>
+                <valenceUnit GF="Gen" PT="Poss" FE="Patient"/>
+                <annoSet ID="6561734"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="2">
+            <FE name="Patient"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Patient"/>
+                <annoSet ID="6539711"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Patient"/>
+                <annoSet ID="6560486"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23652" sentNo="1" paragNo="4" aPos="0" ID="4100586">
+            <text>Prosperity has brought with it a new emphasis on historic preservation .</text>
+            <annotationSet cDate="11/14/2006 04:25:14 PST Tue" status="UNANN" ID="6539585">
+                <layer rank="1" name="PENN">
+                    <label end="9" start="0" name="nn"/>
+                    <label end="13" start="11" name="VHZ"/>
+                    <label end="21" start="15" name="VVN"/>
+                    <label end="26" start="23" name="in"/>
+                    <label end="29" start="28" name="PP"/>
+                    <label end="31" start="31" name="dt"/>
+                    <label end="35" start="33" name="jj"/>
+                    <label end="44" start="37" name="nn"/>
+                    <label end="47" start="46" name="in"/>
+                    <label end="56" start="49" name="jj"/>
+                    <label end="69" start="58" name="nn"/>
+                    <label end="71" start="71" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="13" start="11" name="NT"/>
+                    <label end="29" start="28" name="NT"/>
+                    <label end="31" start="31" name="NT"/>
+                    <label end="47" start="46" name="NT"/>
+                    <label end="71" start="71" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/15/2006 04:39:54 PST Wed" status="MANUAL" ID="6539711">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="69" start="58" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="2896" end="56" start="49" name="Patient"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="56" start="49" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="56" start="49" name="A"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23771" sentNo="3" paragNo="65" aPos="0" ID="4106021">
+            <text>The preservation of this wonderful home is ongoing ; a projected restoration of the original garden is still in progress .</text>
+            <annotationSet cDate="07/25/2008 01:19:08 PDT Fri" status="UNANN" ID="6555111">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="15" start="4" name="nn"/>
+                    <label end="18" start="17" name="in"/>
+                    <label end="23" start="20" name="dt"/>
+                    <label end="33" start="25" name="jj"/>
+                    <label end="38" start="35" name="nn"/>
+                    <label end="41" start="40" name="VBZ"/>
+                    <label end="49" start="43" name="jj"/>
+                    <label end="51" start="51" name=":"/>
+                    <label end="53" start="53" name="dt"/>
+                    <label end="63" start="55" name="VVN"/>
+                    <label end="75" start="65" name="nn"/>
+                    <label end="78" start="77" name="in"/>
+                    <label end="82" start="80" name="dt"/>
+                    <label end="91" start="84" name="jj"/>
+                    <label end="98" start="93" name="nn"/>
+                    <label end="101" start="100" name="VBZ"/>
+                    <label end="107" start="103" name="rb"/>
+                    <label end="110" start="109" name="in"/>
+                    <label end="119" start="112" name="nn"/>
+                    <label end="121" start="121" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="18" start="17" name="NT"/>
+                    <label end="23" start="20" name="NT"/>
+                    <label end="41" start="40" name="NT"/>
+                    <label end="51" start="51" name="NT"/>
+                    <label end="53" start="53" name="NT"/>
+                    <label end="78" start="77" name="NT"/>
+                    <label end="82" start="80" name="NT"/>
+                    <label end="101" start="100" name="NT"/>
+                    <label end="110" start="109" name="NT"/>
+                    <label end="121" start="121" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/20/2011 11:18:05 PST Thu" status="MANUAL" ID="6560486">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="15" start="4" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="2896" end="38" start="17" name="Patient"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="38" start="17" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="38" start="17" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23771" sentNo="2" paragNo="108" aPos="0" ID="4106166">
+            <text>The Handover Pavilion was meant to be a temporary structure , but public outcry ensured its preservation ( located on Xian Xing Hai ; open weekdays 10 am - 6 pm , until 10 pm weekends ) .</text>
+            <annotationSet cDate="07/25/2008 01:20:20 PDT Fri" status="UNANN" ID="6555256">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="11" start="4" name="nn"/>
+                    <label end="20" start="13" name="nn"/>
+                    <label end="24" start="22" name="VBD"/>
+                    <label end="30" start="26" name="VVN"/>
+                    <label end="33" start="32" name="to"/>
+                    <label end="36" start="35" name="vb"/>
+                    <label end="38" start="38" name="dt"/>
+                    <label end="48" start="40" name="jj"/>
+                    <label end="58" start="50" name="nn"/>
+                    <label end="60" start="60" name=","/>
+                    <label end="64" start="62" name="cc"/>
+                    <label end="71" start="66" name="jj"/>
+                    <label end="78" start="73" name="nn"/>
+                    <label end="86" start="80" name="VVD"/>
+                    <label end="90" start="88" name="PP$"/>
+                    <label end="103" start="92" name="nn"/>
+                    <label end="105" start="105" name="("/>
+                    <label end="113" start="107" name="VVN"/>
+                    <label end="116" start="115" name="in"/>
+                    <label end="121" start="118" name="NP"/>
+                    <label end="126" start="123" name="NP"/>
+                    <label end="130" start="128" name="NP"/>
+                    <label end="132" start="132" name=":"/>
+                    <label end="137" start="134" name="jj"/>
+                    <label end="146" start="139" name="nns"/>
+                    <label end="149" start="148" name="cd"/>
+                    <label end="152" start="151" name="vbp"/>
+                    <label end="154" start="154" name=":"/>
+                    <label end="156" start="156" name="cd"/>
+                    <label end="159" start="158" name="nn"/>
+                    <label end="161" start="161" name=","/>
+                    <label end="167" start="163" name="in"/>
+                    <label end="170" start="169" name="cd"/>
+                    <label end="173" start="172" name="nn"/>
+                    <label end="182" start="175" name="nns"/>
+                    <label end="184" start="184" name=")"/>
+                    <label end="186" start="186" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="130" start="118" name="person"/>
+                    <label end="152" start="148" name="time"/>
+                    <label end="159" start="156" name="time"/>
+                    <label end="173" start="169" name="time"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="24" start="22" name="NT"/>
+                    <label end="33" start="32" name="NT"/>
+                    <label end="36" start="35" name="NT"/>
+                    <label end="38" start="38" name="NT"/>
+                    <label end="60" start="60" name="NT"/>
+                    <label end="64" start="62" name="NT"/>
+                    <label end="90" start="88" name="NT"/>
+                    <label end="105" start="105" name="NT"/>
+                    <label end="116" start="115" name="NT"/>
+                    <label end="121" start="118" name="NT"/>
+                    <label end="126" start="123" name="NT"/>
+                    <label end="130" start="128" name="NT"/>
+                    <label end="132" start="132" name="NT"/>
+                    <label end="149" start="148" name="NT"/>
+                    <label end="152" start="151" name="NT"/>
+                    <label end="154" start="154" name="NT"/>
+                    <label end="156" start="156" name="NT"/>
+                    <label end="161" start="161" name="NT"/>
+                    <label end="170" start="169" name="NT"/>
+                    <label end="184" start="184" name="NT"/>
+                    <label end="186" start="186" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/31/2011 01:14:17 PST Mon" status="MANUAL" ID="6561734">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="103" start="92" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="2896" end="90" start="88" name="Patient"/>
+                    <label cBy="MLC" feID="2894" itype="INI" name="Agent"/>
+                    <label cBy="MLC" feID="2895" itype="INI" name="Medium"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="90" start="88" name="Gen"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="90" start="88" name="Poss"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

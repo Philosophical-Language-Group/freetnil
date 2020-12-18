@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="living.a" ID="12771" frame="Dead_or_alive" frameID="310" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="B W Tutorial chapter1" name="BWTutorial_chapter1" ID="23602"/>
+        </corpus>
+        <corpus description="MASC" name="MASC" ID="150">
+            <document description="Examples of the lemma live from the MASC project for FN annotation" name="live" ID="22516"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="Fig" name="Figure"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Prot" name="Protagonist"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: possessing life</definition>
+    <lexeme POS="A" name="living"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Figure"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Figure"/>
+                <annoSet ID="6566214"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Protagonist"/>
+                <annoSet ID="6535381"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Figure"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Figure"/>
+                <annoSet ID="6566214"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Protagonist"/>
+                <annoSet ID="6535381"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23602" sentNo="1" paragNo="14" aPos="0" ID="4099374">
+            <text>Toxins -- nonliving poisons produced by living plants , insects , and animals -- are in a gray area between CW and BW agents .</text>
+            <annotationSet cDate="06/02/2006 03:11:37 PDT Fri" status="UNANN" ID="6534601">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="nns"/>
+                    <label end="8" start="7" name=":"/>
+                    <label end="18" start="10" name="jj"/>
+                    <label end="26" start="20" name="nns"/>
+                    <label end="35" start="28" name="VVN"/>
+                    <label end="38" start="37" name="in"/>
+                    <label end="45" start="40" name="VVG"/>
+                    <label end="52" start="47" name="nns"/>
+                    <label end="54" start="54" name=","/>
+                    <label end="62" start="56" name="nns"/>
+                    <label end="64" start="64" name=","/>
+                    <label end="68" start="66" name="cc"/>
+                    <label end="76" start="70" name="nns"/>
+                    <label end="79" start="78" name=":"/>
+                    <label end="83" start="81" name="vbp"/>
+                    <label end="86" start="85" name="in"/>
+                    <label end="88" start="88" name="dt"/>
+                    <label end="93" start="90" name="jj"/>
+                    <label end="98" start="95" name="nn"/>
+                    <label end="106" start="100" name="in"/>
+                    <label end="109" start="108" name="NP"/>
+                    <label end="113" start="111" name="cc"/>
+                    <label end="116" start="115" name="NP"/>
+                    <label end="123" start="118" name="nns"/>
+                    <label end="125" start="125" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="109" start="108" name="WEA"/>
+                    <label end="116" start="115" name="WEA"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="8" start="7" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="54" start="54" name="NT"/>
+                    <label end="64" start="64" name="NT"/>
+                    <label end="68" start="66" name="NT"/>
+                    <label end="79" start="78" name="NT"/>
+                    <label end="83" start="81" name="NT"/>
+                    <label end="86" start="85" name="NT"/>
+                    <label end="88" start="88" name="NT"/>
+                    <label end="106" start="100" name="NT"/>
+                    <label end="113" start="111" name="NT"/>
+                    <label end="125" start="125" name="NT"/>
+                    <label end="76" start="70" name="Nonrelational"/>
+                    <label end="62" start="56" name="Nonrelational"/>
+                    <label end="52" start="47" name="Nonrelational"/>
+                    <label end="98" start="90" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/13/2006 01:42:46 PDT Tue" status="MANUAL" ID="6535381">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="45" start="40" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="2679" end="76" start="47" name="Protagonist"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="76" start="47" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="76" start="47" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="150" docID="22516" sentNo="3" paragNo="2" aPos="0" ID="1593352">
+            <text>All living cells are .</text>
+            <annotationSet cDate="12/14/2010 02:08:20 PST Tue" status="UNANN" ID="2619993">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="9" start="4" name="nn"/>
+                    <label end="15" start="11" name="nns"/>
+                    <label end="19" start="17" name="vbp"/>
+                    <label end="21" start="21" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="19" start="17" name="NT"/>
+                    <label end="21" start="21" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/08/2011 10:47:28 PDT Wed" status="MANUAL" ID="6566214">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="9" start="4" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="2680" end="15" start="11" name="Figure"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="15" start="11" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="15" start="11" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="New" POS="V" name="sound.v" ID="15357" frame="Make_noise" frameID="69" totalAnnotated="4" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Bell Ringing" name="BellRinging" ID="23009"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="" name="Addressee"/>
+            <FE fgColor="00008B" bgColor="d0d0d0" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="ICause" name="Internal_cause"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="ite" name="Iterations"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Loc" name="Location_of_protagonist"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="" name="Noisy_event"/>
+            <FE fgColor="000000" bgColor="FFD700" type="Extra-Thematic" abbrev="par" name="Particular_iteration"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="" name="Path"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Sound" name="Sound"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Src-p" name="Sound_source"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="Sub" name="Subregion"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: to make an object emit phonons of compression and rarefaction.</definition>
+    <lexeme POS="V" name="sound"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Noisy_event"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Noisy_event"/>
+                <annoSet ID="6558755"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Particular_iteration"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Particular_iteration"/>
+                <annoSet ID="4530923"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Place"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Place"/>
+                <annoSet ID="4530923"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Place"/>
+                <annoSet ID="4530924"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Sound"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Sound"/>
+                <annoSet ID="6558755"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Sound_source"/>
+            <pattern total="3">
+                <valenceUnit GF="Ext" PT="NP" FE="Sound_source"/>
+                <annoSet ID="4530923"/>
+                <annoSet ID="4530924"/>
+                <annoSet ID="4530925"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Time"/>
+                <annoSet ID="4530923"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Noisy_event"/>
+            <FE name="Sound"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Noisy_event"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Sound"/>
+                <annoSet ID="6558755"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Particular_iteration"/>
+            <FE name="Place"/>
+            <FE name="Sound_source"/>
+            <FE name="Sound_source"/>
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Particular_iteration"/>
+                <valenceUnit GF="Dep" PT="AVP" FE="Place"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Sound_source"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Sound_source"/>
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Time"/>
+                <annoSet ID="4530923"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Place"/>
+            <FE name="Sound_source"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Place"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Sound_source"/>
+                <annoSet ID="4530924"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Sound_source"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Sound_source"/>
+                <annoSet ID="4530925"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-NPvoice,word-T-(1)"/>
+    <subCorpus name="02-T-NPalarm,note,horn-(1)"/>
+    <subCorpus name="03-NP-T-NP-(1)"/>
+    <subCorpus name="04-NP-T-(1)"/>
+    <subCorpus name="other-matched-(1)"/>
+    <subCorpus name="other-unmatched-(1)"/>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23009" sentNo="2" paragNo="4" aPos="0" ID="2824201">
+            <text>In the tower , five men and women pull rhythmically on ropes attached to the same five bells that first sounded here in 1614 .</text>
+            <annotationSet cDate="02/05/2004 08:29:19 PST Thu" status="UNANN" ID="4528196">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="11" start="7" name="nn"/>
+                    <label end="13" start="13" name=","/>
+                    <label end="18" start="15" name="cd"/>
+                    <label end="22" start="20" name="nns"/>
+                    <label end="26" start="24" name="cc"/>
+                    <label end="32" start="28" name="nns"/>
+                    <label end="37" start="34" name="VVP"/>
+                    <label end="50" start="39" name="rb"/>
+                    <label end="53" start="52" name="in"/>
+                    <label end="59" start="55" name="nns"/>
+                    <label end="68" start="61" name="VVN"/>
+                    <label end="71" start="70" name="to"/>
+                    <label end="75" start="73" name="dt"/>
+                    <label end="80" start="77" name="jj"/>
+                    <label end="85" start="82" name="cd"/>
+                    <label end="91" start="87" name="nns"/>
+                    <label end="96" start="93" name="wdt"/>
+                    <label end="102" start="98" name="rb"/>
+                    <label end="110" start="104" name="VVD"/>
+                    <label end="115" start="112" name="rb"/>
+                    <label end="118" start="117" name="in"/>
+                    <label end="123" start="120" name="cd"/>
+                    <label end="125" start="125" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="123" start="120" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="13" start="13" name="NT"/>
+                    <label end="71" start="70" name="NT"/>
+                    <label end="115" start="112" name="NT"/>
+                    <label end="118" start="117" name="NT"/>
+                    <label end="125" start="125" name="NT"/>
+                    <label end="1" start="0" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="26" start="24" name="NT"/>
+                    <label end="53" start="52" name="NT"/>
+                    <label end="75" start="73" name="NT"/>
+                    <label end="96" start="93" name="NT"/>
+                    <label end="123" start="120" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/10/2010 12:15:51 PDT Thu" status="MANUAL" ID="4530923">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="110" start="104" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="323" end="91" start="73" name="Sound_source"/>
+                    <label cBy="AlK" feID="323" end="96" start="93" name="Sound_source"/>
+                    <label cBy="AlK" feID="10564" end="102" start="98" name="Particular_iteration"/>
+                    <label cBy="AlK" feID="5080" end="115" start="112" name="Place"/>
+                    <label cBy="AlK" feID="6327" end="123" start="117" name="Time"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="91" start="73" name="Ext"/>
+                    <label end="96" start="93" name="Ext"/>
+                    <label end="102" start="98" name="Dep"/>
+                    <label end="115" start="112" name="Dep"/>
+                    <label end="123" start="117" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="91" start="73" name="NP"/>
+                    <label end="96" start="93" name="NP"/>
+                    <label end="102" start="98" name="AVP"/>
+                    <label end="115" start="112" name="AVP"/>
+                    <label end="123" start="117" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other">
+                    <label end="91" start="73" name="Ant"/>
+                    <label end="96" start="93" name="Rel"/>
+                </layer>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="115" docID="23009" sentNo="2" paragNo="7" aPos="0" ID="2824206">
+            <text>They belong to a group of 15 ringers -- including two octogenarians and four youngsters in training -- who drive every Sunday from church to church in a sometimes-exhausting effort to keep the bells sounding in the many belfries of East Anglia .</text>
+            <annotationSet cDate="02/05/2004 08:29:21 PST Thu" status="UNANN" ID="4528201">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="PP"/>
+                    <label end="10" start="5" name="VVP"/>
+                    <label end="13" start="12" name="to"/>
+                    <label end="15" start="15" name="dt"/>
+                    <label end="21" start="17" name="nn"/>
+                    <label end="24" start="23" name="in"/>
+                    <label end="27" start="26" name="cd"/>
+                    <label end="35" start="29" name="nns"/>
+                    <label end="38" start="37" name=":"/>
+                    <label end="48" start="40" name="VVG"/>
+                    <label end="52" start="50" name="cd"/>
+                    <label end="66" start="54" name="nns"/>
+                    <label end="70" start="68" name="cc"/>
+                    <label end="75" start="72" name="cd"/>
+                    <label end="86" start="77" name="nns"/>
+                    <label end="89" start="88" name="in"/>
+                    <label end="98" start="91" name="nn"/>
+                    <label end="101" start="100" name=":"/>
+                    <label end="105" start="103" name="wp"/>
+                    <label end="111" start="107" name="VVP"/>
+                    <label end="117" start="113" name="dt"/>
+                    <label end="124" start="119" name="NP"/>
+                    <label end="129" start="126" name="in"/>
+                    <label end="136" start="131" name="nn"/>
+                    <label end="139" start="138" name="to"/>
+                    <label end="146" start="141" name="nn"/>
+                    <label end="149" start="148" name="in"/>
+                    <label end="151" start="151" name="dt"/>
+                    <label end="172" start="153" name="jj"/>
+                    <label end="179" start="174" name="nn"/>
+                    <label end="182" start="181" name="to"/>
+                    <label end="187" start="184" name="VV"/>
+                    <label end="191" start="189" name="dt"/>
+                    <label end="197" start="193" name="nns"/>
+                    <label end="206" start="199" name="VVG"/>
+                    <label end="209" start="208" name="in"/>
+                    <label end="213" start="211" name="dt"/>
+                    <label end="218" start="215" name="jj"/>
+                    <label end="227" start="220" name="nns"/>
+                    <label end="230" start="229" name="in"/>
+                    <label end="235" start="232" name="NP"/>
+                    <label end="242" start="237" name="NP"/>
+                    <label end="244" start="244" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="242" start="232" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="13" start="12" name="NT"/>
+                    <label end="89" start="88" name="NT"/>
+                    <label end="139" start="138" name="NT"/>
+                    <label end="149" start="148" name="NT"/>
+                    <label end="182" start="181" name="NT"/>
+                    <label end="209" start="208" name="NT"/>
+                    <label end="244" start="244" name="NT"/>
+                    <label end="3" start="0" name="NT"/>
+                    <label end="15" start="15" name="NT"/>
+                    <label end="24" start="23" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="70" start="68" name="NT"/>
+                    <label end="101" start="100" name="NT"/>
+                    <label end="105" start="103" name="NT"/>
+                    <label end="129" start="126" name="NT"/>
+                    <label end="151" start="151" name="NT"/>
+                    <label end="191" start="189" name="NT"/>
+                    <label end="213" start="211" name="NT"/>
+                    <label end="230" start="229" name="NT"/>
+                    <label end="235" start="232" name="NT"/>
+                    <label end="242" start="237" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/10/2010 12:37:49 PDT Thu" status="MANUAL" ID="4530924">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="206" start="199" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="323" end="197" start="189" name="Sound_source"/>
+                    <label cBy="AlK" feID="5080" end="242" start="208" name="Place"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="197" start="189" name="Ext"/>
+                    <label end="242" start="208" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="197" start="189" name="NP"/>
+                    <label end="242" start="208" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="115" docID="23009" sentNo="2" paragNo="11" aPos="0" ID="2824217">
+            <text>Then , at a signal , the ringers begin varying the order in which the bells sound without altering the steady rhythm of the striking .</text>
+            <annotationSet cDate="02/05/2004 08:29:25 PST Thu" status="UNANN" ID="4528212">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="rb"/>
+                    <label end="5" start="5" name=","/>
+                    <label end="8" start="7" name="in"/>
+                    <label end="10" start="10" name="dt"/>
+                    <label end="17" start="12" name="nn"/>
+                    <label end="19" start="19" name=","/>
+                    <label end="23" start="21" name="dt"/>
+                    <label end="31" start="25" name="nns"/>
+                    <label end="37" start="33" name="VVP"/>
+                    <label end="45" start="39" name="VVG"/>
+                    <label end="49" start="47" name="dt"/>
+                    <label end="55" start="51" name="nn"/>
+                    <label end="58" start="57" name="in"/>
+                    <label end="64" start="60" name="wdt"/>
+                    <label end="68" start="66" name="dt"/>
+                    <label end="74" start="70" name="nns"/>
+                    <label end="80" start="76" name="VVP"/>
+                    <label end="88" start="82" name="in"/>
+                    <label end="97" start="90" name="VVG"/>
+                    <label end="101" start="99" name="dt"/>
+                    <label end="108" start="103" name="jj"/>
+                    <label end="115" start="110" name="nn"/>
+                    <label end="118" start="117" name="in"/>
+                    <label end="122" start="120" name="dt"/>
+                    <label end="131" start="124" name="jj"/>
+                    <label end="133" start="133" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="5" start="5" name="NT"/>
+                    <label end="19" start="19" name="NT"/>
+                    <label end="58" start="57" name="NT"/>
+                    <label end="133" start="133" name="NT"/>
+                    <label end="8" start="7" name="NT"/>
+                    <label end="10" start="10" name="NT"/>
+                    <label end="23" start="21" name="NT"/>
+                    <label end="49" start="47" name="NT"/>
+                    <label end="64" start="60" name="NT"/>
+                    <label end="68" start="66" name="NT"/>
+                    <label end="88" start="82" name="NT"/>
+                    <label end="101" start="99" name="NT"/>
+                    <label end="118" start="117" name="NT"/>
+                    <label end="122" start="120" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/10/2010 12:39:25 PDT Thu" status="MANUAL" ID="4530925">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="80" start="76" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="323" end="74" start="66" name="Sound_source"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="74" start="66" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="74" start="66" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23692" sentNo="1" paragNo="39" aPos="0" ID="4101277">
+            <text>A series of disastrous decisions at the beginning of the 20th century began to sound a death knell for the Ottoman Empire .</text>
+            <annotationSet cDate="03/12/2007 02:51:36 PDT Mon" status="UNANN" ID="6542070">
+                <layer rank="1" name="PENN">
+                    <label end="0" start="0" name="dt"/>
+                    <label end="7" start="2" name="nn"/>
+                    <label end="10" start="9" name="in"/>
+                    <label end="21" start="12" name="jj"/>
+                    <label end="31" start="23" name="nns"/>
+                    <label end="34" start="33" name="in"/>
+                    <label end="38" start="36" name="dt"/>
+                    <label end="48" start="40" name="nn"/>
+                    <label end="51" start="50" name="in"/>
+                    <label end="55" start="53" name="dt"/>
+                    <label end="60" start="57" name="jj"/>
+                    <label end="68" start="62" name="nn"/>
+                    <label end="74" start="70" name="VVD"/>
+                    <label end="77" start="76" name="to"/>
+                    <label end="83" start="79" name="VV"/>
+                    <label end="85" start="85" name="dt"/>
+                    <label end="91" start="87" name="nn"/>
+                    <label end="97" start="93" name="nn"/>
+                    <label end="101" start="99" name="in"/>
+                    <label end="105" start="103" name="dt"/>
+                    <label end="113" start="107" name="NP"/>
+                    <label end="120" start="115" name="NP"/>
+                    <label end="122" start="122" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="68" start="57" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="0" start="0" name="NT"/>
+                    <label end="10" start="9" name="NT"/>
+                    <label end="34" start="33" name="NT"/>
+                    <label end="38" start="36" name="NT"/>
+                    <label end="51" start="50" name="NT"/>
+                    <label end="55" start="53" name="NT"/>
+                    <label end="77" start="76" name="NT"/>
+                    <label end="85" start="85" name="NT"/>
+                    <label end="101" start="99" name="NT"/>
+                    <label end="105" start="103" name="NT"/>
+                    <label end="113" start="107" name="NT"/>
+                    <label end="122" start="122" name="NT"/>
+                    <label end="97" start="93" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/23/2009 02:53:46 PDT Thu" status="MANUAL" ID="6558755">
+                <layer rank="1" name="Target">
+                    <label cBy="DYo" end="83" start="79" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="DYo" feID="5052" end="68" start="0" name="Noisy_event"/>
+                    <label cBy="DYo" feID="328" end="120" start="85" name="Sound"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="68" start="0" name="Ext"/>
+                    <label end="120" start="85" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="68" start="0" name="NP"/>
+                    <label end="120" start="85" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent">
+                    <label end="0" start="0" name="Metaphor"/>
+                </layer>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="north-south.n" ID="14393" frame="Part_orientational" frameID="143" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Dublin" name="IntroOfDublin" ID="23652"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="" name="Part"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="" name="Part_prop"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Whole"/>
+        </frame>
+    </header>
+    <definition>FN: between the northern and the southern parts.</definition>
+    <lexeme POS="N" name="north-south"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Part"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Part"/>
+                <annoSet ID="6544096"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Whole"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Whole"/>
+                <annoSet ID="6544096"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Part"/>
+            <FE name="Whole"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Part"/>
+                <valenceUnit GF="" PT="DNI" FE="Whole"/>
+                <annoSet ID="6544096"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23652" sentNo="4" paragNo="6" aPos="0" ID="4100595">
+            <text>Historically and culturally this north-south distinction has always been significant , and it still is today , with a dose of good-humored rivalry between the two areas .</text>
+            <annotationSet cDate="11/14/2006 04:25:16 PST Tue" status="UNANN" ID="6539594">
+                <layer rank="1" name="PENN">
+                    <label end="11" start="0" name="rb"/>
+                    <label end="15" start="13" name="cc"/>
+                    <label end="26" start="17" name="rb"/>
+                    <label end="31" start="28" name="dt"/>
+                    <label end="43" start="33" name="jj"/>
+                    <label end="55" start="45" name="nn"/>
+                    <label end="59" start="57" name="VHZ"/>
+                    <label end="66" start="61" name="rb"/>
+                    <label end="71" start="68" name="VBN"/>
+                    <label end="83" start="73" name="jj"/>
+                    <label end="85" start="85" name=","/>
+                    <label end="89" start="87" name="cc"/>
+                    <label end="92" start="91" name="PP"/>
+                    <label end="98" start="94" name="rb"/>
+                    <label end="101" start="100" name="VBZ"/>
+                    <label end="107" start="103" name="nn"/>
+                    <label end="109" start="109" name=","/>
+                    <label end="114" start="111" name="in"/>
+                    <label end="116" start="116" name="dt"/>
+                    <label end="121" start="118" name="nn"/>
+                    <label end="124" start="123" name="in"/>
+                    <label end="137" start="126" name="VVN"/>
+                    <label end="145" start="139" name="nn"/>
+                    <label end="153" start="147" name="in"/>
+                    <label end="157" start="155" name="dt"/>
+                    <label end="161" start="159" name="cd"/>
+                    <label end="167" start="163" name="nns"/>
+                    <label end="169" start="169" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="15" start="13" name="NT"/>
+                    <label end="31" start="28" name="NT"/>
+                    <label end="59" start="57" name="NT"/>
+                    <label end="71" start="68" name="NT"/>
+                    <label end="85" start="85" name="NT"/>
+                    <label end="89" start="87" name="NT"/>
+                    <label end="92" start="91" name="NT"/>
+                    <label end="101" start="100" name="NT"/>
+                    <label end="109" start="109" name="NT"/>
+                    <label end="114" start="111" name="NT"/>
+                    <label end="116" start="116" name="NT"/>
+                    <label end="124" start="123" name="NT"/>
+                    <label end="157" start="155" name="NT"/>
+                    <label end="169" start="169" name="NT"/>
+                    <label end="153" start="147" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="04/11/2007 04:57:55 PDT Wed" status="MANUAL" ID="6544096">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="43" start="33" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="1110" end="43" start="33" name="Part"/>
+                    <label cBy="KmG" feID="1112" itype="DNI" name="Whole"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

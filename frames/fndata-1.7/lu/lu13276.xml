@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="few.n" ID="13276" frame="Quantified_mass" frameID="189" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Polemic Progressive Education" name="PolemicProgressiveEducation" ID="23011"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Ind" name="Individuals"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="M" name="Mass"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Qua" name="Quantity"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Peripheral" abbrev="" name="Q_prop"/>
+        </frame>
+    </header>
+    <definition>COD: a small number of</definition>
+    <lexeme POS="N" name="few"/>
+    <semType name="Transparent Noun" ID="9"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Individuals"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Individuals"/>
+                <annoSet ID="4531530"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Quantity"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Quantity"/>
+                <annoSet ID="4531530"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Individuals"/>
+            <FE name="Quantity"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Individuals"/>
+                <valenceUnit GF="" PT="DEN" FE="Quantity"/>
+                <annoSet ID="4531530"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23011" sentNo="3" paragNo="7" aPos="0" ID="2824318">
+            <text>They may not be among the `` best and brightest '' of their generation -- there are very few such people , by definition .</text>
+            <annotationSet cDate="02/05/2004 08:29:57 PST Thu" status="UNANN" ID="4528313">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="PP"/>
+                    <label end="7" start="5" name="md"/>
+                    <label end="11" start="9" name="rb"/>
+                    <label end="14" start="13" name="vb"/>
+                    <label end="20" start="16" name="in"/>
+                    <label end="24" start="22" name="dt"/>
+                    <label end="27" start="26" name="``"/>
+                    <label end="32" start="29" name="jjs"/>
+                    <label end="36" start="34" name="cc"/>
+                    <label end="46" start="38" name="jjs"/>
+                    <label end="49" start="48" name="''"/>
+                    <label end="52" start="51" name="in"/>
+                    <label end="58" start="54" name="PP$"/>
+                    <label end="69" start="60" name="nn"/>
+                    <label end="72" start="71" name=":"/>
+                    <label end="78" start="74" name="ex"/>
+                    <label end="82" start="80" name="vbp"/>
+                    <label end="87" start="84" name="rb"/>
+                    <label end="91" start="89" name="jj"/>
+                    <label end="96" start="93" name="jj"/>
+                    <label end="103" start="98" name="nns"/>
+                    <label end="105" start="105" name=","/>
+                    <label end="108" start="107" name="in"/>
+                    <label end="119" start="110" name="nn"/>
+                    <label end="121" start="121" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="11" start="9" name="NT"/>
+                    <label end="14" start="13" name="NT"/>
+                    <label end="27" start="26" name="NT"/>
+                    <label end="49" start="48" name="NT"/>
+                    <label end="105" start="105" name="NT"/>
+                    <label end="121" start="121" name="NT"/>
+                    <label end="3" start="0" name="NT"/>
+                    <label end="24" start="22" name="NT"/>
+                    <label end="36" start="34" name="NT"/>
+                    <label end="58" start="54" name="NT"/>
+                    <label end="72" start="71" name="NT"/>
+                    <label end="108" start="107" name="NT"/>
+                    <label end="96" start="93" name="NT"/>
+                    <label end="52" start="51" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/14/2010 01:00:35 PDT Wed" status="MANUAL" ID="4531530">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="91" start="89" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="1550" end="91" start="89" name="Quantity"/>
+                    <label cBy="MLC" feID="1552" end="103" start="93" name="Individuals"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="103" start="93" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="103" start="93" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

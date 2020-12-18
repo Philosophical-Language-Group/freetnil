@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="distinct.a" ID="10851" frame="Identicality" frameID="1029" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Polemic Progressive Education" name="PolemicProgressiveEducation" ID="23011"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="ci" name="Current_instance"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="pc" name="Previous_context"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="pi" name="Previous_instance"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="soi" name="Set_of_instances"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="tp" name="Type"/>
+        </frame>
+    </header>
+    <definition>FN: individual or separate of identity</definition>
+    <lexeme POS="A" name="distinct"/>
+    <semType name="Negative" ID="99"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Previous_instance"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Previous_instance"/>
+                <annoSet ID="4529636"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[from]" FE="Previous_instance"/>
+                <annoSet ID="4529636"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Type"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Type"/>
+                <annoSet ID="4529636"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Previous_instance"/>
+            <FE name="Previous_instance"/>
+            <FE name="Type"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Previous_instance"/>
+                <valenceUnit GF="Dep" PT="PP[from]" FE="Previous_instance"/>
+                <valenceUnit GF="" PT="DNI" FE="Type"/>
+                <annoSet ID="4529636"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23011" sentNo="1" paragNo="7" aPos="0" ID="2824316">
+            <text>But it is unfair to dump on teachers , as distinct from the educational establishment .</text>
+            <annotationSet cDate="02/05/2004 08:29:56 PST Thu" status="UNANN" ID="4528311">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="cc"/>
+                    <label end="5" start="4" name="PP"/>
+                    <label end="8" start="7" name="VBZ"/>
+                    <label end="15" start="10" name="jj"/>
+                    <label end="18" start="17" name="to"/>
+                    <label end="23" start="20" name="VV"/>
+                    <label end="26" start="25" name="in"/>
+                    <label end="35" start="28" name="nns"/>
+                    <label end="37" start="37" name=","/>
+                    <label end="40" start="39" name="rb"/>
+                    <label end="49" start="42" name="jj"/>
+                    <label end="54" start="51" name="in"/>
+                    <label end="58" start="56" name="dt"/>
+                    <label end="70" start="60" name="jj"/>
+                    <label end="84" start="72" name="nn"/>
+                    <label end="86" start="86" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="8" start="7" name="NT"/>
+                    <label end="18" start="17" name="NT"/>
+                    <label end="37" start="37" name="NT"/>
+                    <label end="40" start="39" name="NT"/>
+                    <label end="86" start="86" name="NT"/>
+                    <label end="5" start="4" name="NT"/>
+                    <label end="26" start="25" name="NT"/>
+                    <label end="54" start="51" name="NT"/>
+                    <label end="58" start="56" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/17/2004 06:53:26 PDT Tue" status="MANUAL" ID="4529636">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="49" start="42" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="6129" end="84" start="51" name="Previous_instance"/>
+                    <label cBy="JKR" feID="6127" itype="DNI" name="Type"/>
+                    <label cBy="JKR" feID="6129" end="35" start="28" name="Previous_instance"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="84" start="51" name="Dep"/>
+                    <label end="35" start="28" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="84" start="51" name="PP"/>
+                    <label end="35" start="28" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

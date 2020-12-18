@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="president [non-political].n" ID="18329" frame="Leadership" frameID="73" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Goodwill fund-raising letter" name="110CYL067" ID="23791"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="act" name="Activity"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="Dom" name="Domain"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="gov" name="Governed"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="lea" name="Leader"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Role" name="Role"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Typ" name="Type"/>
+        </frame>
+    </header>
+    <definition>FN: the head of an organization, company, university, or trade union. </definition>
+    <lexeme POS="N" name="president"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Leader"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Leader"/>
+                <annoSet ID="6743857"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Role"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Role"/>
+                <annoSet ID="6743857"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Leader"/>
+            <FE name="Role"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Leader"/>
+                <valenceUnit GF="" PT="DEN" FE="Role"/>
+                <annoSet ID="6743857"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23791" sentNo="1" paragNo="18" aPos="0" ID="4106377">
+            <text>James M. McClelland President</text>
+            <annotationSet cDate="11/17/2008 01:54:50 PST Mon" status="UNANN" ID="6556430">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="NP"/>
+                    <label end="7" start="6" name="NP"/>
+                    <label end="18" start="9" name="NP"/>
+                    <label end="28" start="20" name="NP"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="18" start="0" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="4" start="0" name="NT"/>
+                    <label end="7" start="6" name="NT"/>
+                    <label end="18" start="9" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="09/23/2015 02:03:33 PDT Wed" status="MANUAL" ID="6743857">
+                <layer rank="1" name="Target">
+                    <label cBy="WMcQ" end="28" start="20" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="WMcQ" feID="349" end="28" start="20" name="Role"/>
+                    <label cBy="WMcQ" feID="347" end="18" start="0" name="Leader"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="18" start="0" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="18" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="repopulate.v" ID="14663" frame="Colonization" frameID="1794" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Las Vegas" name="HistoryOfLasVegas" ID="23691"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="col" name="Colonists"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="hom" name="Homeland"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="new" name="New_area"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: to grow a population again in an area after previous population that decreased or dispersed. </definition>
+    <lexeme POS="V" name="repopulate"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Colonists"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[by]" FE="Colonists"/>
+                <annoSet ID="6562620"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Homeland"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Homeland"/>
+                <annoSet ID="6562620"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="New_area"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="New_area"/>
+                <annoSet ID="6562620"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Colonists"/>
+            <FE name="Homeland"/>
+            <FE name="New_area"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[by]" FE="Colonists"/>
+                <valenceUnit GF="" PT="INI" FE="Homeland"/>
+                <valenceUnit GF="" PT="CNI" FE="New_area"/>
+                <annoSet ID="6562620"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23691" sentNo="5" paragNo="5" aPos="0" ID="4101039">
+            <text>Mysteriously , the Anasazi vanished from the valley around a.d. 1150 , leaving it to be repopulated by the Southern Paiutes , another hunter-gatherer tribe .</text>
+            <annotationSet cDate="03/12/2007 02:46:30 PDT Mon" status="UNANN" ID="6541832">
+                <layer rank="1" name="PENN">
+                    <label end="11" start="0" name="rb"/>
+                    <label end="13" start="13" name=","/>
+                    <label end="17" start="15" name="dt"/>
+                    <label end="25" start="19" name="NP"/>
+                    <label end="34" start="27" name="VVD"/>
+                    <label end="39" start="36" name="in"/>
+                    <label end="43" start="41" name="dt"/>
+                    <label end="50" start="45" name="nn"/>
+                    <label end="57" start="52" name="in"/>
+                    <label end="62" start="59" name="jj"/>
+                    <label end="67" start="64" name="cd"/>
+                    <label end="69" start="69" name=","/>
+                    <label end="77" start="71" name="VVG"/>
+                    <label end="80" start="79" name="PP"/>
+                    <label end="83" start="82" name="to"/>
+                    <label end="86" start="85" name="vb"/>
+                    <label end="98" start="88" name="VVN"/>
+                    <label end="101" start="100" name="in"/>
+                    <label end="105" start="103" name="dt"/>
+                    <label end="114" start="107" name="NP"/>
+                    <label end="122" start="116" name="NP"/>
+                    <label end="124" start="124" name=","/>
+                    <label end="132" start="126" name="dt"/>
+                    <label end="148" start="134" name="nn"/>
+                    <label end="154" start="150" name="nn"/>
+                    <label end="156" start="156" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="67" start="59" name="date"/>
+                    <label end="122" start="107" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="13" start="13" name="NT"/>
+                    <label end="17" start="15" name="NT"/>
+                    <label end="25" start="19" name="NT"/>
+                    <label end="39" start="36" name="NT"/>
+                    <label end="43" start="41" name="NT"/>
+                    <label end="67" start="64" name="NT"/>
+                    <label end="69" start="69" name="NT"/>
+                    <label end="80" start="79" name="NT"/>
+                    <label end="83" start="82" name="NT"/>
+                    <label end="86" start="85" name="NT"/>
+                    <label end="101" start="100" name="NT"/>
+                    <label end="105" start="103" name="NT"/>
+                    <label end="114" start="107" name="NT"/>
+                    <label end="122" start="116" name="NT"/>
+                    <label end="124" start="124" name="NT"/>
+                    <label end="156" start="156" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="05/03/2011 05:45:03 PDT Tue" status="MANUAL" ID="6562620">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="98" start="88" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="10637" end="154" start="100" name="Colonists"/>
+                    <label cBy="MLC" feID="10638" itype="INI" name="Homeland"/>
+                    <label cBy="MLC" feID="10639" itype="CNI" name="New_area"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="154" start="100" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="154" start="100" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

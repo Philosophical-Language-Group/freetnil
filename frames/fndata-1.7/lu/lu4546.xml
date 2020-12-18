@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="close.v" ID="4546" frame="Closure" frameID="254" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="CNN_AARONBROWN_ENG_20051101_215800.partial-NEW" name="CNN_AARONBROWN_ENG_20051101_215800.partial-NEW" ID="23733"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agt" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="" name="Beneficiary"/>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="C_portal" name="Container_portal"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Cont_obj" name="Containing_object"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="E_region" name="Enclosed_region"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Fastener" name="Fastener"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="Manp" name="Manipulator"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: with obj. bring two parts of (something) together.</definition>
+    <lexeme POS="V" name="close"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Agent"/>
+                <annoSet ID="6547997"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Container_portal"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Container_portal"/>
+                <annoSet ID="6547997"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Container_portal"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Agent"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Container_portal"/>
+                <annoSet ID="6547997"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23733" sentNo="2" paragNo="1" aPos="0" ID="4102403">
+            <text>Democrats forced the Senate into a rare closed door session .</text>
+            <annotationSet cDate="08/17/2007 03:24:42 PDT Fri" status="UNANN" ID="6546185">
+                <layer rank="1" name="PENN">
+                    <label end="8" start="0" name="NPS"/>
+                    <label end="15" start="10" name="VVD"/>
+                    <label end="19" start="17" name="dt"/>
+                    <label end="26" start="21" name="NP"/>
+                    <label end="31" start="28" name="in"/>
+                    <label end="33" start="33" name="dt"/>
+                    <label end="38" start="35" name="jj"/>
+                    <label end="45" start="40" name="jj"/>
+                    <label end="50" start="47" name="nn"/>
+                    <label end="58" start="52" name="nn"/>
+                    <label end="60" start="60" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="8" start="0" name="organization"/>
+                    <label end="26" start="21" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="8" start="0" name="NT"/>
+                    <label end="19" start="17" name="NT"/>
+                    <label end="31" start="28" name="NT"/>
+                    <label end="33" start="33" name="NT"/>
+                    <label end="60" start="60" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="09/25/2007 02:11:36 PDT Tue" status="MANUAL" ID="6547997">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="45" start="40" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="2224" end="50" start="47" name="Container_portal"/>
+                    <label cBy="KmG" feID="2199" itype="CNI" name="Agent"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="50" start="47" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="50" start="47" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

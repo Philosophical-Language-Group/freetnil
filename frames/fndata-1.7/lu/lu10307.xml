@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="quarter.n" ID="10307" frame="Part_whole" frameID="140" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="20000415_apw_eng-NEW" name="20000415_apw_eng-NEW" ID="23703"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="Nam" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="Orientation" name="Orientation"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="" name="Part"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="part" name="Part_prop"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="" name="System"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Whole"/>
+        </frame>
+    </header>
+    <definition>FN: one of four parts.</definition>
+    <lexeme POS="N" name="quarter"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Part"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Part"/>
+                <annoSet ID="6544888"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Whole"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Whole"/>
+                <annoSet ID="6544888"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Part"/>
+            <FE name="Whole"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Part"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Whole"/>
+                <annoSet ID="6544888"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23703" sentNo="1" paragNo="5" aPos="0" ID="4101340">
+            <text>During his four days in Iraq , Hall said he wanted to investigate reports from relief agencies that a quarter of Iraqi children may be suffering from chronic malnutrition .</text>
+            <annotationSet cDate="08/02/2007 09:01:05 PDT Thu" status="UNANN" ID="6544528">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="in"/>
+                    <label end="9" start="7" name="PP$"/>
+                    <label end="14" start="11" name="cd"/>
+                    <label end="19" start="16" name="nns"/>
+                    <label end="22" start="21" name="in"/>
+                    <label end="27" start="24" name="NP"/>
+                    <label end="29" start="29" name=","/>
+                    <label end="34" start="31" name="NP"/>
+                    <label end="39" start="36" name="VVD"/>
+                    <label end="42" start="41" name="PP"/>
+                    <label end="49" start="44" name="VVD"/>
+                    <label end="52" start="51" name="to"/>
+                    <label end="64" start="54" name="VV"/>
+                    <label end="72" start="66" name="nns"/>
+                    <label end="77" start="74" name="in"/>
+                    <label end="84" start="79" name="nn"/>
+                    <label end="93" start="86" name="nns"/>
+                    <label end="98" start="95" name="in"/>
+                    <label end="100" start="100" name="dt"/>
+                    <label end="108" start="102" name="nn"/>
+                    <label end="111" start="110" name="in"/>
+                    <label end="117" start="113" name="jj"/>
+                    <label end="126" start="119" name="nns"/>
+                    <label end="130" start="128" name="md"/>
+                    <label end="133" start="132" name="vb"/>
+                    <label end="143" start="135" name="VVG"/>
+                    <label end="148" start="145" name="in"/>
+                    <label end="156" start="150" name="jj"/>
+                    <label end="169" start="158" name="nn"/>
+                    <label end="171" start="171" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="27" start="24" name="location"/>
+                    <label end="34" start="31" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="9" start="7" name="NT"/>
+                    <label end="27" start="24" name="NT"/>
+                    <label end="29" start="29" name="NT"/>
+                    <label end="34" start="31" name="NT"/>
+                    <label end="42" start="41" name="NT"/>
+                    <label end="52" start="51" name="NT"/>
+                    <label end="77" start="74" name="NT"/>
+                    <label end="98" start="95" name="NT"/>
+                    <label end="100" start="100" name="NT"/>
+                    <label end="133" start="132" name="NT"/>
+                    <label end="148" start="145" name="NT"/>
+                    <label end="171" start="171" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/06/2007 03:45:54 PDT Mon" status="MANUAL" ID="6544888">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="108" start="102" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="1089" end="126" start="110" name="Whole"/>
+                    <label cBy="KmG" feID="1088" end="108" start="102" name="Part"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="126" start="110" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="126" start="110" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

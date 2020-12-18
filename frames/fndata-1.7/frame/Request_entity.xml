@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="CVa" cDate="02/07/2012 09:45:05 PST Tue" name="Request_entity" ID="2700" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;A &lt;fen&gt;Customer&lt;/fen&gt; requests an &lt;fen&gt;Entity&lt;/fen&gt; from a &lt;fen&gt;Supplier&lt;/fen&gt;.  The &lt;fen&gt;Customer&lt;/fen&gt; can order the &lt;fen&gt;Entity&lt;/fen&gt; himself or via a &lt;fen&gt;Medium&lt;/fen&gt;. 
+&lt;ex&gt;&lt;/ex&gt;
+&lt;ex&gt;&lt;fex name="Cust"&gt;I&lt;/fex&gt; &lt;t&gt;ordered&lt;/t&gt; &lt;fex name="Ent"&gt;a black scarf&lt;/fex&gt; &lt;fex name="S"&gt;from J. Crew&lt;/fex&gt; &lt;fex name="Time"&gt;a week ago&lt;/fex&gt;.&lt;/ex&gt;
+&lt;ex&gt;&lt;/ex&gt;
+&lt;ex&gt;&lt;fex name="Cust"&gt;Mr. Strom's&lt;/fex&gt; &lt;t&gt;&lt;fex name="Ent"&gt;order&lt;/fex&gt;&lt;/t&gt; has been cancelled.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="CVa" cDate="02/07/2012 09:52:23 PST Tue" abbrev="Cust" name="Customer" ID="15436">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Customer&lt;/fen&gt; is the person or business ordering the &lt;fen&gt;Entity&lt;/fen&gt; from the &lt;fen&gt;Supplier&lt;/fen&gt;.
+
+&lt;ex&gt;&lt;fex name="Cust"&gt;Simone&lt;/fex&gt; &lt;t&gt;ordered&lt;/t&gt; a hamburger and fries.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Core" cBy="CVa" cDate="02/07/2012 09:58:46 PST Tue" abbrev="Ent" name="Entity" ID="15437">
+        <definition>&lt;def-root&gt;The object ordered by the &lt;fen&gt;Customer&lt;/fen&gt;.
+
+&lt;ex&gt;Liz &lt;t&gt;ordered&lt;/t&gt; &lt;fex name="Ent"&gt;a new espresso maker&lt;/fex&gt; for the office.&lt;/ex&gt;
+
+&lt;ex&gt;His &lt;t&gt;&lt;fex name="Ent"&gt;order&lt;/fex&gt;&lt;/t&gt; did not arrive on time.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="00BFFF" fgColor="000000" coreType="Peripheral" cBy="CVa" cDate="02/07/2012 10:01:44 PST Tue" abbrev="Med" name="Medium" ID="15438">
+        <definition>&lt;def-root&gt;The channel used by the &lt;fen&gt;Customer&lt;/fen&gt; to transmit the request.
+
+&lt;ex&gt;Harold &lt;t&gt;ordered&lt;/t&gt; the material &lt;fex name="Med"&gt;via email&lt;/fex&gt;.&lt;/ex&gt;
+
+&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Core" cBy="CVa" cDate="02/07/2012 10:06:34 PST Tue" abbrev="S" name="Supplier" ID="15439">
+        <definition>&lt;def-root&gt;The person or organization from whom the &lt;fen&gt;Customer&lt;/fen&gt; orders the &lt;fen&gt;Entity&lt;/fen&gt;.
+
+&lt;ex&gt;Mrs. Apfelbaum &lt;t&gt;ordered&lt;/t&gt; a coffee &lt;fex name="S"&gt;from the barista&lt;/fex&gt;.&lt;/ex&gt; &lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FFD700" fgColor="000000" coreType="Peripheral" cBy="CVa" cDate="02/07/2012 10:13:38 PST Tue" abbrev="Time" name="Time" ID="15440">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Time&lt;/fen&gt; at which the &lt;fen&gt;Customer&lt;/fen&gt; requested the &lt;fen&gt;Entity&lt;/fen&gt;.
+
+&lt;ex&gt;Sara placed the &lt;t&gt;order&lt;/t&gt; &lt;fex name="Time"&gt;three days ago&lt;/fex&gt;. &lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="Time" ID="141"/>
+    </FE>
+    <FE bgColor="800080" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="CVa" cDate="02/07/2012 10:18:37 PST Tue" abbrev="Bene" name="Beneficiary" ID="15441">
+        <definition>&lt;def-root&gt;The person or organization which benefits from the &lt;fen&gt;Entity&lt;/fen&gt;.
+
+&lt;ex&gt;Rose &lt;t&gt;ordered&lt;/t&gt; a new computer &lt;fex name="Bene"&gt;for Mr. Cooper&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FF00FF" fgColor="000000" coreType="Peripheral" cBy="CVa" cDate="02/07/2012 10:23:23 PST Tue" abbrev="Man" name="Manner" ID="15442">
+        <definition>&lt;def-root&gt;The Manner in which the request is placed.
+
+&lt;ex&gt;Mr. Shaw &lt;fex name="Man"&gt;hastily&lt;/fex&gt; &lt;t&gt;ordered&lt;/t&gt; the first thing he saw on the menu.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="Manner" ID="173"/>
+    </FE>
+    <FE bgColor="9400D3" fgColor="FFFFFF" coreType="Peripheral" cBy="CVa" cDate="02/07/2012 10:25:21 PST Tue" abbrev="Means" name="Means" ID="15443">
+        <definition>&lt;def-root&gt;An action performed by the &lt;fen&gt;Customer&lt;/fen&gt; that results in a request being made.
+
+&lt;ex&gt;Cheri accidently &lt;t&gt;ordered&lt;/t&gt; the jacket &lt;fex name="Means"&gt;by clicking on the link&lt;/fex&gt;.&lt;/ex&gt;
+
+&lt;/def-root&gt;</definition>
+    </FE>
+    <frameRelation type="Inherits from">
+        <relatedFrame ID="41">Request</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses"/>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="Finished_Initial" POS="V" name="order.v" ID="16878" lemmaID="26908" cBy="CVa" cDate="02/07/2012 10:39:58 PST Tue">
+        <definition>FN: to request an object from someone, usually in exchange for money</definition>
+        <sentenceCount annotated="17" total="87"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="order"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="order.n" ID="16879" lemmaID="26907" cBy="CVa" cDate="02/07/2012 10:42:04 PST Tue">
+        <definition>FN: a request for something to be served</definition>
+        <sentenceCount annotated="6" total="6"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="order"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="order [physical object].n" ID="16880" lemmaID="26907" cBy="CVa" cDate="02/07/2012 10:44:42 PST Tue">
+        <definition>FN: a physical entity (usually a document) requested to be fulfilled </definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="order"/>
+        <semType name="Physical_object" ID="68"/>
+    </lexUnit>
+</frame>

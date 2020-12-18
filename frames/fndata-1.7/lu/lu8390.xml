@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="finding.n" ID="8390" frame="Documents" frameID="560" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="North Korea Introduction" name="NorthKorea_Introduction" ID="23481"/>
+        </corpus>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="AFGP-2002-600002-Trans" name="AFGP-2002-600002-Trans" ID="23736"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="Bea" name="Bearer"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Do" name="Document"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Iss" name="Issuer"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="" name="Medium"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Core" abbrev="Obl" name="Obligation"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Rig" name="Right"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="Spec" name="Specification"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="Sta" name="Status"/>
+        </frame>
+    </header>
+    <definition>FN: a conclusion reached as a result of a trial</definition>
+    <lexeme POS="N" name="finding"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Bearer"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Bearer"/>
+                <annoSet ID="6550130"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Document"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Document"/>
+                <annoSet ID="6521632"/>
+                <annoSet ID="6550130"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Issuer"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Issuer"/>
+                <annoSet ID="6521632"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Bearer"/>
+            <FE name="Document"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Bearer"/>
+                <valenceUnit GF="" PT="DEN" FE="Document"/>
+                <annoSet ID="6550130"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Document"/>
+            <FE name="Issuer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Document"/>
+                <valenceUnit GF="Dep" PT="N" FE="Issuer"/>
+                <annoSet ID="6521632"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23481" sentNo="4" paragNo="2" aPos="0" ID="4096472">
+            <text>Discrepancies between North Korean declarations and IAEA inspection findings indicate that North Korea might have reprocessed enough plutonium for one or two nuclear weapons . </text>
+            <annotationSet cDate="12/10/2004 02:34:33 PST Fri" status="UNANN" ID="6521536">
+                <layer rank="1" name="PENN">
+                    <label end="12" start="0" name="nns"/>
+                    <label end="20" start="14" name="in"/>
+                    <label end="46" start="35" name="nns"/>
+                    <label end="50" start="48" name="cc"/>
+                    <label end="66" start="57" name="nn"/>
+                    <label end="75" start="68" name="nns"/>
+                    <label end="84" start="77" name="VVP"/>
+                    <label end="107" start="103" name="md"/>
+                    <label end="124" start="114" name="VVN"/>
+                    <label end="131" start="126" name="jj"/>
+                    <label end="141" start="133" name="nn"/>
+                    <label end="145" start="143" name="in"/>
+                    <label end="149" start="147" name="cd"/>
+                    <label end="152" start="151" name="cc"/>
+                    <label end="156" start="154" name="cd"/>
+                    <label end="164" start="158" name="jj"/>
+                    <label end="172" start="166" name="nns"/>
+                    <label end="174" start="174" name="sent"/>
+                    <label end="26" start="22" name="jj"/>
+                    <label end="33" start="28" name="jj"/>
+                    <label end="55" start="52" name="NNP"/>
+                    <label end="89" start="86" name="in"/>
+                    <label end="95" start="91" name="NNP"/>
+                    <label end="101" start="97" name="NNP"/>
+                    <label end="112" start="109" name="VH"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="33" start="22" name="GPE"/>
+                    <label end="55" start="52" name="organization"/>
+                    <label end="101" start="91" name="GPE"/>
+                    <label end="172" start="158" name="WEA"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="20" start="14" name="NT"/>
+                    <label end="50" start="48" name="NT"/>
+                    <label end="145" start="143" name="NT"/>
+                    <label end="149" start="147" name="NT"/>
+                    <label end="152" start="151" name="NT"/>
+                    <label end="156" start="154" name="NT"/>
+                    <label end="174" start="174" name="NT"/>
+                    <label end="89" start="86" name="NT"/>
+                    <label end="112" start="109" name="NT"/>
+                    <label end="26" start="22" name="NT"/>
+                    <label end="33" start="28" name="NT"/>
+                    <label end="55" start="52" name="NT"/>
+                    <label end="95" start="91" name="NT"/>
+                    <label end="101" start="97" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="12/13/2004 11:11:18 PST Mon" status="MANUAL" ID="6521632">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="75" start="68" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="4187" end="66" start="52" name="Issuer"/>
+                    <label cBy="RLG" feID="4192" end="75" start="68" name="Document"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="66" start="52" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="66" start="52" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="205" docID="23736" sentNo="2" paragNo="34" aPos="0" ID="4102866">
+            <text>The above mentioned protection procedures are only for observation purposes , while patrols check the fences , the barriers , and the towers , and submit periodic reports on their findings .</text>
+            <annotationSet cDate="08/21/2007 01:38:03 PDT Tue" status="UNANN" ID="6546681">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="8" start="4" name="rb"/>
+                    <label end="18" start="10" name="VVN"/>
+                    <label end="29" start="20" name="nn"/>
+                    <label end="40" start="31" name="nns"/>
+                    <label end="44" start="42" name="vbp"/>
+                    <label end="49" start="46" name="rb"/>
+                    <label end="53" start="51" name="in"/>
+                    <label end="65" start="55" name="nn"/>
+                    <label end="74" start="67" name="nns"/>
+                    <label end="76" start="76" name=","/>
+                    <label end="82" start="78" name="in"/>
+                    <label end="90" start="84" name="nns"/>
+                    <label end="96" start="92" name="VVP"/>
+                    <label end="100" start="98" name="dt"/>
+                    <label end="107" start="102" name="nns"/>
+                    <label end="109" start="109" name=","/>
+                    <label end="113" start="111" name="dt"/>
+                    <label end="122" start="115" name="nns"/>
+                    <label end="124" start="124" name=","/>
+                    <label end="128" start="126" name="cc"/>
+                    <label end="132" start="130" name="dt"/>
+                    <label end="139" start="134" name="nns"/>
+                    <label end="141" start="141" name=","/>
+                    <label end="145" start="143" name="cc"/>
+                    <label end="152" start="147" name="VV"/>
+                    <label end="161" start="154" name="jj"/>
+                    <label end="169" start="163" name="nns"/>
+                    <label end="172" start="171" name="in"/>
+                    <label end="178" start="174" name="PP$"/>
+                    <label end="187" start="180" name="nns"/>
+                    <label end="189" start="189" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="8" start="4" name="NT"/>
+                    <label end="44" start="42" name="NT"/>
+                    <label end="49" start="46" name="NT"/>
+                    <label end="53" start="51" name="NT"/>
+                    <label end="76" start="76" name="NT"/>
+                    <label end="82" start="78" name="NT"/>
+                    <label end="100" start="98" name="NT"/>
+                    <label end="109" start="109" name="NT"/>
+                    <label end="113" start="111" name="NT"/>
+                    <label end="124" start="124" name="NT"/>
+                    <label end="128" start="126" name="NT"/>
+                    <label end="132" start="130" name="NT"/>
+                    <label end="141" start="141" name="NT"/>
+                    <label end="145" start="143" name="NT"/>
+                    <label end="172" start="171" name="NT"/>
+                    <label end="178" start="174" name="NT"/>
+                    <label end="189" start="189" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/05/2007 04:26:47 PST Mon" status="MANUAL" ID="6550130">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="187" start="180" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="4181" end="178" start="174" name="Bearer"/>
+                    <label cBy="JKs" feID="4192" end="187" start="180" name="Document"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="178" start="174" name="Gen"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="178" start="174" name="Poss"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

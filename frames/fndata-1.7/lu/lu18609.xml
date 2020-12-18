@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="invoice.n" ID="18609" frame="Billing" frameID="2983" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="invoice.n" name="invoice.n" ID="25733"/>
+        </corpus>
+        <frame>
+            <FE fgColor="000000" bgColor="7FFF00" type="Core" abbrev="" name="Bad_action"/>
+            <FE fgColor="000000" bgColor="FF69B4" type="Core" abbrev="" name="Billing_authority"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="Byr" name="Debtor"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Gds" name="Goods"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Mny" name="Money"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Slr" name="Owed_party"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="" name="Payment_status"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Rate" name="Rate"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Unit" name="Unit"/>
+        </frame>
+    </header>
+    <definition>FN: a document (usually an itemized bill) for goods or services provided, issued by a seller to a buyer</definition>
+    <lexeme POS="N" name="invoice"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Owed_party"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[from]" FE="Owed_party"/>
+                <annoSet ID="6773316"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Payment_status"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Payment_status"/>
+                <annoSet ID="6773317"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Owed_party"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[from]" FE="Owed_party"/>
+                <annoSet ID="6773316"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Payment_status"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Payment_status"/>
+                <annoSet ID="6773317"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25733" sentNo="5" paragNo="4" aPos="0" ID="4216478">
+            <text>The party responsible for receiving billing invoices from the domain name registrar and paying applicable fees .</text>
+            <annotationSet cDate="02/29/2016 03:35:29 PST Mon" status="UNANN" ID="6773259">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="8" start="4" name="nn"/>
+                    <label end="20" start="10" name="jj"/>
+                    <label end="24" start="22" name="in"/>
+                    <label end="34" start="26" name="VVG"/>
+                    <label end="42" start="36" name="nn"/>
+                    <label end="51" start="44" name="nns"/>
+                    <label end="56" start="53" name="in"/>
+                    <label end="60" start="58" name="dt"/>
+                    <label end="67" start="62" name="nn"/>
+                    <label end="72" start="69" name="nn"/>
+                    <label end="82" start="74" name="nn"/>
+                    <label end="86" start="84" name="cc"/>
+                    <label end="93" start="88" name="VVG"/>
+                    <label end="104" start="95" name="jj"/>
+                    <label end="109" start="106" name="nns"/>
+                    <label end="111" start="111" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="24" start="22" name="NT"/>
+                    <label end="56" start="53" name="NT"/>
+                    <label end="60" start="58" name="NT"/>
+                    <label end="86" start="84" name="NT"/>
+                    <label end="111" start="111" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/29/2016 03:41:45 PST Mon" status="MANUAL" ID="6773316">
+                <layer rank="1" name="Target">
+                    <label cBy="CFB" end="51" start="44" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CFB" feID="16694" end="82" start="53" name="Owed_party"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="82" start="53" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="82" start="53" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="246" docID="25733" sentNo="1" paragNo="1" aPos="0" ID="4216444">
+            <text>Warhol 's collections included airplane menus , unpaid invoices , pizza dough , pornographic pulp novels , newspapers , stamps , supermarket flyers , and cookie jars , among other eccentricities .</text>
+            <annotationSet cDate="02/29/2016 03:35:15 PST Mon" status="UNANN" ID="6773225">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="NP"/>
+                    <label end="8" start="7" name="POS"/>
+                    <label end="20" start="10" name="nns"/>
+                    <label end="29" start="22" name="VVD"/>
+                    <label end="38" start="31" name="nn"/>
+                    <label end="44" start="40" name="nns"/>
+                    <label end="46" start="46" name=","/>
+                    <label end="53" start="48" name="jj"/>
+                    <label end="62" start="55" name="nns"/>
+                    <label end="64" start="64" name=","/>
+                    <label end="70" start="66" name="nn"/>
+                    <label end="76" start="72" name="nn"/>
+                    <label end="78" start="78" name=","/>
+                    <label end="91" start="80" name="jj"/>
+                    <label end="96" start="93" name="nn"/>
+                    <label end="103" start="98" name="nns"/>
+                    <label end="105" start="105" name=","/>
+                    <label end="116" start="107" name="nns"/>
+                    <label end="118" start="118" name=","/>
+                    <label end="125" start="120" name="nns"/>
+                    <label end="127" start="127" name=","/>
+                    <label end="139" start="129" name="nn"/>
+                    <label end="146" start="141" name="nns"/>
+                    <label end="148" start="148" name=","/>
+                    <label end="152" start="150" name="cc"/>
+                    <label end="159" start="154" name="nn"/>
+                    <label end="164" start="161" name="nns"/>
+                    <label end="166" start="166" name=","/>
+                    <label end="172" start="168" name="in"/>
+                    <label end="178" start="174" name="jj"/>
+                    <label end="193" start="180" name="nns"/>
+                    <label end="195" start="195" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="5" start="0" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="0" name="NT"/>
+                    <label end="8" start="7" name="NT"/>
+                    <label end="46" start="46" name="NT"/>
+                    <label end="64" start="64" name="NT"/>
+                    <label end="78" start="78" name="NT"/>
+                    <label end="105" start="105" name="NT"/>
+                    <label end="118" start="118" name="NT"/>
+                    <label end="127" start="127" name="NT"/>
+                    <label end="148" start="148" name="NT"/>
+                    <label end="152" start="150" name="NT"/>
+                    <label end="166" start="166" name="NT"/>
+                    <label end="172" start="168" name="NT"/>
+                    <label end="195" start="195" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/29/2016 03:44:26 PST Mon" status="MANUAL" ID="6773317">
+                <layer rank="1" name="Target">
+                    <label cBy="CFB" end="62" start="55" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CFB" feID="16800" end="53" start="48" name="Payment_status"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="53" start="48" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="53" start="48" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

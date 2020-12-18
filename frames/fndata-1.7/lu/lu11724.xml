@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Needs_SCs" POS="A" name="entangled.a" ID="11724" frame="Participation" frameID="1144" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <frame>
+            <FE fgColor="FFFF00" bgColor="00008B" type="Peripheral" abbrev="deg" name="Degree_of_involvement"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Peripheral" abbrev="" name="Duration"/>
+            <FE fgColor="0000FF" bgColor="d0d0d0" type="Core" abbrev="eve" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="ins" name="Institution"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="par" name="Participants"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="par1" name="Participant_1"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="par2" name="Participant_2"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: participating involuntarily, without the ability to stop participating at once</definition>
+    <lexeme POS="A" name="entangled"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Degree_of_involvement"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Degree_of_involvement"/>
+                <annoSet ID="6632817"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Event"/>
+                <annoSet ID="6632817"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Participant_1"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Participant_1"/>
+                <annoSet ID="6632813"/>
+                <annoSet ID="6632817"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Participant_2"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Participant_2"/>
+                <annoSet ID="6632813"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Time"/>
+                <annoSet ID="6632817"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Degree_of_involvement"/>
+            <FE name="Event"/>
+            <FE name="Participant_1"/>
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Degree_of_involvement"/>
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Event"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Participant_1"/>
+                <valenceUnit GF="Dep" PT="AVP" FE="Time"/>
+                <annoSet ID="6632817"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Participant_1"/>
+            <FE name="Participant_2"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Participant_1"/>
+                <valenceUnit GF="" PT="INI" FE="Participant_2"/>
+                <annoSet ID="6632813"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-T-(1)">
+        <sentence sentNo="0" aPos="1044518" ID="4142617">
+            <text>In secret diplomatic documents that were disclosed last year by Wikileaks , American diplomats portrayed Karzai â€� inevitably referred to as &quot; AWK &quot; â€� as a Mafia-like figure , entangled in a variety of illegal activities .</text>
+            <annotationSet cDate="06/22/2012 02:23:18 PDT Fri" status="UNANN" ID="6632812">
+                <layer rank="1" name="PENN"/>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="06/22/2012 02:23:19 PDT Fri" status="MANUAL" ID="6632813">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="187" start="179" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="6599" end="222" start="189" name="Event"/>
+                    <label cBy="RLG" feID="6597" end="175" start="157" name="Participant_1"/>
+                    <label cBy="RLG" feID="6598" itype="INI" name="Participant_2"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="222" start="189" name="Dep"/>
+                    <label end="175" start="157" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="222" start="189" name="PP"/>
+                    <label end="175" start="157" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+        <sentence sentNo="0" aPos="258331" ID="4142619">
+            <text>Ten years later , the mission is more ambitious , the U. S. is more deeply entangled in Afghanistan and the military 's objectives often seem elusive .</text>
+            <annotationSet cDate="06/22/2012 02:23:19 PDT Fri" status="UNANN" ID="6632816">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="cd"/>
+                    <label end="8" start="4" name="nns"/>
+                    <label end="14" start="10" name="rbr"/>
+                    <label end="16" start="16" name=","/>
+                    <label end="20" start="18" name="dt"/>
+                    <label end="28" start="22" name="nn"/>
+                    <label end="31" start="30" name="VBZ"/>
+                    <label end="36" start="33" name="rbr"/>
+                    <label end="46" start="38" name="jj"/>
+                    <label end="48" start="48" name=","/>
+                    <label end="52" start="50" name="dt"/>
+                    <label end="55" start="54" name="NP"/>
+                    <label end="58" start="57" name="NP"/>
+                    <label end="61" start="60" name="VBZ"/>
+                    <label end="66" start="63" name="rbr"/>
+                    <label end="73" start="68" name="rb"/>
+                    <label end="83" start="75" name="VVN"/>
+                    <label end="86" start="85" name="in"/>
+                    <label end="98" start="88" name="NP"/>
+                    <label end="102" start="100" name="cc"/>
+                    <label end="106" start="104" name="dt"/>
+                    <label end="115" start="108" name="nn"/>
+                    <label end="118" start="117" name="POS"/>
+                    <label end="129" start="120" name="nns"/>
+                    <label end="135" start="131" name="rb"/>
+                    <label end="140" start="137" name="VVP"/>
+                    <label end="148" start="142" name="jj"/>
+                    <label end="150" start="150" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="58" start="54" name="location"/>
+                    <label end="98" start="88" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="14" start="10" name="NT"/>
+                    <label end="16" start="16" name="NT"/>
+                    <label end="20" start="18" name="NT"/>
+                    <label end="31" start="30" name="NT"/>
+                    <label end="36" start="33" name="NT"/>
+                    <label end="48" start="48" name="NT"/>
+                    <label end="52" start="50" name="NT"/>
+                    <label end="55" start="54" name="NT"/>
+                    <label end="58" start="57" name="NT"/>
+                    <label end="61" start="60" name="NT"/>
+                    <label end="66" start="63" name="NT"/>
+                    <label end="73" start="68" name="NT"/>
+                    <label end="86" start="85" name="NT"/>
+                    <label end="98" start="88" name="NT"/>
+                    <label end="102" start="100" name="NT"/>
+                    <label end="106" start="104" name="NT"/>
+                    <label end="118" start="117" name="NT"/>
+                    <label end="135" start="131" name="NT"/>
+                    <label end="150" start="150" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/22/2012 02:23:19 PDT Fri" status="MANUAL" ID="6632817">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="83" start="75" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="6600" end="14" start="0" name="Time"/>
+                    <label cBy="RLG" feID="6597" end="58" start="50" name="Participant_1"/>
+                    <label cBy="RLG" feID="6605" end="73" start="63" name="Degree_of_involvement"/>
+                    <label cBy="RLG" feID="6599" end="98" start="85" name="Event"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="14" start="0" name="Dep"/>
+                    <label end="58" start="50" name="Ext"/>
+                    <label end="73" start="63" name="Dep"/>
+                    <label end="98" start="85" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="14" start="0" name="AVP"/>
+                    <label end="58" start="50" name="NP"/>
+                    <label end="73" start="63" name="AVP"/>
+                    <label end="98" start="85" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="61" start="60" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="other-matched-(1)"/>
+    <subCorpus name="other-unmatched-(1)"/>
+</lexUnit>

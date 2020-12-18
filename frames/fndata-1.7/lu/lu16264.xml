@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="PREP" name="in face of.prep" ID="16264" frame="Contrary_circumstances" frameID="2500" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="MASC" name="MASC" ID="150">
+            <document description="Examples of the lemma face from the MASC project for FN annotation" name="face" ID="22518"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Adv" name="Adversity"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Cont" name="Contrary_circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Evt" name="Event"/>
+        </frame>
+    </header>
+    <definition>FN despite opposition or adversity. Note: this MWE is a truncated form of the LU 'in_the_face_of.prep' that is commonly used in media. </definition>
+    <lexeme order="1" headword="true" breakBefore="false" POS="PREP" name="in"/>
+    <lexeme order="2" headword="false" breakBefore="false" POS="N" name="face"/>
+    <lexeme order="3" headword="false" breakBefore="false" POS="PREP" name="of"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Adversity"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Adversity"/>
+                <annoSet ID="2622486"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Event"/>
+                <annoSet ID="2622486"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Adversity"/>
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Adversity"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Event"/>
+                <annoSet ID="2622486"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="150" docID="22518" sentNo="4" paragNo="5" aPos="0" ID="1593583">
+            <text>The stability of heart rate in face of a reduction in systemic vascular resistance in group A patients renders possible an influence of preoperative β-blocker therapy on haemodynamic compensation .</text>
+            <annotationSet cDate="12/14/2010 02:18:52 PST Tue" status="UNANN" ID="2620224">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="12" start="4" name="nn"/>
+                    <label end="15" start="14" name="in"/>
+                    <label end="21" start="17" name="nn"/>
+                    <label end="26" start="23" name="nn"/>
+                    <label end="29" start="28" name="in"/>
+                    <label end="34" start="31" name="nn"/>
+                    <label end="37" start="36" name="in"/>
+                    <label end="39" start="39" name="dt"/>
+                    <label end="49" start="41" name="nn"/>
+                    <label end="52" start="51" name="in"/>
+                    <label end="61" start="54" name="jj"/>
+                    <label end="70" start="63" name="jj"/>
+                    <label end="81" start="72" name="nn"/>
+                    <label end="84" start="83" name="in"/>
+                    <label end="90" start="86" name="nn"/>
+                    <label end="92" start="92" name="dt"/>
+                    <label end="101" start="94" name="nns"/>
+                    <label end="109" start="103" name="VVZ"/>
+                    <label end="118" start="111" name="jj"/>
+                    <label end="121" start="120" name="dt"/>
+                    <label end="131" start="123" name="nn"/>
+                    <label end="134" start="133" name="in"/>
+                    <label end="147" start="136" name="jj"/>
+                    <label end="157" start="149" name="nn"/>
+                    <label end="165" start="159" name="nn"/>
+                    <label end="168" start="167" name="in"/>
+                    <label end="181" start="170" name="jj"/>
+                    <label end="194" start="183" name="nn"/>
+                    <label end="196" start="196" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="15" start="14" name="NT"/>
+                    <label end="39" start="39" name="NT"/>
+                    <label end="52" start="51" name="NT"/>
+                    <label end="84" start="83" name="NT"/>
+                    <label end="92" start="92" name="NT"/>
+                    <label end="121" start="120" name="NT"/>
+                    <label end="134" start="133" name="NT"/>
+                    <label end="168" start="167" name="NT"/>
+                    <label end="196" start="196" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/09/2011 02:27:11 PST Wed" status="MANUAL" ID="2622486">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="34" start="31" name="Target"/>
+                    <label cBy="RLG" end="29" start="28" name="Target"/>
+                    <label cBy="RLG" end="37" start="36" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="14340" end="26" start="0" name="Event"/>
+                    <label cBy="MLC" feID="14360" end="101" start="39" name="Adversity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="26" start="0" name="Ext"/>
+                    <label end="101" start="39" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="26" start="0" name="NP"/>
+                    <label end="101" start="39" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Prep"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

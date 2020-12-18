@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="cut.v" ID="10820" frame="Cause_change_of_position_on_a_scale" frameID="96" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Election Victory" name="ElectionVictory" ID="23010"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="Variable" name="Attribute"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="Cause" name="Cause"/>
+            <FE fgColor="800080" bgColor="EEE8AA" type="Extra-Thematic" abbrev="co-v" name="Co-variable"/>
+            <FE fgColor="006400" bgColor="FFFF00" type="Peripheral" abbrev="Difference" name="Difference"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="Item" name="Item"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Path" name="Path"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FF69B4" bgColor="000000" type="Extra-Thematic" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="000000" bgColor="2E8B57" type="Peripheral" abbrev="Speed" name="Speed"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="" name="Value_1"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="" name="Value_2"/>
+        </frame>
+    </header>
+    <definition>COD: reduce the amount or quantity of</definition>
+    <lexeme POS="V" name="cut"/>
+    <semType name="Negative" ID="99"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <annoSet ID="4529486"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Item"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Item"/>
+                <annoSet ID="4529486"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Item"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Item"/>
+                <annoSet ID="4529486"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23010" sentNo="4" paragNo="6" aPos="0" ID="2824289">
+            <text>He could do more to cut public subsidies and transfers , thus making funds available for public services starved of money for six years .</text>
+            <annotationSet cDate="02/05/2004 08:29:48 PST Thu" status="UNANN" ID="4528284">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="7" start="3" name="md"/>
+                    <label end="10" start="9" name="VV"/>
+                    <label end="15" start="12" name="rbr"/>
+                    <label end="18" start="17" name="to"/>
+                    <label end="22" start="20" name="VV"/>
+                    <label end="29" start="24" name="jj"/>
+                    <label end="39" start="31" name="nns"/>
+                    <label end="43" start="41" name="cc"/>
+                    <label end="53" start="45" name="nns"/>
+                    <label end="55" start="55" name=","/>
+                    <label end="60" start="57" name="rb"/>
+                    <label end="67" start="62" name="VVG"/>
+                    <label end="73" start="69" name="nns"/>
+                    <label end="83" start="75" name="jj"/>
+                    <label end="87" start="85" name="in"/>
+                    <label end="94" start="89" name="jj"/>
+                    <label end="103" start="96" name="nns"/>
+                    <label end="111" start="105" name="VVN"/>
+                    <label end="114" start="113" name="in"/>
+                    <label end="120" start="116" name="nn"/>
+                    <label end="124" start="122" name="in"/>
+                    <label end="128" start="126" name="cd"/>
+                    <label end="134" start="130" name="nns"/>
+                    <label end="136" start="136" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="18" start="17" name="NT"/>
+                    <label end="55" start="55" name="NT"/>
+                    <label end="60" start="57" name="NT"/>
+                    <label end="136" start="136" name="NT"/>
+                    <label end="1" start="0" name="NT"/>
+                    <label end="43" start="41" name="NT"/>
+                    <label end="87" start="85" name="NT"/>
+                    <label end="114" start="113" name="NT"/>
+                    <label end="124" start="122" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/19/2004 08:53:52 PDT Mon" status="MANUAL" ID="4529486">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="22" start="20" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="467" end="53" start="24" name="Item"/>
+                    <label cBy="JKR" feID="459" end="1" start="0" name="Agent"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="53" start="24" name="Obj"/>
+                    <label end="1" start="0" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="53" start="24" name="NP"/>
+                    <label end="1" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

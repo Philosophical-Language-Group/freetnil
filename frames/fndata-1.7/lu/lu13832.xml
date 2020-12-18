@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="ADV" name="happily.adv" ID="13832" frame="Experiencer_focus" frameID="48" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Dublin" name="IntroOfDublin" ID="23652"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Cont" name="Content"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Event" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Exp" name="Experiencer"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core-Unexpressed" abbrev="Expr" name="Expressor"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="Par" name="Parameter"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core-Unexpressed" abbrev="State" name="State"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Top" name="Topic"/>
+        </frame>
+    </header>
+    <definition>FN: without negative emotion.</definition>
+    <lexeme POS="ADV" name="happily"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Degree"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Degree"/>
+                <annoSet ID="6541413"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="VPfin" FE="Event"/>
+                <annoSet ID="6541413"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Experiencer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Experiencer"/>
+                <annoSet ID="6541413"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Degree"/>
+            <FE name="Event"/>
+            <FE name="Experiencer"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Degree"/>
+                <valenceUnit GF="Head" PT="VPfin" FE="Event"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Experiencer"/>
+                <annoSet ID="6541413"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23652" sentNo="4" paragNo="20" aPos="0" ID="4100638">
+            <text>However , young and old , stranger and Dubliner rub shoulders quite happily .</text>
+            <annotationSet cDate="11/14/2006 04:25:31 PST Tue" status="UNANN" ID="6539637">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="rb"/>
+                    <label end="8" start="8" name=","/>
+                    <label end="14" start="10" name="jj"/>
+                    <label end="18" start="16" name="cc"/>
+                    <label end="22" start="20" name="jj"/>
+                    <label end="24" start="24" name=","/>
+                    <label end="33" start="26" name="nn"/>
+                    <label end="37" start="35" name="cc"/>
+                    <label end="46" start="39" name="nn"/>
+                    <label end="50" start="48" name="nn"/>
+                    <label end="60" start="52" name="nns"/>
+                    <label end="66" start="62" name="rb"/>
+                    <label end="74" start="68" name="rb"/>
+                    <label end="76" start="76" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="0" name="NT"/>
+                    <label end="8" start="8" name="NT"/>
+                    <label end="18" start="16" name="NT"/>
+                    <label end="24" start="24" name="NT"/>
+                    <label end="37" start="35" name="NT"/>
+                    <label end="66" start="62" name="NT"/>
+                    <label end="76" start="76" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/25/2007 03:06:23 PST Sun" status="MANUAL" ID="6541413">
+                <layer rank="1" name="Target">
+                    <label cBy="CFB" end="74" start="68" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CFB" feID="201" end="46" start="10" name="Experiencer"/>
+                    <label cBy="CFB" feID="3449" end="60" start="48" name="Event"/>
+                    <label cBy="KmG" feID="2137" end="66" start="62" name="Degree"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="46" start="10" name="Ext"/>
+                    <label end="60" start="48" name="Head"/>
+                    <label end="66" start="62" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="46" start="10" name="NP"/>
+                    <label end="60" start="48" name="VPfin"/>
+                    <label end="66" start="62" name="AVP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

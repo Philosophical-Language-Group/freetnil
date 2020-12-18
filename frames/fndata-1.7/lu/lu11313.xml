@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="New" POS="N" name="temperature.n" ID="11313" frame="Ambient_temperature" frameID="1052" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp=2558" name="bncp=2558" ID="19421"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Jamaica" name="IntroJamaica" ID="23754"/>
+        </corpus>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_3" name="Fires_3" ID="25618"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="att" name="Attribute"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="con" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Core" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="pl" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="tem" name="Temperature"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="" name="Weather"/>
+        </frame>
+    </header>
+    <definition>FN: the degree of heat of outside air</definition>
+    <lexeme POS="N" name="temperature"/>
+    <valences>
+        <FERealization total="3">
+            <FE name="Attribute"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="DEN" FE="Attribute"/>
+                <annoSet ID="2567203"/>
+                <annoSet ID="6555746"/>
+                <annoSet ID="6669488"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Place"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DNI" FE="Place"/>
+                <annoSet ID="2567203"/>
+                <annoSet ID="6555746"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Place"/>
+                <annoSet ID="6669488"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Temperature"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Temperature"/>
+                <annoSet ID="2567203"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Attribute"/>
+            <FE name="Place"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Attribute"/>
+                <valenceUnit GF="" PT="DNI" FE="Place"/>
+                <annoSet ID="6555746"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Attribute"/>
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Place"/>
+                <annoSet ID="6669488"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Attribute"/>
+            <FE name="Place"/>
+            <FE name="Temperature"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Attribute"/>
+                <valenceUnit GF="" PT="DNI" FE="Place"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Temperature"/>
+                <annoSet ID="2567203"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-pp_of-p-(1)">
+        <sentence corpID="111" docID="19421" sentNo="5" paragNo="840" aPos="0" ID="1562226">
+            <text>Fighting also broke out on the Bari dockside , where approximately 3,000 deportees were held under guard in temperatures of 35 degrees Centigrade .</text>
+            <annotationSet cDate="06/02/2010 03:28:17 PDT Wed" status="UNANN" ID="2567202">
+                <layer rank="1" name="PENN">
+                    <label end="7" start="0" name="NP"/>
+                    <label end="12" start="9" name="rb"/>
+                    <label end="18" start="14" name="VVD"/>
+                    <label end="22" start="20" name="rp"/>
+                    <label end="25" start="24" name="in"/>
+                    <label end="29" start="27" name="dt"/>
+                    <label end="34" start="31" name="NP"/>
+                    <label end="43" start="36" name="nn"/>
+                    <label end="45" start="45" name=","/>
+                    <label end="51" start="47" name="wrb"/>
+                    <label end="65" start="53" name="rb"/>
+                    <label end="71" start="67" name="cd"/>
+                    <label end="81" start="73" name="nns"/>
+                    <label end="86" start="83" name="VBD"/>
+                    <label end="91" start="88" name="VVN"/>
+                    <label end="97" start="93" name="in"/>
+                    <label end="103" start="99" name="nn"/>
+                    <label end="106" start="105" name="in"/>
+                    <label end="119" start="108" name="nns"/>
+                    <label end="122" start="121" name="in"/>
+                    <label end="125" start="124" name="cd"/>
+                    <label end="133" start="127" name="nns"/>
+                    <label end="144" start="135" name="jj"/>
+                    <label end="146" start="146" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="06/02/2010 03:28:17 PDT Wed" status="MANUAL" ID="2567203">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="119" start="108" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="6190" end="144" start="121" name="Temperature"/>
+                    <label cBy="MLC" feID="6189" end="119" start="108" name="Attribute"/>
+                    <label cBy="MLC" feID="6188" itype="DNI" name="Place"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="144" start="121" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="144" start="121" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="02-pp_above-p-(1)"/>
+    <subCorpus name="03-pp_in-p-(1)"/>
+    <subCorpus name="04-other-matched-(1)"/>
+    <subCorpus name="05-other-unmatched-(1)"/>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23754" sentNo="2" paragNo="5" aPos="0" ID="4103854">
+            <text>In the mountains and hills of the interior , the temperature drops with altitude and with the clouds that wrap around the highest peaks .</text>
+            <annotationSet cDate="07/17/2008 06:09:55 PDT Thu" status="UNANN" ID="6552661">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="15" start="7" name="nns"/>
+                    <label end="19" start="17" name="cc"/>
+                    <label end="25" start="21" name="nns"/>
+                    <label end="28" start="27" name="in"/>
+                    <label end="32" start="30" name="dt"/>
+                    <label end="41" start="34" name="nn"/>
+                    <label end="43" start="43" name=","/>
+                    <label end="47" start="45" name="dt"/>
+                    <label end="59" start="49" name="nn"/>
+                    <label end="65" start="61" name="VVZ"/>
+                    <label end="70" start="67" name="in"/>
+                    <label end="79" start="72" name="nn"/>
+                    <label end="83" start="81" name="cc"/>
+                    <label end="88" start="85" name="in"/>
+                    <label end="92" start="90" name="dt"/>
+                    <label end="99" start="94" name="nns"/>
+                    <label end="104" start="101" name="in"/>
+                    <label end="109" start="106" name="nn"/>
+                    <label end="116" start="111" name="in"/>
+                    <label end="120" start="118" name="dt"/>
+                    <label end="128" start="122" name="jjs"/>
+                    <label end="134" start="130" name="nns"/>
+                    <label end="136" start="136" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="19" start="17" name="NT"/>
+                    <label end="28" start="27" name="NT"/>
+                    <label end="32" start="30" name="NT"/>
+                    <label end="43" start="43" name="NT"/>
+                    <label end="47" start="45" name="NT"/>
+                    <label end="70" start="67" name="NT"/>
+                    <label end="83" start="81" name="NT"/>
+                    <label end="88" start="85" name="NT"/>
+                    <label end="92" start="90" name="NT"/>
+                    <label end="104" start="101" name="NT"/>
+                    <label end="116" start="111" name="NT"/>
+                    <label end="120" start="118" name="NT"/>
+                    <label end="136" start="136" name="NT"/>
+                    <label end="99" start="94" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/04/2008 03:19:58 PDT Mon" status="MANUAL" ID="6555746">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="59" start="49" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="6189" end="59" start="49" name="Attribute"/>
+                    <label cBy="KmG" feID="6188" itype="DNI" name="Place"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="246" docID="25618" sentNo="1" paragNo="8" aPos="0" ID="4165004">
+            <text>Changing weather conditions also helped firefighting efforts , as temperature in the area fell to 90 degrees Fahrenheit , down from over a hundred degrees on Monday .</text>
+            <annotationSet cDate="07/17/2014 11:43:48 PDT Thu" status="UNANN" ID="6669174">
+                <layer rank="1" name="PENN">
+                    <label end="7" start="0" name="VVG"/>
+                    <label end="15" start="9" name="nn"/>
+                    <label end="26" start="17" name="nns"/>
+                    <label end="31" start="28" name="rb"/>
+                    <label end="38" start="33" name="VVD"/>
+                    <label end="51" start="40" name="VVG"/>
+                    <label end="59" start="53" name="nns"/>
+                    <label end="61" start="61" name=","/>
+                    <label end="64" start="63" name="in"/>
+                    <label end="76" start="66" name="nn"/>
+                    <label end="79" start="78" name="in"/>
+                    <label end="83" start="81" name="dt"/>
+                    <label end="88" start="85" name="nn"/>
+                    <label end="93" start="90" name="VVD"/>
+                    <label end="96" start="95" name="to"/>
+                    <label end="99" start="98" name="cd"/>
+                    <label end="107" start="101" name="nns"/>
+                    <label end="118" start="109" name="nn"/>
+                    <label end="120" start="120" name=","/>
+                    <label end="125" start="122" name="rb"/>
+                    <label end="130" start="127" name="in"/>
+                    <label end="135" start="132" name="in"/>
+                    <label end="137" start="137" name="dt"/>
+                    <label end="145" start="139" name="cd"/>
+                    <label end="153" start="147" name="nns"/>
+                    <label end="156" start="155" name="in"/>
+                    <label end="163" start="158" name="NP"/>
+                    <label end="165" start="165" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="163" start="158" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="31" start="28" name="NT"/>
+                    <label end="61" start="61" name="NT"/>
+                    <label end="64" start="63" name="NT"/>
+                    <label end="83" start="81" name="NT"/>
+                    <label end="96" start="95" name="NT"/>
+                    <label end="99" start="98" name="NT"/>
+                    <label end="120" start="120" name="NT"/>
+                    <label end="130" start="127" name="NT"/>
+                    <label end="137" start="137" name="NT"/>
+                    <label end="145" start="139" name="NT"/>
+                    <label end="163" start="158" name="NT"/>
+                    <label end="165" start="165" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/18/2014 11:49:21 PDT Fri" status="MANUAL" ID="6669488">
+                <layer rank="1" name="Target">
+                    <label cBy="WMcQ" end="76" start="66" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="WMcQ" feID="6188" end="88" start="78" name="Place"/>
+                    <label cBy="MJE" feID="6189" end="76" start="66" name="Attribute"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="88" start="78" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="88" start="78" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

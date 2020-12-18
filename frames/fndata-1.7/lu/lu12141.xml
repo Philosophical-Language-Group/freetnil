@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="explanation.n" ID="12141" frame="Explaining_the_facts" frameID="1462" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Ticket Splitting" name="TicketSplitting" ID="23012"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="con" name="Concessive"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="fac" name="Fact"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="que" name="Question"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="sta" name="State_of_affairs"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="Vie" name="Viewpoint"/>
+        </frame>
+    </header>
+    <definition>FN: a fact that makes a state of affairs understandable</definition>
+    <lexeme POS="N" name="explanation"/>
+    <valences>
+        <governor type="Sup" lemma="have">
+            <annoSet ID="4531063"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Fact"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Fact"/>
+                <annoSet ID="4531063"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Manner"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Manner"/>
+                <annoSet ID="4531063"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="State_of_affairs"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="State_of_affairs"/>
+                <annoSet ID="4531063"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Fact"/>
+            <FE name="Manner"/>
+            <FE name="State_of_affairs"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Fact"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Manner"/>
+                <valenceUnit GF="Ext" PT="NP" FE="State_of_affairs"/>
+                <annoSet ID="4531063"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23012" sentNo="1" paragNo="20" aPos="0" ID="2824421">
+            <text>In sum , at both the federal and state government levels at least part of the seemingly irrational behavior voters display in the voting booth may have an exceedingly rational explanation .</text>
+            <annotationSet cDate="02/05/2004 08:30:36 PST Thu" status="UNANN" ID="4528416">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="nn"/>
+                    <label end="7" start="7" name=","/>
+                    <label end="10" start="9" name="in"/>
+                    <label end="15" start="12" name="pdt"/>
+                    <label end="19" start="17" name="dt"/>
+                    <label end="27" start="21" name="jj"/>
+                    <label end="31" start="29" name="cc"/>
+                    <label end="37" start="33" name="nn"/>
+                    <label end="48" start="39" name="nn"/>
+                    <label end="55" start="50" name="nns"/>
+                    <label end="58" start="57" name="in"/>
+                    <label end="64" start="60" name="jjs"/>
+                    <label end="69" start="66" name="nn"/>
+                    <label end="72" start="71" name="in"/>
+                    <label end="76" start="74" name="dt"/>
+                    <label end="86" start="78" name="rb"/>
+                    <label end="97" start="88" name="jj"/>
+                    <label end="106" start="99" name="nn"/>
+                    <label end="113" start="108" name="nns"/>
+                    <label end="121" start="115" name="VVP"/>
+                    <label end="124" start="123" name="in"/>
+                    <label end="128" start="126" name="dt"/>
+                    <label end="135" start="130" name="nn"/>
+                    <label end="141" start="137" name="nn"/>
+                    <label end="145" start="143" name="md"/>
+                    <label end="150" start="147" name="VH"/>
+                    <label end="153" start="152" name="dt"/>
+                    <label end="165" start="155" name="rb"/>
+                    <label end="174" start="167" name="jj"/>
+                    <label end="186" start="176" name="nn"/>
+                    <label end="188" start="188" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="7" start="7" name="NT"/>
+                    <label end="86" start="78" name="NT"/>
+                    <label end="165" start="155" name="NT"/>
+                    <label end="188" start="188" name="NT"/>
+                    <label end="1" start="0" name="NT"/>
+                    <label end="15" start="12" name="NT"/>
+                    <label end="19" start="17" name="NT"/>
+                    <label end="31" start="29" name="NT"/>
+                    <label end="58" start="57" name="NT"/>
+                    <label end="76" start="74" name="NT"/>
+                    <label end="128" start="126" name="NT"/>
+                    <label end="153" start="152" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/28/2010 03:17:47 PDT Mon" status="MANUAL" ID="4531063">
+                <layer rank="1" name="Target">
+                    <label cBy="mgl" end="186" start="176" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="mgl" feID="8028" end="174" start="167" name="Manner"/>
+                    <label cBy="mgl" feID="8025" itype="INI" name="Fact"/>
+                    <label cBy="mgl" feID="8026" end="141" start="57" name="State_of_affairs"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="174" start="167" name="Dep"/>
+                    <label end="141" start="57" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="174" start="167" name="AJP"/>
+                    <label end="141" start="57" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="150" start="147" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

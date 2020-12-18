@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="MJE" cDate="09/08/2015 03:42:16 PDT Tue" name="Billing" ID="2983" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;A &lt;fen&gt;Billing_authority&lt;/fen&gt; communicates in written form that the &lt;fen&gt;Debtor&lt;/fen&gt; owes the &lt;fen&gt;Owed_party&lt;/fen&gt; (often the same as the &lt;fen&gt;Billing_authority&lt;/fen&gt;) some amount of &lt;fen&gt;Money&lt;/fen&gt; for certain &lt;fen&gt;Goods&lt;/fen&gt; (including services) provided by the &lt;fen&gt;Owed_party&lt;/fen&gt; or to clear a debt for a &lt;fen&gt;Bad_action&lt;/fen&gt; by the &lt;fen&gt;Debtor&lt;/fen&gt; against the &lt;fen&gt;Owed_party&lt;/fen&gt;.&lt;/def-root&gt;</definition>
+    <FE bgColor="00008B" fgColor="FFFFFF" coreType="Core" cBy="MJE" cDate="09/08/2015 03:42:16 PDT Tue" abbrev="Byr" name="Debtor" ID="16689">
+        <definition>&lt;def-root&gt;The person (or organization) that owes the &lt;fen&gt;Owed_party&lt;/fen&gt;.
+&lt;ex&gt;The pizza man &lt;t&gt;billed&lt;/t&gt; &lt;fex name="Debtor"&gt;Lee&lt;/fex&gt; $35 for his order.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="Source" ID="151"/>
+    </FE>
+    <FE bgColor="006400" fgColor="FFFFFF" coreType="Core" cBy="MJE" cDate="09/08/2015 03:42:16 PDT Tue" abbrev="Gds" name="Goods" ID="16690">
+        <definition>&lt;def-root&gt;The FE &lt;fen&gt;Goods&lt;/fen&gt; is anything (including labor or time, for example) which is exchanged for &lt;fen&gt;Money&lt;/fen&gt; in a transaction. 
+&lt;ex&gt;The man at the counter &lt;t&gt;billed&lt;/t&gt; Lee &lt;fex name="Goods"&gt;for his dry-cleaning&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FF69B4" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="09/08/2015 03:42:16 PDT Tue" abbrev="Mns" name="Means" ID="16691">
+        <definition>&lt;def-root&gt;The means by which the billing occurs.
+&lt;ex&gt;The money was &lt;t&gt;billed&lt;/t&gt; &lt;fex name="Means"&gt;through a credit card transaction&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="State_of_affairs" ID="177"/>
+    </FE>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Core" cBy="MJE" cDate="09/08/2015 03:42:16 PDT Tue" abbrev="Mny" name="Money" ID="16692">
+        <definition>&lt;def-root&gt;&lt;fen&gt;Money&lt;/fen&gt; is the thing given in exchange for &lt;fen&gt;Goods&lt;/fen&gt; in a transaction, or as recompense for the &lt;fen&gt;Bad_action&lt;/fen&gt;.
+&lt;ex&gt;The clerk &lt;t&gt;invoiced&lt;/t&gt; the little old lady &lt;fex name="Money"&gt;$49.95&lt;/fex&gt; for what she called "a little hand-holding . "&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="00BFFF" fgColor="FFFFFF" coreType="Core" cBy="MJE" cDate="09/08/2015 03:42:16 PDT Tue" abbrev="Rate" name="Rate" ID="16693">
+        <definition>&lt;def-root&gt;In some cases, price or payment is described per unit of &lt;fen&gt;Goods&lt;/fen&gt;.
+&lt;ex&gt;The cleaner &lt;t&gt;bills&lt;/t&gt; &lt;fex name="Rate"&gt;at forty dollars per hour&lt;/fex&gt; for his services.&lt;/ex&gt;
+&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="MJE" cDate="09/08/2015 03:42:16 PDT Tue" abbrev="Slr" name="Owed_party" ID="16694">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Owed_party&lt;/fen&gt; expects a specific amount of &lt;fen&gt;Money&lt;/fen&gt; from the &lt;fen&gt;Debtor&lt;/fen&gt;, either because the &lt;fen&gt;Debtor&lt;/fen&gt; received &lt;fen&gt;Goods&lt;/fen&gt; or because the &lt;fen&gt;Debtor&lt;/fen&gt; performed a Bad_action against the Owed_party.
+&lt;ex&gt;&lt;fex name="Owed_party"&gt;The salesman&lt;/fex&gt; never &lt;t&gt;billed&lt;/t&gt; me , so I did n't pay .&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="A52A2A" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="09/08/2015 03:42:16 PDT Tue" abbrev="Unit" name="Unit" ID="16695">
+        <definition>&lt;def-root&gt;This FE is any unit in which goods or services can be measured.
+Generally, it occurs in a &lt;ment&gt;by&lt;/ment&gt; or &lt;ment&gt;per&lt;/ment&gt;-PP. 
+
+&lt;ex&gt;I need a &lt;fex name="Unit"&gt;per-item&lt;/fex&gt; &lt;t&gt;invoice&lt;/t&gt; !&lt;/ex&gt;
+
+&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="9F79EE" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="09/08/2015 03:42:16 PDT Tue" abbrev="Place" name="Place" ID="16696">
+        <definition>&lt;def-root&gt;Where the event takes place.&lt;/def-root&gt;</definition>
+        <semType name="Locative_relation" ID="182"/>
+    </FE>
+    <FE bgColor="800080" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="09/08/2015 03:42:16 PDT Tue" abbrev="Purp" name="Purpose" ID="16697">
+        <definition>&lt;def-root&gt;The purpose for which an intentional act is performed.&lt;/def-root&gt;</definition>
+        <semType name="State_of_affairs" ID="177"/>
+    </FE>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="MJE" cDate="09/08/2015 03:42:16 PDT Tue" abbrev="Exp" name="Explanation" ID="16698">
+        <definition>&lt;def-root&gt;The &lt;fex name="Explanation"&gt;Explanation&lt;/fex&gt; for which an event occurs.&lt;/def-root&gt;</definition>
+        <semType name="State_of_affairs" ID="177"/>
+    </FE>
+    <FE bgColor="FFA500" fgColor="000000" coreType="Peripheral" cBy="MJE" cDate="09/08/2015 03:42:16 PDT Tue" abbrev="Time" name="Time" ID="16699">
+        <definition>&lt;def-root&gt;When the event occurs.&lt;/def-root&gt;</definition>
+        <semType name="Time" ID="141"/>
+    </FE>
+    <FE bgColor="9400D3" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="09/08/2015 03:42:16 PDT Tue" abbrev="" name="Manner" ID="16700">
+        <definition>&lt;def-root&gt;Any description of the billing event which is not covered by more specific FEs, including secondary effects (&lt;ment&gt;quietly, loudly&lt;/ment&gt;), and general descriptions comparing events (&lt;ment&gt;the same way&lt;/ment&gt;). It may also indicate salient characteristics of the &lt;fen&gt;Seller&lt;/fen&gt; that affect the action (&lt;ment&gt;presumptuously, coldly, deliberately, eagerly, carefully&lt;/ment&gt;).
+&lt;ex&gt;He &lt;fex name="Manner"&gt;carefully&lt;/fex&gt; &lt;t&gt;collected&lt;/t&gt; all his debts.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="Manner" ID="173"/>
+    </FE>
+    <FE bgColor="FF69B4" fgColor="000000" coreType="Core" cBy="MJE" cDate="09/08/2015 08:58:08 PDT Tue" abbrev="" name="Billing_authority" ID="16702">
+        <definition>&lt;def-root&gt;The individual who communicates to the &lt;fen&gt;Debtor&lt;/fen&gt; the &lt;fen&gt;Money&lt;/fen&gt; that they owe.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="d0d0d0" fgColor="000000" coreType="Peripheral" cBy="CFB" cDate="02/29/2016 03:51:44 PST Mon" abbrev="" name="Payment_status" ID="16800">
+        <definition>&lt;def-root&gt;Describes the relation between the invoice and the associated payment: unpaid, paid, overdue, etc.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="7FFF00" fgColor="000000" coreType="Core" cBy="CFB" cDate="02/29/2016 03:59:00 PST Mon" abbrev="" name="Bad_action" ID="16801">
+        <definition>&lt;def-root&gt;An earlier action by the &lt;fen&gt;Debtor&lt;/fen&gt; causing harm (directly or indirectly) to the &lt;fen&gt;Owed_party&lt;/fen&gt;, for which the &lt;fen&gt;Owed_party&lt;/fen&gt; expects compensation, and therefore bills the &lt;fen&gt;Debtor&lt;/fen&gt;.&lt;/def-root&gt;</definition>
+    </FE>
+    <frameRelation type="Inherits from"/>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses">
+        <relatedFrame ID="210">Commerce_collect</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="Created" POS="V" name="bill.v" ID="18258" lemmaID="3575" cBy="MJE" cDate="09/08/2015 09:01:40 PDT Tue">
+        <definition>FN: to inform of a debt in writing.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="bill"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="invoice.v" ID="18259" lemmaID="20564" cBy="MJE" cDate="09/08/2015 09:02:16 PDT Tue">
+        <definition>FN: to create and send a description of what is owed.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="invoice"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="invoice.n" ID="18609" lemmaID="20563" cBy="HPh" cDate="02/08/2016 08:00:24 PST Mon">
+        <definition>FN: a document (usually an itemized bill) for goods or services provided, issued by a seller to a buyer</definition>
+        <sentenceCount annotated="2" total="3"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="invoice"/>
+    </lexUnit>
+</frame>

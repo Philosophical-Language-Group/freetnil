@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Role" POS="N" name="commissioner.n" ID="17638" frame="Leadership" frameID="73" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_7" name="Fires_7" ID="25622"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="act" name="Activity"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="Dom" name="Domain"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="gov" name="Governed"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="lea" name="Leader"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Role" name="Role"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Typ" name="Type"/>
+        </frame>
+    </header>
+    <definition>FN: the head of a public organization </definition>
+    <lexeme POS="N" name="commissioner"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Governed"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Governed"/>
+                <annoSet ID="6670808"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Leader"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Leader"/>
+                <annoSet ID="6670808"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Governed"/>
+            <FE name="Leader"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Governed"/>
+                <valenceUnit GF="" PT="DEN" FE="Leader"/>
+                <annoSet ID="6670808"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25622" sentNo="1" paragNo="6" aPos="0" ID="4165065">
+            <text>Commissioner of the NSW Rural Fire Service said fire fighters had made a brave effort to contain the fire .</text>
+            <annotationSet cDate="07/17/2014 11:44:44 PDT Thu" status="UNANN" ID="6669235">
+                <layer rank="1" name="PENN">
+                    <label end="11" start="0" name="nn"/>
+                    <label end="14" start="13" name="in"/>
+                    <label end="18" start="16" name="dt"/>
+                    <label end="22" start="20" name="NP"/>
+                    <label end="28" start="24" name="NP"/>
+                    <label end="33" start="30" name="NP"/>
+                    <label end="41" start="35" name="NP"/>
+                    <label end="46" start="43" name="VVD"/>
+                    <label end="51" start="48" name="nn"/>
+                    <label end="60" start="53" name="nns"/>
+                    <label end="64" start="62" name="VHD"/>
+                    <label end="69" start="66" name="VVN"/>
+                    <label end="71" start="71" name="dt"/>
+                    <label end="77" start="73" name="jj"/>
+                    <label end="84" start="79" name="nn"/>
+                    <label end="87" start="86" name="to"/>
+                    <label end="95" start="89" name="VV"/>
+                    <label end="99" start="97" name="dt"/>
+                    <label end="104" start="101" name="nn"/>
+                    <label end="106" start="106" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="41" start="20" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="14" start="13" name="NT"/>
+                    <label end="18" start="16" name="NT"/>
+                    <label end="22" start="20" name="NT"/>
+                    <label end="28" start="24" name="NT"/>
+                    <label end="33" start="30" name="NT"/>
+                    <label end="41" start="35" name="NT"/>
+                    <label end="64" start="62" name="NT"/>
+                    <label end="71" start="71" name="NT"/>
+                    <label end="87" start="86" name="NT"/>
+                    <label end="99" start="97" name="NT"/>
+                    <label end="106" start="106" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/21/2014 10:29:31 PDT Mon" status="MANUAL" ID="6670808">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="11" start="0" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="347" end="11" start="0" name="Leader"/>
+                    <label cBy="CVa" feID="6431" end="41" start="13" name="Governed"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="41" start="13" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="41" start="13" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

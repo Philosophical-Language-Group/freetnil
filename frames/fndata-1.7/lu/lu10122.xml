@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="acne.n" ID="10122" frame="Body_mark" frameID="393" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Bell Ringing" name="BellRinging" ID="23009"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="Attachment" name="Attachment"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Body_m" name="Body_mark"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="cause" name="Cause"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="con" name="Constituents"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Poss" name="Possessor"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="typ" name="Type"/>
+        </frame>
+    </header>
+    <definition>FN: numerous red pimples resulting from inflamed sebaceous glands. </definition>
+    <lexeme POS="N" name="acne"/>
+    <valences>
+        <governor type="Sup" lemma="with">
+            <annoSet ID="4528998"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Body_mark"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Body_mark"/>
+                <annoSet ID="4528998"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Possessor"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Possessor"/>
+                <annoSet ID="4528998"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Body_mark"/>
+            <FE name="Possessor"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Body_mark"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Possessor"/>
+                <annoSet ID="4528998"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23009" sentNo="1" paragNo="26" aPos="0" ID="2824263">
+            <text>In the torrent of replies that followed , one woman ringer from Solihull observed that `` the average male ringer leaves quite a lot to be desired : badly dressed , decorated with acne and a large beer-belly , frequently unwashed and unbearably flatulent in peals .</text>
+            <annotationSet cDate="02/05/2004 08:29:40 PST Thu" status="UNANN" ID="4528258">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="13" start="7" name="nn"/>
+                    <label end="16" start="15" name="in"/>
+                    <label end="24" start="18" name="nns"/>
+                    <label end="29" start="26" name="in"/>
+                    <label end="38" start="31" name="VVN"/>
+                    <label end="40" start="40" name=","/>
+                    <label end="44" start="42" name="cd"/>
+                    <label end="50" start="46" name="nn"/>
+                    <label end="57" start="52" name="nn"/>
+                    <label end="62" start="59" name="in"/>
+                    <label end="71" start="64" name="NP"/>
+                    <label end="80" start="73" name="VVD"/>
+                    <label end="85" start="82" name="in"/>
+                    <label end="88" start="87" name="``"/>
+                    <label end="92" start="90" name="dt"/>
+                    <label end="100" start="94" name="jj"/>
+                    <label end="105" start="102" name="jj"/>
+                    <label end="112" start="107" name="nn"/>
+                    <label end="119" start="114" name="VVZ"/>
+                    <label end="125" start="121" name="pdt"/>
+                    <label end="127" start="127" name="dt"/>
+                    <label end="131" start="129" name="nn"/>
+                    <label end="134" start="133" name="to"/>
+                    <label end="137" start="136" name="vb"/>
+                    <label end="145" start="139" name="VVN"/>
+                    <label end="147" start="147" name=":"/>
+                    <label end="153" start="149" name="rb"/>
+                    <label end="161" start="155" name="VVN"/>
+                    <label end="163" start="163" name=","/>
+                    <label end="173" start="165" name="VVN"/>
+                    <label end="178" start="175" name="in"/>
+                    <label end="183" start="180" name="nn"/>
+                    <label end="187" start="185" name="cc"/>
+                    <label end="189" start="189" name="dt"/>
+                    <label end="195" start="191" name="jj"/>
+                    <label end="206" start="197" name="nn"/>
+                    <label end="208" start="208" name=","/>
+                    <label end="219" start="210" name="rb"/>
+                    <label end="228" start="221" name="jj"/>
+                    <label end="232" start="230" name="cc"/>
+                    <label end="243" start="234" name="rb"/>
+                    <label end="253" start="245" name="jj"/>
+                    <label end="256" start="255" name="in"/>
+                    <label end="262" start="258" name="nns"/>
+                    <label end="264" start="264" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="71" start="64" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="40" start="40" name="NT"/>
+                    <label end="88" start="87" name="NT"/>
+                    <label end="134" start="133" name="NT"/>
+                    <label end="137" start="136" name="NT"/>
+                    <label end="147" start="147" name="NT"/>
+                    <label end="153" start="149" name="NT"/>
+                    <label end="163" start="163" name="NT"/>
+                    <label end="208" start="208" name="NT"/>
+                    <label end="219" start="210" name="NT"/>
+                    <label end="243" start="234" name="NT"/>
+                    <label end="256" start="255" name="NT"/>
+                    <label end="264" start="264" name="NT"/>
+                    <label end="1" start="0" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="16" start="15" name="NT"/>
+                    <label end="29" start="26" name="NT"/>
+                    <label end="71" start="64" name="NT"/>
+                    <label end="85" start="82" name="NT"/>
+                    <label end="92" start="90" name="NT"/>
+                    <label end="125" start="121" name="NT"/>
+                    <label end="178" start="175" name="NT"/>
+                    <label end="187" start="185" name="NT"/>
+                    <label end="189" start="189" name="NT"/>
+                    <label end="232" start="230" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/08/2004 03:00:53 PDT Thu" status="MANUAL" ID="4528998">
+                <layer rank="1" name="Target">
+                    <label cBy="MiL" end="183" start="180" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MiL" feID="3507" end="183" start="180" name="Body_mark"/>
+                    <label cBy="RLG" feID="3510" end="112" start="90" name="Possessor"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="112" start="90" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="112" start="90" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="178" start="175" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

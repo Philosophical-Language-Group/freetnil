@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="New" incorporatedFE="Transport_means" POS="V" name="fax.v" ID="9000" frame="Sending" frameID="243" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp=1157" name="bncp=1157" ID="19739"/>
+            <document description="bncp=434" name="bncp=434" ID="23902"/>
+        </corpus>
+        <frame>
+            <FE fgColor="000000" bgColor="00BFFF" type="Extra-Thematic" abbrev="Cont" name="Container"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Extra-Thematic" abbrev="CT" name="Cotheme"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD73" type="Peripheral" abbrev="Dist" name="Distance"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Peripheral" abbrev="" name="Path"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="Rec" name="Recipient"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="" name="Sender"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Source" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Theme" name="Theme"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Transport_means" name="Transport_means"/>
+        </frame>
+    </header>
+    <definition>COD: send (a document) by fax. </definition>
+    <lexeme POS="V" name="fax"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Recipient"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Recipient"/>
+                <annoSet ID="6571221"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Recipient"/>
+                <annoSet ID="6571229"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Sender"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Sender"/>
+                <annoSet ID="6571221"/>
+                <annoSet ID="6571229"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Theme"/>
+            <pattern total="2">
+                <valenceUnit GF="Obj" PT="NP" FE="Theme"/>
+                <annoSet ID="6571221"/>
+                <annoSet ID="6571229"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Time"/>
+                <annoSet ID="6571221"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[after]" FE="Time"/>
+                <annoSet ID="6571229"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Recipient"/>
+            <FE name="Sender"/>
+            <FE name="Theme"/>
+            <FE name="Theme"/>
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Recipient"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Sender"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Theme"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Theme"/>
+                <valenceUnit GF="Dep" PT="NP" FE="Time"/>
+                <annoSet ID="6571221"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Recipient"/>
+            <FE name="Sender"/>
+            <FE name="Theme"/>
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Recipient"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Sender"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Theme"/>
+                <valenceUnit GF="Dep" PT="PP[after]" FE="Time"/>
+                <annoSet ID="6571229"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-object-(1)">
+        <sentence corpID="111" docID="23902" sentNo="1" paragNo="8" aPos="0" ID="4111879">
+            <text>THE Government faxed a clear signal last week that it has written off the science vote .</text>
+            <annotationSet cDate="07/05/2011 02:47:28 PDT Tue" status="UNANN" ID="6571220">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="13" start="4" name="nn"/>
+                    <label end="19" start="15" name="VVD"/>
+                    <label end="21" start="21" name="dt"/>
+                    <label end="27" start="23" name="jj"/>
+                    <label end="34" start="29" name="nn"/>
+                    <label end="39" start="36" name="jj"/>
+                    <label end="44" start="41" name="nn"/>
+                    <label end="49" start="46" name="in"/>
+                    <label end="52" start="51" name="PP"/>
+                    <label end="56" start="54" name="VHZ"/>
+                    <label end="64" start="58" name="VVN"/>
+                    <label end="68" start="66" name="rp"/>
+                    <label end="72" start="70" name="dt"/>
+                    <label end="80" start="74" name="nn"/>
+                    <label end="85" start="82" name="nn"/>
+                    <label end="87" start="87" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="07/05/2011 02:47:28 PDT Tue" status="MANUAL" ID="6571221">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="19" start="15" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="2212" end="13" start="0" name="Sender"/>
+                    <label cBy="MLC" feID="2216" end="34" start="21" name="Theme"/>
+                    <label cBy="MLC" feID="4703" end="44" start="36" name="Time"/>
+                    <label cBy="MLC" feID="2223" itype="DNI" name="Recipient"/>
+                    <label cBy="CVa" feID="2216" end="85" start="46" name="Theme"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="13" start="0" name="Ext"/>
+                    <label end="34" start="21" name="Obj"/>
+                    <label end="44" start="36" name="Dep"/>
+                    <label end="85" start="46" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="13" start="0" name="NP"/>
+                    <label end="34" start="21" name="NP"/>
+                    <label end="44" start="36" name="NP"/>
+                    <label end="85" start="46" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="19739" sentNo="1" paragNo="5293" aPos="0" ID="4111883">
+            <text>The champions faxed a protest to UEFA after being ordered to meet Stuttgart on neutral territory .</text>
+            <annotationSet cDate="07/05/2011 02:47:29 PDT Tue" status="UNANN" ID="6571228">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="12" start="4" name="nns"/>
+                    <label end="18" start="14" name="VVD"/>
+                    <label end="20" start="20" name="dt"/>
+                    <label end="28" start="22" name="nn"/>
+                    <label end="31" start="30" name="to"/>
+                    <label end="36" start="33" name="NP"/>
+                    <label end="42" start="38" name="in"/>
+                    <label end="48" start="44" name="nn"/>
+                    <label end="56" start="50" name="VVN"/>
+                    <label end="59" start="58" name="to"/>
+                    <label end="64" start="61" name="VV"/>
+                    <label end="74" start="66" name="NP"/>
+                    <label end="77" start="76" name="in"/>
+                    <label end="85" start="79" name="jj"/>
+                    <label end="95" start="87" name="nn"/>
+                    <label end="97" start="97" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="07/05/2011 02:47:29 PDT Tue" status="MANUAL" ID="6571229">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="18" start="14" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="2212" end="12" start="0" name="Sender"/>
+                    <label cBy="MLC" feID="2216" end="28" start="20" name="Theme"/>
+                    <label cBy="MLC" feID="2223" end="36" start="30" name="Recipient"/>
+                    <label cBy="MLC" feID="4703" end="95" start="38" name="Time"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="12" start="0" name="Ext"/>
+                    <label end="28" start="20" name="Obj"/>
+                    <label end="36" start="30" name="Dep"/>
+                    <label end="95" start="38" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="12" start="0" name="NP"/>
+                    <label end="28" start="20" name="NP"/>
+                    <label end="36" start="30" name="PP"/>
+                    <label end="95" start="38" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="02-other-matched-(1)"/>
+    <subCorpus name="03-other-unmatched-(1)"/>
+</lexUnit>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="gain.n" ID="13724" frame="Change_position_on_a_scale" frameID="91" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Aetna Life and Casualty" name="AetnaLifeAndCasualty" ID="23019"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="att" name="Attribute"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Extra-Thematic" abbrev="con" name="Containing_event"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="cor" name="Correlated_variable"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="006400" bgColor="FFFF00" type="Core" abbrev="Diff" name="Difference"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="000000" bgColor="00BFFF" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="cor2" name="Final_correlate"/>
+            <FE fgColor="00008B" bgColor="7CCD73" type="Core" abbrev="finis" name="Final_state"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="val2" name="Final_value"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Grp" name="Group"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="cor1" name="Initial_correlate"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Core" abbrev="inis" name="Initial_state"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="val1" name="Initial_value"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Core" abbrev="ite" name="Item"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="00008B" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Particular_iteration"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Path" name="Path"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="" name="Period_of_iterations"/>
+            <FE fgColor="000000" bgColor="FFD700" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="0000FF" bgColor="EEE8AA" type="Extra-Thematic" abbrev="Result" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Peripheral" abbrev="Speed" name="Speed"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="" name="Time"/>
+            <FE fgColor="0000FF" bgColor="d0d0d0" type="Core" abbrev="" name="Value_range"/>
+        </frame>
+    </header>
+    <definition>COD: an increase (in wealth or resources).</definition>
+    <lexeme POS="N" name="gain"/>
+    <valences>
+        <governor type="Sup" lemma="post">
+            <annoSet ID="4530863"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Attribute"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Attribute"/>
+                <annoSet ID="4530863"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Difference"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Difference"/>
+                <annoSet ID="4530863"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Final_value"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Final_value"/>
+                <annoSet ID="4530863"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Item"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Item"/>
+                <annoSet ID="4530863"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Attribute"/>
+            <FE name="Difference"/>
+            <FE name="Final_value"/>
+            <FE name="Item"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Attribute"/>
+                <valenceUnit GF="Dep" PT="N" FE="Difference"/>
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Final_value"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Item"/>
+                <annoSet ID="4530863"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23019" sentNo="1" paragNo="5" aPos="0" ID="2824536">
+            <text>However , Aetna 's employee benefits division , which includes its group health insurance operations , posted a 34 % profit gain to $ 106 million .</text>
+            <annotationSet cDate="02/12/2007 01:00:09 PST Mon" status="UNANN" ID="4530791">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="rb"/>
+                    <label end="8" start="8" name=","/>
+                    <label end="14" start="10" name="NP"/>
+                    <label end="17" start="16" name="POS"/>
+                    <label end="26" start="19" name="nn"/>
+                    <label end="35" start="28" name="nns"/>
+                    <label end="44" start="37" name="nn"/>
+                    <label end="46" start="46" name=","/>
+                    <label end="52" start="48" name="wdt"/>
+                    <label end="61" start="54" name="VVZ"/>
+                    <label end="65" start="63" name="PP$"/>
+                    <label end="71" start="67" name="nn"/>
+                    <label end="78" start="73" name="nn"/>
+                    <label end="88" start="80" name="nn"/>
+                    <label end="99" start="90" name="nns"/>
+                    <label end="101" start="101" name=","/>
+                    <label end="108" start="103" name="VVD"/>
+                    <label end="110" start="110" name="dt"/>
+                    <label end="113" start="112" name="cd"/>
+                    <label end="115" start="115" name="nn"/>
+                    <label end="122" start="117" name="nn"/>
+                    <label end="127" start="124" name="nn"/>
+                    <label end="130" start="129" name="to"/>
+                    <label end="132" start="132" name="$"/>
+                    <label end="136" start="134" name="cd"/>
+                    <label end="144" start="138" name="cd"/>
+                    <label end="146" start="146" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="14" start="10" name="organization"/>
+                    <label end="115" start="112" name="percent"/>
+                    <label end="144" start="132" name="money"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="0" name="NT"/>
+                    <label end="8" start="8" name="NT"/>
+                    <label end="14" start="10" name="NT"/>
+                    <label end="17" start="16" name="NT"/>
+                    <label end="46" start="46" name="NT"/>
+                    <label end="52" start="48" name="NT"/>
+                    <label end="65" start="63" name="NT"/>
+                    <label end="101" start="101" name="NT"/>
+                    <label end="110" start="110" name="NT"/>
+                    <label end="113" start="112" name="NT"/>
+                    <label end="130" start="129" name="NT"/>
+                    <label end="132" start="132" name="NT"/>
+                    <label end="136" start="134" name="NT"/>
+                    <label end="144" start="138" name="NT"/>
+                    <label end="146" start="146" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/12/2007 08:14:09 PST Mon" status="MANUAL" ID="4530863">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="127" start="124" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="418" end="122" start="117" name="Attribute"/>
+                    <label cBy="MJE" feID="420" end="115" start="112" name="Difference"/>
+                    <label cBy="MJE" feID="422" end="144" start="129" name="Final_value"/>
+                    <label cBy="MJE" feID="419" end="99" start="10" name="Item"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="122" start="117" name="Dep"/>
+                    <label end="115" start="112" name="Dep"/>
+                    <label end="144" start="129" name="Dep"/>
+                    <label end="99" start="10" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="122" start="117" name="N"/>
+                    <label end="115" start="112" name="N"/>
+                    <label end="144" start="129" name="PP"/>
+                    <label end="99" start="10" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="108" start="103" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

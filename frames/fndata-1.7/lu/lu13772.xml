@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Origin" POS="A" name="italian.a" ID="13772" frame="Origin" frameID="1103" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Syria Nuclear Overview" name="Syria_NuclearOverview" ID="23631"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="ent" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="ori" name="Origin"/>
+        </frame>
+    </header>
+    <definition>COD: of or relating to Italy, its people, or their language.</definition>
+    <lexeme POS="A" name="italian"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Entity"/>
+            <pattern total="2">
+                <valenceUnit GF="Head" PT="N" FE="Entity"/>
+                <annoSet ID="6541175"/>
+                <annoSet ID="6543117"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Origin"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="--" FE="Origin"/>
+                <annoSet ID="6541175"/>
+                <annoSet ID="6543117"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Entity"/>
+            <FE name="Origin"/>
+            <pattern total="2">
+                <valenceUnit GF="Head" PT="N" FE="Entity"/>
+                <valenceUnit GF="" PT="--" FE="Origin"/>
+                <annoSet ID="6541175"/>
+                <annoSet ID="6543117"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23631" sentNo="4" paragNo="13" aPos="0" ID="4099872">
+            <text>In December 2002 , an Italian newspaper cited an Iraqi officer who asserted that Syria had allowed Iraq to store its weapons of mass destruction in Syria research centers .</text>
+            <annotationSet cDate="07/26/2006 03:24:04 PDT Wed" status="UNANN" ID="6537490">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="10" start="3" name="NP"/>
+                    <label end="15" start="12" name="cd"/>
+                    <label end="17" start="17" name=","/>
+                    <label end="20" start="19" name="dt"/>
+                    <label end="28" start="22" name="jj"/>
+                    <label end="38" start="30" name="nn"/>
+                    <label end="44" start="40" name="VVD"/>
+                    <label end="47" start="46" name="dt"/>
+                    <label end="53" start="49" name="jj"/>
+                    <label end="61" start="55" name="nn"/>
+                    <label end="65" start="63" name="wp"/>
+                    <label end="74" start="67" name="VVD"/>
+                    <label end="79" start="76" name="in"/>
+                    <label end="85" start="81" name="NP"/>
+                    <label end="89" start="87" name="VHD"/>
+                    <label end="97" start="91" name="VVN"/>
+                    <label end="102" start="99" name="NP"/>
+                    <label end="105" start="104" name="to"/>
+                    <label end="111" start="107" name="VV"/>
+                    <label end="115" start="113" name="PP$"/>
+                    <label end="123" start="117" name="nns"/>
+                    <label end="126" start="125" name="in"/>
+                    <label end="131" start="128" name="jj"/>
+                    <label end="143" start="133" name="nn"/>
+                    <label end="146" start="145" name="in"/>
+                    <label end="152" start="148" name="NP"/>
+                    <label end="161" start="154" name="nn"/>
+                    <label end="169" start="163" name="nns"/>
+                    <label end="171" start="171" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="15" start="3" name="date"/>
+                    <label end="85" start="81" name="GPE"/>
+                    <label end="102" start="99" name="location"/>
+                    <label end="152" start="148" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="15" start="12" name="NT"/>
+                    <label end="17" start="17" name="NT"/>
+                    <label end="20" start="19" name="NT"/>
+                    <label end="47" start="46" name="NT"/>
+                    <label end="65" start="63" name="NT"/>
+                    <label end="79" start="76" name="NT"/>
+                    <label end="85" start="81" name="NT"/>
+                    <label end="89" start="87" name="NT"/>
+                    <label end="102" start="99" name="NT"/>
+                    <label end="105" start="104" name="NT"/>
+                    <label end="115" start="113" name="NT"/>
+                    <label end="126" start="125" name="NT"/>
+                    <label end="152" start="148" name="NT"/>
+                    <label end="171" start="171" name="NT"/>
+                    <label end="61" start="55" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/23/2007 12:49:09 PST Fri" status="MANUAL" ID="6541175">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="28" start="22" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="6525" end="28" start="22" name="Origin"/>
+                    <label cBy="KmG" feID="6524" end="38" start="30" name="Entity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="38" start="30" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="38" start="30" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23692" sentNo="1" paragNo="42" aPos="0" ID="4101288">
+            <text>Greece attempted to stay out of World War II , but Mussolini saw Greece as an ideal addition to his Italian empire .</text>
+            <annotationSet cDate="03/12/2007 02:51:41 PDT Mon" status="UNANN" ID="6542081">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="NP"/>
+                    <label end="15" start="7" name="VVD"/>
+                    <label end="18" start="17" name="to"/>
+                    <label end="23" start="20" name="VV"/>
+                    <label end="27" start="25" name="rp"/>
+                    <label end="30" start="29" name="in"/>
+                    <label end="36" start="32" name="NP"/>
+                    <label end="40" start="38" name="NP"/>
+                    <label end="43" start="42" name="NP"/>
+                    <label end="45" start="45" name=","/>
+                    <label end="49" start="47" name="cc"/>
+                    <label end="59" start="51" name="NP"/>
+                    <label end="63" start="61" name="VVD"/>
+                    <label end="70" start="65" name="NP"/>
+                    <label end="73" start="72" name="in"/>
+                    <label end="76" start="75" name="dt"/>
+                    <label end="82" start="78" name="jj"/>
+                    <label end="91" start="84" name="nn"/>
+                    <label end="94" start="93" name="to"/>
+                    <label end="98" start="96" name="PP$"/>
+                    <label end="106" start="100" name="jj"/>
+                    <label end="113" start="108" name="nn"/>
+                    <label end="115" start="115" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="5" start="0" name="GPE"/>
+                    <label end="59" start="51" name="person"/>
+                    <label end="70" start="65" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="0" name="NT"/>
+                    <label end="18" start="17" name="NT"/>
+                    <label end="27" start="25" name="NT"/>
+                    <label end="30" start="29" name="NT"/>
+                    <label end="43" start="42" name="NT"/>
+                    <label end="45" start="45" name="NT"/>
+                    <label end="49" start="47" name="NT"/>
+                    <label end="59" start="51" name="NT"/>
+                    <label end="70" start="65" name="NT"/>
+                    <label end="73" start="72" name="NT"/>
+                    <label end="76" start="75" name="NT"/>
+                    <label end="94" start="93" name="NT"/>
+                    <label end="98" start="96" name="NT"/>
+                    <label end="115" start="115" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/22/2007 10:35:15 PDT Thu" status="MANUAL" ID="6543117">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="106" start="100" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="6525" end="106" start="100" name="Origin"/>
+                    <label cBy="KmG" feID="6524" end="113" start="108" name="Entity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="113" start="108" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="113" start="108" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

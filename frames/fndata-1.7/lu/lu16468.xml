@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="ADV" name="generally.adv" ID="16468" frame="Frequency" frameID="80" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz What to Do in Hong Kong" name="WhatToHongKong" ID="23758"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Core" abbrev="att" name="Attribute"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Evnt" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="gro" name="Group"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Int" name="Interval"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="rat" name="Rate"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Core" abbrev="sal" name="Salient_entity"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="T_span" name="Time_span"/>
+        </frame>
+    </header>
+    <definition>FN: in most cases.</definition>
+    <lexeme POS="ADV" name="generally"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="Sfin" FE="Event"/>
+                <annoSet ID="6584795"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Rate"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Rate"/>
+                <annoSet ID="6584795"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Event"/>
+            <FE name="Event"/>
+            <FE name="Rate"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="Sfin" FE="Event"/>
+                <valenceUnit GF="Dep" PT="Sfin" FE="Event"/>
+                <valenceUnit GF="" PT="--" FE="Rate"/>
+                <annoSet ID="6584795"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23758" sentNo="3" paragNo="5" aPos="0" ID="4104040">
+            <text>Shops in Central are an exception ; they generally close at 6 pm and are not open on Sunday .</text>
+            <annotationSet cDate="07/21/2008 03:48:17 PDT Mon" status="UNANN" ID="6552872">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="nns"/>
+                    <label end="7" start="6" name="in"/>
+                    <label end="15" start="9" name="NP"/>
+                    <label end="19" start="17" name="vbp"/>
+                    <label end="22" start="21" name="dt"/>
+                    <label end="32" start="24" name="nn"/>
+                    <label end="34" start="34" name=":"/>
+                    <label end="39" start="36" name="PP"/>
+                    <label end="49" start="41" name="rb"/>
+                    <label end="55" start="51" name="VV"/>
+                    <label end="58" start="57" name="in"/>
+                    <label end="60" start="60" name="cd"/>
+                    <label end="63" start="62" name="nn"/>
+                    <label end="67" start="65" name="cc"/>
+                    <label end="71" start="69" name="vbp"/>
+                    <label end="75" start="73" name="rb"/>
+                    <label end="80" start="77" name="jj"/>
+                    <label end="83" start="82" name="in"/>
+                    <label end="90" start="85" name="NP"/>
+                    <label end="92" start="92" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="63" start="60" name="time"/>
+                    <label end="90" start="85" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="19" start="17" name="NT"/>
+                    <label end="22" start="21" name="NT"/>
+                    <label end="34" start="34" name="NT"/>
+                    <label end="39" start="36" name="NT"/>
+                    <label end="60" start="60" name="NT"/>
+                    <label end="67" start="65" name="NT"/>
+                    <label end="71" start="69" name="NT"/>
+                    <label end="75" start="73" name="NT"/>
+                    <label end="92" start="92" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/03/2011 07:07:48 PDT Mon" status="MANUAL" ID="6584795">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="49" start="41" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="8921" end="49" start="41" name="Rate"/>
+                    <label cBy="CVa" feID="371" end="39" start="36" name="Event"/>
+                    <label cBy="CVa" feID="371" end="90" start="51" name="Event"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="39" start="36" name="Dep"/>
+                    <label end="90" start="51" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="39" start="36" name="Sfin"/>
+                    <label end="90" start="51" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

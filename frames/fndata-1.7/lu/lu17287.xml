@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="incident.n" ID="17287" frame="Event" frameID="187" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="Dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core-Unexpressed" abbrev="Evnt" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="Freq" name="Frequency"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="Man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="" name="Timespan"/>
+        </frame>
+    </header>
+    <definition>FN: an occurence</definition>
+    <lexeme POS="N" name="incident"/>
+    <semType name="Negative_judgment" ID="14"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Event"/>
+                <annoSet ID="6646786"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Place"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Place"/>
+                <annoSet ID="6646786"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Time"/>
+                <annoSet ID="6646786"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Event"/>
+            <FE name="Place"/>
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Event"/>
+                <valenceUnit GF="" PT="DNI" FE="Place"/>
+                <valenceUnit GF="" PT="DNI" FE="Time"/>
+                <annoSet ID="6646786"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="5" paragNo="48" aPos="0" ID="4148621">
+            <text>Inspector Baynes , who , with his usual astuteness , had minimized the incident before me , had really recognized its importance and had left a trap into which the creature walked .</text>
+            <annotationSet cDate="04/30/2013 05:25:01 PDT Tue" status="UNANN" ID="6646781">
+                <layer rank="1" name="PENN">
+                    <label end="8" start="0" name="NNP"/>
+                    <label end="15" start="10" name="NNP"/>
+                    <label end="21" start="19" name="wp"/>
+                    <label end="28" start="25" name="in"/>
+                    <label end="32" start="30" name="PRP$"/>
+                    <label end="38" start="34" name="jj"/>
+                    <label end="49" start="40" name="nn"/>
+                    <label end="55" start="53" name="VBD"/>
+                    <label end="65" start="57" name="VBN"/>
+                    <label end="69" start="67" name="dt"/>
+                    <label end="78" start="71" name="nn"/>
+                    <label end="85" start="80" name="in"/>
+                    <label end="88" start="87" name="PRP"/>
+                    <label end="94" start="92" name="VBD"/>
+                    <label end="101" start="96" name="rb"/>
+                    <label end="112" start="103" name="VBN"/>
+                    <label end="116" start="114" name="PRP$"/>
+                    <label end="127" start="118" name="nn"/>
+                    <label end="131" start="129" name="cc"/>
+                    <label end="135" start="133" name="VBD"/>
+                    <label end="140" start="137" name="VBN"/>
+                    <label end="142" start="142" name="dt"/>
+                    <label end="147" start="144" name="nn"/>
+                    <label end="152" start="149" name="in"/>
+                    <label end="158" start="154" name="wdt"/>
+                    <label end="162" start="160" name="dt"/>
+                    <label end="171" start="164" name="nn"/>
+                    <label end="178" start="173" name="VBD"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:25:03 PDT Tue" status="MANUAL" ID="6646786">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="78" start="71" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="1444" itype="DNI" name="Place"/>
+                    <label cBy="EGp" feID="1446" itype="DNI" name="Time"/>
+                    <label cBy="EGp" feID="1443" end="78" start="71" name="Event"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

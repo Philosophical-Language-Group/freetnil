@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="poverty.n" ID="10302" frame="Wealthiness" frameID="85" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Election Victory" name="ElectionVictory" ID="23010"/>
+        </corpus>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="North Korea Chemical Overview" name="NorthKorea_ChemicalOverview" ID="23611"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Inst" name="Institution"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Pers" name="Person"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="typ" name="Type_of_possession"/>
+        </frame>
+    </header>
+    <definition>COD: the state of being extremely poor.</definition>
+    <lexeme POS="N" name="poverty"/>
+    <valences>
+        <governor type="Sup" lemma="exist">
+            <annoSet ID="4529892"/>
+        </governor>
+        <FERealization total="3">
+            <FE name="Person"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Person"/>
+                <annoSet ID="6543256"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="" PT="INI" FE="Person"/>
+                <annoSet ID="4529892"/>
+                <annoSet ID="6536080"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="3">
+            <FE name="Person"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Person"/>
+                <annoSet ID="6543256"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="" PT="INI" FE="Person"/>
+                <annoSet ID="4529892"/>
+                <annoSet ID="6536080"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23010" sentNo="5" paragNo="2" aPos="0" ID="2824275">
+            <text>Large pockets of poverty still exist .</text>
+            <annotationSet cDate="02/05/2004 08:29:44 PST Thu" status="UNANN" ID="4528270">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="jj"/>
+                    <label end="12" start="6" name="nns"/>
+                    <label end="15" start="14" name="in"/>
+                    <label end="23" start="17" name="nn"/>
+                    <label end="29" start="25" name="rb"/>
+                    <label end="35" start="31" name="VVP"/>
+                    <label end="37" start="37" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="37" start="37" name="NT"/>
+                    <label end="15" start="14" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/19/2004 11:38:45 PDT Thu" status="MANUAL" ID="4529892">
+                <layer rank="1" name="Target">
+                    <label cBy="MHa" end="23" start="17" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MHa" feID="390" itype="INI" name="Person"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="35" start="31" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23611" sentNo="1" paragNo="17" aPos="0" ID="4099721">
+            <text>Nonetheless , the DPRK has also shown a single-minded emphasis on buttressing its military capabilities despite a poverty - stricken economy and populace .</text>
+            <annotationSet cDate="06/27/2006 04:45:21 PDT Tue" status="UNANN" ID="6535929">
+                <layer rank="1" name="PENN">
+                    <label end="10" start="0" name="rb"/>
+                    <label end="12" start="12" name=","/>
+                    <label end="16" start="14" name="dt"/>
+                    <label end="21" start="18" name="NP"/>
+                    <label end="25" start="23" name="VHZ"/>
+                    <label end="30" start="27" name="rb"/>
+                    <label end="36" start="32" name="VVN"/>
+                    <label end="38" start="38" name="dt"/>
+                    <label end="52" start="40" name="jj"/>
+                    <label end="61" start="54" name="nn"/>
+                    <label end="64" start="63" name="in"/>
+                    <label end="76" start="66" name="VVG"/>
+                    <label end="80" start="78" name="PP$"/>
+                    <label end="89" start="82" name="jj"/>
+                    <label end="102" start="91" name="nns"/>
+                    <label end="110" start="104" name="in"/>
+                    <label end="112" start="112" name="dt"/>
+                    <label end="120" start="114" name="nn"/>
+                    <label end="122" start="122" name=":"/>
+                    <label end="131" start="124" name="jj"/>
+                    <label end="139" start="133" name="nn"/>
+                    <label end="143" start="141" name="cc"/>
+                    <label end="152" start="145" name="nn"/>
+                    <label end="154" start="154" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="21" start="18" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="10" start="0" name="NT"/>
+                    <label end="12" start="12" name="NT"/>
+                    <label end="16" start="14" name="NT"/>
+                    <label end="21" start="18" name="NT"/>
+                    <label end="25" start="23" name="NT"/>
+                    <label end="30" start="27" name="NT"/>
+                    <label end="38" start="38" name="NT"/>
+                    <label end="64" start="63" name="NT"/>
+                    <label end="80" start="78" name="NT"/>
+                    <label end="110" start="104" name="NT"/>
+                    <label end="112" start="112" name="NT"/>
+                    <label end="122" start="122" name="NT"/>
+                    <label end="143" start="141" name="NT"/>
+                    <label end="154" start="154" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/29/2006 04:18:24 PDT Thu" status="MANUAL" ID="6536080">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="120" start="114" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="390" itype="INI" name="Person"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23692" sentNo="2" paragNo="45" aPos="0" ID="4101298">
+            <text>Many Greek islanders chose to leave rather than live in poverty and terror , and many made new homes in the United States and Australia .</text>
+            <annotationSet cDate="03/12/2007 02:52:04 PDT Mon" status="UNANN" ID="6542091">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="jj"/>
+                    <label end="9" start="5" name="jj"/>
+                    <label end="19" start="11" name="nns"/>
+                    <label end="25" start="21" name="VVD"/>
+                    <label end="28" start="27" name="to"/>
+                    <label end="34" start="30" name="VV"/>
+                    <label end="41" start="36" name="rb"/>
+                    <label end="46" start="43" name="in"/>
+                    <label end="51" start="48" name="jj"/>
+                    <label end="54" start="53" name="in"/>
+                    <label end="62" start="56" name="nn"/>
+                    <label end="66" start="64" name="cc"/>
+                    <label end="73" start="68" name="nn"/>
+                    <label end="75" start="75" name=","/>
+                    <label end="79" start="77" name="cc"/>
+                    <label end="84" start="81" name="jj"/>
+                    <label end="89" start="86" name="VVN"/>
+                    <label end="93" start="91" name="jj"/>
+                    <label end="99" start="95" name="nns"/>
+                    <label end="102" start="101" name="in"/>
+                    <label end="106" start="104" name="dt"/>
+                    <label end="113" start="108" name="NP"/>
+                    <label end="120" start="115" name="NPS"/>
+                    <label end="124" start="122" name="cc"/>
+                    <label end="134" start="126" name="NP"/>
+                    <label end="136" start="136" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="120" start="108" name="location"/>
+                    <label end="134" start="126" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="28" start="27" name="NT"/>
+                    <label end="41" start="36" name="NT"/>
+                    <label end="46" start="43" name="NT"/>
+                    <label end="54" start="53" name="NT"/>
+                    <label end="66" start="64" name="NT"/>
+                    <label end="75" start="75" name="NT"/>
+                    <label end="79" start="77" name="NT"/>
+                    <label end="106" start="104" name="NT"/>
+                    <label end="113" start="108" name="NT"/>
+                    <label end="120" start="115" name="NT"/>
+                    <label end="124" start="122" name="NT"/>
+                    <label end="134" start="126" name="NT"/>
+                    <label end="136" start="136" name="NT"/>
+                    <label end="19" start="11" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/23/2007 11:49:24 PDT Fri" status="MANUAL" ID="6543256">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="62" start="56" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AnW" feID="390" itype="DNI" name="Person"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

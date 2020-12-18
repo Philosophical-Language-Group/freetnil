@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="failing.n" ID="14959" frame="Success_or_failure" frameID="1388" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Las Vegas" name="HistoryOfLasVegas" ID="23691"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="age" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="con" name="Containing_event"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core-Unexpressed" abbrev="goa" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Means" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="re-e" name="Re-encoding"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Core-Unexpressed" abbrev="rol" name="Role"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: characteristic failure or shortcoming</definition>
+    <lexeme POS="N" name="failing"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Agent"/>
+                <annoSet ID="6562559"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Goal"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Goal"/>
+                <annoSet ID="6562559"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Time"/>
+                <annoSet ID="6562559"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Goal"/>
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Agent"/>
+                <valenceUnit GF="" PT="INI" FE="Goal"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Time"/>
+                <annoSet ID="6562559"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23691" sentNo="1" paragNo="30" aPos="0" ID="4101114">
+            <text>Despite its initial failings , Siegel 's Flamingo survived him , as did mob infiltration of casinos .</text>
+            <annotationSet cDate="03/12/2007 02:47:11 PDT Mon" status="UNANN" ID="6541907">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="in"/>
+                    <label end="10" start="8" name="PP$"/>
+                    <label end="18" start="12" name="jj"/>
+                    <label end="27" start="20" name="nns"/>
+                    <label end="29" start="29" name=","/>
+                    <label end="36" start="31" name="NP"/>
+                    <label end="39" start="38" name="POS"/>
+                    <label end="48" start="41" name="nn"/>
+                    <label end="57" start="50" name="VVD"/>
+                    <label end="61" start="59" name="PP"/>
+                    <label end="63" start="63" name=","/>
+                    <label end="66" start="65" name="rb"/>
+                    <label end="70" start="68" name="VVD"/>
+                    <label end="74" start="72" name="nn"/>
+                    <label end="87" start="76" name="nn"/>
+                    <label end="90" start="89" name="in"/>
+                    <label end="98" start="92" name="nns"/>
+                    <label end="100" start="100" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="36" start="31" name="person"/>
+                    <label end="48" start="41" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="0" name="NT"/>
+                    <label end="10" start="8" name="NT"/>
+                    <label end="29" start="29" name="NT"/>
+                    <label end="36" start="31" name="NT"/>
+                    <label end="39" start="38" name="NT"/>
+                    <label end="61" start="59" name="NT"/>
+                    <label end="63" start="63" name="NT"/>
+                    <label end="66" start="65" name="NT"/>
+                    <label end="70" start="68" name="NT"/>
+                    <label end="90" start="89" name="NT"/>
+                    <label end="100" start="100" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="04/29/2011 03:36:11 PDT Fri" status="MANUAL" ID="6562559">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="27" start="20" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="7788" end="10" start="8" name="Agent"/>
+                    <label cBy="MLC" feID="7793" end="18" start="12" name="Time"/>
+                    <label cBy="MLC" feID="7789" itype="INI" name="Goal"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="10" start="8" name="Gen"/>
+                    <label end="18" start="12" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="10" start="8" name="Poss"/>
+                    <label end="18" start="12" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

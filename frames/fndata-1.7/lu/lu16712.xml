@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="prisoner.n" ID="16712" frame="Being_in_captivity" frameID="2672" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Peripheral" abbrev="Agt" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="cau" name="Cause"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="Hol" name="Holding_location"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Rec" name="Reciprocation"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="Thm" name="Theme"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: an individual in another's captivity.</definition>
+    <lexeme POS="N" name="prisoner"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Theme"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Theme"/>
+                <annoSet ID="6646061"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Theme"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Theme"/>
+                <annoSet ID="6646061"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="7" paragNo="29" aPos="0" ID="4148452">
+            <text>Or is she merely a prisoner ?</text>
+            <annotationSet cDate="04/30/2013 05:20:28 PDT Tue" status="UNANN" ID="6646060">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="cc"/>
+                    <label end="4" start="3" name="VBZ"/>
+                    <label end="8" start="6" name="PRP"/>
+                    <label end="15" start="10" name="rb"/>
+                    <label end="17" start="17" name="dt"/>
+                    <label end="26" start="19" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:20:28 PDT Tue" status="MANUAL" ID="6646061">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="26" start="19" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="15168" end="8" start="6" name="Theme"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="8" start="6" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="8" start="6" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

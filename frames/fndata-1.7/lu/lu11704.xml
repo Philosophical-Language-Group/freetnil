@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Rules_Defined" POS="V" name="jeopardise.v" ID="11704" frame="Endangering" frameID="631" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Biological" name="Iran_Biological" ID="23513"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agent" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="" name="Cause"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Endangering_act"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD73" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Valued" name="Valued_entity"/>
+        </frame>
+    </header>
+    <definition>FN: endanger</definition>
+    <lexeme POS="V" name="jeopardise"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Cause"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cause"/>
+                <annoSet ID="6523682"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Valued_entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Valued_entity"/>
+                <annoSet ID="6523682"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cause"/>
+            <FE name="Valued_entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cause"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Valued_entity"/>
+                <annoSet ID="6523682"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23513" sentNo="7" paragNo="15" aPos="0" ID="4096933">
+            <text>If covert activities had in fact been taking place at this location , these inspections would have significantly jeopardized such efforts .</text>
+            <annotationSet cDate="02/25/2005 12:37:33 PST Fri" status="UNANN" ID="6522598">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="8" start="3" name="jj"/>
+                    <label end="19" start="10" name="nns"/>
+                    <label end="23" start="21" name="VHD"/>
+                    <label end="26" start="25" name="in"/>
+                    <label end="31" start="28" name="nn"/>
+                    <label end="36" start="33" name="VBN"/>
+                    <label end="43" start="38" name="VVG"/>
+                    <label end="49" start="45" name="nn"/>
+                    <label end="52" start="51" name="in"/>
+                    <label end="57" start="54" name="dt"/>
+                    <label end="66" start="59" name="nn"/>
+                    <label end="68" start="68" name=","/>
+                    <label end="74" start="70" name="dt"/>
+                    <label end="86" start="76" name="nns"/>
+                    <label end="92" start="88" name="md"/>
+                    <label end="97" start="94" name="VH"/>
+                    <label end="111" start="99" name="rb"/>
+                    <label end="123" start="113" name="VVN"/>
+                    <label end="128" start="125" name="jj"/>
+                    <label end="136" start="130" name="nns"/>
+                    <label end="138" start="138" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="26" start="25" name="NT"/>
+                    <label end="52" start="51" name="NT"/>
+                    <label end="57" start="54" name="NT"/>
+                    <label end="68" start="68" name="NT"/>
+                    <label end="74" start="70" name="NT"/>
+                    <label end="92" start="88" name="NT"/>
+                    <label end="138" start="138" name="NT"/>
+                    <label end="23" start="21" name="NT"/>
+                    <label end="36" start="33" name="NT"/>
+                    <label end="97" start="94" name="NT"/>
+                    <label end="111" start="99" name="NT"/>
+                    <label end="128" start="125" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/03/2005 05:57:34 PST Thu" status="MANUAL" ID="6523682">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="123" start="113" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="4340" end="86" start="70" name="Cause"/>
+                    <label cBy="JKR" feID="4341" end="136" start="125" name="Valued_entity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="86" start="70" name="Ext"/>
+                    <label end="136" start="125" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="86" start="70" name="NP"/>
+                    <label end="136" start="125" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

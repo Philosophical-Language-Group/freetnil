@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Needs_SCs" POS="PREP" name="under.prep" ID="14284" frame="Proportional_quantity" frameID="1923" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Dublin" name="IntroOfDublin" ID="23652"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="" name="Denoted_quantity"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Ind" name="Individuals"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="M" name="Mass"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Extra-Thematic" abbrev="q_p" name="Q_prop"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="ref" name="Reference_quantity"/>
+        </frame>
+    </header>
+    <definition>FN: below some value</definition>
+    <lexeme POS="PREP" name="under"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Denoted_quantity"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Denoted_quantity"/>
+                <annoSet ID="6543816"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Individuals"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Individuals"/>
+                <annoSet ID="6543816"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Reference_quantity"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Reference_quantity"/>
+                <annoSet ID="6543816"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Denoted_quantity"/>
+            <FE name="Individuals"/>
+            <FE name="Reference_quantity"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Denoted_quantity"/>
+                <valenceUnit GF="" PT="INI" FE="Individuals"/>
+                <valenceUnit GF="Dep" PT="NP" FE="Reference_quantity"/>
+                <annoSet ID="6543816"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23652" sentNo="2" paragNo="20" aPos="0" ID="4100636">
+            <text>Almost half of Ireland 's population is under twenty-five , and with its universities and professional schools , Dublin also has a large student population .</text>
+            <annotationSet cDate="11/14/2006 04:25:30 PST Tue" status="UNANN" ID="6539635">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="rb"/>
+                    <label end="10" start="7" name="nn"/>
+                    <label end="13" start="12" name="in"/>
+                    <label end="21" start="15" name="NP"/>
+                    <label end="24" start="23" name="POS"/>
+                    <label end="35" start="26" name="nn"/>
+                    <label end="38" start="37" name="VBZ"/>
+                    <label end="44" start="40" name="in"/>
+                    <label end="56" start="46" name="cd"/>
+                    <label end="58" start="58" name=","/>
+                    <label end="62" start="60" name="cc"/>
+                    <label end="67" start="64" name="in"/>
+                    <label end="71" start="69" name="PP$"/>
+                    <label end="84" start="73" name="nns"/>
+                    <label end="88" start="86" name="cc"/>
+                    <label end="101" start="90" name="jj"/>
+                    <label end="109" start="103" name="nns"/>
+                    <label end="111" start="111" name=","/>
+                    <label end="118" start="113" name="NP"/>
+                    <label end="123" start="120" name="rb"/>
+                    <label end="127" start="125" name="VHZ"/>
+                    <label end="129" start="129" name="dt"/>
+                    <label end="135" start="131" name="jj"/>
+                    <label end="143" start="137" name="nn"/>
+                    <label end="154" start="145" name="nn"/>
+                    <label end="156" start="156" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="21" start="15" name="location"/>
+                    <label end="118" start="113" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="21" start="15" name="NT"/>
+                    <label end="24" start="23" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="58" start="58" name="NT"/>
+                    <label end="62" start="60" name="NT"/>
+                    <label end="67" start="64" name="NT"/>
+                    <label end="71" start="69" name="NT"/>
+                    <label end="88" start="86" name="NT"/>
+                    <label end="111" start="111" name="NT"/>
+                    <label end="118" start="113" name="NT"/>
+                    <label end="129" start="129" name="NT"/>
+                    <label end="156" start="156" name="NT"/>
+                    <label end="123" start="120" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="04/02/2007 11:20:37 PDT Mon" status="MANUAL" ID="6543816">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="44" start="40" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="11577" end="56" start="46" name="Reference_quantity"/>
+                    <label cBy="KmG" feID="11573" end="44" start="40" name="Denoted_quantity"/>
+                    <label cBy="KmG" feID="11575" itype="INI" name="Individuals"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="56" start="46" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="56" start="46" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Prep"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

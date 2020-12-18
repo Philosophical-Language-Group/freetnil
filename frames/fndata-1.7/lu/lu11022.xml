@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="remember.v" ID="11022" frame="Remembering_information" frameID="1220" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="acc" name="Accuracy"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="con" name="Context"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="men" name="Mental_content"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="top" name="Topic"/>
+        </frame>
+    </header>
+    <definition>FN: to recall a fact to the mind</definition>
+    <lexeme POS="V" name="remember"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Cognizer"/>
+                <annoSet ID="6645531"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Mental_content"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="Sfin" FE="Mental_content"/>
+                <annoSet ID="6645531"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="Mental_content"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Cognizer"/>
+                <valenceUnit GF="Obj" PT="Sfin" FE="Mental_content"/>
+                <annoSet ID="6645531"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="3" paragNo="15" aPos="0" ID="4148322">
+            <text>It will be remembered that Mr . Garcia , of Wisteria Lodge , was found dead on Oxshott Common , his body showing signs of extreme violence , and that on the same night his servant and his cook fled , which appeared to show their participation in the crime .</text>
+            <annotationSet cDate="04/30/2013 05:18:01 PDT Tue" status="UNANN" ID="6645521">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PRP"/>
+                    <label end="6" start="3" name="md"/>
+                    <label end="9" start="8" name="vb"/>
+                    <label end="20" start="11" name="VBN"/>
+                    <label end="25" start="22" name="in"/>
+                    <label end="28" start="27" name="NNP"/>
+                    <label end="37" start="32" name="NNP"/>
+                    <label end="42" start="41" name="in"/>
+                    <label end="51" start="44" name="nn"/>
+                    <label end="57" start="53" name="NNP"/>
+                    <label end="63" start="61" name="VBD"/>
+                    <label end="69" start="65" name="VBN"/>
+                    <label end="74" start="71" name="jj"/>
+                    <label end="77" start="76" name="in"/>
+                    <label end="85" start="79" name="NNP"/>
+                    <label end="92" start="87" name="NNP"/>
+                    <label end="98" start="96" name="PRP$"/>
+                    <label end="103" start="100" name="nn"/>
+                    <label end="111" start="105" name="VBG"/>
+                    <label end="117" start="113" name="nns"/>
+                    <label end="120" start="119" name="in"/>
+                    <label end="128" start="122" name="jj"/>
+                    <label end="137" start="130" name="nn"/>
+                    <label end="143" start="141" name="cc"/>
+                    <label end="148" start="145" name="in"/>
+                    <label end="151" start="150" name="in"/>
+                    <label end="155" start="153" name="dt"/>
+                    <label end="160" start="157" name="jj"/>
+                    <label end="166" start="162" name="nn"/>
+                    <label end="170" start="168" name="PRP$"/>
+                    <label end="178" start="172" name="nn"/>
+                    <label end="182" start="180" name="cc"/>
+                    <label end="186" start="184" name="PRP$"/>
+                    <label end="191" start="188" name="nn"/>
+                    <label end="196" start="193" name="VBD"/>
+                    <label end="204" start="200" name="wdt"/>
+                    <label end="213" start="206" name="VBD"/>
+                    <label end="216" start="215" name="to"/>
+                    <label end="221" start="218" name="vb"/>
+                    <label end="227" start="223" name="PRP$"/>
+                    <label end="241" start="229" name="nn"/>
+                    <label end="244" start="243" name="in"/>
+                    <label end="248" start="246" name="dt"/>
+                    <label end="254" start="250" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:18:04 PDT Tue" status="MANUAL" ID="6645531">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="20" start="11" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="7101" end="256" start="22" name="Mental_content"/>
+                    <label cBy="EGp" feID="7100" itype="INI" name="Cognizer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="256" start="22" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="256" start="22" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

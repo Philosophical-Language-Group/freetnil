@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="New" POS="N" name="replacement.n" ID="10793" frame="Take_place_of" frameID="1171" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp" name="bncp" ID="421"/>
+        </corpus>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Chemical" name="Iran_Chemical" ID="23514"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="fun" name="Function"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="new" name="New"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="old" name="Old"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="rol" name="Role"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="Tex" name="Textual_location"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: taking the place of.</definition>
+    <lexeme POS="N" name="replacement"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Function"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Function"/>
+                <annoSet ID="2521562"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="New"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="New"/>
+                <annoSet ID="2521562"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="New"/>
+                <annoSet ID="6524454"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Old"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Old"/>
+                <annoSet ID="2521562"/>
+                <annoSet ID="6524454"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Role"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Role"/>
+                <annoSet ID="6524454"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Function"/>
+            <FE name="New"/>
+            <FE name="Old"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Function"/>
+                <valenceUnit GF="" PT="DNI" FE="New"/>
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Old"/>
+                <annoSet ID="2521562"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="New"/>
+            <FE name="Old"/>
+            <FE name="Role"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="New"/>
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Old"/>
+                <valenceUnit GF="" PT="INI" FE="Role"/>
+                <annoSet ID="6524454"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-T-PPfor-(1)">
+        <sentence corpID="111" docID="421" sentNo="1" paragNo="3687" aPos="28833879" ID="1539131">
+            <text>THIS is the Mondeo , Ford 's new Belgian-built replacement for the Sierra which goes on sale in March .</text>
+            <annotationSet cDate="10/07/2009 12:50:00 PDT Wed" status="UNANN" ID="2521561">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="6" start="5" name="VBZ"/>
+                    <label end="10" start="8" name="dt"/>
+                    <label end="17" start="12" name="NP"/>
+                    <label end="19" start="19" name=","/>
+                    <label end="24" start="21" name="NP"/>
+                    <label end="27" start="26" name="POS"/>
+                    <label end="31" start="29" name="jj"/>
+                    <label end="45" start="33" name="VVN"/>
+                    <label end="57" start="47" name="nn"/>
+                    <label end="61" start="59" name="in"/>
+                    <label end="65" start="63" name="dt"/>
+                    <label end="72" start="67" name="NP"/>
+                    <label end="78" start="74" name="wdt"/>
+                    <label end="83" start="80" name="VVZ"/>
+                    <label end="86" start="85" name="in"/>
+                    <label end="91" start="88" name="nn"/>
+                    <label end="94" start="93" name="in"/>
+                    <label end="100" start="96" name="NP"/>
+                    <label end="102" start="102" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="10/07/2009 12:50:00 PDT Wed" status="MANUAL" ID="2521562">
+                <layer rank="1" name="Target">
+                    <label cBy="AnW" end="57" start="47" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="6798" end="72" start="59" name="Old"/>
+                    <label cBy="AlK" feID="6794" itype="DNI" name="New"/>
+                    <label cBy="AlK" feID="6796" itype="INI" name="Function"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="72" start="59" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="72" start="59" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="02-T-PPof-(1)"/>
+    <subCorpus name="03-T-NP-(1)"/>
+    <subCorpus name="04-T-VP-(1)"/>
+    <subCorpus name="other-matched-(1)"/>
+    <subCorpus name="other-unmatched-(1)"/>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23514" sentNo="9" paragNo="27" aPos="0" ID="4097092">
+            <text>The deal eventually fell through and Iran sought China as a replacement for India .</text>
+            <annotationSet cDate="02/25/2005 12:43:16 PST Fri" status="UNANN" ID="6522757">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="7" start="4" name="nn"/>
+                    <label end="18" start="9" name="rb"/>
+                    <label end="23" start="20" name="VVD"/>
+                    <label end="31" start="25" name="in"/>
+                    <label end="35" start="33" name="cc"/>
+                    <label end="40" start="37" name="NP"/>
+                    <label end="47" start="42" name="VVD"/>
+                    <label end="53" start="49" name="NP"/>
+                    <label end="56" start="55" name="in"/>
+                    <label end="58" start="58" name="dt"/>
+                    <label end="70" start="60" name="nn"/>
+                    <label end="74" start="72" name="in"/>
+                    <label end="80" start="76" name="NP"/>
+                    <label end="82" start="82" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="40" start="37" name="GPE"/>
+                    <label end="53" start="49" name="GPE"/>
+                    <label end="80" start="76" name="GPE"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="31" start="25" name="NT"/>
+                    <label end="35" start="33" name="NT"/>
+                    <label end="40" start="37" name="NT"/>
+                    <label end="53" start="49" name="NT"/>
+                    <label end="56" start="55" name="NT"/>
+                    <label end="58" start="58" name="NT"/>
+                    <label end="74" start="72" name="NT"/>
+                    <label end="80" start="76" name="NT"/>
+                    <label end="82" start="82" name="NT"/>
+                    <label end="18" start="9" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/11/2005 09:20:04 PST Fri" status="MANUAL" ID="6524454">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="70" start="60" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="6794" end="53" start="49" name="New"/>
+                    <label cBy="RLG" feID="6798" end="80" start="72" name="Old"/>
+                    <label cBy="RLG" feID="6795" itype="INI" name="Role"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="53" start="49" name="Ext"/>
+                    <label end="80" start="72" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="53" start="49" name="NP"/>
+                    <label end="80" start="72" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

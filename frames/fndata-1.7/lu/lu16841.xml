@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="New" POS="V" name="rule.v" ID="16841" frame="Dominate_situation" frameID="1795" totalAnnotated="5" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp=1161" name="bncp=1161" ID="17509"/>
+            <document description="bncp=2745" name="bncp=2745" ID="20444"/>
+            <document description="bncp=150" name="bncp=150" ID="24891"/>
+        </corpus>
+        <corpus description="MASC" name="MASC" ID="150">
+            <document description="Examples of the lemma rule from the MASC project for FN annotation" name="rule" ID="24881"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="age" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="sit" name="Situation"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: having significant influence over a situation</definition>
+    <lexeme POS="V" name="rule"/>
+    <valences>
+        <FERealization total="5">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Agent"/>
+                <annoSet ID="6600754"/>
+            </pattern>
+            <pattern total="4">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <annoSet ID="6599663"/>
+                <annoSet ID="6600758"/>
+                <annoSet ID="6600760"/>
+                <annoSet ID="6600770"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="5">
+            <FE name="Situation"/>
+            <pattern total="4">
+                <valenceUnit GF="Obj" PT="NP" FE="Situation"/>
+                <annoSet ID="6600754"/>
+                <annoSet ID="6600758"/>
+                <annoSet ID="6600760"/>
+                <annoSet ID="6600770"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Situation"/>
+                <annoSet ID="6599663"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Time"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="AVP" FE="Time"/>
+                <annoSet ID="6600760"/>
+                <annoSet ID="6600770"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[after]" FE="Time"/>
+                <annoSet ID="6600758"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Agent"/>
+            <FE name="Situation"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Agent"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Situation"/>
+                <annoSet ID="6600754"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="" PT="INI" FE="Situation"/>
+                <annoSet ID="6599663"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="3">
+            <FE name="Agent"/>
+            <FE name="Situation"/>
+            <FE name="Time"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Situation"/>
+                <valenceUnit GF="Dep" PT="AVP" FE="Time"/>
+                <annoSet ID="6600760"/>
+                <annoSet ID="6600770"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Situation"/>
+                <valenceUnit GF="Dep" PT="PP[after]" FE="Time"/>
+                <annoSet ID="6600758"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="150" docID="24881" sentNo="5" paragNo="10" aPos="0" ID="4124156">
+            <text>The elections rule .</text>
+            <annotationSet cDate="01/11/2012 11:48:13 PST Wed" status="UNANN" ID="6597294">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="12" start="4" name="nns"/>
+                    <label end="17" start="14" name="nn"/>
+                    <label end="19" start="19" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="19" start="19" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/18/2012 11:09:32 PST Wed" status="MANUAL" ID="6599663">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="17" start="14" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="10643" end="12" start="0" name="Agent"/>
+                    <label cBy="CVa" feID="10644" itype="INI" name="Situation"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="12" start="0" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="12" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="01-wave+earth-(1)">
+        <sentence corpID="111" docID="24891" sentNo="1" paragNo="10" aPos="0" ID="4125690">
+            <text>Talk of the Trade : Battle to rule the air waves</text>
+            <annotationSet cDate="01/26/2012 01:19:21 PST Thu" status="UNANN" ID="6600753">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="nn"/>
+                    <label end="6" start="5" name="in"/>
+                    <label end="10" start="8" name="dt"/>
+                    <label end="16" start="12" name="NP"/>
+                    <label end="18" start="18" name=":"/>
+                    <label end="25" start="20" name="nn"/>
+                    <label end="28" start="27" name="to"/>
+                    <label end="33" start="30" name="VV"/>
+                    <label end="37" start="35" name="dt"/>
+                    <label end="41" start="39" name="nn"/>
+                    <label end="47" start="43" name="nns"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="01/26/2012 01:19:21 PST Thu" status="MANUAL" ID="6600754">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="33" start="30" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="10644" end="47" start="35" name="Situation"/>
+                    <label cBy="CVa" feID="10643" itype="CNI" name="Agent"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="47" start="35" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="47" start="35" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="17509" sentNo="1" paragNo="2324" aPos="0" ID="4125692">
+            <text>And they ruled the waves after trailing by more than three seconds with only 500 metres of the 2,000 m course remaining .</text>
+            <annotationSet cDate="01/26/2012 01:19:22 PST Thu" status="UNANN" ID="6600757">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="cc"/>
+                    <label end="7" start="4" name="PP"/>
+                    <label end="13" start="9" name="VVD"/>
+                    <label end="17" start="15" name="dt"/>
+                    <label end="23" start="19" name="nns"/>
+                    <label end="29" start="25" name="in"/>
+                    <label end="38" start="31" name="VVG"/>
+                    <label end="41" start="40" name="in"/>
+                    <label end="46" start="43" name="jjr"/>
+                    <label end="51" start="48" name="in"/>
+                    <label end="57" start="53" name="cd"/>
+                    <label end="65" start="59" name="nns"/>
+                    <label end="70" start="67" name="in"/>
+                    <label end="75" start="72" name="rb"/>
+                    <label end="79" start="77" name="cd"/>
+                    <label end="86" start="81" name="nns"/>
+                    <label end="89" start="88" name="in"/>
+                    <label end="93" start="91" name="dt"/>
+                    <label end="99" start="95" name="cd"/>
+                    <label end="101" start="101" name="nn"/>
+                    <label end="108" start="103" name="nn"/>
+                    <label end="118" start="110" name="VVG"/>
+                    <label end="120" start="120" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="01/26/2012 01:19:22 PST Thu" status="MANUAL" ID="6600758">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="13" start="9" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="10643" end="7" start="4" name="Agent"/>
+                    <label cBy="CVa" feID="10644" end="23" start="15" name="Situation"/>
+                    <label cBy="CVa" feID="10651" end="118" start="25" name="Time"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="7" start="4" name="Ext"/>
+                    <label end="23" start="15" name="Obj"/>
+                    <label end="118" start="25" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="7" start="4" name="NP"/>
+                    <label end="23" start="15" name="NP"/>
+                    <label end="118" start="25" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="20444" sentNo="1" paragNo="1036" aPos="0" ID="4125693">
+            <text>WHEN DINOSAURS RULED THE EARTH</text>
+            <annotationSet cDate="01/26/2012 01:19:22 PST Thu" status="UNANN" ID="6600759">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="wrb"/>
+                    <label end="13" start="5" name="nns"/>
+                    <label end="19" start="15" name="VVD"/>
+                    <label end="23" start="21" name="dt"/>
+                    <label end="29" start="25" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="01/26/2012 01:19:22 PST Thu" status="MANUAL" ID="6600760">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="19" start="15" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="10643" end="13" start="5" name="Agent"/>
+                    <label cBy="CVa" feID="10651" end="3" start="0" name="Time"/>
+                    <label cBy="CVa" feID="10644" end="29" start="21" name="Situation"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="13" start="5" name="Ext"/>
+                    <label end="3" start="0" name="Dep"/>
+                    <label end="29" start="21" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="13" start="5" name="NP"/>
+                    <label end="3" start="0" name="AVP"/>
+                    <label end="29" start="21" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="20444" sentNo="1" paragNo="1042" aPos="0" ID="4125698">
+            <text>This set is a comprehensive history of Zeppelin , the ten years when the dinosaur ruled the Earth .</text>
+            <annotationSet cDate="01/26/2012 01:19:23 PST Thu" status="UNANN" ID="6600769">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="7" start="5" name="nn"/>
+                    <label end="10" start="9" name="VBZ"/>
+                    <label end="12" start="12" name="dt"/>
+                    <label end="26" start="14" name="jj"/>
+                    <label end="34" start="28" name="nn"/>
+                    <label end="37" start="36" name="in"/>
+                    <label end="46" start="39" name="nn"/>
+                    <label end="48" start="48" name=","/>
+                    <label end="52" start="50" name="dt"/>
+                    <label end="56" start="54" name="cd"/>
+                    <label end="62" start="58" name="nns"/>
+                    <label end="67" start="64" name="wrb"/>
+                    <label end="71" start="69" name="dt"/>
+                    <label end="80" start="73" name="nn"/>
+                    <label end="86" start="82" name="VVD"/>
+                    <label end="90" start="88" name="dt"/>
+                    <label end="96" start="92" name="nn"/>
+                    <label end="98" start="98" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="01/26/2012 01:19:23 PST Thu" status="MANUAL" ID="6600770">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="86" start="82" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="10651" end="67" start="64" name="Time"/>
+                    <label cBy="CVa" feID="10643" end="80" start="69" name="Agent"/>
+                    <label cBy="CVa" feID="10644" end="96" start="88" name="Situation"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="67" start="64" name="Dep"/>
+                    <label end="80" start="69" name="Ext"/>
+                    <label end="96" start="88" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="67" start="64" name="AVP"/>
+                    <label end="80" start="69" name="NP"/>
+                    <label end="96" start="88" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="02-other-matched-(1)"/>
+    <subCorpus name="03-other-unmatched-(1)"/>
+</lexUnit>

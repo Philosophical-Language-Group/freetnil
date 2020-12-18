@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="metamorphosis.n" ID="18225" frame="Undergo_transformation" frameID="2973" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Dublin" name="IntroOfDublin" ID="23652"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="cau" name="Cause"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="ent" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="finc" name="Final_category"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="fre" name="Frequency"/>
+            <FE fgColor="000000" bgColor="A9A9A9" type="Core" abbrev="inic" name="Initial_category"/>
+            <FE fgColor="000000" bgColor="FF00FF" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="000000" bgColor="7CCD73" type="Extra-Thematic" abbrev="" name="Period_of_iterations"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: a change in form or nature.</definition>
+    <lexeme POS="N" name="metamorphosis"/>
+    <valences>
+        <governor type="Ctrlr" lemma="undergo">
+            <annoSet ID="6541424"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <annoSet ID="6541424"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Final_category"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Final_category"/>
+                <annoSet ID="6541424"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Initial_category"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Initial_category"/>
+                <annoSet ID="6541424"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Entity"/>
+            <FE name="Final_category"/>
+            <FE name="Initial_category"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <valenceUnit GF="" PT="INI" FE="Final_category"/>
+                <valenceUnit GF="" PT="INI" FE="Initial_category"/>
+                <annoSet ID="6541424"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23652" sentNo="1" paragNo="14" aPos="0" ID="4100621">
+            <text>Dublin 's food has undergone a metamorphosis .</text>
+            <annotationSet cDate="11/14/2006 04:25:25 PST Tue" status="UNANN" ID="6539620">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="NP"/>
+                    <label end="8" start="7" name="POS"/>
+                    <label end="13" start="10" name="nn"/>
+                    <label end="17" start="15" name="VHZ"/>
+                    <label end="27" start="19" name="VVN"/>
+                    <label end="29" start="29" name="dt"/>
+                    <label end="43" start="31" name="nn"/>
+                    <label end="45" start="45" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="5" start="0" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="0" name="NT"/>
+                    <label end="8" start="7" name="NT"/>
+                    <label end="17" start="15" name="NT"/>
+                    <label end="29" start="29" name="NT"/>
+                    <label end="45" start="45" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/26/2007 11:00:32 PST Mon" status="MANUAL" ID="6541424">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="43" start="31" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="16622" end="13" start="0" name="Entity"/>
+                    <label cBy="RLG" feID="16623" itype="INI" name="Final_category"/>
+                    <label cBy="RLG" feID="16624" itype="INI" name="Initial_category"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="13" start="0" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="13" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="27" start="19" name="Ctrlr"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

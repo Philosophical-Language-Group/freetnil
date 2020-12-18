@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="way.n" ID="3774" frame="Roadways" frameID="203" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="MASC" name="MASC" ID="150">
+            <document description="Examples of the lemma way from the MASC project for FN annotation" name="way" ID="22511"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="A_e" name="Abundant_entities"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Char" name="Characteristic"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Dir" name="Direction"/>
+            <FE fgColor="9400D3" bgColor="d0d0d0" type="Peripheral" abbrev="EPs" name="Endpoints"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="F_use" name="Frequency_of_use"/>
+            <FE fgColor="000000" bgColor="9F79EE" type="Peripheral" abbrev="Goal" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Length" name="Length"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="Mat" name="Material"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="Name" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD73" type="Peripheral" abbrev="par" name="Part"/>
+            <FE fgColor="90876C" bgColor="000000" type="Peripheral" abbrev="Pat" name="Path"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="rel" name="Relative_location"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Road" name="Roadway"/>
+            <FE fgColor="EEE8AA" bgColor="A52A2A" type="Peripheral" abbrev="Src" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Use" name="Use"/>
+        </frame>
+    </header>
+    <definition>COD: in place names a road, track, path, or street. </definition>
+    <lexeme POS="N" name="way"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Name"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Name"/>
+                <annoSet ID="6566146"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Roadway"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Roadway"/>
+                <annoSet ID="6566146"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Name"/>
+            <FE name="Roadway"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Name"/>
+                <valenceUnit GF="" PT="DEN" FE="Roadway"/>
+                <annoSet ID="6566146"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="150" docID="22511" sentNo="1" paragNo="3" aPos="0" ID="1592660">
+            <text>Mr . Caring Philanthropy 01234 Giving Way Contribution , USA 56789</text>
+            <annotationSet cDate="12/14/2010 01:36:45 PST Tue" status="UNANN" ID="2619301">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="NP"/>
+                    <label end="3" start="3" name="sent"/>
+                    <label end="10" start="5" name="jj"/>
+                    <label end="23" start="12" name="NP"/>
+                    <label end="29" start="25" name="cd"/>
+                    <label end="36" start="31" name="NP"/>
+                    <label end="40" start="38" name="NP"/>
+                    <label end="53" start="42" name="NP"/>
+                    <label end="55" start="55" name=","/>
+                    <label end="59" start="57" name="NP"/>
+                    <label end="65" start="61" name="cd"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="10" start="5" name="person"/>
+                    <label end="23" start="12" name="organization"/>
+                    <label end="59" start="57" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="3" start="3" name="NT"/>
+                    <label end="23" start="12" name="NT"/>
+                    <label end="29" start="25" name="NT"/>
+                    <label end="36" start="31" name="NT"/>
+                    <label end="53" start="42" name="NT"/>
+                    <label end="55" start="55" name="NT"/>
+                    <label end="59" start="57" name="NT"/>
+                    <label end="65" start="61" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/06/2011 05:38:08 PDT Mon" status="MANUAL" ID="6566146">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="40" start="38" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="1657" end="40" start="38" name="Roadway"/>
+                    <label cBy="MLC" feID="1662" end="36" start="31" name="Name"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="36" start="31" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="36" start="31" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

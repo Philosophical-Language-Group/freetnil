@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="frail.a" ID="18707" frame="Level_of_force_resistance" frameID="2061" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="Examples4-5" name="Examples4-5" ID="25743"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="Cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="000000" bgColor="7CCD7C" type="Peripheral" abbrev="Dom" name="Domain"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Opp" name="Opposing_force"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Ent" name="Resisting_entity"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: not strong or hardy; having a low level or force resistance. Usually said of people.</definition>
+    <lexeme POS="A" name="frail"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Opposing_force"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Opposing_force"/>
+                <annoSet ID="6774213"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Resisting_entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Resisting_entity"/>
+                <annoSet ID="6774213"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Time"/>
+                <annoSet ID="6774213"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Opposing_force"/>
+            <FE name="Resisting_entity"/>
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Opposing_force"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Resisting_entity"/>
+                <valenceUnit GF="Dep" PT="AVP" FE="Time"/>
+                <annoSet ID="6774213"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25743" sentNo="2" paragNo="4" aPos="0" ID="4217208">
+            <text>His health has been frail lately , and this hospitalization was his fourth in the last seven months .</text>
+            <annotationSet cDate="06/03/2016 05:15:27 PDT Fri" status="UNANN" ID="6774129">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="PP$"/>
+                    <label end="9" start="4" name="nn"/>
+                    <label end="13" start="11" name="VHZ"/>
+                    <label end="18" start="15" name="VBN"/>
+                    <label end="24" start="20" name="jj"/>
+                    <label end="31" start="26" name="rb"/>
+                    <label end="33" start="33" name=","/>
+                    <label end="37" start="35" name="cc"/>
+                    <label end="42" start="39" name="dt"/>
+                    <label end="58" start="44" name="nn"/>
+                    <label end="62" start="60" name="VBD"/>
+                    <label end="66" start="64" name="PP$"/>
+                    <label end="73" start="68" name="jj"/>
+                    <label end="76" start="75" name="in"/>
+                    <label end="80" start="78" name="dt"/>
+                    <label end="85" start="82" name="jj"/>
+                    <label end="91" start="87" name="cd"/>
+                    <label end="98" start="93" name="nns"/>
+                    <label end="100" start="100" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="13" start="11" name="NT"/>
+                    <label end="18" start="15" name="NT"/>
+                    <label end="31" start="26" name="NT"/>
+                    <label end="33" start="33" name="NT"/>
+                    <label end="37" start="35" name="NT"/>
+                    <label end="42" start="39" name="NT"/>
+                    <label end="62" start="60" name="NT"/>
+                    <label end="66" start="64" name="NT"/>
+                    <label end="76" start="75" name="NT"/>
+                    <label end="80" start="78" name="NT"/>
+                    <label end="91" start="87" name="NT"/>
+                    <label end="100" start="100" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/07/2016 03:23:54 PDT Tue" status="MANUAL" ID="6774213">
+                <layer rank="1" name="Target">
+                    <label cBy="CFB" end="24" start="20" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CFB" feID="12707" end="9" start="0" name="Resisting_entity"/>
+                    <label cBy="CFB" feID="16760" itype="INI" name="Opposing_force"/>
+                    <label cBy="CFB" feID="12712" end="31" start="26" name="Time"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="9" start="0" name="Ext"/>
+                    <label end="31" start="26" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="9" start="0" name="NP"/>
+                    <label end="31" start="26" name="AVP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="18" start="15" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="accord.n" ID="13767" frame="Documents" frameID="560" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Syria Nuclear Overview" name="Syria_NuclearOverview" ID="23631"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="Bea" name="Bearer"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Do" name="Document"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Iss" name="Issuer"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="" name="Medium"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Core" abbrev="Obl" name="Obligation"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Rig" name="Right"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="Spec" name="Specification"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="Sta" name="Status"/>
+        </frame>
+    </header>
+    <definition>FN: an official, written agreement
+
+
+</definition>
+    <lexeme POS="N" name="accord"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Document"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Document"/>
+                <annoSet ID="6541115"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Document"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Document"/>
+                <annoSet ID="6541115"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23631" sentNo="4" paragNo="11" aPos="0" ID="4099867">
+            <text>Part of this accord was an agreement to construct a nuclear research center that would include a 25MW research reactor .</text>
+            <annotationSet cDate="07/26/2006 03:24:01 PDT Wed" status="UNANN" ID="6537485">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="nn"/>
+                    <label end="6" start="5" name="in"/>
+                    <label end="11" start="8" name="dt"/>
+                    <label end="18" start="13" name="nn"/>
+                    <label end="22" start="20" name="VBD"/>
+                    <label end="25" start="24" name="dt"/>
+                    <label end="35" start="27" name="nn"/>
+                    <label end="38" start="37" name="to"/>
+                    <label end="48" start="40" name="VV"/>
+                    <label end="50" start="50" name="dt"/>
+                    <label end="58" start="52" name="jj"/>
+                    <label end="67" start="60" name="nn"/>
+                    <label end="74" start="69" name="nn"/>
+                    <label end="79" start="76" name="wdt"/>
+                    <label end="85" start="81" name="md"/>
+                    <label end="93" start="87" name="VV"/>
+                    <label end="95" start="95" name="dt"/>
+                    <label end="100" start="97" name="jj"/>
+                    <label end="109" start="102" name="nn"/>
+                    <label end="117" start="111" name="nn"/>
+                    <label end="119" start="119" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="5" name="NT"/>
+                    <label end="11" start="8" name="NT"/>
+                    <label end="22" start="20" name="NT"/>
+                    <label end="25" start="24" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="50" start="50" name="NT"/>
+                    <label end="79" start="76" name="NT"/>
+                    <label end="85" start="81" name="NT"/>
+                    <label end="95" start="95" name="NT"/>
+                    <label end="119" start="119" name="NT"/>
+                    <label end="100" start="97" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/23/2007 11:43:03 PST Fri" status="MANUAL" ID="6541115">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="18" start="13" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="4192" end="18" start="13" name="Document"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

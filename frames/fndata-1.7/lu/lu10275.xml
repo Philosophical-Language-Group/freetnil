@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="staircase.n" ID="10275" frame="Connecting_architecture" frameID="1025" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="cl" name="Connected_locations"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="" name="Creator"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Dsc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="drc" name="Direction"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="gl" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="" name="Material"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Orientation" name="Orientation"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Prt" name="Part"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="src" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Peripheral" abbrev="" name="Whole"/>
+        </frame>
+    </header>
+    <definition>COD: a set of stairs and its surrounding structure.</definition>
+    <lexeme POS="N" name="staircase"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Descriptor"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Descriptor"/>
+                <annoSet ID="6561938"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Part"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Part"/>
+                <annoSet ID="6561938"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Descriptor"/>
+            <FE name="Part"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Descriptor"/>
+                <valenceUnit GF="" PT="DEN" FE="Part"/>
+                <annoSet ID="6561938"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23771" sentNo="2" paragNo="102" aPos="0" ID="4106143">
+            <text>On top of a hill in the center of the city , it 's approached by a grand staircase .</text>
+            <annotationSet cDate="07/25/2008 01:20:07 PDT Fri" status="UNANN" ID="6555233">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="nn"/>
+                    <label end="8" start="7" name="in"/>
+                    <label end="10" start="10" name="dt"/>
+                    <label end="15" start="12" name="nn"/>
+                    <label end="18" start="17" name="in"/>
+                    <label end="22" start="20" name="dt"/>
+                    <label end="29" start="24" name="nn"/>
+                    <label end="32" start="31" name="in"/>
+                    <label end="36" start="34" name="dt"/>
+                    <label end="41" start="38" name="nn"/>
+                    <label end="43" start="43" name=","/>
+                    <label end="46" start="45" name="PP"/>
+                    <label end="49" start="48" name="VBZ"/>
+                    <label end="60" start="51" name="VVN"/>
+                    <label end="63" start="62" name="in"/>
+                    <label end="65" start="65" name="dt"/>
+                    <label end="71" start="67" name="jj"/>
+                    <label end="81" start="73" name="nn"/>
+                    <label end="83" start="83" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="8" start="7" name="NT"/>
+                    <label end="10" start="10" name="NT"/>
+                    <label end="18" start="17" name="NT"/>
+                    <label end="22" start="20" name="NT"/>
+                    <label end="32" start="31" name="NT"/>
+                    <label end="36" start="34" name="NT"/>
+                    <label end="43" start="43" name="NT"/>
+                    <label end="46" start="45" name="NT"/>
+                    <label end="49" start="48" name="NT"/>
+                    <label end="63" start="62" name="NT"/>
+                    <label end="65" start="65" name="NT"/>
+                    <label end="83" start="83" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/31/2011 01:41:29 PST Mon" status="MANUAL" ID="6561938">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="81" start="73" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="6107" end="81" start="73" name="Part"/>
+                    <label cBy="MLC" feID="6109" end="71" start="67" name="Descriptor"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="71" start="67" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="71" start="67" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

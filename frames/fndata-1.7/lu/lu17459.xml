@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="backfire.n" ID="17459" frame="Setting_back_burn" frameID="2829" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <frame>
+            <FE fgColor="000000" bgColor="7CCD7C" type="Extra-Thematic" abbrev="" name="Containing_event"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Depictive"/>
+            <FE fgColor="000000" bgColor="1E90FF" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Kindler" name="Firefighter"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Flame" name="Flame"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Flambls" name="Flammables"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: a fire that uses up fuel from another fire, creating a firebreak.</definition>
+    <lexeme POS="N" name="backfire"/>
+    <valences>
+        <governor type="Sup" lemma="set">
+            <annoSet ID="6655914"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Firefighter"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Firefighter"/>
+                <annoSet ID="6655914"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Flame"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Flame"/>
+                <annoSet ID="6655914"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Time"/>
+                <annoSet ID="6655914"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Firefighter"/>
+            <FE name="Flame"/>
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Firefighter"/>
+                <valenceUnit GF="" PT="DEN" FE="Flame"/>
+                <valenceUnit GF="Dep" PT="AVP" FE="Time"/>
+                <annoSet ID="6655914"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added"/>
+</lexUnit>

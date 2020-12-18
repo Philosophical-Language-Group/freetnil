@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="PREP" name="down.prep" ID="17656" frame="Change_position_on_a_scale" frameID="91" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_3" name="Fires_3" ID="25618"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="att" name="Attribute"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Extra-Thematic" abbrev="con" name="Containing_event"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="cor" name="Correlated_variable"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="006400" bgColor="FFFF00" type="Core" abbrev="Diff" name="Difference"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="000000" bgColor="00BFFF" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="cor2" name="Final_correlate"/>
+            <FE fgColor="00008B" bgColor="7CCD73" type="Core" abbrev="finis" name="Final_state"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="val2" name="Final_value"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Grp" name="Group"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="cor1" name="Initial_correlate"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Core" abbrev="inis" name="Initial_state"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="val1" name="Initial_value"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Core" abbrev="ite" name="Item"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="00008B" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Particular_iteration"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Path" name="Path"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="" name="Period_of_iterations"/>
+            <FE fgColor="000000" bgColor="FFD700" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="0000FF" bgColor="EEE8AA" type="Extra-Thematic" abbrev="Result" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Peripheral" abbrev="Speed" name="Speed"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="" name="Time"/>
+            <FE fgColor="0000FF" bgColor="d0d0d0" type="Core" abbrev="" name="Value_range"/>
+        </frame>
+    </header>
+    <definition>FN: having decreased (by some amount).
+NB: this preposition often modifies a quantity, specifiying that it is the value after a change, and may occur with an initial value marked by from.</definition>
+    <lexeme POS="PREP" name="down"/>
+    <semType name="Negative" ID="99"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Final_value"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Final_value"/>
+                <annoSet ID="6672436"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Initial_correlate"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[on]" FE="Initial_correlate"/>
+                <annoSet ID="6672436"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Initial_value"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[from]" FE="Initial_value"/>
+                <annoSet ID="6672436"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Final_value"/>
+            <FE name="Initial_correlate"/>
+            <FE name="Initial_value"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Final_value"/>
+                <valenceUnit GF="Dep" PT="PP[on]" FE="Initial_correlate"/>
+                <valenceUnit GF="Dep" PT="PP[from]" FE="Initial_value"/>
+                <annoSet ID="6672436"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25618" sentNo="1" paragNo="8" aPos="0" ID="4165004">
+            <text>Changing weather conditions also helped firefighting efforts , as temperature in the area fell to 90 degrees Fahrenheit , down from over a hundred degrees on Monday .</text>
+            <annotationSet cDate="07/17/2014 11:43:48 PDT Thu" status="UNANN" ID="6669174">
+                <layer rank="1" name="PENN">
+                    <label end="7" start="0" name="VVG"/>
+                    <label end="15" start="9" name="nn"/>
+                    <label end="26" start="17" name="nns"/>
+                    <label end="31" start="28" name="rb"/>
+                    <label end="38" start="33" name="VVD"/>
+                    <label end="51" start="40" name="VVG"/>
+                    <label end="59" start="53" name="nns"/>
+                    <label end="61" start="61" name=","/>
+                    <label end="64" start="63" name="in"/>
+                    <label end="76" start="66" name="nn"/>
+                    <label end="79" start="78" name="in"/>
+                    <label end="83" start="81" name="dt"/>
+                    <label end="88" start="85" name="nn"/>
+                    <label end="93" start="90" name="VVD"/>
+                    <label end="96" start="95" name="to"/>
+                    <label end="99" start="98" name="cd"/>
+                    <label end="107" start="101" name="nns"/>
+                    <label end="118" start="109" name="nn"/>
+                    <label end="120" start="120" name=","/>
+                    <label end="125" start="122" name="rb"/>
+                    <label end="130" start="127" name="in"/>
+                    <label end="135" start="132" name="in"/>
+                    <label end="137" start="137" name="dt"/>
+                    <label end="145" start="139" name="cd"/>
+                    <label end="153" start="147" name="nns"/>
+                    <label end="156" start="155" name="in"/>
+                    <label end="163" start="158" name="NP"/>
+                    <label end="165" start="165" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="163" start="158" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="31" start="28" name="NT"/>
+                    <label end="61" start="61" name="NT"/>
+                    <label end="64" start="63" name="NT"/>
+                    <label end="83" start="81" name="NT"/>
+                    <label end="96" start="95" name="NT"/>
+                    <label end="99" start="98" name="NT"/>
+                    <label end="120" start="120" name="NT"/>
+                    <label end="130" start="127" name="NT"/>
+                    <label end="137" start="137" name="NT"/>
+                    <label end="145" start="139" name="NT"/>
+                    <label end="163" start="158" name="NT"/>
+                    <label end="165" start="165" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/22/2014 07:07:23 PDT Tue" status="MANUAL" ID="6672436">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="125" start="122" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="423" end="153" start="127" name="Initial_value"/>
+                    <label cBy="MJE" feID="6980" end="163" start="155" name="Initial_correlate"/>
+                    <label cBy="MJE" feID="422" end="118" start="95" name="Final_value"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="153" start="127" name="Dep"/>
+                    <label end="163" start="155" name="Dep"/>
+                    <label end="118" start="95" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="153" start="127" name="PP"/>
+                    <label end="163" start="155" name="PP"/>
+                    <label end="118" start="95" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Prep"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="ChW" cDate="02/07/2001 04:11:40 PST Wed" name="Causation" ID="5" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;A &lt;fen&gt;Cause&lt;/fen&gt; causes an &lt;fen&gt;Effect&lt;/fen&gt;.  Alternatively, an &lt;fen&gt;Actor&lt;/fen&gt;, a participant of a (implicit) &lt;fen&gt;Cause&lt;/fen&gt;, may stand in for the &lt;fen&gt;Cause&lt;/fen&gt;.  The entity &lt;fen&gt;Affected&lt;/fen&gt; by the Causation may stand in for the overall &lt;fen&gt;Effect&lt;/fen&gt; situation or event.  
+&lt;ex&gt;&lt;/ex&gt;
+Those frames that inherit the Causation frame have as their background the idea that some event is responsible for the occurrence of another event (or state).  In the  inheriting frame, typically an FE like Agent or Causer is proposed in the place of the &lt;fen&gt;Actor&lt;/fen&gt;, but in the daughter frames, as in this frame, the &lt;fen&gt;Actor&lt;/fen&gt; is semantically dependent on the idea of a &lt;fen&gt;Cause&lt;/fen&gt; (an event or state-of-affairs) that the &lt;fen&gt;Actor&lt;/fen&gt; is a participant in.  Similarly, most inheriting frames profile only the &lt;fen&gt;Affected&lt;/fen&gt; entity, not the full &lt;fen&gt;Effect&lt;/fen&gt; situation which is often incorporated into the frame or the particular target.  So, for example, paint.v in the Filling frame entails the final situation of something (the &lt;fen&gt;Affected&lt;/fen&gt;) being covered in paint (the &lt;fen&gt;Effect&lt;/fen&gt;).
+
+&lt;ex&gt;&lt;fex name="act"&gt;He&lt;/fex&gt; &lt;t&gt;made&lt;/t&gt; &lt;fex name="Effect"&gt;me&lt;/fex&gt; &lt;fex name="Effect"&gt;angry&lt;/fex&gt;.&lt;/ex&gt;
+
+&lt;ex&gt;If &lt;fex name="Cause"&gt;such a small earthquake&lt;/fex&gt; &lt;t&gt;causes&lt;/t&gt; &lt;fex name="Effect"&gt;problems&lt;/fex&gt;, just imagine a big one!&lt;/ex&gt;
+
+&lt;ex&gt;&lt;fex name="Cause"&gt;The strange mutations of the rumor mill&lt;/fex&gt; &lt;fex name="Time"&gt;in the end&lt;/fex&gt; &lt;t&gt;led&lt;/t&gt; &lt;fex name="Effect"&gt;to it being said that he was actually a woman&lt;/fex&gt;.&lt;/ex&gt;
+
+&lt;ex&gt;&lt;fex name="Actor"&gt;You&lt;/fex&gt; 've &lt;t&gt;made&lt;/t&gt; &lt;fex name="Effect"&gt;it&lt;/fex&gt; &lt;fex name="Effect"&gt;impossible to continue&lt;/fex&gt;!&lt;/ex&gt;
+
+&lt;ex&gt;&lt;fex name="Cause"&gt;The ending&lt;/fex&gt; &lt;t&gt;left&lt;/t&gt; &lt;fex name="Effect"&gt;me&lt;/fex&gt; &lt;fex name="Effect"&gt;feeling kinda empty&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Core-Unexpressed" cBy="ChW" cDate="02/07/2001 04:11:40 PST Wed" abbrev="Cause" name="Cause" ID="18">
+        <definition>&lt;def-root&gt;A force, process, or event that produces an effect.
+
+&lt;ex&gt;&lt;fex name="Cause"&gt;The wind&lt;/fex&gt; &lt;t&gt;made&lt;/t&gt; the door rattle.&lt;/ex&gt;
+&lt;ex&gt;&lt;fex name="Cause"&gt;The accident&lt;/fex&gt; &lt;t&gt;caused&lt;/t&gt; them to be more careful the next time.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="800080" fgColor="FFFFFF" coreType="Core" cBy="ChW" cDate="02/07/2001 04:11:40 PST Wed" abbrev="Affected" name="Affected" ID="19">
+        <definition>&lt;def-root&gt;Agents in a joint or reciprocal action (e.g. exchange)&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core-Unexpressed" cBy="ChW" cDate="02/07/2001 04:11:40 PST Wed" abbrev="Effect" name="Effect" ID="20">
+        <definition>&lt;def-root&gt;A positive or negative evaluation of the Phenomenon.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="08/27/2001 04:53:32 PDT Mon" abbrev="Place" name="Place" ID="1755">
+        <definition>&lt;def-root&gt;Where the event takes place.&lt;/def-root&gt;</definition>
+        <semType name="Locative_relation" ID="182"/>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="08/27/2001 04:53:33 PDT Mon" abbrev="Time" name="Time" ID="1757">
+        <definition>&lt;def-root&gt;This FE identifies the &lt;fen&gt;Time&lt;/fen&gt; when the event occurs.&lt;/def-root&gt;</definition>
+        <semType name="Time" ID="141"/>
+    </FE>
+    <FE bgColor="1E90FF" fgColor="FFFFFF" coreType="Core" cBy="MJE" cDate="11/03/2004 11:58:58 PST Wed" abbrev="act" name="Actor" ID="7200">
+        <definition>&lt;def-root&gt;An entity which participates in a &lt;fen&gt;Cause&lt;/fen&gt;, perhaps volitionally and perhaps not.
+
+&lt;ex&gt;&lt;fex name="Actor"&gt;That one stone&lt;/fex&gt;, apparently, &lt;t&gt;caused&lt;/t&gt; the avalanche that engulfed square miles of forest.&lt;/ex&gt;
+&lt;ex&gt;&lt;fex name="Actor"&gt;Stephen Hawking&lt;/fex&gt; &lt;t&gt;caused&lt;/t&gt; an uproar when the results were published.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="Sentient" ID="5"/>
+    </FE>
+    <FE bgColor="FFFF00" fgColor="000000" coreType="Extra-Thematic" cBy="KmG" cDate="06/05/2006 09:15:41 PDT Mon" abbrev="cir" name="Circumstances" ID="10232">
+        <definition>&lt;def-root&gt;Circumstances describe the state of the world (at a particular time and place) which is specifically independent of the event itself and any of its participants. &lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="9400D3" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="08/01/2006 11:25:48 PDT Tue" abbrev="man" name="Manner" ID="10433">
+        <definition>&lt;def-root&gt;Any holistic description of the event, including overall depictions (&lt;ment&gt;the same way&lt;/ment&gt;) and descriptions pertaining to the &lt;fen&gt;Actor&lt;/fen&gt;'s influence on the character of the event (&lt;ment&gt;eagerly, quietly&lt;/ment&gt;).&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="90876C" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="KmG" cDate="12/06/2006 03:59:04 PST Wed" abbrev="exp" name="Explanation" ID="10933">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Explanation&lt;/fen&gt; denotes a proposition from which the main clause (headed by the target) logically follows. This often means that the &lt;fen&gt;Explanation&lt;/fen&gt; causes the target's proposition, but not in all cases.&lt;/def-root&gt;</definition>
+        <semType name="State_of_affairs" ID="177"/>
+    </FE>
+    <FE bgColor="A52A2A" fgColor="FFFFFF" coreType="Peripheral" cBy="KmG" cDate="01/04/2007 12:53:10 PST Thu" abbrev="mea" name="Means" ID="10945">
+        <definition>&lt;def-root&gt;An action through which the &lt;fen&gt;Actor&lt;/fen&gt; or &lt;fen&gt;Cause&lt;/fen&gt; accomplishes the action indicated by the target. &lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="00008B" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="KmG" cDate="01/04/2007 01:09:29 PST Thu" abbrev="fre" name="Frequency" ID="10946">
+        <definition>&lt;def-root&gt;How often the action denoted by the target occurs.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="7CCD73" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="KmG" cDate="03/16/2007 01:06:33 PDT Fri" abbrev="con" name="Concessive" ID="11218">
+        <definition>&lt;def-root&gt;This FE signifies that the state of affairs expressed by the main clause (containing the target) occurs or holds, and something other than that state of affairs would be expected given the state of affairs in the concessive clause. &lt;/def-root&gt;</definition>
+    </FE>
+    <FEcoreSet>
+        <memberFE name="Cause" ID="18"/>
+        <memberFE name="Actor" ID="7200"/>
+    </FEcoreSet>
+    <FEcoreSet>
+        <memberFE name="Affected" ID="19"/>
+        <memberFE name="Effect" ID="20"/>
+    </FEcoreSet>
+    <frameRelation type="Inherits from">
+        <relatedFrame ID="88">Eventive_affecting</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Inherited by">
+        <relatedFrame ID="381">Cause_to_start</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Perspective on">
+        <relatedFrame ID="217">Causation_scenario</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Perspectivized in">
+        <relatedFrame ID="1790">Means</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Uses"/>
+    <frameRelation type="Is Used by">
+        <relatedFrame ID="1563">Level_of_force_exertion</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="Finished_Initial" POS="V" name="cause.v" ID="2" lemmaID="5803" cBy="ChW" cDate="02/08/2001 01:27:25 PST Thu">
+        <definition>COD: be the cause of; make happen. </definition>
+        <sentenceCount annotated="116" total="624"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="cause"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="N" name="cause.n" ID="3" lemmaID="5802" cBy="ChW" cDate="02/08/2001 01:27:25 PST Thu">
+        <definition>COD: a person or thing that gives rise to an action, phenomenon, or condition. </definition>
+        <sentenceCount annotated="20" total="253"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="cause"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="V" name="make.v" ID="4" lemmaID="23215" cBy="ChW" cDate="02/08/2001 01:27:25 PST Thu">
+        <definition>COD: cause to exist or come about; bring about or perform</definition>
+        <sentenceCount annotated="46" total="288"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="make"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="V" name="lead (to).v" ID="8591" lemmaID="21907" cBy="CFB" cDate="04/21/2003 03:21:50 PDT Mon">
+        <definition>FN: "One thing leads to another"; a rather vaguely defined sort of causation, although often used in quite definite cases: "Smoking leads to higher rates of lung cancer".</definition>
+        <sentenceCount annotated="43" total="231"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="lead"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="reason.n" ID="10844" lemmaID="32036" cBy="JKR" cDate="08/17/2004 03:02:38 PDT Tue">
+        <definition>COD: a cause, explanation, or justification.</definition>
+        <sentenceCount annotated="5" total="7"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="reason"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="send.v" ID="10916" lemmaID="35050" cBy="JKR" cDate="08/19/2004 05:44:53 PDT Thu">
+        <definition>COD: cause to be in a specified state:</definition>
+        <sentenceCount annotated="3" total="3"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="send"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="V" name="bring about.v" ID="11493" lemmaID="49838" cBy="MJE" cDate="01/04/2005 06:51:39 PST Tue">
+        <definition>COD: cause something to happen.</definition>
+        <sentenceCount annotated="19" total="154"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="V" name="bring"/>
+        <lexeme order="2" headword="false" breakBefore="true" POS="ADV" name="about"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="V" name="precipitate.v" ID="11495" lemmaID="30086" cBy="MJE" cDate="01/18/2005 06:25:10 PST Tue">
+        <definition>COD: cause (an undesirable event) to happen unexpectedly or prematurely.</definition>
+        <sentenceCount annotated="22" total="182"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="precipitate"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="A" name="causative.a" ID="11716" lemmaID="5799" cBy="JKR" cDate="03/03/2005 09:42:28 PST Thu">
+        <definition>COD: acting as a cause</definition>
+        <sentenceCount annotated="2" total="2"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="A" name="causative"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="V" name="render.v" ID="11720" lemmaID="32617" cBy="MJE" cDate="03/03/2005 10:22:49 PST Thu">
+        <definition>COD: cause to be or become.</definition>
+        <sentenceCount annotated="14" total="149"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="render"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="V" name="bring.v" ID="12012" lemmaID="4627" cBy="MiL" cDate="05/02/2005 05:35:03 PDT Mon">
+        <definition>COD: cause to be in a particular state or condition.</definition>
+        <sentenceCount annotated="22" total="194"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="bring"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="bring on.v" ID="12013" lemmaID="50000" cBy="MiL" cDate="05/02/2005 05:36:24 PDT Mon">
+        <definition>FN: lead to</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="V" name="bring"/>
+        <lexeme order="2" headword="false" breakBefore="true" POS="ADV" name="on"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="V" name="induce.v" ID="12014" lemmaID="19706" cBy="MiL" cDate="05/02/2005 05:39:54 PDT Mon">
+        <definition>COD: bring about or give rise to.</definition>
+        <sentenceCount annotated="22" total="220"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="induce"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="V" name="wreak.v" ID="12015" lemmaID="44561" cBy="MiL" cDate="05/02/2005 05:42:02 PDT Mon">
+        <definition>FN: cause (usually damage or harm)</definition>
+        <sentenceCount annotated="10" total="91"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="wreak"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="put.v" ID="13387" lemmaID="31295" cBy="RLG" cDate="07/24/2006 04:30:58 PDT Mon">
+        <definition>COD: bring into a particular state or condition.</definition>
+        <sentenceCount annotated="5" total="5"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="put"/>
+        <semType name="Support" ID="111"/>
+    </lexUnit>
+    <lexUnit status="Rules_Defined" POS="C" name="since.c" ID="13417" lemmaID="35970" cBy="MiL" cDate="08/04/2006 02:59:03 PDT Fri">
+        <definition>COD: for the reason that; because.</definition>
+        <sentenceCount annotated="8" total="8"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="C" name="since"/>
+    </lexUnit>
+    <lexUnit status="Rules_Defined" POS="C" name="because.c" ID="13419" lemmaID="3150" cBy="MiL" cDate="08/04/2006 03:07:21 PDT Fri">
+        <definition>COD: for the reason that; since</definition>
+        <sentenceCount annotated="24" total="24"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="C" name="because"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="because of.prep" ID="13420" lemmaID="50411" cBy="MiL" cDate="08/04/2006 03:08:04 PDT Fri">
+        <definition>COD: by reason of.</definition>
+        <sentenceCount annotated="7" total="7"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="C" name="because"/>
+        <lexeme order="2" headword="false" breakBefore="false" POS="PREP" name="of"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="raise.v" ID="14030" lemmaID="31734" cBy="KmG" cDate="03/22/2007 02:42:47 PDT Thu">
+        <definition>COD: cause to be heard, felt, or considered</definition>
+        <sentenceCount annotated="1" total="1"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="raise"/>
+        <semType name="Support" ID="111"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="result (in).v" ID="14329" lemmaID="32955" cBy="MJE" cDate="04/02/2007 04:15:42 PDT Mon">
+        <definition>COD: have (a specified end or outcome).</definition>
+        <sentenceCount annotated="4" total="4"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="result"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="mean.v" ID="14369" lemmaID="23795" cBy="KmG" cDate="04/06/2007 05:38:13 PDT Fri">
+        <definition>COD: have as a consequence or result.</definition>
+        <sentenceCount annotated="4" total="4"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="mean"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="result.n" ID="14552" lemmaID="32954" cBy="KmG" cDate="10/24/2007 11:42:47 PDT Wed">
+        <definition>FN: the outcome of an occurance</definition>
+        <sentenceCount annotated="14" total="14"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="result"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="leave.v" ID="14847" lemmaID="21967" cBy="KmG" cDate="03/06/2008 03:24:49 PST Thu">
+        <definition>FN: render</definition>
+        <sentenceCount annotated="4" total="5"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="leave"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="C" name="for.c" ID="14984" lemmaID="15006" cBy="JKs" cDate="04/30/2008 02:31:12 PDT Wed">
+        <definition>FN: because, for the reason that</definition>
+        <sentenceCount annotated="1" total="1"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="C" name="for"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="see.v" ID="15046" lemmaID="34838" cBy="KmG" cDate="06/05/2008 05:25:00 PDT Thu">
+        <definition>FN: for the existence of one thing or event to lead, even subtly, to the occurance of another thing or event.</definition>
+        <sentenceCount annotated="2" total="2"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="see"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="force.v" ID="15112" lemmaID="15021" cBy="JKs" cDate="06/12/2008 01:37:37 PDT Thu">
+        <definition>FN: cause to do something by hostile means</definition>
+        <sentenceCount annotated="7" total="7"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="force"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="give rise.v" ID="15233" lemmaID="50950" cBy="KmG" cDate="08/05/2008 01:30:05 PDT Tue">
+        <definition>FN: make happen or produce</definition>
+        <sentenceCount annotated="1" total="1"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="V" name="give"/>
+        <lexeme order="2" headword="false" breakBefore="false" POS="N" name="rise"/>
+    </lexUnit>
+    <lexUnit status="Rules_Defined" POS="C" name="so.c" ID="15329" lemmaID="36738" cBy="JKs" cDate="05/07/2009 01:06:05 PDT Thu">
+        <definition>FN: in order to, causing</definition>
+        <sentenceCount annotated="4" total="4"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="C" name="so"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="due to.prep" ID="16910" lemmaID="51496" cBy="CVa" cDate="02/22/2012 02:27:51 PST Wed">
+        <definition>FN: because of</definition>
+        <sentenceCount annotated="4" total="4"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="A" name="due"/>
+        <lexeme order="2" headword="false" breakBefore="false" POS="PREP" name="to"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="A" name="responsible.a" ID="16940" lemmaID="32912" cBy="WmS" cDate="03/07/2012 12:18:04 PST Wed">
+        <definition>FN: accountable for something that has happened
+</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="A" name="responsible"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Effect" POS="N" name="consequence.n" ID="17002" lemmaID="7888" cBy="CFB" cDate="04/06/2012 02:11:55 PDT Fri">
+        <definition>FN: a situation or entity that results from some event</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="consequence"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="A" name="resulting.a" ID="17003" lemmaID="51511" cBy="CFB" cDate="04/06/2012 02:17:53 PDT Fri">
+        <definition>FN: occuring or produced as a result of some other event</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="A" name="resulting"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="A" name="consequent.a" ID="17004" lemmaID="7889" cBy="CFB" cDate="04/06/2012 02:21:53 PDT Fri">
+        <definition>FN: resulting, caused by an earlier event</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="A" name="consequent"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="A" name="consequential.a" ID="17005" lemmaID="7890" cBy="CFB" cDate="04/06/2012 02:24:40 PDT Fri">
+        <definition>FN: resulting, espescially resutling indirectly from an earlier event</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="A" name="consequential"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="A" name="resultant.a" ID="17006" lemmaID="32956" cBy="CFB" cDate="04/06/2012 02:26:21 PDT Fri">
+        <definition>FN: resulting, of a situation or event caused by an earlier event</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="A" name="resultant"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="dictate.v" ID="17071" lemmaID="10603" cBy="WmS" cDate="05/10/2012 03:28:33 PDT Thu">
+        <definition>controlled by
+</definition>
+        <sentenceCount annotated="2" total="2"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="dictate"/>
+    </lexUnit>
+    <lexUnit status="Add_Annotation" POS="V" name="motivate.v" ID="18486" lemmaID="25023" cBy="HPh" cDate="11/17/2015 06:04:02 PST Tue">
+        <definition>FN: provide with a motive</definition>
+        <sentenceCount annotated="0" total="163"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="motivate"/>
+    </lexUnit>
+    <lexUnit status="Add_Annotation" POS="V" name="sway.v" ID="18487" lemmaID="39097" cBy="HPh" cDate="11/17/2015 06:50:50 PST Tue">
+        <definition>COD: cause to change in opinion, action, etc.; influence. </definition>
+        <sentenceCount annotated="3" total="172"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="sway"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="legacy.n" ID="18706" lemmaID="22019" cBy="CFB" cDate="06/07/2016 03:19:33 PDT Tue">
+        <definition>FN: in this frame, simply a metaphorical term for a result.</definition>
+        <sentenceCount annotated="1" total="1"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="legacy"/>
+    </lexUnit>
+</frame>

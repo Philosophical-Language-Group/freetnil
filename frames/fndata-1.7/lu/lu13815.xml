@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="ADV" name="obviously.adv" ID="13815" frame="Obviousness" frameID="1360" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="sw2025-ms98-a-trans.ascii-1-NEW" name="sw2025-ms98-a-trans.ascii-1-NEW" ID="23731"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="" name="Attribute"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Core" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Peripheral" abbrev="" name="Direction"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="evi" name="Evidence"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="gro" name="Group"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="loc" name="Location_of_protagonist"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Extra-Thematic" abbrev="" name="Particular_iteration"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="per" name="Perceiver"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="phe" name="Phenomenon"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: readily deducible or perceivable.</definition>
+    <lexeme POS="ADV" name="obviously"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Phenomenon"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Phenomenon"/>
+                <annoSet ID="6550827"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Phenomenon"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Phenomenon"/>
+                <annoSet ID="6550827"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23731" sentNo="1" paragNo="13" aPos="0" ID="4102197">
+            <text>They do n't do them real often which is obviously the death penalty .</text>
+            <annotationSet cDate="08/16/2007 05:32:00 PDT Thu" status="UNANN" ID="6545955">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="PP"/>
+                    <label end="6" start="5" name="VVP"/>
+                    <label end="10" start="8" name="rb"/>
+                    <label end="13" start="12" name="VV"/>
+                    <label end="18" start="15" name="PP"/>
+                    <label end="23" start="20" name="jj"/>
+                    <label end="29" start="25" name="rb"/>
+                    <label end="35" start="31" name="wdt"/>
+                    <label end="38" start="37" name="VBZ"/>
+                    <label end="48" start="40" name="rb"/>
+                    <label end="52" start="50" name="dt"/>
+                    <label end="58" start="54" name="nn"/>
+                    <label end="66" start="60" name="nn"/>
+                    <label end="68" start="68" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="6" start="5" name="NT"/>
+                    <label end="10" start="8" name="NT"/>
+                    <label end="13" start="12" name="NT"/>
+                    <label end="18" start="15" name="NT"/>
+                    <label end="35" start="31" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="52" start="50" name="NT"/>
+                    <label end="68" start="68" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/09/2007 05:24:21 PST Fri" status="MANUAL" ID="6550827">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="48" start="40" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="7670" end="66" start="50" name="Phenomenon"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="66" start="50" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="66" start="50" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

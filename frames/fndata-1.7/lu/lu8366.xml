@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="diploma.n" ID="8366" frame="Documents" frameID="560" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Goodwill fund-raising letter" name="110CYL067" ID="23791"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="Bea" name="Bearer"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Do" name="Document"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Iss" name="Issuer"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="" name="Medium"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Core" abbrev="Obl" name="Obligation"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Rig" name="Right"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="Spec" name="Specification"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="Sta" name="Status"/>
+        </frame>
+    </header>
+    <definition>COD: a certificate awarded by an educational establishment for passing an examination or completing a course of study. </definition>
+    <lexeme POS="N" name="diploma"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Bearer"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Bearer"/>
+                <annoSet ID="6556652"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Document"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Document"/>
+                <annoSet ID="6556652"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Issuer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Issuer"/>
+                <annoSet ID="6556652"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Bearer"/>
+            <FE name="Document"/>
+            <FE name="Issuer"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Bearer"/>
+                <valenceUnit GF="" PT="DEN" FE="Document"/>
+                <valenceUnit GF="" PT="INI" FE="Issuer"/>
+                <annoSet ID="6556652"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23791" sentNo="2" paragNo="7" aPos="0" ID="4106351">
+            <text>I was on welfare and without my diploma .</text>
+            <annotationSet cDate="11/17/2008 01:54:46 PST Mon" status="UNANN" ID="6556404">
+                <layer rank="1" name="PENN">
+                    <label end="0" start="0" name="PP"/>
+                    <label end="4" start="2" name="VBD"/>
+                    <label end="7" start="6" name="in"/>
+                    <label end="15" start="9" name="nn"/>
+                    <label end="19" start="17" name="cc"/>
+                    <label end="27" start="21" name="in"/>
+                    <label end="30" start="29" name="PP$"/>
+                    <label end="38" start="32" name="nn"/>
+                    <label end="40" start="40" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="0" start="0" name="NT"/>
+                    <label end="4" start="2" name="NT"/>
+                    <label end="7" start="6" name="NT"/>
+                    <label end="19" start="17" name="NT"/>
+                    <label end="27" start="21" name="NT"/>
+                    <label end="30" start="29" name="NT"/>
+                    <label end="40" start="40" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/19/2008 07:08:59 PST Wed" status="MANUAL" ID="6556652">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="38" start="32" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="4181" end="30" start="29" name="Bearer"/>
+                    <label cBy="AlK" feID="4192" end="38" start="32" name="Document"/>
+                    <label cBy="AlK" feID="4187" itype="INI" name="Issuer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="30" start="29" name="Gen"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="30" start="29" name="Poss"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

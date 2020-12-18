@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="In_Use" POS="N" name="baking.n" ID="17921" frame="Apply_heat" frameID="236" totalAnnotated="4" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp" name="bncp" ID="421"/>
+        </corpus>
+        <frame>
+            <FE fgColor="000000" bgColor="FFFFFF" type="Extra-Thematic" abbrev="" name="Beneficiary"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="co-p" name="Co-participant"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="Container" name="Container"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Cook" name="Cook"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Food" name="Food"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="Heat_instr" name="Heating_instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Med" name="Medium"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Temp" name="Temperature_setting"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: the process of cooking food by dry heat, typically in an oven</definition>
+    <lexeme POS="N" name="baking"/>
+    <valences>
+        <governor type="Sup" lemma="of">
+            <annoSet ID="6715255"/>
+        </governor>
+        <FERealization total="4">
+            <FE name="Container"/>
+            <pattern total="4">
+                <valenceUnit GF="" PT="INI" FE="Container"/>
+                <annoSet ID="6715171"/>
+                <annoSet ID="6715213"/>
+                <annoSet ID="6715247"/>
+                <annoSet ID="6715255"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Cook"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Cook"/>
+                <annoSet ID="6715213"/>
+            </pattern>
+            <pattern total="3">
+                <valenceUnit GF="Ext" PT="NP" FE="Cook"/>
+                <annoSet ID="6715171"/>
+                <annoSet ID="6715247"/>
+                <annoSet ID="6715255"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Food"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="NP" FE="Food"/>
+                <annoSet ID="6715213"/>
+                <annoSet ID="6715255"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Food"/>
+                <annoSet ID="6715247"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Food"/>
+                <annoSet ID="6715171"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Heating_instrument"/>
+            <pattern total="4">
+                <valenceUnit GF="" PT="INI" FE="Heating_instrument"/>
+                <annoSet ID="6715171"/>
+                <annoSet ID="6715213"/>
+                <annoSet ID="6715247"/>
+                <annoSet ID="6715255"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Purpose"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Purpose"/>
+                <annoSet ID="6715247"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Temperature_setting"/>
+            <pattern total="4">
+                <valenceUnit GF="" PT="INI" FE="Temperature_setting"/>
+                <annoSet ID="6715171"/>
+                <annoSet ID="6715213"/>
+                <annoSet ID="6715247"/>
+                <annoSet ID="6715255"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Container"/>
+            <FE name="Cook"/>
+            <FE name="Food"/>
+            <FE name="Heating_instrument"/>
+            <FE name="Purpose"/>
+            <FE name="Temperature_setting"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Container"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Cook"/>
+                <valenceUnit GF="" PT="INI" FE="Food"/>
+                <valenceUnit GF="" PT="INI" FE="Heating_instrument"/>
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Purpose"/>
+                <valenceUnit GF="" PT="INI" FE="Temperature_setting"/>
+                <annoSet ID="6715247"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="3">
+            <FE name="Container"/>
+            <FE name="Cook"/>
+            <FE name="Food"/>
+            <FE name="Heating_instrument"/>
+            <FE name="Temperature_setting"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Container"/>
+                <valenceUnit GF="" PT="INI" FE="Cook"/>
+                <valenceUnit GF="Dep" PT="NP" FE="Food"/>
+                <valenceUnit GF="" PT="INI" FE="Heating_instrument"/>
+                <valenceUnit GF="" PT="INI" FE="Temperature_setting"/>
+                <annoSet ID="6715213"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Container"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Cook"/>
+                <valenceUnit GF="Dep" PT="N" FE="Food"/>
+                <valenceUnit GF="" PT="INI" FE="Heating_instrument"/>
+                <valenceUnit GF="" PT="INI" FE="Temperature_setting"/>
+                <annoSet ID="6715171"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Container"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Cook"/>
+                <valenceUnit GF="Dep" PT="NP" FE="Food"/>
+                <valenceUnit GF="" PT="INI" FE="Heating_instrument"/>
+                <valenceUnit GF="" PT="INI" FE="Temperature_setting"/>
+                <annoSet ID="6715255"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-T-N-(1)"/>
+    <subCorpus name="01-N-T-(2)">
+        <sentence corpID="111" docID="421" sentNo="3" paragNo="46" aPos="77809776" ID="4187493">
+            <text>For the older ones this meant baby minding , potato peeling , biscuit baking .</text>
+            <annotationSet cDate="04/16/2015 01:55:20 PDT Thu" status="UNANN" ID="6715170">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="in"/>
+                    <label end="6" start="4" name="dt"/>
+                    <label end="12" start="8" name="jjr"/>
+                    <label end="17" start="14" name="nns"/>
+                    <label end="22" start="19" name="dt"/>
+                    <label end="28" start="24" name="VVN"/>
+                    <label end="33" start="30" name="nn"/>
+                    <label end="41" start="35" name="VVG"/>
+                    <label end="43" start="43" name=","/>
+                    <label end="50" start="45" name="nn"/>
+                    <label end="58" start="52" name="nn"/>
+                    <label end="60" start="60" name=","/>
+                    <label end="68" start="62" name="nn"/>
+                    <label end="75" start="70" name="VVG"/>
+                    <label end="77" start="77" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/16/2015 01:55:20 PDT Thu" status="MANUAL" ID="6715171">
+                <layer rank="1" name="Target">
+                    <label cBy="HPh" end="75" start="70" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="HPh" feID="2027" end="17" start="4" name="Cook"/>
+                    <label cBy="HPh" feID="2030" end="68" start="62" name="Food"/>
+                    <label cBy="HPh" feID="2063" itype="INI" name="Container"/>
+                    <label cBy="HPh" feID="2028" itype="INI" name="Heating_instrument"/>
+                    <label cBy="HPh" feID="2040" itype="INI" name="Temperature_setting"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="17" start="4" name="Ext"/>
+                    <label end="68" start="62" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="17" start="4" name="NP"/>
+                    <label end="68" start="62" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="421" sentNo="1" paragNo="452" aPos="76451135" ID="4187514">
+            <text>There are plenty of cake tins in this month 's equipment feature on page 68 to inspire creative cake baking .</text>
+            <annotationSet cDate="04/16/2015 01:55:24 PDT Thu" status="UNANN" ID="6715212">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="ex"/>
+                    <label end="8" start="6" name="vbp"/>
+                    <label end="15" start="10" name="rb"/>
+                    <label end="18" start="17" name="in"/>
+                    <label end="23" start="20" name="nn"/>
+                    <label end="28" start="25" name="nns"/>
+                    <label end="31" start="30" name="in"/>
+                    <label end="36" start="33" name="dt"/>
+                    <label end="42" start="38" name="nn"/>
+                    <label end="45" start="44" name="POS"/>
+                    <label end="55" start="47" name="nn"/>
+                    <label end="63" start="57" name="nn"/>
+                    <label end="66" start="65" name="in"/>
+                    <label end="71" start="68" name="nn"/>
+                    <label end="74" start="73" name="cd"/>
+                    <label end="77" start="76" name="to"/>
+                    <label end="85" start="79" name="VV"/>
+                    <label end="94" start="87" name="jj"/>
+                    <label end="99" start="96" name="nn"/>
+                    <label end="106" start="101" name="VVG"/>
+                    <label end="108" start="108" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/16/2015 01:55:24 PDT Thu" status="MANUAL" ID="6715213">
+                <layer rank="1" name="Target">
+                    <label cBy="HPh" end="106" start="101" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="HPh" feID="2030" end="99" start="87" name="Food"/>
+                    <label cBy="HPh" feID="2027" itype="INI" name="Cook"/>
+                    <label cBy="HPh" feID="2063" itype="INI" name="Container"/>
+                    <label cBy="HPh" feID="2028" itype="INI" name="Heating_instrument"/>
+                    <label cBy="HPh" feID="2040" itype="INI" name="Temperature_setting"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="99" start="87" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="99" start="87" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="01-Det-T-(3)">
+        <sentence corpID="111" docID="421" sentNo="1" paragNo="48" aPos="23137886" ID="4187531">
+            <text>When the elder members of the family began to die , Mrs Thwaites did most , if not all of the baking and catering for the funerals .</text>
+            <annotationSet cDate="04/16/2015 01:55:36 PDT Thu" status="UNANN" ID="6715246">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="wrb"/>
+                    <label end="7" start="5" name="dt"/>
+                    <label end="13" start="9" name="jjr"/>
+                    <label end="21" start="15" name="nns"/>
+                    <label end="24" start="23" name="in"/>
+                    <label end="28" start="26" name="dt"/>
+                    <label end="35" start="30" name="nn"/>
+                    <label end="41" start="37" name="VVD"/>
+                    <label end="44" start="43" name="to"/>
+                    <label end="48" start="46" name="VV"/>
+                    <label end="50" start="50" name=","/>
+                    <label end="54" start="52" name="nn"/>
+                    <label end="63" start="56" name="NP"/>
+                    <label end="67" start="65" name="VVD"/>
+                    <label end="72" start="69" name="jjs"/>
+                    <label end="74" start="74" name=","/>
+                    <label end="77" start="76" name="in"/>
+                    <label end="81" start="79" name="rb"/>
+                    <label end="85" start="83" name="dt"/>
+                    <label end="88" start="87" name="in"/>
+                    <label end="92" start="90" name="dt"/>
+                    <label end="99" start="94" name="VVG"/>
+                    <label end="103" start="101" name="cc"/>
+                    <label end="112" start="105" name="VVG"/>
+                    <label end="116" start="114" name="in"/>
+                    <label end="120" start="118" name="dt"/>
+                    <label end="129" start="122" name="nns"/>
+                    <label end="131" start="131" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/16/2015 01:55:37 PDT Thu" status="MANUAL" ID="6715247">
+                <layer rank="1" name="Target">
+                    <label cBy="HPh" end="99" start="94" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="HPh" feID="2027" end="63" start="52" name="Cook"/>
+                    <label cBy="HPh" feID="2034" end="129" start="114" name="Purpose"/>
+                    <label cBy="HPh" feID="2030" itype="INI" name="Food"/>
+                    <label cBy="HPh" feID="2063" itype="INI" name="Container"/>
+                    <label cBy="HPh" feID="2028" itype="INI" name="Heating_instrument"/>
+                    <label cBy="HPh" feID="2040" itype="INI" name="Temperature_setting"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="63" start="52" name="Ext"/>
+                    <label end="129" start="114" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="63" start="52" name="NP"/>
+                    <label end="129" start="114" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="421" sentNo="4" paragNo="1388" aPos="8267061" ID="4187535">
+            <text>The village was too peopled by women , fit only for the baking of cakes and arranging tombola stalls .</text>
+            <annotationSet cDate="04/16/2015 01:55:38 PDT Thu" status="UNANN" ID="6715254">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="10" start="4" name="nn"/>
+                    <label end="14" start="12" name="VBD"/>
+                    <label end="18" start="16" name="rb"/>
+                    <label end="26" start="20" name="VVN"/>
+                    <label end="29" start="28" name="in"/>
+                    <label end="35" start="31" name="nns"/>
+                    <label end="37" start="37" name=","/>
+                    <label end="41" start="39" name="VV"/>
+                    <label end="46" start="43" name="rb"/>
+                    <label end="50" start="48" name="in"/>
+                    <label end="54" start="52" name="dt"/>
+                    <label end="61" start="56" name="VVG"/>
+                    <label end="64" start="63" name="in"/>
+                    <label end="70" start="66" name="nns"/>
+                    <label end="74" start="72" name="cc"/>
+                    <label end="84" start="76" name="VVG"/>
+                    <label end="92" start="86" name="nn"/>
+                    <label end="99" start="94" name="nns"/>
+                    <label end="101" start="101" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/16/2015 01:55:38 PDT Thu" status="MANUAL" ID="6715255">
+                <layer rank="1" name="Target">
+                    <label cBy="HPh" end="61" start="56" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="HPh" feID="2027" end="35" start="31" name="Cook"/>
+                    <label cBy="HPh" feID="2030" end="70" start="66" name="Food"/>
+                    <label cBy="HPh" feID="2028" itype="INI" name="Heating_instrument"/>
+                    <label cBy="HPh" feID="2063" itype="INI" name="Container"/>
+                    <label cBy="HPh" feID="2040" itype="INI" name="Temperature_setting"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="35" start="31" name="Ext"/>
+                    <label end="70" start="66" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="35" start="31" name="NP"/>
+                    <label end="70" start="66" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="64" start="63" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

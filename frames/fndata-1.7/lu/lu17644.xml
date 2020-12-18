@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="store.v" ID="17644" frame="Containing" frameID="397" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_2" name="Fires_2" ID="25617"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Container" name="Container"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="Contents" name="Contents"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: To host contents. A container that is non-agentively hosting some contents is said to store said contents.</definition>
+    <lexeme POS="V" name="store"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Container"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Container"/>
+                <annoSet ID="6671503"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Contents"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Contents"/>
+                <annoSet ID="6671503"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Container"/>
+            <FE name="Contents"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Container"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Contents"/>
+                <annoSet ID="6671503"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25617" sentNo="1" paragNo="8" aPos="0" ID="4164993">
+            <text>So far there have been no injuries and no homes have yet been damaged , but one building storing equipment used by firefighters was burned to the ground .</text>
+            <annotationSet cDate="07/17/2014 11:43:36 PDT Thu" status="UNANN" ID="6669163">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="rb"/>
+                    <label end="5" start="3" name="rb"/>
+                    <label end="11" start="7" name="ex"/>
+                    <label end="16" start="13" name="VHP"/>
+                    <label end="21" start="18" name="VBN"/>
+                    <label end="24" start="23" name="dt"/>
+                    <label end="33" start="26" name="nns"/>
+                    <label end="37" start="35" name="cc"/>
+                    <label end="40" start="39" name="dt"/>
+                    <label end="46" start="42" name="nns"/>
+                    <label end="51" start="48" name="VHP"/>
+                    <label end="55" start="53" name="rb"/>
+                    <label end="60" start="57" name="VBN"/>
+                    <label end="68" start="62" name="VVN"/>
+                    <label end="70" start="70" name=","/>
+                    <label end="74" start="72" name="cc"/>
+                    <label end="78" start="76" name="cd"/>
+                    <label end="87" start="80" name="nn"/>
+                    <label end="95" start="89" name="VVG"/>
+                    <label end="105" start="97" name="nn"/>
+                    <label end="110" start="107" name="VVN"/>
+                    <label end="113" start="112" name="in"/>
+                    <label end="126" start="115" name="nns"/>
+                    <label end="130" start="128" name="VBD"/>
+                    <label end="137" start="132" name="VVN"/>
+                    <label end="140" start="139" name="to"/>
+                    <label end="144" start="142" name="dt"/>
+                    <label end="151" start="146" name="nn"/>
+                    <label end="153" start="153" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="11" start="7" name="NT"/>
+                    <label end="16" start="13" name="NT"/>
+                    <label end="21" start="18" name="NT"/>
+                    <label end="24" start="23" name="NT"/>
+                    <label end="37" start="35" name="NT"/>
+                    <label end="40" start="39" name="NT"/>
+                    <label end="51" start="48" name="NT"/>
+                    <label end="55" start="53" name="NT"/>
+                    <label end="60" start="57" name="NT"/>
+                    <label end="70" start="70" name="NT"/>
+                    <label end="74" start="72" name="NT"/>
+                    <label end="78" start="76" name="NT"/>
+                    <label end="113" start="112" name="NT"/>
+                    <label end="130" start="128" name="NT"/>
+                    <label end="140" start="139" name="NT"/>
+                    <label end="144" start="142" name="NT"/>
+                    <label end="153" start="153" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/21/2014 03:45:54 PDT Mon" status="MANUAL" ID="6671503">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="95" start="89" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="3563" end="126" start="97" name="Contents"/>
+                    <label cBy="MJE" feID="3562" end="87" start="76" name="Container"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="126" start="97" name="Obj"/>
+                    <label end="87" start="76" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="126" start="97" name="NP"/>
+                    <label end="87" start="76" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

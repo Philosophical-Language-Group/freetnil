@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="pursue.v" ID="13416" frame="Seeking_to_achieve" frameID="1480" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Nuclear" name="Iran_Nuclear" ID="23511"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="age" name="Agent"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Extra-Thematic" abbrev="" name="Beneficiary"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="Cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Means" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="out" name="Outcome"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="sou" name="Sought_entity"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Extra-Thematic" abbrev="src" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Core" abbrev="soa" name="State_of_affairs"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: seek to attain (a goal).</definition>
+    <lexeme POS="V" name="pursue"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <annoSet ID="6540215"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="State_of_affairs"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="State_of_affairs"/>
+                <annoSet ID="6540215"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="State_of_affairs"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="Obj" PT="NP" FE="State_of_affairs"/>
+                <annoSet ID="6540215"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23511" sentNo="1" paragNo="23" aPos="0" ID="4096659">
+            <text>Concurrently , the United States along with some other IAEA board members has continued to maintain that Iran is pursuing an underground nuclear weapons program .</text>
+            <annotationSet cDate="02/23/2005 06:30:57 PST Wed" status="UNANN" ID="6522193">
+                <layer rank="1" name="PENN">
+                    <label end="11" start="0" name="rb"/>
+                    <label end="13" start="13" name=","/>
+                    <label end="17" start="15" name="dt"/>
+                    <label end="24" start="19" name="NP"/>
+                    <label end="31" start="26" name="NPS"/>
+                    <label end="37" start="33" name="in"/>
+                    <label end="42" start="39" name="in"/>
+                    <label end="47" start="44" name="dt"/>
+                    <label end="53" start="49" name="jj"/>
+                    <label end="58" start="55" name="nn"/>
+                    <label end="64" start="60" name="nn"/>
+                    <label end="72" start="66" name="nns"/>
+                    <label end="76" start="74" name="VHZ"/>
+                    <label end="86" start="78" name="VVN"/>
+                    <label end="89" start="88" name="to"/>
+                    <label end="98" start="91" name="VV"/>
+                    <label end="103" start="100" name="in"/>
+                    <label end="108" start="105" name="NP"/>
+                    <label end="111" start="110" name="VBZ"/>
+                    <label end="120" start="113" name="VVG"/>
+                    <label end="123" start="122" name="dt"/>
+                    <label end="135" start="125" name="jj"/>
+                    <label end="143" start="137" name="jj"/>
+                    <label end="151" start="145" name="nns"/>
+                    <label end="159" start="153" name="nn"/>
+                    <label end="161" start="161" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="108" start="105" name="GPE"/>
+                    <label end="31" start="15" name="GPE"/>
+                    <label end="64" start="55" name="organization"/>
+                    <label end="151" start="137" name="WEA"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="13" start="13" name="NT"/>
+                    <label end="17" start="15" name="NT"/>
+                    <label end="24" start="19" name="NT"/>
+                    <label end="31" start="26" name="NT"/>
+                    <label end="47" start="44" name="NT"/>
+                    <label end="89" start="88" name="NT"/>
+                    <label end="103" start="100" name="NT"/>
+                    <label end="108" start="105" name="NT"/>
+                    <label end="123" start="122" name="NT"/>
+                    <label end="161" start="161" name="NT"/>
+                    <label end="11" start="0" name="NT"/>
+                    <label end="76" start="74" name="NT"/>
+                    <label end="111" start="110" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/05/2007 01:00:13 PST Mon" status="MANUAL" ID="6540215">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="120" start="113" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="8060" end="108" start="105" name="Agent"/>
+                    <label cBy="KmG" feID="8071" end="159" start="122" name="State_of_affairs"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="108" start="105" name="Ext"/>
+                    <label end="159" start="122" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="108" start="105" name="NP"/>
+                    <label end="159" start="122" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

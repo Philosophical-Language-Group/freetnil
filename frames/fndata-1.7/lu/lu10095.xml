@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Origin" POS="N" name="American [N and S Am].n" ID="10095" frame="People_by_origin" frameID="974" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Ticket Splitting" name="TicketSplitting" ID="23012"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Age" name="Age"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Peripheral" abbrev="coa" name="Context_of_acquaintance"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Eth" name="Ethnicity"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Ori" name="Origin"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Pers_char" name="Persistent_characteristic"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Person" name="Person"/>
+        </frame>
+    </header>
+    <definition>COD: a native or inhabitant of any of the countries of North, South, or Central America.</definition>
+    <lexeme POS="N" name="american"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Origin"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Origin"/>
+                <annoSet ID="4529521"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Origin"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Origin"/>
+                <annoSet ID="4529521"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23012" sentNo="2" paragNo="3" aPos="0" ID="2824382">
+            <text>A simple economic theory may provide at least a partial explanation for the split personality displayed by Americans in the voting booth .</text>
+            <annotationSet cDate="02/05/2004 08:30:18 PST Thu" status="UNANN" ID="4528377">
+                <layer rank="1" name="PENN">
+                    <label end="0" start="0" name="dt"/>
+                    <label end="7" start="2" name="jj"/>
+                    <label end="16" start="9" name="jj"/>
+                    <label end="23" start="18" name="nn"/>
+                    <label end="27" start="25" name="md"/>
+                    <label end="35" start="29" name="VV"/>
+                    <label end="38" start="37" name="in"/>
+                    <label end="44" start="40" name="jjs"/>
+                    <label end="46" start="46" name="dt"/>
+                    <label end="54" start="48" name="jj"/>
+                    <label end="66" start="56" name="nn"/>
+                    <label end="70" start="68" name="in"/>
+                    <label end="74" start="72" name="dt"/>
+                    <label end="80" start="76" name="nn"/>
+                    <label end="92" start="82" name="nn"/>
+                    <label end="102" start="94" name="VVN"/>
+                    <label end="105" start="104" name="in"/>
+                    <label end="115" start="107" name="nns"/>
+                    <label end="118" start="117" name="in"/>
+                    <label end="122" start="120" name="dt"/>
+                    <label end="129" start="124" name="nn"/>
+                    <label end="135" start="131" name="nn"/>
+                    <label end="137" start="137" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="115" start="107" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="137" start="137" name="NT"/>
+                    <label end="0" start="0" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="46" start="46" name="NT"/>
+                    <label end="70" start="68" name="NT"/>
+                    <label end="74" start="72" name="NT"/>
+                    <label end="105" start="104" name="NT"/>
+                    <label end="122" start="120" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/27/2004 11:29:49 PDT Tue" status="MANUAL" ID="4529521">
+                <layer rank="1" name="Target">
+                    <label cBy="CHg" end="115" start="107" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CHg" feID="5943" end="115" start="107" name="Origin"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

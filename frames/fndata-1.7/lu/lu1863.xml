@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Needs_SCs" POS="V" name="sway.v" ID="1863" frame="Suasion" frameID="89" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Add" name="Addressee"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Cont" name="Content"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Spkr" name="Speaker"/>
+            <FE fgColor="006400" bgColor="FFFF00" type="Core" abbrev="Text" name="Text"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Top" name="Topic"/>
+        </frame>
+    </header>
+    <definition>COD: cause to change in opinion, action, etc.; influence. </definition>
+    <lexeme POS="V" name="sway"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Addressee"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Addressee"/>
+                <annoSet ID="6763724"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Content"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Content"/>
+                <annoSet ID="6763724"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Speaker"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Speaker"/>
+                <annoSet ID="6763724"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Addressee"/>
+            <FE name="Content"/>
+            <FE name="Speaker"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Addressee"/>
+                <valenceUnit GF="" PT="DNI" FE="Content"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Speaker"/>
+                <annoSet ID="6763724"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence sentNo="0" aPos="15973396" ID="89935">
+            <text>But after failing to sway villagers attending the annual meeting , he allowed himself to comment : ` Well , all I can say is good luck to you and your children . &quot;  </text>
+            <annotationSet cDate="01/06/2003 06:10:54 PST Mon" status="UNANN" ID="18598">
+                <layer rank="1" name="BNC">
+                    <label end="2" start="0" name="CJC"/>
+                    <label end="8" start="4" name="PRP"/>
+                    <label end="16" start="10" name="VVG"/>
+                    <label end="19" start="18" name="TO0"/>
+                    <label end="24" start="21" name="VVI"/>
+                    <label end="34" start="26" name="NN2"/>
+                    <label end="44" start="36" name="VVG"/>
+                    <label end="48" start="46" name="AT0"/>
+                    <label end="55" start="50" name="AJ0"/>
+                    <label end="63" start="57" name="NN1"/>
+                    <label end="65" start="65" name="PUN"/>
+                    <label end="68" start="67" name="PNP"/>
+                    <label end="76" start="70" name="VVD"/>
+                    <label end="84" start="78" name="PNX"/>
+                    <label end="87" start="86" name="TO0"/>
+                    <label end="95" start="89" name="VVI"/>
+                    <label end="97" start="97" name="PUN"/>
+                    <label end="99" start="99" name="PUQ"/>
+                    <label end="104" start="101" name="AV0"/>
+                    <label end="106" start="106" name="PUN"/>
+                    <label end="110" start="108" name="DT0"/>
+                    <label end="112" start="112" name="PNP"/>
+                    <label end="116" start="114" name="VM0"/>
+                    <label end="120" start="118" name="VVI"/>
+                    <label end="123" start="122" name="VBZ"/>
+                    <label end="128" start="125" name="AJ0"/>
+                    <label end="133" start="130" name="NN1"/>
+                    <label end="136" start="135" name="PRP"/>
+                    <label end="140" start="138" name="PNP"/>
+                    <label end="144" start="142" name="CJC"/>
+                    <label end="149" start="146" name="DPS"/>
+                    <label end="158" start="151" name="NN2"/>
+                    <label end="160" start="160" name="PUN"/>
+                    <label end="162" start="162" name="PUQ"/>
+                    <label end="163" start="164" name="PUQ"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="11/17/2015 06:54:42 PST Tue" status="MANUAL" ID="6763724">
+                <layer rank="1" name="Target">
+                    <label cBy="HPh" end="24" start="21" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="HPh" feID="411" end="63" start="26" name="Addressee"/>
+                    <label cBy="HPh" feID="412" end="68" start="67" name="Speaker"/>
+                    <label cBy="HPh" feID="413" itype="DNI" name="Content"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="63" start="26" name="Obj"/>
+                    <label end="68" start="67" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="63" start="26" name="NP"/>
+                    <label end="68" start="67" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

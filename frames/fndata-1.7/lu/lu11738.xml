@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="proof.n" ID="11738" frame="Evidence" frameID="25" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Biological" name="Iran_Biological" ID="23513"/>
+        </corpus>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Depict" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="doma" name="Domain_of_relevance"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Prp" name="Proposition"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="Result" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Sup" name="Support"/>
+        </frame>
+    </header>
+    <definition>COD: evidence establishing a fact or the truth of a statement.</definition>
+    <lexeme POS="N" name="proof"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Manner"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Manner"/>
+                <annoSet ID="6525866"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Proposition"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Proposition"/>
+                <annoSet ID="6525866"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="PP[of]" FE="Proposition"/>
+                <annoSet ID="6645717"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Support"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Support"/>
+                <annoSet ID="6525866"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Manner"/>
+            <FE name="Proposition"/>
+            <FE name="Support"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Manner"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Proposition"/>
+                <valenceUnit GF="" PT="DEN" FE="Support"/>
+                <annoSet ID="6525866"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Proposition"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="PP[of]" FE="Proposition"/>
+                <annoSet ID="6645717"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23513" sentNo="1" paragNo="16" aPos="0" ID="4096934">
+            <text>Research of publicly released information from Iranian scientific institutions shows no concrete proof of an offensive BW program .</text>
+            <annotationSet cDate="02/25/2005 12:37:33 PST Fri" status="UNANN" ID="6522599">
+                <layer rank="1" name="PENN">
+                    <label end="7" start="0" name="nn"/>
+                    <label end="10" start="9" name="in"/>
+                    <label end="19" start="12" name="rb"/>
+                    <label end="28" start="21" name="VVN"/>
+                    <label end="40" start="30" name="nn"/>
+                    <label end="45" start="42" name="in"/>
+                    <label end="53" start="47" name="jj"/>
+                    <label end="64" start="55" name="jj"/>
+                    <label end="77" start="66" name="nns"/>
+                    <label end="83" start="79" name="VVZ"/>
+                    <label end="86" start="85" name="dt"/>
+                    <label end="95" start="88" name="jj"/>
+                    <label end="101" start="97" name="nn"/>
+                    <label end="104" start="103" name="in"/>
+                    <label end="107" start="106" name="dt"/>
+                    <label end="117" start="109" name="jj"/>
+                    <label end="120" start="119" name="NP"/>
+                    <label end="128" start="122" name="nn"/>
+                    <label end="130" start="130" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="77" start="47" name="FAC"/>
+                    <label end="120" start="119" name="WEA"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="10" start="9" name="NT"/>
+                    <label end="45" start="42" name="NT"/>
+                    <label end="86" start="85" name="NT"/>
+                    <label end="104" start="103" name="NT"/>
+                    <label end="107" start="106" name="NT"/>
+                    <label end="130" start="130" name="NT"/>
+                    <label end="19" start="12" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="05/24/2005 10:03:27 PDT Tue" status="MANUAL" ID="6525866">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="101" start="97" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="1020" end="95" start="88" name="Manner"/>
+                    <label cBy="RLG" feID="108" end="128" start="103" name="Proposition"/>
+                    <label cBy="RLG" feID="107" end="101" start="97" name="Support"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="95" start="88" name="Dep"/>
+                    <label end="128" start="103" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="95" start="88" name="AJP"/>
+                    <label end="128" start="103" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="175" docID="25343" sentNo="7" paragNo="20" aPos="0" ID="4148371">
+            <text>The proof of this lies in the fact that it was H E who had arranged for the presence of Scott Eccles , which could only have been done for the purpose of an alibi .</text>
+            <annotationSet cDate="04/30/2013 05:18:49 PDT Tue" status="UNANN" ID="6645715">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="8" start="4" name="nn"/>
+                    <label end="11" start="10" name="in"/>
+                    <label end="16" start="13" name="dt"/>
+                    <label end="21" start="18" name="VBZ"/>
+                    <label end="24" start="23" name="in"/>
+                    <label end="28" start="26" name="dt"/>
+                    <label end="33" start="30" name="nn"/>
+                    <label end="38" start="35" name="in"/>
+                    <label end="41" start="40" name="PRP"/>
+                    <label end="45" start="43" name="VBD"/>
+                    <label end="47" start="47" name="NNP"/>
+                    <label end="49" start="49" name="NNP"/>
+                    <label end="53" start="51" name="wp"/>
+                    <label end="57" start="55" name="VBD"/>
+                    <label end="66" start="59" name="VBN"/>
+                    <label end="70" start="68" name="in"/>
+                    <label end="74" start="72" name="dt"/>
+                    <label end="83" start="76" name="nn"/>
+                    <label end="86" start="85" name="in"/>
+                    <label end="92" start="88" name="NNP"/>
+                    <label end="99" start="94" name="NNP"/>
+                    <label end="107" start="103" name="wdt"/>
+                    <label end="113" start="109" name="md"/>
+                    <label end="118" start="115" name="rb"/>
+                    <label end="123" start="120" name="vb"/>
+                    <label end="128" start="125" name="VBN"/>
+                    <label end="133" start="130" name="VBN"/>
+                    <label end="137" start="135" name="in"/>
+                    <label end="141" start="139" name="dt"/>
+                    <label end="149" start="143" name="nn"/>
+                    <label end="152" start="151" name="in"/>
+                    <label end="155" start="154" name="dt"/>
+                    <label end="161" start="157" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:18:50 PDT Tue" status="MANUAL" ID="6645717">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="8" start="4" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="108" end="16" start="10" name="Proposition"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="16" start="10" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="16" start="10" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

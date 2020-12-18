@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="ouster.n" ID="18701" frame="Change_of_leadership" frameID="72" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="Examples4-5" name="Examples4-5" ID="25743"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Core" abbrev="bod" name="Body"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Core" abbrev="" name="Function"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Ldr_N" name="New_leader"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Ldr_O" name="Old_leader"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Ord_O" name="Old_order"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="Result" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="Role" name="Role"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Slctr" name="Selector"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: A situation in which a person holding some office is removed from that office abruptly. This term usually implies that regular proceedure is not followed, and some degree of force or coercion is used. Takes the FE Old_leader in a PP[of].</definition>
+    <lexeme POS="N" name="ouster"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Old_leader"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Old_leader"/>
+                <annoSet ID="6774191"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Selector"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Selector"/>
+                <annoSet ID="6774191"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Time"/>
+                <annoSet ID="6774191"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Old_leader"/>
+            <FE name="Selector"/>
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Old_leader"/>
+                <valenceUnit GF="" PT="CNI" FE="Selector"/>
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Time"/>
+                <annoSet ID="6774191"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25743" sentNo="1" paragNo="8" aPos="0" ID="4217214">
+            <text>The renewed investigation of Morsi and members of the Muslim Brotherhood dates to the uprising that led to the ouster of Mubarak in 2011 .</text>
+            <annotationSet cDate="06/03/2016 05:15:29 PDT Fri" status="UNANN" ID="6774135">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="10" start="4" name="jj"/>
+                    <label end="24" start="12" name="nn"/>
+                    <label end="27" start="26" name="in"/>
+                    <label end="33" start="29" name="NP"/>
+                    <label end="37" start="35" name="cc"/>
+                    <label end="45" start="39" name="nns"/>
+                    <label end="48" start="47" name="in"/>
+                    <label end="52" start="50" name="dt"/>
+                    <label end="59" start="54" name="NP"/>
+                    <label end="71" start="61" name="NP"/>
+                    <label end="77" start="73" name="VVZ"/>
+                    <label end="80" start="79" name="to"/>
+                    <label end="84" start="82" name="dt"/>
+                    <label end="93" start="86" name="nn"/>
+                    <label end="98" start="95" name="wdt"/>
+                    <label end="102" start="100" name="VVD"/>
+                    <label end="105" start="104" name="to"/>
+                    <label end="109" start="107" name="dt"/>
+                    <label end="116" start="111" name="nn"/>
+                    <label end="119" start="118" name="in"/>
+                    <label end="127" start="121" name="NP"/>
+                    <label end="130" start="129" name="in"/>
+                    <label end="135" start="132" name="cd"/>
+                    <label end="137" start="137" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="33" start="29" name="person"/>
+                    <label end="71" start="54" name="organization"/>
+                    <label end="127" start="121" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="27" start="26" name="NT"/>
+                    <label end="33" start="29" name="NT"/>
+                    <label end="37" start="35" name="NT"/>
+                    <label end="48" start="47" name="NT"/>
+                    <label end="52" start="50" name="NT"/>
+                    <label end="59" start="54" name="NT"/>
+                    <label end="71" start="61" name="NT"/>
+                    <label end="80" start="79" name="NT"/>
+                    <label end="84" start="82" name="NT"/>
+                    <label end="98" start="95" name="NT"/>
+                    <label end="105" start="104" name="NT"/>
+                    <label end="109" start="107" name="NT"/>
+                    <label end="119" start="118" name="NT"/>
+                    <label end="127" start="121" name="NT"/>
+                    <label end="130" start="129" name="NT"/>
+                    <label end="135" start="132" name="NT"/>
+                    <label end="137" start="137" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/04/2016 06:05:58 PDT Sat" status="MANUAL" ID="6774191">
+                <layer rank="1" name="Target">
+                    <label cBy="CFB" end="116" start="111" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CFB" feID="344" end="127" start="118" name="Old_leader"/>
+                    <label cBy="CFB" feID="4790" end="135" start="129" name="Time"/>
+                    <label cBy="MJE" feID="343" itype="CNI" name="Selector"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="127" start="118" name="Dep"/>
+                    <label end="135" start="129" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="127" start="118" name="PP"/>
+                    <label end="135" start="129" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="skeptical.a" ID="14303" frame="Certainty" frameID="141" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="CNN_ENG_20030614_173123.4-NEW-1" name="CNN_ENG_20030614_173123.4-NEW-1" ID="23726"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Cognizer" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="" name="Concessive"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Content" name="Content"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Exr" name="Expressor"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Topic" name="Topic"/>
+        </frame>
+    </header>
+    <definition>FN: reserving judgement as to the truth of.</definition>
+    <lexeme POS="A" name="skeptical"/>
+    <semType name="Negative" ID="99"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <annoSet ID="6546724"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Content"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Content"/>
+                <annoSet ID="6546724"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="Content"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <valenceUnit GF="" PT="DNI" FE="Content"/>
+                <annoSet ID="6546724"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23726" sentNo="5" paragNo="8" aPos="0" ID="4101829">
+            <text>Conservative israelis are skeptical .</text>
+            <annotationSet cDate="08/15/2007 04:07:12 PDT Wed" status="UNANN" ID="6545587">
+                <layer rank="1" name="PENN">
+                    <label end="11" start="0" name="jj"/>
+                    <label end="20" start="13" name="nns"/>
+                    <label end="24" start="22" name="vbp"/>
+                    <label end="34" start="26" name="jj"/>
+                    <label end="36" start="36" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="24" start="22" name="NT"/>
+                    <label end="36" start="36" name="NT"/>
+                    <label end="20" start="13" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/21/2007 02:02:14 PDT Tue" status="MANUAL" ID="6546724">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="34" start="26" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="1091" end="20" start="0" name="Cognizer"/>
+                    <label cBy="KmG" feID="1093" itype="DNI" name="Content"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="20" start="0" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="20" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="24" start="22" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

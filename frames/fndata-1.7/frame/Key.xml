@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="PKe" cDate="05/15/2012 04:32:20 PDT Tue" name="Key" ID="2743" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;This frame is for objects, physical or otherwise, which are used to grant access to some location or function.
+
+&lt;ex&gt;&lt;fex name="Creator"&gt;Robert's&lt;/fex&gt; &lt;fex name="Type"&gt;master&lt;/fex&gt; &lt;t&gt;keycard&lt;/t&gt; &lt;fex name="Function"&gt;opens any door in the building&lt;/fex&gt;.&lt;/ex&gt;
+
+&lt;ex&gt;Robert's master &lt;t&gt;keycard&lt;/t&gt; opens &lt;fex name="Object"&gt;any door in the building&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    <FE bgColor="FF69B4" fgColor="FFFFFF" coreType="Core" cBy="PKe" cDate="05/15/2012 04:32:20 PDT Tue" abbrev="Key" name="Key" ID="15694">
+        <definition>&lt;def-root&gt;This FE identifies the object that is designed to grant access to a location or function. This is the target LU, and this frame element is incorporated into each of this frame's LUs.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="9400D3" fgColor="FFFFFF" coreType="Core" cBy="PKe" cDate="05/15/2012 04:32:20 PDT Tue" abbrev="fun" name="Function" ID="15695">
+        <definition>&lt;def-root&gt;The function that the &lt;fen&gt;Key&lt;/fen&gt; grants access to.
+
+&lt;ex&gt;Hand me the &lt;t&gt;key&lt;/t&gt; &lt;fex name="Function"&gt;that opens the garage&lt;/fex&gt;.&lt;/ex&gt;
+
+&lt;ex&gt;This &lt;t&gt;password&lt;/t&gt; &lt;fex name="Function"&gt;allows access to the website&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="PKe" cDate="05/15/2012 04:32:20 PDT Tue" abbrev="" name="Creator" ID="15696">
+        <definition>&lt;def-root&gt;An individual or individuals that bring the &lt;fen&gt;Key&lt;/fen&gt; into existence.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="PKe" cDate="05/15/2012 04:32:20 PDT Tue" abbrev="" name="Time_of_creation" ID="15697">
+        <definition>&lt;def-root&gt;The time at which an &lt;fen&gt;Key&lt;/fen&gt; comes into existence.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="PKe" cDate="05/15/2012 04:32:20 PDT Tue" abbrev="" name="Name" ID="15698">
+        <definition>&lt;def-root&gt;The term used to refer to an &lt;fen&gt;Key&lt;/fen&gt;.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="00008B" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="PKe" cDate="05/15/2012 04:32:20 PDT Tue" abbrev="" name="Type" ID="15699">
+        <definition>&lt;def-root&gt;An indication of the subtype of &lt;fen&gt;Key&lt;/fen&gt;, often denoting the kind of device that the key operates on.
+
+&lt;ex&gt;Is that a &lt;fex name="Type"&gt;skeleton&lt;/fex&gt; &lt;t&gt;key&lt;/t&gt;?&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="A9A9A9" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="PKe" cDate="05/15/2012 04:32:21 PDT Tue" abbrev="" name="Material" ID="15700">
+        <definition>&lt;def-root&gt;Any indication of what makes up the &lt;fen&gt;Key&lt;/fen&gt;, including components, ingredients, etc.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="A52A2A" fgColor="FFFFFF" coreType="Core" cBy="PKe" cDate="05/15/2012 04:48:32 PDT Tue" abbrev="loc" name="Location" ID="15701">
+        <definition>&lt;def-root&gt;The location that the &lt;fen&gt;Key&lt;/fen&gt; grants access to.
+
+&lt;ex&gt;These are the &lt;t&gt;keys&lt;/t&gt; &lt;fex name="Location"&gt;to the house&lt;/fex&gt;.&lt;/ex&gt;
+
+&lt;ex&gt;I lost my &lt;fex name="Location"&gt;office&lt;/fex&gt; &lt;t&gt;keycard&lt;/t&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="2E8B57" fgColor="FFFFFF" coreType="Core" cBy="PKe" cDate="06/06/2012 02:56:13 PDT Wed" abbrev="obj" name="Object" ID="15730">
+        <definition>&lt;def-root&gt;The artifact that the key operates on.
+
+&lt;ex&gt;My &lt;fex name="Object"&gt;car&lt;/fex&gt; &lt;t&gt;keys&lt;/t&gt; are locked inside.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FEcoreSet>
+        <memberFE name="Function" ID="15695"/>
+        <memberFE name="Location" ID="15701"/>
+        <memberFE name="Object" ID="15730"/>
+    </FEcoreSet>
+    <frameRelation type="Inherits from">
+        <relatedFrame ID="421">Artifact</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses"/>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="Created" incorporatedFE="Key" POS="N" name="key.n" ID="17076" lemmaID="21265" cBy="PKe" cDate="05/15/2012 04:44:35 PDT Tue">
+        <definition>FN: a metal object used for locking or unlocking barriers to physical locations, or for initiating functions of some device.</definition>
+        <sentenceCount annotated="2" total="2"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="key"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Key" POS="N" name="combination.n" ID="17077" lemmaID="7267" cBy="PKe" cDate="05/15/2012 04:52:59 PDT Tue">
+        <definition>FN: A set of operations or sequence of symbols that can be input into a device to unlock a location or function.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="combination"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Key" POS="N" name="password.n" ID="17078" lemmaID="27981" cBy="PKe" cDate="05/15/2012 04:54:51 PDT Tue">
+        <definition>FN: A sequence of characters that can be used to grant access to a physical or digital location.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="password"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Key" POS="N" name="passcard.n" ID="17079" lemmaID="51530" cBy="PKe" cDate="05/15/2012 04:56:17 PDT Tue">
+        <definition>FN: A physical card that allows access to a location or function.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="N" name="passcard"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Key" POS="N" name="keycard.n" ID="17080" lemmaID="51531" cBy="PKe" cDate="05/15/2012 04:57:43 PDT Tue">
+        <definition>FN: A physical card that allows access to a location or function; a passcard.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="N" name="keycard"/>
+    </lexUnit>
+</frame>

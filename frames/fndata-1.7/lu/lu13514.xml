@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="rest.v" ID="13514" frame="State_continue" frameID="1155" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Jerusalem" name="HistoryOfJerusalem" ID="23647"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="ent" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core-Unexpressed" abbrev="sta" name="State"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: remain in a particular location, especially after having been placed there.</definition>
+    <lexeme POS="V" name="rest"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Duration"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[until]" FE="Duration"/>
+                <annoSet ID="6538782"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <annoSet ID="6538782"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Place"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Place"/>
+                <annoSet ID="6538782"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Duration"/>
+            <FE name="Entity"/>
+            <FE name="Place"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[until]" FE="Duration"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <valenceUnit GF="Dep" PT="AVP" FE="Place"/>
+                <annoSet ID="6538782"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23647" sentNo="3" paragNo="5" aPos="0" ID="4100327">
+            <text>There the Ark rested until it was placed in the Temple , built in approximately 960 b.c. on Mt. Moriah , the high point at the northern end of the city .</text>
+            <annotationSet cDate="09/29/2006 11:00:20 PDT Fri" status="UNANN" ID="6538407">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="rb"/>
+                    <label end="8" start="6" name="dt"/>
+                    <label end="12" start="10" name="NP"/>
+                    <label end="19" start="14" name="VVD"/>
+                    <label end="25" start="21" name="in"/>
+                    <label end="28" start="27" name="PP"/>
+                    <label end="32" start="30" name="VBD"/>
+                    <label end="39" start="34" name="VVN"/>
+                    <label end="42" start="41" name="in"/>
+                    <label end="46" start="44" name="dt"/>
+                    <label end="53" start="48" name="NP"/>
+                    <label end="55" start="55" name=","/>
+                    <label end="61" start="57" name="VVN"/>
+                    <label end="64" start="63" name="in"/>
+                    <label end="78" start="66" name="rb"/>
+                    <label end="82" start="80" name="cd"/>
+                    <label end="87" start="84" name="nn"/>
+                    <label end="90" start="89" name="in"/>
+                    <label end="94" start="92" name="NP"/>
+                    <label end="101" start="96" name="NP"/>
+                    <label end="103" start="103" name=","/>
+                    <label end="107" start="105" name="dt"/>
+                    <label end="112" start="109" name="jj"/>
+                    <label end="118" start="114" name="nn"/>
+                    <label end="121" start="120" name="in"/>
+                    <label end="125" start="123" name="dt"/>
+                    <label end="134" start="127" name="jj"/>
+                    <label end="138" start="136" name="nn"/>
+                    <label end="141" start="140" name="in"/>
+                    <label end="145" start="143" name="dt"/>
+                    <label end="150" start="147" name="nn"/>
+                    <label end="152" start="152" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="12" start="10" name="organization"/>
+                    <label end="101" start="92" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="8" start="6" name="NT"/>
+                    <label end="12" start="10" name="NT"/>
+                    <label end="28" start="27" name="NT"/>
+                    <label end="32" start="30" name="NT"/>
+                    <label end="46" start="44" name="NT"/>
+                    <label end="55" start="55" name="NT"/>
+                    <label end="82" start="80" name="NT"/>
+                    <label end="94" start="92" name="NT"/>
+                    <label end="101" start="96" name="NT"/>
+                    <label end="103" start="103" name="NT"/>
+                    <label end="107" start="105" name="NT"/>
+                    <label end="125" start="123" name="NT"/>
+                    <label end="145" start="143" name="NT"/>
+                    <label end="152" start="152" name="NT"/>
+                    <label end="42" start="41" name="NT"/>
+                    <label end="141" start="140" name="NT"/>
+                    <label end="87" start="84" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/13/2006 03:53:58 PDT Fri" status="MANUAL" ID="6538782">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="19" start="14" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="6680" end="4" start="0" name="Place"/>
+                    <label cBy="KmG" feID="6677" end="12" start="6" name="Entity"/>
+                    <label cBy="KmG" feID="9173" end="150" start="21" name="Duration"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="4" start="0" name="Dep"/>
+                    <label end="12" start="6" name="Ext"/>
+                    <label end="150" start="21" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="4" start="0" name="AVP"/>
+                    <label end="12" start="6" name="NP"/>
+                    <label end="150" start="21" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

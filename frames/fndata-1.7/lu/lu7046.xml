@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="helpful.a" ID="7046" frame="Assistance" frameID="391" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Polemic Progressive Education" name="PolemicProgressiveEducation" ID="23011"/>
+        </corpus>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Nuclear" name="Iran_Nuclear" ID="23511"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Hong Kong" name="IntroHongKong" ID="23757"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Ben" name="Benefited_party"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="dom" name="Domain"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Focal_e" name="Focal_entity"/>
+            <FE fgColor="000000" bgColor="FFD700" type="Extra-Thematic" abbrev="" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Goal" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Help" name="Helper"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD73" type="Peripheral" abbrev="ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="P" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: giving or ready to give help. </definition>
+    <lexeme POS="A" name="helpful"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Benefited_party"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="INI" FE="Benefited_party"/>
+                <annoSet ID="4531412"/>
+                <annoSet ID="6553118"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Goal"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Goal"/>
+                <annoSet ID="6522995"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Helper"/>
+            <pattern total="3">
+                <valenceUnit GF="Ext" PT="NP" FE="Helper"/>
+                <annoSet ID="4531412"/>
+                <annoSet ID="6522995"/>
+                <annoSet ID="6553118"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Benefited_party"/>
+            <FE name="Helper"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="INI" FE="Benefited_party"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Helper"/>
+                <annoSet ID="4531412"/>
+                <annoSet ID="6553118"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Goal"/>
+            <FE name="Helper"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Goal"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Helper"/>
+                <annoSet ID="6522995"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23011" sentNo="1" paragNo="10" aPos="0" ID="2824336">
+            <text>In this respect , it would be helpful if our political leaders were mute , rather than eloquently `` concerned .</text>
+            <annotationSet cDate="02/05/2004 08:30:03 PST Thu" status="UNANN" ID="4528331">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="6" start="3" name="dt"/>
+                    <label end="14" start="8" name="nn"/>
+                    <label end="16" start="16" name=","/>
+                    <label end="19" start="18" name="PP"/>
+                    <label end="25" start="21" name="md"/>
+                    <label end="28" start="27" name="vb"/>
+                    <label end="36" start="30" name="jj"/>
+                    <label end="39" start="38" name="in"/>
+                    <label end="43" start="41" name="PP$"/>
+                    <label end="53" start="45" name="jj"/>
+                    <label end="61" start="55" name="nns"/>
+                    <label end="66" start="63" name="VBD"/>
+                    <label end="71" start="68" name="jj"/>
+                    <label end="73" start="73" name=","/>
+                    <label end="80" start="75" name="rb"/>
+                    <label end="85" start="82" name="in"/>
+                    <label end="96" start="87" name="rb"/>
+                    <label end="99" start="98" name="``"/>
+                    <label end="109" start="101" name="VVN"/>
+                    <label end="111" start="111" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="16" start="16" name="NT"/>
+                    <label end="28" start="27" name="NT"/>
+                    <label end="66" start="63" name="NT"/>
+                    <label end="73" start="73" name="NT"/>
+                    <label end="80" start="75" name="NT"/>
+                    <label end="96" start="87" name="NT"/>
+                    <label end="99" start="98" name="NT"/>
+                    <label end="111" start="111" name="NT"/>
+                    <label end="1" start="0" name="NT"/>
+                    <label end="6" start="3" name="NT"/>
+                    <label end="19" start="18" name="NT"/>
+                    <label end="25" start="21" name="NT"/>
+                    <label end="39" start="38" name="NT"/>
+                    <label end="43" start="41" name="NT"/>
+                    <label end="85" start="82" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/13/2010 03:54:06 PDT Tue" status="MANUAL" ID="4531412">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="36" start="30" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="3500" end="19" start="18" name="Helper"/>
+                    <label cBy="MLC" feID="3499" itype="INI" name="Benefited_party"/>
+                    <label cBy="MLC" feID="3501" end="109" start="38" name="Goal"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="19" start="18" name="Ext"/>
+                    <label end="109" start="38" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="19" start="18" name="NP"/>
+                    <label end="109" start="38" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23511" sentNo="3" paragNo="22" aPos="0" ID="4096654">
+            <text>Iran is generally viewed as having been forthcoming and helpful to these IAEA efforts , although this cooperation has clearly not been absolute .</text>
+            <annotationSet cDate="02/23/2005 06:30:55 PST Wed" status="UNANN" ID="6522188">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="NP"/>
+                    <label end="6" start="5" name="VBZ"/>
+                    <label end="16" start="8" name="rb"/>
+                    <label end="23" start="18" name="VVN"/>
+                    <label end="26" start="25" name="in"/>
+                    <label end="38" start="35" name="VBN"/>
+                    <label end="50" start="40" name="jj"/>
+                    <label end="54" start="52" name="cc"/>
+                    <label end="62" start="56" name="jj"/>
+                    <label end="65" start="64" name="to"/>
+                    <label end="71" start="67" name="dt"/>
+                    <label end="76" start="73" name="NP"/>
+                    <label end="84" start="78" name="nns"/>
+                    <label end="86" start="86" name=","/>
+                    <label end="95" start="88" name="in"/>
+                    <label end="100" start="97" name="dt"/>
+                    <label end="112" start="102" name="nn"/>
+                    <label end="116" start="114" name="VHZ"/>
+                    <label end="124" start="118" name="rb"/>
+                    <label end="128" start="126" name="rb"/>
+                    <label end="133" start="130" name="VBN"/>
+                    <label end="142" start="135" name="jj"/>
+                    <label end="144" start="144" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="3" start="0" name="GPE"/>
+                    <label end="76" start="73" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="26" start="25" name="NT"/>
+                    <label end="54" start="52" name="NT"/>
+                    <label end="65" start="64" name="NT"/>
+                    <label end="71" start="67" name="NT"/>
+                    <label end="76" start="73" name="NT"/>
+                    <label end="86" start="86" name="NT"/>
+                    <label end="95" start="88" name="NT"/>
+                    <label end="100" start="97" name="NT"/>
+                    <label end="144" start="144" name="NT"/>
+                    <label end="6" start="5" name="NT"/>
+                    <label end="16" start="8" name="NT"/>
+                    <label end="38" start="35" name="NT"/>
+                    <label end="124" start="118" name="NT"/>
+                    <label end="128" start="126" name="NT"/>
+                    <label end="133" start="130" name="NT"/>
+                    <label end="33" start="28" name="NT"/>
+                    <label end="116" start="114" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/28/2005 02:20:26 PST Mon" status="MANUAL" ID="6522995">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="62" start="56" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="3500" end="3" start="0" name="Helper"/>
+                    <label cBy="RLG" feID="3501" end="84" start="64" name="Goal"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="3" start="0" name="Ext"/>
+                    <label end="84" start="64" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="3" start="0" name="NP"/>
+                    <label end="84" start="64" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23757" sentNo="6" paragNo="2" aPos="0" ID="4103995">
+            <text>You 'll find Hong Kong easy to get around , the people helpful , English spoken everywhere , and food that lives up to its reputation .</text>
+            <annotationSet cDate="07/21/2008 03:12:17 PDT Mon" status="UNANN" ID="6552807">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="PP"/>
+                    <label end="6" start="4" name="md"/>
+                    <label end="11" start="8" name="VV"/>
+                    <label end="16" start="13" name="NP"/>
+                    <label end="21" start="18" name="NP"/>
+                    <label end="26" start="23" name="jj"/>
+                    <label end="29" start="28" name="to"/>
+                    <label end="33" start="31" name="VV"/>
+                    <label end="40" start="35" name="rp"/>
+                    <label end="42" start="42" name=","/>
+                    <label end="46" start="44" name="dt"/>
+                    <label end="53" start="48" name="nns"/>
+                    <label end="61" start="55" name="jj"/>
+                    <label end="63" start="63" name=","/>
+                    <label end="71" start="65" name="jj"/>
+                    <label end="78" start="73" name="VVN"/>
+                    <label end="89" start="80" name="rb"/>
+                    <label end="91" start="91" name=","/>
+                    <label end="95" start="93" name="cc"/>
+                    <label end="100" start="97" name="nn"/>
+                    <label end="105" start="102" name="wdt"/>
+                    <label end="111" start="107" name="VVZ"/>
+                    <label end="114" start="113" name="rp"/>
+                    <label end="117" start="116" name="to"/>
+                    <label end="121" start="119" name="PP$"/>
+                    <label end="132" start="123" name="nn"/>
+                    <label end="134" start="134" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="21" start="13" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="6" start="4" name="NT"/>
+                    <label end="16" start="13" name="NT"/>
+                    <label end="21" start="18" name="NT"/>
+                    <label end="29" start="28" name="NT"/>
+                    <label end="40" start="35" name="NT"/>
+                    <label end="42" start="42" name="NT"/>
+                    <label end="46" start="44" name="NT"/>
+                    <label end="63" start="63" name="NT"/>
+                    <label end="91" start="91" name="NT"/>
+                    <label end="95" start="93" name="NT"/>
+                    <label end="105" start="102" name="NT"/>
+                    <label end="114" start="113" name="NT"/>
+                    <label end="117" start="116" name="NT"/>
+                    <label end="121" start="119" name="NT"/>
+                    <label end="134" start="134" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/21/2008 04:47:27 PDT Mon" status="MANUAL" ID="6553118">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="61" start="55" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="3499" itype="INI" name="Benefited_party"/>
+                    <label cBy="JKs" feID="3500" end="53" start="44" name="Helper"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="53" start="44" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="53" start="44" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

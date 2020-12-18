@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="WMcQ" cDate="05/05/2014 03:25:21 PDT Mon" name="Emergency_fire" ID="2835" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;A fire which burns and requires an emergency-type response.&lt;/def-root&gt;</definition>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Core" cBy="WMcQ" cDate="05/05/2014 03:26:25 PDT Mon" abbrev="Act" name="Fire" ID="16089">
+        <definition>&lt;def-root&gt;The total material currently involved in combustion, including both the parts of the Fuel currently undergoing chemical alteration and the partially ionized gas that results from this process.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="800080" fgColor="FFFFFF" coreType="Core" cBy="WMcQ" cDate="05/05/2014 03:27:42 PDT Mon" abbrev="" name="Fuel" ID="16090">
+        <definition>&lt;def-root&gt;The entity that is undergoing rapid chemical alteration leading to damage or destruction.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FF00FF" fgColor="FFFFFF" coreType="Peripheral" cBy="WMcQ" cDate="05/05/2014 03:28:47 PDT Mon" abbrev="" name="Manner" ID="16091">
+        <definition>&lt;def-root&gt;Any description of the Emergency_fire event which is not covered by more specific FEs, including secondary effects (loudly, urgently), and general descriptions comparing events.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FFFF00" fgColor="000000" coreType="Peripheral" cBy="WMcQ" cDate="05/05/2014 03:29:54 PDT Mon" abbrev="" name="Name" ID="16092">
+        <definition>&lt;def-root&gt;Name given to the burning Emergency_fire&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Peripheral" cBy="WMcQ" cDate="05/05/2014 03:30:20 PDT Mon" abbrev="Place" name="Place" ID="16093">
+        <definition>&lt;def-root&gt;This FE identifies the &lt;fen&gt;Place&lt;/fen&gt; where the &lt;fen&gt;Fire&lt;/fen&gt; is burning.&lt;/def-root&gt;</definition>
+        <semType name="Locative_relation" ID="182"/>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Peripheral" cBy="WMcQ" cDate="05/05/2014 03:31:09 PDT Mon" abbrev="Time" name="Time" ID="16094">
+        <definition>&lt;def-root&gt;This FE identifies the &lt;fen&gt;Time&lt;/fen&gt; when the &lt;fen&gt;Fire&lt;/fen&gt; is burning.&lt;/def-root&gt;</definition>
+        <semType name="Time" ID="141"/>
+    </FE>
+    <frameRelation type="Inherits from">
+        <relatedFrame ID="2824">Fire_burning</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses"/>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of">
+        <relatedFrame ID="2833">Fire_emergency_scenario</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="Created" POS="N" name="wildland fire.n" ID="17495" lemmaID="51692" cBy="WMcQ" cDate="06/25/2014 02:11:31 PDT Wed">
+        <definition>FN: Fire burning in rural, undeveloped area.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="wildland"/>
+        <lexeme order="2" headword="true" breakBefore="false" POS="N" name="fire"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="wildfire.n" ID="17614" lemmaID="51711" cBy="WMcQ" cDate="07/18/2014 10:45:43 PDT Fri">
+        <definition>FN: A fire in non-urban areas requiring emergency response.</definition>
+        <sentenceCount annotated="11" total="11"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="N" name="wildfire"/>
+    </lexUnit>
+</frame>

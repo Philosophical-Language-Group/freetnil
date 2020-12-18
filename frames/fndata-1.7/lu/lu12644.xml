@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="rejuvenation.n" ID="12644" frame="Rejuvenation" frameID="1614" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Election Victory" name="ElectionVictory" ID="23010"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agt" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="cau" name="Cause"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="dom" name="Domain"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="ent" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="eve" name="Event_description"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Extra-Thematic" abbrev="" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="ite" name="Iterations"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Means" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="9400D3" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Result"/>
+            <FE fgColor="000000" bgColor="90876C" type="Extra-Thematic" abbrev="" name="Role"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: the act of making younger or more vital</definition>
+    <lexeme POS="N" name="rejuvenation"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Agent"/>
+                <annoSet ID="4530533"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Entity"/>
+                <annoSet ID="4530533"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Agent"/>
+                <valenceUnit GF="Dep" PT="A" FE="Entity"/>
+                <annoSet ID="4530533"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23010" sentNo="2" paragNo="2" aPos="0" ID="2824272">
+            <text>It could point to plenty of ailments that the Spanish economic rejuvenation so far has failed to cure .</text>
+            <annotationSet cDate="02/05/2004 08:29:43 PST Thu" status="UNANN" ID="4528267">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="7" start="3" name="md"/>
+                    <label end="13" start="9" name="VV"/>
+                    <label end="16" start="15" name="to"/>
+                    <label end="23" start="18" name="nn"/>
+                    <label end="26" start="25" name="in"/>
+                    <label end="35" start="28" name="nns"/>
+                    <label end="40" start="37" name="in"/>
+                    <label end="44" start="42" name="dt"/>
+                    <label end="52" start="46" name="jj"/>
+                    <label end="61" start="54" name="jj"/>
+                    <label end="74" start="63" name="nn"/>
+                    <label end="77" start="76" name="rb"/>
+                    <label end="81" start="79" name="rb"/>
+                    <label end="85" start="83" name="VHZ"/>
+                    <label end="92" start="87" name="VVN"/>
+                    <label end="95" start="94" name="to"/>
+                    <label end="100" start="97" name="VV"/>
+                    <label end="102" start="102" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="52" start="46" name="GPE"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="16" start="15" name="NT"/>
+                    <label end="85" start="83" name="NT"/>
+                    <label end="95" start="94" name="NT"/>
+                    <label end="102" start="102" name="NT"/>
+                    <label end="1" start="0" name="NT"/>
+                    <label end="26" start="25" name="NT"/>
+                    <label end="40" start="37" name="NT"/>
+                    <label end="44" start="42" name="NT"/>
+                    <label end="52" start="46" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/17/2005 01:47:42 PDT Wed" status="MANUAL" ID="4530533">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="74" start="63" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="8878" end="52" start="46" name="Agent"/>
+                    <label cBy="RLG" feID="8877" end="61" start="54" name="Entity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="52" start="46" name="Dep"/>
+                    <label end="61" start="54" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="52" start="46" name="A"/>
+                    <label end="61" start="54" name="A"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

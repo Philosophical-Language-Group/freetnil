@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="solace.n" ID="10903" frame="Experiencer_focus" frameID="48" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Loma Prieta" name="LomaPrieta" ID="23013"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Cont" name="Content"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Event" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Exp" name="Experiencer"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core-Unexpressed" abbrev="Expr" name="Expressor"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="Par" name="Parameter"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core-Unexpressed" abbrev="State" name="State"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Top" name="Topic"/>
+        </frame>
+    </header>
+    <definition>COD: comfort or consolation in time of distress.</definition>
+    <lexeme POS="N" name="solace"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Content"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Content"/>
+                <annoSet ID="4530014"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Content"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Content"/>
+                <annoSet ID="4530014"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23013" sentNo="1" paragNo="1" aPos="0" ID="2824423">
+            <text>In the long , frightening night after Tuesday 's devastating earthquake , Bay Area residents searched for comfort and solace wherever they could .</text>
+            <annotationSet cDate="02/05/2004 08:30:36 PST Thu" status="UNANN" ID="4528418">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="10" start="7" name="jj"/>
+                    <label end="12" start="12" name=","/>
+                    <label end="24" start="14" name="jj"/>
+                    <label end="30" start="26" name="nn"/>
+                    <label end="36" start="32" name="in"/>
+                    <label end="44" start="38" name="NP"/>
+                    <label end="47" start="46" name="POS"/>
+                    <label end="59" start="49" name="jj"/>
+                    <label end="70" start="61" name="nn"/>
+                    <label end="72" start="72" name=","/>
+                    <label end="76" start="74" name="NP"/>
+                    <label end="81" start="78" name="NP"/>
+                    <label end="91" start="83" name="nns"/>
+                    <label end="100" start="93" name="VVD"/>
+                    <label end="104" start="102" name="in"/>
+                    <label end="112" start="106" name="nn"/>
+                    <label end="116" start="114" name="cc"/>
+                    <label end="123" start="118" name="nn"/>
+                    <label end="132" start="125" name="wrb"/>
+                    <label end="137" start="134" name="PP"/>
+                    <label end="143" start="139" name="md"/>
+                    <label end="145" start="145" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="81" start="74" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="12" start="12" name="NT"/>
+                    <label end="72" start="72" name="NT"/>
+                    <label end="145" start="145" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="47" start="46" name="NT"/>
+                    <label end="76" start="74" name="NT"/>
+                    <label end="81" start="78" name="NT"/>
+                    <label end="104" start="102" name="NT"/>
+                    <label end="116" start="114" name="NT"/>
+                    <label end="132" start="125" name="NT"/>
+                    <label end="137" start="134" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/19/2004 06:11:09 PDT Thu" status="MANUAL" ID="4530014">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="123" start="118" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="202" end="123" start="118" name="Content"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

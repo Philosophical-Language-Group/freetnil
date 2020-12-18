@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="ban.n" ID="8187" frame="Prohibiting_or_licensing" frameID="521" totalAnnotated="4" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Libya Country 1" name="LibyaCountry1" ID="23477"/>
+            <document description="Kazakhstan" name="Kazakhstan" ID="23501"/>
+            <document description="North Korea Nuclear Overview" name="NorthKorea_NuclearOverview" ID="23562"/>
+            <document description="China Overview" name="ChinaOverview" ID="23671"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Prin" name="Principle"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="State_of_affairs"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: an official or legal prohibition. </definition>
+    <lexeme POS="N" name="ban"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Principle"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Principle"/>
+                <annoSet ID="6521400"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="State_of_affairs"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="N" FE="State_of_affairs"/>
+                <annoSet ID="6540587"/>
+                <annoSet ID="6540660"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[on]" FE="State_of_affairs"/>
+                <annoSet ID="6530277"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Principle"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Principle"/>
+                <annoSet ID="6521400"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="3">
+            <FE name="State_of_affairs"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="N" FE="State_of_affairs"/>
+                <annoSet ID="6540587"/>
+                <annoSet ID="6540660"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[on]" FE="State_of_affairs"/>
+                <annoSet ID="6530277"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23477" sentNo="1" paragNo="7" aPos="0" ID="4096437">
+            <text>Previously , Libya signed Comprehensive Test Ban Treaty in November 2001 and ratified it in January 2004 . </text>
+            <annotationSet cDate="06/29/2004 04:50:24 PDT Tue" status="UNANN" ID="6521174">
+                <layer rank="1" name="PENN">
+                    <label end="9" start="0" name="rb"/>
+                    <label end="11" start="11" name=","/>
+                    <label end="17" start="13" name="NP"/>
+                    <label end="24" start="19" name="VVD"/>
+                    <label end="38" start="26" name="NP"/>
+                    <label end="43" start="40" name="NP"/>
+                    <label end="47" start="45" name="NP"/>
+                    <label end="54" start="49" name="NP"/>
+                    <label end="57" start="56" name="in"/>
+                    <label end="66" start="59" name="nn"/>
+                    <label end="71" start="68" name="jj"/>
+                    <label end="75" start="73" name="cc"/>
+                    <label end="84" start="77" name="VVD"/>
+                    <label end="87" start="86" name="PP"/>
+                    <label end="90" start="89" name="in"/>
+                    <label end="98" start="92" name="nn"/>
+                    <label end="103" start="100" name="jj"/>
+                    <label end="105" start="105" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="17" start="13" name="GPE"/>
+                    <label end="54" start="26" name="IntAgr"/>
+                    <label end="71" start="59" name="date"/>
+                    <label end="103" start="92" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="11" start="11" name="NT"/>
+                    <label end="17" start="13" name="NT"/>
+                    <label end="38" start="26" name="NT"/>
+                    <label end="57" start="56" name="NT"/>
+                    <label end="75" start="73" name="NT"/>
+                    <label end="87" start="86" name="NT"/>
+                    <label end="90" start="89" name="NT"/>
+                    <label end="105" start="105" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/30/2004 11:21:20 PDT Wed" status="MANUAL" ID="6521400">
+                <layer rank="1" name="Target">
+                    <label cBy="MHa" end="47" start="45" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MHa" feID="4125" end="43" start="26" name="Principle"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="43" start="26" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="43" start="26" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23562" sentNo="2" paragNo="31" aPos="0" ID="4097750">
+            <text>The policy review concluded that the United States should seek `` improved implementation of the Agreed Framework , verifiable constraints on North Korea 's missile program , a ban on missile exports , and a less threatening North Korean conventional military posture . ''</text>
+            <annotationSet cDate="08/01/2005 12:16:50 PDT Mon" status="UNANN" ID="6528724">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="9" start="4" name="nn"/>
+                    <label end="16" start="11" name="nn"/>
+                    <label end="26" start="18" name="VVD"/>
+                    <label end="31" start="28" name="in"/>
+                    <label end="35" start="33" name="dt"/>
+                    <label end="42" start="37" name="NP"/>
+                    <label end="49" start="44" name="NPS"/>
+                    <label end="56" start="51" name="md"/>
+                    <label end="61" start="58" name="VV"/>
+                    <label end="64" start="63" name="``"/>
+                    <label end="73" start="66" name="jj"/>
+                    <label end="88" start="75" name="nn"/>
+                    <label end="91" start="90" name="in"/>
+                    <label end="95" start="93" name="dt"/>
+                    <label end="102" start="97" name="VVD"/>
+                    <label end="112" start="104" name="nn"/>
+                    <label end="114" start="114" name=","/>
+                    <label end="125" start="116" name="jj"/>
+                    <label end="137" start="127" name="nns"/>
+                    <label end="140" start="139" name="in"/>
+                    <label end="146" start="142" name="NP"/>
+                    <label end="152" start="148" name="NP"/>
+                    <label end="155" start="154" name="POS"/>
+                    <label end="163" start="157" name="nn"/>
+                    <label end="171" start="165" name="nn"/>
+                    <label end="173" start="173" name=","/>
+                    <label end="175" start="175" name="dt"/>
+                    <label end="179" start="177" name="nn"/>
+                    <label end="182" start="181" name="in"/>
+                    <label end="190" start="184" name="nn"/>
+                    <label end="198" start="192" name="nns"/>
+                    <label end="200" start="200" name=","/>
+                    <label end="204" start="202" name="cc"/>
+                    <label end="206" start="206" name="dt"/>
+                    <label end="211" start="208" name="rbr"/>
+                    <label end="223" start="213" name="jj"/>
+                    <label end="229" start="225" name="jj"/>
+                    <label end="236" start="231" name="jj"/>
+                    <label end="249" start="238" name="jj"/>
+                    <label end="258" start="251" name="jj"/>
+                    <label end="266" start="260" name="nn"/>
+                    <label end="268" start="268" name="sent"/>
+                    <label end="271" start="270" name="''"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="49" start="37" name="location"/>
+                    <label end="112" start="97" name="organization"/>
+                    <label end="152" start="142" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="31" start="28" name="NT"/>
+                    <label end="35" start="33" name="NT"/>
+                    <label end="42" start="37" name="NT"/>
+                    <label end="49" start="44" name="NT"/>
+                    <label end="56" start="51" name="NT"/>
+                    <label end="64" start="63" name="NT"/>
+                    <label end="91" start="90" name="NT"/>
+                    <label end="95" start="93" name="NT"/>
+                    <label end="114" start="114" name="NT"/>
+                    <label end="140" start="139" name="NT"/>
+                    <label end="146" start="142" name="NT"/>
+                    <label end="152" start="148" name="NT"/>
+                    <label end="155" start="154" name="NT"/>
+                    <label end="173" start="173" name="NT"/>
+                    <label end="175" start="175" name="NT"/>
+                    <label end="182" start="181" name="NT"/>
+                    <label end="200" start="200" name="NT"/>
+                    <label end="204" start="202" name="NT"/>
+                    <label end="206" start="206" name="NT"/>
+                    <label end="211" start="208" name="NT"/>
+                    <label end="268" start="268" name="NT"/>
+                    <label end="271" start="270" name="NT"/>
+                    <label end="236" start="225" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/12/2005 11:36:23 PDT Fri" status="MANUAL" ID="6530277">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="179" start="177" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="4124" end="198" start="181" name="State_of_affairs"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="198" start="181" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="198" start="181" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23501" sentNo="5" paragNo="4" aPos="0" ID="4096546">
+            <text>Kazakhstan is a party to START-I , the Nuclear Non-Proliferation Treaty ( NPT ) , and the Comprehensive Test Ban Treaty ( CTBT ) .</text>
+            <annotationSet cDate="02/03/2005 12:35:44 PST Thu" status="UNANN" ID="6521930">
+                <layer rank="1" name="PENN">
+                    <label end="9" start="0" name="NP"/>
+                    <label end="12" start="11" name="VBZ"/>
+                    <label end="14" start="14" name="dt"/>
+                    <label end="20" start="16" name="nn"/>
+                    <label end="23" start="22" name="to"/>
+                    <label end="31" start="25" name="NNP"/>
+                    <label end="33" start="33" name=","/>
+                    <label end="37" start="35" name="dt"/>
+                    <label end="45" start="39" name="NP"/>
+                    <label end="63" start="47" name="nn"/>
+                    <label end="70" start="65" name="NP"/>
+                    <label end="72" start="72" name="("/>
+                    <label end="76" start="74" name="NP"/>
+                    <label end="78" start="78" name=")"/>
+                    <label end="80" start="80" name=","/>
+                    <label end="84" start="82" name="cc"/>
+                    <label end="88" start="86" name="dt"/>
+                    <label end="102" start="90" name="jj"/>
+                    <label end="107" start="104" name="nn"/>
+                    <label end="111" start="109" name="nn"/>
+                    <label end="118" start="113" name="nn"/>
+                    <label end="120" start="120" name="("/>
+                    <label end="125" start="122" name="NP"/>
+                    <label end="127" start="127" name=")"/>
+                    <label end="129" start="129" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="9" start="0" name="GPE"/>
+                    <label end="31" start="25" name="IntAgr"/>
+                    <label end="70" start="39" name="IntAgr"/>
+                    <label end="76" start="74" name="IntAgr"/>
+                    <label end="118" start="90" name="IntAgr"/>
+                    <label end="125" start="122" name="IntAgr"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="9" start="0" name="NT"/>
+                    <label end="14" start="14" name="NT"/>
+                    <label end="23" start="22" name="NT"/>
+                    <label end="31" start="25" name="NT"/>
+                    <label end="33" start="33" name="NT"/>
+                    <label end="37" start="35" name="NT"/>
+                    <label end="72" start="72" name="NT"/>
+                    <label end="76" start="74" name="NT"/>
+                    <label end="78" start="78" name="NT"/>
+                    <label end="80" start="80" name="NT"/>
+                    <label end="84" start="82" name="NT"/>
+                    <label end="88" start="86" name="NT"/>
+                    <label end="102" start="90" name="NT"/>
+                    <label end="120" start="120" name="NT"/>
+                    <label end="125" start="122" name="NT"/>
+                    <label end="127" start="127" name="NT"/>
+                    <label end="129" start="129" name="NT"/>
+                    <label end="12" start="11" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/14/2007 04:54:37 PST Wed" status="MANUAL" ID="6540587">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="111" start="109" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="4124" end="107" start="90" name="State_of_affairs"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="107" start="90" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="107" start="90" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23671" sentNo="3" paragNo="4" aPos="0" ID="4100806">
+            <text>The series of nuclear tests in 1995 - 96 prior to China 's signature of the Comprehensive Test Ban Treaty ( CTBT ) may have resulted in a smaller and lighter warhead design for the new generation of intercontinental ballistic missiles ( ICBMs ) now under development .</text>
+            <annotationSet cDate="02/07/2007 06:04:07 PST Wed" status="UNANN" ID="6540243">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="9" start="4" name="nn"/>
+                    <label end="12" start="11" name="in"/>
+                    <label end="20" start="14" name="jj"/>
+                    <label end="26" start="22" name="nns"/>
+                    <label end="29" start="28" name="in"/>
+                    <label end="34" start="31" name="cd"/>
+                    <label end="36" start="36" name=":"/>
+                    <label end="39" start="38" name="cd"/>
+                    <label end="45" start="41" name="jj"/>
+                    <label end="48" start="47" name="to"/>
+                    <label end="54" start="50" name="NP"/>
+                    <label end="57" start="56" name="POS"/>
+                    <label end="67" start="59" name="nn"/>
+                    <label end="70" start="69" name="in"/>
+                    <label end="74" start="72" name="dt"/>
+                    <label end="88" start="76" name="NP"/>
+                    <label end="93" start="90" name="NP"/>
+                    <label end="97" start="95" name="NP"/>
+                    <label end="104" start="99" name="NP"/>
+                    <label end="106" start="106" name="("/>
+                    <label end="111" start="108" name="NP"/>
+                    <label end="113" start="113" name=")"/>
+                    <label end="117" start="115" name="md"/>
+                    <label end="122" start="119" name="VH"/>
+                    <label end="131" start="124" name="VVN"/>
+                    <label end="134" start="133" name="in"/>
+                    <label end="136" start="136" name="dt"/>
+                    <label end="144" start="138" name="jjr"/>
+                    <label end="148" start="146" name="cc"/>
+                    <label end="156" start="150" name="jjr"/>
+                    <label end="164" start="158" name="nn"/>
+                    <label end="171" start="166" name="nn"/>
+                    <label end="175" start="173" name="in"/>
+                    <label end="179" start="177" name="dt"/>
+                    <label end="183" start="181" name="jj"/>
+                    <label end="194" start="185" name="nn"/>
+                    <label end="197" start="196" name="in"/>
+                    <label end="214" start="199" name="jj"/>
+                    <label end="224" start="216" name="jj"/>
+                    <label end="233" start="226" name="nns"/>
+                    <label end="235" start="235" name="("/>
+                    <label end="241" start="237" name="NP"/>
+                    <label end="243" start="243" name=")"/>
+                    <label end="247" start="245" name="rb"/>
+                    <label end="253" start="249" name="in"/>
+                    <label end="265" start="255" name="nn"/>
+                    <label end="267" start="267" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="54" start="50" name="GPE"/>
+                    <label end="39" start="31" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="12" start="11" name="NT"/>
+                    <label end="34" start="31" name="NT"/>
+                    <label end="36" start="36" name="NT"/>
+                    <label end="39" start="38" name="NT"/>
+                    <label end="48" start="47" name="NT"/>
+                    <label end="54" start="50" name="NT"/>
+                    <label end="57" start="56" name="NT"/>
+                    <label end="70" start="69" name="NT"/>
+                    <label end="74" start="72" name="NT"/>
+                    <label end="88" start="76" name="NT"/>
+                    <label end="106" start="106" name="NT"/>
+                    <label end="111" start="108" name="NT"/>
+                    <label end="113" start="113" name="NT"/>
+                    <label end="122" start="119" name="NT"/>
+                    <label end="134" start="133" name="NT"/>
+                    <label end="136" start="136" name="NT"/>
+                    <label end="148" start="146" name="NT"/>
+                    <label end="175" start="173" name="NT"/>
+                    <label end="179" start="177" name="NT"/>
+                    <label end="197" start="196" name="NT"/>
+                    <label end="235" start="235" name="NT"/>
+                    <label end="241" start="237" name="NT"/>
+                    <label end="243" start="243" name="NT"/>
+                    <label end="247" start="245" name="NT"/>
+                    <label end="253" start="249" name="NT"/>
+                    <label end="267" start="267" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/19/2007 05:30:37 PST Mon" status="MANUAL" ID="6540660">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="97" start="95" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="4124" end="93" start="76" name="State_of_affairs"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="93" start="76" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="93" start="76" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

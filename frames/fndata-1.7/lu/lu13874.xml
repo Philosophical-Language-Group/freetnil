@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="multiple.a" ID="13874" frame="Quantified_mass" frameID="189" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="WMD News 04/21/2006" name="WMDNews_042106" ID="23605"/>
+            <document description="China Overview" name="ChinaOverview" ID="23671"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Goodwill fund-raising letter" name="110CYL200" ID="23803"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Ind" name="Individuals"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="M" name="Mass"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Qua" name="Quantity"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Peripheral" abbrev="" name="Q_prop"/>
+        </frame>
+    </header>
+    <definition>COD: having or involving several parts or elements.</definition>
+    <lexeme POS="A" name="multiple"/>
+    <valences>
+        <FERealization total="3">
+            <FE name="Individuals"/>
+            <pattern total="3">
+                <valenceUnit GF="Head" PT="N" FE="Individuals"/>
+                <annoSet ID="6543185"/>
+                <annoSet ID="6548149"/>
+                <annoSet ID="6557433"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Quantity"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="--" FE="Quantity"/>
+                <annoSet ID="6543185"/>
+                <annoSet ID="6548149"/>
+                <annoSet ID="6557433"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="3">
+            <FE name="Individuals"/>
+            <FE name="Quantity"/>
+            <pattern total="3">
+                <valenceUnit GF="Head" PT="N" FE="Individuals"/>
+                <valenceUnit GF="" PT="--" FE="Quantity"/>
+                <annoSet ID="6543185"/>
+                <annoSet ID="6548149"/>
+                <annoSet ID="6557433"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23671" sentNo="4" paragNo="11" aPos="0" ID="4100826">
+            <text>China is replacing its older DF-5 missiles with new DF -5A variants , which may eventually be equipped with multiple warheads .</text>
+            <annotationSet cDate="02/07/2007 06:04:19 PST Wed" status="UNANN" ID="6540263">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="NP"/>
+                    <label end="7" start="6" name="VBZ"/>
+                    <label end="17" start="9" name="VVG"/>
+                    <label end="21" start="19" name="PP$"/>
+                    <label end="27" start="23" name="jjr"/>
+                    <label end="32" start="29" name="cd"/>
+                    <label end="41" start="34" name="nns"/>
+                    <label end="46" start="43" name="in"/>
+                    <label end="50" start="48" name="jj"/>
+                    <label end="53" start="52" name="NP"/>
+                    <label end="57" start="55" name="nn"/>
+                    <label end="66" start="59" name="nns"/>
+                    <label end="68" start="68" name=","/>
+                    <label end="74" start="70" name="wdt"/>
+                    <label end="78" start="76" name="md"/>
+                    <label end="89" start="80" name="rb"/>
+                    <label end="92" start="91" name="vb"/>
+                    <label end="101" start="94" name="VVN"/>
+                    <label end="106" start="103" name="in"/>
+                    <label end="115" start="108" name="jj"/>
+                    <label end="124" start="117" name="nns"/>
+                    <label end="126" start="126" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="4" start="0" name="GPE"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="4" start="0" name="NT"/>
+                    <label end="7" start="6" name="NT"/>
+                    <label end="21" start="19" name="NT"/>
+                    <label end="32" start="29" name="NT"/>
+                    <label end="53" start="52" name="NT"/>
+                    <label end="68" start="68" name="NT"/>
+                    <label end="74" start="70" name="NT"/>
+                    <label end="92" start="91" name="NT"/>
+                    <label end="106" start="103" name="NT"/>
+                    <label end="126" start="126" name="NT"/>
+                    <label end="46" start="43" name="NT"/>
+                    <label end="57" start="55" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/22/2007 03:52:21 PDT Thu" status="MANUAL" ID="6543185">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="115" start="108" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="1550" end="115" start="108" name="Quantity"/>
+                    <label cBy="KmG" feID="1552" end="124" start="117" name="Individuals"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="124" start="117" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="124" start="117" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23605" sentNo="7" paragNo="7" aPos="0" ID="4099598">
+            <text>' Though about 350 people participated in the drill , about 500 patients were actually processed because many participants went through multiple times , with varying symptoms each time .</text>
+            <annotationSet cDate="06/06/2006 02:39:50 PDT Tue" status="UNANN" ID="6534939">
+                <layer rank="1" name="PENN">
+                    <label end="0" start="0" name="''"/>
+                    <label end="7" start="2" name="in"/>
+                    <label end="13" start="9" name="rb"/>
+                    <label end="17" start="15" name="cd"/>
+                    <label end="24" start="19" name="nns"/>
+                    <label end="37" start="26" name="VVN"/>
+                    <label end="40" start="39" name="in"/>
+                    <label end="44" start="42" name="dt"/>
+                    <label end="50" start="46" name="nn"/>
+                    <label end="52" start="52" name=","/>
+                    <label end="58" start="54" name="rb"/>
+                    <label end="62" start="60" name="cd"/>
+                    <label end="71" start="64" name="nns"/>
+                    <label end="76" start="73" name="VBD"/>
+                    <label end="85" start="78" name="rb"/>
+                    <label end="95" start="87" name="VVN"/>
+                    <label end="103" start="97" name="in"/>
+                    <label end="108" start="105" name="jj"/>
+                    <label end="121" start="110" name="nns"/>
+                    <label end="126" start="123" name="VVD"/>
+                    <label end="134" start="128" name="in"/>
+                    <label end="143" start="136" name="jj"/>
+                    <label end="149" start="145" name="nns"/>
+                    <label end="151" start="151" name=","/>
+                    <label end="156" start="153" name="in"/>
+                    <label end="164" start="158" name="VVG"/>
+                    <label end="173" start="166" name="nns"/>
+                    <label end="178" start="175" name="dt"/>
+                    <label end="183" start="180" name="nn"/>
+                    <label end="185" start="185" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="0" start="0" name="NT"/>
+                    <label end="7" start="2" name="NT"/>
+                    <label end="13" start="9" name="NT"/>
+                    <label end="17" start="15" name="NT"/>
+                    <label end="40" start="39" name="NT"/>
+                    <label end="44" start="42" name="NT"/>
+                    <label end="52" start="52" name="NT"/>
+                    <label end="76" start="73" name="NT"/>
+                    <label end="85" start="78" name="NT"/>
+                    <label end="134" start="128" name="NT"/>
+                    <label end="151" start="151" name="NT"/>
+                    <label end="156" start="153" name="NT"/>
+                    <label end="178" start="175" name="NT"/>
+                    <label end="185" start="185" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/09/2007 12:38:35 PDT Tue" status="MANUAL" ID="6548149">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="143" start="136" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="1552" end="149" start="145" name="Individuals"/>
+                    <label cBy="KmG" feID="1550" end="143" start="136" name="Quantity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="149" start="145" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="149" start="145" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23803" sentNo="2" paragNo="8" aPos="0" ID="4106566">
+            <text>Of the more than 42,000 people Goodwill served in 1999 , over 5,000 of them have multiple barriers to finding and keeping a job .</text>
+            <annotationSet cDate="12/03/2008 03:01:24 PST Wed" status="UNANN" ID="6557282">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="10" start="7" name="jjr"/>
+                    <label end="15" start="12" name="in"/>
+                    <label end="22" start="17" name="cd"/>
+                    <label end="29" start="24" name="nns"/>
+                    <label end="38" start="31" name="NP"/>
+                    <label end="45" start="40" name="VVD"/>
+                    <label end="48" start="47" name="in"/>
+                    <label end="53" start="50" name="cd"/>
+                    <label end="55" start="55" name=","/>
+                    <label end="60" start="57" name="in"/>
+                    <label end="66" start="62" name="cd"/>
+                    <label end="69" start="68" name="in"/>
+                    <label end="74" start="71" name="PP"/>
+                    <label end="79" start="76" name="VHP"/>
+                    <label end="88" start="81" name="jj"/>
+                    <label end="97" start="90" name="nns"/>
+                    <label end="100" start="99" name="to"/>
+                    <label end="108" start="102" name="VVG"/>
+                    <label end="112" start="110" name="cc"/>
+                    <label end="120" start="114" name="VVG"/>
+                    <label end="122" start="122" name="dt"/>
+                    <label end="126" start="124" name="nn"/>
+                    <label end="128" start="128" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="53" start="50" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="3" name="NT"/>
+                    <label end="15" start="12" name="NT"/>
+                    <label end="38" start="31" name="NT"/>
+                    <label end="53" start="50" name="NT"/>
+                    <label end="55" start="55" name="NT"/>
+                    <label end="74" start="71" name="NT"/>
+                    <label end="100" start="99" name="NT"/>
+                    <label end="112" start="110" name="NT"/>
+                    <label end="122" start="122" name="NT"/>
+                    <label end="128" start="128" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="12/15/2008 01:21:25 PST Mon" status="MANUAL" ID="6557433">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="88" start="81" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="1550" end="88" start="81" name="Quantity"/>
+                    <label cBy="JKs" feID="1552" end="126" start="90" name="Individuals"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="126" start="90" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="126" start="90" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

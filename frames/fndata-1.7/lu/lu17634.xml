@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Attribute" POS="A" name="elderly.a" ID="17634" frame="Age" frameID="972" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_6" name="Fires_6" ID="25621"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Age" name="Age"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="Att" name="Attribute"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="Cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Core" abbrev="Deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD73" type="Extra-Thematic" abbrev="Des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Ent" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Exp" name="Expressor"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: old</definition>
+    <lexeme POS="A" name="elderly"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Entity"/>
+                <annoSet ID="6670801"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Entity"/>
+                <annoSet ID="6670801"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25621" sentNo="1" paragNo="10" aPos="0" ID="4165050">
+            <text>One elderly woman , Anna Bencinich , the mother of Evelyn , was rescued by neighbors who helped her from the burning house .</text>
+            <annotationSet cDate="07/17/2014 11:44:32 PDT Thu" status="UNANN" ID="6669220">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="cd"/>
+                    <label end="10" start="4" name="jj"/>
+                    <label end="16" start="12" name="nn"/>
+                    <label end="18" start="18" name=","/>
+                    <label end="23" start="20" name="NP"/>
+                    <label end="33" start="25" name="NP"/>
+                    <label end="35" start="35" name=","/>
+                    <label end="39" start="37" name="dt"/>
+                    <label end="46" start="41" name="nn"/>
+                    <label end="49" start="48" name="in"/>
+                    <label end="56" start="51" name="NP"/>
+                    <label end="58" start="58" name=","/>
+                    <label end="62" start="60" name="VBD"/>
+                    <label end="70" start="64" name="VVN"/>
+                    <label end="73" start="72" name="in"/>
+                    <label end="83" start="75" name="nns"/>
+                    <label end="87" start="85" name="wp"/>
+                    <label end="94" start="89" name="VVD"/>
+                    <label end="98" start="96" name="PP"/>
+                    <label end="103" start="100" name="in"/>
+                    <label end="107" start="105" name="dt"/>
+                    <label end="115" start="109" name="nn"/>
+                    <label end="121" start="117" name="nn"/>
+                    <label end="123" start="123" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="33" start="20" name="person"/>
+                    <label end="56" start="51" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="18" start="18" name="NT"/>
+                    <label end="23" start="20" name="NT"/>
+                    <label end="33" start="25" name="NT"/>
+                    <label end="35" start="35" name="NT"/>
+                    <label end="39" start="37" name="NT"/>
+                    <label end="49" start="48" name="NT"/>
+                    <label end="56" start="51" name="NT"/>
+                    <label end="58" start="58" name="NT"/>
+                    <label end="62" start="60" name="NT"/>
+                    <label end="73" start="72" name="NT"/>
+                    <label end="87" start="85" name="NT"/>
+                    <label end="98" start="96" name="NT"/>
+                    <label end="103" start="100" name="NT"/>
+                    <label end="107" start="105" name="NT"/>
+                    <label end="123" start="123" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/21/2014 09:50:49 PDT Mon" status="MANUAL" ID="6670801">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="10" start="4" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="5930" end="16" start="12" name="Entity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="16" start="12" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="16" start="12" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="think.v" ID="12864" frame="Regard" frameID="1400" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="eva" name="Evaluee"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="ext" name="Extent_of_acclaim"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="jud" name="Judgment"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="rol" name="Role"/>
+        </frame>
+    </header>
+    <definition>FN: to regard someone as something</definition>
+    <lexeme POS="V" name="think"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Cognizer"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <annoSet ID="6646683"/>
+                <annoSet ID="6673132"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Evaluee"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="PP[of]" FE="Evaluee"/>
+                <annoSet ID="6646683"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Judgment"/>
+            <pattern total="2">
+                <valenceUnit GF="Obj" PT="AJP" FE="Judgment"/>
+                <annoSet ID="6646683"/>
+                <annoSet ID="6673132"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="PP[than]" FE="Judgment"/>
+                <annoSet ID="6646683"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Judgment"/>
+                <annoSet ID="6673132"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="Evaluee"/>
+            <FE name="Judgment"/>
+            <FE name="Judgment"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <valenceUnit GF="Obj" PT="PP[of]" FE="Evaluee"/>
+                <valenceUnit GF="Obj" PT="AJP" FE="Judgment"/>
+                <valenceUnit GF="Obj" PT="PP[than]" FE="Judgment"/>
+                <annoSet ID="6646683"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="Judgment"/>
+            <FE name="Judgment"/>
+            <FE name="Judgment"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <valenceUnit GF="Obj" PT="AJP" FE="Judgment"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Judgment"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Judgment"/>
+                <annoSet ID="6673132"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="1" paragNo="46" aPos="0" ID="4148599">
+            <text>&quot; Come , come , &quot; said Baynes cheerily , &quot; I think better of the law than that .</text>
+            <annotationSet cDate="04/30/2013 05:24:17 PDT Tue" status="UNANN" ID="6646681">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="2" name="vb"/>
+                    <label end="12" start="9" name="vb"/>
+                    <label end="21" start="18" name="VBD"/>
+                    <label end="28" start="23" name="NNP"/>
+                    <label end="37" start="30" name="rb"/>
+                    <label end="43" start="43" name="PRP"/>
+                    <label end="49" start="45" name="vbp"/>
+                    <label end="56" start="51" name="jjr"/>
+                    <label end="59" start="58" name="in"/>
+                    <label end="63" start="61" name="dt"/>
+                    <label end="67" start="65" name="nn"/>
+                    <label end="72" start="69" name="in"/>
+                    <label end="77" start="74" name="dt"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:24:18 PDT Tue" status="MANUAL" ID="6646683">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="49" start="45" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="7840" end="43" start="43" name="Cognizer"/>
+                    <label cBy="EGp" feID="7841" end="67" start="58" name="Evaluee"/>
+                    <label cBy="EGp" feID="7851" end="56" start="51" name="Judgment"/>
+                    <label cBy="EGp" feID="7851" end="79" start="69" name="Judgment"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="43" start="43" name="Ext"/>
+                    <label end="67" start="58" name="Obj"/>
+                    <label end="56" start="51" name="Obj"/>
+                    <label end="79" start="69" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="43" start="43" name="NP"/>
+                    <label end="67" start="58" name="PP"/>
+                    <label end="56" start="51" name="AJP"/>
+                    <label end="79" start="69" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

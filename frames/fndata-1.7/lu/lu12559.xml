@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="ADV" name="as of yet.adv" ID="12559" frame="Continued_state_of_affairs" frameID="1594" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_9" name="Fires_9" ID="25624"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="Cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="ref" name="Reference_occasion"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="soa" name="State_of_affairs"/>
+        </frame>
+    </header>
+    <definition>FN: until and (possibly) beyond now or that time</definition>
+    <lexeme order="1" headword="true" breakBefore="false" POS="ADV" name="as"/>
+    <lexeme order="2" headword="false" breakBefore="false" POS="PREP" name="of"/>
+    <lexeme order="3" headword="false" breakBefore="false" POS="ADV" name="yet"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="State_of_affairs"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="Sfin" FE="State_of_affairs"/>
+                <annoSet ID="6774058"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="State_of_affairs"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="Sfin" FE="State_of_affairs"/>
+                <annoSet ID="6774058"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25624" sentNo="2" paragNo="4" aPos="0" ID="4165579">
+            <text>Approximately 15 cabins are reported to have burned to the ground , but as of yet , no permanent dwellings or farms have been damaged .</text>
+            <annotationSet cDate="07/21/2014 11:08:16 PDT Mon" status="UNANN" ID="6670835">
+                <layer rank="1" name="PENN">
+                    <label end="12" start="0" name="rb"/>
+                    <label end="15" start="14" name="cd"/>
+                    <label end="22" start="17" name="nns"/>
+                    <label end="26" start="24" name="vbp"/>
+                    <label end="35" start="28" name="VVN"/>
+                    <label end="38" start="37" name="to"/>
+                    <label end="43" start="40" name="VH"/>
+                    <label end="50" start="45" name="VVN"/>
+                    <label end="53" start="52" name="to"/>
+                    <label end="57" start="55" name="dt"/>
+                    <label end="64" start="59" name="nn"/>
+                    <label end="66" start="66" name=","/>
+                    <label end="70" start="68" name="cc"/>
+                    <label end="73" start="72" name="rb"/>
+                    <label end="76" start="75" name="in"/>
+                    <label end="80" start="78" name="rb"/>
+                    <label end="82" start="82" name=","/>
+                    <label end="85" start="84" name="dt"/>
+                    <label end="95" start="87" name="jj"/>
+                    <label end="105" start="97" name="nns"/>
+                    <label end="108" start="107" name="cc"/>
+                    <label end="114" start="110" name="nns"/>
+                    <label end="119" start="116" name="VHP"/>
+                    <label end="124" start="121" name="VBN"/>
+                    <label end="132" start="126" name="VVN"/>
+                    <label end="134" start="134" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="15" start="14" name="NT"/>
+                    <label end="26" start="24" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="43" start="40" name="NT"/>
+                    <label end="53" start="52" name="NT"/>
+                    <label end="57" start="55" name="NT"/>
+                    <label end="66" start="66" name="NT"/>
+                    <label end="70" start="68" name="NT"/>
+                    <label end="82" start="82" name="NT"/>
+                    <label end="85" start="84" name="NT"/>
+                    <label end="108" start="107" name="NT"/>
+                    <label end="119" start="116" name="NT"/>
+                    <label end="124" start="121" name="NT"/>
+                    <label end="134" start="134" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="05/31/2016 04:41:21 PDT Tue" status="MANUAL" ID="6774058">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="73" start="72" name="Target"/>
+                    <label cBy="MJE" end="76" start="75" name="Target"/>
+                    <label cBy="MJE" end="80" start="78" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="8724" end="132" start="84" name="State_of_affairs"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="132" start="84" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="132" start="84" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

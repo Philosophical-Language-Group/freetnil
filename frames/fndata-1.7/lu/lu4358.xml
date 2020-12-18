@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Ailment" POS="N" name="cancer.n" ID="4358" frame="Medical_conditions" frameID="239" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="AQUAINT Knowledge-Based Evaluation Texts" name="KBEval" ID="185">
+            <document description="LCC-M" name="LCC-M" ID="23578"/>
+        </corpus>
+        <frame>
+            <FE fgColor="000000" bgColor="FFFF00" type="Core" abbrev="" name="Ailment"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="Body_P" name="Body_part"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="Cause" name="Cause"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="deg" name="Degree"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="Name" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Pat" name="Patient"/>
+            <FE fgColor="000000" bgColor="7CCD73" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Symp" name="Symptom"/>
+        </frame>
+    </header>
+    <definition>COD: a disease caused by an uncontrolled division of abnormal cells in a part of the body. </definition>
+    <lexeme POS="N" name="cancer"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Body_part"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Body_part"/>
+                <annoSet ID="6532904"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Body_part"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Body_part"/>
+                <annoSet ID="6532904"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="185" docID="23578" sentNo="2" paragNo="28" aPos="0" ID="4098880">
+            <text>Two sisters who know their mother had genetic testing before she died of ovarian cancer want to find out her test results .</text>
+            <annotationSet cDate="10/05/2005 01:34:23 PDT Wed" status="UNANN" ID="6531621">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="cd"/>
+                    <label end="10" start="4" name="nns"/>
+                    <label end="14" start="12" name="wp"/>
+                    <label end="19" start="16" name="VVP"/>
+                    <label end="25" start="21" name="PP$"/>
+                    <label end="32" start="27" name="nn"/>
+                    <label end="36" start="34" name="VHD"/>
+                    <label end="44" start="38" name="jj"/>
+                    <label end="52" start="46" name="nn"/>
+                    <label end="59" start="54" name="in"/>
+                    <label end="63" start="61" name="PP"/>
+                    <label end="68" start="65" name="VVD"/>
+                    <label end="71" start="70" name="in"/>
+                    <label end="79" start="73" name="jj"/>
+                    <label end="86" start="81" name="nn"/>
+                    <label end="91" start="88" name="VVP"/>
+                    <label end="94" start="93" name="to"/>
+                    <label end="99" start="96" name="VV"/>
+                    <label end="103" start="101" name="rp"/>
+                    <label end="107" start="105" name="PP$"/>
+                    <label end="112" start="109" name="nn"/>
+                    <label end="120" start="114" name="nns"/>
+                    <label end="122" start="122" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="10" start="0" name="person"/>
+                    <label end="32" start="21" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="14" start="12" name="NT"/>
+                    <label end="25" start="21" name="NT"/>
+                    <label end="59" start="54" name="NT"/>
+                    <label end="63" start="61" name="NT"/>
+                    <label end="71" start="70" name="NT"/>
+                    <label end="94" start="93" name="NT"/>
+                    <label end="103" start="101" name="NT"/>
+                    <label end="107" start="105" name="NT"/>
+                    <label end="122" start="122" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/07/2005 12:41:22 PDT Fri" status="MANUAL" ID="6532904">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="86" start="81" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="2095" end="79" start="73" name="Body_part"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="79" start="73" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="79" start="73" name="A"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

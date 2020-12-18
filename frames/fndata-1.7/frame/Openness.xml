@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="MJE" cDate="02/09/2007 06:06:07 PST Fri" name="Openness" ID="1872" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;A &lt;fen&gt;Useful_location&lt;/fen&gt; is accessible to some (possibly generic) &lt;fen&gt;Theme&lt;/fen&gt; despite a potential &lt;fen&gt;Barrier&lt;/fen&gt;, or is not accessible because of the &lt;fen&gt;Barrier&lt;/fen&gt;.
+
+&lt;ex&gt;I left &lt;fex name="Barrier"&gt;the door to the lobby&lt;/fex&gt; &lt;t&gt;open&lt;/t&gt; &lt;fex name="Theme"&gt;for you&lt;/fex&gt;.&lt;/ex&gt;
+&lt;ex&gt;I left the door &lt;fex name="Useful_location"&gt;to the lobby&lt;/fex&gt; &lt;t&gt;open&lt;/t&gt; for you.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="MJE" cDate="02/09/2007 06:06:07 PST Fri" abbrev="Ent" name="Theme" ID="11029">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Theme&lt;/fen&gt; whose motion is blocked or free.
+
+&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Core" cBy="MJE" cDate="02/09/2007 06:06:07 PST Fri" abbrev="loc" name="Useful_location" ID="11030">
+        <definition>&lt;def-root&gt;The place or thing that the &lt;fen&gt;Theme&lt;/fen&gt; is headed towards, despite a potential or actual &lt;fen&gt;Barrier&lt;/fen&gt;.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="1E90FF" fgColor="FFFFFF" coreType="Core" cBy="MJE" cDate="02/09/2007 06:06:07 PST Fri" abbrev="" name="Barrier" ID="11031">
+        <definition>&lt;def-root&gt;An entity that (at least potentially) prevents the &lt;fen&gt;Theme&lt;/fen&gt; from getting to the &lt;fen&gt;Useful_location&lt;/fen&gt;.
+&lt;/def-root&gt;</definition>
+        <excludesFE name="Useful_location" ID="11030"/>
+    </FE>
+    <FE bgColor="FF00FF" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="02/09/2007 06:09:41 PST Fri" abbrev="" name="Degree" ID="11032">
+        <definition>&lt;def-root&gt;The extent to which a Theme can easily access the &lt;fen&gt;Useful_location&lt;/fen&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Peripheral" cBy="RLG" cDate="12/14/2011 11:57:44 PST Wed" abbrev="tim" name="Time" ID="15344">
+        <definition>&lt;def-root&gt;The time when the &lt;fen&gt;Useful_location&lt;/fen&gt; is or is not accessible.
+
+&lt;ex&gt;&lt;fex name="Barrier"&gt;This door&lt;/fex&gt; &lt;m&gt;is&lt;/m&gt; &lt;t&gt;closed&lt;/t&gt; &lt;fex name="tim"&gt;every Monday&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <frameRelation type="Inherits from"/>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on">
+        <relatedFrame ID="1871">Access_scenario</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses">
+        <relatedFrame ID="1310">Traversing</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="Created" POS="A" name="open.a" ID="13722" lemmaID="26778" cBy="MJE" cDate="02/09/2007 06:10:32 PST Fri">
+        <definition>COD: allowing access, passage, or view; not closed, fastened, or restricted.</definition>
+        <sentenceCount annotated="13" total="14"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="A" name="open"/>
+    </lexUnit>
+    <lexUnit status="Needs_SCs" POS="A" name="closed.a" ID="13723" lemmaID="6861" cBy="MJE" cDate="02/09/2007 06:13:36 PST Fri">
+        <definition>COD: not open or allowing access.</definition>
+        <sentenceCount annotated="6" total="56"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="A" name="closed"/>
+    </lexUnit>
+    <lexUnit status="Insufficient_Attestations" POS="A" name="dark.a" ID="16957" lemmaID="51504" cBy="CVa" cDate="03/14/2012 12:29:21 PDT Wed">
+        <definition>FN: closed (usually referring to a theater)</definition>
+        <sentenceCount annotated="3" total="120"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="A" name="dark"/>
+    </lexUnit>
+</frame>

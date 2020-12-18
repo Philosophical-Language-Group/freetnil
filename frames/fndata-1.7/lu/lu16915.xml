@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="day.n" ID="16915" frame="Location_in_time" frameID="2141" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_8" name="Fires_8" ID="25623"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="foc" name="Focal_time"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="Name" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="RelT" name="Relative_time"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="sal_eve" name="Salient_event"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Whole" name="Whole"/>
+        </frame>
+    </header>
+    <definition>FN: An unspecified date in time.</definition>
+    <lexeme POS="N" name="Day"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Focal_time"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Focal_time"/>
+                <annoSet ID="6670873"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Relative_time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Relative_time"/>
+                <annoSet ID="6670873"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Focal_time"/>
+            <FE name="Relative_time"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Focal_time"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Relative_time"/>
+                <annoSet ID="6670873"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25623" sentNo="1" paragNo="3" aPos="0" ID="4165561">
+            <text>Thousands of people in Greece have been forced to evacuate their homes after major wildfires continued for their third day in the suburbs outside of Athens .</text>
+            <annotationSet cDate="07/21/2014 11:07:55 PDT Mon" status="UNANN" ID="6670817">
+                <layer rank="1" name="PENN">
+                    <label end="8" start="0" name="nns"/>
+                    <label end="11" start="10" name="in"/>
+                    <label end="18" start="13" name="nns"/>
+                    <label end="21" start="20" name="in"/>
+                    <label end="28" start="23" name="NP"/>
+                    <label end="33" start="30" name="VHP"/>
+                    <label end="38" start="35" name="VBN"/>
+                    <label end="45" start="40" name="VVN"/>
+                    <label end="48" start="47" name="to"/>
+                    <label end="57" start="50" name="VV"/>
+                    <label end="63" start="59" name="PP$"/>
+                    <label end="69" start="65" name="nns"/>
+                    <label end="75" start="71" name="in"/>
+                    <label end="81" start="77" name="jj"/>
+                    <label end="91" start="83" name="nns"/>
+                    <label end="101" start="93" name="VVN"/>
+                    <label end="105" start="103" name="in"/>
+                    <label end="111" start="107" name="PP$"/>
+                    <label end="117" start="113" name="jj"/>
+                    <label end="121" start="119" name="nn"/>
+                    <label end="124" start="123" name="in"/>
+                    <label end="128" start="126" name="dt"/>
+                    <label end="136" start="130" name="nns"/>
+                    <label end="144" start="138" name="jj"/>
+                    <label end="147" start="146" name="in"/>
+                    <label end="154" start="149" name="NP"/>
+                    <label end="156" start="156" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="28" start="23" name="location"/>
+                    <label end="154" start="149" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="11" start="10" name="NT"/>
+                    <label end="21" start="20" name="NT"/>
+                    <label end="28" start="23" name="NT"/>
+                    <label end="33" start="30" name="NT"/>
+                    <label end="38" start="35" name="NT"/>
+                    <label end="48" start="47" name="NT"/>
+                    <label end="63" start="59" name="NT"/>
+                    <label end="75" start="71" name="NT"/>
+                    <label end="105" start="103" name="NT"/>
+                    <label end="111" start="107" name="NT"/>
+                    <label end="124" start="123" name="NT"/>
+                    <label end="128" start="126" name="NT"/>
+                    <label end="147" start="146" name="NT"/>
+                    <label end="154" start="149" name="NT"/>
+                    <label end="156" start="156" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/21/2014 11:54:02 PDT Mon" status="MANUAL" ID="6670873">
+                <layer rank="1" name="Target">
+                    <label cBy="WMcQ" end="121" start="119" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="WMcQ" feID="13274" end="117" start="107" name="Relative_time"/>
+                    <label cBy="WMcQ" feID="13278" end="121" start="119" name="Focal_time"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="117" start="107" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="117" start="107" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

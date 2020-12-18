@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="employer.n" ID="8395" frame="Employing" frameID="323" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Compense" name="Compensation"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="CB" name="Contract_basis"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Empee" name="Employee"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Emper" name="Employer"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Field" name="Field"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="Posit" name="Position"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Sub" name="Subgroup"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="Task" name="Task"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD:  a person that employs people</definition>
+    <lexeme POS="N" name="employer"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Employee"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Employee"/>
+                <annoSet ID="6645928"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Employer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Employer"/>
+                <annoSet ID="6645928"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Employee"/>
+            <FE name="Employer"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Employee"/>
+                <valenceUnit GF="" PT="DEN" FE="Employer"/>
+                <annoSet ID="6645928"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="8" paragNo="25" aPos="0" ID="4148417">
+            <text>It was my system which enabled me to find John Warner , late gardener of High Gable , sacked in a moment of temper by his imperious employer .</text>
+            <annotationSet cDate="04/30/2013 05:19:49 PDT Tue" status="UNANN" ID="6645923">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PRP"/>
+                    <label end="5" start="3" name="VBD"/>
+                    <label end="8" start="7" name="PRP$"/>
+                    <label end="15" start="10" name="nn"/>
+                    <label end="21" start="17" name="wdt"/>
+                    <label end="29" start="23" name="VBD"/>
+                    <label end="32" start="31" name="PRP"/>
+                    <label end="35" start="34" name="to"/>
+                    <label end="40" start="37" name="vb"/>
+                    <label end="45" start="42" name="NNP"/>
+                    <label end="52" start="47" name="NNP"/>
+                    <label end="59" start="56" name="jj"/>
+                    <label end="68" start="61" name="nn"/>
+                    <label end="71" start="70" name="in"/>
+                    <label end="76" start="73" name="NNP"/>
+                    <label end="82" start="78" name="NNP"/>
+                    <label end="91" start="86" name="VBD"/>
+                    <label end="94" start="93" name="in"/>
+                    <label end="96" start="96" name="dt"/>
+                    <label end="103" start="98" name="nn"/>
+                    <label end="106" start="105" name="in"/>
+                    <label end="113" start="108" name="nn"/>
+                    <label end="116" start="115" name="in"/>
+                    <label end="120" start="118" name="PRP$"/>
+                    <label end="130" start="122" name="jj"/>
+                    <label end="139" start="132" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:19:50 PDT Tue" status="MANUAL" ID="6645928">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="139" start="132" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="2807" end="120" start="118" name="Employee"/>
+                    <label cBy="EGp" feID="2808" end="139" start="132" name="Employer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="120" start="118" name="Gen"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="120" start="118" name="Poss"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

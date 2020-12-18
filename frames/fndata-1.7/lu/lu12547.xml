@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Rules_Defined" POS="N" name="path.n" ID="12547" frame="Path_traveled" frameID="1592" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <corpus description="AQUAINT Knowledge-Based Evaluation Texts" name="KBEval" ID="185">
+            <document description="utd-icsi" name="utd-icsi" ID="23579"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Goodwill fund-raising letter" name="110CYL200" ID="23803"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Char" name="Characteristic"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Dir" name="Direction"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="EPs" name="Endpoints"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Goal" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="gro" name="Ground"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="lan" name="Landmark"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="Length" name="Length"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="pat" name="Path"/>
+            <FE fgColor="EEE8AA" bgColor="A52A2A" type="Peripheral" abbrev="Src" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="the" name="Theme"/>
+        </frame>
+    </header>
+    <definition>COD: the direction in which a person or thing moves.</definition>
+    <lexeme POS="N" name="path"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Path"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Path"/>
+                <annoSet ID="6557309"/>
+                <annoSet ID="6672803"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Theme"/>
+            <pattern total="2">
+                <valenceUnit GF="Gen" PT="Poss" FE="Theme"/>
+                <annoSet ID="6557309"/>
+                <annoSet ID="6672803"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Theme"/>
+                <annoSet ID="6533049"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Path"/>
+            <FE name="Theme"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Path"/>
+                <valenceUnit GF="Gen" PT="Poss" FE="Theme"/>
+                <annoSet ID="6557309"/>
+                <annoSet ID="6672803"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Theme"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Theme"/>
+                <annoSet ID="6533049"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="185" docID="23579" sentNo="4" paragNo="37" aPos="0" ID="4099005">
+            <text>QN : Is there a clear path for future negotiations between Israel and the Palestinian authority ?</text>
+            <annotationSet cDate="10/05/2005 01:34:57 PDT Wed" status="UNANN" ID="6531746">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="NP"/>
+                    <label end="3" start="3" name=":"/>
+                    <label end="6" start="5" name="VBZ"/>
+                    <label end="12" start="8" name="rb"/>
+                    <label end="14" start="14" name="dt"/>
+                    <label end="20" start="16" name="jj"/>
+                    <label end="25" start="22" name="nn"/>
+                    <label end="29" start="27" name="in"/>
+                    <label end="36" start="31" name="jj"/>
+                    <label end="49" start="38" name="nns"/>
+                    <label end="57" start="51" name="in"/>
+                    <label end="64" start="59" name="NP"/>
+                    <label end="68" start="66" name="cc"/>
+                    <label end="72" start="70" name="dt"/>
+                    <label end="84" start="74" name="jj"/>
+                    <label end="94" start="86" name="nn"/>
+                    <label end="96" start="96" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="64" start="59" name="location"/>
+                    <label end="94" start="74" name="GPE"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="3" start="3" name="NT"/>
+                    <label end="14" start="14" name="NT"/>
+                    <label end="29" start="27" name="NT"/>
+                    <label end="57" start="51" name="NT"/>
+                    <label end="64" start="59" name="NT"/>
+                    <label end="68" start="66" name="NT"/>
+                    <label end="72" start="70" name="NT"/>
+                    <label end="96" start="96" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/07/2005 02:37:05 PDT Fri" status="MANUAL" ID="6533049">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="25" start="22" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="8709" end="94" start="27" name="Theme"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="94" start="27" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="94" start="27" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other">
+                    <label end="12" start="8" name="Null"/>
+                </layer>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="6" start="5" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23803" sentNo="2" paragNo="4" aPos="0" ID="4106556">
+            <text>He knew he had made a bad mistake , but despite his commitment to rebuilding his life , he just did n't count on the obstacles that would be thrown up in his path .</text>
+            <annotationSet cDate="12/03/2008 03:01:21 PST Wed" status="UNANN" ID="6557272">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="6" start="3" name="VVD"/>
+                    <label end="9" start="8" name="PP"/>
+                    <label end="13" start="11" name="VHD"/>
+                    <label end="18" start="15" name="VVN"/>
+                    <label end="20" start="20" name="dt"/>
+                    <label end="24" start="22" name="jj"/>
+                    <label end="32" start="26" name="nn"/>
+                    <label end="34" start="34" name=","/>
+                    <label end="38" start="36" name="cc"/>
+                    <label end="46" start="40" name="in"/>
+                    <label end="50" start="48" name="PP$"/>
+                    <label end="61" start="52" name="nn"/>
+                    <label end="64" start="63" name="to"/>
+                    <label end="75" start="66" name="VVG"/>
+                    <label end="79" start="77" name="PP$"/>
+                    <label end="84" start="81" name="nn"/>
+                    <label end="86" start="86" name=","/>
+                    <label end="89" start="88" name="PP"/>
+                    <label end="94" start="91" name="rb"/>
+                    <label end="98" start="96" name="VVD"/>
+                    <label end="102" start="100" name="rb"/>
+                    <label end="108" start="104" name="VV"/>
+                    <label end="111" start="110" name="in"/>
+                    <label end="115" start="113" name="dt"/>
+                    <label end="125" start="117" name="nns"/>
+                    <label end="130" start="127" name="wdt"/>
+                    <label end="136" start="132" name="md"/>
+                    <label end="139" start="138" name="vb"/>
+                    <label end="146" start="141" name="VVN"/>
+                    <label end="149" start="148" name="rp"/>
+                    <label end="152" start="151" name="in"/>
+                    <label end="156" start="154" name="PP$"/>
+                    <label end="161" start="158" name="nn"/>
+                    <label end="163" start="163" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="9" start="8" name="NT"/>
+                    <label end="13" start="11" name="NT"/>
+                    <label end="20" start="20" name="NT"/>
+                    <label end="34" start="34" name="NT"/>
+                    <label end="38" start="36" name="NT"/>
+                    <label end="46" start="40" name="NT"/>
+                    <label end="50" start="48" name="NT"/>
+                    <label end="64" start="63" name="NT"/>
+                    <label end="79" start="77" name="NT"/>
+                    <label end="86" start="86" name="NT"/>
+                    <label end="89" start="88" name="NT"/>
+                    <label end="94" start="91" name="NT"/>
+                    <label end="98" start="96" name="NT"/>
+                    <label end="102" start="100" name="NT"/>
+                    <label end="115" start="113" name="NT"/>
+                    <label end="130" start="127" name="NT"/>
+                    <label end="136" start="132" name="NT"/>
+                    <label end="139" start="138" name="NT"/>
+                    <label end="149" start="148" name="NT"/>
+                    <label end="156" start="154" name="NT"/>
+                    <label end="163" start="163" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="12/03/2008 03:19:06 PST Wed" status="MANUAL" ID="6557309">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="161" start="158" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="8695" end="161" start="158" name="Path"/>
+                    <label cBy="JKs" feID="8709" end="156" start="154" name="Theme"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="156" start="154" name="Gen"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="156" start="154" name="Poss"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="175" docID="25343" sentNo="4" paragNo="12" aPos="0" ID="4148296">
+            <text>&quot; Do you follow your path and I will follow mine .</text>
+            <annotationSet cDate="04/30/2013 05:17:34 PDT Tue" status="UNANN" ID="6645401">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="2" name="vbp"/>
+                    <label end="7" start="5" name="PRP"/>
+                    <label end="14" start="9" name="vb"/>
+                    <label end="19" start="16" name="PRP$"/>
+                    <label end="24" start="21" name="nn"/>
+                    <label end="28" start="26" name="cc"/>
+                    <label end="30" start="30" name="PRP"/>
+                    <label end="35" start="32" name="md"/>
+                    <label end="42" start="37" name="vb"/>
+                    <label end="47" start="44" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="08/18/2014 10:20:50 PDT Mon" status="MANUAL" ID="6672803">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="24" start="21" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="8709" end="19" start="16" name="Theme"/>
+                    <label cBy="MJE" feID="8695" end="24" start="21" name="Path"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="19" start="16" name="Gen"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="19" start="16" name="Poss"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

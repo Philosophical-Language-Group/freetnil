@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="causative.a" ID="11716" frame="Causation" frameID="5" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Biological" name="Iran_Biological" ID="23513"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="act" name="Actor"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Affected" name="Affected"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core-Unexpressed" abbrev="Cause" name="Cause"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD73" type="Extra-Thematic" abbrev="con" name="Concessive"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core-Unexpressed" abbrev="Effect" name="Effect"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="fre" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: acting as a cause</definition>
+    <lexeme POS="A" name="causative"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Cause"/>
+            <pattern total="2">
+                <valenceUnit GF="Head" PT="N" FE="Cause"/>
+                <annoSet ID="6523888"/>
+                <annoSet ID="6523908"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Effect"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Effect"/>
+                <annoSet ID="6523888"/>
+                <annoSet ID="6523908"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Cause"/>
+            <FE name="Effect"/>
+            <pattern total="2">
+                <valenceUnit GF="Head" PT="N" FE="Cause"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Effect"/>
+                <annoSet ID="6523888"/>
+                <annoSet ID="6523908"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23513" sentNo="3" paragNo="9" aPos="0" ID="4096910">
+            <text>These scientists are supposedly experimenting with the causative agents of such diseases as Marburg , smallpox , plague , and tularemia .</text>
+            <annotationSet cDate="02/25/2005 12:37:29 PST Fri" status="UNANN" ID="6522575">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="dt"/>
+                    <label end="15" start="6" name="nns"/>
+                    <label end="19" start="17" name="vbp"/>
+                    <label end="30" start="21" name="rb"/>
+                    <label end="44" start="32" name="VVG"/>
+                    <label end="49" start="46" name="in"/>
+                    <label end="53" start="51" name="dt"/>
+                    <label end="63" start="55" name="jj"/>
+                    <label end="70" start="65" name="nns"/>
+                    <label end="73" start="72" name="in"/>
+                    <label end="78" start="75" name="jj"/>
+                    <label end="87" start="80" name="nns"/>
+                    <label end="90" start="89" name="in"/>
+                    <label end="98" start="92" name="NP"/>
+                    <label end="100" start="100" name=","/>
+                    <label end="109" start="102" name="nn"/>
+                    <label end="111" start="111" name=","/>
+                    <label end="118" start="113" name="VV"/>
+                    <label end="120" start="120" name=","/>
+                    <label end="124" start="122" name="cc"/>
+                    <label end="134" start="126" name="nn"/>
+                    <label end="136" start="136" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="98" start="92" name="WEA"/>
+                    <label end="109" start="102" name="WEA"/>
+                    <label end="118" start="113" name="WEA"/>
+                    <label end="134" start="126" name="WEA"/>
+                    <label end="70" start="65" name="WEA"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="4" start="0" name="NT"/>
+                    <label end="49" start="46" name="NT"/>
+                    <label end="53" start="51" name="NT"/>
+                    <label end="73" start="72" name="NT"/>
+                    <label end="90" start="89" name="NT"/>
+                    <label end="98" start="92" name="NT"/>
+                    <label end="100" start="100" name="NT"/>
+                    <label end="111" start="111" name="NT"/>
+                    <label end="120" start="120" name="NT"/>
+                    <label end="124" start="122" name="NT"/>
+                    <label end="136" start="136" name="NT"/>
+                    <label end="19" start="17" name="NT"/>
+                    <label end="30" start="21" name="NT"/>
+                    <label end="78" start="75" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/03/2005 11:53:41 PST Thu" status="MANUAL" ID="6523888">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="63" start="55" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="18" end="70" start="65" name="Cause"/>
+                    <label cBy="MJE" feID="20" end="134" start="72" name="Effect"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="70" start="65" name="Head"/>
+                    <label end="134" start="72" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="70" start="65" name="N"/>
+                    <label end="134" start="72" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23513" sentNo="1" paragNo="11" aPos="0" ID="4096915">
+            <text>Some of the most common agents that are associated with the Iranian BW program in the open literature are B. anthracis , botulinum toxin , ricin , T-2 mycotoxin , and Variola virus , the causative agent of smallpox .</text>
+            <annotationSet cDate="02/25/2005 12:37:30 PST Fri" status="UNANN" ID="6522580">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="6" start="5" name="in"/>
+                    <label end="10" start="8" name="dt"/>
+                    <label end="15" start="12" name="rbs"/>
+                    <label end="22" start="17" name="jj"/>
+                    <label end="29" start="24" name="nns"/>
+                    <label end="34" start="31" name="wdt"/>
+                    <label end="38" start="36" name="vbp"/>
+                    <label end="49" start="40" name="VVN"/>
+                    <label end="54" start="51" name="in"/>
+                    <label end="58" start="56" name="dt"/>
+                    <label end="66" start="60" name="jj"/>
+                    <label end="69" start="68" name="NP"/>
+                    <label end="77" start="71" name="nn"/>
+                    <label end="80" start="79" name="in"/>
+                    <label end="84" start="82" name="dt"/>
+                    <label end="89" start="86" name="jj"/>
+                    <label end="100" start="91" name="nn"/>
+                    <label end="104" start="102" name="vbp"/>
+                    <label end="107" start="106" name="NP"/>
+                    <label end="117" start="109" name="nn"/>
+                    <label end="119" start="119" name=","/>
+                    <label end="129" start="121" name="nn"/>
+                    <label end="135" start="131" name="nn"/>
+                    <label end="137" start="137" name=","/>
+                    <label end="143" start="139" name="nn"/>
+                    <label end="145" start="145" name=","/>
+                    <label end="149" start="147" name="cd"/>
+                    <label end="159" start="151" name="nn"/>
+                    <label end="161" start="161" name=","/>
+                    <label end="165" start="163" name="cc"/>
+                    <label end="173" start="167" name="nn"/>
+                    <label end="179" start="175" name="nn"/>
+                    <label end="181" start="181" name=","/>
+                    <label end="185" start="183" name="dt"/>
+                    <label end="195" start="187" name="jj"/>
+                    <label end="201" start="197" name="nn"/>
+                    <label end="204" start="203" name="in"/>
+                    <label end="213" start="206" name="nn"/>
+                    <label end="215" start="215" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="117" start="106" name="WEA"/>
+                    <label end="135" start="121" name="WEA"/>
+                    <label end="143" start="139" name="WEA"/>
+                    <label end="159" start="147" name="WEA"/>
+                    <label end="179" start="167" name="WEA"/>
+                    <label end="69" start="68" name="WEA"/>
+                    <label end="213" start="206" name="WEA"/>
+                    <label end="201" start="187" name="WEA"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="6" start="5" name="NT"/>
+                    <label end="10" start="8" name="NT"/>
+                    <label end="34" start="31" name="NT"/>
+                    <label end="54" start="51" name="NT"/>
+                    <label end="58" start="56" name="NT"/>
+                    <label end="80" start="79" name="NT"/>
+                    <label end="84" start="82" name="NT"/>
+                    <label end="107" start="106" name="NT"/>
+                    <label end="119" start="119" name="NT"/>
+                    <label end="137" start="137" name="NT"/>
+                    <label end="145" start="145" name="NT"/>
+                    <label end="149" start="147" name="NT"/>
+                    <label end="161" start="161" name="NT"/>
+                    <label end="165" start="163" name="NT"/>
+                    <label end="181" start="181" name="NT"/>
+                    <label end="185" start="183" name="NT"/>
+                    <label end="204" start="203" name="NT"/>
+                    <label end="215" start="215" name="NT"/>
+                    <label end="38" start="36" name="NT"/>
+                    <label end="15" start="12" name="NT"/>
+                    <label end="104" start="102" name="NT"/>
+                    <label end="69" start="68" name="NT"/>
+                    <label end="66" start="60" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/04/2005 09:38:05 PST Fri" status="MANUAL" ID="6523908">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="195" start="187" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="18" end="201" start="197" name="Cause"/>
+                    <label cBy="MJE" feID="20" end="213" start="203" name="Effect"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="201" start="197" name="Head"/>
+                    <label end="213" start="203" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="201" start="197" name="N"/>
+                    <label end="213" start="203" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Insufficient_Attestations" POS="N" name="detachment.n" ID="16435" frame="Temporary_group" frameID="2588" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="con" name="Container_possessor"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Extra-Thematic" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="mem" name="Members"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="par" name="Parent_organization"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="per" name="Period_of_existence"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="pl" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="tem" name="Temporary_group"/>
+        </frame>
+    </header>
+    <definition>FN: a portion of a military (or similar) organization separated and assigned a task.</definition>
+    <lexeme POS="N" name="detachment"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Temporary_group"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Temporary_group"/>
+                <annoSet ID="6619336"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Temporary_group"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Temporary_group"/>
+                <annoSet ID="6619336"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-T-(1)">
+        <sentence sentNo="0" aPos="865075" ID="4134356">
+            <text>SEAL Team 6 is divided into numerous detachments that rotate into Afghanistan .</text>
+            <annotationSet cDate="04/09/2012 05:23:04 PDT Mon" status="UNANN" ID="6619335">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="VV"/>
+                    <label end="8" start="5" name="NP"/>
+                    <label end="10" start="10" name="cd"/>
+                    <label end="13" start="12" name="VBZ"/>
+                    <label end="21" start="15" name="VVN"/>
+                    <label end="26" start="23" name="in"/>
+                    <label end="35" start="28" name="jj"/>
+                    <label end="47" start="37" name="nns"/>
+                    <label end="52" start="49" name="wdt"/>
+                    <label end="59" start="54" name="VV"/>
+                    <label end="64" start="61" name="in"/>
+                    <label end="76" start="66" name="NP"/>
+                    <label end="78" start="78" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="10" start="0" name="organization"/>
+                    <label end="76" start="66" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="8" start="5" name="NT"/>
+                    <label end="10" start="10" name="NT"/>
+                    <label end="13" start="12" name="NT"/>
+                    <label end="26" start="23" name="NT"/>
+                    <label end="52" start="49" name="NT"/>
+                    <label end="64" start="61" name="NT"/>
+                    <label end="76" start="66" name="NT"/>
+                    <label end="78" start="78" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="04/09/2012 05:23:04 PDT Mon" status="MANUAL" ID="6619336">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="47" start="37" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="14597" end="47" start="37" name="Temporary_group"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="other-matched-(1)"/>
+    <subCorpus name="other-unmatched-(1)"/>
+</lexUnit>

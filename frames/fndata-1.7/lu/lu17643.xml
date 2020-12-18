@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="PREP" name="since.prep" ID="17643" frame="Time_vector" frameID="379" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_10" name="Fires_10" ID="25625"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Direction" name="Direction"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Distance" name="Distance"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Core" abbrev="Evt" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="lan" name="Landmark_event"/>
+        </frame>
+    </header>
+    <definition>FN: from (the specified time) until now, or until the time under consideration in a narrative.</definition>
+    <lexeme POS="PREP" name="since"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="Sfin" FE="Event"/>
+                <annoSet ID="6671422"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Landmark_event"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Landmark_event"/>
+                <annoSet ID="6671422"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Event"/>
+            <FE name="Landmark_event"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="Sfin" FE="Event"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Landmark_event"/>
+                <annoSet ID="6671422"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25625" sentNo="1" paragNo="4" aPos="0" ID="4165592">
+            <text>Since Friday morning , around 170 fires have been burning , many of which are believed to be caused by arson .</text>
+            <annotationSet cDate="07/21/2014 11:09:18 PDT Mon" status="UNANN" ID="6670848">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="in"/>
+                    <label end="11" start="6" name="NP"/>
+                    <label end="19" start="13" name="nn"/>
+                    <label end="21" start="21" name=","/>
+                    <label end="28" start="23" name="rb"/>
+                    <label end="32" start="30" name="cd"/>
+                    <label end="38" start="34" name="nns"/>
+                    <label end="43" start="40" name="VHP"/>
+                    <label end="48" start="45" name="VBN"/>
+                    <label end="56" start="50" name="VVG"/>
+                    <label end="58" start="58" name=","/>
+                    <label end="63" start="60" name="jj"/>
+                    <label end="66" start="65" name="in"/>
+                    <label end="72" start="68" name="wdt"/>
+                    <label end="76" start="74" name="vbp"/>
+                    <label end="85" start="78" name="VVN"/>
+                    <label end="88" start="87" name="to"/>
+                    <label end="91" start="90" name="vb"/>
+                    <label end="98" start="93" name="VVN"/>
+                    <label end="101" start="100" name="in"/>
+                    <label end="107" start="103" name="nn"/>
+                    <label end="109" start="109" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="11" start="6" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="21" start="21" name="NT"/>
+                    <label end="32" start="30" name="NT"/>
+                    <label end="43" start="40" name="NT"/>
+                    <label end="48" start="45" name="NT"/>
+                    <label end="58" start="58" name="NT"/>
+                    <label end="66" start="65" name="NT"/>
+                    <label end="72" start="68" name="NT"/>
+                    <label end="76" start="74" name="NT"/>
+                    <label end="88" start="87" name="NT"/>
+                    <label end="91" start="90" name="NT"/>
+                    <label end="101" start="100" name="NT"/>
+                    <label end="109" start="109" name="NT"/>
+                    <label end="28" start="23" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/21/2014 02:41:30 PDT Mon" status="MANUAL" ID="6671422">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="4" start="0" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="3396" end="19" start="6" name="Landmark_event"/>
+                    <label cBy="CVa" feID="4832" end="107" start="23" name="Event"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="19" start="6" name="Obj"/>
+                    <label end="107" start="23" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="19" start="6" name="NP"/>
+                    <label end="107" start="23" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Prep"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

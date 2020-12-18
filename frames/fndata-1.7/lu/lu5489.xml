@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="prayer.n" ID="5489" frame="Rite" frameID="301" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Bell Ringing" name="BellRinging" ID="23009"/>
+        </corpus>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="Chapter 14 of The Hound of the Baskervilles" name="Hound-Ch14" ID="23832"/>
+        </corpus>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="AFGP-2002-600045-Trans" name="AFGP-2002-600045-Trans" ID="23740"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="DesS" name="Desired_state_of_affairs"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="G_member" name="Guardian"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="Ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Ldr" name="Leader"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Mbr" name="Member"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Core" abbrev="NStat" name="New_status"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="Obj" name="Object"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="Org" name="Organization"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="Type" name="Type"/>
+        </frame>
+    </header>
+    <definition>COD: a solemn request for help or expression of thanks addressed to God or another deity</definition>
+    <lexeme POS="N" name="prayer"/>
+    <valences>
+        <governor type="Sup" lemma="at">
+            <annoSet ID="4529966"/>
+        </governor>
+        <FERealization total="2">
+            <FE name="Member"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Member"/>
+                <annoSet ID="4529966"/>
+                <annoSet ID="6648418"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="Sub" FE="Time"/>
+                <annoSet ID="6648418"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Type"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Type"/>
+                <annoSet ID="6648418"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPto" FE="Type"/>
+                <annoSet ID="6550746"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Member"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Member"/>
+                <annoSet ID="4529966"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Member"/>
+            <FE name="Time"/>
+            <FE name="Type"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Member"/>
+                <valenceUnit GF="Dep" PT="Sub" FE="Time"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Type"/>
+                <annoSet ID="6648418"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Type"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPto" FE="Type"/>
+                <annoSet ID="6550746"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23009" sentNo="4" paragNo="19" aPos="0" ID="2824243">
+            <text>`` So crunch , crunch , crunch , bang , bang , bang -- here come the ringers from above , making a very obvious exit while the congregation is at prayer , '' he says .</text>
+            <annotationSet cDate="02/05/2004 08:29:34 PST Thu" status="UNANN" ID="4528238">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="``"/>
+                    <label end="4" start="3" name="in"/>
+                    <label end="11" start="6" name="nn"/>
+                    <label end="13" start="13" name=","/>
+                    <label end="20" start="15" name="nn"/>
+                    <label end="22" start="22" name=","/>
+                    <label end="29" start="24" name="nn"/>
+                    <label end="31" start="31" name=","/>
+                    <label end="36" start="33" name="nn"/>
+                    <label end="38" start="38" name=","/>
+                    <label end="43" start="40" name="nn"/>
+                    <label end="45" start="45" name=","/>
+                    <label end="50" start="47" name="nn"/>
+                    <label end="53" start="52" name=":"/>
+                    <label end="58" start="55" name="rb"/>
+                    <label end="63" start="60" name="VV"/>
+                    <label end="67" start="65" name="dt"/>
+                    <label end="75" start="69" name="nns"/>
+                    <label end="80" start="77" name="in"/>
+                    <label end="86" start="82" name="jj"/>
+                    <label end="88" start="88" name=","/>
+                    <label end="95" start="90" name="VVG"/>
+                    <label end="97" start="97" name="dt"/>
+                    <label end="102" start="99" name="rb"/>
+                    <label end="110" start="104" name="jj"/>
+                    <label end="115" start="112" name="nn"/>
+                    <label end="121" start="117" name="in"/>
+                    <label end="125" start="123" name="dt"/>
+                    <label end="138" start="127" name="nn"/>
+                    <label end="141" start="140" name="VBZ"/>
+                    <label end="144" start="143" name="in"/>
+                    <label end="151" start="146" name="nn"/>
+                    <label end="153" start="153" name=","/>
+                    <label end="156" start="155" name="''"/>
+                    <label end="159" start="158" name="PP"/>
+                    <label end="164" start="161" name="VVZ"/>
+                    <label end="166" start="166" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="13" start="13" name="NT"/>
+                    <label end="22" start="22" name="NT"/>
+                    <label end="31" start="31" name="NT"/>
+                    <label end="38" start="38" name="NT"/>
+                    <label end="45" start="45" name="NT"/>
+                    <label end="58" start="55" name="NT"/>
+                    <label end="88" start="88" name="NT"/>
+                    <label end="102" start="99" name="NT"/>
+                    <label end="141" start="140" name="NT"/>
+                    <label end="153" start="153" name="NT"/>
+                    <label end="156" start="155" name="NT"/>
+                    <label end="166" start="166" name="NT"/>
+                    <label end="4" start="3" name="NT"/>
+                    <label end="53" start="52" name="NT"/>
+                    <label end="67" start="65" name="NT"/>
+                    <label end="80" start="77" name="NT"/>
+                    <label end="97" start="97" name="NT"/>
+                    <label end="121" start="117" name="NT"/>
+                    <label end="125" start="123" name="NT"/>
+                    <label end="144" start="143" name="NT"/>
+                    <label end="159" start="158" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/19/2004 03:45:28 PDT Thu" status="MANUAL" ID="4529966">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="151" start="146" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="2595" end="138" start="123" name="Member"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="138" start="123" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="138" start="123" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="144" start="143" name="Supp"/>
+                    <label end="141" start="140" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="205" docID="23740" sentNo="1" paragNo="34" aPos="0" ID="4103287">
+            <text>Our last prayer is to thank God the creator of the universe .</text>
+            <annotationSet cDate="08/24/2007 01:47:07 PDT Fri" status="UNANN" ID="6547110">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="PP$"/>
+                    <label end="7" start="4" name="jj"/>
+                    <label end="14" start="9" name="nn"/>
+                    <label end="17" start="16" name="VBZ"/>
+                    <label end="20" start="19" name="to"/>
+                    <label end="26" start="22" name="VV"/>
+                    <label end="30" start="28" name="NP"/>
+                    <label end="34" start="32" name="dt"/>
+                    <label end="42" start="36" name="nn"/>
+                    <label end="45" start="44" name="in"/>
+                    <label end="49" start="47" name="dt"/>
+                    <label end="58" start="51" name="nn"/>
+                    <label end="60" start="60" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="17" start="16" name="NT"/>
+                    <label end="20" start="19" name="NT"/>
+                    <label end="30" start="28" name="NT"/>
+                    <label end="34" start="32" name="NT"/>
+                    <label end="45" start="44" name="NT"/>
+                    <label end="49" start="47" name="NT"/>
+                    <label end="60" start="60" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/09/2007 02:56:54 PST Fri" status="MANUAL" ID="6550746">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="14" start="9" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="3219" end="58" start="19" name="Type"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="58" start="19" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="58" start="19" name="VPto"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="17" start="16" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="175" docID="23832" sentNo="2" paragNo="42" aPos="0" ID="4107293">
+            <text>We tore away his collar , and Holmes breathed a prayer of gratitude when we saw that there was no sign of a wound and that the rescue had been in time .</text>
+            <annotationSet cDate="02/11/2009 12:03:32 PST Wed" status="UNANN" ID="6558390">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="6" start="3" name="VVD"/>
+                    <label end="11" start="8" name="rp"/>
+                    <label end="15" start="13" name="PP$"/>
+                    <label end="22" start="17" name="nn"/>
+                    <label end="24" start="24" name=","/>
+                    <label end="28" start="26" name="cc"/>
+                    <label end="35" start="30" name="NP"/>
+                    <label end="44" start="37" name="VVD"/>
+                    <label end="46" start="46" name="dt"/>
+                    <label end="53" start="48" name="nn"/>
+                    <label end="56" start="55" name="in"/>
+                    <label end="66" start="58" name="nn"/>
+                    <label end="71" start="68" name="wrb"/>
+                    <label end="74" start="73" name="PP"/>
+                    <label end="78" start="76" name="VVD"/>
+                    <label end="83" start="80" name="in"/>
+                    <label end="89" start="85" name="ex"/>
+                    <label end="93" start="91" name="VBD"/>
+                    <label end="96" start="95" name="dt"/>
+                    <label end="101" start="98" name="nn"/>
+                    <label end="104" start="103" name="in"/>
+                    <label end="106" start="106" name="dt"/>
+                    <label end="112" start="108" name="nn"/>
+                    <label end="116" start="114" name="cc"/>
+                    <label end="121" start="118" name="in"/>
+                    <label end="125" start="123" name="dt"/>
+                    <label end="132" start="127" name="nn"/>
+                    <label end="136" start="134" name="VHD"/>
+                    <label end="141" start="138" name="VBN"/>
+                    <label end="144" start="143" name="in"/>
+                    <label end="149" start="146" name="nn"/>
+                    <label end="151" start="151" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="35" start="30" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="11" start="8" name="NT"/>
+                    <label end="15" start="13" name="NT"/>
+                    <label end="24" start="24" name="NT"/>
+                    <label end="28" start="26" name="NT"/>
+                    <label end="35" start="30" name="NT"/>
+                    <label end="46" start="46" name="NT"/>
+                    <label end="56" start="55" name="NT"/>
+                    <label end="71" start="68" name="NT"/>
+                    <label end="74" start="73" name="NT"/>
+                    <label end="83" start="80" name="NT"/>
+                    <label end="89" start="85" name="NT"/>
+                    <label end="93" start="91" name="NT"/>
+                    <label end="96" start="95" name="NT"/>
+                    <label end="104" start="103" name="NT"/>
+                    <label end="106" start="106" name="NT"/>
+                    <label end="116" start="114" name="NT"/>
+                    <label end="121" start="118" name="NT"/>
+                    <label end="125" start="123" name="NT"/>
+                    <label end="136" start="134" name="NT"/>
+                    <label end="141" start="138" name="NT"/>
+                    <label end="144" start="143" name="NT"/>
+                    <label end="151" start="151" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="09/26/2013 05:13:43 PDT Thu" status="MANUAL" ID="6648418">
+                <layer rank="1" name="Target">
+                    <label cBy="CFB" end="53" start="48" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CFB" feID="2595" end="35" start="30" name="Member"/>
+                    <label cBy="CFB" feID="3219" end="66" start="55" name="Type"/>
+                    <label cBy="CFB" feID="2599" end="149" start="68" name="Time"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="35" start="30" name="Ext"/>
+                    <label end="66" start="55" name="Dep"/>
+                    <label end="149" start="68" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="35" start="30" name="NP"/>
+                    <label end="66" start="55" name="PP"/>
+                    <label end="149" start="68" name="Sub"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

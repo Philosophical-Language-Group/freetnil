@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="look back.v" ID="12441" frame="Remembering_experience" frameID="1222" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Election Victory" name="ElectionVictory" ID="23010"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="con" name="Context"/>
+            <FE fgColor="00008B" bgColor="d0d0d0" type="Peripheral" abbrev="dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="exp" name="Experience"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="imp" name="Impression"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="sal" name="Salient_entity"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="sta" name="State"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="viv" name="Vividness"/>
+        </frame>
+    </header>
+    <definition>FN: call to mind a past experience</definition>
+    <lexeme order="1" headword="true" breakBefore="false" POS="V" name="look"/>
+    <lexeme order="2" headword="false" breakBefore="false" POS="ADV" name="back"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <annoSet ID="4530413"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Impression"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[as]" FE="Impression"/>
+                <annoSet ID="4530413"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Salient_entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[on]" FE="Salient_entity"/>
+                <annoSet ID="4530413"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="Impression"/>
+            <FE name="Salient_entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <valenceUnit GF="Dep" PT="PP[as]" FE="Impression"/>
+                <valenceUnit GF="Dep" PT="PP[on]" FE="Salient_entity"/>
+                <annoSet ID="4530413"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23010" sentNo="4" paragNo="1" aPos="0" ID="2824270">
+            <text>If he follows the correct path , he may be able to look back on this election as the high-water mark of far-left opposition .</text>
+            <annotationSet cDate="02/05/2004 08:29:42 PST Thu" status="UNANN" ID="4528265">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="4" start="3" name="PP"/>
+                    <label end="12" start="6" name="VVZ"/>
+                    <label end="16" start="14" name="dt"/>
+                    <label end="24" start="18" name="jj"/>
+                    <label end="29" start="26" name="nn"/>
+                    <label end="31" start="31" name=","/>
+                    <label end="34" start="33" name="PP"/>
+                    <label end="38" start="36" name="md"/>
+                    <label end="41" start="40" name="vb"/>
+                    <label end="46" start="43" name="jj"/>
+                    <label end="49" start="48" name="to"/>
+                    <label end="54" start="51" name="VV"/>
+                    <label end="59" start="56" name="rp"/>
+                    <label end="62" start="61" name="in"/>
+                    <label end="67" start="64" name="dt"/>
+                    <label end="76" start="69" name="nn"/>
+                    <label end="79" start="78" name="in"/>
+                    <label end="83" start="81" name="dt"/>
+                    <label end="94" start="85" name="jj"/>
+                    <label end="99" start="96" name="nn"/>
+                    <label end="102" start="101" name="in"/>
+                    <label end="111" start="104" name="jj"/>
+                    <label end="122" start="113" name="nn"/>
+                    <label end="124" start="124" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="31" start="31" name="NT"/>
+                    <label end="41" start="40" name="NT"/>
+                    <label end="49" start="48" name="NT"/>
+                    <label end="124" start="124" name="NT"/>
+                    <label end="1" start="0" name="NT"/>
+                    <label end="4" start="3" name="NT"/>
+                    <label end="16" start="14" name="NT"/>
+                    <label end="34" start="33" name="NT"/>
+                    <label end="62" start="61" name="NT"/>
+                    <label end="67" start="64" name="NT"/>
+                    <label end="79" start="78" name="NT"/>
+                    <label end="83" start="81" name="NT"/>
+                    <label end="102" start="101" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/18/2005 10:34:35 PDT Mon" status="MANUAL" ID="4530413">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="54" start="51" name="Target"/>
+                    <label cBy="EGp" end="59" start="56" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="7108" end="34" start="33" name="Cognizer"/>
+                    <label cBy="JKR" feID="7109" end="76" start="61" name="Salient_entity"/>
+                    <label cBy="JKR" feID="7111" end="122" start="78" name="Impression"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="34" start="33" name="Ext"/>
+                    <label end="76" start="61" name="Dep"/>
+                    <label end="122" start="78" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="34" start="33" name="NP"/>
+                    <label end="76" start="61" name="PP"/>
+                    <label end="122" start="78" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

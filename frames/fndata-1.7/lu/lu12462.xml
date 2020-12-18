@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="round.n" ID="12462" frame="Ammunition" frameID="1565" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="North Korea Chemical Overview" name="NorthKorea_ChemicalOverview" ID="23611"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="amm" name="Ammunition"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="cre" name="Creator"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Peripheral" abbrev="mat" name="Material"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time_of_creation"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="" name="Type"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="Use" name="Use"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="" name="Weapon"/>
+        </frame>
+    </header>
+    <definition>COD: the amount of ammunition needed to fire one shot</definition>
+    <lexeme POS="N" name="round"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Ammunition"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Ammunition"/>
+                <annoSet ID="6536270"/>
+                <annoSet ID="6536285"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Type"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Type"/>
+                <annoSet ID="6536270"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Ammunition"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Ammunition"/>
+                <annoSet ID="6536285"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Ammunition"/>
+            <FE name="Type"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Ammunition"/>
+                <valenceUnit GF="Dep" PT="N" FE="Type"/>
+                <annoSet ID="6536270"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23611" sentNo="5" paragNo="13" aPos="0" ID="4099705">
+            <text>In addition to thousands of artillery rounds , hundreds of forward deployed Scud-B , Frog-5 and Frog-7 missiles , plus about 30 Scud-C missiles could be armed with chemical warheads .</text>
+            <annotationSet cDate="06/27/2006 04:45:14 PDT Tue" status="UNANN" ID="6535913">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="10" start="3" name="nn"/>
+                    <label end="13" start="12" name="to"/>
+                    <label end="23" start="15" name="nns"/>
+                    <label end="26" start="25" name="in"/>
+                    <label end="36" start="28" name="nn"/>
+                    <label end="43" start="38" name="nns"/>
+                    <label end="45" start="45" name=","/>
+                    <label end="54" start="47" name="nns"/>
+                    <label end="57" start="56" name="in"/>
+                    <label end="65" start="59" name="rb"/>
+                    <label end="74" start="67" name="VVN"/>
+                    <label end="81" start="76" name="nn"/>
+                    <label end="83" start="83" name=","/>
+                    <label end="90" start="85" name="cd"/>
+                    <label end="94" start="92" name="cc"/>
+                    <label end="101" start="96" name="cd"/>
+                    <label end="110" start="103" name="nns"/>
+                    <label end="112" start="112" name=","/>
+                    <label end="117" start="114" name="cc"/>
+                    <label end="123" start="119" name="in"/>
+                    <label end="126" start="125" name="cd"/>
+                    <label end="133" start="128" name="NP"/>
+                    <label end="142" start="135" name="nns"/>
+                    <label end="148" start="144" name="md"/>
+                    <label end="151" start="150" name="vb"/>
+                    <label end="157" start="153" name="VVN"/>
+                    <label end="162" start="159" name="in"/>
+                    <label end="171" start="164" name="jj"/>
+                    <label end="180" start="173" name="nns"/>
+                    <label end="182" start="182" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="13" start="12" name="NT"/>
+                    <label end="26" start="25" name="NT"/>
+                    <label end="45" start="45" name="NT"/>
+                    <label end="57" start="56" name="NT"/>
+                    <label end="65" start="59" name="NT"/>
+                    <label end="83" start="83" name="NT"/>
+                    <label end="90" start="85" name="NT"/>
+                    <label end="94" start="92" name="NT"/>
+                    <label end="101" start="96" name="NT"/>
+                    <label end="112" start="112" name="NT"/>
+                    <label end="117" start="114" name="NT"/>
+                    <label end="123" start="119" name="NT"/>
+                    <label end="126" start="125" name="NT"/>
+                    <label end="148" start="144" name="NT"/>
+                    <label end="151" start="150" name="NT"/>
+                    <label end="162" start="159" name="NT"/>
+                    <label end="182" start="182" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/03/2006 02:30:25 PDT Mon" status="MANUAL" ID="6536270">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="43" start="38" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="8524" end="43" start="38" name="Ammunition"/>
+                    <label cBy="RLG" feID="8529" end="36" start="28" name="Type"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="36" start="28" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="36" start="28" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23611" sentNo="7" paragNo="13" aPos="0" ID="4099707">
+            <text>A South Korean security analyst suggested that DPRK artillery pieces of calibers 170 mm and 240 mm `` could fire 10,000 rounds per minute to Seoul and its environs . ''</text>
+            <annotationSet cDate="06/27/2006 04:45:14 PDT Tue" status="UNANN" ID="6535915">
+                <layer rank="1" name="PENN">
+                    <label end="0" start="0" name="dt"/>
+                    <label end="6" start="2" name="jj"/>
+                    <label end="13" start="8" name="jj"/>
+                    <label end="22" start="15" name="nn"/>
+                    <label end="30" start="24" name="nn"/>
+                    <label end="40" start="32" name="VVD"/>
+                    <label end="45" start="42" name="dt"/>
+                    <label end="50" start="47" name="NP"/>
+                    <label end="60" start="52" name="nn"/>
+                    <label end="67" start="62" name="nns"/>
+                    <label end="70" start="69" name="in"/>
+                    <label end="79" start="72" name="nns"/>
+                    <label end="83" start="81" name="cd"/>
+                    <label end="86" start="85" name="nn"/>
+                    <label end="90" start="88" name="cc"/>
+                    <label end="94" start="92" name="cd"/>
+                    <label end="97" start="96" name="nn"/>
+                    <label end="100" start="99" name="``"/>
+                    <label end="106" start="102" name="md"/>
+                    <label end="111" start="108" name="VV"/>
+                    <label end="118" start="113" name="cd"/>
+                    <label end="125" start="120" name="nns"/>
+                    <label end="129" start="127" name="in"/>
+                    <label end="136" start="131" name="nn"/>
+                    <label end="139" start="138" name="to"/>
+                    <label end="145" start="141" name="NP"/>
+                    <label end="149" start="147" name="cc"/>
+                    <label end="153" start="151" name="PP$"/>
+                    <label end="162" start="155" name="nn"/>
+                    <label end="164" start="164" name="sent"/>
+                    <label end="167" start="166" name="''"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="50" start="47" name="location"/>
+                    <label end="145" start="141" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="0" start="0" name="NT"/>
+                    <label end="45" start="42" name="NT"/>
+                    <label end="50" start="47" name="NT"/>
+                    <label end="70" start="69" name="NT"/>
+                    <label end="83" start="81" name="NT"/>
+                    <label end="90" start="88" name="NT"/>
+                    <label end="94" start="92" name="NT"/>
+                    <label end="100" start="99" name="NT"/>
+                    <label end="106" start="102" name="NT"/>
+                    <label end="118" start="113" name="NT"/>
+                    <label end="129" start="127" name="NT"/>
+                    <label end="139" start="138" name="NT"/>
+                    <label end="145" start="141" name="NT"/>
+                    <label end="149" start="147" name="NT"/>
+                    <label end="153" start="151" name="NT"/>
+                    <label end="164" start="164" name="NT"/>
+                    <label end="167" start="166" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/03/2006 02:49:49 PDT Mon" status="MANUAL" ID="6536285">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="125" start="120" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="8524" end="125" start="120" name="Ammunition"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

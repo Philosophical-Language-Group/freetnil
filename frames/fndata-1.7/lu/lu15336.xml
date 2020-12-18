@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="formation.n" ID="15336" frame="Pattern" frameID="2133" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFF00" bgColor="00008B" type="Peripheral" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Ents" name="Entities"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Peripheral" abbrev="Name" name="Name"/>
+        </frame>
+    </header>
+    <definition>FN: an arrangement of entities forming a recognizable shape</definition>
+    <lexeme POS="N" name="formation"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Descriptor"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Descriptor"/>
+                <annoSet ID="6560666"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Entities"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Entities"/>
+                <annoSet ID="6560666"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Descriptor"/>
+            <FE name="Entities"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Descriptor"/>
+                <valenceUnit GF="Dep" PT="N" FE="Entities"/>
+                <annoSet ID="6560666"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23771" sentNo="1" paragNo="71" aPos="0" ID="4106041">
+            <text>Two natural rock formations are always pointed out on excursions .</text>
+            <annotationSet cDate="07/25/2008 01:19:17 PDT Fri" status="UNANN" ID="6555131">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="cd"/>
+                    <label end="10" start="4" name="jj"/>
+                    <label end="15" start="12" name="nn"/>
+                    <label end="26" start="17" name="nns"/>
+                    <label end="30" start="28" name="vbp"/>
+                    <label end="37" start="32" name="rb"/>
+                    <label end="45" start="39" name="VVN"/>
+                    <label end="49" start="47" name="rp"/>
+                    <label end="52" start="51" name="in"/>
+                    <label end="63" start="54" name="nns"/>
+                    <label end="65" start="65" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="30" start="28" name="NT"/>
+                    <label end="49" start="47" name="NT"/>
+                    <label end="52" start="51" name="NT"/>
+                    <label end="65" start="65" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/20/2011 04:45:49 PST Thu" status="MANUAL" ID="6560666">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="26" start="17" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="13169" end="15" start="12" name="Entities"/>
+                    <label cBy="AlK" feID="13171" end="10" start="4" name="Descriptor"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="15" start="12" name="Dep"/>
+                    <label end="10" start="4" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="15" start="12" name="N"/>
+                    <label end="10" start="4" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

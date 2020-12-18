@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="impression.n" ID="11909" frame="Regard" frameID="1400" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Hong Kong" name="IntroHongKong" ID="23757"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="eva" name="Evaluee"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="ext" name="Extent_of_acclaim"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="jud" name="Judgment"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="rol" name="Role"/>
+        </frame>
+    </header>
+    <definition>FN: a level of esteem</definition>
+    <lexeme POS="N" name="impression"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Cognizer"/>
+                <annoSet ID="6553156"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Judgment"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Judgment"/>
+                <annoSet ID="6553156"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="Judgment"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Cognizer"/>
+                <valenceUnit GF="" PT="DEN" FE="Judgment"/>
+                <annoSet ID="6553156"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23757" sentNo="1" paragNo="5" aPos="0" ID="4104002">
+            <text>The impression of the visitor today will be that very little has changed .</text>
+            <annotationSet cDate="07/21/2008 03:12:19 PDT Mon" status="UNANN" ID="6552814">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="13" start="4" name="nn"/>
+                    <label end="16" start="15" name="in"/>
+                    <label end="20" start="18" name="dt"/>
+                    <label end="28" start="22" name="nn"/>
+                    <label end="34" start="30" name="nn"/>
+                    <label end="39" start="36" name="md"/>
+                    <label end="42" start="41" name="vb"/>
+                    <label end="47" start="44" name="in"/>
+                    <label end="52" start="49" name="rb"/>
+                    <label end="59" start="54" name="rb"/>
+                    <label end="63" start="61" name="VHZ"/>
+                    <label end="71" start="65" name="VVN"/>
+                    <label end="73" start="73" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="16" start="15" name="NT"/>
+                    <label end="20" start="18" name="NT"/>
+                    <label end="39" start="36" name="NT"/>
+                    <label end="42" start="41" name="NT"/>
+                    <label end="47" start="44" name="NT"/>
+                    <label end="52" start="49" name="NT"/>
+                    <label end="59" start="54" name="NT"/>
+                    <label end="63" start="61" name="NT"/>
+                    <label end="73" start="73" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/22/2008 03:50:28 PDT Tue" status="MANUAL" ID="6553156">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="13" start="4" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="7851" end="13" start="4" name="Judgment"/>
+                    <label cBy="JKs" feID="7840" end="28" start="15" name="Cognizer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="28" start="15" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="28" start="15" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

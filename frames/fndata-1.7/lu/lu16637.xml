@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="In_Use" POS="N" name="kamikaze [attack].n" ID="16637" frame="Suicide_attack" frameID="2658" totalAnnotated="6" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Asl" name="Assailant"/>
+            <FE fgColor="000000" bgColor="7CCD73" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="" name="Containing_event"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="000000" bgColor="FFD700" type="Extra-Thematic" abbrev="part" name="Particular_iteration"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Peripheral" abbrev="pat" name="Path"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Extra-Thematic" abbrev="re-e" name="Re-encoding"/>
+            <FE fgColor="000000" bgColor="A9A9A9" type="Extra-Thematic" abbrev="" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Src" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Vic" name="Victim"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Wep" name="Weapon"/>
+        </frame>
+    </header>
+    <definition>FN: an attack in which a pilot crashes the airplane into the target.</definition>
+    <lexeme POS="N" name="kamikaze"/>
+    <valences>
+        <governor type="Gov" lemma="mission">
+            <annoSet ID="6611128"/>
+        </governor>
+        <governor type="Gov" lemma="pilot">
+            <annoSet ID="6611102"/>
+        </governor>
+        <governor type="Gov" lemma="survivor">
+            <annoSet ID="6611096"/>
+            <annoSet ID="6611104"/>
+        </governor>
+        <FERealization total="2">
+            <FE name="Assailant"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Assailant"/>
+                <annoSet ID="6611092"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Assailant"/>
+                <annoSet ID="6611090"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Assailant"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Assailant"/>
+                <annoSet ID="6611092"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Assailant"/>
+                <annoSet ID="6611090"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-T-(1)">
+        <sentence sentNo="0" aPos="510966" ID="4130617">
+            <text>The Peace Museum in Chiran bestows the same posthumous heroism on the kamikazes .</text>
+            <annotationSet cDate="03/06/2012 04:02:34 PST Tue" status="UNANN" ID="6611089">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="8" start="4" name="NP"/>
+                    <label end="15" start="10" name="NP"/>
+                    <label end="18" start="17" name="in"/>
+                    <label end="25" start="20" name="NP"/>
+                    <label end="33" start="27" name="VVZ"/>
+                    <label end="37" start="35" name="dt"/>
+                    <label end="42" start="39" name="jj"/>
+                    <label end="53" start="44" name="jj"/>
+                    <label end="61" start="55" name="nn"/>
+                    <label end="64" start="63" name="in"/>
+                    <label end="68" start="66" name="dt"/>
+                    <label end="78" start="70" name="nns"/>
+                    <label end="80" start="80" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="15" start="4" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="8" start="4" name="NT"/>
+                    <label end="15" start="10" name="NT"/>
+                    <label end="18" start="17" name="NT"/>
+                    <label end="25" start="20" name="NT"/>
+                    <label end="37" start="35" name="NT"/>
+                    <label end="64" start="63" name="NT"/>
+                    <label end="68" start="66" name="NT"/>
+                    <label end="80" start="80" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/06/2012 04:02:34 PST Tue" status="MANUAL" ID="6611090">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="78" start="70" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="15041" end="78" start="70" name="Assailant"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence sentNo="0" aPos="509795" ID="4130618">
+            <text>Yet the arguments ca n't prevent those who use suicide tactics today from claiming Japanese kamikazes as an inspiration .</text>
+            <annotationSet cDate="03/06/2012 04:02:34 PST Tue" status="UNANN" ID="6611091">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="cc"/>
+                    <label end="6" start="4" name="dt"/>
+                    <label end="16" start="8" name="nns"/>
+                    <label end="19" start="18" name="md"/>
+                    <label end="23" start="21" name="rb"/>
+                    <label end="31" start="25" name="VV"/>
+                    <label end="37" start="33" name="dt"/>
+                    <label end="41" start="39" name="wp"/>
+                    <label end="45" start="43" name="VVP"/>
+                    <label end="53" start="47" name="nn"/>
+                    <label end="61" start="55" name="nns"/>
+                    <label end="67" start="63" name="nn"/>
+                    <label end="72" start="69" name="in"/>
+                    <label end="81" start="74" name="VVG"/>
+                    <label end="90" start="83" name="jj"/>
+                    <label end="100" start="92" name="nns"/>
+                    <label end="103" start="102" name="in"/>
+                    <label end="106" start="105" name="dt"/>
+                    <label end="118" start="108" name="nn"/>
+                    <label end="120" start="120" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="6" start="4" name="NT"/>
+                    <label end="19" start="18" name="NT"/>
+                    <label end="23" start="21" name="NT"/>
+                    <label end="37" start="33" name="NT"/>
+                    <label end="41" start="39" name="NT"/>
+                    <label end="72" start="69" name="NT"/>
+                    <label end="103" start="102" name="NT"/>
+                    <label end="106" start="105" name="NT"/>
+                    <label end="120" start="120" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/06/2012 04:02:34 PST Tue" status="MANUAL" ID="6611092">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="100" start="92" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="15041" end="90" start="83" name="Assailant"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="90" start="83" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="90" start="83" name="A"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence sentNo="0" aPos="509339" ID="4130620">
+            <text>In the postwar years , a traumatized nation treated the kamikaze survivors like pariahs .</text>
+            <annotationSet cDate="03/06/2012 04:02:34 PST Tue" status="UNANN" ID="6611095">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="13" start="7" name="jj"/>
+                    <label end="19" start="15" name="nns"/>
+                    <label end="21" start="21" name=","/>
+                    <label end="23" start="23" name="dt"/>
+                    <label end="35" start="25" name="VVN"/>
+                    <label end="42" start="37" name="nn"/>
+                    <label end="50" start="44" name="VVD"/>
+                    <label end="54" start="52" name="dt"/>
+                    <label end="63" start="56" name="nn"/>
+                    <label end="73" start="65" name="nns"/>
+                    <label end="78" start="75" name="in"/>
+                    <label end="86" start="80" name="nns"/>
+                    <label end="88" start="88" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="21" start="21" name="NT"/>
+                    <label end="23" start="23" name="NT"/>
+                    <label end="54" start="52" name="NT"/>
+                    <label end="78" start="75" name="NT"/>
+                    <label end="88" start="88" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/06/2012 04:02:34 PST Tue" status="MANUAL" ID="6611096">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="63" start="56" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE"/>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="73" start="65" name="Gov"/>
+                    <label end="63" start="56" name="X"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence sentNo="0" aPos="509074" ID="4130623">
+            <text>CHIRAN , Japan â€� These are the dusky days of old age that kamikaze pilots like Shigeyoshi Hamazono were not supposed to see .</text>
+            <annotationSet cDate="03/06/2012 04:02:34 PST Tue" status="UNANN" ID="6611101">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="NP"/>
+                    <label end="7" start="7" name=","/>
+                    <label end="13" start="9" name="NP"/>
+                    <label end="17" start="15" name="NP"/>
+                    <label end="23" start="19" name="dt"/>
+                    <label end="27" start="25" name="vbp"/>
+                    <label end="31" start="29" name="dt"/>
+                    <label end="37" start="33" name="jj"/>
+                    <label end="42" start="39" name="nns"/>
+                    <label end="45" start="44" name="in"/>
+                    <label end="49" start="47" name="jj"/>
+                    <label end="53" start="51" name="nn"/>
+                    <label end="58" start="55" name="IN/that"/>
+                    <label end="67" start="60" name="nn"/>
+                    <label end="74" start="69" name="nns"/>
+                    <label end="79" start="76" name="in"/>
+                    <label end="90" start="81" name="NP"/>
+                    <label end="99" start="92" name="NP"/>
+                    <label end="104" start="101" name="VBD"/>
+                    <label end="108" start="106" name="rb"/>
+                    <label end="117" start="110" name="VVN"/>
+                    <label end="120" start="119" name="to"/>
+                    <label end="124" start="122" name="VV"/>
+                    <label end="126" start="126" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="5" start="0" name="person"/>
+                    <label end="17" start="9" name="organization"/>
+                    <label end="99" start="81" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="0" name="NT"/>
+                    <label end="7" start="7" name="NT"/>
+                    <label end="13" start="9" name="NT"/>
+                    <label end="17" start="15" name="NT"/>
+                    <label end="23" start="19" name="NT"/>
+                    <label end="27" start="25" name="NT"/>
+                    <label end="31" start="29" name="NT"/>
+                    <label end="45" start="44" name="NT"/>
+                    <label end="79" start="76" name="NT"/>
+                    <label end="90" start="81" name="NT"/>
+                    <label end="99" start="92" name="NT"/>
+                    <label end="104" start="101" name="NT"/>
+                    <label end="108" start="106" name="NT"/>
+                    <label end="120" start="119" name="NT"/>
+                    <label end="126" start="126" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/06/2012 04:02:34 PST Tue" status="MANUAL" ID="6611102">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="67" start="60" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE"/>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="74" start="69" name="Gov"/>
+                    <label end="67" start="60" name="X"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence sentNo="0" aPos="510248" ID="4130624">
+            <text>Many kamikaze survivors echo that sense of surrendering to inevitability .</text>
+            <annotationSet cDate="03/06/2012 04:02:34 PST Tue" status="UNANN" ID="6611103">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="jj"/>
+                    <label end="12" start="5" name="nn"/>
+                    <label end="22" start="14" name="nns"/>
+                    <label end="27" start="24" name="VVP"/>
+                    <label end="32" start="29" name="IN/that"/>
+                    <label end="38" start="34" name="nn"/>
+                    <label end="41" start="40" name="in"/>
+                    <label end="54" start="43" name="VVG"/>
+                    <label end="57" start="56" name="to"/>
+                    <label end="71" start="59" name="nn"/>
+                    <label end="73" start="73" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="41" start="40" name="NT"/>
+                    <label end="57" start="56" name="NT"/>
+                    <label end="73" start="73" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/06/2012 04:02:34 PST Tue" status="MANUAL" ID="6611104">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="12" start="5" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE"/>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="22" start="14" name="Gov"/>
+                    <label end="12" start="5" name="X"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence sentNo="0" aPos="510780" ID="4130636">
+            <text>By the last months of the war , pilots were being sent on kamikaze missions with little flight training .</text>
+            <annotationSet cDate="03/06/2012 04:02:35 PST Tue" status="UNANN" ID="6611127">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="10" start="7" name="jj"/>
+                    <label end="17" start="12" name="nns"/>
+                    <label end="20" start="19" name="in"/>
+                    <label end="24" start="22" name="dt"/>
+                    <label end="28" start="26" name="nn"/>
+                    <label end="30" start="30" name=","/>
+                    <label end="37" start="32" name="nns"/>
+                    <label end="42" start="39" name="VBD"/>
+                    <label end="48" start="44" name="VBG"/>
+                    <label end="53" start="50" name="VVN"/>
+                    <label end="56" start="55" name="in"/>
+                    <label end="65" start="58" name="nn"/>
+                    <label end="74" start="67" name="nns"/>
+                    <label end="79" start="76" name="in"/>
+                    <label end="86" start="81" name="jj"/>
+                    <label end="93" start="88" name="nn"/>
+                    <label end="102" start="95" name="nn"/>
+                    <label end="104" start="104" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="20" start="19" name="NT"/>
+                    <label end="24" start="22" name="NT"/>
+                    <label end="30" start="30" name="NT"/>
+                    <label end="42" start="39" name="NT"/>
+                    <label end="48" start="44" name="NT"/>
+                    <label end="56" start="55" name="NT"/>
+                    <label end="79" start="76" name="NT"/>
+                    <label end="104" start="104" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/06/2012 04:02:35 PST Tue" status="MANUAL" ID="6611128">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="65" start="58" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE"/>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="74" start="67" name="Gov"/>
+                    <label end="65" start="58" name="X"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="other-matched-(1)"/>
+    <subCorpus name="other-unmatched-(1)"/>
+</lexUnit>

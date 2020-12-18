@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="custody.n" ID="13983" frame="Possession" frameID="118" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Own" name="Owner"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Pos" name="Possession"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: the protective care or guardianship of someone or something.</definition>
+    <lexeme POS="N" name="custody"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Owner"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Owner"/>
+                <annoSet ID="6542395"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Possession"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Possession"/>
+                <annoSet ID="6542395"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Owner"/>
+            <FE name="Possession"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Owner"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Possession"/>
+                <annoSet ID="6542395"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23692" sentNo="2" paragNo="12" aPos="0" ID="4101196">
+            <text>They were a barbaric race , and their custody of the area brought about a dark period during which the written word was forgotten and art disappeared .</text>
+            <annotationSet cDate="03/12/2007 02:51:01 PDT Mon" status="UNANN" ID="6541989">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="PP"/>
+                    <label end="8" start="5" name="VBD"/>
+                    <label end="10" start="10" name="dt"/>
+                    <label end="19" start="12" name="jj"/>
+                    <label end="24" start="21" name="nn"/>
+                    <label end="26" start="26" name=","/>
+                    <label end="30" start="28" name="cc"/>
+                    <label end="36" start="32" name="PP$"/>
+                    <label end="44" start="38" name="nn"/>
+                    <label end="47" start="46" name="in"/>
+                    <label end="51" start="49" name="dt"/>
+                    <label end="56" start="53" name="nn"/>
+                    <label end="64" start="58" name="VVN"/>
+                    <label end="70" start="66" name="in"/>
+                    <label end="72" start="72" name="dt"/>
+                    <label end="77" start="74" name="jj"/>
+                    <label end="84" start="79" name="nn"/>
+                    <label end="91" start="86" name="in"/>
+                    <label end="97" start="93" name="wdt"/>
+                    <label end="101" start="99" name="dt"/>
+                    <label end="109" start="103" name="jj"/>
+                    <label end="114" start="111" name="nn"/>
+                    <label end="118" start="116" name="VBD"/>
+                    <label end="128" start="120" name="VVN"/>
+                    <label end="132" start="130" name="cc"/>
+                    <label end="136" start="134" name="nn"/>
+                    <label end="148" start="138" name="VVD"/>
+                    <label end="150" start="150" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="8" start="5" name="NT"/>
+                    <label end="10" start="10" name="NT"/>
+                    <label end="26" start="26" name="NT"/>
+                    <label end="30" start="28" name="NT"/>
+                    <label end="36" start="32" name="NT"/>
+                    <label end="47" start="46" name="NT"/>
+                    <label end="51" start="49" name="NT"/>
+                    <label end="72" start="72" name="NT"/>
+                    <label end="91" start="86" name="NT"/>
+                    <label end="97" start="93" name="NT"/>
+                    <label end="101" start="99" name="NT"/>
+                    <label end="118" start="116" name="NT"/>
+                    <label end="132" start="130" name="NT"/>
+                    <label end="150" start="150" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/15/2007 09:44:48 PDT Thu" status="MANUAL" ID="6542395">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="44" start="38" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="573" end="36" start="32" name="Owner"/>
+                    <label cBy="KmG" feID="582" end="56" start="46" name="Possession"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="36" start="32" name="Gen"/>
+                    <label end="56" start="46" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="36" start="32" name="Poss"/>
+                    <label end="56" start="46" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

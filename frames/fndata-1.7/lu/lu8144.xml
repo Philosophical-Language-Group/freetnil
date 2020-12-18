@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Vehicle" POS="N" name="automobile.n" ID="8144" frame="Vehicle" frameID="429" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="StatCan Trade Balance" name="tradeBalance020417" ID="23841"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Iti" name="Itinerary"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Prop" name="Means_of_propulsion"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Poss" name="Possessor"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="use" name="Use"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="Veh" name="Vehicle"/>
+        </frame>
+    </header>
+    <definition>COD:  a motor car. </definition>
+    <lexeme POS="N" name="automobile"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Vehicle"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Vehicle"/>
+                <annoSet ID="6559658"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Vehicle"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Vehicle"/>
+                <annoSet ID="6559658"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="23841" sentNo="1" paragNo="3" aPos="0" ID="4107450">
+            <text>Canada 's merchandise exports and imports posted increases in February as automobile assembly lines stepped up production after shutdowns in January .</text>
+            <annotationSet cDate="10/25/2010 04:55:25 PDT Mon" status="UNANN" ID="6559547">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="NP"/>
+                    <label end="8" start="7" name="POS"/>
+                    <label end="20" start="10" name="nn"/>
+                    <label end="28" start="22" name="nns"/>
+                    <label end="32" start="30" name="cc"/>
+                    <label end="40" start="34" name="nns"/>
+                    <label end="47" start="42" name="VVD"/>
+                    <label end="57" start="49" name="nns"/>
+                    <label end="60" start="59" name="in"/>
+                    <label end="69" start="62" name="NP"/>
+                    <label end="72" start="71" name="in"/>
+                    <label end="83" start="74" name="nn"/>
+                    <label end="92" start="85" name="nn"/>
+                    <label end="98" start="94" name="nns"/>
+                    <label end="106" start="100" name="VVD"/>
+                    <label end="109" start="108" name="rp"/>
+                    <label end="120" start="111" name="nn"/>
+                    <label end="126" start="122" name="in"/>
+                    <label end="136" start="128" name="nns"/>
+                    <label end="139" start="138" name="in"/>
+                    <label end="147" start="141" name="NP"/>
+                    <label end="149" start="149" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="5" start="0" name="location"/>
+                    <label end="69" start="62" name="date"/>
+                    <label end="147" start="141" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="0" name="NT"/>
+                    <label end="8" start="7" name="NT"/>
+                    <label end="32" start="30" name="NT"/>
+                    <label end="149" start="149" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/03/2010 01:03:26 PDT Wed" status="MANUAL" ID="6559658">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="83" start="74" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="3958" end="83" start="74" name="Vehicle"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="net.n" ID="13736" frame="Earnings_and_losses" frameID="1873" totalAnnotated="4" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Aetna Life and Casualty" name="AetnaLifeAndCasualty" ID="23019"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Byr" name="Buyer"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="con" name="Containing_event"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Slr" name="Earner"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Core" abbrev="Mny" name="Earnings"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Gds" name="Goods"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Rate" name="Rate"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Unit" name="Unit"/>
+        </frame>
+    </header>
+    <definition>FN: amount earned after subtracting losses and other costs.</definition>
+    <lexeme POS="N" name="net"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Earner"/>
+            <pattern total="2">
+                <valenceUnit GF="Gen" PT="Poss" FE="Earner"/>
+                <annoSet ID="4530929"/>
+                <annoSet ID="4530933"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Earnings"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="NP" FE="Earnings"/>
+                <annoSet ID="4530929"/>
+                <annoSet ID="4530933"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Earnings"/>
+                <annoSet ID="4530857"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Earnings"/>
+                <annoSet ID="4530847"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Time"/>
+                <annoSet ID="4530929"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Earner"/>
+            <FE name="Earnings"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Earner"/>
+                <valenceUnit GF="Dep" PT="NP" FE="Earnings"/>
+                <annoSet ID="4530933"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Earner"/>
+            <FE name="Earnings"/>
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Earner"/>
+                <valenceUnit GF="Dep" PT="NP" FE="Earnings"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Time"/>
+                <annoSet ID="4530929"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="2">
+            <FE name="Earnings"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Earnings"/>
+                <annoSet ID="4530857"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Earnings"/>
+                <annoSet ID="4530847"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23019" sentNo="2" paragNo="2" aPos="0" ID="2824529">
+            <text>Last year catastrophe losses totaled $ 5 million , when net was $ 235.5 million , or $ 2.07 a share .</text>
+            <annotationSet cDate="02/12/2007 01:00:02 PST Mon" status="UNANN" ID="4530784">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="jj"/>
+                    <label end="8" start="5" name="nn"/>
+                    <label end="20" start="10" name="nn"/>
+                    <label end="27" start="22" name="nns"/>
+                    <label end="35" start="29" name="VVD"/>
+                    <label end="37" start="37" name="$"/>
+                    <label end="39" start="39" name="cd"/>
+                    <label end="47" start="41" name="cd"/>
+                    <label end="49" start="49" name=","/>
+                    <label end="54" start="51" name="wrb"/>
+                    <label end="58" start="56" name="nn"/>
+                    <label end="62" start="60" name="VBD"/>
+                    <label end="64" start="64" name="$"/>
+                    <label end="70" start="66" name="cd"/>
+                    <label end="78" start="72" name="cd"/>
+                    <label end="80" start="80" name=","/>
+                    <label end="83" start="82" name="cc"/>
+                    <label end="85" start="85" name="$"/>
+                    <label end="90" start="87" name="cd"/>
+                    <label end="92" start="92" name="dt"/>
+                    <label end="98" start="94" name="nn"/>
+                    <label end="100" start="100" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="47" start="37" name="money"/>
+                    <label end="78" start="64" name="money"/>
+                    <label end="90" start="85" name="money"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="37" start="37" name="NT"/>
+                    <label end="39" start="39" name="NT"/>
+                    <label end="47" start="41" name="NT"/>
+                    <label end="49" start="49" name="NT"/>
+                    <label end="54" start="51" name="NT"/>
+                    <label end="62" start="60" name="NT"/>
+                    <label end="64" start="64" name="NT"/>
+                    <label end="70" start="66" name="NT"/>
+                    <label end="78" start="72" name="NT"/>
+                    <label end="80" start="80" name="NT"/>
+                    <label end="83" start="82" name="NT"/>
+                    <label end="85" start="85" name="NT"/>
+                    <label end="90" start="87" name="NT"/>
+                    <label end="92" start="92" name="NT"/>
+                    <label end="100" start="100" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/12/2007 08:05:04 PST Mon" status="MANUAL" ID="4530847">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="58" start="56" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="11037" end="98" start="64" name="Earnings"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="98" start="64" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="98" start="64" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="62" start="60" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="115" docID="23019" sentNo="1" paragNo="6" aPos="0" ID="2824538">
+            <text>In the nine months , net rose 4.3 % to $ 525.8 million or $ 4.67 a share , from $ 504.2 million , or $ 4.41 a share , last year .</text>
+            <annotationSet cDate="02/12/2007 01:00:10 PST Mon" status="UNANN" ID="4530793">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="10" start="7" name="cd"/>
+                    <label end="17" start="12" name="nns"/>
+                    <label end="19" start="19" name=","/>
+                    <label end="23" start="21" name="nn"/>
+                    <label end="28" start="25" name="VVD"/>
+                    <label end="32" start="30" name="cd"/>
+                    <label end="34" start="34" name="nn"/>
+                    <label end="37" start="36" name="to"/>
+                    <label end="39" start="39" name="$"/>
+                    <label end="45" start="41" name="cd"/>
+                    <label end="53" start="47" name="cd"/>
+                    <label end="56" start="55" name="cc"/>
+                    <label end="58" start="58" name="$"/>
+                    <label end="63" start="60" name="cd"/>
+                    <label end="65" start="65" name="dt"/>
+                    <label end="71" start="67" name="nn"/>
+                    <label end="73" start="73" name=","/>
+                    <label end="78" start="75" name="in"/>
+                    <label end="80" start="80" name="$"/>
+                    <label end="86" start="82" name="cd"/>
+                    <label end="94" start="88" name="cd"/>
+                    <label end="96" start="96" name=","/>
+                    <label end="99" start="98" name="cc"/>
+                    <label end="101" start="101" name="$"/>
+                    <label end="106" start="103" name="cd"/>
+                    <label end="108" start="108" name="dt"/>
+                    <label end="114" start="110" name="nn"/>
+                    <label end="116" start="116" name=","/>
+                    <label end="121" start="118" name="jj"/>
+                    <label end="126" start="123" name="nn"/>
+                    <label end="128" start="128" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="34" start="30" name="percent"/>
+                    <label end="53" start="39" name="money"/>
+                    <label end="63" start="58" name="money"/>
+                    <label end="94" start="80" name="money"/>
+                    <label end="106" start="101" name="money"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="10" start="7" name="NT"/>
+                    <label end="19" start="19" name="NT"/>
+                    <label end="32" start="30" name="NT"/>
+                    <label end="37" start="36" name="NT"/>
+                    <label end="39" start="39" name="NT"/>
+                    <label end="45" start="41" name="NT"/>
+                    <label end="53" start="47" name="NT"/>
+                    <label end="56" start="55" name="NT"/>
+                    <label end="58" start="58" name="NT"/>
+                    <label end="63" start="60" name="NT"/>
+                    <label end="65" start="65" name="NT"/>
+                    <label end="73" start="73" name="NT"/>
+                    <label end="78" start="75" name="NT"/>
+                    <label end="80" start="80" name="NT"/>
+                    <label end="86" start="82" name="NT"/>
+                    <label end="94" start="88" name="NT"/>
+                    <label end="96" start="96" name="NT"/>
+                    <label end="99" start="98" name="NT"/>
+                    <label end="101" start="101" name="NT"/>
+                    <label end="106" start="103" name="NT"/>
+                    <label end="108" start="108" name="NT"/>
+                    <label end="116" start="116" name="NT"/>
+                    <label end="128" start="128" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/12/2007 08:11:48 PST Mon" status="MANUAL" ID="4530857">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="23" start="21" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="11037" end="23" start="21" name="Earnings"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="115" docID="23019" sentNo="1" paragNo="1" aPos="0" ID="2824527">
+            <text>Aetna Life and Casualty Co. 's third - quarter net income fell 22 % to $ 182.6 million , or $ 1.63 a share , reflecting the damages from Hurricane Hugo and lower results for some of the company 's major divisions .</text>
+            <annotationSet cDate="02/12/2007 12:59:56 PST Mon" status="UNANN" ID="4530782">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="NP"/>
+                    <label end="9" start="6" name="NP"/>
+                    <label end="13" start="11" name="cc"/>
+                    <label end="22" start="15" name="NP"/>
+                    <label end="26" start="24" name="NP"/>
+                    <label end="29" start="28" name="POS"/>
+                    <label end="35" start="31" name="jj"/>
+                    <label end="37" start="37" name=":"/>
+                    <label end="45" start="39" name="nn"/>
+                    <label end="49" start="47" name="jj"/>
+                    <label end="56" start="51" name="nn"/>
+                    <label end="61" start="58" name="VVD"/>
+                    <label end="64" start="63" name="cd"/>
+                    <label end="66" start="66" name="nn"/>
+                    <label end="69" start="68" name="to"/>
+                    <label end="71" start="71" name="$"/>
+                    <label end="77" start="73" name="cd"/>
+                    <label end="85" start="79" name="cd"/>
+                    <label end="87" start="87" name=","/>
+                    <label end="90" start="89" name="cc"/>
+                    <label end="92" start="92" name="$"/>
+                    <label end="97" start="94" name="cd"/>
+                    <label end="99" start="99" name="dt"/>
+                    <label end="105" start="101" name="nn"/>
+                    <label end="107" start="107" name=","/>
+                    <label end="118" start="109" name="VVG"/>
+                    <label end="122" start="120" name="dt"/>
+                    <label end="130" start="124" name="nns"/>
+                    <label end="135" start="132" name="in"/>
+                    <label end="145" start="137" name="NP"/>
+                    <label end="150" start="147" name="NP"/>
+                    <label end="154" start="152" name="cc"/>
+                    <label end="160" start="156" name="jjr"/>
+                    <label end="168" start="162" name="nns"/>
+                    <label end="172" start="170" name="in"/>
+                    <label end="177" start="174" name="dt"/>
+                    <label end="180" start="179" name="in"/>
+                    <label end="184" start="182" name="dt"/>
+                    <label end="192" start="186" name="nn"/>
+                    <label end="195" start="194" name="POS"/>
+                    <label end="201" start="197" name="jj"/>
+                    <label end="211" start="203" name="nns"/>
+                    <label end="213" start="213" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="26" start="0" name="organization"/>
+                    <label end="45" start="39" name="date"/>
+                    <label end="66" start="63" name="percent"/>
+                    <label end="85" start="71" name="money"/>
+                    <label end="97" start="92" name="money"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="4" start="0" name="NT"/>
+                    <label end="9" start="6" name="NT"/>
+                    <label end="13" start="11" name="NT"/>
+                    <label end="22" start="15" name="NT"/>
+                    <label end="26" start="24" name="NT"/>
+                    <label end="29" start="28" name="NT"/>
+                    <label end="37" start="37" name="NT"/>
+                    <label end="64" start="63" name="NT"/>
+                    <label end="69" start="68" name="NT"/>
+                    <label end="71" start="71" name="NT"/>
+                    <label end="77" start="73" name="NT"/>
+                    <label end="85" start="79" name="NT"/>
+                    <label end="87" start="87" name="NT"/>
+                    <label end="90" start="89" name="NT"/>
+                    <label end="92" start="92" name="NT"/>
+                    <label end="97" start="94" name="NT"/>
+                    <label end="99" start="99" name="NT"/>
+                    <label end="107" start="107" name="NT"/>
+                    <label end="122" start="120" name="NT"/>
+                    <label end="135" start="132" name="NT"/>
+                    <label end="145" start="137" name="NT"/>
+                    <label end="150" start="147" name="NT"/>
+                    <label end="154" start="152" name="NT"/>
+                    <label end="172" start="170" name="NT"/>
+                    <label end="180" start="179" name="NT"/>
+                    <label end="184" start="182" name="NT"/>
+                    <label end="195" start="194" name="NT"/>
+                    <label end="213" start="213" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/10/2010 12:54:55 PDT Thu" status="MANUAL" ID="4530929">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="49" start="47" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="11037" end="56" start="51" name="Earnings"/>
+                    <label cBy="AlK" feID="11036" end="29" start="0" name="Earner"/>
+                    <label cBy="AlK" feID="11045" end="45" start="31" name="Time"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="56" start="51" name="Dep"/>
+                    <label end="29" start="0" name="Gen"/>
+                    <label end="45" start="31" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="56" start="51" name="NP"/>
+                    <label end="29" start="0" name="Poss"/>
+                    <label end="45" start="31" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="115" docID="23019" sentNo="1" paragNo="2" aPos="0" ID="2824528">
+            <text>Catastrophe losses reduced Aetna 's net income by $ 50 million , including $ 36 million from Hugo .</text>
+            <annotationSet cDate="02/12/2007 01:00:02 PST Mon" status="UNANN" ID="4530783">
+                <layer rank="1" name="PENN">
+                    <label end="10" start="0" name="nn"/>
+                    <label end="17" start="12" name="nns"/>
+                    <label end="25" start="19" name="VVD"/>
+                    <label end="31" start="27" name="NP"/>
+                    <label end="34" start="33" name="POS"/>
+                    <label end="38" start="36" name="jj"/>
+                    <label end="45" start="40" name="nn"/>
+                    <label end="48" start="47" name="in"/>
+                    <label end="50" start="50" name="$"/>
+                    <label end="53" start="52" name="cd"/>
+                    <label end="61" start="55" name="cd"/>
+                    <label end="63" start="63" name=","/>
+                    <label end="73" start="65" name="VVG"/>
+                    <label end="75" start="75" name="$"/>
+                    <label end="78" start="77" name="cd"/>
+                    <label end="86" start="80" name="cd"/>
+                    <label end="91" start="88" name="in"/>
+                    <label end="96" start="93" name="NP"/>
+                    <label end="98" start="98" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="31" start="27" name="organization"/>
+                    <label end="61" start="50" name="money"/>
+                    <label end="86" start="75" name="money"/>
+                    <label end="96" start="93" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="31" start="27" name="NT"/>
+                    <label end="34" start="33" name="NT"/>
+                    <label end="48" start="47" name="NT"/>
+                    <label end="50" start="50" name="NT"/>
+                    <label end="53" start="52" name="NT"/>
+                    <label end="63" start="63" name="NT"/>
+                    <label end="75" start="75" name="NT"/>
+                    <label end="78" start="77" name="NT"/>
+                    <label end="86" start="80" name="NT"/>
+                    <label end="91" start="88" name="NT"/>
+                    <label end="96" start="93" name="NT"/>
+                    <label end="98" start="98" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/10/2010 01:00:37 PDT Thu" status="MANUAL" ID="4530933">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="38" start="36" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="11037" end="45" start="40" name="Earnings"/>
+                    <label cBy="AlK" feID="11036" end="34" start="27" name="Earner"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="45" start="40" name="Dep"/>
+                    <label end="34" start="27" name="Gen"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="45" start="40" name="NP"/>
+                    <label end="34" start="27" name="Poss"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

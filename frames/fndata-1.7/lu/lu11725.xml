@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="entanglement.n" ID="11725" frame="Participation" frameID="1144" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Chemical" name="Iran_Chemical" ID="23514"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFF00" bgColor="00008B" type="Peripheral" abbrev="deg" name="Degree_of_involvement"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Peripheral" abbrev="" name="Duration"/>
+            <FE fgColor="0000FF" bgColor="d0d0d0" type="Core" abbrev="eve" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="ins" name="Institution"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="par" name="Participants"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="par1" name="Participant_1"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="par2" name="Participant_2"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: involuntary involvement in a complex affair such that rapid extrication is impossible.</definition>
+    <lexeme POS="N" name="entanglement"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[with]" FE="Event"/>
+                <annoSet ID="6527887"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Participant_1"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Participant_1"/>
+                <annoSet ID="6527887"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Participant_2"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Participant_2"/>
+                <annoSet ID="6527887"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Event"/>
+            <FE name="Participant_1"/>
+            <FE name="Participant_2"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[with]" FE="Event"/>
+                <valenceUnit GF="Gen" PT="Poss" FE="Participant_1"/>
+                <valenceUnit GF="" PT="INI" FE="Participant_2"/>
+                <annoSet ID="6527887"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23514" sentNo="1" paragNo="6" aPos="0" ID="4097000">
+            <text>Iran 's entanglement with CW stems from the legacy of the Iran - Iraq War .</text>
+            <annotationSet cDate="02/25/2005 12:42:54 PST Fri" status="UNANN" ID="6522665">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="NP"/>
+                    <label end="6" start="5" name="POS"/>
+                    <label end="19" start="8" name="nn"/>
+                    <label end="24" start="21" name="in"/>
+                    <label end="27" start="26" name="NP"/>
+                    <label end="33" start="29" name="VVZ"/>
+                    <label end="38" start="35" name="in"/>
+                    <label end="42" start="40" name="dt"/>
+                    <label end="49" start="44" name="nn"/>
+                    <label end="52" start="51" name="in"/>
+                    <label end="56" start="54" name="dt"/>
+                    <label end="61" start="58" name="NP"/>
+                    <label end="63" start="63" name=":"/>
+                    <label end="68" start="65" name="NP"/>
+                    <label end="72" start="70" name="NP"/>
+                    <label end="74" start="74" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="3" start="0" name="GPE"/>
+                    <label end="61" start="58" name="location"/>
+                    <label end="68" start="65" name="location"/>
+                    <label end="27" start="26" name="WEA"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="6" start="5" name="NT"/>
+                    <label end="24" start="21" name="NT"/>
+                    <label end="38" start="35" name="NT"/>
+                    <label end="42" start="40" name="NT"/>
+                    <label end="52" start="51" name="NT"/>
+                    <label end="56" start="54" name="NT"/>
+                    <label end="61" start="58" name="NT"/>
+                    <label end="63" start="63" name="NT"/>
+                    <label end="68" start="65" name="NT"/>
+                    <label end="74" start="74" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/17/2005 11:34:39 PDT Fri" status="MANUAL" ID="6527887">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="19" start="8" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="6597" end="6" start="0" name="Participant_1"/>
+                    <label cBy="RLG" feID="6599" end="27" start="21" name="Event"/>
+                    <label cBy="RLG" feID="6598" itype="INI" name="Participant_2"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="6" start="0" name="Gen"/>
+                    <label end="27" start="21" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="6" start="0" name="Poss"/>
+                    <label end="27" start="21" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

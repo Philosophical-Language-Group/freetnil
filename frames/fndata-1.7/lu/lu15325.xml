@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="bear.v" ID="15325" frame="Tolerating" frameID="2131" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Cont" name="Content"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Event" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Exp" name="Experiencer"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Par" name="Parameter"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="State" name="State"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Top" name="Topic"/>
+        </frame>
+    </header>
+    <definition>FN: to withstand (e.g. hardship, pain)</definition>
+    <lexeme POS="V" name="bear"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Content"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Content"/>
+                <annoSet ID="6645777"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="PP[to]" FE="Content"/>
+                <annoSet ID="6645777"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Experiencer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Experiencer"/>
+                <annoSet ID="6645777"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Content"/>
+            <FE name="Content"/>
+            <FE name="Experiencer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Content"/>
+                <valenceUnit GF="Obj" PT="PP[to]" FE="Content"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Experiencer"/>
+                <annoSet ID="6645777"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="4" paragNo="22" aPos="0" ID="4148386">
+            <text>&quot; We can imagine that in the confusion of flight something precious , something which he could not bear to part with , had been left behind .</text>
+            <annotationSet cDate="04/30/2013 05:19:06 PDT Tue" status="UNANN" ID="6645774">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="2" name="PRP"/>
+                    <label end="7" start="5" name="md"/>
+                    <label end="15" start="9" name="vb"/>
+                    <label end="20" start="17" name="in"/>
+                    <label end="23" start="22" name="in"/>
+                    <label end="27" start="25" name="dt"/>
+                    <label end="37" start="29" name="nn"/>
+                    <label end="40" start="39" name="in"/>
+                    <label end="47" start="42" name="nn"/>
+                    <label end="57" start="49" name="nn"/>
+                    <label end="66" start="59" name="jj"/>
+                    <label end="78" start="70" name="nn"/>
+                    <label end="84" start="80" name="wdt"/>
+                    <label end="87" start="86" name="PRP"/>
+                    <label end="93" start="89" name="md"/>
+                    <label end="97" start="95" name="rb"/>
+                    <label end="102" start="99" name="vb"/>
+                    <label end="105" start="104" name="to"/>
+                    <label end="110" start="107" name="nn"/>
+                    <label end="115" start="112" name="in"/>
+                    <label end="121" start="119" name="VBD"/>
+                    <label end="126" start="123" name="VBN"/>
+                    <label end="131" start="128" name="VBN"/>
+                    <label end="138" start="133" name="rp"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:19:07 PDT Tue" status="MANUAL" ID="6645777">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="102" start="99" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="13142" end="87" start="86" name="Experiencer"/>
+                    <label cBy="EGp" feID="13143" end="84" start="80" name="Content"/>
+                    <label cBy="EGp" feID="13143" end="117" start="104" name="Content"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="87" start="86" name="Ext"/>
+                    <label end="84" start="80" name="Ext"/>
+                    <label end="117" start="104" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="87" start="86" name="NP"/>
+                    <label end="84" start="80" name="NP"/>
+                    <label end="117" start="104" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

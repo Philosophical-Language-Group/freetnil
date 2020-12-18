@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="pocket.n" ID="10384" frame="Locale" frameID="192" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Election Victory" name="ElectionVictory" ID="23010"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="Cnst" name="Constituent_parts"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="ContP" name="Container_possessor"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="for" name="Formational_cause"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="Inh" name="Inherent_purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Lcl" name="Locale"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="Name" name="Name"/>
+            <FE fgColor="A52A2A" bgColor="FFFF00" type="Extra-Thematic" abbrev="RelEvnt" name="Related_event"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="rel" name="Relative_location"/>
+        </frame>
+    </header>
+    <definition>FN: a small. isolated or protected area.</definition>
+    <lexeme POS="N" name="pocket"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Descriptor"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Descriptor"/>
+                <annoSet ID="4528719"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Descriptor"/>
+                <annoSet ID="4528719"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Locale"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Locale"/>
+                <annoSet ID="4528719"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Descriptor"/>
+            <FE name="Descriptor"/>
+            <FE name="Locale"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Descriptor"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Descriptor"/>
+                <valenceUnit GF="" PT="DEN" FE="Locale"/>
+                <annoSet ID="4528719"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23010" sentNo="5" paragNo="2" aPos="0" ID="2824275">
+            <text>Large pockets of poverty still exist .</text>
+            <annotationSet cDate="02/05/2004 08:29:44 PST Thu" status="UNANN" ID="4528270">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="jj"/>
+                    <label end="12" start="6" name="nns"/>
+                    <label end="15" start="14" name="in"/>
+                    <label end="23" start="17" name="nn"/>
+                    <label end="29" start="25" name="rb"/>
+                    <label end="35" start="31" name="VVP"/>
+                    <label end="37" start="37" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="37" start="37" name="NT"/>
+                    <label end="15" start="14" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/02/2004 11:55:53 PDT Fri" status="MANUAL" ID="4528719">
+                <layer rank="1" name="Target">
+                    <label cBy="CHg" end="12" start="6" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CHg" feID="6966" end="23" start="14" name="Descriptor"/>
+                    <label cBy="JKR" feID="6966" end="4" start="0" name="Descriptor"/>
+                    <label cBy="HPh" feID="1565" end="12" start="6" name="Locale"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="23" start="14" name="Dep"/>
+                    <label end="4" start="0" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="23" start="14" name="PP"/>
+                    <label end="4" start="0" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent">
+                    <label end="0" start="0" name="Metaphor"/>
+                </layer>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

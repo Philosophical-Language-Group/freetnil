@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="institute.v" ID="14982" frame="Execute_plan" frameID="1726" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Polemic Progressive Education" name="PolemicProgressiveEducation" ID="23011"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Age" name="Agent"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Extra-Thematic" abbrev="Deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="foc" name="Focal_participant"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Core" abbrev="Med" name="Medium"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="Out" name="Outcome"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="pla" name="Plan"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: implement something</definition>
+    <lexeme POS="V" name="institute"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <annoSet ID="4531416"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Plan"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Plan"/>
+                <annoSet ID="4531416"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Plan"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Plan"/>
+                <annoSet ID="4531416"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23011" sentNo="4" paragNo="12" aPos="0" ID="2824351">
+            <text>New York is in the process of trying to disengage itself from a 20-year-old commitment to this system of school governance , even as Chicago and other cities are moving to institute it .</text>
+            <annotationSet cDate="02/05/2004 08:30:07 PST Thu" status="UNANN" ID="4528346">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="NP"/>
+                    <label end="7" start="4" name="NP"/>
+                    <label end="10" start="9" name="VBZ"/>
+                    <label end="13" start="12" name="in"/>
+                    <label end="17" start="15" name="dt"/>
+                    <label end="25" start="19" name="nn"/>
+                    <label end="28" start="27" name="in"/>
+                    <label end="35" start="30" name="VVG"/>
+                    <label end="38" start="37" name="to"/>
+                    <label end="48" start="40" name="VV"/>
+                    <label end="55" start="50" name="PP"/>
+                    <label end="60" start="57" name="in"/>
+                    <label end="62" start="62" name="dt"/>
+                    <label end="74" start="64" name="jj"/>
+                    <label end="85" start="76" name="nn"/>
+                    <label end="88" start="87" name="to"/>
+                    <label end="93" start="90" name="dt"/>
+                    <label end="100" start="95" name="nn"/>
+                    <label end="103" start="102" name="in"/>
+                    <label end="110" start="105" name="nn"/>
+                    <label end="121" start="112" name="nn"/>
+                    <label end="123" start="123" name=","/>
+                    <label end="128" start="125" name="rb"/>
+                    <label end="131" start="130" name="in"/>
+                    <label end="139" start="133" name="NP"/>
+                    <label end="143" start="141" name="cc"/>
+                    <label end="149" start="145" name="jj"/>
+                    <label end="156" start="151" name="nns"/>
+                    <label end="160" start="158" name="vbp"/>
+                    <label end="167" start="162" name="VVG"/>
+                    <label end="170" start="169" name="to"/>
+                    <label end="180" start="172" name="VV"/>
+                    <label end="183" start="182" name="PP"/>
+                    <label end="185" start="185" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="139" start="133" name="location"/>
+                    <label end="7" start="0" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="10" start="9" name="NT"/>
+                    <label end="13" start="12" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="88" start="87" name="NT"/>
+                    <label end="123" start="123" name="NT"/>
+                    <label end="128" start="125" name="NT"/>
+                    <label end="160" start="158" name="NT"/>
+                    <label end="170" start="169" name="NT"/>
+                    <label end="185" start="185" name="NT"/>
+                    <label end="2" start="0" name="NT"/>
+                    <label end="7" start="4" name="NT"/>
+                    <label end="17" start="15" name="NT"/>
+                    <label end="28" start="27" name="NT"/>
+                    <label end="55" start="50" name="NT"/>
+                    <label end="60" start="57" name="NT"/>
+                    <label end="62" start="62" name="NT"/>
+                    <label end="93" start="90" name="NT"/>
+                    <label end="103" start="102" name="NT"/>
+                    <label end="131" start="130" name="NT"/>
+                    <label end="139" start="133" name="NT"/>
+                    <label end="143" start="141" name="NT"/>
+                    <label end="183" start="182" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/13/2010 04:02:48 PDT Tue" status="MANUAL" ID="4531416">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="180" start="172" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="9954" end="183" start="182" name="Plan"/>
+                    <label cBy="MLC" feID="9961" end="156" start="133" name="Agent"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="183" start="182" name="Obj"/>
+                    <label end="156" start="133" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="183" start="182" name="NP"/>
+                    <label end="156" start="133" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Needs_SCs" POS="A" name="embroiled.a" ID="10632" frame="Participation" frameID="1144" totalAnnotated="4" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="North Korea Nuclear Overview" name="NorthKorea_NuclearOverview" ID="23562"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFF00" bgColor="00008B" type="Peripheral" abbrev="deg" name="Degree_of_involvement"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Peripheral" abbrev="" name="Duration"/>
+            <FE fgColor="0000FF" bgColor="d0d0d0" type="Core" abbrev="eve" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="ins" name="Institution"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="par" name="Participants"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="par1" name="Participant_1"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="par2" name="Participant_2"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: deeply involved in a conflict or difficult situation.</definition>
+    <lexeme POS="A" name="embroiled"/>
+    <valences>
+        <governor type="Ctrlr" lemma="become">
+            <annoSet ID="6530389"/>
+            <annoSet ID="6632809"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Duration"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[during]" FE="Duration"/>
+                <annoSet ID="6530389"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[with]" FE="Event"/>
+                <annoSet ID="6530389"/>
+            </pattern>
+            <pattern total="3">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Event"/>
+                <annoSet ID="6632807"/>
+                <annoSet ID="6632809"/>
+                <annoSet ID="6632811"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Participant_1"/>
+            <pattern total="4">
+                <valenceUnit GF="Ext" PT="NP" FE="Participant_1"/>
+                <annoSet ID="6530389"/>
+                <annoSet ID="6632807"/>
+                <annoSet ID="6632809"/>
+                <annoSet ID="6632811"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Participant_2"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="INI" FE="Participant_2"/>
+                <annoSet ID="6632807"/>
+                <annoSet ID="6632809"/>
+                <annoSet ID="6632811"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[after]" FE="Time"/>
+                <annoSet ID="6632809"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Time"/>
+                <annoSet ID="6632811"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Duration"/>
+            <FE name="Event"/>
+            <FE name="Participant_1"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[during]" FE="Duration"/>
+                <valenceUnit GF="Dep" PT="PP[with]" FE="Event"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Participant_1"/>
+                <annoSet ID="6530389"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Event"/>
+            <FE name="Participant_1"/>
+            <FE name="Participant_2"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Event"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Participant_1"/>
+                <valenceUnit GF="" PT="INI" FE="Participant_2"/>
+                <annoSet ID="6632807"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="2">
+            <FE name="Event"/>
+            <FE name="Participant_1"/>
+            <FE name="Participant_2"/>
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Event"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Participant_1"/>
+                <valenceUnit GF="" PT="INI" FE="Participant_2"/>
+                <valenceUnit GF="Dep" PT="PP[after]" FE="Time"/>
+                <annoSet ID="6632809"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Event"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Participant_1"/>
+                <valenceUnit GF="" PT="INI" FE="Participant_2"/>
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Time"/>
+                <annoSet ID="6632811"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23562" sentNo="1" paragNo="11" aPos="0" ID="4097675">
+            <text>North Korea first became embroiled with nuclear politics during the Korean War .</text>
+            <annotationSet cDate="08/01/2005 12:15:49 PDT Mon" status="UNANN" ID="6528649">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="NP"/>
+                    <label end="10" start="6" name="NP"/>
+                    <label end="16" start="12" name="rb"/>
+                    <label end="23" start="18" name="VVD"/>
+                    <label end="33" start="25" name="VVN"/>
+                    <label end="38" start="35" name="in"/>
+                    <label end="46" start="40" name="jj"/>
+                    <label end="55" start="48" name="nns"/>
+                    <label end="62" start="57" name="in"/>
+                    <label end="66" start="64" name="dt"/>
+                    <label end="73" start="68" name="jj"/>
+                    <label end="77" start="75" name="NP"/>
+                    <label end="79" start="79" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="10" start="0" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="4" start="0" name="NT"/>
+                    <label end="10" start="6" name="NT"/>
+                    <label end="38" start="35" name="NT"/>
+                    <label end="62" start="57" name="NT"/>
+                    <label end="66" start="64" name="NT"/>
+                    <label end="77" start="75" name="NT"/>
+                    <label end="79" start="79" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/15/2005 04:04:27 PDT Mon" status="MANUAL" ID="6530389">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="33" start="25" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="6597" end="10" start="0" name="Participant_1"/>
+                    <label cBy="RLG" feID="6599" end="55" start="35" name="Event"/>
+                    <label cBy="RLG" feID="7432" end="77" start="57" name="Duration"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="10" start="0" name="Ext"/>
+                    <label end="55" start="35" name="Dep"/>
+                    <label end="77" start="57" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="10" start="0" name="NP"/>
+                    <label end="55" start="35" name="PP"/>
+                    <label end="77" start="57" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="23" start="18" name="Ctrlr"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="01-T-(1)">
+        <sentence sentNo="0" aPos="761871" ID="4142614">
+            <text>The province 's security forces have often found themselves embroiled in Kirkuk 's Arab-Kurdish controversies .</text>
+            <annotationSet cDate="06/22/2012 02:19:14 PDT Fri" status="UNANN" ID="6632806">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="11" start="4" name="nn"/>
+                    <label end="14" start="13" name="POS"/>
+                    <label end="23" start="16" name="nn"/>
+                    <label end="30" start="25" name="nns"/>
+                    <label end="35" start="32" name="VHP"/>
+                    <label end="41" start="37" name="rb"/>
+                    <label end="47" start="43" name="VVN"/>
+                    <label end="58" start="49" name="PP"/>
+                    <label end="68" start="60" name="VVN"/>
+                    <label end="71" start="70" name="in"/>
+                    <label end="78" start="73" name="NP"/>
+                    <label end="81" start="80" name="POS"/>
+                    <label end="94" start="83" name="jj"/>
+                    <label end="108" start="96" name="nns"/>
+                    <label end="110" start="110" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="78" start="73" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="14" start="13" name="NT"/>
+                    <label end="35" start="32" name="NT"/>
+                    <label end="41" start="37" name="NT"/>
+                    <label end="58" start="49" name="NT"/>
+                    <label end="71" start="70" name="NT"/>
+                    <label end="78" start="73" name="NT"/>
+                    <label end="81" start="80" name="NT"/>
+                    <label end="110" start="110" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/22/2012 02:19:14 PDT Fri" status="MANUAL" ID="6632807">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="68" start="60" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="6597" end="58" start="49" name="Participant_1"/>
+                    <label cBy="RLG" feID="6599" end="108" start="70" name="Event"/>
+                    <label cBy="RLG" feID="6598" itype="INI" name="Participant_2"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="58" start="49" name="Ext"/>
+                    <label end="108" start="70" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="58" start="49" name="NP"/>
+                    <label end="108" start="70" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+        <sentence sentNo="0" aPos="168457" ID="4142615">
+            <text>The Marines involved in the incident initially reported that they had become embroiled in a firefight with insurgents after the explosion .</text>
+            <annotationSet cDate="06/22/2012 02:19:14 PDT Fri" status="UNANN" ID="6632808">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="10" start="4" name="NPS"/>
+                    <label end="19" start="12" name="VVD"/>
+                    <label end="22" start="21" name="in"/>
+                    <label end="26" start="24" name="dt"/>
+                    <label end="35" start="28" name="nn"/>
+                    <label end="45" start="37" name="rb"/>
+                    <label end="54" start="47" name="VVD"/>
+                    <label end="59" start="56" name="IN/that"/>
+                    <label end="64" start="61" name="PP"/>
+                    <label end="68" start="66" name="VHD"/>
+                    <label end="75" start="70" name="VVN"/>
+                    <label end="85" start="77" name="VVN"/>
+                    <label end="88" start="87" name="in"/>
+                    <label end="90" start="90" name="dt"/>
+                    <label end="100" start="92" name="nn"/>
+                    <label end="105" start="102" name="in"/>
+                    <label end="116" start="107" name="nns"/>
+                    <label end="122" start="118" name="in"/>
+                    <label end="126" start="124" name="dt"/>
+                    <label end="136" start="128" name="nn"/>
+                    <label end="138" start="138" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="10" start="4" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="10" start="4" name="NT"/>
+                    <label end="22" start="21" name="NT"/>
+                    <label end="26" start="24" name="NT"/>
+                    <label end="45" start="37" name="NT"/>
+                    <label end="64" start="61" name="NT"/>
+                    <label end="68" start="66" name="NT"/>
+                    <label end="88" start="87" name="NT"/>
+                    <label end="90" start="90" name="NT"/>
+                    <label end="105" start="102" name="NT"/>
+                    <label end="122" start="118" name="NT"/>
+                    <label end="126" start="124" name="NT"/>
+                    <label end="138" start="138" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/22/2012 02:19:14 PDT Fri" status="MANUAL" ID="6632809">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="85" start="77" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="6597" end="64" start="61" name="Participant_1"/>
+                    <label cBy="RLG" feID="6599" end="116" start="87" name="Event"/>
+                    <label cBy="RLG" feID="6600" end="136" start="118" name="Time"/>
+                    <label cBy="RLG" feID="6598" itype="INI" name="Participant_2"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="64" start="61" name="Ext"/>
+                    <label end="116" start="87" name="Dep"/>
+                    <label end="136" start="118" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="64" start="61" name="NP"/>
+                    <label end="116" start="87" name="PP"/>
+                    <label end="136" start="118" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="75" start="70" name="Ctrlr"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence sentNo="0" aPos="950875" ID="4142616">
+            <text>Like other Middle Eastern countries embroiled in unrest in recent weeks , Syria suffers from high-level corruption and cronyism and has security forces with unlimited powers to detain dissidents .</text>
+            <annotationSet cDate="06/22/2012 02:19:15 PDT Fri" status="UNANN" ID="6632810">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="in"/>
+                    <label end="9" start="5" name="jj"/>
+                    <label end="16" start="11" name="NP"/>
+                    <label end="24" start="18" name="NP"/>
+                    <label end="34" start="26" name="nns"/>
+                    <label end="44" start="36" name="VVN"/>
+                    <label end="47" start="46" name="in"/>
+                    <label end="54" start="49" name="nn"/>
+                    <label end="57" start="56" name="in"/>
+                    <label end="64" start="59" name="jj"/>
+                    <label end="70" start="66" name="nns"/>
+                    <label end="72" start="72" name=","/>
+                    <label end="78" start="74" name="NP"/>
+                    <label end="86" start="80" name="VVZ"/>
+                    <label end="91" start="88" name="in"/>
+                    <label end="102" start="93" name="jj"/>
+                    <label end="113" start="104" name="nn"/>
+                    <label end="117" start="115" name="cc"/>
+                    <label end="126" start="119" name="nn"/>
+                    <label end="130" start="128" name="cc"/>
+                    <label end="134" start="132" name="VHZ"/>
+                    <label end="143" start="136" name="nn"/>
+                    <label end="150" start="145" name="nns"/>
+                    <label end="155" start="152" name="in"/>
+                    <label end="165" start="157" name="jj"/>
+                    <label end="172" start="167" name="nns"/>
+                    <label end="175" start="174" name="to"/>
+                    <label end="182" start="177" name="VV"/>
+                    <label end="193" start="184" name="nns"/>
+                    <label end="195" start="195" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="78" start="74" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="16" start="11" name="NT"/>
+                    <label end="24" start="18" name="NT"/>
+                    <label end="47" start="46" name="NT"/>
+                    <label end="57" start="56" name="NT"/>
+                    <label end="72" start="72" name="NT"/>
+                    <label end="78" start="74" name="NT"/>
+                    <label end="91" start="88" name="NT"/>
+                    <label end="117" start="115" name="NT"/>
+                    <label end="130" start="128" name="NT"/>
+                    <label end="155" start="152" name="NT"/>
+                    <label end="175" start="174" name="NT"/>
+                    <label end="195" start="195" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/22/2012 02:19:15 PDT Fri" status="MANUAL" ID="6632811">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="44" start="36" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="6597" end="34" start="5" name="Participant_1"/>
+                    <label cBy="RLG" feID="6599" end="54" start="46" name="Event"/>
+                    <label cBy="RLG" feID="6600" end="70" start="56" name="Time"/>
+                    <label cBy="RLG" feID="6598" itype="INI" name="Participant_2"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="34" start="5" name="Ext"/>
+                    <label end="54" start="46" name="Dep"/>
+                    <label end="70" start="56" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="34" start="5" name="NP"/>
+                    <label end="54" start="46" name="PP"/>
+                    <label end="70" start="56" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="other-matched-(1)"/>
+    <subCorpus name="other-unmatched-(1)"/>
+</lexUnit>

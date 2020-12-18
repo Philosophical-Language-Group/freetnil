@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="origin.n" ID="10587" frame="Origin" frameID="1103" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Missile" name="Iran_Missile" ID="23512"/>
+        </corpus>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="AFGP-2002-600045-Trans" name="AFGP-2002-600045-Trans" ID="23740"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="ent" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="ori" name="Origin"/>
+        </frame>
+    </header>
+    <definition>COD: the point where something begins or arises.</definition>
+    <lexeme POS="N" name="origin"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Entity"/>
+                <annoSet ID="6550611"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Entity"/>
+                <annoSet ID="6527732"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Origin"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Origin"/>
+                <annoSet ID="6550611"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Origin"/>
+                <annoSet ID="6527732"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Entity"/>
+            <FE name="Origin"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Entity"/>
+                <valenceUnit GF="Dep" PT="NP" FE="Origin"/>
+                <annoSet ID="6550611"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Entity"/>
+                <valenceUnit GF="" PT="DEN" FE="Origin"/>
+                <annoSet ID="6527732"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23512" sentNo="1" paragNo="9" aPos="0" ID="4096725">
+            <text>The origins of the Iranian missile program date back to the late 1970s and the last years that the Shah Mohammed Reza Pahlavi ruled Iran .</text>
+            <annotationSet cDate="02/25/2005 12:23:04 PST Fri" status="UNANN" ID="6522390">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="10" start="4" name="nns"/>
+                    <label end="13" start="12" name="in"/>
+                    <label end="17" start="15" name="dt"/>
+                    <label end="25" start="19" name="jj"/>
+                    <label end="33" start="27" name="nn"/>
+                    <label end="41" start="35" name="nn"/>
+                    <label end="46" start="43" name="nn"/>
+                    <label end="51" start="48" name="rb"/>
+                    <label end="54" start="53" name="to"/>
+                    <label end="58" start="56" name="dt"/>
+                    <label end="63" start="60" name="jj"/>
+                    <label end="69" start="65" name="nns"/>
+                    <label end="73" start="71" name="cc"/>
+                    <label end="77" start="75" name="dt"/>
+                    <label end="82" start="79" name="jj"/>
+                    <label end="88" start="84" name="nns"/>
+                    <label end="93" start="90" name="in"/>
+                    <label end="97" start="95" name="dt"/>
+                    <label end="102" start="99" name="NP"/>
+                    <label end="111" start="104" name="NP"/>
+                    <label end="116" start="113" name="NP"/>
+                    <label end="124" start="118" name="NP"/>
+                    <label end="130" start="126" name="VVD"/>
+                    <label end="135" start="132" name="NP"/>
+                    <label end="137" start="137" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="69" start="65" name="date"/>
+                    <label end="124" start="104" name="person"/>
+                    <label end="135" start="132" name="location"/>
+                    <label end="33" start="27" name="WEA"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="13" start="12" name="NT"/>
+                    <label end="17" start="15" name="NT"/>
+                    <label end="54" start="53" name="NT"/>
+                    <label end="58" start="56" name="NT"/>
+                    <label end="73" start="71" name="NT"/>
+                    <label end="77" start="75" name="NT"/>
+                    <label end="93" start="90" name="NT"/>
+                    <label end="97" start="95" name="NT"/>
+                    <label end="102" start="99" name="NT"/>
+                    <label end="111" start="104" name="NT"/>
+                    <label end="116" start="113" name="NT"/>
+                    <label end="124" start="118" name="NT"/>
+                    <label end="135" start="132" name="NT"/>
+                    <label end="137" start="137" name="NT"/>
+                    <label end="51" start="48" name="NT"/>
+                    <label end="25" start="19" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/10/2005 12:53:27 PDT Fri" status="MANUAL" ID="6527732">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="10" start="4" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="6525" end="10" start="4" name="Origin"/>
+                    <label cBy="RLG" feID="6524" end="41" start="12" name="Entity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="41" start="12" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="41" start="12" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="205" docID="23740" sentNo="6" paragNo="15" aPos="0" ID="4103245">
+            <text>4- The married Mujahed and his family qualify for round trip tickets to their country of origin after two years , and one month vacation .</text>
+            <annotationSet cDate="08/24/2007 01:46:57 PDT Fri" status="UNANN" ID="6547068">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="cd"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="13" start="7" name="jj"/>
+                    <label end="21" start="15" name="NP"/>
+                    <label end="25" start="23" name="cc"/>
+                    <label end="29" start="27" name="PP$"/>
+                    <label end="36" start="31" name="nn"/>
+                    <label end="44" start="38" name="VV"/>
+                    <label end="48" start="46" name="in"/>
+                    <label end="54" start="50" name="nn"/>
+                    <label end="59" start="56" name="nn"/>
+                    <label end="67" start="61" name="nns"/>
+                    <label end="70" start="69" name="to"/>
+                    <label end="76" start="72" name="PP$"/>
+                    <label end="84" start="78" name="nn"/>
+                    <label end="87" start="86" name="in"/>
+                    <label end="94" start="89" name="nn"/>
+                    <label end="100" start="96" name="in"/>
+                    <label end="104" start="102" name="cd"/>
+                    <label end="110" start="106" name="nns"/>
+                    <label end="112" start="112" name=","/>
+                    <label end="116" start="114" name="cc"/>
+                    <label end="120" start="118" name="cd"/>
+                    <label end="126" start="122" name="nn"/>
+                    <label end="135" start="128" name="nn"/>
+                    <label end="137" start="137" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="21" start="15" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="21" start="15" name="NT"/>
+                    <label end="25" start="23" name="NT"/>
+                    <label end="29" start="27" name="NT"/>
+                    <label end="48" start="46" name="NT"/>
+                    <label end="70" start="69" name="NT"/>
+                    <label end="76" start="72" name="NT"/>
+                    <label end="87" start="86" name="NT"/>
+                    <label end="112" start="112" name="NT"/>
+                    <label end="116" start="114" name="NT"/>
+                    <label end="137" start="137" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/08/2007 02:36:23 PST Thu" status="MANUAL" ID="6550611">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="94" start="89" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="6525" end="84" start="72" name="Origin"/>
+                    <label cBy="JKs" feID="6524" itype="DNI" name="Entity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="84" start="72" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="84" start="72" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Rules_Defined" POS="V" name="put out.v" ID="17439" frame="Putting_out_fire" frameID="2820" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_6" name="Fires_6" ID="25621"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agent" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="000000" bgColor="7CCD73" type="Extra-Thematic" abbrev="" name="Containing_event"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Peripheral" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Depict" name="Depictive"/>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Act" name="Fire"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="Result" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: Extinguish (a fire) thoroughly</definition>
+    <lexeme order="1" headword="true" breakBefore="false" POS="V" name="put"/>
+    <lexeme order="2" headword="false" breakBefore="true" POS="PREP" name="out"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Agent"/>
+                <annoSet ID="6669528"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="N" FE="Agent"/>
+                <annoSet ID="6655916"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Fire"/>
+            <pattern total="2">
+                <valenceUnit GF="Obj" PT="NP" FE="Fire"/>
+                <annoSet ID="6655916"/>
+                <annoSet ID="6669528"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Agent"/>
+            <FE name="Fire"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Agent"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Fire"/>
+                <annoSet ID="6669528"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="N" FE="Agent"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Fire"/>
+                <annoSet ID="6655916"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25621" sentNo="1" paragNo="4" aPos="0" ID="4165044">
+            <text>At about 8:30 ( eastern time ) firefighters were called to the home on 48 Granger Place to put out a fire that had started in the basement .</text>
+            <annotationSet cDate="07/17/2014 11:44:31 PDT Thu" status="UNANN" ID="6669214">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="7" start="3" name="rb"/>
+                    <label end="12" start="9" name="cd"/>
+                    <label end="14" start="14" name="("/>
+                    <label end="22" start="16" name="jj"/>
+                    <label end="27" start="24" name="nn"/>
+                    <label end="29" start="29" name=")"/>
+                    <label end="42" start="31" name="nns"/>
+                    <label end="47" start="44" name="VBD"/>
+                    <label end="54" start="49" name="VVN"/>
+                    <label end="57" start="56" name="to"/>
+                    <label end="61" start="59" name="dt"/>
+                    <label end="66" start="63" name="nn"/>
+                    <label end="69" start="68" name="in"/>
+                    <label end="72" start="71" name="cd"/>
+                    <label end="80" start="74" name="NP"/>
+                    <label end="86" start="82" name="nn"/>
+                    <label end="89" start="88" name="to"/>
+                    <label end="93" start="91" name="VV"/>
+                    <label end="97" start="95" name="rp"/>
+                    <label end="99" start="99" name="dt"/>
+                    <label end="104" start="101" name="nn"/>
+                    <label end="109" start="106" name="wdt"/>
+                    <label end="113" start="111" name="VHD"/>
+                    <label end="121" start="115" name="VVN"/>
+                    <label end="124" start="123" name="in"/>
+                    <label end="128" start="126" name="dt"/>
+                    <label end="137" start="130" name="nn"/>
+                    <label end="139" start="139" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="12" start="9" name="time"/>
+                    <label end="27" start="16" name="time"/>
+                    <label end="80" start="74" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="7" start="3" name="NT"/>
+                    <label end="12" start="9" name="NT"/>
+                    <label end="14" start="14" name="NT"/>
+                    <label end="29" start="29" name="NT"/>
+                    <label end="47" start="44" name="NT"/>
+                    <label end="57" start="56" name="NT"/>
+                    <label end="61" start="59" name="NT"/>
+                    <label end="72" start="71" name="NT"/>
+                    <label end="80" start="74" name="NT"/>
+                    <label end="89" start="88" name="NT"/>
+                    <label end="99" start="99" name="NT"/>
+                    <label end="109" start="106" name="NT"/>
+                    <label end="113" start="111" name="NT"/>
+                    <label end="128" start="126" name="NT"/>
+                    <label end="139" start="139" name="NT"/>
+                    <label end="86" start="82" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/18/2014 12:07:58 PDT Fri" status="MANUAL" ID="6669528">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="93" start="91" name="Target"/>
+                    <label cBy="CVa" end="97" start="95" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="15978" end="137" start="99" name="Fire"/>
+                    <label cBy="CVa" feID="15977" itype="DNI" name="Agent"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="137" start="99" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="137" start="99" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

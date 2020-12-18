@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="colonist.n" ID="13575" frame="Colonization" frameID="1794" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Jamaica" name="IntroJamaica" ID="23754"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="col" name="Colonists"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="hom" name="Homeland"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="new" name="New_area"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: a settler in or inhabitant of a colony.</definition>
+    <lexeme POS="N" name="colonist"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Colonists"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Colonists"/>
+                <annoSet ID="6555767"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Homeland"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Homeland"/>
+                <annoSet ID="6555767"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Colonists"/>
+            <FE name="Homeland"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Colonists"/>
+                <valenceUnit GF="Dep" PT="A" FE="Homeland"/>
+                <annoSet ID="6555767"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23754" sentNo="2" paragNo="6" aPos="0" ID="4103856">
+            <text>Four hundred years ago these crops brought British colonists to rule the land and African slaves to work it .</text>
+            <annotationSet cDate="07/17/2008 06:09:55 PDT Thu" status="UNANN" ID="6552663">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="cd"/>
+                    <label end="11" start="5" name="cd"/>
+                    <label end="17" start="13" name="nns"/>
+                    <label end="21" start="19" name="in"/>
+                    <label end="27" start="23" name="dt"/>
+                    <label end="33" start="29" name="nns"/>
+                    <label end="41" start="35" name="VVD"/>
+                    <label end="49" start="43" name="jj"/>
+                    <label end="59" start="51" name="nns"/>
+                    <label end="62" start="61" name="to"/>
+                    <label end="67" start="64" name="VV"/>
+                    <label end="71" start="69" name="dt"/>
+                    <label end="76" start="73" name="nn"/>
+                    <label end="80" start="78" name="cc"/>
+                    <label end="88" start="82" name="jj"/>
+                    <label end="95" start="90" name="nns"/>
+                    <label end="98" start="97" name="to"/>
+                    <label end="103" start="100" name="VV"/>
+                    <label end="106" start="105" name="PP"/>
+                    <label end="108" start="108" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="27" start="23" name="NT"/>
+                    <label end="62" start="61" name="NT"/>
+                    <label end="71" start="69" name="NT"/>
+                    <label end="80" start="78" name="NT"/>
+                    <label end="98" start="97" name="NT"/>
+                    <label end="106" start="105" name="NT"/>
+                    <label end="108" start="108" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/05/2008 01:09:17 PDT Tue" status="MANUAL" ID="6555767">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="59" start="51" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="10637" end="59" start="51" name="Colonists"/>
+                    <label cBy="KmG" feID="10638" end="49" start="43" name="Homeland"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="49" start="43" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="49" start="43" name="A"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

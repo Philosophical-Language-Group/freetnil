@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="RyC" cDate="11/08/2011 04:23:13 PST Tue" name="Capital_stock" ID="2682" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;This frame concerns &lt;fen&gt;Stock&lt;/fen&gt;, a purchasable and sellable asset representing a &lt;fen&gt;Shareholder&lt;/fen&gt;'s share in a company (the &lt;fen&gt;Issuer&lt;/fen&gt;). &lt;fen&gt;Stock&lt;/fen&gt; entitles the &lt;fen&gt;Shareholder&lt;/fen&gt; to profits of the &lt;fen&gt;Issuer&lt;/fen&gt; company, as determined by the governing board of the &lt;fen&gt;Issuer&lt;/fen&gt; company. LUs in this frame can denote the type of capital stock investment into a business (common or preferred) or the investment itself.  Common stock is also known as ordinary stock or voting stock.
+
+&lt;ex&gt;&lt;fex name="Shareholder"&gt;My&lt;/fex&gt; &lt;fex name="amt"&gt;ten&lt;/fex&gt; &lt;fex name="Type"&gt;preferred&lt;/fex&gt; &lt;fex name="Stock"&gt;&lt;t&gt;shares&lt;/t&gt;&lt;/fex&gt; &lt;fex name="Issuer"&gt;in Google&lt;/fex&gt; are worth more than your ten common shares in Apple.&lt;/ex&gt;
+&lt;/def-root&gt;</definition>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="RyC" cDate="11/08/2011 04:55:15 PST Tue" abbrev="" name="Stock" ID="15284">
+        <definition>&lt;def-root&gt;The investment that a &lt;fen&gt;Shareholder&lt;/fen&gt; makes into a business, differing from property and assets.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="2E8B57" fgColor="FFFFFF" coreType="Core" cBy="RyC" cDate="11/08/2011 04:57:41 PST Tue" abbrev="" name="Type" ID="15285">
+        <definition>&lt;def-root&gt;The the kind of &lt;fen&gt;Stock&lt;/fen&gt;, of which there are two: preferred or common.  Holders of preferred stock are entitled to the first dividend that a company pays out, while holders of common stock are granted voting rights in corporate decisions.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Core" cBy="RyC" cDate="11/08/2011 05:03:06 PST Tue" abbrev="" name="Shareholder" ID="15287">
+        <definition>&lt;def-root&gt;The creditor that has invested into a business by purchasing some &lt;fen&gt;Type&lt;/fen&gt; of its &lt;fen&gt;Stock&lt;/fen&gt;.&lt;/def-root&gt;</definition>
+        <excludesFE name="Stock" ID="15284"/>
+    </FE>
+    <FE bgColor="FFFF00" fgColor="000000" coreType="Core" cBy="RyC" cDate="11/08/2011 05:24:53 PST Tue" abbrev="" name="Issuer" ID="15292">
+        <definition>&lt;def-root&gt;The entity that issues its &lt;fen&gt;Stock&lt;/fen&gt; to the &lt;fen&gt;Shareholder&lt;/fen&gt;.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Peripheral" cBy="PKe" cDate="11/14/2011 05:49:05 PST Mon" abbrev="amt" name="Amount" ID="15296">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Amount&lt;/fen&gt; is the number of shares, though any measure prase will suffice.
+
+&lt;ex&gt;I have &lt;fex name="Amount"&gt;ten&lt;/fex&gt; &lt;fex name="Stock"&gt;shares&lt;/fex&gt; &lt;fex name="Issuer"&gt;in Google&lt;/fex&gt;.&lt;/ex&gt;
+&lt;ex&gt;Berkshire Hathaway bought &lt;fex name="Amount"&gt;majority&lt;/fex&gt; &lt;fex name="Stock"&gt;shares&lt;/fex&gt; &lt;fex name="Issuer"&gt;in IBM&lt;/fex&gt; today.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <frameRelation type="Inherits from"/>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses">
+        <relatedFrame ID="118">Possession</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="Created" incorporatedFE="Stock" POS="N" name="share.n" ID="16780" lemmaID="35397" cBy="RyC" cDate="11/08/2011 05:06:44 PST Tue">
+        <definition>COD: any of the equal parts into which a company's capital is divided.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="share"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Type" POS="A" name="common.a" ID="16781" lemmaID="7376" cBy="RyC" cDate="11/08/2011 05:06:58 PST Tue">
+        <definition>COD: (of a share) entitling its holder to dividends which vary in amount depending on the forturnes of the company.  Compare with PREFERRED.
+
+FN: also entitles the stockholder to voting rights.</definition>
+        <sentenceCount annotated="16" total="16"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="A" name="common"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Type" POS="A" name="preferred.a" ID="16782" lemmaID="51465" cBy="RyC" cDate="11/08/2011 05:07:11 PST Tue">
+        <definition>COD: (of a share) entitles the holder to a fixed dividend whose payment takes priority over that of ordinary share dividends.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="A" name="preferred"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Stock" POS="N" name="stock.n" ID="16783" lemmaID="38103" cBy="RyC" cDate="11/08/2011 05:07:22 PST Tue">
+        <definition>COD: the capital raised by a company through the issue and subscription of shares.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="stock"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="A" name="ordinary.a" ID="16784" lemmaID="26922" cBy="RyC" cDate="11/08/2011 05:09:50 PST Tue">
+        <definition>FN: Synonymous with "common" as in "common stock".</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="A" name="ordinary"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="A" name="voting.a" ID="16785" lemmaID="51466" cBy="RyC" cDate="11/08/2011 05:10:53 PST Tue">
+        <definition>FN: Synonymous with "common" as in "common stock".</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="A" name="voting"/>
+    </lexUnit>
+</frame>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="low.a" ID="17257" frame="Measurable_attributes" frameID="965" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core-Unexpressed" abbrev="" name="Attribute"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Core" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core-Unexpressed" abbrev="" name="Value"/>
+        </frame>
+    </header>
+    <definition>FN: of less than average height</definition>
+    <lexeme POS="A" name="low"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Entity"/>
+                <annoSet ID="6645037"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Entity"/>
+                <annoSet ID="6645037"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="2" paragNo="1" aPos="0" ID="4148195">
+            <text>The curved and shadowed drive led us to a low , dark house , pitchblack against a slate-coloured sky .</text>
+            <annotationSet cDate="04/30/2013 05:16:32 PDT Tue" status="UNANN" ID="6645033">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="9" start="4" name="VBN"/>
+                    <label end="13" start="11" name="cc"/>
+                    <label end="22" start="15" name="VBN"/>
+                    <label end="28" start="24" name="nn"/>
+                    <label end="32" start="30" name="VBD"/>
+                    <label end="35" start="34" name="PRP"/>
+                    <label end="38" start="37" name="to"/>
+                    <label end="40" start="40" name="dt"/>
+                    <label end="44" start="42" name="jj"/>
+                    <label end="51" start="48" name="jj"/>
+                    <label end="57" start="53" name="nn"/>
+                    <label end="70" start="61" name="jj"/>
+                    <label end="78" start="72" name="in"/>
+                    <label end="80" start="80" name="dt"/>
+                    <label end="95" start="82" name="jj"/>
+                    <label end="99" start="97" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:16:33 PDT Tue" status="MANUAL" ID="6645037">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="44" start="42" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="5896" end="57" start="53" name="Entity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="57" start="53" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="57" start="53" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

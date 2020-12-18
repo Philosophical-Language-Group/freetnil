@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="catch fire.v" ID="17464" frame="Catching_fire" frameID="2827" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_2" name="Fires_2" ID="25617"/>
+        </corpus>
+        <frame>
+            <FE fgColor="000000" bgColor="00BFFF" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Act" name="Fire"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="" name="Fuel"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="MANR" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: Be introduced to, and subsequently consumed by, fire.</definition>
+    <lexeme order="1" headword="true" breakBefore="false" POS="V" name="catch"/>
+    <lexeme order="2" headword="false" breakBefore="false" POS="N" name="fire"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Fire"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INC" FE="Fire"/>
+                <annoSet ID="6669310"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Fuel"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Fuel"/>
+                <annoSet ID="6669310"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Fire"/>
+            <FE name="Fuel"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INC" FE="Fire"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Fuel"/>
+                <annoSet ID="6669310"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25617" sentNo="1" paragNo="5" aPos="0" ID="4164990">
+            <text>Authorities say that it has been over 40 years since some parts of the land have caught fire .</text>
+            <annotationSet cDate="07/17/2014 11:43:36 PDT Thu" status="UNANN" ID="6669160">
+                <layer rank="1" name="PENN">
+                    <label end="10" start="0" name="nns"/>
+                    <label end="14" start="12" name="VVP"/>
+                    <label end="19" start="16" name="IN/that"/>
+                    <label end="22" start="21" name="PP"/>
+                    <label end="26" start="24" name="VHZ"/>
+                    <label end="31" start="28" name="VBN"/>
+                    <label end="36" start="33" name="in"/>
+                    <label end="39" start="38" name="cd"/>
+                    <label end="45" start="41" name="nns"/>
+                    <label end="51" start="47" name="in"/>
+                    <label end="56" start="53" name="dt"/>
+                    <label end="62" start="58" name="nns"/>
+                    <label end="65" start="64" name="in"/>
+                    <label end="69" start="67" name="dt"/>
+                    <label end="74" start="71" name="nn"/>
+                    <label end="79" start="76" name="VHP"/>
+                    <label end="86" start="81" name="VVN"/>
+                    <label end="91" start="88" name="nn"/>
+                    <label end="93" start="93" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="22" start="21" name="NT"/>
+                    <label end="26" start="24" name="NT"/>
+                    <label end="31" start="28" name="NT"/>
+                    <label end="39" start="38" name="NT"/>
+                    <label end="56" start="53" name="NT"/>
+                    <label end="65" start="64" name="NT"/>
+                    <label end="69" start="67" name="NT"/>
+                    <label end="79" start="76" name="NT"/>
+                    <label end="93" start="93" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/17/2014 04:18:37 PDT Thu" status="MANUAL" ID="6669310">
+                <layer rank="1" name="Target">
+                    <label cBy="WMcQ" end="86" start="81" name="Target"/>
+                    <label cBy="WMcQ" end="91" start="88" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="WMcQ" feID="16042" end="74" start="53" name="Fuel"/>
+                    <label cBy="WMcQ" feID="16041" end="91" start="88" name="Fire"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="74" start="53" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="74" start="53" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

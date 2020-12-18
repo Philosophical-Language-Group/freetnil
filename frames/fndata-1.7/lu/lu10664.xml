@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Direction" POS="ADV" name="prior.adv" ID="10664" frame="Time_vector" frameID="379" totalAnnotated="5" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Ticket Splitting" name="TicketSplitting" ID="23012"/>
+        </corpus>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Libya Country 1" name="LibyaCountry1" ID="23477"/>
+            <document description="Syria Nuclear Overview" name="Syria_NuclearOverview" ID="23631"/>
+        </corpus>
+        <corpus description="AQUAINT Knowledge-Based Evaluation Texts" name="KBEval" ID="185">
+            <document description="MIT" name="MIT" ID="23580"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Direction" name="Direction"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Distance" name="Distance"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Core" abbrev="Evt" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="lan" name="Landmark_event"/>
+        </frame>
+    </header>
+    <definition>FN: before</definition>
+    <lexeme POS="ADV" name="prior"/>
+    <valences>
+        <FERealization total="4">
+            <FE name="Direction"/>
+            <pattern total="4">
+                <valenceUnit GF="" PT="--" FE="Direction"/>
+                <annoSet ID="4529516"/>
+                <annoSet ID="4529572"/>
+                <annoSet ID="6533848"/>
+                <annoSet ID="6541159"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Distance"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="DNI" FE="Distance"/>
+                <annoSet ID="4529516"/>
+                <annoSet ID="4529572"/>
+                <annoSet ID="6541159"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Distance"/>
+                <annoSet ID="6532286"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="5">
+            <FE name="Event"/>
+            <pattern total="5">
+                <valenceUnit GF="Head" PT="Sfin" FE="Event"/>
+                <annoSet ID="4529516"/>
+                <annoSet ID="4529572"/>
+                <annoSet ID="6532286"/>
+                <annoSet ID="6533848"/>
+                <annoSet ID="6541159"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="5">
+            <FE name="Landmark_event"/>
+            <pattern total="4">
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Landmark_event"/>
+                <annoSet ID="4529516"/>
+                <annoSet ID="4529572"/>
+                <annoSet ID="6532286"/>
+                <annoSet ID="6541159"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPto" FE="Landmark_event"/>
+                <annoSet ID="6533848"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="3">
+            <FE name="Direction"/>
+            <FE name="Distance"/>
+            <FE name="Event"/>
+            <FE name="Landmark_event"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="--" FE="Direction"/>
+                <valenceUnit GF="" PT="DNI" FE="Distance"/>
+                <valenceUnit GF="Head" PT="Sfin" FE="Event"/>
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Landmark_event"/>
+                <annoSet ID="4529516"/>
+                <annoSet ID="4529572"/>
+                <annoSet ID="6541159"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Direction"/>
+            <FE name="Event"/>
+            <FE name="Landmark_event"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Direction"/>
+                <valenceUnit GF="Head" PT="Sfin" FE="Event"/>
+                <valenceUnit GF="Dep" PT="VPto" FE="Landmark_event"/>
+                <annoSet ID="6533848"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Distance"/>
+            <FE name="Event"/>
+            <FE name="Landmark_event"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Distance"/>
+                <valenceUnit GF="Head" PT="Sfin" FE="Event"/>
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Landmark_event"/>
+                <annoSet ID="6532286"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23012" sentNo="3" paragNo="2" aPos="0" ID="2824380">
+            <text>Prior to 1932 , the pattern was nearly the opposite .</text>
+            <annotationSet cDate="02/05/2004 08:30:18 PST Thu" status="UNANN" ID="4528375">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="rb"/>
+                    <label end="7" start="6" name="to"/>
+                    <label end="12" start="9" name="cd"/>
+                    <label end="14" start="14" name=","/>
+                    <label end="18" start="16" name="dt"/>
+                    <label end="26" start="20" name="nn"/>
+                    <label end="30" start="28" name="VBD"/>
+                    <label end="37" start="32" name="rb"/>
+                    <label end="41" start="39" name="dt"/>
+                    <label end="50" start="43" name="nn"/>
+                    <label end="52" start="52" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="12" start="9" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="7" start="6" name="NT"/>
+                    <label end="14" start="14" name="NT"/>
+                    <label end="30" start="28" name="NT"/>
+                    <label end="37" start="32" name="NT"/>
+                    <label end="52" start="52" name="NT"/>
+                    <label end="12" start="9" name="NT"/>
+                    <label end="18" start="16" name="NT"/>
+                    <label end="41" start="39" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/26/2004 12:42:36 PDT Mon" status="MANUAL" ID="4529516">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="4" start="0" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CHg" feID="3396" end="12" start="6" name="Landmark_event"/>
+                    <label cBy="CHg" feID="3398" end="4" start="0" name="Direction"/>
+                    <label cBy="CHg" feID="4832" end="50" start="16" name="Event"/>
+                    <label cBy="CHg" feID="3397" itype="DNI" name="Distance"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="12" start="6" name="Dep"/>
+                    <label end="50" start="16" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="12" start="6" name="PP"/>
+                    <label end="50" start="16" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="115" docID="23012" sentNo="2" paragNo="9" aPos="0" ID="2824394">
+            <text>First , why ticket splitting has increased and taken the peculiar pattern that it has over the past half century : Prior to the election of Franklin Roosevelt as president and the advent of the New Deal , government occupied a much smaller role in society and the prisoner 's dilemma problem confronting voters in races for Congress was considerably less severe .</text>
+            <annotationSet cDate="02/05/2004 08:30:23 PST Thu" status="UNANN" ID="4528389">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="rb"/>
+                    <label end="6" start="6" name=","/>
+                    <label end="10" start="8" name="wrb"/>
+                    <label end="17" start="12" name="nn"/>
+                    <label end="27" start="19" name="nn"/>
+                    <label end="31" start="29" name="VHZ"/>
+                    <label end="41" start="33" name="VVN"/>
+                    <label end="45" start="43" name="cc"/>
+                    <label end="51" start="47" name="VVN"/>
+                    <label end="55" start="53" name="dt"/>
+                    <label end="64" start="57" name="jj"/>
+                    <label end="72" start="66" name="nn"/>
+                    <label end="77" start="74" name="in"/>
+                    <label end="80" start="79" name="PP"/>
+                    <label end="84" start="82" name="VHZ"/>
+                    <label end="89" start="86" name="in"/>
+                    <label end="93" start="91" name="dt"/>
+                    <label end="98" start="95" name="jj"/>
+                    <label end="103" start="100" name="nn"/>
+                    <label end="111" start="105" name="nn"/>
+                    <label end="113" start="113" name=":"/>
+                    <label end="119" start="115" name="rb"/>
+                    <label end="122" start="121" name="to"/>
+                    <label end="126" start="124" name="dt"/>
+                    <label end="135" start="128" name="nn"/>
+                    <label end="138" start="137" name="in"/>
+                    <label end="147" start="140" name="NP"/>
+                    <label end="157" start="149" name="NP"/>
+                    <label end="160" start="159" name="in"/>
+                    <label end="170" start="162" name="nn"/>
+                    <label end="174" start="172" name="cc"/>
+                    <label end="178" start="176" name="dt"/>
+                    <label end="185" start="180" name="nn"/>
+                    <label end="188" start="187" name="in"/>
+                    <label end="192" start="190" name="dt"/>
+                    <label end="196" start="194" name="NP"/>
+                    <label end="201" start="198" name="NP"/>
+                    <label end="203" start="203" name=","/>
+                    <label end="214" start="205" name="nn"/>
+                    <label end="223" start="216" name="VVD"/>
+                    <label end="225" start="225" name="dt"/>
+                    <label end="230" start="227" name="rb"/>
+                    <label end="238" start="232" name="jjr"/>
+                    <label end="243" start="240" name="nn"/>
+                    <label end="246" start="245" name="in"/>
+                    <label end="254" start="248" name="nn"/>
+                    <label end="258" start="256" name="cc"/>
+                    <label end="262" start="260" name="dt"/>
+                    <label end="271" start="264" name="nn"/>
+                    <label end="274" start="273" name="POS"/>
+                    <label end="282" start="276" name="nn"/>
+                    <label end="290" start="284" name="nn"/>
+                    <label end="302" start="292" name="VVG"/>
+                    <label end="309" start="304" name="nns"/>
+                    <label end="312" start="311" name="in"/>
+                    <label end="318" start="314" name="nns"/>
+                    <label end="322" start="320" name="in"/>
+                    <label end="331" start="324" name="NP"/>
+                    <label end="335" start="333" name="VBD"/>
+                    <label end="348" start="337" name="rb"/>
+                    <label end="353" start="350" name="rbr"/>
+                    <label end="360" start="355" name="jj"/>
+                    <label end="362" start="362" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="157" start="140" name="person"/>
+                    <label end="201" start="194" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="6" name="NT"/>
+                    <label end="31" start="29" name="NT"/>
+                    <label end="113" start="113" name="NT"/>
+                    <label end="122" start="121" name="NT"/>
+                    <label end="203" start="203" name="NT"/>
+                    <label end="230" start="227" name="NT"/>
+                    <label end="246" start="245" name="NT"/>
+                    <label end="312" start="311" name="NT"/>
+                    <label end="335" start="333" name="NT"/>
+                    <label end="348" start="337" name="NT"/>
+                    <label end="353" start="350" name="NT"/>
+                    <label end="362" start="362" name="NT"/>
+                    <label end="45" start="43" name="NT"/>
+                    <label end="55" start="53" name="NT"/>
+                    <label end="77" start="74" name="NT"/>
+                    <label end="80" start="79" name="NT"/>
+                    <label end="89" start="86" name="NT"/>
+                    <label end="93" start="91" name="NT"/>
+                    <label end="126" start="124" name="NT"/>
+                    <label end="138" start="137" name="NT"/>
+                    <label end="147" start="140" name="NT"/>
+                    <label end="157" start="149" name="NT"/>
+                    <label end="160" start="159" name="NT"/>
+                    <label end="174" start="172" name="NT"/>
+                    <label end="178" start="176" name="NT"/>
+                    <label end="188" start="187" name="NT"/>
+                    <label end="192" start="190" name="NT"/>
+                    <label end="196" start="194" name="NT"/>
+                    <label end="201" start="198" name="NT"/>
+                    <label end="225" start="225" name="NT"/>
+                    <label end="258" start="256" name="NT"/>
+                    <label end="262" start="260" name="NT"/>
+                    <label end="274" start="273" name="NT"/>
+                    <label end="322" start="320" name="NT"/>
+                    <label end="331" start="324" name="NT"/>
+                    <label end="84" start="82" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/29/2004 03:52:24 PDT Thu" status="MANUAL" ID="4529572">
+                <layer rank="1" name="Target">
+                    <label cBy="CHg" end="119" start="115" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CHg" feID="3398" end="119" start="115" name="Direction"/>
+                    <label cBy="CHg" feID="3396" end="201" start="121" name="Landmark_event"/>
+                    <label cBy="CHg" feID="4832" end="360" start="205" name="Event"/>
+                    <label cBy="CHg" feID="3397" itype="DNI" name="Distance"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="201" start="121" name="Dep"/>
+                    <label end="360" start="205" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="201" start="121" name="PP"/>
+                    <label end="360" start="205" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="185" docID="23580" sentNo="3" paragNo="6" aPos="0" ID="4099022">
+            <text>QN : Has the concentration of toxic agents in marine burials of chemical weapons increased prior to 1999 ?</text>
+            <annotationSet cDate="10/05/2005 01:35:01 PDT Wed" status="UNANN" ID="6531763">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="NP"/>
+                    <label end="3" start="3" name=":"/>
+                    <label end="7" start="5" name="VHZ"/>
+                    <label end="11" start="9" name="dt"/>
+                    <label end="25" start="13" name="nn"/>
+                    <label end="28" start="27" name="in"/>
+                    <label end="34" start="30" name="jj"/>
+                    <label end="41" start="36" name="nns"/>
+                    <label end="44" start="43" name="in"/>
+                    <label end="51" start="46" name="jj"/>
+                    <label end="59" start="53" name="nns"/>
+                    <label end="62" start="61" name="in"/>
+                    <label end="71" start="64" name="jj"/>
+                    <label end="79" start="73" name="nns"/>
+                    <label end="89" start="81" name="VVD"/>
+                    <label end="95" start="91" name="rb"/>
+                    <label end="98" start="97" name="to"/>
+                    <label end="103" start="100" name="cd"/>
+                    <label end="105" start="105" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="103" start="100" name="date"/>
+                    <label end="41" start="30" name="WEA"/>
+                    <label end="51" start="46" name="location"/>
+                    <label end="79" start="64" name="WEA"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="3" start="3" name="NT"/>
+                    <label end="11" start="9" name="NT"/>
+                    <label end="28" start="27" name="NT"/>
+                    <label end="44" start="43" name="NT"/>
+                    <label end="62" start="61" name="NT"/>
+                    <label end="98" start="97" name="NT"/>
+                    <label end="103" start="100" name="NT"/>
+                    <label end="105" start="105" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/06/2005 03:08:02 PDT Thu" status="MANUAL" ID="6532286">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="95" start="91" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="3396" end="103" start="97" name="Landmark_event"/>
+                    <label cBy="JKR" feID="4832" end="89" start="5" name="Event"/>
+                    <label cBy="JKR" feID="3397" itype="INI" name="Distance"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="103" start="97" name="Dep"/>
+                    <label end="89" start="5" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="103" start="97" name="PP"/>
+                    <label end="89" start="5" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23477" sentNo="5" paragNo="9" aPos="0" ID="4096447">
+            <text>Prior to Libya 's 19 December 2003 announcement to abandon its WMD programs , US intelligence agencies alleged that Qadhafi had attempted to recruit South African scientists to assist in the acquisition of BW , and that Libya had started to develop pathogens and toxins for weapons use . </text>
+            <annotationSet cDate="06/29/2004 04:50:29 PDT Tue" status="UNANN" ID="6521184">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="rb"/>
+                    <label end="7" start="6" name="to"/>
+                    <label end="13" start="9" name="NP"/>
+                    <label end="16" start="15" name="POS"/>
+                    <label end="19" start="18" name="cd"/>
+                    <label end="28" start="21" name="nn"/>
+                    <label end="33" start="30" name="jj"/>
+                    <label end="46" start="35" name="nn"/>
+                    <label end="49" start="48" name="to"/>
+                    <label end="57" start="51" name="VV"/>
+                    <label end="61" start="59" name="PP$"/>
+                    <label end="65" start="63" name="NP"/>
+                    <label end="74" start="67" name="nns"/>
+                    <label end="76" start="76" name=","/>
+                    <label end="79" start="78" name="NP"/>
+                    <label end="92" start="81" name="nn"/>
+                    <label end="101" start="94" name="nns"/>
+                    <label end="109" start="103" name="jj"/>
+                    <label end="114" start="111" name="wdt"/>
+                    <label end="126" start="124" name="VHD"/>
+                    <label end="136" start="128" name="VVN"/>
+                    <label end="139" start="138" name="to"/>
+                    <label end="147" start="141" name="VV"/>
+                    <label end="153" start="149" name="jj"/>
+                    <label end="161" start="155" name="jj"/>
+                    <label end="172" start="163" name="nns"/>
+                    <label end="175" start="174" name="to"/>
+                    <label end="182" start="177" name="VV"/>
+                    <label end="185" start="184" name="in"/>
+                    <label end="189" start="187" name="dt"/>
+                    <label end="201" start="191" name="nn"/>
+                    <label end="204" start="203" name="in"/>
+                    <label end="207" start="206" name="NP"/>
+                    <label end="209" start="209" name=","/>
+                    <label end="213" start="211" name="cc"/>
+                    <label end="218" start="215" name="wdt"/>
+                    <label end="224" start="220" name="NP"/>
+                    <label end="228" start="226" name="VHD"/>
+                    <label end="236" start="230" name="VVN"/>
+                    <label end="239" start="238" name="to"/>
+                    <label end="247" start="241" name="VV"/>
+                    <label end="257" start="249" name="nns"/>
+                    <label end="261" start="259" name="cc"/>
+                    <label end="268" start="263" name="nns"/>
+                    <label end="272" start="270" name="in"/>
+                    <label end="280" start="274" name="nns"/>
+                    <label end="284" start="282" name="VVP"/>
+                    <label end="286" start="286" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="13" start="9" name="GPE"/>
+                    <label end="33" start="18" name="date"/>
+                    <label end="65" start="63" name="WEA"/>
+                    <label end="122" start="116" name="person"/>
+                    <label end="161" start="149" name="GPE"/>
+                    <label end="207" start="206" name="WEA"/>
+                    <label end="224" start="220" name="GPE"/>
+                    <label end="101" start="78" name="organization"/>
+                    <label end="257" start="249" name="WEA"/>
+                    <label end="268" start="263" name="WEA"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="7" start="6" name="NT"/>
+                    <label end="13" start="9" name="NT"/>
+                    <label end="16" start="15" name="NT"/>
+                    <label end="19" start="18" name="NT"/>
+                    <label end="49" start="48" name="NT"/>
+                    <label end="61" start="59" name="NT"/>
+                    <label end="76" start="76" name="NT"/>
+                    <label end="79" start="78" name="NT"/>
+                    <label end="114" start="111" name="NT"/>
+                    <label end="139" start="138" name="NT"/>
+                    <label end="175" start="174" name="NT"/>
+                    <label end="185" start="184" name="NT"/>
+                    <label end="189" start="187" name="NT"/>
+                    <label end="204" start="203" name="NT"/>
+                    <label end="209" start="209" name="NT"/>
+                    <label end="213" start="211" name="NT"/>
+                    <label end="218" start="215" name="NT"/>
+                    <label end="224" start="220" name="NT"/>
+                    <label end="239" start="238" name="NT"/>
+                    <label end="261" start="259" name="NT"/>
+                    <label end="272" start="270" name="NT"/>
+                    <label end="286" start="286" name="NT"/>
+                    <label end="126" start="124" name="NT"/>
+                    <label end="228" start="226" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/02/2006 03:10:37 PST Mon" status="MANUAL" ID="6533848">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="4" start="0" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="3398" end="4" start="0" name="Direction"/>
+                    <label cBy="RLG" feID="3396" end="74" start="6" name="Landmark_event"/>
+                    <label cBy="RLG" feID="4832" end="284" start="78" name="Event"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="74" start="6" name="Dep"/>
+                    <label end="284" start="78" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="74" start="6" name="VPto"/>
+                    <label end="284" start="78" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23631" sentNo="3" paragNo="13" aPos="0" ID="4099871">
+            <text>The SRI has allegedly taken in Iraqi scientists prior to the recent Gulf War .</text>
+            <annotationSet cDate="07/26/2006 03:24:03 PDT Wed" status="UNANN" ID="6537489">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="6" start="4" name="nn"/>
+                    <label end="10" start="8" name="VHZ"/>
+                    <label end="20" start="12" name="rb"/>
+                    <label end="26" start="22" name="VVN"/>
+                    <label end="29" start="28" name="in"/>
+                    <label end="35" start="31" name="jj"/>
+                    <label end="46" start="37" name="nns"/>
+                    <label end="52" start="48" name="rb"/>
+                    <label end="55" start="54" name="to"/>
+                    <label end="59" start="57" name="dt"/>
+                    <label end="66" start="61" name="jj"/>
+                    <label end="71" start="68" name="NP"/>
+                    <label end="75" start="73" name="NP"/>
+                    <label end="77" start="77" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="6" start="4" name="organization"/>
+                    <label end="71" start="68" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="10" start="8" name="NT"/>
+                    <label end="29" start="28" name="NT"/>
+                    <label end="55" start="54" name="NT"/>
+                    <label end="59" start="57" name="NT"/>
+                    <label end="71" start="68" name="NT"/>
+                    <label end="77" start="77" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/23/2007 12:38:36 PST Fri" status="MANUAL" ID="6541159">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="52" start="48" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="3396" end="75" start="54" name="Landmark_event"/>
+                    <label cBy="KmG" feID="3398" end="52" start="48" name="Direction"/>
+                    <label cBy="KmG" feID="4832" end="46" start="0" name="Event"/>
+                    <label cBy="KmG" feID="3397" itype="DNI" name="Distance"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="75" start="54" name="Dep"/>
+                    <label end="46" start="0" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="75" start="54" name="PP"/>
+                    <label end="46" start="0" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

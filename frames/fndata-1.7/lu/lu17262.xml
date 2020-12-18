@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="abstraction.n" ID="17262" frame="Theft" frameID="94" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="000000" bgColor="00BFFF" type="Extra-Thematic" abbrev="Freq" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Goods" name="Goods"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Inst" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Perp" name="Perpetrator"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="Src" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Vict" name="Victim"/>
+        </frame>
+    </header>
+    <definition>FN: the act of stealing</definition>
+    <lexeme POS="N" name="abstraction"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Goods"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="Poss" FE="Goods"/>
+                <annoSet ID="6645542"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Source"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Source"/>
+                <annoSet ID="6645542"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Goods"/>
+            <FE name="Source"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="Poss" FE="Goods"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Source"/>
+                <annoSet ID="6645542"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="4" paragNo="15" aPos="0" ID="4148323">
+            <text>It was suggested , but never proved , that the deceased gentleman may have had valuables in the house , and that their abstraction was the motive of the crime .</text>
+            <annotationSet cDate="04/30/2013 05:18:05 PDT Tue" status="UNANN" ID="6645536">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PRP"/>
+                    <label end="5" start="3" name="VBD"/>
+                    <label end="15" start="7" name="VBN"/>
+                    <label end="21" start="19" name="cc"/>
+                    <label end="27" start="23" name="rb"/>
+                    <label end="34" start="29" name="VBD"/>
+                    <label end="41" start="38" name="in"/>
+                    <label end="45" start="43" name="dt"/>
+                    <label end="54" start="47" name="jj"/>
+                    <label end="64" start="56" name="nn"/>
+                    <label end="68" start="66" name="md"/>
+                    <label end="73" start="70" name="vb"/>
+                    <label end="77" start="75" name="VBN"/>
+                    <label end="87" start="79" name="nns"/>
+                    <label end="90" start="89" name="in"/>
+                    <label end="94" start="92" name="dt"/>
+                    <label end="100" start="96" name="nn"/>
+                    <label end="106" start="104" name="cc"/>
+                    <label end="111" start="108" name="in"/>
+                    <label end="117" start="113" name="PRP$"/>
+                    <label end="129" start="119" name="nn"/>
+                    <label end="133" start="131" name="VBD"/>
+                    <label end="137" start="135" name="dt"/>
+                    <label end="144" start="139" name="nn"/>
+                    <label end="147" start="146" name="in"/>
+                    <label end="151" start="149" name="dt"/>
+                    <label end="157" start="153" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:18:06 PDT Tue" status="MANUAL" ID="6645542">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="129" start="119" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="453" end="117" start="113" name="Goods"/>
+                    <label cBy="EGp" feID="454" end="102" start="92" name="Source"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="117" start="113" name="Obj"/>
+                    <label end="102" start="92" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="117" start="113" name="Poss"/>
+                    <label end="102" start="92" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

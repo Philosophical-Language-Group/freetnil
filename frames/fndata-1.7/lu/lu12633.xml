@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="public service.n" ID="12633" frame="Public_services" frameID="1605" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Election Victory" name="ElectionVictory" ID="23010"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Goodwill fund-raising letter" name="110CYL069" ID="23794"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="dom" name="Domain"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="ins" name="Institution"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="ser" name="Service_action"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="tar" name="Target_group"/>
+        </frame>
+    </header>
+    <definition>FN: a service accessible to the public which is provided or regulated by the state </definition>
+    <lexeme order="1" headword="false" breakBefore="false" POS="A" name="public"/>
+    <lexeme order="2" headword="true" breakBefore="false" POS="N" name="service"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Domain"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Domain"/>
+                <annoSet ID="6559879"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Domain"/>
+                <annoSet ID="4530513"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Institution"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Institution"/>
+                <annoSet ID="4530513"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Service_action"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Service_action"/>
+                <annoSet ID="6559879"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="" PT="INI" FE="Service_action"/>
+                <annoSet ID="4530513"/>
+                <annoSet ID="4530574"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Target_group"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Target_group"/>
+                <annoSet ID="4530513"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Domain"/>
+            <FE name="Institution"/>
+            <FE name="Service_action"/>
+            <FE name="Target_group"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Domain"/>
+                <valenceUnit GF="" PT="DEN" FE="Institution"/>
+                <valenceUnit GF="" PT="INI" FE="Service_action"/>
+                <valenceUnit GF="" PT="INI" FE="Target_group"/>
+                <annoSet ID="4530513"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Domain"/>
+            <FE name="Service_action"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Domain"/>
+                <valenceUnit GF="Head" PT="N" FE="Service_action"/>
+                <annoSet ID="6559879"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Service_action"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Service_action"/>
+                <annoSet ID="4530574"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23010" sentNo="4" paragNo="2" aPos="0" ID="2824274">
+            <text>Housing is scarce and public services -- the court system , schools , mail service , telephone network and the highways -- are in disgraceful condition .</text>
+            <annotationSet cDate="02/05/2004 08:29:43 PST Thu" status="UNANN" ID="4528269">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="nn"/>
+                    <label end="9" start="8" name="VBZ"/>
+                    <label end="16" start="11" name="jj"/>
+                    <label end="20" start="18" name="cc"/>
+                    <label end="27" start="22" name="jj"/>
+                    <label end="36" start="29" name="nns"/>
+                    <label end="39" start="38" name=":"/>
+                    <label end="43" start="41" name="dt"/>
+                    <label end="49" start="45" name="nn"/>
+                    <label end="56" start="51" name="nn"/>
+                    <label end="58" start="58" name=","/>
+                    <label end="66" start="60" name="nns"/>
+                    <label end="68" start="68" name=","/>
+                    <label end="73" start="70" name="nn"/>
+                    <label end="81" start="75" name="nn"/>
+                    <label end="83" start="83" name=","/>
+                    <label end="93" start="85" name="nn"/>
+                    <label end="101" start="95" name="nn"/>
+                    <label end="105" start="103" name="cc"/>
+                    <label end="109" start="107" name="dt"/>
+                    <label end="118" start="111" name="nns"/>
+                    <label end="121" start="120" name=":"/>
+                    <label end="125" start="123" name="vbp"/>
+                    <label end="128" start="127" name="in"/>
+                    <label end="140" start="130" name="jj"/>
+                    <label end="150" start="142" name="nn"/>
+                    <label end="152" start="152" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="9" start="8" name="NT"/>
+                    <label end="58" start="58" name="NT"/>
+                    <label end="68" start="68" name="NT"/>
+                    <label end="83" start="83" name="NT"/>
+                    <label end="125" start="123" name="NT"/>
+                    <label end="128" start="127" name="NT"/>
+                    <label end="152" start="152" name="NT"/>
+                    <label end="20" start="18" name="NT"/>
+                    <label end="39" start="38" name="NT"/>
+                    <label end="43" start="41" name="NT"/>
+                    <label end="105" start="103" name="NT"/>
+                    <label end="109" start="107" name="NT"/>
+                    <label end="121" start="120" name="NT"/>
+                    <label end="93" start="85" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/17/2005 11:26:50 PDT Wed" status="MANUAL" ID="4530513">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="27" start="22" name="Target"/>
+                    <label cBy="EGp" end="36" start="29" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="8828" end="36" start="22" name="Institution"/>
+                    <label cBy="JKR" feID="8832" itype="INI" name="Service_action"/>
+                    <label cBy="JKR" feID="8831" itype="INI" name="Target_group"/>
+                    <label cBy="JKR" feID="8829" itype="INI" name="Domain"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="115" docID="23010" sentNo="4" paragNo="6" aPos="0" ID="2824289">
+            <text>He could do more to cut public subsidies and transfers , thus making funds available for public services starved of money for six years .</text>
+            <annotationSet cDate="02/05/2004 08:29:48 PST Thu" status="UNANN" ID="4528284">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="7" start="3" name="md"/>
+                    <label end="10" start="9" name="VV"/>
+                    <label end="15" start="12" name="rbr"/>
+                    <label end="18" start="17" name="to"/>
+                    <label end="22" start="20" name="VV"/>
+                    <label end="29" start="24" name="jj"/>
+                    <label end="39" start="31" name="nns"/>
+                    <label end="43" start="41" name="cc"/>
+                    <label end="53" start="45" name="nns"/>
+                    <label end="55" start="55" name=","/>
+                    <label end="60" start="57" name="rb"/>
+                    <label end="67" start="62" name="VVG"/>
+                    <label end="73" start="69" name="nns"/>
+                    <label end="83" start="75" name="jj"/>
+                    <label end="87" start="85" name="in"/>
+                    <label end="94" start="89" name="jj"/>
+                    <label end="103" start="96" name="nns"/>
+                    <label end="111" start="105" name="VVN"/>
+                    <label end="114" start="113" name="in"/>
+                    <label end="120" start="116" name="nn"/>
+                    <label end="124" start="122" name="in"/>
+                    <label end="128" start="126" name="cd"/>
+                    <label end="134" start="130" name="nns"/>
+                    <label end="136" start="136" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="18" start="17" name="NT"/>
+                    <label end="55" start="55" name="NT"/>
+                    <label end="60" start="57" name="NT"/>
+                    <label end="136" start="136" name="NT"/>
+                    <label end="1" start="0" name="NT"/>
+                    <label end="43" start="41" name="NT"/>
+                    <label end="87" start="85" name="NT"/>
+                    <label end="114" start="113" name="NT"/>
+                    <label end="124" start="122" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/26/2005 10:42:24 PDT Fri" status="MANUAL" ID="4530574">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="94" start="89" name="Target"/>
+                    <label cBy="EGp" end="103" start="96" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="8832" itype="INI" name="Service_action"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23794" sentNo="3" paragNo="9" aPos="0" ID="4106465">
+            <text>Tax dollars that would have been spent on public assistance are saved .</text>
+            <annotationSet cDate="11/19/2008 04:11:07 PST Wed" status="UNANN" ID="6556582">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="nn"/>
+                    <label end="10" start="4" name="nns"/>
+                    <label end="15" start="12" name="wdt"/>
+                    <label end="21" start="17" name="md"/>
+                    <label end="26" start="23" name="VH"/>
+                    <label end="31" start="28" name="VBN"/>
+                    <label end="37" start="33" name="VVN"/>
+                    <label end="40" start="39" name="in"/>
+                    <label end="47" start="42" name="jj"/>
+                    <label end="58" start="49" name="nn"/>
+                    <label end="62" start="60" name="vbp"/>
+                    <label end="68" start="64" name="VVN"/>
+                    <label end="70" start="70" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="15" start="12" name="NT"/>
+                    <label end="21" start="17" name="NT"/>
+                    <label end="26" start="23" name="NT"/>
+                    <label end="31" start="28" name="NT"/>
+                    <label end="40" start="39" name="NT"/>
+                    <label end="62" start="60" name="NT"/>
+                    <label end="70" start="70" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/11/2011 02:41:00 PST Tue" status="MANUAL" ID="6559879">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="47" start="42" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="8832" end="58" start="49" name="Service_action"/>
+                    <label cBy="MLC" feID="8829" end="47" start="42" name="Domain"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="58" start="49" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="58" start="49" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

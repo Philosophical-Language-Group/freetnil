@@ -73,3 +73,10 @@ Indicate whether RFC is a draft, awaiting approval, approved, denied,
 
 A list of persons to CC about this RFC.
 ```
+# Forks
+
+The material in this repo, with the exception of the contents of the
+[frames](./frames) directory, is offered under a GPL 3.0 license, which can be
+read [here](./COPYING.txt). Data from
+[FrameNet](https://framenet.icsi.berkeley.edu/fndrupal/) is under a [CC 3.0
+Attribution license](https://creativecommons.org/licenses/by/3.0/).

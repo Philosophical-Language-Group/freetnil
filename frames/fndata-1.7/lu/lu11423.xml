@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="lawless.a" ID="11423" frame="Compliance" frameID="117" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="C-4 Text" name="C-4Text" ID="23491"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Act" name="Act"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Depict" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Peripheral" abbrev="" name="Judge"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Norm" name="Norm"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Prot" name="Protagonist"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="Result" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="soa" name="State_of_affairs"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: not governed by or obedient to laws.</definition>
+    <lexeme POS="A" name="lawless"/>
+    <valences>
+        <governor type="Gov" lemma="tribe">
+            <annoSet ID="6521749"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Protagonist"/>
+                <annoSet ID="6521749"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Protagonist"/>
+                <annoSet ID="6521749"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="23491" sentNo="6" paragNo="1" aPos="0" ID="4096523">
+            <text>Passports found in one of the houses identify the men as from a privilege convenience province noted for lawless tribes . </text>
+            <annotationSet cDate="12/10/2004 04:03:33 PST Fri" status="UNANN" ID="6521590">
+                <layer rank="1" name="PENN">
+                    <label end="8" start="0" name="nns"/>
+                    <label end="14" start="10" name="VVN"/>
+                    <label end="17" start="16" name="in"/>
+                    <label end="21" start="19" name="cd"/>
+                    <label end="28" start="26" name="dt"/>
+                    <label end="35" start="30" name="nns"/>
+                    <label end="44" start="37" name="VVP"/>
+                    <label end="48" start="46" name="dt"/>
+                    <label end="52" start="50" name="nns"/>
+                    <label end="60" start="57" name="in"/>
+                    <label end="72" start="64" name="nn"/>
+                    <label end="84" start="74" name="nn"/>
+                    <label end="93" start="86" name="nn"/>
+                    <label end="99" start="95" name="VVD"/>
+                    <label end="103" start="101" name="in"/>
+                    <label end="111" start="105" name="jj"/>
+                    <label end="118" start="113" name="nns"/>
+                    <label end="120" start="120" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="12/13/2004 04:03:25 PST Mon" status="MANUAL" ID="6521749">
+                <layer rank="1" name="Target">
+                    <label cBy="Pam" end="111" start="105" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="Pam" feID="612" end="118" start="113" name="Protagonist"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="118" start="113" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="118" start="113" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="118" start="113" name="Gov"/>
+                    <label end="111" start="105" name="X"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

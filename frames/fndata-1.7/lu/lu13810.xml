@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Business" POS="N" name="chain.n" ID="13810" frame="Businesses" frameID="365" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Dublin" name="IntroOfDublin" ID="23652"/>
+            <document description="Berlitz Intro of Hong Kong" name="IntroHongKong" ID="23757"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Busn" name="Business"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="BName" name="Business_name"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Prd" name="Product"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Pptr" name="Proprietor"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="ServP" name="Service_provider"/>
+        </frame>
+    </header>
+    <definition>COD: a group of hotels or shops owned by the same company.</definition>
+    <lexeme POS="N" name="chain"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Business"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Business"/>
+                <annoSet ID="6554814"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Descriptor"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Descriptor"/>
+                <annoSet ID="6554814"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Descriptor"/>
+                <annoSet ID="6541394"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Business"/>
+            <FE name="Descriptor"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Business"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Descriptor"/>
+                <annoSet ID="6554814"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Descriptor"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Descriptor"/>
+                <annoSet ID="6541394"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23652" sentNo="2" paragNo="13" aPos="0" ID="4100619">
+            <text>And while multinational chains have made inroads , they seem less blatant here than elsewhere .</text>
+            <annotationSet cDate="11/14/2006 04:25:25 PST Tue" status="UNANN" ID="6539618">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="cc"/>
+                    <label end="8" start="4" name="in"/>
+                    <label end="22" start="10" name="jj"/>
+                    <label end="29" start="24" name="nns"/>
+                    <label end="34" start="31" name="VHP"/>
+                    <label end="39" start="36" name="VVN"/>
+                    <label end="47" start="41" name="nns"/>
+                    <label end="49" start="49" name=","/>
+                    <label end="54" start="51" name="PP"/>
+                    <label end="59" start="56" name="VVP"/>
+                    <label end="64" start="61" name="jjr"/>
+                    <label end="72" start="66" name="jj"/>
+                    <label end="77" start="74" name="rb"/>
+                    <label end="82" start="79" name="in"/>
+                    <label end="92" start="84" name="rb"/>
+                    <label end="94" start="94" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="8" start="4" name="NT"/>
+                    <label end="34" start="31" name="NT"/>
+                    <label end="49" start="49" name="NT"/>
+                    <label end="54" start="51" name="NT"/>
+                    <label end="82" start="79" name="NT"/>
+                    <label end="94" start="94" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/25/2007 01:30:24 PST Sun" status="MANUAL" ID="6541394">
+                <layer rank="1" name="Target">
+                    <label cBy="CFB" end="29" start="24" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CFB" feID="3329" end="22" start="10" name="Descriptor"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="22" start="10" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="22" start="10" name="A"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23757" sentNo="4" paragNo="8" aPos="0" ID="4104014">
+            <text>There are many stories of refugees who arrived with nothing in their pockets , set up a small sidewalk stall , worked diligently until they had their own store , and then expanded it into a modest chain .</text>
+            <annotationSet cDate="07/21/2008 03:12:21 PDT Mon" status="UNANN" ID="6552826">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="ex"/>
+                    <label end="8" start="6" name="vbp"/>
+                    <label end="13" start="10" name="jj"/>
+                    <label end="21" start="15" name="nns"/>
+                    <label end="24" start="23" name="in"/>
+                    <label end="33" start="26" name="nns"/>
+                    <label end="37" start="35" name="wp"/>
+                    <label end="45" start="39" name="VVD"/>
+                    <label end="50" start="47" name="in"/>
+                    <label end="58" start="52" name="nn"/>
+                    <label end="61" start="60" name="in"/>
+                    <label end="67" start="63" name="PP$"/>
+                    <label end="75" start="69" name="nns"/>
+                    <label end="77" start="77" name=","/>
+                    <label end="81" start="79" name="VVN"/>
+                    <label end="84" start="83" name="in"/>
+                    <label end="86" start="86" name="dt"/>
+                    <label end="92" start="88" name="jj"/>
+                    <label end="101" start="94" name="nn"/>
+                    <label end="107" start="103" name="nn"/>
+                    <label end="109" start="109" name=","/>
+                    <label end="116" start="111" name="VVD"/>
+                    <label end="127" start="118" name="rb"/>
+                    <label end="133" start="129" name="in"/>
+                    <label end="138" start="135" name="PP"/>
+                    <label end="142" start="140" name="VHD"/>
+                    <label end="148" start="144" name="PP$"/>
+                    <label end="152" start="150" name="jj"/>
+                    <label end="158" start="154" name="nn"/>
+                    <label end="160" start="160" name=","/>
+                    <label end="164" start="162" name="cc"/>
+                    <label end="169" start="166" name="rb"/>
+                    <label end="178" start="171" name="VVD"/>
+                    <label end="181" start="180" name="PP"/>
+                    <label end="186" start="183" name="in"/>
+                    <label end="188" start="188" name="dt"/>
+                    <label end="195" start="190" name="jj"/>
+                    <label end="201" start="197" name="nn"/>
+                    <label end="203" start="203" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="24" start="23" name="NT"/>
+                    <label end="37" start="35" name="NT"/>
+                    <label end="50" start="47" name="NT"/>
+                    <label end="67" start="63" name="NT"/>
+                    <label end="77" start="77" name="NT"/>
+                    <label end="86" start="86" name="NT"/>
+                    <label end="109" start="109" name="NT"/>
+                    <label end="138" start="135" name="NT"/>
+                    <label end="148" start="144" name="NT"/>
+                    <label end="160" start="160" name="NT"/>
+                    <label end="164" start="162" name="NT"/>
+                    <label end="169" start="166" name="NT"/>
+                    <label end="181" start="180" name="NT"/>
+                    <label end="186" start="183" name="NT"/>
+                    <label end="188" start="188" name="NT"/>
+                    <label end="203" start="203" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/24/2008 03:30:04 PDT Thu" status="MANUAL" ID="6554814">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="201" start="197" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="3385" end="201" start="197" name="Business"/>
+                    <label cBy="JKs" feID="3329" end="195" start="190" name="Descriptor"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="195" start="190" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="195" start="190" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

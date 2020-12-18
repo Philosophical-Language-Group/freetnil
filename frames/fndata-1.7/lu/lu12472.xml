@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="import [act].n" ID="12472" frame="Importing" frameID="1567" totalAnnotated="4" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Nuclear" name="Iran_Nuclear" ID="23511"/>
+            <document description="North Korea Nuclear Overview" name="NorthKorea_NuclearOverview" ID="23562"/>
+        </corpus>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="StatCan Trade Balance" name="tradeBalance020417" ID="23841"/>
+        </corpus>
+        <corpus description="AQUAINT Knowledge-Based Evaluation Texts" name="KBEval" ID="185">
+            <document description="MIT" name="MIT" ID="23580"/>
+        </corpus>
+        <frame>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Extra-Thematic" abbrev="" name="Beneficiary"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Src" name="Exporting_area"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Goods" name="Goods"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agt" name="Importer"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Goal" name="Importing_area"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Mnr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="part" name="Particular_iteration"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="Path" name="Path"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="Veh" name="Vehicle"/>
+        </frame>
+    </header>
+    <definition>COD: the action or process of importing.</definition>
+    <lexeme POS="N" name="import"/>
+    <valences>
+        <FERealization total="4">
+            <FE name="Exporting_area"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Exporting_area"/>
+                <annoSet ID="6559563"/>
+            </pattern>
+            <pattern total="3">
+                <valenceUnit GF="" PT="INI" FE="Exporting_area"/>
+                <annoSet ID="6528486"/>
+                <annoSet ID="6530038"/>
+                <annoSet ID="6532669"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Goods"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Goods"/>
+                <annoSet ID="6559563"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Goods"/>
+                <annoSet ID="6532669"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Goods"/>
+                <annoSet ID="6530038"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Goods"/>
+                <annoSet ID="6528486"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Importer"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Importer"/>
+                <annoSet ID="6559563"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Importer"/>
+                <annoSet ID="6532669"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="" PT="INI" FE="Importer"/>
+                <annoSet ID="6528486"/>
+                <annoSet ID="6530038"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Importing_area"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="2nd" FE="Importing_area"/>
+                <annoSet ID="6559563"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="" PT="INI" FE="Importing_area"/>
+                <annoSet ID="6528486"/>
+                <annoSet ID="6530038"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Exporting_area"/>
+            <FE name="Goods"/>
+            <FE name="Importer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Exporting_area"/>
+                <valenceUnit GF="" PT="INI" FE="Goods"/>
+                <valenceUnit GF="Dep" PT="A" FE="Importer"/>
+                <annoSet ID="6532669"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="3">
+            <FE name="Exporting_area"/>
+            <FE name="Goods"/>
+            <FE name="Importer"/>
+            <FE name="Importing_area"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Exporting_area"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Goods"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Importer"/>
+                <valenceUnit GF="" PT="2nd" FE="Importing_area"/>
+                <annoSet ID="6559563"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Exporting_area"/>
+                <valenceUnit GF="Dep" PT="N" FE="Goods"/>
+                <valenceUnit GF="" PT="INI" FE="Importer"/>
+                <valenceUnit GF="" PT="INI" FE="Importing_area"/>
+                <annoSet ID="6530038"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Exporting_area"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Goods"/>
+                <valenceUnit GF="" PT="INI" FE="Importer"/>
+                <valenceUnit GF="" PT="INI" FE="Importing_area"/>
+                <annoSet ID="6528486"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23511" sentNo="2" paragNo="18" aPos="0" ID="4096636">
+            <text>Short of declaring Iran in violation of the NPT , the IAEA Director - General Mohamed ElBaradei stated , `` Iran has failed to meet its obligations under its Safeguards Agreement '' and criticized Iran for not being transparent with the construction of its nuclear - related facilities and import of nuclear material .</text>
+            <annotationSet cDate="02/23/2005 06:30:49 PST Wed" status="UNANN" ID="6522170">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="jj"/>
+                    <label end="7" start="6" name="in"/>
+                    <label end="17" start="9" name="VVG"/>
+                    <label end="22" start="19" name="NP"/>
+                    <label end="25" start="24" name="in"/>
+                    <label end="35" start="27" name="nn"/>
+                    <label end="38" start="37" name="in"/>
+                    <label end="42" start="40" name="dt"/>
+                    <label end="46" start="44" name="NP"/>
+                    <label end="48" start="48" name=","/>
+                    <label end="52" start="50" name="dt"/>
+                    <label end="57" start="54" name="NP"/>
+                    <label end="66" start="59" name="NP"/>
+                    <label end="68" start="68" name=":"/>
+                    <label end="76" start="70" name="NP"/>
+                    <label end="84" start="78" name="NP"/>
+                    <label end="94" start="86" name="NP"/>
+                    <label end="101" start="96" name="VVD"/>
+                    <label end="103" start="103" name=","/>
+                    <label end="106" start="105" name="``"/>
+                    <label end="111" start="108" name="NP"/>
+                    <label end="115" start="113" name="VHZ"/>
+                    <label end="122" start="117" name="VVN"/>
+                    <label end="125" start="124" name="to"/>
+                    <label end="130" start="127" name="VV"/>
+                    <label end="134" start="132" name="PP$"/>
+                    <label end="146" start="136" name="nns"/>
+                    <label end="152" start="148" name="in"/>
+                    <label end="156" start="154" name="PP$"/>
+                    <label end="167" start="158" name="nns"/>
+                    <label end="177" start="169" name="nn"/>
+                    <label end="180" start="179" name="''"/>
+                    <label end="184" start="182" name="cc"/>
+                    <label end="195" start="186" name="VVD"/>
+                    <label end="200" start="197" name="NP"/>
+                    <label end="204" start="202" name="in"/>
+                    <label end="208" start="206" name="rb"/>
+                    <label end="214" start="210" name="VBG"/>
+                    <label end="226" start="216" name="jj"/>
+                    <label end="231" start="228" name="in"/>
+                    <label end="235" start="233" name="dt"/>
+                    <label end="248" start="237" name="nn"/>
+                    <label end="251" start="250" name="in"/>
+                    <label end="255" start="253" name="PP$"/>
+                    <label end="263" start="257" name="jj"/>
+                    <label end="265" start="265" name=":"/>
+                    <label end="273" start="267" name="jj"/>
+                    <label end="284" start="275" name="nns"/>
+                    <label end="288" start="286" name="cc"/>
+                    <label end="295" start="290" name="nn"/>
+                    <label end="298" start="297" name="in"/>
+                    <label end="306" start="300" name="jj"/>
+                    <label end="315" start="308" name="nn"/>
+                    <label end="317" start="317" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="22" start="19" name="GPE"/>
+                    <label end="46" start="44" name="IntAgr"/>
+                    <label end="57" start="54" name="organization"/>
+                    <label end="111" start="108" name="GPE"/>
+                    <label end="200" start="197" name="GPE"/>
+                    <label end="94" start="59" name="person"/>
+                    <label end="177" start="158" name="IntAgr"/>
+                    <label end="284" start="257" name="FAC"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="7" start="6" name="NT"/>
+                    <label end="22" start="19" name="NT"/>
+                    <label end="25" start="24" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="42" start="40" name="NT"/>
+                    <label end="46" start="44" name="NT"/>
+                    <label end="48" start="48" name="NT"/>
+                    <label end="52" start="50" name="NT"/>
+                    <label end="57" start="54" name="NT"/>
+                    <label end="66" start="59" name="NT"/>
+                    <label end="68" start="68" name="NT"/>
+                    <label end="76" start="70" name="NT"/>
+                    <label end="84" start="78" name="NT"/>
+                    <label end="94" start="86" name="NT"/>
+                    <label end="103" start="103" name="NT"/>
+                    <label end="111" start="108" name="NT"/>
+                    <label end="125" start="124" name="NT"/>
+                    <label end="134" start="132" name="NT"/>
+                    <label end="152" start="148" name="NT"/>
+                    <label end="156" start="154" name="NT"/>
+                    <label end="184" start="182" name="NT"/>
+                    <label end="200" start="197" name="NT"/>
+                    <label end="204" start="202" name="NT"/>
+                    <label end="231" start="228" name="NT"/>
+                    <label end="235" start="233" name="NT"/>
+                    <label end="251" start="250" name="NT"/>
+                    <label end="255" start="253" name="NT"/>
+                    <label end="265" start="265" name="NT"/>
+                    <label end="288" start="286" name="NT"/>
+                    <label end="298" start="297" name="NT"/>
+                    <label end="317" start="317" name="NT"/>
+                    <label end="115" start="113" name="NT"/>
+                    <label end="208" start="206" name="NT"/>
+                    <label end="214" start="210" name="NT"/>
+                    <label end="106" start="105" name="NT"/>
+                    <label end="180" start="179" name="NT"/>
+                    <label end="306" start="300" name="Nonrelational"/>
+                    <label end="263" start="257" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/20/2005 10:38:23 PDT Wed" status="MANUAL" ID="6528486">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="295" start="290" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="8544" end="315" start="297" name="Goods"/>
+                    <label cBy="RLG" feID="8540" itype="INI" name="Importer"/>
+                    <label cBy="RLG" feID="8549" itype="INI" name="Importing_area"/>
+                    <label cBy="RLG" feID="8551" itype="INI" name="Exporting_area"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="315" start="297" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="315" start="297" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23562" sentNo="4" paragNo="18" aPos="0" ID="4097701">
+            <text>Only two months later , the Korean Workers' Party Central Committee adopted policies to strengthen the military and to implement import - substitution programs to reduce dependency on arms imports .</text>
+            <annotationSet cDate="08/01/2005 12:16:12 PDT Mon" status="UNANN" ID="6528675">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="rb"/>
+                    <label end="7" start="5" name="cd"/>
+                    <label end="14" start="9" name="nns"/>
+                    <label end="20" start="16" name="rb"/>
+                    <label end="22" start="22" name=","/>
+                    <label end="26" start="24" name="dt"/>
+                    <label end="33" start="28" name="jj"/>
+                    <label end="42" start="35" name="NP"/>
+                    <label end="48" start="44" name="NP"/>
+                    <label end="56" start="50" name="NP"/>
+                    <label end="66" start="58" name="NP"/>
+                    <label end="74" start="68" name="VVD"/>
+                    <label end="83" start="76" name="nns"/>
+                    <label end="86" start="85" name="to"/>
+                    <label end="97" start="88" name="VV"/>
+                    <label end="101" start="99" name="dt"/>
+                    <label end="110" start="103" name="nn"/>
+                    <label end="114" start="112" name="cc"/>
+                    <label end="117" start="116" name="to"/>
+                    <label end="127" start="119" name="VV"/>
+                    <label end="134" start="129" name="nn"/>
+                    <label end="136" start="136" name=":"/>
+                    <label end="149" start="138" name="nn"/>
+                    <label end="158" start="151" name="nns"/>
+                    <label end="161" start="160" name="to"/>
+                    <label end="168" start="163" name="VV"/>
+                    <label end="179" start="170" name="nn"/>
+                    <label end="182" start="181" name="in"/>
+                    <label end="187" start="184" name="nns"/>
+                    <label end="195" start="189" name="nns"/>
+                    <label end="197" start="197" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="66" start="28" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="7" start="5" name="NT"/>
+                    <label end="22" start="22" name="NT"/>
+                    <label end="26" start="24" name="NT"/>
+                    <label end="42" start="35" name="NT"/>
+                    <label end="48" start="44" name="NT"/>
+                    <label end="56" start="50" name="NT"/>
+                    <label end="66" start="58" name="NT"/>
+                    <label end="86" start="85" name="NT"/>
+                    <label end="101" start="99" name="NT"/>
+                    <label end="114" start="112" name="NT"/>
+                    <label end="117" start="116" name="NT"/>
+                    <label end="136" start="136" name="NT"/>
+                    <label end="161" start="160" name="NT"/>
+                    <label end="182" start="181" name="NT"/>
+                    <label end="197" start="197" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/10/2005 03:31:58 PDT Wed" status="MANUAL" ID="6530038">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="195" start="189" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="8544" end="187" start="184" name="Goods"/>
+                    <label cBy="JKR" feID="8551" itype="INI" name="Exporting_area"/>
+                    <label cBy="JKR" feID="8540" itype="INI" name="Importer"/>
+                    <label cBy="JKR" feID="8549" itype="INI" name="Importing_area"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="187" start="184" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="187" start="184" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="185" docID="23580" sentNo="2" paragNo="21" aPos="0" ID="4099066">
+            <text>During his trip to five Arab capitals and Israel , which ended last Monday , Powell proposed easing sanctions on Iraqi imports .</text>
+            <annotationSet cDate="10/05/2005 01:35:11 PDT Wed" status="UNANN" ID="6531807">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="in"/>
+                    <label end="9" start="7" name="PP$"/>
+                    <label end="14" start="11" name="nn"/>
+                    <label end="17" start="16" name="to"/>
+                    <label end="22" start="19" name="cd"/>
+                    <label end="27" start="24" name="jj"/>
+                    <label end="36" start="29" name="nns"/>
+                    <label end="40" start="38" name="cc"/>
+                    <label end="47" start="42" name="NP"/>
+                    <label end="49" start="49" name=","/>
+                    <label end="55" start="51" name="wdt"/>
+                    <label end="61" start="57" name="VVD"/>
+                    <label end="66" start="63" name="jj"/>
+                    <label end="73" start="68" name="NP"/>
+                    <label end="75" start="75" name=","/>
+                    <label end="82" start="77" name="NP"/>
+                    <label end="91" start="84" name="VVD"/>
+                    <label end="98" start="93" name="VVG"/>
+                    <label end="108" start="100" name="nns"/>
+                    <label end="111" start="110" name="in"/>
+                    <label end="117" start="113" name="jj"/>
+                    <label end="125" start="119" name="nns"/>
+                    <label end="127" start="127" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="47" start="42" name="GPE"/>
+                    <label end="73" start="68" name="date"/>
+                    <label end="82" start="77" name="person"/>
+                    <label end="36" start="24" name="GPE"/>
+                    <label end="117" start="113" name="GPE"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="0" name="NT"/>
+                    <label end="9" start="7" name="NT"/>
+                    <label end="17" start="16" name="NT"/>
+                    <label end="22" start="19" name="NT"/>
+                    <label end="40" start="38" name="NT"/>
+                    <label end="47" start="42" name="NT"/>
+                    <label end="49" start="49" name="NT"/>
+                    <label end="55" start="51" name="NT"/>
+                    <label end="73" start="68" name="NT"/>
+                    <label end="75" start="75" name="NT"/>
+                    <label end="82" start="77" name="NT"/>
+                    <label end="111" start="110" name="NT"/>
+                    <label end="127" start="127" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/06/2005 08:48:00 PDT Thu" status="MANUAL" ID="6532669">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="125" start="119" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="8540" end="117" start="113" name="Importer"/>
+                    <label cBy="JKR" feID="8544" itype="INI" name="Goods"/>
+                    <label cBy="JKR" feID="8551" itype="INI" name="Exporting_area"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="117" start="113" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="117" start="113" name="A"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="175" docID="23841" sentNo="1" paragNo="3" aPos="0" ID="4107450">
+            <text>Canada 's merchandise exports and imports posted increases in February as automobile assembly lines stepped up production after shutdowns in January .</text>
+            <annotationSet cDate="10/25/2010 04:55:25 PDT Mon" status="UNANN" ID="6559547">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="NP"/>
+                    <label end="8" start="7" name="POS"/>
+                    <label end="20" start="10" name="nn"/>
+                    <label end="28" start="22" name="nns"/>
+                    <label end="32" start="30" name="cc"/>
+                    <label end="40" start="34" name="nns"/>
+                    <label end="47" start="42" name="VVD"/>
+                    <label end="57" start="49" name="nns"/>
+                    <label end="60" start="59" name="in"/>
+                    <label end="69" start="62" name="NP"/>
+                    <label end="72" start="71" name="in"/>
+                    <label end="83" start="74" name="nn"/>
+                    <label end="92" start="85" name="nn"/>
+                    <label end="98" start="94" name="nns"/>
+                    <label end="106" start="100" name="VVD"/>
+                    <label end="109" start="108" name="rp"/>
+                    <label end="120" start="111" name="nn"/>
+                    <label end="126" start="122" name="in"/>
+                    <label end="136" start="128" name="nns"/>
+                    <label end="139" start="138" name="in"/>
+                    <label end="147" start="141" name="NP"/>
+                    <label end="149" start="149" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="5" start="0" name="location"/>
+                    <label end="69" start="62" name="date"/>
+                    <label end="147" start="141" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="0" name="NT"/>
+                    <label end="8" start="7" name="NT"/>
+                    <label end="32" start="30" name="NT"/>
+                    <label end="149" start="149" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/26/2010 03:37:26 PDT Tue" status="MANUAL" ID="6559563">
+                <layer rank="1" name="Target">
+                    <label cBy="CFB" end="40" start="34" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CFB" feID="8540" end="8" start="0" name="Importer"/>
+                    <label cBy="CFB" feID="8544" end="20" start="10" name="Goods"/>
+                    <label cBy="MLC" feID="8551" itype="DNI" name="Exporting_area"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="8" start="0" name="Dep"/>
+                    <label end="20" start="10" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="8" start="0" name="AJP"/>
+                    <label end="20" start="10" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+                <layer rank="2" name="FE">
+                    <label cBy="CFB" feID="8549" end="8" start="0" name="Importing_area"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

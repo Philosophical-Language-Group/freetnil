@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="MJE" cDate="08/14/2001 06:42:32 PDT Tue" name="Locative_relation" ID="199" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;A &lt;fen&gt;Figure&lt;/fen&gt; is located relative to a &lt;fen&gt;Ground&lt;/fen&gt; location.  
+
+&lt;ex&gt;&lt;fex name="Fig"&gt;The cat&lt;/fex&gt; &lt;m&gt;is&lt;/m&gt; &lt;t&gt;on&lt;/t&gt; &lt;fex name="Grnd"&gt;the mat&lt;/fex&gt;.&lt;/ex&gt;
+&lt;ex&gt;&lt;fex name="Figure"&gt;The kitchen, with its breakfast / snack bar,&lt;/fex&gt; &lt;t&gt;adjoins&lt;/t&gt; on one side while the dining area adjoins on the other side. &lt;fex name="Ground"&gt;DNI&lt;/fex&gt;&lt;/ex&gt;
+&lt;ex&gt;&lt;fex name="Fig"&gt;The president's plane landed&lt;/fex&gt; &lt;t&gt;in&lt;/t&gt; &lt;fex name="Ground"&gt;Washington&lt;/fex&gt;.&lt;/ex&gt;
+
+This frame is used for LUs that do not belong in daughter frames, either because they are too general to have any particular image schema associated with them (e.g., &lt;ment&gt;here.adv&lt;/ment&gt;), or because we do not (yet) have a specific frame with the correct image schema (e.g., &lt;ment&gt;inland.a&lt;/ment&gt;).
+
+Prepositions, adverbs, and spatial adjectives that act as targets in this frame and its descendants cooccur with a number of constructions that may supply extra information and should be annotated as extrathematic frame elements.  The location of the &lt;fen&gt;Figure&lt;/fen&gt; may be further specified by its &lt;fen&gt;Distance&lt;/fen&gt; from the &lt;fen&gt;Ground&lt;/fen&gt; along a vector implied by the targets image schema, or the &lt;fen&gt;Direction&lt;/fen&gt; in which the &lt;fen&gt;Figure&lt;/fen&gt; lies from a reference location (generally, the deictic center).  In cases where both seem to cooccur, the &lt;fen&gt;Distance&lt;/fen&gt; actually modifies the &lt;fen&gt;Direction&lt;/fen&gt;, as seen in the following example:
+
+&lt;ex&gt;&lt;fex name="Figure"&gt;This pup&lt;/fex&gt; was lying abandoned, &lt;fex name="Direction"&gt;350 feet down&lt;/fex&gt; &lt;t&gt;at&lt;/t&gt; &lt;fex name="Ground"&gt;the bottom of an Arizona canyon&lt;/fex&gt;.&lt;/ex&gt;
+
+There is no sense in which the &lt;fen&gt;Distance&lt;/fen&gt; is measured using the schema for at.prep ('350 feet at the bottom of the canyon' doesn't mean the right thing at all); rather the distance is measured using the schema for down.adv, and is thus considered a modifier of the &lt;fen&gt;Direction&lt;/fen&gt; FE.
+
+In some very specific situations, prepositions, adjectives, and nouns can be used with a copula to describe the whole &lt;fen&gt;Profiled_region&lt;/fen&gt; where a &lt;fen&gt;Figure&lt;/fen&gt; is or could be, as in the following:
+
+&lt;ex&gt;&lt;t&gt;&lt;fex name="Profiled_region"&gt;Inside&lt;/fex&gt;&lt;/t&gt; &lt;fex name="Ground"&gt;my wallet&lt;/fex&gt; is where I put it .&lt;/ex&gt;
+&lt;ex&gt;&lt;t&gt;&lt;fex name="Profiled_region"&gt;Outside&lt;/fex&gt;&lt;/t&gt; &lt;fex name="Ground"&gt;your blind date's door&lt;/fex&gt; seems like the worst place in the world .&lt;/ex&gt;
+
+
+&lt;/def-root&gt;</definition>
+    <semType name="Locative_relation" ID="182"/>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Core" cBy="MJE" cDate="08/14/2001 06:50:27 PDT Tue" abbrev="Grnd" name="Ground" ID="1621">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Ground&lt;/fen&gt; serves as a basis for describing the location of the &lt;fen&gt;Figure&lt;/fen&gt;.
+
+&lt;ex&gt;The cat is &lt;t&gt;on&lt;/t&gt; &lt;fex name="Grnd"&gt;the mat&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <excludesFE name="Figures" ID="10107"/>
+    </FE>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="MJE" cDate="08/14/2001 07:00:06 PDT Tue" abbrev="Fig" name="Figure" ID="1622">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Figure&lt;/fen&gt; is perceived as located relative to a certain &lt;fen&gt;Ground&lt;/fen&gt; location. The figure can be an entity or an event.
+
+&lt;ex&gt;&lt;fex name="Fig"&gt;The cat&lt;/fex&gt; is &lt;t&gt;on&lt;/t&gt; the mat.&lt;/ex&gt;
+&lt;/def-root&gt;</definition>
+        <excludesFE name="Figures" ID="10107"/>
+    </FE>
+    <FE bgColor="9400D3" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="MJE" cDate="07/24/2002 03:01:39 PDT Wed" abbrev="Dist" name="Distance" ID="3401">
+        <definition>&lt;def-root&gt;This  FE identifies the  &lt;fen&gt;Distance&lt;/fen&gt; between the &lt;fen&gt;Figure&lt;/fen&gt; and the &lt;fen&gt;Ground&lt;/fen&gt;.  This FE requires an image schema with a vector that extends from the &lt;fen&gt;Ground&lt;/fen&gt;, or a subpart of the &lt;fen&gt;Ground&lt;/fen&gt;, in some direction, and the &lt;fen&gt;Distance&lt;/fen&gt; is measured along this vector from the &lt;fen&gt;Ground&lt;/fen&gt; to the profiled region.    &lt;ex&gt;The climbers are now &lt;fex name="Distance"&gt;2000 feet&lt;/fex&gt; &lt;t&gt;above&lt;/t&gt; the base camp.&lt;/ex&gt; &lt;ex&gt;&lt;fex name="Dist"&gt;Deep&lt;/fex&gt; &lt;t&gt;under&lt;/t&gt; the earth lurk dark things.&lt;/ex&gt;  In cases where the target does not introduce such an image schema, &lt;fen&gt;Distance&lt;/fen&gt; should be annotated as part of the &lt;fen&gt;Direction&lt;/fen&gt; FE that introduces such a vector.  &lt;ex&gt;She found a phone &lt;fex name="Direction"&gt;200 feet up&lt;/fex&gt; &lt;t&gt;on&lt;/t&gt; the radio tower.&lt;/ex&gt;  Note that a number of frequent adverbial targets, e.g. up.adv and down.adv, identify the &lt;fen&gt;Ground&lt;/fen&gt;, with the location of an implicit viewer, so &lt;fen&gt;Distance&lt;/fen&gt; is effectively measured from the viewpoint location in these cases.  &lt;ex&gt;We were already &lt;fex name="Distance"&gt;nearly 1000 meters&lt;/fex&gt; &lt;t&gt;down&lt;/t&gt;.&lt;/ex&gt; &lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="1E90FF" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="MJE" cDate="07/24/2002 03:14:32 PDT Wed" abbrev="Dir" name="Direction" ID="3404">
+        <definition>&lt;def-root&gt;This FE identifies the &lt;fen&gt;Direction&lt;/fen&gt; from a reference location (generally, the deictic center) of a path to the &lt;fen&gt;Figure&lt;/fen&gt;.  This FE is filled by one of a closed class of adverbs:  up, down, out (meaning 'beyond the boundary around the viewpoint'), off (meaning 'disconnect between landmark and figure'), back (meaning 'along a line from front to back of landmark, and relatively inaccessible'), and, more rarely, away, along, and dialectally, back down (meaning 'down and behind').
+&lt;ex&gt;The cat is &lt;fex name="Dir"&gt;down&lt;/fex&gt; &lt;t&gt;on&lt;/t&gt; the mat.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Peripheral" cBy="JKR" cDate="10/14/2005 10:59:54 PDT Fri" abbrev="tim" name="Time" ID="9108">
+        <definition>&lt;def-root&gt;The period of time during which the locative relation between &lt;fen&gt;Figure&lt;/fen&gt; and &lt;fen&gt;Ground&lt;/fen&gt; obtains.
+
+&lt;ex&gt;He was &lt;t&gt;in&lt;/t&gt; Athens &lt;fex name="tim"&gt;on Friday&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <semType name="Time" ID="141"/>
+    </FE>
+    <FE bgColor="00008B" fgColor="FFFFFF" coreType="Core-Unexpressed" cBy="KmG" cDate="05/23/2006 05:09:11 PDT Tue" abbrev="" name="Figures" ID="10107">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Figures&lt;/fen&gt; are items which mutually serve to identify the location of the other items.&lt;/def-root&gt;</definition>
+        <excludesFE name="Profiled_region" ID="16448"/>
+    </FE>
+    <FE bgColor="800080" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="MJE" cDate="03/19/2015 12:45:24 PDT Thu" abbrev="" name="Deixis" ID="16311">
+        <definition>&lt;def-root&gt;An indication of how the locative phrase relates to the grounding of the speech situation, either locating it near (here) or far (there, yonder), or specifically separated from the speech context by distance or a barrier (over).  Fillers of this FE are restricted to this closed class of items.
+
+&lt;ex&gt;She has a boyfriend way &lt;fex name="Deixis"&gt;over&lt;/fex&gt; &lt;t&gt;in&lt;/t&gt; Springfield.&lt;/ex&gt;
+&lt;ex&gt;It is lying &lt;fex name="Deixis"&gt;here&lt;/fex&gt; &lt;t&gt;on&lt;/t&gt; my desk.&lt;/ex&gt;
+
+&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FF69B4" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="MJE" cDate="03/19/2015 12:49:57 PDT Thu" abbrev="" name="Accessibility" ID="16312">
+        <definition>&lt;def-root&gt;An indication of how accessible the &lt;fen&gt;Figure&lt;/fen&gt; is to some participant in the speech context (either the speaker or the addressee, or some other highly salient viewpoint in a narrative).  This FE normally describes availability for manipulation and use, but may simply describe how easily seen or difficult to see the &lt;fen&gt;Figure&lt;/fen&gt; is. There is a closed class of items that can fill this slot, including only 'just' and 'right' indicating ease of access, and 'way', 'all the way', or (dialectally) 'clear' indicating distance and difficulty of access.  
+
+&lt;ex&gt;Oh yeah , the flashlight 's &lt;fex name="Accessibility"&gt;right&lt;/fex&gt; &lt;t&gt;in&lt;/t&gt; my handbag.&lt;/ex&gt;
+&lt;ex&gt; I had an uncle that lived &lt;fex name="Accessibility"&gt;clear&lt;/fex&gt; over &lt;t&gt;in&lt;/t&gt; Kenmore , and I tried to ride my bike there.&lt;/ex&gt;
+
+While ease of access correlates with proximal deixis (e.g. 'right here') and difficulty correlates with distal deixis (e.g. 'all the way over there'), these notions are separable as shown in the following examples:
+
+&lt;ex&gt;I have two officers &lt;fex name="Accessibility"&gt;right&lt;/fex&gt; over &lt;t&gt;in&lt;/t&gt; the next room.&lt;/ex&gt;
+&lt;ex&gt;You ca n't come &lt;fex name="Accessibility"&gt;way&lt;/fex&gt; out here &lt;t&gt;to&lt;/t&gt; my mom 's!&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="A9A9A9" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="MJE" cDate="03/19/2015 01:29:55 PDT Thu" abbrev="" name="Directness" ID="16313">
+        <definition>&lt;def-root&gt;An indication of how closely the position of &lt;fen&gt;Figure&lt;/fen&gt; matches the prototype expected from the image schema associated with the target.  This FE is normally filled by closed-class, dedicated adverbs like right, straight, directly, and due (and some combinations of these), but also occurs with rarer items like 'smack dab'.
+
+&lt;ex&gt;She put her wallet &lt;fex name="Directness"&gt;straight&lt;/fex&gt; &lt;t&gt;into&lt;/t&gt; the drawer.&lt;/ex&gt;
+&lt;ex&gt;I ran &lt;fex name="Directness"&gt;right straight&lt;/fex&gt; &lt;t&gt;at&lt;/t&gt; the pole.&lt;/ex&gt;
+
+Some general adverbs that indicate exact and non-exact match to an idea can also express this FE:
+&lt;ex&gt;We set our tents up &lt;fex name="Directness"&gt;approximately&lt;/fex&gt; &lt;t&gt;northeast&lt;/t&gt; of here.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="7FFF00" fgColor="000000" coreType="Extra-Thematic" cBy="MJE" cDate="03/23/2015 11:42:04 PDT Mon" abbrev="" name="Temporal_profile" ID="16318">
+        <definition>&lt;def-root&gt;A description of how the access path to the &lt;fen&gt;Ground&lt;/fen&gt; interacts with time.  This FE is filled only by the closed class of adverbials back.adv (which indicates that the position was occupied by the &lt;fen&gt;Figure&lt;/fen&gt; before) and on.adv (which indicates a continued path).  While this FE in its most basic use refers to cases of actual motion, it can be used with descriptions of static position, in which case it either refers to fictive, imagined motion (as in the first example below), or it backgrounds motion entirely (as in the second example).
+
+&lt;ex&gt;You 'll find it straight &lt;fex name="Temporal_profile"&gt;on&lt;/fex&gt; around &lt;t&gt;behind&lt;/t&gt; the door.&lt;/ex&gt;
+&lt;ex&gt;I do n't know why my kids are &lt;fex name="Temporal_profile"&gt;back&lt;/fex&gt; &lt;t&gt;out&lt;/t&gt; of the crib.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FFFF00" fgColor="000000" coreType="Extra-Thematic" cBy="MJE" cDate="04/16/2015 05:38:04 PDT Thu" abbrev="" name="Region_quantification" ID="16383">
+        <definition>&lt;def-root&gt;A description of how much of a potential profiled region actually has (or is expected to have) a &lt;fen&gt;Figure&lt;/fen&gt; in it.  It is normally filled by closed-class items like 'all', 'somewhere', 'nowhere', etc.
+
+&lt;ex&gt;I think it 's &lt;fex name="Region_quantification"&gt;somewhere&lt;/fex&gt; &lt;t&gt;under&lt;/t&gt; the truck .&lt;/ex&gt;
+&lt;ex&gt;&lt;fex name="Region_quantification"&gt;All&lt;/fex&gt; &lt;t&gt;along&lt;/t&gt; the watchtowers, princes kept the view pristine .&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="7CCD7C" fgColor="FFFFFF" coreType="Core" cBy="MJE" cDate="05/11/2015 06:25:34 PDT Mon" abbrev="" name="Profiled_region" ID="16448">
+        <definition>&lt;def-root&gt;The region within which a &lt;fen&gt;Figure&lt;/fen&gt; might be found.  This FE is exclusive of &lt;fen&gt;Figure&lt;/fen&gt;, and is a reconstrual that is not possible with verb lexical units.
+
+&lt;ex&gt;&lt;fex name="Profiled_region"&gt;&lt;t&gt;Next to&lt;/t&gt; the kitchen&lt;/fex&gt; is the best place to locate your garage .&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <excludesFE name="Figure" ID="1622"/>
+    </FE>
+    <frameRelation type="Inherits from">
+        <relatedFrame ID="150">State</relatedFrame>
+        <relatedFrame ID="1160">Basis_for_attribute</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Inherited by">
+        <relatedFrame ID="262">Abounding_with</relatedFrame>
+        <relatedFrame ID="1461">Within_distance</relatedFrame>
+        <relatedFrame ID="1619">Expected_location_of_person</relatedFrame>
+        <relatedFrame ID="397">Containing</relatedFrame>
+        <relatedFrame ID="76">Distributed_position</relatedFrame>
+        <relatedFrame ID="1177">Goal</relatedFrame>
+        <relatedFrame ID="2880">Non-gradable_proximity</relatedFrame>
+        <relatedFrame ID="1178">Interior_profile_relation</relatedFrame>
+        <relatedFrame ID="2890">Spatial_contact</relatedFrame>
+        <relatedFrame ID="2891">Adjacency</relatedFrame>
+        <relatedFrame ID="2900">Gradable_proximity</relatedFrame>
+        <relatedFrame ID="2905">Spatial_co-location</relatedFrame>
+        <relatedFrame ID="2912">Directional_locative_relation</relatedFrame>
+        <relatedFrame ID="2940">Location_on_path</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Perspective on">
+        <relatedFrame ID="2790">Locative_scenario</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses">
+        <relatedFrame ID="660">Existence</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Used by">
+        <relatedFrame ID="960">Being_located</relatedFrame>
+        <relatedFrame ID="61">Path_shape</relatedFrame>
+        <relatedFrame ID="1490">Relational_natural_features</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="In_Use" POS="PREP" name="at.prep" ID="6735" lemmaID="2238" cBy="MJE" cDate="07/24/2002 03:27:45 PDT Wed">
+        <definition>COD: expressing location or arrival in a particular place or position. </definition>
+        <sentenceCount annotated="114" total="245"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="PREP" name="at"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="PREP" name="athwart.prep" ID="6752" lemmaID="2253" cBy="MJE" cDate="07/24/2002 04:10:43 PDT Wed">
+        <definition>COD: from side to side of; across. </definition>
+        <sentenceCount annotated="11" total="11"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="PREP" name="athwart"/>
+    </lexUnit>
+    <lexUnit status="Problem" POS="PREP" name="around.prep" ID="6753" lemmaID="1963" cBy="MJE" cDate="07/24/2002 04:11:15 PDT Wed">
+        <definition>COD: on every side of. </definition>
+        <sentenceCount annotated="18" total="19"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="PREP" name="around"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="over.prep" ID="6758" lemmaID="27195" cBy="MJE" cDate="07/24/2002 04:15:31 PDT Wed">
+        <definition>COD: at a higher level or layer than. </definition>
+        <sentenceCount annotated="5" total="5"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="PREP" name="over"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="PREP" name="beyond.prep" ID="6761" lemmaID="3487" cBy="MJE" cDate="07/24/2002 04:17:41 PDT Wed">
+        <definition>COD: at or to the further side of.</definition>
+        <sentenceCount annotated="16" total="102"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="PREP" name="beyond"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="along.prep" ID="6765" lemmaID="1106" cBy="MJE" cDate="07/24/2002 04:21:18 PDT Wed">
+        <definition>COD: extending in a more or less horizontal line on. </definition>
+        <sentenceCount annotated="13" total="13"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="PREP" name="along"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="up.prep" ID="6767" lemmaID="42448" cBy="MJE" cDate="07/24/2002 04:31:29 PDT Wed">
+        <definition>COD: from a lower to a higher point of. </definition>
+        <sentenceCount annotated="2" total="2"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="PREP" name="up"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="down.prep" ID="6768" lemmaID="11609" cBy="MJE" cDate="07/24/2002 04:31:48 PDT Wed">
+        <definition>COD: towards or in a lower place or position. </definition>
+        <sentenceCount annotated="2" total="2"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="PREP" name="down"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="PREP" name="astride.prep" ID="7714" lemmaID="2209" cBy="MJE" cDate="11/13/2002 06:06:26 PST Wed">
+        <definition>COD: with a leg on each side of</definition>
+        <sentenceCount annotated="20" total="92"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="PREP" name="astride"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="all over.prep" ID="10883" lemmaID="49473" cBy="KlB" cDate="08/18/2004 05:26:30 PDT Wed">
+        <definition>FN: over the whole area</definition>
+        <sentenceCount annotated="8" total="8"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="ADV" name="all"/>
+        <lexeme order="2" headword="true" breakBefore="false" POS="PREP" name="over"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="border.v" ID="11905" lemmaID="4228" cBy="JKR" cDate="04/22/2005 12:09:59 PDT Fri">
+        <definition>COD: (of a country or area) be adjacent to (another)</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="border"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="ADV" name="where.adv" ID="13318" lemmaID="43919" cBy="MiL" cDate="06/23/2006 02:39:10 PDT Fri">
+        <definition>COD: at, in, or to which.</definition>
+        <sentenceCount annotated="17" total="18"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="ADV" name="where"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="near.prep" ID="13764" lemmaID="25554" cBy="KmG" cDate="02/23/2007 10:27:29 PST Fri">
+        <definition>COD: also near to </definition>
+        <sentenceCount annotated="14" total="14"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="PREP" name="near"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" incorporatedFE="Ground" POS="A" name="underground.a" ID="13961" lemmaID="50546" cBy="KmG" cDate="03/13/2007 11:37:48 PDT Tue">
+        <definition>COD: beneath the surface of the ground.</definition>
+        <sentenceCount annotated="22" total="158"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="A" name="underground"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Ground" POS="A" name="above-ground.a" ID="13962" lemmaID="50547" cBy="KmG" cDate="03/13/2007 11:38:58 PDT Tue">
+        <definition>FN: above the surface of the ground.</definition>
+        <sentenceCount annotated="1" total="1"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="A" name="above-ground"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Ground" POS="ADV" name="underground.adv" ID="14061" lemmaID="41957" cBy="KmG" cDate="03/23/2007 08:28:14 PDT Fri">
+        <definition>FN: toward a place beneath the surface of the ground.</definition>
+        <sentenceCount annotated="1" total="1"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="ADV" name="underground"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="ADV" name="everywhere.adv" ID="14102" lemmaID="13285" cBy="MJE" cDate="03/24/2007 12:08:00 PDT Sat">
+        <definition>COD: in or to all places.</definition>
+        <sentenceCount annotated="6" total="6"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="ADV" name="everywhere"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="ADV" name="elsewhere.adv" ID="14172" lemmaID="12503" cBy="RLG" cDate="03/27/2007 04:15:19 PDT Tue">
+        <definition>COD: in, at, or to some other place or other places.</definition>
+        <sentenceCount annotated="7" total="7"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="ADV" name="elsewhere"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="ADV" name="here.adv" ID="14175" lemmaID="17895" cBy="KmG" cDate="03/27/2007 05:08:40 PDT Tue">
+        <definition>COD: in, at, or to this place or position.</definition>
+        <sentenceCount annotated="41" total="41"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="ADV" name="here"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="A" name="surrounding.a" ID="14302" lemmaID="39016" cBy="KmG" cDate="04/02/2007 12:54:25 PDT Mon">
+        <definition>FN: being around (an area)</definition>
+        <sentenceCount annotated="4" total="4"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="A" name="surrounding"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="A" name="distant.a" ID="14362" lemmaID="11199" cBy="KmG" cDate="04/06/2007 04:09:39 PDT Fri">
+        <definition>FN: far away</definition>
+        <sentenceCount annotated="2" total="2"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="A" name="distant"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="A" name="outlying.a" ID="14374" lemmaID="50658" cBy="KmG" cDate="04/06/2007 05:42:11 PDT Fri">
+        <definition>COD: remote.</definition>
+        <sentenceCount annotated="4" total="4"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="A" name="outlying"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="north.prep" ID="14396" lemmaID="50667" cBy="KmG" cDate="04/11/2007 04:01:13 PDT Wed">
+        <definition>COD: to or towards the north.</definition>
+        <sentenceCount annotated="3" total="3"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="PREP" name="north"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="south.prep" ID="14397" lemmaID="50668" cBy="KmG" cDate="04/11/2007 04:02:17 PDT Wed">
+        <definition>COD: to or towards the south.</definition>
+        <sentenceCount annotated="2" total="2"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="PREP" name="south"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="out.prep" ID="14398" lemmaID="27047" cBy="KmG" cDate="04/11/2007 04:04:14 PDT Wed">
+        <definition>COD: away from one's usual base or residence.</definition>
+        <sentenceCount annotated="3" total="3"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="PREP" name="out"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="west.prep" ID="14415" lemmaID="50674" cBy="KmG" cDate="04/11/2007 05:58:32 PDT Wed">
+        <definition>COD: to or towards the west.</definition>
+        <sentenceCount annotated="2" total="2"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="PREP" name="west"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="A" name="ubiquitous.a" ID="14473" lemmaID="41715" cBy="RLG" cDate="06/14/2007 12:38:55 PDT Thu">
+        <definition>FN: all over, everywhere.</definition>
+        <sentenceCount annotated="1" total="1"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="A" name="ubiquitous"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="ADV" name="there.adv" ID="14589" lemmaID="40071" cBy="KmG" cDate="10/26/2007 11:55:55 PDT Fri">
+        <definition>FN: referring to a place that is not here</definition>
+        <sentenceCount annotated="5" total="5"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="ADV" name="there"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Ground" POS="A" name="offshore.a" ID="14619" lemmaID="50762" cBy="KmG" cDate="10/31/2007 05:11:34 PDT Wed">
+        <definition>FN: to be located off of the shore of some land mass. </definition>
+        <sentenceCount annotated="1" total="1"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="A" name="offshore"/>
+    </lexUnit>
+    <lexUnit status="Created" incorporatedFE="Ground" POS="A" name="inland.a" ID="14620" lemmaID="20000" cBy="KmG" cDate="10/31/2007 05:24:43 PDT Wed">
+        <definition>FN: to be located a certain distance from the edge or shore of a geographic area.</definition>
+        <sentenceCount annotated="4" total="5"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="A" name="inland"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="past.prep" ID="14634" lemmaID="27985" cBy="KmG" cDate="11/09/2007 12:07:36 PST Fri">
+        <definition>FN: after</definition>
+        <sentenceCount annotated="3" total="3"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="PREP" name="past"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="to.prep" ID="14798" lemmaID="40569" cBy="JKs" cDate="02/20/2008 04:17:15 PST Wed">
+        <definition>FN: in the direction of</definition>
+        <sentenceCount annotated="3" total="3"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="PREP" name="to"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="southeast.prep" ID="14814" lemmaID="50833" cBy="KmG" cDate="02/29/2008 04:16:23 PST Fri">
+        <definition>FN: being located south and east of a point</definition>
+        <sentenceCount annotated="1" total="1"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="PREP" name="southeast"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="mainland.n" ID="15076" lemmaID="23188" cBy="KmG" cDate="06/06/2008 03:59:29 PDT Fri">
+        <definition>FN: the main geographical part of a country, exclusive of islands. </definition>
+        <sentenceCount annotated="2" total="2"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="mainland"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="throughout.prep" ID="15334" lemmaID="40299" cBy="CFB" cDate="05/08/2009 09:44:47 PDT Fri">
+        <definition>FN: in all parts of, over the entire range of, sometimes implying "uniformly"</definition>
+        <sentenceCount annotated="3" total="3"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="PREP" name="throughout"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="meet.v" ID="15622" lemmaID="23890" cBy="AnW" cDate="02/10/2010 03:43:30 PST Wed">
+        <definition>FN: be physically touching with (something)</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="meet"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="bracket.v" ID="15673" lemmaID="4394" cBy="RLG" cDate="03/08/2010 04:00:15 PST Mon">
+        <definition>FN: surround on either side</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="bracket"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="southwest.prep" ID="17881" lemmaID="51830" cBy="WMcQ" cDate="03/23/2015 04:38:14 PDT Mon">
+        <definition>FN: being located south and west of a point</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="PREP" name="southwest"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="northeast.prep" ID="17882" lemmaID="50832" cBy="WMcQ" cDate="03/23/2015 04:38:36 PDT Mon">
+        <definition>FN: being located north and east of a point</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="PREP" name="northeast"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="northwest.prep" ID="17883" lemmaID="51831" cBy="WMcQ" cDate="03/23/2015 04:38:53 PDT Mon">
+        <definition>FN: being located north and west of a point</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="PREP" name="northwest"/>
+    </lexUnit>
+</frame>

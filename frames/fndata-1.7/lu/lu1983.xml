@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="deficient.a" ID="1983" frame="Position_on_a_scale" frameID="95" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Chemical" name="Iran_Chemical" ID="23514"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="" name="Domain"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Item" name="Item"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core-Unexpressed" abbrev="Val" name="Value"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="Var" name="Variable"/>
+        </frame>
+    </header>
+    <definition>COD: insufficient or inadequate. </definition>
+    <lexeme POS="A" name="deficient"/>
+    <semType name="Negative" ID="99"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Item"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Item"/>
+                <annoSet ID="6524320"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Variable"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Variable"/>
+                <annoSet ID="6524320"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Item"/>
+            <FE name="Item"/>
+            <FE name="Variable"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Item"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Item"/>
+                <valenceUnit GF="" PT="INI" FE="Variable"/>
+                <annoSet ID="6524320"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23514" sentNo="1" paragNo="37" aPos="0" ID="4097106">
+            <text>In 1984 , South Korea supplied Iran with copies of the Finnish Kemira respirators , which proved to be deficient .</text>
+            <annotationSet cDate="02/25/2005 12:43:18 PST Fri" status="UNANN" ID="6522771">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="6" start="3" name="cd"/>
+                    <label end="8" start="8" name=","/>
+                    <label end="14" start="10" name="NP"/>
+                    <label end="20" start="16" name="NP"/>
+                    <label end="29" start="22" name="VVD"/>
+                    <label end="34" start="31" name="NP"/>
+                    <label end="39" start="36" name="in"/>
+                    <label end="46" start="41" name="nns"/>
+                    <label end="49" start="48" name="in"/>
+                    <label end="53" start="51" name="dt"/>
+                    <label end="61" start="55" name="jj"/>
+                    <label end="68" start="63" name="NP"/>
+                    <label end="80" start="70" name="nns"/>
+                    <label end="82" start="82" name=","/>
+                    <label end="88" start="84" name="wdt"/>
+                    <label end="95" start="90" name="VVD"/>
+                    <label end="98" start="97" name="to"/>
+                    <label end="101" start="100" name="vb"/>
+                    <label end="111" start="103" name="jj"/>
+                    <label end="113" start="113" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="6" start="3" name="date"/>
+                    <label end="20" start="10" name="GPE"/>
+                    <label end="34" start="31" name="GPE"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="6" start="3" name="NT"/>
+                    <label end="8" start="8" name="NT"/>
+                    <label end="14" start="10" name="NT"/>
+                    <label end="20" start="16" name="NT"/>
+                    <label end="34" start="31" name="NT"/>
+                    <label end="39" start="36" name="NT"/>
+                    <label end="49" start="48" name="NT"/>
+                    <label end="53" start="51" name="NT"/>
+                    <label end="68" start="63" name="NT"/>
+                    <label end="82" start="82" name="NT"/>
+                    <label end="88" start="84" name="NT"/>
+                    <label end="98" start="97" name="NT"/>
+                    <label end="113" start="113" name="NT"/>
+                    <label end="101" start="100" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/10/2005 10:00:19 PST Thu" status="MANUAL" ID="6524320">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="111" start="103" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="456" itype="INI" name="Variable"/>
+                    <label cBy="KmG" feID="455" end="80" start="41" name="Item"/>
+                    <label cBy="KmG" feID="455" end="88" start="84" name="Item"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="80" start="41" name="Ext"/>
+                    <label end="88" start="84" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="80" start="41" name="NP"/>
+                    <label end="88" start="84" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other">
+                    <label end="88" start="84" name="Rel"/>
+                    <label end="80" start="41" name="Ant"/>
+                </layer>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="101" start="100" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="In_Use" POS="V" name="set down.v" ID="16575" frame="Vehicle_landing" frameID="2642" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <frame>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="000000" bgColor="7CCD7C" type="Extra-Thematic" abbrev="Thm_c" name="Cotheme"/>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Extra-Thematic" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="000000" bgColor="90876C" type="Extra-Thematic" abbrev="eve" name="Event_description"/>
+            <FE fgColor="000000" bgColor="FF69B4" type="Extra-Thematic" abbrev="" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="goa" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="MoT" name="Mode_of_transportation"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="New" name="New_situation"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Path" name="Path"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="per" name="Period_of_iterations"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Extra-Thematic" abbrev="Pur" name="Purpose"/>
+            <FE fgColor="000000" bgColor="A9A9A9" type="Extra-Thematic" abbrev="re-e" name="Re-encoding"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="src" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="veh" name="Vehicle"/>
+        </frame>
+    </header>
+    <definition>FN: land in a controlled fashion.</definition>
+    <lexeme order="1" headword="true" breakBefore="false" POS="V" name="set"/>
+    <lexeme order="2" headword="false" breakBefore="false" POS="PREP" name="down"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Goal"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Goal"/>
+                <annoSet ID="6618209"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Vehicle"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Vehicle"/>
+                <annoSet ID="6618209"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Goal"/>
+            <FE name="Vehicle"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Goal"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Vehicle"/>
+                <annoSet ID="6618209"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-T-(1)">
+        <sentence sentNo="0" aPos="452741" ID="4133873">
+            <text>It managed to lift off and set down half a mile away after mechanical problems made it difficult to keep flying .</text>
+            <annotationSet cDate="03/27/2012 05:41:35 PDT Tue" status="UNANN" ID="6618208">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="9" start="3" name="VVD"/>
+                    <label end="12" start="11" name="to"/>
+                    <label end="17" start="14" name="VV"/>
+                    <label end="21" start="19" name="rp"/>
+                    <label end="25" start="23" name="cc"/>
+                    <label end="29" start="27" name="VV"/>
+                    <label end="34" start="31" name="rp"/>
+                    <label end="39" start="36" name="pdt"/>
+                    <label end="41" start="41" name="dt"/>
+                    <label end="46" start="43" name="nn"/>
+                    <label end="51" start="48" name="rb"/>
+                    <label end="57" start="53" name="in"/>
+                    <label end="68" start="59" name="jj"/>
+                    <label end="77" start="70" name="nns"/>
+                    <label end="82" start="79" name="VVD"/>
+                    <label end="85" start="84" name="PP"/>
+                    <label end="95" start="87" name="jj"/>
+                    <label end="98" start="97" name="to"/>
+                    <label end="103" start="100" name="VV"/>
+                    <label end="110" start="105" name="VVG"/>
+                    <label end="112" start="112" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="12" start="11" name="NT"/>
+                    <label end="21" start="19" name="NT"/>
+                    <label end="25" start="23" name="NT"/>
+                    <label end="34" start="31" name="NT"/>
+                    <label end="39" start="36" name="NT"/>
+                    <label end="41" start="41" name="NT"/>
+                    <label end="51" start="48" name="NT"/>
+                    <label end="57" start="53" name="NT"/>
+                    <label end="85" start="84" name="NT"/>
+                    <label end="98" start="97" name="NT"/>
+                    <label end="112" start="112" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/27/2012 05:41:35 PDT Tue" status="MANUAL" ID="6618209">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="29" start="27" name="Target"/>
+                    <label cBy="EGp" end="34" start="31" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="14926" end="1" start="0" name="Vehicle"/>
+                    <label cBy="RLG" feID="14929" end="51" start="36" name="Goal"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="1" start="0" name="Ext"/>
+                    <label end="51" start="36" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="1" start="0" name="NP"/>
+                    <label end="51" start="36" name="AVP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="other-matched-(1)"/>
+    <subCorpus name="other-unmatched-(1)"/>
+</lexUnit>

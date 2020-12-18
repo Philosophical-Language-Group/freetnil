@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="unfortunate.a" ID="14809" frame="Desirability" frameID="354" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Las Vegas" name="HistoryOfLasVegas" ID="23691"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Affected_p" name="Affected_party"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Extra-Thematic" abbrev="Circumstances" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="" name="Comparison_set"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degree" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Depictive" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Core" abbrev="Evaluee" name="Evaluee"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core-Unexpressed" abbrev="Parameter" name="Parameter"/>
+        </frame>
+    </header>
+    <definition>FN: much less than ideal and not favoring those concerned</definition>
+    <lexeme POS="A" name="unfortunate"/>
+    <semType name="Negative" ID="99"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Evaluee"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Evaluee"/>
+                <annoSet ID="6551665"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Evaluee"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Evaluee"/>
+                <annoSet ID="6551665"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23691" sentNo="4" paragNo="21" aPos="0" ID="4101090">
+            <text>These unfortunate circumstances threatened to relegate Las Vegas to the status of a small desert community that could no longer support its 3000 residents .</text>
+            <annotationSet cDate="03/12/2007 02:46:59 PDT Mon" status="UNANN" ID="6541883">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="dt"/>
+                    <label end="16" start="6" name="jj"/>
+                    <label end="30" start="18" name="nns"/>
+                    <label end="41" start="32" name="VVN"/>
+                    <label end="44" start="43" name="to"/>
+                    <label end="53" start="46" name="VV"/>
+                    <label end="57" start="55" name="NP"/>
+                    <label end="63" start="59" name="NP"/>
+                    <label end="66" start="65" name="to"/>
+                    <label end="70" start="68" name="dt"/>
+                    <label end="77" start="72" name="nn"/>
+                    <label end="80" start="79" name="in"/>
+                    <label end="82" start="82" name="dt"/>
+                    <label end="88" start="84" name="jj"/>
+                    <label end="95" start="90" name="nn"/>
+                    <label end="105" start="97" name="nn"/>
+                    <label end="110" start="107" name="wdt"/>
+                    <label end="116" start="112" name="md"/>
+                    <label end="119" start="118" name="rb"/>
+                    <label end="126" start="121" name="rbr"/>
+                    <label end="134" start="128" name="VV"/>
+                    <label end="138" start="136" name="PP$"/>
+                    <label end="143" start="140" name="cd"/>
+                    <label end="153" start="145" name="nns"/>
+                    <label end="155" start="155" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="63" start="55" name="GPE"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="4" start="0" name="NT"/>
+                    <label end="44" start="43" name="NT"/>
+                    <label end="57" start="55" name="NT"/>
+                    <label end="63" start="59" name="NT"/>
+                    <label end="66" start="65" name="NT"/>
+                    <label end="70" start="68" name="NT"/>
+                    <label end="80" start="79" name="NT"/>
+                    <label end="82" start="82" name="NT"/>
+                    <label end="110" start="107" name="NT"/>
+                    <label end="138" start="136" name="NT"/>
+                    <label end="155" start="155" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/28/2008 05:19:22 PST Thu" status="MANUAL" ID="6551665">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="16" start="6" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="3153" end="30" start="18" name="Evaluee"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="30" start="18" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="30" start="18" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

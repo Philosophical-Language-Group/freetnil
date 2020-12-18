@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="fundamental.a" ID="13768" frame="Importance" frameID="407" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Syria Nuclear Overview" name="Syria_NuclearOverview" ID="23631"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degree" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Factor" name="Factor"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="Field" name="Field"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="Fre" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Interested_party" name="Interested_party"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="" name="Place"/>
+            <FE fgColor="000000" bgColor="FFD700" type="Extra-Thematic" abbrev="Tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Undertaking" name="Undertaking"/>
+        </frame>
+    </header>
+    <definition>COD: of or serving as a foundation or core; of central importance.</definition>
+    <lexeme POS="A" name="fundamental"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Factor"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Factor"/>
+                <annoSet ID="6541135"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Factor"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Factor"/>
+                <annoSet ID="6541135"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23631" sentNo="1" paragNo="13" aPos="0" ID="4099869">
+            <text>Syria 's nuclear program remains in the fundamental stages of development , with virtually no fuel cycle facilities in operation .</text>
+            <annotationSet cDate="07/26/2006 03:24:02 PDT Wed" status="UNANN" ID="6537487">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="NP"/>
+                    <label end="7" start="6" name="POS"/>
+                    <label end="15" start="9" name="jj"/>
+                    <label end="23" start="17" name="nn"/>
+                    <label end="31" start="25" name="VVZ"/>
+                    <label end="34" start="33" name="in"/>
+                    <label end="38" start="36" name="dt"/>
+                    <label end="50" start="40" name="jj"/>
+                    <label end="57" start="52" name="nns"/>
+                    <label end="60" start="59" name="in"/>
+                    <label end="72" start="62" name="nn"/>
+                    <label end="74" start="74" name=","/>
+                    <label end="79" start="76" name="in"/>
+                    <label end="89" start="81" name="rb"/>
+                    <label end="92" start="91" name="dt"/>
+                    <label end="97" start="94" name="nn"/>
+                    <label end="103" start="99" name="nn"/>
+                    <label end="114" start="105" name="nns"/>
+                    <label end="117" start="116" name="in"/>
+                    <label end="127" start="119" name="nn"/>
+                    <label end="129" start="129" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="4" start="0" name="GPE"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="4" start="0" name="NT"/>
+                    <label end="7" start="6" name="NT"/>
+                    <label end="34" start="33" name="NT"/>
+                    <label end="38" start="36" name="NT"/>
+                    <label end="60" start="59" name="NT"/>
+                    <label end="74" start="74" name="NT"/>
+                    <label end="79" start="76" name="NT"/>
+                    <label end="89" start="81" name="NT"/>
+                    <label end="92" start="91" name="NT"/>
+                    <label end="117" start="116" name="NT"/>
+                    <label end="129" start="129" name="NT"/>
+                    <label end="97" start="94" name="Nonrelational"/>
+                    <label end="103" start="99" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/23/2007 12:02:44 PST Fri" status="MANUAL" ID="6541135">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="50" start="40" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="3749" end="72" start="52" name="Factor"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="72" start="52" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="72" start="52" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

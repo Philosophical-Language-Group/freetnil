@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="hopeful.a" ID="16991" frame="Attitude_description" frameID="2713" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_3" name="Fires_3" ID="25618"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Att" name="Attitude"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Cog" name="Cognizer"/>
+            <FE fgColor="000000" bgColor="FF00FF" type="Peripheral" abbrev="Deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="State" name="State_of_affairs"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: having an optimistic outlook; being full of hope</definition>
+    <lexeme POS="A" name="hopeful"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <annoSet ID="6671587"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="State_of_affairs"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="Sfin" FE="State_of_affairs"/>
+                <annoSet ID="6671587"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="State_of_affairs"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <valenceUnit GF="Dep" PT="Sfin" FE="State_of_affairs"/>
+                <annoSet ID="6671587"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25618" sentNo="1" paragNo="5" aPos="0" ID="4165001">
+            <text>Emergency crews said they were hopeful that they would be able to control the fire .</text>
+            <annotationSet cDate="07/17/2014 11:43:48 PDT Thu" status="UNANN" ID="6669171">
+                <layer rank="1" name="PENN">
+                    <label end="8" start="0" name="nn"/>
+                    <label end="14" start="10" name="nns"/>
+                    <label end="19" start="16" name="VVD"/>
+                    <label end="24" start="21" name="PP"/>
+                    <label end="29" start="26" name="VBD"/>
+                    <label end="37" start="31" name="jj"/>
+                    <label end="42" start="39" name="IN/that"/>
+                    <label end="47" start="44" name="PP"/>
+                    <label end="53" start="49" name="md"/>
+                    <label end="56" start="55" name="vb"/>
+                    <label end="61" start="58" name="jj"/>
+                    <label end="64" start="63" name="to"/>
+                    <label end="72" start="66" name="VV"/>
+                    <label end="76" start="74" name="dt"/>
+                    <label end="81" start="78" name="nn"/>
+                    <label end="83" start="83" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="24" start="21" name="NT"/>
+                    <label end="29" start="26" name="NT"/>
+                    <label end="47" start="44" name="NT"/>
+                    <label end="53" start="49" name="NT"/>
+                    <label end="56" start="55" name="NT"/>
+                    <label end="64" start="63" name="NT"/>
+                    <label end="76" start="74" name="NT"/>
+                    <label end="83" start="83" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/21/2014 05:47:25 PDT Mon" status="MANUAL" ID="6671587">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="37" start="31" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="15552" end="24" start="21" name="Cognizer"/>
+                    <label cBy="MJE" feID="15554" end="81" start="39" name="State_of_affairs"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="24" start="21" name="Ext"/>
+                    <label end="81" start="39" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="24" start="21" name="NP"/>
+                    <label end="81" start="39" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="29" start="26" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

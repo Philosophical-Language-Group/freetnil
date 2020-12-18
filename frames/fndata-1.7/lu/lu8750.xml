@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="interval.n" ID="8750" frame="Frequency" frameID="80" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Loma Prieta" name="LomaPrieta" ID="23013"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Core" abbrev="att" name="Attribute"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Evnt" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="gro" name="Group"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Int" name="Interval"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="rat" name="Rate"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Core" abbrev="sal" name="Salient_entity"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="T_span" name="Time_span"/>
+        </frame>
+    </header>
+    <definition>COD: an intervening time</definition>
+    <lexeme POS="N" name="interval"/>
+    <valences>
+        <governor type="Sup" lemma="at">
+            <annoSet ID="4528683"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="Sfin" FE="Event"/>
+                <annoSet ID="4528683"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Interval"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Interval"/>
+                <annoSet ID="4528683"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Event"/>
+            <FE name="Interval"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="Sfin" FE="Event"/>
+                <valenceUnit GF="" PT="DEN" FE="Interval"/>
+                <annoSet ID="4528683"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23013" sentNo="3" paragNo="19" aPos="0" ID="2824479">
+            <text>The quivers move through my house every few minutes at unpredictable intervals , and the mouse that 's been living in my kitchen has taken refuge under my desk .</text>
+            <annotationSet cDate="02/05/2004 08:30:49 PST Thu" status="UNANN" ID="4528474">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="10" start="4" name="nns"/>
+                    <label end="15" start="12" name="VVP"/>
+                    <label end="23" start="17" name="in"/>
+                    <label end="26" start="25" name="PP$"/>
+                    <label end="32" start="28" name="nn"/>
+                    <label end="38" start="34" name="dt"/>
+                    <label end="42" start="40" name="jj"/>
+                    <label end="50" start="44" name="nns"/>
+                    <label end="53" start="52" name="in"/>
+                    <label end="67" start="55" name="jj"/>
+                    <label end="77" start="69" name="nns"/>
+                    <label end="79" start="79" name=","/>
+                    <label end="83" start="81" name="cc"/>
+                    <label end="87" start="85" name="dt"/>
+                    <label end="93" start="89" name="nn"/>
+                    <label end="98" start="95" name="wdt"/>
+                    <label end="101" start="100" name="VHZ"/>
+                    <label end="106" start="103" name="VBN"/>
+                    <label end="113" start="108" name="VVG"/>
+                    <label end="116" start="115" name="in"/>
+                    <label end="119" start="118" name="PP$"/>
+                    <label end="127" start="121" name="nn"/>
+                    <label end="131" start="129" name="VHZ"/>
+                    <label end="137" start="133" name="VVN"/>
+                    <label end="144" start="139" name="nn"/>
+                    <label end="150" start="146" name="in"/>
+                    <label end="153" start="152" name="PP$"/>
+                    <label end="158" start="155" name="nn"/>
+                    <label end="160" start="160" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="79" start="79" name="NT"/>
+                    <label end="101" start="100" name="NT"/>
+                    <label end="106" start="103" name="NT"/>
+                    <label end="131" start="129" name="NT"/>
+                    <label end="160" start="160" name="NT"/>
+                    <label end="2" start="0" name="NT"/>
+                    <label end="23" start="17" name="NT"/>
+                    <label end="26" start="25" name="NT"/>
+                    <label end="38" start="34" name="NT"/>
+                    <label end="53" start="52" name="NT"/>
+                    <label end="83" start="81" name="NT"/>
+                    <label end="87" start="85" name="NT"/>
+                    <label end="98" start="95" name="NT"/>
+                    <label end="119" start="118" name="NT"/>
+                    <label end="153" start="152" name="NT"/>
+                    <label end="42" start="40" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/01/2004 05:51:53 PDT Thu" status="MANUAL" ID="4528683">
+                <layer rank="1" name="Target">
+                    <label cBy="cir" end="77" start="69" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="cir" feID="4561" end="77" start="69" name="Interval"/>
+                    <label cBy="cir" feID="371" end="32" start="0" name="Event"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="32" start="0" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="32" start="0" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="53" start="52" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

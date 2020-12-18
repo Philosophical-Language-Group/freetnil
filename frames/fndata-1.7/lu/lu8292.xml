@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Add_Annotation" POS="N" name="subpoena.n" ID="8292" frame="Documents" frameID="560" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp=1567" name="bncp=1567" ID="19391"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="Bea" name="Bearer"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Do" name="Document"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Iss" name="Issuer"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="" name="Medium"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Core" abbrev="Obl" name="Obligation"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Rig" name="Right"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="Spec" name="Specification"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="Sta" name="Status"/>
+        </frame>
+    </header>
+    <definition>COD: a writ ordering a person to attend a court.</definition>
+    <lexeme POS="N" name="subpoena"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Document"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Document"/>
+                <annoSet ID="6564525"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Issuer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Issuer"/>
+                <annoSet ID="6564525"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Obligation"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPto" FE="Obligation"/>
+                <annoSet ID="6564525"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Document"/>
+            <FE name="Issuer"/>
+            <FE name="Obligation"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Document"/>
+                <valenceUnit GF="" PT="INI" FE="Issuer"/>
+                <valenceUnit GF="Dep" PT="VPto" FE="Obligation"/>
+                <annoSet ID="6564525"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-modifies-(1)"/>
+    <subCorpus name="02-other-matched-(1)"/>
+    <subCorpus name="03-other-unmatched-(1)">
+        <sentence corpID="111" docID="19391" sentNo="1" paragNo="316" aPos="0" ID="4108260">
+            <text>This obviously requires the attendance of the witnesses at the trial , and a subpoena may be issued to compel the attendance of those who are within the jurisdiction or in some other part of the United Kingdom .</text>
+            <annotationSet cDate="05/31/2011 01:39:42 PDT Tue" status="UNANN" ID="6564524">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="13" start="5" name="rb"/>
+                    <label end="22" start="15" name="VVZ"/>
+                    <label end="26" start="24" name="dt"/>
+                    <label end="37" start="28" name="nn"/>
+                    <label end="40" start="39" name="in"/>
+                    <label end="44" start="42" name="dt"/>
+                    <label end="54" start="46" name="nns"/>
+                    <label end="57" start="56" name="in"/>
+                    <label end="61" start="59" name="dt"/>
+                    <label end="67" start="63" name="nn"/>
+                    <label end="69" start="69" name=","/>
+                    <label end="73" start="71" name="cc"/>
+                    <label end="75" start="75" name="dt"/>
+                    <label end="84" start="77" name="nn"/>
+                    <label end="88" start="86" name="md"/>
+                    <label end="91" start="90" name="vb"/>
+                    <label end="98" start="93" name="VVN"/>
+                    <label end="101" start="100" name="to"/>
+                    <label end="108" start="103" name="VV"/>
+                    <label end="112" start="110" name="dt"/>
+                    <label end="123" start="114" name="nn"/>
+                    <label end="126" start="125" name="in"/>
+                    <label end="132" start="128" name="dt"/>
+                    <label end="136" start="134" name="wp"/>
+                    <label end="140" start="138" name="vbp"/>
+                    <label end="147" start="142" name="in"/>
+                    <label end="151" start="149" name="dt"/>
+                    <label end="164" start="153" name="nn"/>
+                    <label end="167" start="166" name="cc"/>
+                    <label end="170" start="169" name="in"/>
+                    <label end="175" start="172" name="dt"/>
+                    <label end="181" start="177" name="jj"/>
+                    <label end="186" start="183" name="nn"/>
+                    <label end="189" start="188" name="in"/>
+                    <label end="193" start="191" name="dt"/>
+                    <label end="200" start="195" name="NP"/>
+                    <label end="208" start="202" name="NP"/>
+                    <label end="210" start="210" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="05/31/2011 01:39:42 PDT Tue" status="MANUAL" ID="6564525">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="84" start="77" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="4188" end="208" start="100" name="Obligation"/>
+                    <label cBy="MLC" feID="4192" end="84" start="77" name="Document"/>
+                    <label cBy="MLC" feID="4187" itype="INI" name="Issuer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="208" start="100" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="208" start="100" name="VPto"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

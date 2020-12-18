@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="ADV" name="geographically.adv" ID="7813" frame="Domain" frameID="430" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Jamaica" name="IntroJamaica" ID="23754"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Domain" name="Domain"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Predicate" name="Predicate"/>
+        </frame>
+    </header>
+    <definition>FN: of or relating to geography</definition>
+    <lexeme POS="ADV" name="geographically"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Domain"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Domain"/>
+                <annoSet ID="6554892"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Explanation"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[with]" FE="Explanation"/>
+                <annoSet ID="6554892"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Predicate"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="Sfin" FE="Predicate"/>
+                <annoSet ID="6554892"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Domain"/>
+            <FE name="Explanation"/>
+            <FE name="Predicate"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Domain"/>
+                <valenceUnit GF="Dep" PT="PP[with]" FE="Explanation"/>
+                <valenceUnit GF="Ext" PT="Sfin" FE="Predicate"/>
+                <annoSet ID="6554892"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23754" sentNo="3" paragNo="3" aPos="0" ID="4103847">
+            <text>Geographically it is extremely diverse , with a central backbone of high mountains and hills blanketed with tropical rain-forest .</text>
+            <annotationSet cDate="07/17/2008 06:09:53 PDT Thu" status="UNANN" ID="6552654">
+                <layer rank="1" name="PENN">
+                    <label end="13" start="0" name="rb"/>
+                    <label end="16" start="15" name="PP"/>
+                    <label end="19" start="18" name="VBZ"/>
+                    <label end="29" start="21" name="rb"/>
+                    <label end="37" start="31" name="jj"/>
+                    <label end="39" start="39" name=","/>
+                    <label end="44" start="41" name="in"/>
+                    <label end="46" start="46" name="dt"/>
+                    <label end="54" start="48" name="jj"/>
+                    <label end="63" start="56" name="nn"/>
+                    <label end="66" start="65" name="in"/>
+                    <label end="71" start="68" name="jj"/>
+                    <label end="81" start="73" name="nns"/>
+                    <label end="85" start="83" name="cc"/>
+                    <label end="91" start="87" name="nns"/>
+                    <label end="101" start="93" name="VVD"/>
+                    <label end="106" start="103" name="in"/>
+                    <label end="115" start="108" name="jj"/>
+                    <label end="127" start="117" name="nn"/>
+                    <label end="129" start="129" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="16" start="15" name="NT"/>
+                    <label end="19" start="18" name="NT"/>
+                    <label end="39" start="39" name="NT"/>
+                    <label end="44" start="41" name="NT"/>
+                    <label end="46" start="46" name="NT"/>
+                    <label end="66" start="65" name="NT"/>
+                    <label end="85" start="83" name="NT"/>
+                    <label end="106" start="103" name="NT"/>
+                    <label end="129" start="129" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/24/2008 05:23:03 PDT Thu" status="MANUAL" ID="6554892">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="13" start="0" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="3962" end="13" start="0" name="Domain"/>
+                    <label cBy="KmG" feID="3961" end="37" start="15" name="Predicate"/>
+                    <label cBy="KmG" feID="13037" end="127" start="41" name="Explanation"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="37" start="15" name="Ext"/>
+                    <label end="127" start="41" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="37" start="15" name="Sfin"/>
+                    <label end="127" start="41" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

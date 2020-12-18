@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="protection [event].n" ID="12794" frame="Protecting" frameID="1631" totalAnnotated="4" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="WMD News 06/26/2006" name="WMDNews_062606" ID="23621"/>
+        </corpus>
+        <corpus description="AQUAINT Knowledge-Based Evaluation Texts" name="KBEval" ID="185">
+            <document description="lcch" name="lcch" ID="23574"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Asset" name="Asset"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Beneficiary"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Danger" name="Danger"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD73" type="Extra-Thematic" abbrev="" name="Degree"/>
+            <FE fgColor="000000" bgColor="9F79EE" type="Extra-Thematic" abbrev="" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="des" name="Descriptor"/>
+            <FE fgColor="000000" bgColor="008000" type="Extra-Thematic" abbrev="" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="eve" name="Event_description"/>
+            <FE fgColor="000000" bgColor="1E90FF" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="d0d0d0" type="Peripheral" abbrev="ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="pro" name="Protection"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: the action or state of protecting or being protected.</definition>
+    <lexeme POS="N" name="protection"/>
+    <valences>
+        <governor type="Ctrlr" lemma="demonstrate">
+            <annoSet ID="6548321"/>
+        </governor>
+        <FERealization total="4">
+            <FE name="Asset"/>
+            <pattern total="4">
+                <valenceUnit GF="" PT="INI" FE="Asset"/>
+                <annoSet ID="6533307"/>
+                <annoSet ID="6542530"/>
+                <annoSet ID="6548321"/>
+                <annoSet ID="6548328"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Danger"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Danger"/>
+                <annoSet ID="6548328"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="" PT="INI" FE="Danger"/>
+                <annoSet ID="6533307"/>
+                <annoSet ID="6542530"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[against]" FE="Danger"/>
+                <annoSet ID="6548321"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Degree"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="AJP" FE="Degree"/>
+                <annoSet ID="6548321"/>
+                <annoSet ID="6548328"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Means"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[with]" FE="Means"/>
+                <annoSet ID="6548321"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="4">
+            <FE name="Protection"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Protection"/>
+                <annoSet ID="6548321"/>
+                <annoSet ID="6548328"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="" PT="INI" FE="Protection"/>
+                <annoSet ID="6533307"/>
+                <annoSet ID="6542530"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="Sub" FE="Time"/>
+                <annoSet ID="6548328"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Asset"/>
+            <FE name="Danger"/>
+            <FE name="Degree"/>
+            <FE name="Means"/>
+            <FE name="Protection"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Asset"/>
+                <valenceUnit GF="Dep" PT="PP[against]" FE="Danger"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Degree"/>
+                <valenceUnit GF="Dep" PT="PP[with]" FE="Means"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Protection"/>
+                <annoSet ID="6548321"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Asset"/>
+            <FE name="Danger"/>
+            <FE name="Degree"/>
+            <FE name="Protection"/>
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Asset"/>
+                <valenceUnit GF="" PT="DNI" FE="Danger"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Degree"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Protection"/>
+                <valenceUnit GF="Dep" PT="Sub" FE="Time"/>
+                <annoSet ID="6548328"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="2">
+            <FE name="Asset"/>
+            <FE name="Danger"/>
+            <FE name="Protection"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="INI" FE="Asset"/>
+                <valenceUnit GF="" PT="INI" FE="Danger"/>
+                <valenceUnit GF="" PT="INI" FE="Protection"/>
+                <annoSet ID="6533307"/>
+                <annoSet ID="6542530"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="185" docID="23574" sentNo="3" paragNo="19" aPos="0" ID="4098250">
+            <text>These scientists report that these compounds , some of which are binaries , were designed to circumvent the CWC and to defeat Western detection and protection measures .</text>
+            <annotationSet cDate="10/05/2005 01:26:18 PDT Wed" status="UNANN" ID="6530991">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="dt"/>
+                    <label end="15" start="6" name="nns"/>
+                    <label end="22" start="17" name="nn"/>
+                    <label end="27" start="24" name="in"/>
+                    <label end="33" start="29" name="dt"/>
+                    <label end="43" start="35" name="nns"/>
+                    <label end="45" start="45" name=","/>
+                    <label end="50" start="47" name="dt"/>
+                    <label end="53" start="52" name="in"/>
+                    <label end="59" start="55" name="wdt"/>
+                    <label end="63" start="61" name="vbp"/>
+                    <label end="72" start="65" name="nns"/>
+                    <label end="74" start="74" name=","/>
+                    <label end="79" start="76" name="VBD"/>
+                    <label end="88" start="81" name="VVN"/>
+                    <label end="91" start="90" name="to"/>
+                    <label end="102" start="93" name="VV"/>
+                    <label end="106" start="104" name="dt"/>
+                    <label end="110" start="108" name="NP"/>
+                    <label end="114" start="112" name="cc"/>
+                    <label end="117" start="116" name="to"/>
+                    <label end="124" start="119" name="VV"/>
+                    <label end="132" start="126" name="jj"/>
+                    <label end="142" start="134" name="nn"/>
+                    <label end="146" start="144" name="cc"/>
+                    <label end="157" start="148" name="nn"/>
+                    <label end="166" start="159" name="nns"/>
+                    <label end="168" start="168" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="110" start="108" name="IntAgr"/>
+                    <label end="72" start="65" name="WEA"/>
+                    <label end="132" start="126" name="GPE"/>
+                    <label end="15" start="0" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="4" start="0" name="NT"/>
+                    <label end="27" start="24" name="NT"/>
+                    <label end="33" start="29" name="NT"/>
+                    <label end="45" start="45" name="NT"/>
+                    <label end="50" start="47" name="NT"/>
+                    <label end="53" start="52" name="NT"/>
+                    <label end="59" start="55" name="NT"/>
+                    <label end="63" start="61" name="NT"/>
+                    <label end="74" start="74" name="NT"/>
+                    <label end="79" start="76" name="NT"/>
+                    <label end="91" start="90" name="NT"/>
+                    <label end="106" start="104" name="NT"/>
+                    <label end="110" start="108" name="NT"/>
+                    <label end="114" start="112" name="NT"/>
+                    <label end="117" start="116" name="NT"/>
+                    <label end="146" start="144" name="NT"/>
+                    <label end="168" start="168" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/13/2005 05:14:41 PDT Thu" status="MANUAL" ID="6533307">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="157" start="148" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="9089" itype="INI" name="Asset"/>
+                    <label cBy="JKR" feID="9088" itype="INI" name="Danger"/>
+                    <label cBy="JKR" feID="9084" itype="INI" name="Protection"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23692" sentNo="1" paragNo="18" aPos="0" ID="4101215">
+            <text>Following its victory , Athens introduced the concept of a mutual protection alliance ( a kind of NATO of the ancient world ) .</text>
+            <annotationSet cDate="03/12/2007 02:51:09 PDT Mon" status="UNANN" ID="6542008">
+                <layer rank="1" name="PENN">
+                    <label end="8" start="0" name="VVG"/>
+                    <label end="12" start="10" name="PP$"/>
+                    <label end="20" start="14" name="nn"/>
+                    <label end="22" start="22" name=","/>
+                    <label end="29" start="24" name="NP"/>
+                    <label end="40" start="31" name="VVD"/>
+                    <label end="44" start="42" name="dt"/>
+                    <label end="52" start="46" name="nn"/>
+                    <label end="55" start="54" name="in"/>
+                    <label end="57" start="57" name="dt"/>
+                    <label end="64" start="59" name="jj"/>
+                    <label end="75" start="66" name="nn"/>
+                    <label end="84" start="77" name="nn"/>
+                    <label end="86" start="86" name="("/>
+                    <label end="88" start="88" name="dt"/>
+                    <label end="93" start="90" name="nn"/>
+                    <label end="96" start="95" name="in"/>
+                    <label end="101" start="98" name="NP"/>
+                    <label end="104" start="103" name="in"/>
+                    <label end="108" start="106" name="dt"/>
+                    <label end="116" start="110" name="jj"/>
+                    <label end="122" start="118" name="nn"/>
+                    <label end="124" start="124" name=")"/>
+                    <label end="126" start="126" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="29" start="24" name="GPE"/>
+                    <label end="101" start="98" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="12" start="10" name="NT"/>
+                    <label end="22" start="22" name="NT"/>
+                    <label end="29" start="24" name="NT"/>
+                    <label end="44" start="42" name="NT"/>
+                    <label end="55" start="54" name="NT"/>
+                    <label end="57" start="57" name="NT"/>
+                    <label end="86" start="86" name="NT"/>
+                    <label end="88" start="88" name="NT"/>
+                    <label end="96" start="95" name="NT"/>
+                    <label end="101" start="98" name="NT"/>
+                    <label end="104" start="103" name="NT"/>
+                    <label end="108" start="106" name="NT"/>
+                    <label end="124" start="124" name="NT"/>
+                    <label end="126" start="126" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/15/2007 03:05:03 PDT Thu" status="MANUAL" ID="6542530">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="75" start="66" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="9089" itype="INI" name="Asset"/>
+                    <label cBy="KmG" feID="9088" itype="INI" name="Danger"/>
+                    <label cBy="KmG" feID="9084" itype="INI" name="Protection"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23621" sentNo="6" paragNo="7" aPos="0" ID="4099757">
+            <text>In animal efficacy studies , Anthim demonstrated complete protection against an anthrax spore challenge with a single prophylactic dose and has shown significant protection when administered up to two days after a lethal challenge. ( Pharmabiz.com , 26Jun06 ) ( Link )</text>
+            <annotationSet cDate="07/18/2006 02:44:51 PDT Tue" status="UNANN" ID="6536843">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="8" start="3" name="jj"/>
+                    <label end="17" start="10" name="nn"/>
+                    <label end="25" start="19" name="nns"/>
+                    <label end="27" start="27" name=","/>
+                    <label end="34" start="29" name="nns"/>
+                    <label end="47" start="36" name="VVD"/>
+                    <label end="56" start="49" name="jj"/>
+                    <label end="67" start="58" name="nn"/>
+                    <label end="75" start="69" name="in"/>
+                    <label end="78" start="77" name="dt"/>
+                    <label end="86" start="80" name="nn"/>
+                    <label end="92" start="88" name="nn"/>
+                    <label end="102" start="94" name="nn"/>
+                    <label end="107" start="104" name="in"/>
+                    <label end="109" start="109" name="dt"/>
+                    <label end="116" start="111" name="jj"/>
+                    <label end="129" start="118" name="jj"/>
+                    <label end="134" start="131" name="nn"/>
+                    <label end="138" start="136" name="cc"/>
+                    <label end="142" start="140" name="VHZ"/>
+                    <label end="148" start="144" name="VVN"/>
+                    <label end="160" start="150" name="jj"/>
+                    <label end="171" start="162" name="nn"/>
+                    <label end="176" start="173" name="wrb"/>
+                    <label end="189" start="178" name="VVN"/>
+                    <label end="192" start="191" name="rp"/>
+                    <label end="195" start="194" name="to"/>
+                    <label end="199" start="197" name="cd"/>
+                    <label end="204" start="201" name="nns"/>
+                    <label end="210" start="206" name="in"/>
+                    <label end="212" start="212" name="dt"/>
+                    <label end="219" start="214" name="jj"/>
+                    <label end="230" start="221" name="nn"/>
+                    <label end="232" start="232" name="("/>
+                    <label end="246" start="234" name="NP"/>
+                    <label end="248" start="248" name=","/>
+                    <label end="256" start="250" name="NP"/>
+                    <label end="258" start="258" name=")"/>
+                    <label end="260" start="260" name="("/>
+                    <label end="265" start="262" name="VVP"/>
+                    <label end="267" start="267" name=")"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="246" start="234" name="organization"/>
+                    <label end="265" start="262" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="27" start="27" name="NT"/>
+                    <label end="75" start="69" name="NT"/>
+                    <label end="78" start="77" name="NT"/>
+                    <label end="107" start="104" name="NT"/>
+                    <label end="109" start="109" name="NT"/>
+                    <label end="138" start="136" name="NT"/>
+                    <label end="142" start="140" name="NT"/>
+                    <label end="192" start="191" name="NT"/>
+                    <label end="195" start="194" name="NT"/>
+                    <label end="212" start="212" name="NT"/>
+                    <label end="232" start="232" name="NT"/>
+                    <label end="246" start="234" name="NT"/>
+                    <label end="248" start="248" name="NT"/>
+                    <label end="256" start="250" name="NT"/>
+                    <label end="258" start="258" name="NT"/>
+                    <label end="260" start="260" name="NT"/>
+                    <label end="267" start="267" name="NT"/>
+                    <label end="8" start="3" name="Nonrelational"/>
+                    <label end="34" start="29" name="Nonrelational"/>
+                    <label end="86" start="80" name="Nonrelational"/>
+                    <label end="92" start="88" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/16/2007 12:30:54 PDT Tue" status="MANUAL" ID="6548321">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="67" start="58" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="9088" end="102" start="69" name="Danger"/>
+                    <label cBy="KmG" feID="9091" end="134" start="104" name="Means"/>
+                    <label cBy="KmG" feID="9084" end="34" start="29" name="Protection"/>
+                    <label cBy="KmG" feID="11994" end="56" start="49" name="Degree"/>
+                    <label cBy="KmG" feID="9089" itype="INI" name="Asset"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="102" start="69" name="Dep"/>
+                    <label end="134" start="104" name="Dep"/>
+                    <label end="34" start="29" name="Ext"/>
+                    <label end="56" start="49" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="102" start="69" name="PP"/>
+                    <label end="134" start="104" name="PP"/>
+                    <label end="34" start="29" name="NP"/>
+                    <label end="56" start="49" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="47" start="36" name="Ctrlr"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/16/2007 12:37:49 PDT Tue" status="MANUAL" ID="6548328">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="171" start="162" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="11994" end="160" start="150" name="Degree"/>
+                    <label cBy="KmG" feID="9084" end="34" start="29" name="Protection"/>
+                    <label cBy="KmG" feID="9088" itype="DNI" name="Danger"/>
+                    <label cBy="KmG" feID="9089" itype="INI" name="Asset"/>
+                    <label cBy="KmG" feID="9087" end="230" start="173" name="Time"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="160" start="150" name="Dep"/>
+                    <label end="34" start="29" name="Ext"/>
+                    <label end="230" start="173" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="160" start="150" name="AJP"/>
+                    <label end="34" start="29" name="NP"/>
+                    <label end="230" start="173" name="Sub"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="148" start="144" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="MLC" cDate="06/13/2011 12:11:40 PDT Mon" name="Manner" ID="2563" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;A &lt;fen&gt;Manner&lt;/fen&gt; describes general or specific characteristics of an event in one of three ways:  First, it can refer to how a &lt;fen&gt;Comparison_event&lt;/fen&gt; transpires, absent the influence of an entity (e.g. "the way you talk"). Second, it can refer to how a &lt;fen&gt;Salient_entity&lt;/fen&gt; conducts, performs, or otherwise participates in a &lt;fen&gt;Comparison_activity&lt;/fen&gt; (e.g. "her manner of speaking"). Thirdly, the &lt;fen&gt;Manner&lt;/fen&gt; can describe a &lt;fen&gt;Foreground_event&lt;/fen&gt; by relating the &lt;fen&gt;Foreground_event&lt;/fen&gt; to a &lt;fen&gt;Manner_descriptor&lt;/fen&gt; (e.g. "written (in) a silly way", "written the way I do"). 
+&lt;ex&gt;&lt;/ex&gt;
+&lt;ex&gt;&lt;fex name="Foreground_event"&gt;He completed the task&lt;/fex&gt; &lt;m&gt;in&lt;/m&gt; a &lt;fex name="Manner_descriptor"&gt;fervent&lt;/fex&gt; &lt;fex name="Manner"&gt;&lt;t&gt;manner&lt;/t&gt;&lt;/fex&gt;. &lt;/ex&gt;
+&lt;ex&gt;I love the &lt;fex name="Manner_descriptor"&gt;smooth&lt;/fex&gt; &lt;fex name="Manner"&gt;&lt;t&gt;way&lt;/t&gt;&lt;/fex&gt; &lt;fex name="Comparison_event"&gt;that you talk&lt;/fex&gt;.&lt;/ex&gt;
+&lt;ex&gt;&lt;fex name="Foreground_event"&gt;Paul played soccer&lt;/fex&gt; &lt;m&gt;in&lt;/m&gt; a &lt;fex name="Manner"&gt;&lt;t&gt;way&lt;/t&gt;&lt;/fex&gt; &lt;fex name="Manner_descriptor"&gt;that reminded me of my brother's playing&lt;/fex&gt;.&lt;/ex&gt;
+&lt;ex&gt;Much about a person can be determined from the &lt;fex name="Manner"&gt;&lt;t&gt;manner&lt;/t&gt;&lt;/fex&gt; &lt;fex name="Comparison_event"&gt;one eats their meals&lt;/fex&gt;.&lt;/ex&gt;
+&lt;ex&gt; &lt;fex name="Salient_entity"&gt;His&lt;/fex&gt; &lt;fex name="Manner"&gt;&lt;t&gt;way&lt;/t&gt;&lt;/fex&gt; &lt;fex name="Comparison_activity"&gt;of addressing people&lt;/fex&gt; &lt;m&gt;is&lt;/m&gt;&lt;fex name="Manner_descriptor"&gt; quite rude&lt;/fex&gt;.&lt;/ex&gt;
+
+This frame is unusual in requiring a modifying relative clause for the FE &lt;fen&gt;Comparison_event&lt;/fen&gt;, and also allowing a relative clause to serve as a &lt;fen&gt;Manner_descriptor&lt;/fen&gt;.  The LU way.n, when definite, may be modified by a relative clause meaning "in the same manner that..."; the relative clause in such cases is annotated as &lt;fen&gt;Comparison_event&lt;/fen&gt;:
+
+&lt;ex&gt;&lt;fex name="Foreground_event"&gt;I did it&lt;/fex&gt; the &lt;t&gt;way&lt;/t&gt; &lt;fex name="Comparison_event"&gt;she did&lt;/fex&gt;.&lt;/ex&gt;
+
+
+&lt;/def-root&gt;</definition>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Core" cBy="MLC" cDate="06/13/2011 02:30:21 PDT Mon" abbrev="" name="Comparison_event" ID="14457">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Comparison_event&lt;/fen&gt; is the principal event being characteriszed by the &lt;fen&gt;Manner&lt;/fen&gt;. The &lt;fen&gt;Manner&lt;/fen&gt; of this &lt;fen&gt;Comparison_event&lt;/fen&gt; is often used in comparison with the &lt;fen&gt;Foreground_event&lt;/fen&gt;. &lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="MLC" cDate="06/13/2011 02:31:51 PDT Mon" abbrev="" name="Salient_entity" ID="14458">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Salient_entity&lt;/fen&gt; that is associated with or directly responsible for the &lt;fen&gt;Comparison_activity&lt;/fen&gt;. &lt;/def-root&gt;</definition>
+        <requiresFE name="Comparison_activity" ID="14467"/>
+    </FE>
+    <FE bgColor="800080" fgColor="FFFFFF" coreType="Core" cBy="MLC" cDate="06/13/2011 02:47:53 PDT Mon" abbrev="" name="Manner" ID="14459">
+        <definition>&lt;def-root&gt;The description of the &lt;fen&gt;Comparison_event&lt;/fen&gt; or &lt;fen&gt;Comparison_activity&lt;/fen&gt;. &lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Core" cBy="MLC" cDate="06/13/2011 02:49:17 PDT Mon" abbrev="" name="Manner_descriptor" ID="14460">
+        <definition>&lt;def-root&gt;A description of the &lt;fen&gt;Manner&lt;/fen&gt;. &lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FFFF00" fgColor="000000" coreType="Extra-Thematic" cBy="MLC" cDate="06/15/2011 04:56:34 PDT Wed" abbrev="" name="Foreground_event" ID="14466">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Manner&lt;/fen&gt; of &lt;fen&gt;Foreground_event&lt;/fen&gt; is compared with the &lt;fen&gt;Manner&lt;/fen&gt; of the &lt;fen&gt;Comparison_event&lt;/fen&gt; (i.e. the principal event of the clause). &lt;/def-root&gt;</definition>
+        <excludesFE name="Comparison_activity" ID="14467"/>
+    </FE>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Core" cBy="MLC" cDate="06/15/2011 05:20:16 PDT Wed" abbrev="" name="Comparison_activity" ID="14467">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Salient_entity&lt;/fen&gt; conducts or engages in the &lt;fen&gt;Comparison_activity&lt;/fen&gt; that is being described. &lt;/def-root&gt;</definition>
+        <requiresFE name="Salient_entity" ID="14458"/>
+    </FE>
+    <frameRelation type="Inherits from"/>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses">
+        <relatedFrame ID="187">Event</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="Created" POS="N" name="manner.n" ID="16360" lemmaID="50191" cBy="MLC" cDate="06/13/2011 03:00:25 PDT Mon">
+        <definition>FN: the way in which an action is conducted by an agent. </definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="N" name="manner"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="way.n" ID="16361" lemmaID="51321" cBy="MLC" cDate="06/13/2011 03:01:04 PDT Mon">
+        <definition>FN: an abstract word that describes how something gets done. </definition>
+        <sentenceCount annotated="39" total="39"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="N" name="way"/>
+    </lexUnit>
+</frame>

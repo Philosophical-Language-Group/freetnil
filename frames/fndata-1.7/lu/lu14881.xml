@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="sixteenth.a" ID="14881" frame="Ordinal_numbers" frameID="1147" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="bas" name="Basis_of_order"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="com" name="Comparison_set"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="ite" name="Item"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="sta" name="Starting_point"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="typ" name="Type"/>
+        </frame>
+    </header>
+    <definition>FN: number 16 in a set</definition>
+    <lexeme POS="A" name="sixteenth"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Item"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="2nd" FE="Item"/>
+                <annoSet ID="6561686"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Type"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Type"/>
+                <annoSet ID="6561686"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Item"/>
+            <FE name="Type"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="2nd" FE="Item"/>
+                <valenceUnit GF="Head" PT="N" FE="Type"/>
+                <annoSet ID="6561686"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23771" sentNo="1" paragNo="89" aPos="0" ID="4106094">
+            <text>Macau , the final bastion of Portugal 's great 16th - century empire , is much more than just a quirk of history .</text>
+            <annotationSet cDate="07/25/2008 01:19:42 PDT Fri" status="UNANN" ID="6555184">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="NP"/>
+                    <label end="6" start="6" name=","/>
+                    <label end="10" start="8" name="dt"/>
+                    <label end="16" start="12" name="jj"/>
+                    <label end="24" start="18" name="nn"/>
+                    <label end="27" start="26" name="in"/>
+                    <label end="36" start="29" name="NP"/>
+                    <label end="39" start="38" name="POS"/>
+                    <label end="45" start="41" name="jj"/>
+                    <label end="50" start="47" name="jj"/>
+                    <label end="52" start="52" name=":"/>
+                    <label end="60" start="54" name="nn"/>
+                    <label end="67" start="62" name="nn"/>
+                    <label end="69" start="69" name=","/>
+                    <label end="72" start="71" name="VBZ"/>
+                    <label end="77" start="74" name="rb"/>
+                    <label end="82" start="79" name="jjr"/>
+                    <label end="87" start="84" name="in"/>
+                    <label end="92" start="89" name="rb"/>
+                    <label end="94" start="94" name="dt"/>
+                    <label end="100" start="96" name="nn"/>
+                    <label end="103" start="102" name="in"/>
+                    <label end="111" start="105" name="nn"/>
+                    <label end="113" start="113" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="4" start="0" name="location"/>
+                    <label end="36" start="29" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="4" start="0" name="NT"/>
+                    <label end="6" start="6" name="NT"/>
+                    <label end="10" start="8" name="NT"/>
+                    <label end="27" start="26" name="NT"/>
+                    <label end="36" start="29" name="NT"/>
+                    <label end="39" start="38" name="NT"/>
+                    <label end="52" start="52" name="NT"/>
+                    <label end="69" start="69" name="NT"/>
+                    <label end="72" start="71" name="NT"/>
+                    <label end="77" start="74" name="NT"/>
+                    <label end="87" start="84" name="NT"/>
+                    <label end="92" start="89" name="NT"/>
+                    <label end="94" start="94" name="NT"/>
+                    <label end="103" start="102" name="NT"/>
+                    <label end="113" start="113" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/28/2011 02:59:19 PST Fri" status="MANUAL" ID="6561686">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="50" start="47" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="6630" end="60" start="54" name="Type"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="60" start="54" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="60" start="54" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+                <layer rank="2" name="FE">
+                    <label cBy="AlK" feID="6633" end="60" start="47" name="Item"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

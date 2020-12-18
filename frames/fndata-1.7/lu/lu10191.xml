@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="PREP" name="out of.prep" ID="10191" frame="Partitive" frameID="1010" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Bell Ringing" name="BellRinging" ID="23009"/>
+            <document description="Ticket Splitting" name="TicketSplitting" ID="23012"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Slate magazine article: Entrepreneur as Madonna" name="EntrepreneurAsMadonna" ID="23646"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Ent2" name="Group"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Sub" name="Subset"/>
+        </frame>
+    </header>
+    <definition>FN: expressing the relationship between some members and a group</definition>
+    <lexeme order="1" headword="false" breakBefore="false" POS="ADV" name="out"/>
+    <lexeme order="2" headword="true" breakBefore="false" POS="PREP" name="of"/>
+    <valences>
+        <FERealization total="3">
+            <FE name="Group"/>
+            <pattern total="3">
+                <valenceUnit GF="Obj" PT="NP" FE="Group"/>
+                <annoSet ID="4528931"/>
+                <annoSet ID="4529555"/>
+                <annoSet ID="6538924"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Subset"/>
+            <pattern total="3">
+                <valenceUnit GF="Ext" PT="NP" FE="Subset"/>
+                <annoSet ID="4528931"/>
+                <annoSet ID="4529555"/>
+                <annoSet ID="6538924"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="3">
+            <FE name="Group"/>
+            <FE name="Subset"/>
+            <pattern total="3">
+                <valenceUnit GF="Obj" PT="NP" FE="Group"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Subset"/>
+                <annoSet ID="4528931"/>
+                <annoSet ID="4529555"/>
+                <annoSet ID="6538924"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23009" sentNo="2" paragNo="23" aPos="0" ID="2824256">
+            <text>`` Right now , we 're lucky if after five years we keep one new ringer out of 10 , '' he adds .</text>
+            <annotationSet cDate="02/05/2004 08:29:37 PST Thu" status="UNANN" ID="4528251">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="``"/>
+                    <label end="7" start="3" name="rb"/>
+                    <label end="11" start="9" name="rb"/>
+                    <label end="13" start="13" name=","/>
+                    <label end="16" start="15" name="PP"/>
+                    <label end="20" start="18" name="vbp"/>
+                    <label end="26" start="22" name="jj"/>
+                    <label end="29" start="28" name="in"/>
+                    <label end="35" start="31" name="in"/>
+                    <label end="40" start="37" name="cd"/>
+                    <label end="46" start="42" name="nns"/>
+                    <label end="49" start="48" name="PP"/>
+                    <label end="54" start="51" name="VVP"/>
+                    <label end="58" start="56" name="cd"/>
+                    <label end="62" start="60" name="jj"/>
+                    <label end="69" start="64" name="nn"/>
+                    <label end="73" start="71" name="in"/>
+                    <label end="76" start="75" name="in"/>
+                    <label end="79" start="78" name="cd"/>
+                    <label end="81" start="81" name=","/>
+                    <label end="84" start="83" name="''"/>
+                    <label end="87" start="86" name="PP"/>
+                    <label end="92" start="89" name="VVZ"/>
+                    <label end="94" start="94" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="7" start="3" name="NT"/>
+                    <label end="11" start="9" name="NT"/>
+                    <label end="13" start="13" name="NT"/>
+                    <label end="20" start="18" name="NT"/>
+                    <label end="81" start="81" name="NT"/>
+                    <label end="84" start="83" name="NT"/>
+                    <label end="94" start="94" name="NT"/>
+                    <label end="16" start="15" name="NT"/>
+                    <label end="29" start="28" name="NT"/>
+                    <label end="49" start="48" name="NT"/>
+                    <label end="87" start="86" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/06/2004 07:31:22 PDT Tue" status="MANUAL" ID="4528931">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="73" start="71" name="Target"/>
+                    <label cBy="EGp" end="76" start="75" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MiL" feID="6000" end="69" start="56" name="Subset"/>
+                    <label cBy="MiL" feID="6001" end="79" start="78" name="Group"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="69" start="56" name="Ext"/>
+                    <label end="79" start="78" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="69" start="56" name="NP"/>
+                    <label end="79" start="78" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Prep"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="115" docID="23012" sentNo="3" paragNo="7" aPos="0" ID="2824389">
+            <text>Each legislator , after all , is only one out of 535 when it comes to national policy making .</text>
+            <annotationSet cDate="02/05/2004 08:30:22 PST Thu" status="UNANN" ID="4528384">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="14" start="5" name="nn"/>
+                    <label end="16" start="16" name=","/>
+                    <label end="22" start="18" name="in"/>
+                    <label end="26" start="24" name="dt"/>
+                    <label end="28" start="28" name=","/>
+                    <label end="31" start="30" name="VBZ"/>
+                    <label end="36" start="33" name="rb"/>
+                    <label end="40" start="38" name="cd"/>
+                    <label end="44" start="42" name="in"/>
+                    <label end="47" start="46" name="in"/>
+                    <label end="51" start="49" name="cd"/>
+                    <label end="56" start="53" name="wrb"/>
+                    <label end="59" start="58" name="PP"/>
+                    <label end="65" start="61" name="VVZ"/>
+                    <label end="68" start="67" name="to"/>
+                    <label end="77" start="70" name="jj"/>
+                    <label end="84" start="79" name="nn"/>
+                    <label end="91" start="86" name="nn"/>
+                    <label end="93" start="93" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="16" start="16" name="NT"/>
+                    <label end="28" start="28" name="NT"/>
+                    <label end="31" start="30" name="NT"/>
+                    <label end="36" start="33" name="NT"/>
+                    <label end="68" start="67" name="NT"/>
+                    <label end="93" start="93" name="NT"/>
+                    <label end="3" start="0" name="NT"/>
+                    <label end="22" start="18" name="NT"/>
+                    <label end="26" start="24" name="NT"/>
+                    <label end="51" start="49" name="NT"/>
+                    <label end="56" start="53" name="NT"/>
+                    <label end="59" start="58" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/28/2004 11:00:12 PDT Wed" status="MANUAL" ID="4529555">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="44" start="42" name="Target"/>
+                    <label cBy="EGp" end="47" start="46" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CHg" feID="6000" end="40" start="38" name="Subset"/>
+                    <label cBy="CHg" feID="6001" end="51" start="49" name="Group"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="51" start="49" name="Obj"/>
+                    <label end="40" start="38" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="51" start="49" name="NP"/>
+                    <label end="40" start="38" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Prep"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23646" sentNo="3" paragNo="7" aPos="0" ID="4100305">
+            <text>Will the strongman of the era be AOL , AT and T , Microsoft , or one of the big media companies ?</text>
+            <annotationSet cDate="09/28/2006 01:56:44 PDT Thu" status="UNANN" ID="6538385">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="md"/>
+                    <label end="7" start="5" name="dt"/>
+                    <label end="17" start="9" name="nn"/>
+                    <label end="20" start="19" name="in"/>
+                    <label end="24" start="22" name="dt"/>
+                    <label end="28" start="26" name="nn"/>
+                    <label end="31" start="30" name="vb"/>
+                    <label end="35" start="33" name="jj"/>
+                    <label end="37" start="37" name=","/>
+                    <label end="40" start="39" name="in"/>
+                    <label end="44" start="42" name="cc"/>
+                    <label end="46" start="46" name="nn"/>
+                    <label end="48" start="48" name=","/>
+                    <label end="58" start="50" name="NP"/>
+                    <label end="60" start="60" name=","/>
+                    <label end="63" start="62" name="cc"/>
+                    <label end="67" start="65" name="cd"/>
+                    <label end="70" start="69" name="in"/>
+                    <label end="74" start="72" name="dt"/>
+                    <label end="78" start="76" name="jj"/>
+                    <label end="84" start="80" name="nn"/>
+                    <label end="94" start="86" name="nns"/>
+                    <label end="96" start="96" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="35" start="33" name="organization"/>
+                    <label end="46" start="39" name="organization"/>
+                    <label end="58" start="50" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="7" start="5" name="NT"/>
+                    <label end="24" start="22" name="NT"/>
+                    <label end="31" start="30" name="NT"/>
+                    <label end="37" start="37" name="NT"/>
+                    <label end="40" start="39" name="NT"/>
+                    <label end="44" start="42" name="NT"/>
+                    <label end="48" start="48" name="NT"/>
+                    <label end="58" start="50" name="NT"/>
+                    <label end="60" start="60" name="NT"/>
+                    <label end="63" start="62" name="NT"/>
+                    <label end="74" start="72" name="NT"/>
+                    <label end="96" start="96" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/18/2006 03:42:06 PDT Wed" status="MANUAL" ID="6538924">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="70" start="69" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="6000" end="67" start="65" name="Subset"/>
+                    <label cBy="KmG" feID="6001" end="94" start="72" name="Group"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="67" start="65" name="Ext"/>
+                    <label end="94" start="72" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="67" start="65" name="NP"/>
+                    <label end="94" start="72" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Prep"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

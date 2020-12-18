@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="tie.v" ID="4516" frame="Make_cognitive_connection" frameID="252" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Nuclear" name="Iran_Nuclear" ID="23511"/>
+        </corpus>
+        <frame>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="Concepts" name="Concepts"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Core" abbrev="Concept1" name="Concept_1"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="Concept2" name="Concept_2"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Evid" name="Evidence"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Extra-Thematic" abbrev="Fre" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Pla" name="Place"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Peripheral" abbrev="Tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: connect; link. </definition>
+    <lexeme POS="V" name="tie"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Cognizer"/>
+                <annoSet ID="6522363"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Concept_1"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Concept_1"/>
+                <annoSet ID="6522363"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Concept_2"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Concept_2"/>
+                <annoSet ID="6522363"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="Concept_1"/>
+            <FE name="Concept_2"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Cognizer"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Concept_1"/>
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Concept_2"/>
+                <annoSet ID="6522363"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23511" sentNo="1" paragNo="31" aPos="0" ID="4096694">
+            <text>AEOI 's activities and facilities have been tied to several universities .</text>
+            <annotationSet cDate="02/23/2005 06:31:07 PST Wed" status="UNANN" ID="6522228">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="NP"/>
+                    <label end="6" start="5" name="POS"/>
+                    <label end="17" start="8" name="nns"/>
+                    <label end="21" start="19" name="cc"/>
+                    <label end="32" start="23" name="nns"/>
+                    <label end="37" start="34" name="VHP"/>
+                    <label end="42" start="39" name="VBN"/>
+                    <label end="47" start="44" name="VVN"/>
+                    <label end="50" start="49" name="to"/>
+                    <label end="58" start="52" name="jj"/>
+                    <label end="71" start="60" name="nns"/>
+                    <label end="73" start="73" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="3" start="0" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="6" start="5" name="NT"/>
+                    <label end="21" start="19" name="NT"/>
+                    <label end="50" start="49" name="NT"/>
+                    <label end="73" start="73" name="NT"/>
+                    <label end="37" start="34" name="NT"/>
+                    <label end="42" start="39" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/25/2005 12:07:12 PST Fri" status="MANUAL" ID="6522363">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="47" start="44" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="2190" end="32" start="0" name="Concept_1"/>
+                    <label cBy="RLG" feID="2191" end="71" start="49" name="Concept_2"/>
+                    <label cBy="RLG" feID="2193" itype="CNI" name="Cognizer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="32" start="0" name="Ext"/>
+                    <label end="71" start="49" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="32" start="0" name="NP"/>
+                    <label end="71" start="49" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

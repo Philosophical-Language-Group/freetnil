@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="shipment.n" ID="12636" frame="Sent_items" frameID="1609" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="North Korea Chemical Overview" name="NorthKorea_ChemicalOverview" ID="23611"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="Goal" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Rec" name="Recipient"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="snd" name="Sender"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="sen" name="Sent_item"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Source" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="tra" name="Transport_means"/>
+        </frame>
+    </header>
+    <definition>COD: a consignment of goods shipped.</definition>
+    <lexeme POS="N" name="shipment"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Sent_item"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Sent_item"/>
+                <annoSet ID="6536438"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Sent_item"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Sent_item"/>
+                <annoSet ID="6536438"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23611" sentNo="5" paragNo="7" aPos="0" ID="4099687">
+            <text>It is also reported that shipments of CW agents are conducted in such a way so as not to attract undue attention , and are camouflaged as ordinary military cargo .</text>
+            <annotationSet cDate="06/27/2006 04:45:07 PDT Tue" status="UNANN" ID="6535895">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="4" start="3" name="VBZ"/>
+                    <label end="9" start="6" name="rb"/>
+                    <label end="18" start="11" name="VVN"/>
+                    <label end="23" start="20" name="in"/>
+                    <label end="33" start="25" name="nns"/>
+                    <label end="36" start="35" name="in"/>
+                    <label end="39" start="38" name="jj"/>
+                    <label end="46" start="41" name="nns"/>
+                    <label end="50" start="48" name="vbp"/>
+                    <label end="60" start="52" name="VVN"/>
+                    <label end="63" start="62" name="in"/>
+                    <label end="68" start="65" name="pdt"/>
+                    <label end="70" start="70" name="dt"/>
+                    <label end="74" start="72" name="nn"/>
+                    <label end="77" start="76" name="rb"/>
+                    <label end="80" start="79" name="rb"/>
+                    <label end="84" start="82" name="rb"/>
+                    <label end="87" start="86" name="to"/>
+                    <label end="95" start="89" name="VV"/>
+                    <label end="101" start="97" name="jj"/>
+                    <label end="111" start="103" name="nn"/>
+                    <label end="113" start="113" name=","/>
+                    <label end="117" start="115" name="cc"/>
+                    <label end="121" start="119" name="vbp"/>
+                    <label end="133" start="123" name="VVN"/>
+                    <label end="136" start="135" name="in"/>
+                    <label end="145" start="138" name="jj"/>
+                    <label end="154" start="147" name="jj"/>
+                    <label end="160" start="156" name="nn"/>
+                    <label end="162" start="162" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="39" start="38" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="4" start="3" name="NT"/>
+                    <label end="9" start="6" name="NT"/>
+                    <label end="23" start="20" name="NT"/>
+                    <label end="36" start="35" name="NT"/>
+                    <label end="50" start="48" name="NT"/>
+                    <label end="63" start="62" name="NT"/>
+                    <label end="68" start="65" name="NT"/>
+                    <label end="70" start="70" name="NT"/>
+                    <label end="77" start="76" name="NT"/>
+                    <label end="80" start="79" name="NT"/>
+                    <label end="84" start="82" name="NT"/>
+                    <label end="87" start="86" name="NT"/>
+                    <label end="113" start="113" name="NT"/>
+                    <label end="117" start="115" name="NT"/>
+                    <label end="121" start="119" name="NT"/>
+                    <label end="136" start="135" name="NT"/>
+                    <label end="162" start="162" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/05/2006 03:45:11 PDT Wed" status="MANUAL" ID="6536438">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="33" start="25" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="8862" end="46" start="35" name="Sent_item"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="46" start="35" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="46" start="35" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

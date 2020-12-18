@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="downtown.n" ID="14661" frame="Locale_by_use" frameID="196" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Loma Prieta" name="LomaPrieta" ID="23013"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="Cnst" name="Constituent_parts"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Extra-Thematic" abbrev="ContP" name="Container_possessor"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="FormC" name="Formational_cause"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Lcl" name="Locale"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="Name" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="RelLoc" name="Relative_location"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core-Unexpressed" abbrev="use" name="Use"/>
+        </frame>
+    </header>
+    <definition>FN: the economic and commercial center of a city or town. </definition>
+    <lexeme POS="N" name="downtown"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Container_possessor"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Container_possessor"/>
+                <annoSet ID="4531217"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Locale"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Locale"/>
+                <annoSet ID="4531217"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Container_possessor"/>
+            <FE name="Locale"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Container_possessor"/>
+                <valenceUnit GF="" PT="DEN" FE="Locale"/>
+                <annoSet ID="4531217"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23013" sentNo="3" paragNo="9" aPos="0" ID="2824444">
+            <text>Except for the gas tank at Hustead 's Towing Service exploding and burning in downtown Berkeley , things here are quite peaceful .</text>
+            <annotationSet cDate="02/05/2004 08:30:42 PST Thu" status="UNANN" ID="4528439">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="in"/>
+                    <label end="9" start="7" name="in"/>
+                    <label end="13" start="11" name="dt"/>
+                    <label end="17" start="15" name="nn"/>
+                    <label end="22" start="19" name="nn"/>
+                    <label end="25" start="24" name="in"/>
+                    <label end="33" start="27" name="NP"/>
+                    <label end="36" start="35" name="POS"/>
+                    <label end="43" start="38" name="VVG"/>
+                    <label end="51" start="45" name="nn"/>
+                    <label end="61" start="53" name="VVG"/>
+                    <label end="65" start="63" name="cc"/>
+                    <label end="73" start="67" name="VVG"/>
+                    <label end="76" start="75" name="in"/>
+                    <label end="85" start="78" name="jj"/>
+                    <label end="94" start="87" name="NP"/>
+                    <label end="96" start="96" name=","/>
+                    <label end="103" start="98" name="nns"/>
+                    <label end="108" start="105" name="rb"/>
+                    <label end="112" start="110" name="vbp"/>
+                    <label end="118" start="114" name="rb"/>
+                    <label end="127" start="120" name="jj"/>
+                    <label end="129" start="129" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="51" start="27" name="organization"/>
+                    <label end="94" start="78" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="96" start="96" name="NT"/>
+                    <label end="112" start="110" name="NT"/>
+                    <label end="118" start="114" name="NT"/>
+                    <label end="129" start="129" name="NT"/>
+                    <label end="5" start="0" name="NT"/>
+                    <label end="9" start="7" name="NT"/>
+                    <label end="13" start="11" name="NT"/>
+                    <label end="25" start="24" name="NT"/>
+                    <label end="33" start="27" name="NT"/>
+                    <label end="36" start="35" name="NT"/>
+                    <label end="65" start="63" name="NT"/>
+                    <label end="94" start="87" name="NT"/>
+                    <label end="103" start="98" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/08/2010 11:36:29 PDT Thu" status="MANUAL" ID="4531217">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="85" start="78" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="1588" end="85" start="78" name="Locale"/>
+                    <label cBy="AlK" feID="1586" end="94" start="87" name="Container_possessor"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="94" start="87" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="94" start="87" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="New" POS="N" name="board.n" ID="16619" frame="Controller_object" frameID="2654" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp=868" name="bncp=868" ID="20496"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="Artifact" name="Control"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="" name="Controlled_entity"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Extra-Thematic" abbrev="" name="Creator"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Extra-Thematic" abbrev="" name="Material"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="" name="Time_of_creation"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="typ" name="Type"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="Use" name="Use"/>
+        </frame>
+    </header>
+    <definition>FN: A device containing electrical switches and other controls and designed to control lights, sound, telephone connections, etc.</definition>
+    <lexeme POS="N" name="board"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Control"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Control"/>
+                <annoSet ID="6593560"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Type"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Type"/>
+                <annoSet ID="6593560"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Control"/>
+            <FE name="Type"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Control"/>
+                <valenceUnit GF="Dep" PT="N" FE="Type"/>
+                <annoSet ID="6593560"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="05-other-unmatched-(1)">
+        <sentence corpID="111" docID="20496" sentNo="3" paragNo="97" aPos="0" ID="4122038">
+            <text>Sometimes with the test programme the contractor provides a set of diagnostic tables that point to a group of components on the circuit board to be considered suspect for each failed test .</text>
+            <annotationSet cDate="12/06/2011 04:37:37 PST Tue" status="UNANN" ID="6593559">
+                <layer rank="1" name="PENN">
+                    <label end="8" start="0" name="rb"/>
+                    <label end="13" start="10" name="in"/>
+                    <label end="17" start="15" name="dt"/>
+                    <label end="22" start="19" name="nn"/>
+                    <label end="32" start="24" name="nn"/>
+                    <label end="36" start="34" name="dt"/>
+                    <label end="47" start="38" name="nn"/>
+                    <label end="56" start="49" name="VVZ"/>
+                    <label end="58" start="58" name="dt"/>
+                    <label end="62" start="60" name="nn"/>
+                    <label end="65" start="64" name="in"/>
+                    <label end="76" start="67" name="jj"/>
+                    <label end="83" start="78" name="nns"/>
+                    <label end="88" start="85" name="in"/>
+                    <label end="94" start="90" name="nn"/>
+                    <label end="97" start="96" name="to"/>
+                    <label end="99" start="99" name="dt"/>
+                    <label end="105" start="101" name="nn"/>
+                    <label end="108" start="107" name="in"/>
+                    <label end="119" start="110" name="nns"/>
+                    <label end="122" start="121" name="in"/>
+                    <label end="126" start="124" name="dt"/>
+                    <label end="134" start="128" name="nn"/>
+                    <label end="140" start="136" name="nn"/>
+                    <label end="143" start="142" name="to"/>
+                    <label end="146" start="145" name="vb"/>
+                    <label end="157" start="148" name="VVN"/>
+                    <label end="165" start="159" name="jj"/>
+                    <label end="169" start="167" name="in"/>
+                    <label end="174" start="171" name="dt"/>
+                    <label end="181" start="176" name="jj"/>
+                    <label end="186" start="183" name="nn"/>
+                    <label end="188" start="188" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="12/06/2011 04:37:37 PST Tue" status="MANUAL" ID="6593560">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="140" start="136" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="14998" end="140" start="136" name="Control"/>
+                    <label cBy="CVa" feID="15003" end="134" start="128" name="Type"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="134" start="128" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="134" start="128" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

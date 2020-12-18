@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="electric power.n" ID="12356" frame="Electricity" frameID="1535" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="MASC" name="MASC" ID="150">
+            <document description="Examples of the lemma power from the MASC project for FN annotation" name="power" ID="22054"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="ele" name="Electricity"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Extra-Thematic" abbrev="Inh" name="Inherent_purpose"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="sou" name="Source"/>
+        </frame>
+    </header>
+    <definition>FN: electric energy.</definition>
+    <lexeme order="1" headword="false" breakBefore="false" POS="A" name="electric"/>
+    <lexeme order="2" headword="true" breakBefore="false" POS="N" name="power"/>
+    <valences>
+        <FERealization total="3">
+            <FE name="Descriptor"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="AJP" FE="Descriptor"/>
+                <annoSet ID="2615111"/>
+                <annoSet ID="2615112"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Descriptor"/>
+                <annoSet ID="2615118"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Electricity"/>
+            <pattern total="3">
+                <valenceUnit GF="" PT="DEN" FE="Electricity"/>
+                <annoSet ID="2615111"/>
+                <annoSet ID="2615112"/>
+                <annoSet ID="2615118"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="3">
+            <FE name="Descriptor"/>
+            <FE name="Electricity"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="AJP" FE="Descriptor"/>
+                <valenceUnit GF="" PT="DEN" FE="Electricity"/>
+                <annoSet ID="2615111"/>
+                <annoSet ID="2615112"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Descriptor"/>
+                <valenceUnit GF="" PT="DEN" FE="Electricity"/>
+                <annoSet ID="2615118"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="150" docID="22054" sentNo="7" paragNo="8" aPos="0" ID="1569436">
+            <text>Delta power was calculated as the average EEG power in the delta ( 1 - 4 Hz ) frequencies for epochs scored as NREMS .</text>
+            <annotationSet cDate="06/23/2010 03:21:20 PDT Wed" status="UNANN" ID="2575476">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="NP"/>
+                    <label end="10" start="6" name="nn"/>
+                    <label end="14" start="12" name="VBD"/>
+                    <label end="25" start="16" name="VVN"/>
+                    <label end="28" start="27" name="in"/>
+                    <label end="32" start="30" name="dt"/>
+                    <label end="40" start="34" name="jj"/>
+                    <label end="44" start="42" name="NP"/>
+                    <label end="50" start="46" name="nn"/>
+                    <label end="53" start="52" name="in"/>
+                    <label end="57" start="55" name="dt"/>
+                    <label end="63" start="59" name="jj"/>
+                    <label end="65" start="65" name="("/>
+                    <label end="67" start="67" name="ls"/>
+                    <label end="69" start="69" name=":"/>
+                    <label end="71" start="71" name="ls"/>
+                    <label end="74" start="73" name="NP"/>
+                    <label end="76" start="76" name=")"/>
+                    <label end="88" start="78" name="nns"/>
+                    <label end="92" start="90" name="in"/>
+                    <label end="99" start="94" name="nns"/>
+                    <label end="106" start="101" name="VVN"/>
+                    <label end="109" start="108" name="in"/>
+                    <label end="115" start="111" name="NP"/>
+                    <label end="117" start="117" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="4" start="0" name="organization"/>
+                    <label end="99" start="94" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="4" start="0" name="NT"/>
+                    <label end="14" start="12" name="NT"/>
+                    <label end="28" start="27" name="NT"/>
+                    <label end="32" start="30" name="NT"/>
+                    <label end="44" start="42" name="NT"/>
+                    <label end="53" start="52" name="NT"/>
+                    <label end="57" start="55" name="NT"/>
+                    <label end="65" start="65" name="NT"/>
+                    <label end="67" start="67" name="NT"/>
+                    <label end="69" start="69" name="NT"/>
+                    <label end="71" start="71" name="NT"/>
+                    <label end="74" start="73" name="NT"/>
+                    <label end="76" start="76" name="NT"/>
+                    <label end="92" start="90" name="NT"/>
+                    <label end="109" start="108" name="NT"/>
+                    <label end="115" start="111" name="NT"/>
+                    <label end="117" start="117" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/19/2010 04:41:52 PST Fri" status="MANUAL" ID="2615111">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="10" start="6" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="8354" end="10" start="6" name="Electricity"/>
+                    <label cBy="MLC" feID="8356" end="4" start="0" name="Descriptor"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="4" start="0" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="4" start="0" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+            <annotationSet cDate="11/19/2010 04:42:14 PST Fri" status="MANUAL" ID="2615112">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="50" start="46" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="8354" end="50" start="46" name="Electricity"/>
+                    <label cBy="MLC" feID="8356" end="44" start="42" name="Descriptor"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="44" start="42" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="44" start="42" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="150" docID="22054" sentNo="5" paragNo="9" aPos="0" ID="1569444">
+            <text>Post - SD delta power was compared to baseline during the first hour of spontaneous sleep subsequent to SD , while NREMS amount and bout duration ( Table 2 ) were compared over 12 hours ( ZT6-ZT18 ) , in accordance with the distinct dynamics of the compensatory responses of these variables to SD [ 57 ] . NREMS bouts were defined as periods of NREMS initiated by three consecutive 10 - second epochs of NREMS and terminated by three consecutive epochs not classified as NREMS .</text>
+            <annotationSet cDate="06/23/2010 03:21:23 PDT Wed" status="UNANN" ID="2575484">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="nn"/>
+                    <label end="5" start="5" name=":"/>
+                    <label end="8" start="7" name="jj"/>
+                    <label end="14" start="10" name="nn"/>
+                    <label end="20" start="16" name="nn"/>
+                    <label end="24" start="22" name="VBD"/>
+                    <label end="33" start="26" name="VVN"/>
+                    <label end="36" start="35" name="to"/>
+                    <label end="45" start="38" name="nn"/>
+                    <label end="52" start="47" name="in"/>
+                    <label end="56" start="54" name="dt"/>
+                    <label end="62" start="58" name="jj"/>
+                    <label end="67" start="64" name="nn"/>
+                    <label end="70" start="69" name="in"/>
+                    <label end="82" start="72" name="jj"/>
+                    <label end="88" start="84" name="nn"/>
+                    <label end="99" start="90" name="jj"/>
+                    <label end="102" start="101" name="to"/>
+                    <label end="105" start="104" name="nn"/>
+                    <label end="107" start="107" name=","/>
+                    <label end="113" start="109" name="in"/>
+                    <label end="119" start="115" name="NP"/>
+                    <label end="126" start="121" name="nn"/>
+                    <label end="130" start="128" name="cc"/>
+                    <label end="135" start="132" name="nn"/>
+                    <label end="144" start="137" name="nn"/>
+                    <label end="146" start="146" name="("/>
+                    <label end="152" start="148" name="NP"/>
+                    <label end="154" start="154" name="cd"/>
+                    <label end="156" start="156" name=")"/>
+                    <label end="161" start="158" name="VBD"/>
+                    <label end="170" start="163" name="VVN"/>
+                    <label end="175" start="172" name="in"/>
+                    <label end="178" start="177" name="cd"/>
+                    <label end="184" start="180" name="nns"/>
+                    <label end="186" start="186" name="("/>
+                    <label end="195" start="188" name="NP"/>
+                    <label end="197" start="197" name=")"/>
+                    <label end="199" start="199" name=","/>
+                    <label end="202" start="201" name="in"/>
+                    <label end="213" start="204" name="nn"/>
+                    <label end="218" start="215" name="in"/>
+                    <label end="222" start="220" name="dt"/>
+                    <label end="231" start="224" name="jj"/>
+                    <label end="240" start="233" name="nns"/>
+                    <label end="243" start="242" name="in"/>
+                    <label end="247" start="245" name="dt"/>
+                    <label end="260" start="249" name="jj"/>
+                    <label end="270" start="262" name="nns"/>
+                    <label end="273" start="272" name="in"/>
+                    <label end="279" start="275" name="dt"/>
+                    <label end="289" start="281" name="nns"/>
+                    <label end="292" start="291" name="to"/>
+                    <label end="295" start="294" name="nns"/>
+                    <label end="297" start="297" name="sym"/>
+                    <label end="300" start="299" name="cd"/>
+                    <label end="302" start="302" name="sym"/>
+                    <label end="304" start="304" name="sent"/>
+                    <label end="310" start="306" name="NP"/>
+                    <label end="316" start="312" name="nns"/>
+                    <label end="321" start="318" name="VBD"/>
+                    <label end="329" start="323" name="VVN"/>
+                    <label end="332" start="331" name="in"/>
+                    <label end="340" start="334" name="nns"/>
+                    <label end="343" start="342" name="in"/>
+                    <label end="349" start="345" name="NP"/>
+                    <label end="359" start="351" name="VVD"/>
+                    <label end="362" start="361" name="in"/>
+                    <label end="368" start="364" name="cd"/>
+                    <label end="380" start="370" name="jj"/>
+                    <label end="383" start="382" name="cd"/>
+                    <label end="385" start="385" name=":"/>
+                    <label end="392" start="387" name="jj"/>
+                    <label end="399" start="394" name="nns"/>
+                    <label end="402" start="401" name="in"/>
+                    <label end="408" start="404" name="NP"/>
+                    <label end="412" start="410" name="cc"/>
+                    <label end="423" start="414" name="VVN"/>
+                    <label end="426" start="425" name="in"/>
+                    <label end="432" start="428" name="cd"/>
+                    <label end="444" start="434" name="jj"/>
+                    <label end="451" start="446" name="nns"/>
+                    <label end="455" start="453" name="rb"/>
+                    <label end="466" start="457" name="VVN"/>
+                    <label end="469" start="468" name="in"/>
+                    <label end="475" start="471" name="NP"/>
+                    <label end="477" start="477" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="8" start="0" name="organization"/>
+                    <label end="105" start="104" name="organization"/>
+                    <label end="195" start="188" name="time"/>
+                    <label end="300" start="299" name="money"/>
+                    <label end="349" start="345" name="organization"/>
+                    <label end="408" start="404" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="5" name="NT"/>
+                    <label end="24" start="22" name="NT"/>
+                    <label end="36" start="35" name="NT"/>
+                    <label end="52" start="47" name="NT"/>
+                    <label end="56" start="54" name="NT"/>
+                    <label end="70" start="69" name="NT"/>
+                    <label end="102" start="101" name="NT"/>
+                    <label end="107" start="107" name="NT"/>
+                    <label end="113" start="109" name="NT"/>
+                    <label end="119" start="115" name="NT"/>
+                    <label end="130" start="128" name="NT"/>
+                    <label end="146" start="146" name="NT"/>
+                    <label end="152" start="148" name="NT"/>
+                    <label end="154" start="154" name="NT"/>
+                    <label end="156" start="156" name="NT"/>
+                    <label end="161" start="158" name="NT"/>
+                    <label end="175" start="172" name="NT"/>
+                    <label end="178" start="177" name="NT"/>
+                    <label end="186" start="186" name="NT"/>
+                    <label end="195" start="188" name="NT"/>
+                    <label end="197" start="197" name="NT"/>
+                    <label end="199" start="199" name="NT"/>
+                    <label end="202" start="201" name="NT"/>
+                    <label end="218" start="215" name="NT"/>
+                    <label end="222" start="220" name="NT"/>
+                    <label end="243" start="242" name="NT"/>
+                    <label end="247" start="245" name="NT"/>
+                    <label end="273" start="272" name="NT"/>
+                    <label end="279" start="275" name="NT"/>
+                    <label end="292" start="291" name="NT"/>
+                    <label end="297" start="297" name="NT"/>
+                    <label end="300" start="299" name="NT"/>
+                    <label end="302" start="302" name="NT"/>
+                    <label end="304" start="304" name="NT"/>
+                    <label end="310" start="306" name="NT"/>
+                    <label end="321" start="318" name="NT"/>
+                    <label end="332" start="331" name="NT"/>
+                    <label end="343" start="342" name="NT"/>
+                    <label end="349" start="345" name="NT"/>
+                    <label end="362" start="361" name="NT"/>
+                    <label end="368" start="364" name="NT"/>
+                    <label end="383" start="382" name="NT"/>
+                    <label end="385" start="385" name="NT"/>
+                    <label end="402" start="401" name="NT"/>
+                    <label end="408" start="404" name="NT"/>
+                    <label end="412" start="410" name="NT"/>
+                    <label end="426" start="425" name="NT"/>
+                    <label end="432" start="428" name="NT"/>
+                    <label end="455" start="453" name="NT"/>
+                    <label end="469" start="468" name="NT"/>
+                    <label end="475" start="471" name="NT"/>
+                    <label end="477" start="477" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/19/2010 04:47:58 PST Fri" status="MANUAL" ID="2615118">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="20" start="16" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="8356" end="14" start="10" name="Descriptor"/>
+                    <label cBy="MLC" feID="8354" end="20" start="16" name="Electricity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="14" start="10" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="14" start="10" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

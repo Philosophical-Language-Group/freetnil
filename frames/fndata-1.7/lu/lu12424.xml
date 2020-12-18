@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="collect.v" ID="12424" frame="Gathering_up" frameID="260" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Slate magazine article: Entrepreneur as Madonna" name="EntrepreneurAsMadonna" ID="23646"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agt" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="Agg" name="Aggregate"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="co-p" name="Co-participant"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="" name="Containing_event"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="" name="Frequency"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Peripheral" abbrev="" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Indiv" name="Individuals"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="Ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="" name="Path"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Peripheral" abbrev="" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Peripheral" abbrev="" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: bring or gather together.</definition>
+    <lexeme POS="V" name="collect"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <annoSet ID="6538545"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Aggregate"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Aggregate"/>
+                <annoSet ID="6538545"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Containing_event"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Containing_event"/>
+                <annoSet ID="6538545"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Frequency"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AVP" FE="Frequency"/>
+                <annoSet ID="6538545"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Aggregate"/>
+            <FE name="Containing_event"/>
+            <FE name="Frequency"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Aggregate"/>
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Containing_event"/>
+                <valenceUnit GF="Dep" PT="AVP" FE="Frequency"/>
+                <annoSet ID="6538545"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23646" sentNo="1" paragNo="4" aPos="0" ID="4100287">
+            <text>Think of all the good stuff we all collect daily in our reporting that we never add to stories .</text>
+            <annotationSet cDate="09/28/2006 01:56:35 PDT Thu" status="UNANN" ID="6538367">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="VV"/>
+                    <label end="7" start="6" name="in"/>
+                    <label end="11" start="9" name="pdt"/>
+                    <label end="15" start="13" name="dt"/>
+                    <label end="20" start="17" name="jj"/>
+                    <label end="26" start="22" name="nn"/>
+                    <label end="29" start="28" name="PP"/>
+                    <label end="33" start="31" name="rb"/>
+                    <label end="41" start="35" name="VVP"/>
+                    <label end="47" start="43" name="rb"/>
+                    <label end="50" start="49" name="in"/>
+                    <label end="54" start="52" name="PP$"/>
+                    <label end="64" start="56" name="nn"/>
+                    <label end="69" start="66" name="in"/>
+                    <label end="72" start="71" name="PP"/>
+                    <label end="78" start="74" name="rb"/>
+                    <label end="82" start="80" name="VVP"/>
+                    <label end="85" start="84" name="to"/>
+                    <label end="93" start="87" name="nns"/>
+                    <label end="95" start="95" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="7" start="6" name="NT"/>
+                    <label end="15" start="13" name="NT"/>
+                    <label end="29" start="28" name="NT"/>
+                    <label end="50" start="49" name="NT"/>
+                    <label end="54" start="52" name="NT"/>
+                    <label end="69" start="66" name="NT"/>
+                    <label end="72" start="71" name="NT"/>
+                    <label end="85" start="84" name="NT"/>
+                    <label end="95" start="95" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/02/2006 04:22:18 PDT Mon" status="MANUAL" ID="6538545">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="41" start="35" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="2250" end="33" start="28" name="Agent"/>
+                    <label cBy="KmG" feID="2237" end="26" start="9" name="Aggregate"/>
+                    <label cBy="KmG" feID="11134" end="47" start="43" name="Frequency"/>
+                    <label cBy="KmG" feID="11135" end="64" start="49" name="Containing_event"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="33" start="28" name="Ext"/>
+                    <label end="26" start="9" name="Obj"/>
+                    <label end="47" start="43" name="Dep"/>
+                    <label end="64" start="49" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="33" start="28" name="NP"/>
+                    <label end="26" start="9" name="NP"/>
+                    <label end="47" start="43" name="AVP"/>
+                    <label end="64" start="49" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other">
+                    <label end="26" start="9" name="Ant"/>
+                </layer>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

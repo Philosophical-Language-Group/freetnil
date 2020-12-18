@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="colony.n" ID="13576" frame="Colonization" frameID="1794" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="col" name="Colonists"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="hom" name="Homeland"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="new" name="New_area"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: a country or area under the political control of another country and occupied by settlers from that country.</definition>
+    <lexeme POS="N" name="colony"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Colonists"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Colonists"/>
+                <annoSet ID="6542219"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Homeland"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Homeland"/>
+                <annoSet ID="6542219"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="New_area"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[on]" FE="New_area"/>
+                <annoSet ID="6542219"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="New_area"/>
+                <annoSet ID="6560749"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Colonists"/>
+            <FE name="Homeland"/>
+            <FE name="New_area"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Colonists"/>
+                <valenceUnit GF="" PT="DNI" FE="Homeland"/>
+                <valenceUnit GF="Dep" PT="PP[on]" FE="New_area"/>
+                <annoSet ID="6542219"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="New_area"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="New_area"/>
+                <annoSet ID="6560749"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23692" sentNo="2" paragNo="3" aPos="0" ID="4101172">
+            <text>They eventually reached the islands , and founded colonies on the islands in the northernmost part of the Aegean Sea .</text>
+            <annotationSet cDate="03/12/2007 02:50:51 PDT Mon" status="UNANN" ID="6541965">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="PP"/>
+                    <label end="14" start="5" name="rb"/>
+                    <label end="22" start="16" name="VVD"/>
+                    <label end="26" start="24" name="dt"/>
+                    <label end="34" start="28" name="nns"/>
+                    <label end="36" start="36" name=","/>
+                    <label end="40" start="38" name="cc"/>
+                    <label end="48" start="42" name="VVD"/>
+                    <label end="57" start="50" name="nns"/>
+                    <label end="60" start="59" name="in"/>
+                    <label end="64" start="62" name="dt"/>
+                    <label end="72" start="66" name="nns"/>
+                    <label end="75" start="74" name="in"/>
+                    <label end="79" start="77" name="dt"/>
+                    <label end="92" start="81" name="jj"/>
+                    <label end="97" start="94" name="nn"/>
+                    <label end="100" start="99" name="in"/>
+                    <label end="104" start="102" name="dt"/>
+                    <label end="111" start="106" name="NP"/>
+                    <label end="115" start="113" name="NP"/>
+                    <label end="117" start="117" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="115" start="106" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="26" start="24" name="NT"/>
+                    <label end="36" start="36" name="NT"/>
+                    <label end="40" start="38" name="NT"/>
+                    <label end="64" start="62" name="NT"/>
+                    <label end="79" start="77" name="NT"/>
+                    <label end="100" start="99" name="NT"/>
+                    <label end="104" start="102" name="NT"/>
+                    <label end="111" start="106" name="NT"/>
+                    <label end="117" start="117" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/14/2007 10:43:52 PDT Wed" status="MANUAL" ID="6542219">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="57" start="50" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="10637" itype="DNI" name="Colonists"/>
+                    <label cBy="KmG" feID="10638" itype="DNI" name="Homeland"/>
+                    <label cBy="KmG" feID="10639" end="115" start="59" name="New_area"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="115" start="59" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="115" start="59" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23771" sentNo="1" paragNo="75" aPos="0" ID="4106052">
+            <text>The mountainous island of Lantau is the biggest in the colony , and covers nearly twice the area of Hong Kong Island .</text>
+            <annotationSet cDate="07/25/2008 01:19:21 PDT Fri" status="UNANN" ID="6555142">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="14" start="4" name="jj"/>
+                    <label end="21" start="16" name="nn"/>
+                    <label end="24" start="23" name="in"/>
+                    <label end="31" start="26" name="NP"/>
+                    <label end="34" start="33" name="VBZ"/>
+                    <label end="38" start="36" name="dt"/>
+                    <label end="46" start="40" name="jjs"/>
+                    <label end="49" start="48" name="in"/>
+                    <label end="53" start="51" name="dt"/>
+                    <label end="60" start="55" name="nn"/>
+                    <label end="62" start="62" name=","/>
+                    <label end="66" start="64" name="cc"/>
+                    <label end="73" start="68" name="VVZ"/>
+                    <label end="80" start="75" name="rb"/>
+                    <label end="86" start="82" name="rb"/>
+                    <label end="90" start="88" name="dt"/>
+                    <label end="95" start="92" name="nn"/>
+                    <label end="98" start="97" name="in"/>
+                    <label end="103" start="100" name="NP"/>
+                    <label end="108" start="105" name="NP"/>
+                    <label end="115" start="110" name="NP"/>
+                    <label end="117" start="117" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="31" start="26" name="person"/>
+                    <label end="115" start="100" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="24" start="23" name="NT"/>
+                    <label end="31" start="26" name="NT"/>
+                    <label end="34" start="33" name="NT"/>
+                    <label end="38" start="36" name="NT"/>
+                    <label end="53" start="51" name="NT"/>
+                    <label end="62" start="62" name="NT"/>
+                    <label end="66" start="64" name="NT"/>
+                    <label end="86" start="82" name="NT"/>
+                    <label end="90" start="88" name="NT"/>
+                    <label end="98" start="97" name="NT"/>
+                    <label end="103" start="100" name="NT"/>
+                    <label end="108" start="105" name="NT"/>
+                    <label end="117" start="117" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/24/2011 12:40:19 PST Mon" status="MANUAL" ID="6560749">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="60" start="55" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="10639" end="60" start="55" name="New_area"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

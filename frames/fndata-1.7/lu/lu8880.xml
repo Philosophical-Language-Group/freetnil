@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="ride.v" ID="8880" frame="Operate_vehicle" frameID="65" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Goodwill fund-raising letter" name="110CYL068" ID="23792"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Core" abbrev="Area" name="Area"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="Cond" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="Thm_c" name="Cotheme"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Dist" name="Distance"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Driv" name="Driver"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="Dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="Evnt" name="Event"/>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Goal" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Extra-Thematic" abbrev="" name="Particular_iteration"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="Path" name="Path"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="Result" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Rte" name="Route"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Src" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD73" type="Peripheral" abbrev="Spd" name="Speed"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="Veh" name="Vehicle"/>
+        </frame>
+    </header>
+    <definition>COD: sit on and control the movement of (a horse, bicycle, or motorcycle). </definition>
+    <lexeme POS="V" name="ride"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Circumstances"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Circumstances"/>
+                <annoSet ID="6556974"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Driver"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Driver"/>
+                <annoSet ID="6556974"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Goal"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Goal"/>
+                <annoSet ID="6556974"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Vehicle"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Vehicle"/>
+                <annoSet ID="6556974"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Circumstances"/>
+            <FE name="Driver"/>
+            <FE name="Goal"/>
+            <FE name="Vehicle"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Circumstances"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Driver"/>
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Goal"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Vehicle"/>
+                <annoSet ID="6556974"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23792" sentNo="3" paragNo="8" aPos="0" ID="4106400">
+            <text>`` I rode a bike to Goodwill in the rain and snow .</text>
+            <annotationSet cDate="11/17/2008 03:48:02 PST Mon" status="UNANN" ID="6556453">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="``"/>
+                    <label end="3" start="3" name="PP"/>
+                    <label end="8" start="5" name="VVD"/>
+                    <label end="10" start="10" name="dt"/>
+                    <label end="15" start="12" name="nn"/>
+                    <label end="18" start="17" name="to"/>
+                    <label end="27" start="20" name="NP"/>
+                    <label end="30" start="29" name="in"/>
+                    <label end="34" start="32" name="dt"/>
+                    <label end="39" start="36" name="nn"/>
+                    <label end="43" start="41" name="cc"/>
+                    <label end="48" start="45" name="nn"/>
+                    <label end="50" start="50" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="27" start="20" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="3" start="3" name="NT"/>
+                    <label end="10" start="10" name="NT"/>
+                    <label end="27" start="20" name="NT"/>
+                    <label end="34" start="32" name="NT"/>
+                    <label end="43" start="41" name="NT"/>
+                    <label end="50" start="50" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/25/2008 02:55:49 PST Tue" status="MANUAL" ID="6556974">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="8" start="5" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="292" end="3" start="3" name="Driver"/>
+                    <label cBy="JKs" feID="294" end="15" start="10" name="Vehicle"/>
+                    <label cBy="JKs" feID="297" end="27" start="17" name="Goal"/>
+                    <label cBy="JKs" feID="4891" end="48" start="29" name="Circumstances"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="3" start="3" name="Ext"/>
+                    <label end="15" start="10" name="Obj"/>
+                    <label end="27" start="17" name="Dep"/>
+                    <label end="48" start="29" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="3" start="3" name="NP"/>
+                    <label end="15" start="10" name="NP"/>
+                    <label end="27" start="17" name="PP"/>
+                    <label end="48" start="29" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="MRLP" cDate="01/15/2002 12:37:54 PST Tue" name="Accompaniment" ID="258" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;A &lt;fen&gt;Co_participant&lt;/fen&gt; fills the same role as the &lt;fen&gt;Participant&lt;/fen&gt; in an event or relation.
+&lt;ex&gt;&lt;/ex&gt;
+&lt;ex&gt;&lt;fex name="Partic"&gt;The mayor&lt;/fex&gt; was killed &lt;t&gt;along&lt;/t&gt; &lt;t&gt;with&lt;/t&gt; &lt;fex name="Co-Th"&gt;three bodyguards and his driver&lt;/fex&gt;.&lt;/ex&gt;
+
+&lt;ex&gt;The doctor told me to take &lt;fex name="Partic"&gt;my regular pill&lt;/fex&gt; &lt;t&gt;in&lt;/t&gt; &lt;t&gt;combination&lt;/t&gt; &lt;fex name="Co-Th"&gt;with the new drug&lt;/fex&gt; and I will be cured of my symptoms.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    <FE bgColor="9400D3" fgColor="FFFFFF" coreType="Core" cBy="MRLP" cDate="01/15/2002 02:53:31 PST Tue" abbrev="Partic" name="Participant" ID="2225">
+        <definition>&lt;def-root&gt;In this frame, &lt;fen&gt;Participant&lt;/fen&gt; is the accompanied entity (person or object).&lt;ex&gt;&lt;fex name="Participant"&gt;Charlie&lt;/fex&gt; played the piano &lt;t&gt;with&lt;/t&gt; Lily.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <excludesFE name="Participants" ID="15731"/>
+    </FE>
+    <FE bgColor="FF69B4" fgColor="FFFFFF" coreType="Core" cBy="MRLP" cDate="01/15/2002 03:02:11 PST Tue" abbrev="Co-Th" name="Co-participant" ID="2226">
+        <definition>&lt;def-root&gt;In this frame, &lt;fen&gt;Co-participant&lt;/fen&gt; is the accompanying entity (person or object).&lt;ex&gt;Charlie played the piano &lt;t&gt;with&lt;/t&gt; &lt;fex name="Co-participant"&gt;Lily&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+        <excludesFE name="Participants" ID="15731"/>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Core" cBy="PKe" cDate="06/06/2012 05:32:11 PDT Wed" abbrev="parts" name="Participants" ID="15731">
+        <definition>&lt;def-root&gt;Two or more entities construed as symmetrically and usually equally participating in an event or relation.
+
+&lt;ex&gt;&lt;fex name="Participants"&gt;Lao Tzu and Confucious&lt;/fex&gt; built the house &lt;t&gt;together&lt;/t&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <frameRelation type="Inherits from">
+        <relatedFrame ID="248">Relation</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses"/>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="Needs_SCs" POS="PREP" name="with.prep" ID="4685" lemmaID="44319" cBy="MRLP" cDate="01/15/2002 12:38:27 PST Tue">
+        <definition>FN: in company with</definition>
+        <sentenceCount annotated="10" total="11"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="PREP" name="with"/>
+    </lexUnit>
+    <lexUnit status="Finished_Initial" POS="PREP" name="along with.prep" ID="4704" lemmaID="45402" cBy="MRLP" cDate="01/15/2002 02:44:19 PST Tue">
+        <definition>FN: in company with</definition>
+        <sentenceCount annotated="19" total="96"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="ADV" name="along"/>
+        <lexeme order="2" headword="true" breakBefore="false" POS="PREP" name="with"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="ADV" name="singly.adv" ID="17130" lemmaID="36008" cBy="PKe" cDate="06/06/2012 05:27:04 PDT Wed">
+        <definition>FN: Alone, by itself</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="ADV" name="singly"/>
+        <semType name="Negative" ID="99"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="A" name="alone.a" ID="17131" lemmaID="1103" cBy="PKe" cDate="06/06/2012 05:27:27 PDT Wed">
+        <definition>FN: By itself</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="A" name="alone"/>
+        <semType name="Negative" ID="99"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="PREP" name="in combination.prep" ID="17132" lemmaID="51550" cBy="PKe" cDate="06/06/2012 05:29:51 PDT Wed">
+        <definition>FN: producing a result only together.</definition>
+        <sentenceCount annotated="14" total="14"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="PREP" name="in"/>
+        <lexeme order="2" headword="false" breakBefore="false" POS="N" name="combination"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="ADV" name="together.adv" ID="17133" lemmaID="40610" cBy="PKe" cDate="06/06/2012 06:25:51 PDT Wed">
+        <definition>FN: With both participants</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="ADV" name="together"/>
+    </lexUnit>
+</frame>

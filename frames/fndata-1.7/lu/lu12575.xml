@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Weapon" POS="A" name="nuclear.a" ID="12575" frame="Bearing_arms" frameID="470" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="North Korea Nuclear Overview" name="NorthKorea_NuclearOverview" ID="23562"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="" name="Protagonist"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="" name="Weapon"/>
+        </frame>
+    </header>
+    <definition>FN: possessing nuclear weapons.</definition>
+    <lexeme POS="A" name="nuclear"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Protagonist"/>
+                <annoSet ID="6529417"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Weapon"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Weapon"/>
+                <annoSet ID="6529417"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Protagonist"/>
+            <FE name="Weapon"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Protagonist"/>
+                <valenceUnit GF="" PT="--" FE="Weapon"/>
+                <annoSet ID="6529417"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23562" sentNo="3" paragNo="3" aPos="0" ID="4097646">
+            <text>The six parties have agreed to hold working - level talks , and all sides have stated they have the ultimate goal of a non - nuclear Korean peninsula .</text>
+            <annotationSet cDate="08/01/2005 12:15:25 PDT Mon" status="UNANN" ID="6528620">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="6" start="4" name="cd"/>
+                    <label end="14" start="8" name="nns"/>
+                    <label end="19" start="16" name="VHP"/>
+                    <label end="26" start="21" name="VVN"/>
+                    <label end="29" start="28" name="to"/>
+                    <label end="34" start="31" name="VV"/>
+                    <label end="42" start="36" name="nn"/>
+                    <label end="44" start="44" name=":"/>
+                    <label end="50" start="46" name="nn"/>
+                    <label end="56" start="52" name="nns"/>
+                    <label end="58" start="58" name=","/>
+                    <label end="62" start="60" name="cc"/>
+                    <label end="66" start="64" name="dt"/>
+                    <label end="72" start="68" name="nns"/>
+                    <label end="77" start="74" name="VHP"/>
+                    <label end="84" start="79" name="VVN"/>
+                    <label end="89" start="86" name="PP"/>
+                    <label end="94" start="91" name="VHP"/>
+                    <label end="98" start="96" name="dt"/>
+                    <label end="107" start="100" name="jj"/>
+                    <label end="112" start="109" name="nn"/>
+                    <label end="115" start="114" name="in"/>
+                    <label end="117" start="117" name="dt"/>
+                    <label end="121" start="119" name="jj"/>
+                    <label end="123" start="123" name=":"/>
+                    <label end="131" start="125" name="jj"/>
+                    <label end="138" start="133" name="jj"/>
+                    <label end="148" start="140" name="nn"/>
+                    <label end="150" start="150" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="6" start="4" name="NT"/>
+                    <label end="19" start="16" name="NT"/>
+                    <label end="29" start="28" name="NT"/>
+                    <label end="44" start="44" name="NT"/>
+                    <label end="58" start="58" name="NT"/>
+                    <label end="62" start="60" name="NT"/>
+                    <label end="66" start="64" name="NT"/>
+                    <label end="77" start="74" name="NT"/>
+                    <label end="89" start="86" name="NT"/>
+                    <label end="98" start="96" name="NT"/>
+                    <label end="115" start="114" name="NT"/>
+                    <label end="117" start="117" name="NT"/>
+                    <label end="123" start="123" name="NT"/>
+                    <label end="150" start="150" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/05/2005 01:35:02 PDT Fri" status="MANUAL" ID="6529417">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="131" start="125" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="4001" end="131" start="125" name="Weapon"/>
+                    <label cBy="JKR" feID="4002" end="148" start="133" name="Protagonist"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="148" start="133" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="148" start="133" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

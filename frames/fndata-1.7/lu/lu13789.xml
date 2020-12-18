@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="proverbial.a" ID="13789" frame="Unattributed_information" frameID="1154" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Dublin" name="IntroOfDublin" ID="23652"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="rep" name="Reported_fact"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: well known, especially so as to be stereotypical.</definition>
+    <lexeme POS="A" name="proverbial"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Reported_fact"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Reported_fact"/>
+                <annoSet ID="6541420"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Reported_fact"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Reported_fact"/>
+                <annoSet ID="6541420"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23652" sentNo="2" paragNo="3" aPos="0" ID="4100582">
+            <text>The proverbial hospitality and warm welcome are still here .</text>
+            <annotationSet cDate="11/14/2006 04:25:12 PST Tue" status="UNANN" ID="6539581">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="13" start="4" name="jj"/>
+                    <label end="25" start="15" name="nn"/>
+                    <label end="29" start="27" name="cc"/>
+                    <label end="34" start="31" name="jj"/>
+                    <label end="42" start="36" name="nn"/>
+                    <label end="46" start="44" name="vbp"/>
+                    <label end="52" start="48" name="rb"/>
+                    <label end="57" start="54" name="rb"/>
+                    <label end="59" start="59" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="29" start="27" name="NT"/>
+                    <label end="46" start="44" name="NT"/>
+                    <label end="59" start="59" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/26/2007 10:55:55 PST Mon" status="MANUAL" ID="6541420">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="13" start="4" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="6676" end="42" start="15" name="Reported_fact"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="42" start="15" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="42" start="15" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

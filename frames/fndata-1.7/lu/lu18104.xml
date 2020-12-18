@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Needs_SCs" incorporatedFE="Title" POS="N" name="father.n" ID="18104" frame="Appellations" frameID="2390" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp" name="bncp" ID="421"/>
+        </corpus>
+        <frame>
+            <FE fgColor="000000" bgColor="FFFF00" type="Peripheral" abbrev="Con" name="Context"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="" name="Title"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="" name="Type"/>
+        </frame>
+    </header>
+    <definition>FN: a priest (used especially as a title)</definition>
+    <lexeme POS="N" name="father"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Name"/>
+            <pattern total="1">
+                <valenceUnit GF="Appositive" PT="NP" FE="Name"/>
+                <annoSet ID="6737879"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Title"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Title"/>
+                <annoSet ID="6737879"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Name"/>
+            <FE name="Title"/>
+            <pattern total="1">
+                <valenceUnit GF="Appositive" PT="NP" FE="Name"/>
+                <valenceUnit GF="" PT="DEN" FE="Title"/>
+                <annoSet ID="6737879"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-T+PropN-(1)">
+        <sentence corpID="111" docID="421" sentNo="1" paragNo="3401" aPos="36222608" ID="4198873">
+            <text>FATHER Christopher O'Neill 's baby daughter Jennifer is now four months old and still the priest , aided by the Catholic Church , remains in hiding .</text>
+            <annotationSet cDate="06/30/2015 12:55:50 PDT Tue" status="UNANN" ID="6737878">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="nn"/>
+                    <label end="17" start="7" name="NP"/>
+                    <label end="25" start="19" name="NP"/>
+                    <label end="28" start="27" name="POS"/>
+                    <label end="33" start="30" name="nn"/>
+                    <label end="42" start="35" name="nn"/>
+                    <label end="51" start="44" name="NP"/>
+                    <label end="54" start="53" name="VBZ"/>
+                    <label end="58" start="56" name="rb"/>
+                    <label end="63" start="60" name="cd"/>
+                    <label end="70" start="65" name="nns"/>
+                    <label end="74" start="72" name="jj"/>
+                    <label end="78" start="76" name="cc"/>
+                    <label end="84" start="80" name="rb"/>
+                    <label end="88" start="86" name="dt"/>
+                    <label end="95" start="90" name="nn"/>
+                    <label end="97" start="97" name=","/>
+                    <label end="103" start="99" name="VVN"/>
+                    <label end="106" start="105" name="in"/>
+                    <label end="110" start="108" name="dt"/>
+                    <label end="119" start="112" name="NP"/>
+                    <label end="126" start="121" name="NP"/>
+                    <label end="128" start="128" name=","/>
+                    <label end="136" start="130" name="VVZ"/>
+                    <label end="139" start="138" name="in"/>
+                    <label end="146" start="141" name="nn"/>
+                    <label end="148" start="148" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="06/30/2015 12:55:50 PDT Tue" status="MANUAL" ID="6737879">
+                <layer rank="1" name="Target">
+                    <label cBy="HPh" end="5" start="0" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="HPh" feID="14153" end="5" start="0" name="Title"/>
+                    <label cBy="HPh" feID="14152" end="25" start="7" name="Name"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="25" start="7" name="Appositive"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="25" start="7" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="01-Context2-adj-(2)"/>
+    <subCorpus name="01-Context3-adj+name-(3)"/>
+</lexUnit>

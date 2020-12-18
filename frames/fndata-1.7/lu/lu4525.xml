@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="connection.n" ID="4525" frame="Social_connection" frameID="253" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="South Africa Introduction" name="SouthAfrica_Introduction" ID="23571"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="Cnx" name="Connection"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Indiv" name="Individuals"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Ind1" name="Individual_1"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Ind2" name="Individual_2"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Peripheral" abbrev="Typ" name="Type"/>
+        </frame>
+    </header>
+    <definition>COD:  link or relationship between people or things. </definition>
+    <lexeme POS="N" name="connection"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Individual_1"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Individual_1"/>
+                <annoSet ID="6533998"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Individual_2"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Individual_2"/>
+                <annoSet ID="6533998"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Individual_1"/>
+            <FE name="Individual_2"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Individual_1"/>
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Individual_2"/>
+                <annoSet ID="6533998"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23571" sentNo="8" paragNo="4" aPos="0" ID="4097894">
+            <text>More recently , South Africa began working more closely with the IAEA in 2004 , in order to monitor international smuggling of nuclear weapons materials , after investigations of a South African businessman exposed connections to the A.Q. Khan network .</text>
+            <annotationSet cDate="09/28/2005 02:30:02 PDT Wed" status="UNANN" ID="6530633">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="rbr"/>
+                    <label end="12" start="5" name="rb"/>
+                    <label end="14" start="14" name=","/>
+                    <label end="20" start="16" name="NP"/>
+                    <label end="27" start="22" name="NP"/>
+                    <label end="33" start="29" name="VVD"/>
+                    <label end="41" start="35" name="VVG"/>
+                    <label end="46" start="43" name="rbr"/>
+                    <label end="54" start="48" name="rb"/>
+                    <label end="59" start="56" name="in"/>
+                    <label end="63" start="61" name="dt"/>
+                    <label end="68" start="65" name="nn"/>
+                    <label end="71" start="70" name="in"/>
+                    <label end="76" start="73" name="cd"/>
+                    <label end="78" start="78" name=","/>
+                    <label end="81" start="80" name="in"/>
+                    <label end="87" start="83" name="nn"/>
+                    <label end="90" start="89" name="to"/>
+                    <label end="98" start="92" name="VV"/>
+                    <label end="112" start="100" name="jj"/>
+                    <label end="122" start="114" name="nn"/>
+                    <label end="125" start="124" name="in"/>
+                    <label end="133" start="127" name="jj"/>
+                    <label end="141" start="135" name="nns"/>
+                    <label end="151" start="143" name="nns"/>
+                    <label end="153" start="153" name=","/>
+                    <label end="159" start="155" name="in"/>
+                    <label end="174" start="161" name="nns"/>
+                    <label end="177" start="176" name="in"/>
+                    <label end="179" start="179" name="dt"/>
+                    <label end="185" start="181" name="jj"/>
+                    <label end="193" start="187" name="jj"/>
+                    <label end="205" start="195" name="nn"/>
+                    <label end="213" start="207" name="VVN"/>
+                    <label end="225" start="215" name="nns"/>
+                    <label end="228" start="227" name="to"/>
+                    <label end="232" start="230" name="dt"/>
+                    <label end="237" start="234" name="NP"/>
+                    <label end="242" start="239" name="NP"/>
+                    <label end="250" start="244" name="nn"/>
+                    <label end="252" start="252" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="27" start="16" name="location"/>
+                    <label end="68" start="65" name="organization"/>
+                    <label end="76" start="73" name="date"/>
+                    <label end="242" start="234" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="12" start="5" name="NT"/>
+                    <label end="14" start="14" name="NT"/>
+                    <label end="20" start="16" name="NT"/>
+                    <label end="27" start="22" name="NT"/>
+                    <label end="46" start="43" name="NT"/>
+                    <label end="54" start="48" name="NT"/>
+                    <label end="59" start="56" name="NT"/>
+                    <label end="63" start="61" name="NT"/>
+                    <label end="71" start="70" name="NT"/>
+                    <label end="76" start="73" name="NT"/>
+                    <label end="78" start="78" name="NT"/>
+                    <label end="90" start="89" name="NT"/>
+                    <label end="125" start="124" name="NT"/>
+                    <label end="153" start="153" name="NT"/>
+                    <label end="177" start="176" name="NT"/>
+                    <label end="179" start="179" name="NT"/>
+                    <label end="228" start="227" name="NT"/>
+                    <label end="232" start="230" name="NT"/>
+                    <label end="237" start="234" name="NT"/>
+                    <label end="242" start="239" name="NT"/>
+                    <label end="252" start="252" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/07/2006 04:25:35 PST Tue" status="MANUAL" ID="6533998">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="225" start="215" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="3651" end="250" start="227" name="Individual_2"/>
+                    <label cBy="RLG" feID="3650" itype="DNI" name="Individual_1"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="250" start="227" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="250" start="227" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

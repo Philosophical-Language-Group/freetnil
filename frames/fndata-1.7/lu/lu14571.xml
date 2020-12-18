@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="a while.n" ID="14571" frame="Measure_duration" frameID="224" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Loma Prieta" name="LomaPrieta" ID="23013"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Jamaica" name="IntroJamaica" ID="23754"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="" name="Count"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Process"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="" name="Unit"/>
+        </frame>
+    </header>
+    <definition>FN: a long time</definition>
+    <lexeme order="1" headword="false" breakBefore="false" POS="ART" name="a"/>
+    <lexeme order="2" headword="true" breakBefore="false" POS="N" name="while"/>
+    <valences>
+        <governor type="Sup" lemma="for">
+            <annoSet ID="4531271"/>
+        </governor>
+        <FERealization total="2">
+            <FE name="Count"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Count"/>
+                <annoSet ID="4531271"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="unknown" FE="Count"/>
+                <annoSet ID="6559126"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Process"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="Sfin" FE="Process"/>
+                <annoSet ID="4531271"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPbrst" FE="Process"/>
+                <annoSet ID="6559126"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Unit"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Unit"/>
+                <annoSet ID="4531271"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Unit"/>
+                <annoSet ID="6559126"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Count"/>
+            <FE name="Process"/>
+            <FE name="Unit"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Count"/>
+                <valenceUnit GF="Ext" PT="Sfin" FE="Process"/>
+                <valenceUnit GF="" PT="DEN" FE="Unit"/>
+                <annoSet ID="4531271"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="unknown" FE="Count"/>
+                <valenceUnit GF="Dep" PT="VPbrst" FE="Process"/>
+                <valenceUnit GF="Dep" PT="NP" FE="Unit"/>
+                <annoSet ID="6559126"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23013" sentNo="1" paragNo="22" aPos="0" ID="2824489">
+            <text>Today should be interesting as people realize how hard life is going to be here for a while .</text>
+            <annotationSet cDate="02/05/2004 08:30:52 PST Thu" status="UNANN" ID="4528484">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="nn"/>
+                    <label end="11" start="6" name="md"/>
+                    <label end="14" start="13" name="vb"/>
+                    <label end="26" start="16" name="jj"/>
+                    <label end="29" start="28" name="in"/>
+                    <label end="36" start="31" name="nns"/>
+                    <label end="44" start="38" name="VVP"/>
+                    <label end="48" start="46" name="wrb"/>
+                    <label end="53" start="50" name="jj"/>
+                    <label end="58" start="55" name="nn"/>
+                    <label end="61" start="60" name="VBZ"/>
+                    <label end="67" start="63" name="VVG"/>
+                    <label end="70" start="69" name="to"/>
+                    <label end="73" start="72" name="vb"/>
+                    <label end="78" start="75" name="rb"/>
+                    <label end="82" start="80" name="in"/>
+                    <label end="84" start="84" name="dt"/>
+                    <label end="90" start="86" name="nn"/>
+                    <label end="92" start="92" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="14" start="13" name="NT"/>
+                    <label end="61" start="60" name="NT"/>
+                    <label end="70" start="69" name="NT"/>
+                    <label end="73" start="72" name="NT"/>
+                    <label end="92" start="92" name="NT"/>
+                    <label end="11" start="6" name="NT"/>
+                    <label end="29" start="28" name="NT"/>
+                    <label end="48" start="46" name="NT"/>
+                    <label end="82" start="80" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/09/2010 10:54:48 PDT Fri" status="MANUAL" ID="4531271">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="90" start="86" name="Target"/>
+                    <label cBy="AlK" end="84" start="84" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="1807" end="78" start="46" name="Process"/>
+                    <label cBy="PKe" feID="1805" end="84" start="84" name="Count"/>
+                    <label cBy="PKe" feID="1806" end="90" start="86" name="Unit"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="78" start="46" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="78" start="46" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="82" start="80" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23754" sentNo="4" paragNo="14" aPos="0" ID="4103895">
+            <text>To have to wait a while for something is not the worst problem in the world .</text>
+            <annotationSet cDate="07/17/2008 06:10:05 PDT Thu" status="UNANN" ID="6552702">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="to"/>
+                    <label end="6" start="3" name="VH"/>
+                    <label end="9" start="8" name="to"/>
+                    <label end="14" start="11" name="VV"/>
+                    <label end="16" start="16" name="dt"/>
+                    <label end="22" start="18" name="nn"/>
+                    <label end="26" start="24" name="in"/>
+                    <label end="36" start="28" name="nn"/>
+                    <label end="39" start="38" name="VBZ"/>
+                    <label end="43" start="41" name="rb"/>
+                    <label end="47" start="45" name="dt"/>
+                    <label end="53" start="49" name="jjs"/>
+                    <label end="61" start="55" name="nn"/>
+                    <label end="64" start="63" name="in"/>
+                    <label end="68" start="66" name="dt"/>
+                    <label end="74" start="70" name="nn"/>
+                    <label end="76" start="76" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="26" start="24" name="NT"/>
+                    <label end="39" start="38" name="NT"/>
+                    <label end="43" start="41" name="NT"/>
+                    <label end="47" start="45" name="NT"/>
+                    <label end="64" start="63" name="NT"/>
+                    <label end="68" start="66" name="NT"/>
+                    <label end="76" start="76" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/17/2009 04:49:32 PST Tue" status="MANUAL" ID="6559126">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="16" start="16" name="Target"/>
+                    <label cBy="EGp" end="22" start="18" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AnW" feID="1807" end="14" start="11" name="Process"/>
+                    <label cBy="PKe" feID="1806" end="22" start="18" name="Unit"/>
+                    <label cBy="PKe" feID="1805" end="16" start="16" name="Count"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="14" start="11" name="Dep"/>
+                    <label end="22" start="18" name="Dep"/>
+                    <label end="16" start="16" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="14" start="11" name="VPbrst"/>
+                    <label end="22" start="18" name="NP"/>
+                    <label end="16" start="16" name="unknown"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

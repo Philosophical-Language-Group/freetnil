@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="band.v" ID="17230" frame="Come_together" frameID="730" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="con" name="Configuration"/>
+            <FE fgColor="000000" bgColor="7CCD73" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Freq" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="" name="Individuals"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="Ite" name="Iterations"/>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Peripheral" abbrev="Man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="" name="Means"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Particular_iteration"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="pa1" name="Party_1"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Core" abbrev="pa2" name="Party_2"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="top" name="Topic"/>
+        </frame>
+    </header>
+    <definition>FN: to form a specified configuration</definition>
+    <lexeme POS="V" name="band"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Configuration"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="PP[into]" FE="Configuration"/>
+                <annoSet ID="6646453"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Individuals"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Individuals"/>
+                <annoSet ID="6646453"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Individuals"/>
+                <annoSet ID="6646453"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Configuration"/>
+            <FE name="Individuals"/>
+            <FE name="Individuals"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="PP[into]" FE="Configuration"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Individuals"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Individuals"/>
+                <annoSet ID="6646453"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="3" paragNo="41" aPos="0" ID="4148556">
+            <text>They banded themselves into a society which should never be dissolved until the work was done .</text>
+            <annotationSet cDate="04/30/2013 05:22:39 PDT Tue" status="UNANN" ID="6646452">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="PRP"/>
+                    <label end="10" start="5" name="VBD"/>
+                    <label end="21" start="12" name="PRP"/>
+                    <label end="26" start="23" name="in"/>
+                    <label end="28" start="28" name="dt"/>
+                    <label end="36" start="30" name="nn"/>
+                    <label end="42" start="38" name="wdt"/>
+                    <label end="49" start="44" name="md"/>
+                    <label end="55" start="51" name="rb"/>
+                    <label end="58" start="57" name="vb"/>
+                    <label end="68" start="60" name="VBN"/>
+                    <label end="74" start="70" name="in"/>
+                    <label end="78" start="76" name="dt"/>
+                    <label end="83" start="80" name="nn"/>
+                    <label end="87" start="85" name="VBD"/>
+                    <label end="92" start="89" name="VBN"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:22:40 PDT Tue" status="MANUAL" ID="6646453">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="10" start="5" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="4811" end="3" start="0" name="Individuals"/>
+                    <label cBy="EGp" feID="4812" end="94" start="23" name="Configuration"/>
+                    <label cBy="EGp" feID="4811" end="21" start="12" name="Individuals"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="3" start="0" name="Ext"/>
+                    <label end="94" start="23" name="Obj"/>
+                    <label end="21" start="12" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="3" start="0" name="NP"/>
+                    <label end="94" start="23" name="PP"/>
+                    <label end="21" start="12" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

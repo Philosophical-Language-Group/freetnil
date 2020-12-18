@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="designate.v" ID="7486" frame="Linguistic_meaning" frameID="406" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Missile" name="Iran_Missile" ID="23512"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Form" name="Form"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="Meaning" name="Meaning"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Referent" name="Referent"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="Tex" name="Textual_location"/>
+        </frame>
+    </header>
+    <definition>FN:  (of linguistic expressions) to denote</definition>
+    <lexeme POS="V" name="designate"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Form"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Form"/>
+                <annoSet ID="6525197"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Referent"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Referent"/>
+                <annoSet ID="6525197"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Textual_location"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[within]" FE="Textual_location"/>
+                <annoSet ID="6525197"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Form"/>
+            <FE name="Referent"/>
+            <FE name="Textual_location"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Form"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Referent"/>
+                <valenceUnit GF="Dep" PT="PP[within]" FE="Textual_location"/>
+                <annoSet ID="6525197"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23512" sentNo="4" paragNo="21" aPos="0" ID="4096780">
+            <text>Within Iran , the Hwasong-5 was designated the Shehab-1 ( `` meteor '' or `` shooting star '' ) .</text>
+            <annotationSet cDate="02/25/2005 12:23:20 PST Fri" status="UNANN" ID="6522445">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="in"/>
+                    <label end="10" start="7" name="NP"/>
+                    <label end="12" start="12" name=","/>
+                    <label end="16" start="14" name="dt"/>
+                    <label end="26" start="18" name="cd"/>
+                    <label end="30" start="28" name="VBD"/>
+                    <label end="41" start="32" name="VVN"/>
+                    <label end="45" start="43" name="dt"/>
+                    <label end="54" start="47" name="cd"/>
+                    <label end="56" start="56" name="("/>
+                    <label end="59" start="58" name="``"/>
+                    <label end="66" start="61" name="nn"/>
+                    <label end="69" start="68" name="''"/>
+                    <label end="72" start="71" name="cc"/>
+                    <label end="75" start="74" name="``"/>
+                    <label end="84" start="77" name="VVG"/>
+                    <label end="89" start="86" name="nn"/>
+                    <label end="92" start="91" name="''"/>
+                    <label end="94" start="94" name=")"/>
+                    <label end="96" start="96" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="10" start="7" name="location"/>
+                    <label end="26" start="18" name="WEA"/>
+                    <label end="54" start="47" name="WEA"/>
+                    <label end="66" start="61" name="WEA"/>
+                    <label end="89" start="77" name="WEA"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="0" name="NT"/>
+                    <label end="10" start="7" name="NT"/>
+                    <label end="12" start="12" name="NT"/>
+                    <label end="16" start="14" name="NT"/>
+                    <label end="26" start="18" name="NT"/>
+                    <label end="45" start="43" name="NT"/>
+                    <label end="54" start="47" name="NT"/>
+                    <label end="56" start="56" name="NT"/>
+                    <label end="72" start="71" name="NT"/>
+                    <label end="94" start="94" name="NT"/>
+                    <label end="96" start="96" name="NT"/>
+                    <label end="30" start="28" name="NT"/>
+                    <label end="59" start="58" name="NT"/>
+                    <label end="69" start="68" name="NT"/>
+                    <label end="75" start="74" name="NT"/>
+                    <label end="92" start="91" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/22/2005 12:40:07 PST Tue" status="MANUAL" ID="6525197">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="41" start="32" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="3747" end="10" start="0" name="Textual_location"/>
+                    <label cBy="RLG" feID="3748" end="26" start="14" name="Referent"/>
+                    <label cBy="RLG" feID="3745" end="94" start="43" name="Form"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="10" start="0" name="Dep"/>
+                    <label end="26" start="14" name="Ext"/>
+                    <label end="94" start="43" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="10" start="0" name="PP"/>
+                    <label end="26" start="14" name="NP"/>
+                    <label end="94" start="43" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

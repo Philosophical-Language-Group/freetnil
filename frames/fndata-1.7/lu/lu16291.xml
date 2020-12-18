@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="life.n" ID="16291" frame="Imprisonment" frameID="1111" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="MASC" name="MASC" ID="150">
+            <document description="Examples of the lemma life from the MASC project for FN annotation" name="life" ID="22513"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="aut" name="Authorities"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="con" name="Conviction"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="Ite" name="Iterations"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="off" name="Offense"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Core" abbrev="jai" name="Prison"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="pri" name="Prisoner"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: a prisoner is sentenced to spend the remainder of their natural life incarcarated; occurs with a limited set of collocational verbs (e.g. do, serve, etc.)  </definition>
+    <lexeme POS="N" name="life"/>
+    <valences>
+        <governor type="Sup" lemma="get">
+            <annoSet ID="6569516"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Authorities"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Authorities"/>
+                <annoSet ID="6569516"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Prison"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Prison"/>
+                <annoSet ID="6569516"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Prisoner"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Prisoner"/>
+                <annoSet ID="6569516"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Authorities"/>
+            <FE name="Prison"/>
+            <FE name="Prisoner"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Authorities"/>
+                <valenceUnit GF="" PT="INI" FE="Prison"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Prisoner"/>
+                <annoSet ID="6569516"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="150" docID="22513" sentNo="4" paragNo="10" aPos="0" ID="1592933">
+            <text>Jonathan Pollard gave information to an ally , Israel , about a threat to that country 's survival and he got life .</text>
+            <annotationSet cDate="12/14/2010 01:50:50 PST Tue" status="UNANN" ID="2619574">
+                <layer rank="1" name="PENN">
+                    <label end="7" start="0" name="NP"/>
+                    <label end="15" start="9" name="NP"/>
+                    <label end="20" start="17" name="VVD"/>
+                    <label end="32" start="22" name="nn"/>
+                    <label end="35" start="34" name="to"/>
+                    <label end="38" start="37" name="dt"/>
+                    <label end="43" start="40" name="nn"/>
+                    <label end="45" start="45" name=","/>
+                    <label end="52" start="47" name="NP"/>
+                    <label end="54" start="54" name=","/>
+                    <label end="60" start="56" name="in"/>
+                    <label end="62" start="62" name="dt"/>
+                    <label end="69" start="64" name="nn"/>
+                    <label end="72" start="71" name="to"/>
+                    <label end="77" start="74" name="dt"/>
+                    <label end="85" start="79" name="nn"/>
+                    <label end="88" start="87" name="POS"/>
+                    <label end="97" start="90" name="nn"/>
+                    <label end="101" start="99" name="cc"/>
+                    <label end="104" start="103" name="PP"/>
+                    <label end="108" start="106" name="VVD"/>
+                    <label end="113" start="110" name="nn"/>
+                    <label end="115" start="115" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="15" start="0" name="person"/>
+                    <label end="52" start="47" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="7" start="0" name="NT"/>
+                    <label end="15" start="9" name="NT"/>
+                    <label end="35" start="34" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="45" start="45" name="NT"/>
+                    <label end="52" start="47" name="NT"/>
+                    <label end="54" start="54" name="NT"/>
+                    <label end="60" start="56" name="NT"/>
+                    <label end="62" start="62" name="NT"/>
+                    <label end="72" start="71" name="NT"/>
+                    <label end="77" start="74" name="NT"/>
+                    <label end="88" start="87" name="NT"/>
+                    <label end="101" start="99" name="NT"/>
+                    <label end="104" start="103" name="NT"/>
+                    <label end="115" start="115" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/29/2011 04:25:56 PDT Wed" status="MANUAL" ID="6569516">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="113" start="110" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="6432" end="104" start="103" name="Prisoner"/>
+                    <label cBy="AlK" feID="6433" itype="INI" name="Prison"/>
+                    <label cBy="AlK" feID="6434" itype="DNI" name="Authorities"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="104" start="103" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="104" start="103" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="108" start="106" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="thirteenth.a" ID="14011" frame="Ordinal_numbers" frameID="1147" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="bas" name="Basis_of_order"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="com" name="Comparison_set"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="ite" name="Item"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="sta" name="Starting_point"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="typ" name="Type"/>
+        </frame>
+    </header>
+    <definition>FN: constituting number thirteen in a sequence.</definition>
+    <lexeme POS="A" name="thirteenth"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Item"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="2nd" FE="Item"/>
+                <annoSet ID="6542895"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Starting_point"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Starting_point"/>
+                <annoSet ID="6542895"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Type"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Type"/>
+                <annoSet ID="6542895"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Item"/>
+            <FE name="Starting_point"/>
+            <FE name="Type"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="2nd" FE="Item"/>
+                <valenceUnit GF="" PT="CNI" FE="Starting_point"/>
+                <valenceUnit GF="Head" PT="N" FE="Type"/>
+                <annoSet ID="6542895"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23692" sentNo="2" paragNo="32" aPos="0" ID="4101260">
+            <text>By the end of the 13th century , they began their first raids on the Aegean Islands .</text>
+            <annotationSet cDate="03/12/2007 02:51:28 PDT Mon" status="UNANN" ID="6542053">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="9" start="7" name="nn"/>
+                    <label end="12" start="11" name="in"/>
+                    <label end="16" start="14" name="dt"/>
+                    <label end="21" start="18" name="jj"/>
+                    <label end="29" start="23" name="nn"/>
+                    <label end="31" start="31" name=","/>
+                    <label end="36" start="33" name="PP"/>
+                    <label end="42" start="38" name="VVD"/>
+                    <label end="48" start="44" name="PP$"/>
+                    <label end="54" start="50" name="jj"/>
+                    <label end="60" start="56" name="nns"/>
+                    <label end="63" start="62" name="in"/>
+                    <label end="67" start="65" name="dt"/>
+                    <label end="74" start="69" name="NP"/>
+                    <label end="82" start="76" name="NPS"/>
+                    <label end="84" start="84" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="29" start="18" name="date"/>
+                    <label end="82" start="69" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="12" start="11" name="NT"/>
+                    <label end="16" start="14" name="NT"/>
+                    <label end="31" start="31" name="NT"/>
+                    <label end="36" start="33" name="NT"/>
+                    <label end="48" start="44" name="NT"/>
+                    <label end="67" start="65" name="NT"/>
+                    <label end="74" start="69" name="NT"/>
+                    <label end="84" start="84" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/21/2007 09:32:32 PDT Wed" status="MANUAL" ID="6542895">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="21" start="18" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AnW" feID="6630" end="29" start="23" name="Type"/>
+                    <label cBy="AnW" feID="6631" itype="CNI" name="Starting_point"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="29" start="23" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="29" start="23" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+                <layer rank="2" name="FE">
+                    <label cBy="AnW" feID="6633" end="29" start="14" name="Item"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

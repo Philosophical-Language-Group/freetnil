@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="dictate.v" ID="17071" frame="Causation" frameID="5" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="act" name="Actor"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Affected" name="Affected"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core-Unexpressed" abbrev="Cause" name="Cause"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD73" type="Extra-Thematic" abbrev="con" name="Concessive"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core-Unexpressed" abbrev="Effect" name="Effect"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="fre" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>controlled by
+</definition>
+    <lexeme POS="V" name="dictate"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Cause"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[by]" FE="Cause"/>
+                <annoSet ID="6626466"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Effect"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Effect"/>
+                <annoSet ID="6626466"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cause"/>
+            <FE name="Effect"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[by]" FE="Cause"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Effect"/>
+                <annoSet ID="6626466"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence sentNo="1" aPos="0" ID="4148923">
+            <text>RESULTS :</text>
+            <annotationSet cDate="07/30/2013 03:43:25 PDT Tue" status="UNANN" ID="6647553">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="nns"/>
+                    <label end="8" start="8" name=":"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="8" start="8" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/30/2013 03:43:25 PDT Tue" status="MANUAL" ID="6647554">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="6" start="0" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE"/>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

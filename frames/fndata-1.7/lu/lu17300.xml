@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="reasoning.n" ID="17300" frame="Reasoning" frameID="308" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Add" name="Addressee"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Arguer" name="Arguer"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Cont" name="Content"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Depict" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="" name="Duration"/>
+            <FE fgColor="000000" bgColor="FF69B4" type="Extra-Thematic" abbrev="" name="Group"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Medium" name="Medium"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="Result" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Support" name="Support"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: an explanation </definition>
+    <lexeme POS="N" name="reasoning"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Arguer"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Arguer"/>
+                <annoSet ID="6646126"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Content"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Content"/>
+                <annoSet ID="6646126"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Manner"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Manner"/>
+                <annoSet ID="6646126"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Arguer"/>
+            <FE name="Content"/>
+            <FE name="Manner"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Arguer"/>
+                <valenceUnit GF="" PT="DEN" FE="Content"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Manner"/>
+                <annoSet ID="6646126"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="5" paragNo="31" aPos="0" ID="4148468">
+            <text>But there was something in the icecold reasoning of Holmes which made it impossible to shrink from any adventure which he might recommend .</text>
+            <annotationSet cDate="04/30/2013 05:20:48 PDT Tue" status="UNANN" ID="6646122">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="cc"/>
+                    <label end="8" start="4" name="ex"/>
+                    <label end="12" start="10" name="VBD"/>
+                    <label end="22" start="14" name="nn"/>
+                    <label end="25" start="24" name="in"/>
+                    <label end="29" start="27" name="dt"/>
+                    <label end="37" start="31" name="jj"/>
+                    <label end="47" start="39" name="nn"/>
+                    <label end="50" start="49" name="in"/>
+                    <label end="57" start="52" name="NNP"/>
+                    <label end="63" start="59" name="wdt"/>
+                    <label end="68" start="65" name="VBD"/>
+                    <label end="71" start="70" name="PRP"/>
+                    <label end="82" start="73" name="jj"/>
+                    <label end="85" start="84" name="to"/>
+                    <label end="92" start="87" name="vb"/>
+                    <label end="97" start="94" name="in"/>
+                    <label end="101" start="99" name="dt"/>
+                    <label end="111" start="103" name="nn"/>
+                    <label end="117" start="113" name="wdt"/>
+                    <label end="120" start="119" name="PRP"/>
+                    <label end="126" start="122" name="md"/>
+                    <label end="136" start="128" name="vb"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:20:49 PDT Tue" status="MANUAL" ID="6646126">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="47" start="39" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="2637" end="57" start="49" name="Arguer"/>
+                    <label cBy="EGp" feID="2640" end="37" start="31" name="Manner"/>
+                    <label cBy="EGp" feID="2635" end="47" start="39" name="Content"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="57" start="49" name="Dep"/>
+                    <label end="37" start="31" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="57" start="49" name="PP"/>
+                    <label end="37" start="31" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

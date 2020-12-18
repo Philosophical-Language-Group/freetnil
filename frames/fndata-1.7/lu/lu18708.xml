@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="date.v" ID="18708" frame="Origin" frameID="1103" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="Examples4-5" name="Examples4-5" ID="25743"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="ent" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="ori" name="Origin"/>
+        </frame>
+    </header>
+    <definition>FN: Originating at the time of origin; often with "from" or "to". </definition>
+    <lexeme POS="V" name="date"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <annoSet ID="6774214"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Origin"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Origin"/>
+                <annoSet ID="6774214"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Entity"/>
+            <FE name="Origin"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <valenceUnit GF="Dep" PT="PP[to]" FE="Origin"/>
+                <annoSet ID="6774214"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25743" sentNo="1" paragNo="8" aPos="0" ID="4217214">
+            <text>The renewed investigation of Morsi and members of the Muslim Brotherhood dates to the uprising that led to the ouster of Mubarak in 2011 .</text>
+            <annotationSet cDate="06/03/2016 05:15:29 PDT Fri" status="UNANN" ID="6774135">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="10" start="4" name="jj"/>
+                    <label end="24" start="12" name="nn"/>
+                    <label end="27" start="26" name="in"/>
+                    <label end="33" start="29" name="NP"/>
+                    <label end="37" start="35" name="cc"/>
+                    <label end="45" start="39" name="nns"/>
+                    <label end="48" start="47" name="in"/>
+                    <label end="52" start="50" name="dt"/>
+                    <label end="59" start="54" name="NP"/>
+                    <label end="71" start="61" name="NP"/>
+                    <label end="77" start="73" name="VVZ"/>
+                    <label end="80" start="79" name="to"/>
+                    <label end="84" start="82" name="dt"/>
+                    <label end="93" start="86" name="nn"/>
+                    <label end="98" start="95" name="wdt"/>
+                    <label end="102" start="100" name="VVD"/>
+                    <label end="105" start="104" name="to"/>
+                    <label end="109" start="107" name="dt"/>
+                    <label end="116" start="111" name="nn"/>
+                    <label end="119" start="118" name="in"/>
+                    <label end="127" start="121" name="NP"/>
+                    <label end="130" start="129" name="in"/>
+                    <label end="135" start="132" name="cd"/>
+                    <label end="137" start="137" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="33" start="29" name="person"/>
+                    <label end="71" start="54" name="organization"/>
+                    <label end="127" start="121" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="27" start="26" name="NT"/>
+                    <label end="33" start="29" name="NT"/>
+                    <label end="37" start="35" name="NT"/>
+                    <label end="48" start="47" name="NT"/>
+                    <label end="52" start="50" name="NT"/>
+                    <label end="59" start="54" name="NT"/>
+                    <label end="71" start="61" name="NT"/>
+                    <label end="80" start="79" name="NT"/>
+                    <label end="84" start="82" name="NT"/>
+                    <label end="98" start="95" name="NT"/>
+                    <label end="105" start="104" name="NT"/>
+                    <label end="109" start="107" name="NT"/>
+                    <label end="119" start="118" name="NT"/>
+                    <label end="127" start="121" name="NT"/>
+                    <label end="130" start="129" name="NT"/>
+                    <label end="135" start="132" name="NT"/>
+                    <label end="137" start="137" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/07/2016 03:38:53 PDT Tue" status="MANUAL" ID="6774214">
+                <layer rank="1" name="Target">
+                    <label cBy="CFB" end="77" start="73" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CFB" feID="6525" end="135" start="79" name="Origin"/>
+                    <label cBy="CFB" feID="6524" end="71" start="0" name="Entity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="135" start="79" name="Dep"/>
+                    <label end="71" start="0" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="135" start="79" name="PP"/>
+                    <label end="71" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

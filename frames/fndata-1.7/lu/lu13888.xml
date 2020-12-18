@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="stature.n" ID="13888" frame="Fame" frameID="1880" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Dublin" name="IntroOfDublin" ID="23652"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="" name="Degree"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Ent" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="rea" name="Reason"/>
+            <FE fgColor="006400" bgColor="FFFF00" type="Extra-Thematic" abbrev="Rol" name="Role"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="Tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: importance or reputation gained by ability or achievement.</definition>
+    <lexeme POS="N" name="stature"/>
+    <valences>
+        <governor type="Sup" lemma="of">
+            <annoSet ID="6541623"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Degree"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Degree"/>
+                <annoSet ID="6541623"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <annoSet ID="6541623"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Degree"/>
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Degree"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Entity"/>
+                <annoSet ID="6541623"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23652" sentNo="3" paragNo="11" aPos="0" ID="4100612">
+            <text>However , sometimes it seems that the city produced artists of this stature by accident , even against its will .</text>
+            <annotationSet cDate="11/14/2006 04:25:22 PST Tue" status="UNANN" ID="6539611">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="rb"/>
+                    <label end="8" start="8" name=","/>
+                    <label end="18" start="10" name="rb"/>
+                    <label end="21" start="20" name="PP"/>
+                    <label end="27" start="23" name="VVZ"/>
+                    <label end="32" start="29" name="in"/>
+                    <label end="36" start="34" name="dt"/>
+                    <label end="41" start="38" name="nn"/>
+                    <label end="50" start="43" name="VVD"/>
+                    <label end="58" start="52" name="nns"/>
+                    <label end="61" start="60" name="in"/>
+                    <label end="66" start="63" name="dt"/>
+                    <label end="74" start="68" name="nn"/>
+                    <label end="77" start="76" name="in"/>
+                    <label end="86" start="79" name="nn"/>
+                    <label end="88" start="88" name=","/>
+                    <label end="93" start="90" name="rb"/>
+                    <label end="101" start="95" name="in"/>
+                    <label end="105" start="103" name="PP$"/>
+                    <label end="110" start="107" name="nn"/>
+                    <label end="112" start="112" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="0" name="NT"/>
+                    <label end="8" start="8" name="NT"/>
+                    <label end="21" start="20" name="NT"/>
+                    <label end="32" start="29" name="NT"/>
+                    <label end="36" start="34" name="NT"/>
+                    <label end="61" start="60" name="NT"/>
+                    <label end="66" start="63" name="NT"/>
+                    <label end="77" start="76" name="NT"/>
+                    <label end="88" start="88" name="NT"/>
+                    <label end="112" start="112" name="NT"/>
+                    <label end="93" start="90" name="NT"/>
+                    <label end="105" start="103" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/05/2007 11:37:40 PST Mon" status="MANUAL" ID="6541623">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="74" start="68" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="11110" end="58" start="52" name="Entity"/>
+                    <label cBy="RLG" feID="11112" end="66" start="63" name="Degree"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="58" start="52" name="Ext"/>
+                    <label end="66" start="63" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="58" start="52" name="NP"/>
+                    <label end="66" start="63" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="61" start="60" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

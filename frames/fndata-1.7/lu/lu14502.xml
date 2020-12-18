@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="block.n" ID="14502" frame="Measure_linear_extent" frameID="154" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Las Vegas" name="HistoryOfLasVegas" ID="23691"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Cou" name="Count"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Dim" name="Dimension"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Stu" name="Stuff"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Uni" name="Unit"/>
+        </frame>
+    </header>
+    <definition>FN: one city street length</definition>
+    <lexeme POS="N" name="block"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Count"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Count"/>
+                <annoSet ID="6647479"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Count"/>
+                <annoSet ID="6544365"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Stuff"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Stuff"/>
+                <annoSet ID="6544365"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Unit"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Unit"/>
+                <annoSet ID="6544365"/>
+                <annoSet ID="6647479"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Count"/>
+            <FE name="Stuff"/>
+            <FE name="Unit"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Count"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Stuff"/>
+                <valenceUnit GF="" PT="DEN" FE="Unit"/>
+                <annoSet ID="6544365"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Count"/>
+            <FE name="Unit"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Count"/>
+                <valenceUnit GF="" PT="DEN" FE="Unit"/>
+                <annoSet ID="6647479"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23691" sentNo="2" paragNo="18" aPos="0" ID="4101079">
+            <text>With rail service in place and forty blocks of private property , it was ready to become a real town .</text>
+            <annotationSet cDate="03/12/2007 02:46:55 PDT Mon" status="UNANN" ID="6541872">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="in"/>
+                    <label end="8" start="5" name="nn"/>
+                    <label end="16" start="10" name="nn"/>
+                    <label end="19" start="18" name="in"/>
+                    <label end="25" start="21" name="nn"/>
+                    <label end="29" start="27" name="cc"/>
+                    <label end="35" start="31" name="nn"/>
+                    <label end="42" start="37" name="nns"/>
+                    <label end="45" start="44" name="in"/>
+                    <label end="53" start="47" name="jj"/>
+                    <label end="62" start="55" name="nn"/>
+                    <label end="64" start="64" name=","/>
+                    <label end="67" start="66" name="PP"/>
+                    <label end="71" start="69" name="VBD"/>
+                    <label end="77" start="73" name="jj"/>
+                    <label end="80" start="79" name="to"/>
+                    <label end="87" start="82" name="VV"/>
+                    <label end="89" start="89" name="dt"/>
+                    <label end="94" start="91" name="jj"/>
+                    <label end="99" start="96" name="nn"/>
+                    <label end="101" start="101" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="19" start="18" name="NT"/>
+                    <label end="29" start="27" name="NT"/>
+                    <label end="45" start="44" name="NT"/>
+                    <label end="64" start="64" name="NT"/>
+                    <label end="67" start="66" name="NT"/>
+                    <label end="71" start="69" name="NT"/>
+                    <label end="80" start="79" name="NT"/>
+                    <label end="89" start="89" name="NT"/>
+                    <label end="101" start="101" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/01/2007 03:29:51 PDT Wed" status="MANUAL" ID="6544365">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="42" start="37" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="1195" end="42" start="37" name="Unit"/>
+                    <label cBy="KmG" feID="1193" end="35" start="31" name="Count"/>
+                    <label cBy="KmG" feID="1194" end="62" start="44" name="Stuff"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="35" start="31" name="Dep"/>
+                    <label end="62" start="44" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="35" start="31" name="N"/>
+                    <label end="62" start="44" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence sentNo="3" aPos="0" ID="4148907">
+            <text>Sandin S , Nygren KG , Iliadou A , Hultman CM , Reichenberg A .</text>
+            <annotationSet cDate="07/30/2013 03:43:21 PDT Tue" status="UNANN" ID="6647478">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="NP"/>
+                    <label end="7" start="7" name="NP"/>
+                    <label end="9" start="9" name=","/>
+                    <label end="16" start="11" name="NP"/>
+                    <label end="19" start="18" name="NP"/>
+                    <label end="21" start="21" name=","/>
+                    <label end="29" start="23" name="NP"/>
+                    <label end="31" start="31" name="NP"/>
+                    <label end="33" start="33" name=","/>
+                    <label end="41" start="35" name="NP"/>
+                    <label end="44" start="43" name="NP"/>
+                    <label end="46" start="46" name=","/>
+                    <label end="58" start="48" name="NP"/>
+                    <label end="60" start="60" name="NP"/>
+                    <label end="62" start="62" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="5" start="0" name="organization"/>
+                    <label end="19" start="11" name="organization"/>
+                    <label end="29" start="23" name="location"/>
+                    <label end="44" start="35" name="organization"/>
+                    <label end="60" start="48" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="0" name="NT"/>
+                    <label end="7" start="7" name="NT"/>
+                    <label end="9" start="9" name="NT"/>
+                    <label end="16" start="11" name="NT"/>
+                    <label end="19" start="18" name="NT"/>
+                    <label end="21" start="21" name="NT"/>
+                    <label end="29" start="23" name="NT"/>
+                    <label end="31" start="31" name="NT"/>
+                    <label end="33" start="33" name="NT"/>
+                    <label end="41" start="35" name="NT"/>
+                    <label end="44" start="43" name="NT"/>
+                    <label end="46" start="46" name="NT"/>
+                    <label end="58" start="48" name="NT"/>
+                    <label end="60" start="60" name="NT"/>
+                    <label end="62" start="62" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/30/2013 03:43:21 PDT Tue" status="MANUAL" ID="6647479">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="44" start="43" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="1195" end="44" start="43" name="Unit"/>
+                    <label cBy="EGp" feID="1193" end="41" start="35" name="Count"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

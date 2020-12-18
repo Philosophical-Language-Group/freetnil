@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="change.v" ID="10782" frame="Replacing" frameID="1121" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="sw2025-ms98-a-trans.ascii-1-NEW" name="sw2025-ms98-a-trans.ascii-1-NEW" ID="23731"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agt" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="Ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="new" name="New"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="old" name="Old"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="rol" name="Role"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: remove (something dirty or faulty) and replace it with another of the same kind.</definition>
+    <lexeme POS="V" name="change"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Agent"/>
+                <annoSet ID="6551474"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Old"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Old"/>
+                <annoSet ID="6551474"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Old"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Agent"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Old"/>
+                <annoSet ID="6551474"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23731" sentNo="2" paragNo="54" aPos="0" ID="4102264">
+            <text>Well , really , this is - breaks up my afternoon from changing diapers and mopping floors .</text>
+            <annotationSet cDate="08/16/2007 05:32:22 PDT Thu" status="UNANN" ID="6546022">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="rb"/>
+                    <label end="5" start="5" name=","/>
+                    <label end="12" start="7" name="rb"/>
+                    <label end="14" start="14" name=","/>
+                    <label end="19" start="16" name="dt"/>
+                    <label end="22" start="21" name="VBZ"/>
+                    <label end="24" start="24" name=":"/>
+                    <label end="31" start="26" name="VVZ"/>
+                    <label end="34" start="33" name="rp"/>
+                    <label end="37" start="36" name="PP$"/>
+                    <label end="47" start="39" name="nn"/>
+                    <label end="52" start="49" name="in"/>
+                    <label end="61" start="54" name="VVG"/>
+                    <label end="69" start="63" name="nns"/>
+                    <label end="73" start="71" name="cc"/>
+                    <label end="81" start="75" name="VVG"/>
+                    <label end="88" start="83" name="nns"/>
+                    <label end="90" start="90" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="5" start="5" name="NT"/>
+                    <label end="12" start="7" name="NT"/>
+                    <label end="14" start="14" name="NT"/>
+                    <label end="19" start="16" name="NT"/>
+                    <label end="22" start="21" name="NT"/>
+                    <label end="24" start="24" name="NT"/>
+                    <label end="37" start="36" name="NT"/>
+                    <label end="52" start="49" name="NT"/>
+                    <label end="73" start="71" name="NT"/>
+                    <label end="90" start="90" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/16/2007 04:36:18 PST Fri" status="MANUAL" ID="6551474">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="61" start="54" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="6493" end="69" start="63" name="Old"/>
+                    <label cBy="JKs" feID="6483" itype="DNI" name="Agent"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="69" start="63" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="69" start="63" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

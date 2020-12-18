@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="township.n" ID="17639" frame="Political_locales" frameID="195" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_7" name="Fires_7" ID="25622"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Constp" name="Constituent_parts"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Peripheral" abbrev="ContP" name="Container_possessor"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="Lcl" name="Locale"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Name" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Peripheral" abbrev="pop" name="Population"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="RelLoc" name="Relative_location"/>
+        </frame>
+    </header>
+    <definition>FN: a region of a county with varying degrees of autonomy, depending on which state it belongs to </definition>
+    <lexeme POS="N" name="township"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Locale"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Locale"/>
+                <annoSet ID="6670813"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Name"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Name"/>
+                <annoSet ID="6670813"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Locale"/>
+            <FE name="Name"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Locale"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Name"/>
+                <annoSet ID="6670813"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25622" sentNo="1" paragNo="14" aPos="0" ID="4165073">
+            <text>It is feared forecasted wind gusts of up to 80 km/h ( 49 Mph ) overnight could fan the first fire into the township of Winmalee as it heads East .</text>
+            <annotationSet cDate="07/17/2014 11:44:46 PDT Thu" status="UNANN" ID="6669243">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="4" start="3" name="VBZ"/>
+                    <label end="11" start="6" name="VVN"/>
+                    <label end="22" start="13" name="VVN"/>
+                    <label end="27" start="24" name="nn"/>
+                    <label end="33" start="29" name="nns"/>
+                    <label end="36" start="35" name="in"/>
+                    <label end="39" start="38" name="in"/>
+                    <label end="42" start="41" name="to"/>
+                    <label end="45" start="44" name="cd"/>
+                    <label end="50" start="47" name="nn"/>
+                    <label end="52" start="52" name="("/>
+                    <label end="55" start="54" name="cd"/>
+                    <label end="59" start="57" name="nn"/>
+                    <label end="61" start="61" name=")"/>
+                    <label end="71" start="63" name="rb"/>
+                    <label end="77" start="73" name="md"/>
+                    <label end="81" start="79" name="VV"/>
+                    <label end="85" start="83" name="dt"/>
+                    <label end="91" start="87" name="jj"/>
+                    <label end="96" start="93" name="nn"/>
+                    <label end="101" start="98" name="in"/>
+                    <label end="105" start="103" name="dt"/>
+                    <label end="114" start="107" name="nn"/>
+                    <label end="117" start="116" name="in"/>
+                    <label end="126" start="119" name="NP"/>
+                    <label end="129" start="128" name="in"/>
+                    <label end="132" start="131" name="PP"/>
+                    <label end="138" start="134" name="VVZ"/>
+                    <label end="143" start="140" name="NP"/>
+                    <label end="145" start="145" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="126" start="119" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="4" start="3" name="NT"/>
+                    <label end="36" start="35" name="NT"/>
+                    <label end="39" start="38" name="NT"/>
+                    <label end="42" start="41" name="NT"/>
+                    <label end="45" start="44" name="NT"/>
+                    <label end="52" start="52" name="NT"/>
+                    <label end="55" start="54" name="NT"/>
+                    <label end="61" start="61" name="NT"/>
+                    <label end="71" start="63" name="NT"/>
+                    <label end="85" start="83" name="NT"/>
+                    <label end="105" start="103" name="NT"/>
+                    <label end="117" start="116" name="NT"/>
+                    <label end="126" start="119" name="NT"/>
+                    <label end="129" start="128" name="NT"/>
+                    <label end="132" start="131" name="NT"/>
+                    <label end="143" start="140" name="NT"/>
+                    <label end="145" start="145" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/21/2014 10:49:22 PDT Mon" status="MANUAL" ID="6670813">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="114" start="107" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="1583" end="114" start="107" name="Locale"/>
+                    <label cBy="CVa" feID="1599" end="126" start="116" name="Name"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="126" start="116" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="126" start="116" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

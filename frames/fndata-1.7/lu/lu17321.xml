@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="idea.n" ID="17321" frame="Awareness" frameID="19" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Cont" name="Content"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Evid" name="Evidence"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Core" abbrev="Expr" name="Expressor"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="" name="Paradigm"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Role" name="Role"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Top" name="Topic"/>
+        </frame>
+    </header>
+    <definition>FN: a thought as to a course of action or an event</definition>
+    <lexeme POS="N" name="idea"/>
+    <valences>
+        <FERealization total="3">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <annoSet ID="6645980"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="PP[of]" FE="Cognizer"/>
+                <annoSet ID="6645714"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="Poss" FE="Cognizer"/>
+                <annoSet ID="6646015"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Content"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="Sfin" FE="Content"/>
+                <annoSet ID="6645714"/>
+                <annoSet ID="6645980"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="Sfin" FE="Content"/>
+                <annoSet ID="6646015"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="3">
+            <FE name="Cognizer"/>
+            <FE name="Content"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <valenceUnit GF="Ext" PT="Sfin" FE="Content"/>
+                <annoSet ID="6645980"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="PP[of]" FE="Cognizer"/>
+                <valenceUnit GF="Ext" PT="Sfin" FE="Content"/>
+                <annoSet ID="6645714"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="Poss" FE="Cognizer"/>
+                <valenceUnit GF="Obj" PT="Sfin" FE="Content"/>
+                <annoSet ID="6646015"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="6" paragNo="20" aPos="0" ID="4148370">
+            <text>We may put aside this idea of Baynes 's that Garcia 's servants were concerned in the matter .</text>
+            <annotationSet cDate="04/30/2013 05:18:48 PDT Tue" status="UNANN" ID="6645711">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PRP"/>
+                    <label end="5" start="3" name="md"/>
+                    <label end="9" start="7" name="vb"/>
+                    <label end="15" start="11" name="rp"/>
+                    <label end="20" start="17" name="dt"/>
+                    <label end="25" start="22" name="nn"/>
+                    <label end="28" start="27" name="in"/>
+                    <label end="35" start="30" name="NNP"/>
+                    <label end="38" start="37" name="POS"/>
+                    <label end="43" start="40" name="in"/>
+                    <label end="50" start="45" name="NNP"/>
+                    <label end="53" start="52" name="POS"/>
+                    <label end="62" start="55" name="nns"/>
+                    <label end="67" start="64" name="VBD"/>
+                    <label end="77" start="69" name="jj"/>
+                    <label end="80" start="79" name="in"/>
+                    <label end="84" start="82" name="dt"/>
+                    <label end="91" start="86" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:18:49 PDT Tue" status="MANUAL" ID="6645714">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="25" start="22" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="83" end="38" start="27" name="Cognizer"/>
+                    <label cBy="EGp" feID="84" end="93" start="40" name="Content"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="38" start="27" name="Obj"/>
+                    <label end="93" start="40" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="38" start="27" name="PP"/>
+                    <label end="93" start="40" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="175" docID="25343" sentNo="3" paragNo="27" aPos="0" ID="4148430">
+            <text>Where they came from , or who they are , nobody has an idea .</text>
+            <annotationSet cDate="04/30/2013 05:20:04 PDT Tue" status="UNANN" ID="6645978">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="wrb"/>
+                    <label end="9" start="6" name="PRP"/>
+                    <label end="14" start="11" name="VBD"/>
+                    <label end="19" start="16" name="in"/>
+                    <label end="24" start="23" name="cc"/>
+                    <label end="28" start="26" name="wp"/>
+                    <label end="33" start="30" name="PRP"/>
+                    <label end="37" start="35" name="vbp"/>
+                    <label end="46" start="41" name="nn"/>
+                    <label end="50" start="48" name="VBZ"/>
+                    <label end="53" start="52" name="dt"/>
+                    <label end="58" start="55" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:20:04 PDT Tue" status="MANUAL" ID="6645980">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="58" start="55" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="83" end="46" start="41" name="Cognizer"/>
+                    <label cBy="EGp" feID="84" end="39" start="0" name="Content"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="46" start="41" name="Ext"/>
+                    <label end="39" start="0" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="46" start="41" name="NP"/>
+                    <label end="39" start="0" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="175" docID="25343" sentNo="4" paragNo="28" aPos="0" ID="4148440">
+            <text>I may add that Miss Burnet 's age and character make it certain that my first idea that there might be a love interest in our story is out of the question .</text>
+            <annotationSet cDate="04/30/2013 05:20:12 PDT Tue" status="UNANN" ID="6646008">
+                <layer rank="1" name="PENN">
+                    <label end="0" start="0" name="PRP"/>
+                    <label end="4" start="2" name="md"/>
+                    <label end="8" start="6" name="vb"/>
+                    <label end="13" start="10" name="in"/>
+                    <label end="18" start="15" name="NNP"/>
+                    <label end="25" start="20" name="NNP"/>
+                    <label end="28" start="27" name="POS"/>
+                    <label end="32" start="30" name="nn"/>
+                    <label end="36" start="34" name="cc"/>
+                    <label end="46" start="38" name="nn"/>
+                    <label end="51" start="48" name="vb"/>
+                    <label end="54" start="53" name="PRP"/>
+                    <label end="62" start="56" name="jj"/>
+                    <label end="67" start="64" name="in"/>
+                    <label end="70" start="69" name="PRP$"/>
+                    <label end="76" start="72" name="jj"/>
+                    <label end="81" start="78" name="nn"/>
+                    <label end="86" start="83" name="in"/>
+                    <label end="92" start="88" name="ex"/>
+                    <label end="98" start="94" name="md"/>
+                    <label end="101" start="100" name="vb"/>
+                    <label end="103" start="103" name="dt"/>
+                    <label end="108" start="105" name="nn"/>
+                    <label end="117" start="110" name="nn"/>
+                    <label end="120" start="119" name="in"/>
+                    <label end="124" start="122" name="PRP$"/>
+                    <label end="130" start="126" name="nn"/>
+                    <label end="133" start="132" name="VBZ"/>
+                    <label end="137" start="135" name="in"/>
+                    <label end="140" start="139" name="in"/>
+                    <label end="144" start="142" name="dt"/>
+                    <label end="153" start="146" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:20:14 PDT Tue" status="MANUAL" ID="6646015">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="81" start="78" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="83" end="70" start="69" name="Cognizer"/>
+                    <label cBy="EGp" feID="84" end="130" start="83" name="Content"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="70" start="69" name="Obj"/>
+                    <label end="130" start="83" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="70" start="69" name="Poss"/>
+                    <label end="130" start="83" name="Sfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="institutional.a" ID="12615" frame="Institutions" frameID="1604" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="North Korea Nuclear Overview" name="NorthKorea_NuclearOverview" ID="23562"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="dom" name="Domain"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="ins" name="Institution"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="mem" name="Members"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="pur" name="Purpose"/>
+        </frame>
+    </header>
+    <definition>COD: of, in, or like an institution.</definition>
+    <lexeme POS="A" name="institutional"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Institution"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Institution"/>
+                <annoSet ID="6530379"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Institution"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Institution"/>
+                <annoSet ID="6530379"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23562" sentNo="1" paragNo="15" aPos="0" ID="4097689">
+            <text>In the early 1950s , North Korea began establishing the institutional base to train the human resources for its nuclear development program .</text>
+            <annotationSet cDate="08/01/2005 12:16:02 PDT Mon" status="UNANN" ID="6528663">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="11" start="7" name="jj"/>
+                    <label end="17" start="13" name="nns"/>
+                    <label end="19" start="19" name=","/>
+                    <label end="25" start="21" name="NP"/>
+                    <label end="31" start="27" name="NP"/>
+                    <label end="37" start="33" name="VVD"/>
+                    <label end="50" start="39" name="VVG"/>
+                    <label end="54" start="52" name="dt"/>
+                    <label end="68" start="56" name="jj"/>
+                    <label end="73" start="70" name="nn"/>
+                    <label end="76" start="75" name="to"/>
+                    <label end="82" start="78" name="VV"/>
+                    <label end="86" start="84" name="dt"/>
+                    <label end="92" start="88" name="jj"/>
+                    <label end="102" start="94" name="nns"/>
+                    <label end="106" start="104" name="in"/>
+                    <label end="110" start="108" name="PP$"/>
+                    <label end="118" start="112" name="jj"/>
+                    <label end="130" start="120" name="nn"/>
+                    <label end="138" start="132" name="nn"/>
+                    <label end="140" start="140" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="17" start="13" name="date"/>
+                    <label end="31" start="21" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="19" start="19" name="NT"/>
+                    <label end="25" start="21" name="NT"/>
+                    <label end="31" start="27" name="NT"/>
+                    <label end="54" start="52" name="NT"/>
+                    <label end="76" start="75" name="NT"/>
+                    <label end="86" start="84" name="NT"/>
+                    <label end="106" start="104" name="NT"/>
+                    <label end="110" start="108" name="NT"/>
+                    <label end="140" start="140" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/15/2005 03:33:09 PDT Mon" status="MANUAL" ID="6530379">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="68" start="56" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="8826" end="68" start="56" name="Institution"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

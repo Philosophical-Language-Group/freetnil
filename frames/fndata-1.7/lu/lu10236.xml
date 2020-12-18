@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Rules_Defined" POS="N" name="parish.n" ID="10236" frame="Political_locales" frameID="195" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Bell Ringing" name="BellRinging" ID="23009"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Intro of Jamaica" name="IntroJamaica" ID="23754"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Constp" name="Constituent_parts"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Peripheral" abbrev="ContP" name="Container_possessor"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="Lcl" name="Locale"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Name" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Peripheral" abbrev="pop" name="Population"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="RelLoc" name="Relative_location"/>
+        </frame>
+    </header>
+    <definition>COD: (in the Christian Church) a small administrative district with its own church and clergy.  as modifier</definition>
+    <lexeme POS="N" name="parish"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Container_possessor"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Container_possessor"/>
+                <annoSet ID="6558851"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Descriptor"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Descriptor"/>
+                <annoSet ID="4528902"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Locale"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Locale"/>
+                <annoSet ID="4528902"/>
+                <annoSet ID="6558851"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Relative_location"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Relative_location"/>
+                <annoSet ID="4528902"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Container_possessor"/>
+            <FE name="Locale"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Container_possessor"/>
+                <valenceUnit GF="" PT="DEN" FE="Locale"/>
+                <annoSet ID="6558851"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Descriptor"/>
+            <FE name="Locale"/>
+            <FE name="Relative_location"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Descriptor"/>
+                <valenceUnit GF="" PT="DEN" FE="Locale"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Relative_location"/>
+                <annoSet ID="4528902"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23009" sentNo="3" paragNo="22" aPos="0" ID="2824254">
+            <text>Also , ringers do n't always live where the bells need to be rung -- like in small , rural parishes and inner-city churches .</text>
+            <annotationSet cDate="02/05/2004 08:29:37 PST Thu" status="UNANN" ID="4528249">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="rb"/>
+                    <label end="5" start="5" name=","/>
+                    <label end="13" start="7" name="nns"/>
+                    <label end="16" start="15" name="VVP"/>
+                    <label end="20" start="18" name="rb"/>
+                    <label end="27" start="22" name="rb"/>
+                    <label end="32" start="29" name="VV"/>
+                    <label end="38" start="34" name="wrb"/>
+                    <label end="42" start="40" name="dt"/>
+                    <label end="48" start="44" name="nns"/>
+                    <label end="53" start="50" name="VVP"/>
+                    <label end="56" start="55" name="to"/>
+                    <label end="59" start="58" name="vb"/>
+                    <label end="64" start="61" name="VVN"/>
+                    <label end="67" start="66" name=":"/>
+                    <label end="72" start="69" name="in"/>
+                    <label end="75" start="74" name="in"/>
+                    <label end="81" start="77" name="jj"/>
+                    <label end="83" start="83" name=","/>
+                    <label end="89" start="85" name="jj"/>
+                    <label end="98" start="91" name="nns"/>
+                    <label end="102" start="100" name="cc"/>
+                    <label end="113" start="104" name="jj"/>
+                    <label end="122" start="115" name="nns"/>
+                    <label end="124" start="124" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="5" start="5" name="NT"/>
+                    <label end="16" start="15" name="NT"/>
+                    <label end="20" start="18" name="NT"/>
+                    <label end="56" start="55" name="NT"/>
+                    <label end="59" start="58" name="NT"/>
+                    <label end="75" start="74" name="NT"/>
+                    <label end="83" start="83" name="NT"/>
+                    <label end="124" start="124" name="NT"/>
+                    <label end="38" start="34" name="NT"/>
+                    <label end="42" start="40" name="NT"/>
+                    <label end="67" start="66" name="NT"/>
+                    <label end="72" start="69" name="NT"/>
+                    <label end="102" start="100" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/06/2004 05:41:53 PDT Tue" status="MANUAL" ID="4528902">
+                <layer rank="1" name="Target">
+                    <label cBy="MiL" end="98" start="91" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="1583" end="98" start="91" name="Locale"/>
+                    <label cBy="RLG" feID="1602" end="89" start="85" name="Relative_location"/>
+                    <label cBy="RLG" feID="7151" end="81" start="77" name="Descriptor"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="89" start="85" name="Dep"/>
+                    <label end="81" start="77" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="89" start="85" name="AJP"/>
+                    <label end="81" start="77" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23754" sentNo="2" paragNo="9" aPos="0" ID="4103867">
+            <text>The thirteen regional parishes and numerous towns were originally named after British settlements .</text>
+            <annotationSet cDate="07/17/2008 06:09:58 PDT Thu" status="UNANN" ID="6552674">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="11" start="4" name="cd"/>
+                    <label end="20" start="13" name="jj"/>
+                    <label end="29" start="22" name="nns"/>
+                    <label end="33" start="31" name="cc"/>
+                    <label end="42" start="35" name="jj"/>
+                    <label end="48" start="44" name="nns"/>
+                    <label end="53" start="50" name="VBD"/>
+                    <label end="64" start="55" name="rb"/>
+                    <label end="70" start="66" name="VVN"/>
+                    <label end="76" start="72" name="in"/>
+                    <label end="84" start="78" name="jj"/>
+                    <label end="96" start="86" name="nns"/>
+                    <label end="98" start="98" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="11" start="4" name="NT"/>
+                    <label end="33" start="31" name="NT"/>
+                    <label end="53" start="50" name="NT"/>
+                    <label end="76" start="72" name="NT"/>
+                    <label end="98" start="98" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/02/2009 01:50:55 PST Mon" status="MANUAL" ID="6558851">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="29" start="22" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="1583" end="29" start="22" name="Locale"/>
+                    <label cBy="AlK" feID="1581" end="20" start="13" name="Container_possessor"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="20" start="13" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="20" start="13" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

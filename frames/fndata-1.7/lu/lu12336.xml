@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Needs_SCs" POS="N" name="condition.n" ID="12336" frame="Terms_of_agreement" frameID="1531" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp=2566" name="bncp=2566" ID="20183"/>
+        </corpus>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="wsj_1640.mrg-NEW" name="wsj_1640.mrg-NEW" ID="23727"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="agr" name="Agreement"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="scr" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="des" name="Desired_state_of_affairs"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="par" name="Party"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="reg" name="Regulated_entity"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="req" name="Requirements"/>
+        </frame>
+    </header>
+    <definition>COD: a state of affairs that must exist before something else is possible.</definition>
+    <lexeme POS="N" name="condition"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agreement"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Agreement"/>
+                <annoSet ID="6549096"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Desired_state_of_affairs"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Desired_state_of_affairs"/>
+                <annoSet ID="2578811"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Requirements"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Requirements"/>
+                <annoSet ID="6549096"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Requirements"/>
+                <annoSet ID="2578811"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agreement"/>
+            <FE name="Requirements"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Agreement"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Requirements"/>
+                <annoSet ID="6549096"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Desired_state_of_affairs"/>
+            <FE name="Requirements"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Desired_state_of_affairs"/>
+                <valenceUnit GF="" PT="DEN" FE="Requirements"/>
+                <annoSet ID="2578811"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-pp_for-p-(1)"/>
+    <subCorpus name="02-Wrepayment+Wwithdrawal-(1)">
+        <sentence corpID="111" docID="20183" sentNo="3" paragNo="1112" aPos="0" ID="1572095">
+            <text>Talks between Israel and Lebanon focused on conditions for a possible Israeli withdrawal from southern Lebanon .</text>
+            <annotationSet cDate="07/14/2010 12:56:11 PDT Wed" status="UNANN" ID="2578810">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="nns"/>
+                    <label end="12" start="6" name="in"/>
+                    <label end="19" start="14" name="NP"/>
+                    <label end="23" start="21" name="cc"/>
+                    <label end="31" start="25" name="NP"/>
+                    <label end="39" start="33" name="VVD"/>
+                    <label end="42" start="41" name="in"/>
+                    <label end="53" start="44" name="nns"/>
+                    <label end="57" start="55" name="in"/>
+                    <label end="59" start="59" name="dt"/>
+                    <label end="68" start="61" name="jj"/>
+                    <label end="76" start="70" name="jj"/>
+                    <label end="87" start="78" name="nn"/>
+                    <label end="92" start="89" name="in"/>
+                    <label end="101" start="94" name="jj"/>
+                    <label end="109" start="103" name="NP"/>
+                    <label end="111" start="111" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="07/14/2010 12:56:11 PDT Wed" status="MANUAL" ID="2578811">
+                <layer rank="1" name="Target">
+                    <label cBy="AnW" end="53" start="44" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AnW" feID="8341" end="53" start="44" name="Requirements"/>
+                    <label cBy="AnW" feID="8342" end="109" start="55" name="Desired_state_of_affairs"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="109" start="55" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="109" start="55" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="03-other-matched-(1)"/>
+    <subCorpus name="04-other-unmatched-(1)"/>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23727" sentNo="1" paragNo="5" aPos="0" ID="4101858">
+            <text>One expert , whose job is so politically sensitive that he spoke on condition that he would n't be named or quoted , said the expected influx of East European refugees over the next few years will greatly increase the chances of computer-maintenance workers , for example , doubling as foreign spies .</text>
+            <annotationSet cDate="08/15/2007 04:21:51 PDT Wed" status="UNANN" ID="6545616">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="cd"/>
+                    <label end="9" start="4" name="nn"/>
+                    <label end="11" start="11" name=","/>
+                    <label end="17" start="13" name="wp$"/>
+                    <label end="21" start="19" name="nn"/>
+                    <label end="24" start="23" name="VBZ"/>
+                    <label end="27" start="26" name="rb"/>
+                    <label end="39" start="29" name="rb"/>
+                    <label end="49" start="41" name="jj"/>
+                    <label end="54" start="51" name="in"/>
+                    <label end="57" start="56" name="PP"/>
+                    <label end="63" start="59" name="VVD"/>
+                    <label end="66" start="65" name="in"/>
+                    <label end="76" start="68" name="nn"/>
+                    <label end="81" start="78" name="in"/>
+                    <label end="84" start="83" name="PP"/>
+                    <label end="90" start="86" name="md"/>
+                    <label end="94" start="92" name="rb"/>
+                    <label end="97" start="96" name="vb"/>
+                    <label end="103" start="99" name="VVN"/>
+                    <label end="106" start="105" name="cc"/>
+                    <label end="113" start="108" name="VVN"/>
+                    <label end="115" start="115" name=","/>
+                    <label end="120" start="117" name="VVD"/>
+                    <label end="124" start="122" name="dt"/>
+                    <label end="133" start="126" name="VVN"/>
+                    <label end="140" start="135" name="nn"/>
+                    <label end="143" start="142" name="in"/>
+                    <label end="148" start="145" name="jj"/>
+                    <label end="157" start="150" name="jj"/>
+                    <label end="166" start="159" name="nns"/>
+                    <label end="171" start="168" name="in"/>
+                    <label end="175" start="173" name="dt"/>
+                    <label end="180" start="177" name="jj"/>
+                    <label end="184" start="182" name="jj"/>
+                    <label end="190" start="186" name="nns"/>
+                    <label end="195" start="192" name="md"/>
+                    <label end="203" start="197" name="rb"/>
+                    <label end="212" start="205" name="VV"/>
+                    <label end="216" start="214" name="dt"/>
+                    <label end="224" start="218" name="nns"/>
+                    <label end="227" start="226" name="in"/>
+                    <label end="248" start="229" name="jj"/>
+                    <label end="256" start="250" name="nns"/>
+                    <label end="258" start="258" name=","/>
+                    <label end="262" start="260" name="in"/>
+                    <label end="270" start="264" name="nn"/>
+                    <label end="272" start="272" name=","/>
+                    <label end="281" start="274" name="VVG"/>
+                    <label end="284" start="283" name="in"/>
+                    <label end="292" start="286" name="jj"/>
+                    <label end="298" start="294" name="nns"/>
+                    <label end="300" start="300" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="11" start="11" name="NT"/>
+                    <label end="17" start="13" name="NT"/>
+                    <label end="24" start="23" name="NT"/>
+                    <label end="27" start="26" name="NT"/>
+                    <label end="39" start="29" name="NT"/>
+                    <label end="54" start="51" name="NT"/>
+                    <label end="57" start="56" name="NT"/>
+                    <label end="66" start="65" name="NT"/>
+                    <label end="81" start="78" name="NT"/>
+                    <label end="84" start="83" name="NT"/>
+                    <label end="90" start="86" name="NT"/>
+                    <label end="94" start="92" name="NT"/>
+                    <label end="97" start="96" name="NT"/>
+                    <label end="106" start="105" name="NT"/>
+                    <label end="115" start="115" name="NT"/>
+                    <label end="124" start="122" name="NT"/>
+                    <label end="143" start="142" name="NT"/>
+                    <label end="171" start="168" name="NT"/>
+                    <label end="175" start="173" name="NT"/>
+                    <label end="195" start="192" name="NT"/>
+                    <label end="203" start="197" name="NT"/>
+                    <label end="216" start="214" name="NT"/>
+                    <label end="227" start="226" name="NT"/>
+                    <label end="258" start="258" name="NT"/>
+                    <label end="262" start="260" name="NT"/>
+                    <label end="272" start="272" name="NT"/>
+                    <label end="284" start="283" name="NT"/>
+                    <label end="300" start="300" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/26/2007 05:41:39 PDT Fri" status="MANUAL" ID="6549096">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="76" start="68" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="8339" end="63" start="56" name="Agreement"/>
+                    <label cBy="JKs" feID="8341" end="113" start="78" name="Requirements"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="63" start="56" name="Dep"/>
+                    <label end="113" start="78" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="63" start="56" name="AJP"/>
+                    <label end="113" start="78" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

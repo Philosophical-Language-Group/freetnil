@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="ChW" cDate="02/07/2001 04:11:42 PST Wed" name="Transitive_action" ID="10" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;This frame characterizes, at a very abstract level, an &lt;fen&gt;Agent&lt;/fen&gt; or &lt;fen&gt;Cause&lt;/fen&gt; affecting a &lt;fen&gt;Patient&lt;/fen&gt;. This frame is inherited by many lower-level frames. &lt;/def-root&gt;</definition>
+    <semType name="Non-Lexical Frame" ID="16"/>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="ChW" cDate="02/07/2001 04:11:42 PST Wed" abbrev="Agt" name="Agent" ID="36">
+        <definition>&lt;def-root&gt;&lt;fen&gt;Agent&lt;/fen&gt; is the entity that acts on another entity.  &lt;/def-root&gt;</definition>
+        <semType name="Sentient" ID="5"/>
+        <excludesFE name="Cause" ID="9812"/>
+    </FE>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Core" cBy="ChW" cDate="02/07/2001 04:11:42 PST Wed" abbrev="Pat" name="Patient" ID="37">
+        <definition>&lt;def-root&gt;&lt;fen&gt;Patient&lt;/fen&gt; is the entity that is being acted on and that may but need not undergo a change.  &lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="7CCD73" fgColor="FFFFFF" coreType="Core-Unexpressed" cBy="MJE" cDate="10/25/2001 07:41:21 PDT Thu" abbrev="Evnt" name="Event" ID="2087">
+        <definition>&lt;def-root&gt;An &lt;fen&gt;Event&lt;/fen&gt; in which an &lt;fen&gt;Agent&lt;/fen&gt; acts on an entity.&lt;/def-root&gt;</definition>
+        <semType name="State_of_affairs" ID="177"/>
+    </FE>
+    <FE bgColor="9400D3" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="MJE" cDate="10/25/2001 07:41:24 PDT Thu" abbrev="Depict" name="Depictive" ID="2088">
+        <definition>&lt;def-root&gt;&lt;fen&gt;Depictive&lt;/fen&gt; phrase describing a participant in the event.
+&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="9F79EE" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="MJE" cDate="10/25/2001 07:41:37 PDT Thu" abbrev="Result" name="Result" ID="2089">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Result&lt;/fen&gt; of a transitive action.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="A52A2A" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="10/25/2001 07:41:40 PDT Thu" abbrev="Mns" name="Means" ID="2090">
+        <definition>&lt;def-root&gt;An act performed by an &lt;fen&gt;Agent&lt;/fen&gt; that enables them to act upon the &lt;fen&gt;Patient&lt;/fen&gt;.&lt;/def-root &gt;</definition>
+        <semType name="State_of_affairs" ID="177"/>
+    </FE>
+    <FE bgColor="FF00FF" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="10/25/2001 07:41:48 PDT Thu" abbrev="Manr" name="Manner" ID="2092">
+        <definition>&lt;def-root&gt;Any description of the intentional act which is not covered by more specific FEs, including secondary effects (&lt;ment&gt;quietly, loudly&lt;/ment&gt;), and general descriptions comparing events (&lt;ment&gt;the same way&lt;/ment&gt;). In addition, it may indicate salient characteristics of an &lt;fen&gt;Agent&lt;/fen&gt; that also affect the action (&lt;ment&gt;presumptuously, coldly, deliberately, eagerly, carefully&lt;/ment&gt;). &lt;/def-root&gt;</definition>
+        <semType name="Manner" ID="173"/>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="01/03/2006 12:53:13 PST Tue" abbrev="tim" name="Time" ID="9810">
+        <definition>&lt;def-root&gt;The &lt;fen&gt;Time&lt;/fen&gt; at which the event takes place.&lt;/def-root&gt;</definition>
+        <semType name="Time" ID="141"/>
+    </FE>
+    <FE bgColor="1E90FF" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="01/03/2006 12:54:06 PST Tue" abbrev="pla" name="Place" ID="9811">
+        <definition>&lt;def-root&gt;The location at which the event takes place.&lt;/def-root&gt;</definition>
+        <semType name="Locative_relation" ID="182"/>
+    </FE>
+    <FE bgColor="006400" fgColor="FFFFFF" coreType="Core-Unexpressed" cBy="MJE" cDate="01/03/2006 12:56:13 PST Tue" abbrev="cau" name="Cause" ID="9812">
+        <definition>&lt;def-root&gt;An event which causes the &lt;fen&gt;Patient&lt;/fen&gt; to be affected in some way.&lt;/def-root&gt;</definition>
+        <excludesFE name="Means" ID="2090"/>
+    </FE>
+    <frameRelation type="Inherits from">
+        <relatedFrame ID="1084">Objective_influence</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Inherited by">
+        <relatedFrame ID="230">Intentionally_affect</relatedFrame>
+        <relatedFrame ID="335">Cause_change_of_phase</relatedFrame>
+        <relatedFrame ID="96">Cause_change_of_position_on_a_scale</relatedFrame>
+        <relatedFrame ID="395">Cause_impact</relatedFrame>
+        <relatedFrame ID="55">Cause_motion</relatedFrame>
+        <relatedFrame ID="334">Cause_temperature_change</relatedFrame>
+        <relatedFrame ID="337">Cause_to_be_dry</relatedFrame>
+        <relatedFrame ID="1291">Cause_to_be_sharp</relatedFrame>
+        <relatedFrame ID="309">Cause_to_be_wet</relatedFrame>
+        <relatedFrame ID="1060">Cause_to_continue</relatedFrame>
+        <relatedFrame ID="1149">Cause_to_end</relatedFrame>
+        <relatedFrame ID="414">Cause_to_fragment</relatedFrame>
+        <relatedFrame ID="801">Cause_to_make_noise</relatedFrame>
+        <relatedFrame ID="276">Cause_to_move_in_place</relatedFrame>
+        <relatedFrame ID="1372">Cause_to_resume</relatedFrame>
+        <relatedFrame ID="293">Cause_to_wake</relatedFrame>
+        <relatedFrame ID="50">Cure</relatedFrame>
+        <relatedFrame ID="417">Destroying</relatedFrame>
+        <relatedFrame ID="415">Damaging</relatedFrame>
+        <relatedFrame ID="1614">Rejuvenation</relatedFrame>
+        <relatedFrame ID="383">Cause_change_of_consistency</relatedFrame>
+        <relatedFrame ID="350">Corroding_caused</relatedFrame>
+        <relatedFrame ID="283">Setting_fire</relatedFrame>
+        <relatedFrame ID="590">Killing</relatedFrame>
+        <relatedFrame ID="631">Endangering</relatedFrame>
+        <relatedFrame ID="77">Cause_expansion</relatedFrame>
+        <relatedFrame ID="1494">Imposing_obligation</relatedFrame>
+        <relatedFrame ID="416">Render_nonfunctional</relatedFrame>
+        <relatedFrame ID="1781">Cause_change_of_strength</relatedFrame>
+        <relatedFrame ID="683">Cause_change</relatedFrame>
+        <relatedFrame ID="1894">Interrupt_process</relatedFrame>
+        <relatedFrame ID="351">Grinding</relatedFrame>
+        <relatedFrame ID="2248">Cause_to_rot</relatedFrame>
+        <relatedFrame ID="2230">Cause_to_be_included</relatedFrame>
+        <relatedFrame ID="2301">Container_focused_removing</relatedFrame>
+        <relatedFrame ID="63">Removing</relatedFrame>
+        <relatedFrame ID="62">Placing</relatedFrame>
+        <relatedFrame ID="2303">Container_focused_placing</relatedFrame>
+        <relatedFrame ID="319">Creating</relatedFrame>
+        <relatedFrame ID="2320">Cause_bodily_experience</relatedFrame>
+        <relatedFrame ID="2641">Downing</relatedFrame>
+        <relatedFrame ID="2481">Erasing</relatedFrame>
+        <relatedFrame ID="2851">Infecting</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses"/>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+</frame>

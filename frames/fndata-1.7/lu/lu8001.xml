@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="behavior.n" ID="8001" frame="Conduct" frameID="491" totalAnnotated="5" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Ticket Splitting" name="TicketSplitting" ID="23012"/>
+            <document description="Loma Prieta" name="LomaPrieta" ID="23013"/>
+        </corpus>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="North Korea Nuclear Overview" name="NorthKorea_NuclearOverview" ID="23562"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Children's home fund-raising letter" name="112C-L013" ID="23811"/>
+        </corpus>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="AFGP-2002-602187-Trans" name="AFGP-2002-602187-Trans" ID="23743"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Extra-Thematic" abbrev="aff" name="Affected_party"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FFD700" type="Extra-Thematic" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="dom" name="Domain"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Core" abbrev="" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Peripheral" abbrev="sta" name="Standard"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: the way in which someone behaves</definition>
+    <lexeme POS="N" name="behavior"/>
+    <valences>
+        <governor type="Ctrlr" lemma="display">
+            <annoSet ID="4530159"/>
+        </governor>
+        <FERealization total="5">
+            <FE name="Agent"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DNI" FE="Agent"/>
+                <annoSet ID="6547839"/>
+                <annoSet ID="6557575"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Agent"/>
+                <annoSet ID="4531249"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <annoSet ID="4530159"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Agent"/>
+                <annoSet ID="6529946"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="5">
+            <FE name="Manner"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DNI" FE="Manner"/>
+                <annoSet ID="6547839"/>
+                <annoSet ID="6557575"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="AJP" FE="Manner"/>
+                <annoSet ID="4530159"/>
+                <annoSet ID="4531249"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Manner"/>
+                <annoSet ID="6529946"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Place"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Place"/>
+                <annoSet ID="4530159"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="4">
+            <FE name="Agent"/>
+            <FE name="Manner"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DNI" FE="Agent"/>
+                <valenceUnit GF="" PT="DNI" FE="Manner"/>
+                <annoSet ID="6547839"/>
+                <annoSet ID="6557575"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Agent"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Manner"/>
+                <annoSet ID="4531249"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Agent"/>
+                <valenceUnit GF="" PT="INI" FE="Manner"/>
+                <annoSet ID="6529946"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Manner"/>
+            <FE name="Place"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Manner"/>
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Place"/>
+                <annoSet ID="4530159"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23012" sentNo="1" paragNo="20" aPos="0" ID="2824421">
+            <text>In sum , at both the federal and state government levels at least part of the seemingly irrational behavior voters display in the voting booth may have an exceedingly rational explanation .</text>
+            <annotationSet cDate="02/05/2004 08:30:36 PST Thu" status="UNANN" ID="4528416">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="nn"/>
+                    <label end="7" start="7" name=","/>
+                    <label end="10" start="9" name="in"/>
+                    <label end="15" start="12" name="pdt"/>
+                    <label end="19" start="17" name="dt"/>
+                    <label end="27" start="21" name="jj"/>
+                    <label end="31" start="29" name="cc"/>
+                    <label end="37" start="33" name="nn"/>
+                    <label end="48" start="39" name="nn"/>
+                    <label end="55" start="50" name="nns"/>
+                    <label end="58" start="57" name="in"/>
+                    <label end="64" start="60" name="jjs"/>
+                    <label end="69" start="66" name="nn"/>
+                    <label end="72" start="71" name="in"/>
+                    <label end="76" start="74" name="dt"/>
+                    <label end="86" start="78" name="rb"/>
+                    <label end="97" start="88" name="jj"/>
+                    <label end="106" start="99" name="nn"/>
+                    <label end="113" start="108" name="nns"/>
+                    <label end="121" start="115" name="VVP"/>
+                    <label end="124" start="123" name="in"/>
+                    <label end="128" start="126" name="dt"/>
+                    <label end="135" start="130" name="nn"/>
+                    <label end="141" start="137" name="nn"/>
+                    <label end="145" start="143" name="md"/>
+                    <label end="150" start="147" name="VH"/>
+                    <label end="153" start="152" name="dt"/>
+                    <label end="165" start="155" name="rb"/>
+                    <label end="174" start="167" name="jj"/>
+                    <label end="186" start="176" name="nn"/>
+                    <label end="188" start="188" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="7" start="7" name="NT"/>
+                    <label end="86" start="78" name="NT"/>
+                    <label end="165" start="155" name="NT"/>
+                    <label end="188" start="188" name="NT"/>
+                    <label end="1" start="0" name="NT"/>
+                    <label end="15" start="12" name="NT"/>
+                    <label end="19" start="17" name="NT"/>
+                    <label end="31" start="29" name="NT"/>
+                    <label end="58" start="57" name="NT"/>
+                    <label end="76" start="74" name="NT"/>
+                    <label end="128" start="126" name="NT"/>
+                    <label end="153" start="152" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/23/2004 03:08:15 PDT Mon" status="MANUAL" ID="4530159">
+                <layer rank="1" name="Target">
+                    <label cBy="CHg" end="106" start="99" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CHg" feID="4032" end="97" start="78" name="Manner"/>
+                    <label cBy="RLG" feID="4031" end="113" start="108" name="Agent"/>
+                    <label cBy="RLG" feID="6518" end="141" start="123" name="Place"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="97" start="78" name="Dep"/>
+                    <label end="113" start="108" name="Ext"/>
+                    <label end="141" start="123" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="97" start="78" name="AJP"/>
+                    <label end="113" start="108" name="NP"/>
+                    <label end="141" start="123" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="121" start="115" name="Ctrlr"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="115" docID="23013" sentNo="2" paragNo="17" aPos="0" ID="2824473">
+            <text>Did n't feel a thing , but noticed some strange bird behavior .</text>
+            <annotationSet cDate="02/05/2004 08:30:48 PST Thu" status="UNANN" ID="4528468">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="VVD"/>
+                    <label end="6" start="4" name="rb"/>
+                    <label end="11" start="8" name="VV"/>
+                    <label end="13" start="13" name="dt"/>
+                    <label end="19" start="15" name="nn"/>
+                    <label end="21" start="21" name=","/>
+                    <label end="25" start="23" name="cc"/>
+                    <label end="33" start="27" name="VVD"/>
+                    <label end="38" start="35" name="dt"/>
+                    <label end="46" start="40" name="jj"/>
+                    <label end="51" start="48" name="nn"/>
+                    <label end="60" start="53" name="nn"/>
+                    <label end="62" start="62" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="4" name="NT"/>
+                    <label end="21" start="21" name="NT"/>
+                    <label end="62" start="62" name="NT"/>
+                    <label end="13" start="13" name="NT"/>
+                    <label end="2" start="0" name="NT"/>
+                    <label end="19" start="15" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/08/2010 12:58:05 PDT Thu" status="MANUAL" ID="4531249">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="60" start="53" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="4031" end="51" start="48" name="Agent"/>
+                    <label cBy="AlK" feID="4032" end="46" start="40" name="Manner"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="51" start="48" name="Dep"/>
+                    <label end="46" start="40" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="51" start="48" name="N"/>
+                    <label end="46" start="40" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="135" docID="23562" sentNo="4" paragNo="13" aPos="0" ID="4097687">
+            <text>However , critics argue that Pyongyang 's behavior is inconsistent and that this evidence is not credible .</text>
+            <annotationSet cDate="08/01/2005 12:15:59 PDT Mon" status="UNANN" ID="6528661">
+                <layer rank="1" name="PENN">
+                    <label end="6" start="0" name="rb"/>
+                    <label end="8" start="8" name=","/>
+                    <label end="16" start="10" name="nns"/>
+                    <label end="22" start="18" name="VVP"/>
+                    <label end="27" start="24" name="in"/>
+                    <label end="37" start="29" name="NP"/>
+                    <label end="40" start="39" name="POS"/>
+                    <label end="49" start="42" name="nn"/>
+                    <label end="52" start="51" name="VBZ"/>
+                    <label end="65" start="54" name="jj"/>
+                    <label end="69" start="67" name="cc"/>
+                    <label end="74" start="71" name="in"/>
+                    <label end="79" start="76" name="dt"/>
+                    <label end="88" start="81" name="nn"/>
+                    <label end="91" start="90" name="VBZ"/>
+                    <label end="95" start="93" name="rb"/>
+                    <label end="104" start="97" name="jj"/>
+                    <label end="106" start="106" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="37" start="29" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="6" start="0" name="NT"/>
+                    <label end="8" start="8" name="NT"/>
+                    <label end="27" start="24" name="NT"/>
+                    <label end="37" start="29" name="NT"/>
+                    <label end="40" start="39" name="NT"/>
+                    <label end="52" start="51" name="NT"/>
+                    <label end="69" start="67" name="NT"/>
+                    <label end="74" start="71" name="NT"/>
+                    <label end="79" start="76" name="NT"/>
+                    <label end="91" start="90" name="NT"/>
+                    <label end="95" start="93" name="NT"/>
+                    <label end="106" start="106" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/10/2005 12:32:06 PDT Wed" status="MANUAL" ID="6529946">
+                <layer rank="1" name="Target">
+                    <label cBy="JKR" end="49" start="42" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKR" feID="4031" end="40" start="29" name="Agent"/>
+                    <label cBy="JKR" feID="4032" itype="INI" name="Manner"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="40" start="29" name="Gen"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="40" start="29" name="Poss"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="205" docID="23743" sentNo="2" paragNo="6" aPos="0" ID="4103464">
+            <text>This behavior and not the edict itself forced them to be deceptive .</text>
+            <annotationSet cDate="08/24/2007 02:44:56 PDT Fri" status="UNANN" ID="6547287">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="12" start="5" name="nn"/>
+                    <label end="16" start="14" name="cc"/>
+                    <label end="20" start="18" name="rb"/>
+                    <label end="24" start="22" name="dt"/>
+                    <label end="30" start="26" name="nn"/>
+                    <label end="37" start="32" name="PP"/>
+                    <label end="44" start="39" name="VVD"/>
+                    <label end="49" start="46" name="PP"/>
+                    <label end="52" start="51" name="to"/>
+                    <label end="55" start="54" name="vb"/>
+                    <label end="65" start="57" name="jj"/>
+                    <label end="67" start="67" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="16" start="14" name="NT"/>
+                    <label end="20" start="18" name="NT"/>
+                    <label end="24" start="22" name="NT"/>
+                    <label end="37" start="32" name="NT"/>
+                    <label end="49" start="46" name="NT"/>
+                    <label end="52" start="51" name="NT"/>
+                    <label end="55" start="54" name="NT"/>
+                    <label end="67" start="67" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="09/17/2007 10:59:52 PDT Mon" status="MANUAL" ID="6547839">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="12" start="5" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="4031" itype="DNI" name="Agent"/>
+                    <label cBy="KmG" feID="4032" itype="DNI" name="Manner"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23811" sentNo="3" paragNo="5" aPos="0" ID="4106597">
+            <text>Kids like Tommie J . , made a ward of the court because of repeated beatings by an alcoholic father ; Alice , sent to a group home to get help because of severe behavior disorders ; and John H . , a recovering alcoholic , rebuilding a relationships with his family so they can live together again .</text>
+            <annotationSet cDate="01/08/2009 11:47:14 PST Thu" status="UNANN" ID="6557494">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="nns"/>
+                    <label end="8" start="5" name="in"/>
+                    <label end="15" start="10" name="NP"/>
+                    <label end="17" start="17" name="NP"/>
+                    <label end="19" start="19" name="sent"/>
+                    <label end="21" start="21" name=","/>
+                    <label end="26" start="23" name="VVD"/>
+                    <label end="28" start="28" name="dt"/>
+                    <label end="33" start="30" name="nn"/>
+                    <label end="36" start="35" name="in"/>
+                    <label end="40" start="38" name="dt"/>
+                    <label end="46" start="42" name="nn"/>
+                    <label end="54" start="48" name="in"/>
+                    <label end="57" start="56" name="in"/>
+                    <label end="66" start="59" name="jj"/>
+                    <label end="75" start="68" name="nns"/>
+                    <label end="78" start="77" name="in"/>
+                    <label end="81" start="80" name="dt"/>
+                    <label end="91" start="83" name="jj"/>
+                    <label end="98" start="93" name="nn"/>
+                    <label end="100" start="100" name=":"/>
+                    <label end="106" start="102" name="NP"/>
+                    <label end="108" start="108" name=","/>
+                    <label end="113" start="110" name="VVD"/>
+                    <label end="116" start="115" name="to"/>
+                    <label end="118" start="118" name="dt"/>
+                    <label end="124" start="120" name="nn"/>
+                    <label end="129" start="126" name="nn"/>
+                    <label end="132" start="131" name="to"/>
+                    <label end="136" start="134" name="VV"/>
+                    <label end="141" start="138" name="nn"/>
+                    <label end="149" start="143" name="in"/>
+                    <label end="152" start="151" name="in"/>
+                    <label end="159" start="154" name="jj"/>
+                    <label end="168" start="161" name="nn"/>
+                    <label end="178" start="170" name="nns"/>
+                    <label end="180" start="180" name=":"/>
+                    <label end="184" start="182" name="cc"/>
+                    <label end="189" start="186" name="NP"/>
+                    <label end="191" start="191" name="NP"/>
+                    <label end="193" start="193" name="sent"/>
+                    <label end="195" start="195" name=","/>
+                    <label end="197" start="197" name="dt"/>
+                    <label end="208" start="199" name="VVG"/>
+                    <label end="218" start="210" name="jj"/>
+                    <label end="220" start="220" name=","/>
+                    <label end="231" start="222" name="VVG"/>
+                    <label end="233" start="233" name="dt"/>
+                    <label end="247" start="235" name="nns"/>
+                    <label end="252" start="249" name="in"/>
+                    <label end="256" start="254" name="PP$"/>
+                    <label end="263" start="258" name="nn"/>
+                    <label end="266" start="265" name="in"/>
+                    <label end="271" start="268" name="PP"/>
+                    <label end="275" start="273" name="md"/>
+                    <label end="280" start="277" name="VV"/>
+                    <label end="289" start="282" name="rb"/>
+                    <label end="295" start="291" name="rb"/>
+                    <label end="297" start="297" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="17" start="10" name="person"/>
+                    <label end="106" start="102" name="person"/>
+                    <label end="193" start="186" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="15" start="10" name="NT"/>
+                    <label end="17" start="17" name="NT"/>
+                    <label end="19" start="19" name="NT"/>
+                    <label end="21" start="21" name="NT"/>
+                    <label end="28" start="28" name="NT"/>
+                    <label end="36" start="35" name="NT"/>
+                    <label end="40" start="38" name="NT"/>
+                    <label end="78" start="77" name="NT"/>
+                    <label end="81" start="80" name="NT"/>
+                    <label end="100" start="100" name="NT"/>
+                    <label end="106" start="102" name="NT"/>
+                    <label end="108" start="108" name="NT"/>
+                    <label end="116" start="115" name="NT"/>
+                    <label end="118" start="118" name="NT"/>
+                    <label end="132" start="131" name="NT"/>
+                    <label end="180" start="180" name="NT"/>
+                    <label end="184" start="182" name="NT"/>
+                    <label end="189" start="186" name="NT"/>
+                    <label end="191" start="191" name="NT"/>
+                    <label end="193" start="193" name="NT"/>
+                    <label end="195" start="195" name="NT"/>
+                    <label end="197" start="197" name="NT"/>
+                    <label end="220" start="220" name="NT"/>
+                    <label end="233" start="233" name="NT"/>
+                    <label end="252" start="249" name="NT"/>
+                    <label end="256" start="254" name="NT"/>
+                    <label end="266" start="265" name="NT"/>
+                    <label end="271" start="268" name="NT"/>
+                    <label end="295" start="291" name="NT"/>
+                    <label end="297" start="297" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/12/2009 04:02:34 PST Mon" status="MANUAL" ID="6557575">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="168" start="161" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="4031" itype="DNI" name="Agent"/>
+                    <label cBy="AlK" feID="4032" itype="DNI" name="Manner"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

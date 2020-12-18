@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="what become (of).v" ID="17475" frame="Eventive_affecting" frameID="88" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Ent" name="Entity"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core-Unexpressed" abbrev="Evnt" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="Fre" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: (questioning the subject) happen (to) [implying likely negative impact on the entity affected]</definition>
+    <lexeme order="1" headword="false" breakBefore="false" POS="N" name="what"/>
+    <lexeme order="2" headword="true" breakBefore="true" POS="V" name="become"/>
+    <semType name="Interrogative" ID="21"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Entity"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Entity"/>
+                <annoSet ID="6656888"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Event"/>
+                <annoSet ID="6656888"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Entity"/>
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Entity"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Event"/>
+                <annoSet ID="6656888"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="5" paragNo="5" aPos="0" ID="4148234">
+            <text>&quot; What became of him ? &quot;</text>
+            <annotationSet cDate="04/30/2013 05:16:56 PDT Tue" status="UNANN" ID="6645187">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="2" name="wp"/>
+                    <label end="12" start="7" name="VBD"/>
+                    <label end="15" start="14" name="in"/>
+                    <label end="19" start="17" name="PRP"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="05/16/2014 04:17:25 PDT Fri" status="MANUAL" ID="6656888">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="12" start="7" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="403" end="5" start="2" name="Event"/>
+                    <label cBy="MJE" feID="1190" end="19" start="14" name="Entity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="5" start="2" name="Ext"/>
+                    <label end="19" start="14" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="5" start="2" name="NP"/>
+                    <label end="19" start="14" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

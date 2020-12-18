@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="PREP" name="up to.prep" ID="12557" frame="Continued_state_of_affairs" frameID="1594" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz What to Do in Hong Kong" name="WhatToHongKong" ID="23758"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="Cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="ref" name="Reference_occasion"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="soa" name="State_of_affairs"/>
+        </frame>
+    </header>
+    <definition>FN: until and possibly beyond</definition>
+    <lexeme order="1" headword="true" breakBefore="false" POS="PREP" name="up"/>
+    <lexeme order="2" headword="false" breakBefore="false" POS="PREP" name="to"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Reference_occasion"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Reference_occasion"/>
+                <annoSet ID="6584786"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="State_of_affairs"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="State_of_affairs"/>
+                <annoSet ID="6584786"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Reference_occasion"/>
+            <FE name="State_of_affairs"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Reference_occasion"/>
+                <valenceUnit GF="Ext" PT="NP" FE="State_of_affairs"/>
+                <annoSet ID="6584786"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23758" sentNo="1" paragNo="5" aPos="0" ID="4104038">
+            <text>Stores do not open until 10 am or later , but shopping goes on into the evening , up to 9:30 pm .</text>
+            <annotationSet cDate="07/21/2008 03:48:16 PDT Mon" status="UNANN" ID="6552870">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="nns"/>
+                    <label end="8" start="7" name="VVP"/>
+                    <label end="12" start="10" name="rb"/>
+                    <label end="17" start="14" name="VV"/>
+                    <label end="23" start="19" name="in"/>
+                    <label end="26" start="25" name="cd"/>
+                    <label end="29" start="28" name="rb"/>
+                    <label end="32" start="31" name="cc"/>
+                    <label end="38" start="34" name="rb"/>
+                    <label end="40" start="40" name=","/>
+                    <label end="44" start="42" name="cc"/>
+                    <label end="53" start="46" name="nn"/>
+                    <label end="58" start="55" name="VVZ"/>
+                    <label end="61" start="60" name="in"/>
+                    <label end="66" start="63" name="in"/>
+                    <label end="70" start="68" name="dt"/>
+                    <label end="78" start="72" name="nn"/>
+                    <label end="80" start="80" name=","/>
+                    <label end="83" start="82" name="rb"/>
+                    <label end="86" start="85" name="to"/>
+                    <label end="91" start="88" name="cd"/>
+                    <label end="94" start="93" name="nn"/>
+                    <label end="96" start="96" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="29" start="25" name="time"/>
+                    <label end="94" start="88" name="time"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="8" start="7" name="NT"/>
+                    <label end="12" start="10" name="NT"/>
+                    <label end="26" start="25" name="NT"/>
+                    <label end="29" start="28" name="NT"/>
+                    <label end="32" start="31" name="NT"/>
+                    <label end="40" start="40" name="NT"/>
+                    <label end="66" start="63" name="NT"/>
+                    <label end="70" start="68" name="NT"/>
+                    <label end="80" start="80" name="NT"/>
+                    <label end="91" start="88" name="NT"/>
+                    <label end="96" start="96" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/03/2011 06:55:42 PDT Mon" status="MANUAL" ID="6584786">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="83" start="82" name="Target"/>
+                    <label cBy="CVa" end="86" start="85" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="8725" end="94" start="88" name="Reference_occasion"/>
+                    <label cBy="CVa" feID="8724" end="78" start="46" name="State_of_affairs"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="94" start="88" name="Dep"/>
+                    <label end="78" start="46" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="94" start="88" name="NP"/>
+                    <label end="78" start="46" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Prep"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="nonliving.a" ID="13914" frame="Dead_or_alive" frameID="310" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="B W Tutorial chapter1" name="BWTutorial_chapter1" ID="23602"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="Fig" name="Figure"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Prot" name="Protagonist"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: not alive</definition>
+    <lexeme POS="A" name="nonliving"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Figure"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Figure"/>
+                <annoSet ID="6541620"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Figure"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="N" FE="Figure"/>
+                <annoSet ID="6541620"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23602" sentNo="1" paragNo="12" aPos="0" ID="4099370">
+            <text>Chemical warfare ( CW ) agents are non-living , manufactured chemicals that are highly toxic and can enter the body through the lungs or the skin .</text>
+            <annotationSet cDate="06/02/2006 03:11:36 PDT Fri" status="UNANN" ID="6534597">
+                <layer rank="1" name="PENN">
+                    <label end="7" start="0" name="nn"/>
+                    <label end="15" start="9" name="nn"/>
+                    <label end="17" start="17" name="("/>
+                    <label end="20" start="19" name="NP"/>
+                    <label end="22" start="22" name=")"/>
+                    <label end="29" start="24" name="nns"/>
+                    <label end="33" start="31" name="vbp"/>
+                    <label end="44" start="35" name="VVG"/>
+                    <label end="46" start="46" name=","/>
+                    <label end="59" start="48" name="jj"/>
+                    <label end="69" start="61" name="nns"/>
+                    <label end="74" start="71" name="wdt"/>
+                    <label end="78" start="76" name="vbp"/>
+                    <label end="85" start="80" name="rb"/>
+                    <label end="91" start="87" name="jj"/>
+                    <label end="95" start="93" name="cc"/>
+                    <label end="99" start="97" name="md"/>
+                    <label end="105" start="101" name="VV"/>
+                    <label end="109" start="107" name="dt"/>
+                    <label end="114" start="111" name="nn"/>
+                    <label end="122" start="116" name="in"/>
+                    <label end="126" start="124" name="dt"/>
+                    <label end="132" start="128" name="nns"/>
+                    <label end="135" start="134" name="cc"/>
+                    <label end="139" start="137" name="dt"/>
+                    <label end="144" start="141" name="nn"/>
+                    <label end="146" start="146" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="17" start="17" name="NT"/>
+                    <label end="22" start="22" name="NT"/>
+                    <label end="33" start="31" name="NT"/>
+                    <label end="46" start="46" name="NT"/>
+                    <label end="74" start="71" name="NT"/>
+                    <label end="78" start="76" name="NT"/>
+                    <label end="85" start="80" name="NT"/>
+                    <label end="95" start="93" name="NT"/>
+                    <label end="109" start="107" name="NT"/>
+                    <label end="122" start="116" name="NT"/>
+                    <label end="126" start="124" name="NT"/>
+                    <label end="135" start="134" name="NT"/>
+                    <label end="139" start="137" name="NT"/>
+                    <label end="146" start="146" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/02/2007 06:11:28 PST Fri" status="MANUAL" ID="6541620">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="44" start="35" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="2680" end="69" start="48" name="Figure"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="69" start="48" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="69" start="48" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

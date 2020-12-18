@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="warrant.n" ID="8293" frame="Documents" frameID="560" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="Bea" name="Bearer"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Do" name="Document"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Iss" name="Issuer"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="" name="Medium"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Core" abbrev="Obl" name="Obligation"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Rig" name="Right"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="Spec" name="Specification"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="Sta" name="Status"/>
+        </frame>
+    </header>
+    <definition>COD: an official authorization enabling the police or some other body to make an arrest, search premises, etc.</definition>
+    <lexeme POS="N" name="warrant"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Document"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Document"/>
+                <annoSet ID="6646069"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Right"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Right"/>
+                <annoSet ID="6646069"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Document"/>
+            <FE name="Right"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Document"/>
+                <valenceUnit GF="" PT="DNI" FE="Right"/>
+                <annoSet ID="6646069"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="1" paragNo="30" aPos="0" ID="4148455">
+            <text>There is nothing upon which we can apply for a warrant .</text>
+            <annotationSet cDate="04/30/2013 05:20:30 PDT Tue" status="UNANN" ID="6646068">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="ex"/>
+                    <label end="7" start="6" name="VBZ"/>
+                    <label end="15" start="9" name="nn"/>
+                    <label end="20" start="17" name="in"/>
+                    <label end="26" start="22" name="wdt"/>
+                    <label end="29" start="28" name="PRP"/>
+                    <label end="33" start="31" name="md"/>
+                    <label end="39" start="35" name="vb"/>
+                    <label end="43" start="41" name="in"/>
+                    <label end="45" start="45" name="dt"/>
+                    <label end="53" start="47" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:20:30 PDT Tue" status="MANUAL" ID="6646069">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="53" start="47" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="4192" end="53" start="47" name="Document"/>
+                    <label cBy="EGp" feID="4189" itype="DNI" name="Right"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

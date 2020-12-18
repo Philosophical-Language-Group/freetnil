@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Ailment" POS="N" name="infection.n" ID="4386" frame="Medical_conditions" frameID="239" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Kazakhstan" name="Kazakhstan" ID="23501"/>
+        </corpus>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="Examples4-5" name="Examples4-5" ID="25743"/>
+        </corpus>
+        <frame>
+            <FE fgColor="000000" bgColor="FFFF00" type="Core" abbrev="" name="Ailment"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="Body_P" name="Body_part"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="Cause" name="Cause"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="deg" name="Degree"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="dur" name="Duration"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="Name" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Pat" name="Patient"/>
+            <FE fgColor="000000" bgColor="7CCD73" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Symp" name="Symptom"/>
+        </frame>
+    </header>
+    <definition>COD: an infectious disease</definition>
+    <lexeme POS="N" name="infection"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Ailment"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Ailment"/>
+                <annoSet ID="6774148"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Body_part"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Body_part"/>
+                <annoSet ID="6774148"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Patient"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Patient"/>
+                <annoSet ID="6521999"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Ailment"/>
+            <FE name="Body_part"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Ailment"/>
+                <valenceUnit GF="Dep" PT="N" FE="Body_part"/>
+                <annoSet ID="6774148"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Patient"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="N" FE="Patient"/>
+                <annoSet ID="6521999"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23501" sentNo="6" paragNo="6" aPos="0" ID="4096553">
+            <text>The Scientific Center for Quarantine and Zoonotic Infections ( SCQZI ) ( formerly known as the Anti-Plague Institute ) was also involved in the Soviet BW system and is now under the jurisdiction of the Kazakhstani Ministry of Health .</text>
+            <annotationSet cDate="02/03/2005 12:35:47 PST Thu" status="UNANN" ID="6521937">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="13" start="4" name="NP"/>
+                    <label end="20" start="15" name="NP"/>
+                    <label end="24" start="22" name="in"/>
+                    <label end="35" start="26" name="nn"/>
+                    <label end="39" start="37" name="cc"/>
+                    <label end="48" start="41" name="jj"/>
+                    <label end="59" start="50" name="nns"/>
+                    <label end="61" start="61" name="("/>
+                    <label end="67" start="63" name="NP"/>
+                    <label end="69" start="69" name=")"/>
+                    <label end="71" start="71" name="("/>
+                    <label end="80" start="73" name="rb"/>
+                    <label end="86" start="82" name="VVN"/>
+                    <label end="89" start="88" name="in"/>
+                    <label end="93" start="91" name="dt"/>
+                    <label end="105" start="95" name="NP"/>
+                    <label end="115" start="107" name="NP"/>
+                    <label end="117" start="117" name=")"/>
+                    <label end="121" start="119" name="VBD"/>
+                    <label end="126" start="123" name="rb"/>
+                    <label end="135" start="128" name="VVN"/>
+                    <label end="138" start="137" name="in"/>
+                    <label end="142" start="140" name="dt"/>
+                    <label end="149" start="144" name="jj"/>
+                    <label end="152" start="151" name="NP"/>
+                    <label end="159" start="154" name="nn"/>
+                    <label end="163" start="161" name="cc"/>
+                    <label end="166" start="165" name="VBZ"/>
+                    <label end="170" start="168" name="rb"/>
+                    <label end="176" start="172" name="in"/>
+                    <label end="180" start="178" name="dt"/>
+                    <label end="193" start="182" name="nn"/>
+                    <label end="196" start="195" name="in"/>
+                    <label end="200" start="198" name="dt"/>
+                    <label end="212" start="202" name="NP"/>
+                    <label end="221" start="214" name="NP"/>
+                    <label end="224" start="223" name="in"/>
+                    <label end="231" start="226" name="NP"/>
+                    <label end="233" start="233" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="59" start="4" name="FAC"/>
+                    <label end="115" start="95" name="FAC"/>
+                    <label end="231" start="202" name="organization"/>
+                    <label end="67" start="63" name="FAC"/>
+                    <label end="152" start="151" name="WEA"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="13" start="4" name="NT"/>
+                    <label end="24" start="22" name="NT"/>
+                    <label end="39" start="37" name="NT"/>
+                    <label end="61" start="61" name="NT"/>
+                    <label end="67" start="63" name="NT"/>
+                    <label end="69" start="69" name="NT"/>
+                    <label end="71" start="71" name="NT"/>
+                    <label end="89" start="88" name="NT"/>
+                    <label end="93" start="91" name="NT"/>
+                    <label end="105" start="95" name="NT"/>
+                    <label end="115" start="107" name="NT"/>
+                    <label end="117" start="117" name="NT"/>
+                    <label end="138" start="137" name="NT"/>
+                    <label end="142" start="140" name="NT"/>
+                    <label end="152" start="151" name="NT"/>
+                    <label end="163" start="161" name="NT"/>
+                    <label end="176" start="172" name="NT"/>
+                    <label end="180" start="178" name="NT"/>
+                    <label end="196" start="195" name="NT"/>
+                    <label end="200" start="198" name="NT"/>
+                    <label end="212" start="202" name="NT"/>
+                    <label end="221" start="214" name="NT"/>
+                    <label end="224" start="223" name="NT"/>
+                    <label end="231" start="226" name="NT"/>
+                    <label end="233" start="233" name="NT"/>
+                    <label end="80" start="73" name="NT"/>
+                    <label end="121" start="119" name="NT"/>
+                    <label end="126" start="123" name="NT"/>
+                    <label end="166" start="165" name="NT"/>
+                    <label end="170" start="168" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/09/2005 08:49:20 PST Wed" status="MANUAL" ID="6521999">
+                <layer rank="1" name="Target">
+                    <label cBy="Pam" end="59" start="50" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="Pam" feID="2094" end="48" start="41" name="Patient"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="48" start="41" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="48" start="41" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="175" docID="25743" sentNo="1" paragNo="2" aPos="0" ID="4217205">
+            <text>JOHANNESBURG - After four days in the hospital battling a lung infection , former President Nelson Mandela of South Africa `` is responding better to treatment , '' President Jacob Zuma told Parliament in Cape Town on Wednesday .</text>
+            <annotationSet cDate="06/03/2016 05:15:25 PDT Fri" status="UNANN" ID="6774126">
+                <layer rank="1" name="PENN">
+                    <label end="11" start="0" name="NP"/>
+                    <label end="13" start="13" name=":"/>
+                    <label end="19" start="15" name="in"/>
+                    <label end="24" start="21" name="cd"/>
+                    <label end="29" start="26" name="nns"/>
+                    <label end="32" start="31" name="in"/>
+                    <label end="36" start="34" name="dt"/>
+                    <label end="45" start="38" name="nn"/>
+                    <label end="54" start="47" name="VVG"/>
+                    <label end="56" start="56" name="dt"/>
+                    <label end="61" start="58" name="nn"/>
+                    <label end="71" start="63" name="nn"/>
+                    <label end="73" start="73" name=","/>
+                    <label end="80" start="75" name="jj"/>
+                    <label end="90" start="82" name="NP"/>
+                    <label end="97" start="92" name="NP"/>
+                    <label end="105" start="99" name="NP"/>
+                    <label end="108" start="107" name="in"/>
+                    <label end="114" start="110" name="NP"/>
+                    <label end="121" start="116" name="NP"/>
+                    <label end="124" start="123" name="``"/>
+                    <label end="127" start="126" name="VBZ"/>
+                    <label end="138" start="129" name="VVG"/>
+                    <label end="145" start="140" name="rbr"/>
+                    <label end="148" start="147" name="to"/>
+                    <label end="158" start="150" name="nn"/>
+                    <label end="160" start="160" name=","/>
+                    <label end="163" start="162" name="''"/>
+                    <label end="173" start="165" name="NP"/>
+                    <label end="179" start="175" name="NP"/>
+                    <label end="184" start="181" name="NP"/>
+                    <label end="189" start="186" name="VVD"/>
+                    <label end="200" start="191" name="NP"/>
+                    <label end="203" start="202" name="in"/>
+                    <label end="208" start="205" name="NP"/>
+                    <label end="213" start="210" name="NP"/>
+                    <label end="216" start="215" name="in"/>
+                    <label end="226" start="218" name="NP"/>
+                    <label end="228" start="228" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="11" start="0" name="location"/>
+                    <label end="105" start="92" name="person"/>
+                    <label end="121" start="110" name="location"/>
+                    <label end="184" start="175" name="person"/>
+                    <label end="200" start="191" name="organization"/>
+                    <label end="213" start="205" name="location"/>
+                    <label end="226" start="218" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="11" start="0" name="NT"/>
+                    <label end="13" start="13" name="NT"/>
+                    <label end="24" start="21" name="NT"/>
+                    <label end="32" start="31" name="NT"/>
+                    <label end="36" start="34" name="NT"/>
+                    <label end="56" start="56" name="NT"/>
+                    <label end="73" start="73" name="NT"/>
+                    <label end="97" start="92" name="NT"/>
+                    <label end="105" start="99" name="NT"/>
+                    <label end="108" start="107" name="NT"/>
+                    <label end="114" start="110" name="NT"/>
+                    <label end="121" start="116" name="NT"/>
+                    <label end="124" start="123" name="NT"/>
+                    <label end="127" start="126" name="NT"/>
+                    <label end="148" start="147" name="NT"/>
+                    <label end="160" start="160" name="NT"/>
+                    <label end="163" start="162" name="NT"/>
+                    <label end="179" start="175" name="NT"/>
+                    <label end="184" start="181" name="NT"/>
+                    <label end="200" start="191" name="NT"/>
+                    <label end="203" start="202" name="NT"/>
+                    <label end="208" start="205" name="NT"/>
+                    <label end="213" start="210" name="NT"/>
+                    <label end="216" start="215" name="NT"/>
+                    <label end="226" start="218" name="NT"/>
+                    <label end="228" start="228" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/04/2016 01:43:03 PDT Sat" status="MANUAL" ID="6774148">
+                <layer rank="1" name="Target">
+                    <label cBy="CFB" end="71" start="63" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CFB" feID="2095" end="61" start="58" name="Body_part"/>
+                    <label cBy="CFB" feID="9687" end="71" start="63" name="Ailment"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="61" start="58" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="61" start="58" name="N"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

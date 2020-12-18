@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="hold.v" ID="13436" frame="Defending" frameID="1330" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Jerusalem" name="HistoryOfJerusalem" ID="23647"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="assail" name="Assailant"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="def" name="Defender"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Wep" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="sou" name="Location_of_assailant"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Extra-Thematic" abbrev="Loc" name="Location_of_protagonist"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="vic" name="Victim"/>
+        </frame>
+    </header>
+    <definition>FN: defend, especially a fortified area.</definition>
+    <lexeme POS="V" name="hold"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Assailant"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Assailant"/>
+                <annoSet ID="6539206"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Defender"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Defender"/>
+                <annoSet ID="6539206"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Victim"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Victim"/>
+                <annoSet ID="6539206"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Assailant"/>
+            <FE name="Defender"/>
+            <FE name="Victim"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Assailant"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Defender"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Victim"/>
+                <annoSet ID="6539206"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23647" sentNo="1" paragNo="22" aPos="0" ID="4100399">
+            <text>The Christians , however , could not hold the city .</text>
+            <annotationSet cDate="09/29/2006 11:01:12 PDT Fri" status="UNANN" ID="6538479">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="13" start="4" name="nns"/>
+                    <label end="15" start="15" name=","/>
+                    <label end="23" start="17" name="rb"/>
+                    <label end="25" start="25" name=","/>
+                    <label end="31" start="27" name="md"/>
+                    <label end="35" start="33" name="rb"/>
+                    <label end="40" start="37" name="VV"/>
+                    <label end="44" start="42" name="dt"/>
+                    <label end="49" start="46" name="nn"/>
+                    <label end="51" start="51" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="15" start="15" name="NT"/>
+                    <label end="23" start="17" name="NT"/>
+                    <label end="25" start="25" name="NT"/>
+                    <label end="31" start="27" name="NT"/>
+                    <label end="35" start="33" name="NT"/>
+                    <label end="44" start="42" name="NT"/>
+                    <label end="51" start="51" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/06/2006 01:43:45 PST Mon" status="MANUAL" ID="6539206">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="40" start="37" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="7541" end="13" start="0" name="Defender"/>
+                    <label cBy="KmG" feID="7552" end="49" start="42" name="Victim"/>
+                    <label cBy="KmG" feID="7543" itype="INI" name="Assailant"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="13" start="0" name="Ext"/>
+                    <label end="49" start="42" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="13" start="0" name="NP"/>
+                    <label end="49" start="42" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

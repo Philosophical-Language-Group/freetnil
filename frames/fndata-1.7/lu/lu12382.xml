@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Item_2" POS="A" name="biocompatible.a" ID="12382" frame="Compatibility" frameID="360" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Biological" name="Iran_Biological" ID="23513"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Items" name="Items"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Item-1" name="Item_1"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Item-2" name="Item_2"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Prmtr" name="Parameter"/>
+        </frame>
+    </header>
+    <definition>FN: able to be absorbed by living tissue without causing adverse effects, e.g., by releasing toxins.</definition>
+    <lexeme POS="A" name="biocompatible"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Item_1"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Item_1"/>
+                <annoSet ID="6534427"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Item_2"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Item_2"/>
+                <annoSet ID="6534427"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Item_1"/>
+            <FE name="Item_2"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Item_1"/>
+                <valenceUnit GF="" PT="INI" FE="Item_2"/>
+                <annoSet ID="6534427"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23513" sentNo="3" paragNo="37" aPos="0" ID="4096978">
+            <text>This laboratory is especially active in the area of polymeric materials with the objective of modifying the physical , chemical , biological , and mechanical properties of polymeric materials to render them biocompatible .</text>
+            <annotationSet cDate="02/25/2005 12:37:41 PST Fri" status="UNANN" ID="6522643">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="14" start="5" name="nn"/>
+                    <label end="17" start="16" name="VBZ"/>
+                    <label end="28" start="19" name="rb"/>
+                    <label end="35" start="30" name="jj"/>
+                    <label end="38" start="37" name="in"/>
+                    <label end="42" start="40" name="dt"/>
+                    <label end="47" start="44" name="nn"/>
+                    <label end="50" start="49" name="in"/>
+                    <label end="60" start="52" name="jj"/>
+                    <label end="70" start="62" name="nns"/>
+                    <label end="75" start="72" name="in"/>
+                    <label end="79" start="77" name="dt"/>
+                    <label end="89" start="81" name="nn"/>
+                    <label end="92" start="91" name="in"/>
+                    <label end="102" start="94" name="VVG"/>
+                    <label end="106" start="104" name="dt"/>
+                    <label end="115" start="108" name="jj"/>
+                    <label end="117" start="117" name=","/>
+                    <label end="126" start="119" name="jj"/>
+                    <label end="128" start="128" name=","/>
+                    <label end="139" start="130" name="jj"/>
+                    <label end="141" start="141" name=","/>
+                    <label end="145" start="143" name="cc"/>
+                    <label end="156" start="147" name="jj"/>
+                    <label end="167" start="158" name="nns"/>
+                    <label end="170" start="169" name="in"/>
+                    <label end="180" start="172" name="jj"/>
+                    <label end="190" start="182" name="nns"/>
+                    <label end="193" start="192" name="to"/>
+                    <label end="200" start="195" name="VV"/>
+                    <label end="205" start="202" name="PP"/>
+                    <label end="219" start="207" name="jj"/>
+                    <label end="221" start="221" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="42" start="40" name="NT"/>
+                    <label end="50" start="49" name="NT"/>
+                    <label end="75" start="72" name="NT"/>
+                    <label end="79" start="77" name="NT"/>
+                    <label end="92" start="91" name="NT"/>
+                    <label end="106" start="104" name="NT"/>
+                    <label end="117" start="117" name="NT"/>
+                    <label end="128" start="128" name="NT"/>
+                    <label end="141" start="141" name="NT"/>
+                    <label end="145" start="143" name="NT"/>
+                    <label end="170" start="169" name="NT"/>
+                    <label end="193" start="192" name="NT"/>
+                    <label end="205" start="202" name="NT"/>
+                    <label end="221" start="221" name="NT"/>
+                    <label end="17" start="16" name="NT"/>
+                    <label end="28" start="19" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="05/01/2006 05:46:24 PDT Mon" status="MANUAL" ID="6534427">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="219" start="207" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="3191" end="205" start="202" name="Item_1"/>
+                    <label cBy="RLG" feID="3192" itype="INI" name="Item_2"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="205" start="202" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="205" start="202" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Add_Annotation" POS="V" name="decontaminate.v" ID="13213" frame="Emptying" frameID="58" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp=2459" name="bncp=2459" ID="17517"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agt" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="Cause" name="Cause"/>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Containing_event"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="000000" bgColor="1E90FF" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="Goal" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Inst" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Path" name="Path"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="00008B" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="Result" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Src" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Thm" name="Theme"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: remove dangerous substances from.</definition>
+    <lexeme POS="V" name="decontaminate"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Agent"/>
+                <annoSet ID="6565936"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Theme"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Theme"/>
+                <annoSet ID="6565936"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Theme"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Agent"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Theme"/>
+                <annoSet ID="6565936"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-object-(1)">
+        <sentence corpID="111" docID="17517" sentNo="2" paragNo="405" aPos="0" ID="4108965">
+            <text>The challenges are : decontaminating blood supplies , informing people and lack of resources .</text>
+            <annotationSet cDate="06/01/2011 06:13:22 PDT Wed" status="UNANN" ID="6565935">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="13" start="4" name="nns"/>
+                    <label end="17" start="15" name="vbp"/>
+                    <label end="19" start="19" name=":"/>
+                    <label end="35" start="21" name="VVG"/>
+                    <label end="41" start="37" name="nn"/>
+                    <label end="50" start="43" name="nns"/>
+                    <label end="52" start="52" name=","/>
+                    <label end="62" start="54" name="VVG"/>
+                    <label end="69" start="64" name="nns"/>
+                    <label end="73" start="71" name="cc"/>
+                    <label end="78" start="75" name="nn"/>
+                    <label end="81" start="80" name="in"/>
+                    <label end="91" start="83" name="nns"/>
+                    <label end="93" start="93" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="06/01/2011 06:13:23 PDT Wed" status="MANUAL" ID="6565936">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="35" start="21" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="249" end="50" start="37" name="Theme"/>
+                    <label cBy="MLC" feID="248" itype="CNI" name="Agent"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="50" start="37" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="50" start="37" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="02-modifier-(1)"/>
+    <subCorpus name="03-and/or-(1)"/>
+    <subCorpus name="04-other-matched-(1)"/>
+    <subCorpus name="05-other-unmatched-(1)"/>
+</lexUnit>

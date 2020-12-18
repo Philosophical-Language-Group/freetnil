@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="defender.n" ID="13512" frame="Defending" frameID="1330" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Jerusalem" name="HistoryOfJerusalem" ID="23647"/>
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="assail" name="Assailant"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="def" name="Defender"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Extra-Thematic" abbrev="dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Wep" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="sou" name="Location_of_assailant"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Extra-Thematic" abbrev="Loc" name="Location_of_protagonist"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="vic" name="Victim"/>
+        </frame>
+    </header>
+    <definition>FN: person who defends.</definition>
+    <lexeme POS="N" name="defender"/>
+    <semType name="Agentive_noun" ID="102"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Assailant"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DNI" FE="Assailant"/>
+                <annoSet ID="6539055"/>
+                <annoSet ID="6561856"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Defender"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Defender"/>
+                <annoSet ID="6539055"/>
+                <annoSet ID="6561856"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Victim"/>
+            <pattern total="1">
+                <valenceUnit GF="Gen" PT="Poss" FE="Victim"/>
+                <annoSet ID="6539055"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Assailant"/>
+            <FE name="Defender"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Assailant"/>
+                <valenceUnit GF="" PT="DEN" FE="Defender"/>
+                <annoSet ID="6561856"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Assailant"/>
+            <FE name="Defender"/>
+            <FE name="Victim"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Assailant"/>
+                <valenceUnit GF="" PT="DEN" FE="Defender"/>
+                <valenceUnit GF="Gen" PT="Poss" FE="Victim"/>
+                <annoSet ID="6539055"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23647" sentNo="3" paragNo="15" aPos="0" ID="4100368">
+            <text>At the end , the Roman general Titus laid siege to Jerusalem in a.d. 70 , finally attacking its starved and weakened defenders .</text>
+            <annotationSet cDate="09/29/2006 11:00:52 PDT Fri" status="UNANN" ID="6538448">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="9" start="7" name="nn"/>
+                    <label end="11" start="11" name=","/>
+                    <label end="15" start="13" name="dt"/>
+                    <label end="21" start="17" name="NP"/>
+                    <label end="29" start="23" name="nn"/>
+                    <label end="35" start="31" name="NP"/>
+                    <label end="40" start="37" name="VVD"/>
+                    <label end="46" start="42" name="nn"/>
+                    <label end="49" start="48" name="to"/>
+                    <label end="59" start="51" name="NP"/>
+                    <label end="62" start="61" name="in"/>
+                    <label end="67" start="64" name="NP"/>
+                    <label end="70" start="69" name="cd"/>
+                    <label end="72" start="72" name=","/>
+                    <label end="80" start="74" name="rb"/>
+                    <label end="90" start="82" name="VVG"/>
+                    <label end="94" start="92" name="PP$"/>
+                    <label end="102" start="96" name="VVN"/>
+                    <label end="106" start="104" name="cc"/>
+                    <label end="115" start="108" name="VVN"/>
+                    <label end="125" start="117" name="nns"/>
+                    <label end="127" start="127" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="35" start="31" name="person"/>
+                    <label end="59" start="51" name="location"/>
+                    <label end="70" start="64" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="3" name="NT"/>
+                    <label end="11" start="11" name="NT"/>
+                    <label end="15" start="13" name="NT"/>
+                    <label end="35" start="31" name="NT"/>
+                    <label end="49" start="48" name="NT"/>
+                    <label end="59" start="51" name="NT"/>
+                    <label end="62" start="61" name="NT"/>
+                    <label end="67" start="64" name="NT"/>
+                    <label end="70" start="69" name="NT"/>
+                    <label end="72" start="72" name="NT"/>
+                    <label end="94" start="92" name="NT"/>
+                    <label end="106" start="104" name="NT"/>
+                    <label end="127" start="127" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="10/25/2006 05:40:34 PDT Wed" status="MANUAL" ID="6539055">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="125" start="117" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="7552" end="94" start="92" name="Victim"/>
+                    <label cBy="KmG" feID="7541" end="125" start="117" name="Defender"/>
+                    <label cBy="KmG" feID="7543" itype="DNI" name="Assailant"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="94" start="92" name="Gen"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="94" start="92" name="Poss"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23771" sentNo="5" paragNo="92" aPos="0" ID="4106107">
+            <text>The Dutch sent an invasion flotilla to Macau in 1622 , but the defenders triumphed .</text>
+            <annotationSet cDate="07/25/2008 01:19:47 PDT Fri" status="UNANN" ID="6555197">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="8" start="4" name="NPS"/>
+                    <label end="13" start="10" name="VVD"/>
+                    <label end="16" start="15" name="dt"/>
+                    <label end="25" start="18" name="nn"/>
+                    <label end="34" start="27" name="nn"/>
+                    <label end="37" start="36" name="to"/>
+                    <label end="43" start="39" name="NP"/>
+                    <label end="46" start="45" name="in"/>
+                    <label end="51" start="48" name="cd"/>
+                    <label end="53" start="53" name=","/>
+                    <label end="57" start="55" name="cc"/>
+                    <label end="61" start="59" name="dt"/>
+                    <label end="71" start="63" name="nns"/>
+                    <label end="81" start="73" name="VVD"/>
+                    <label end="83" start="83" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="43" start="39" name="location"/>
+                    <label end="51" start="48" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="8" start="4" name="NT"/>
+                    <label end="16" start="15" name="NT"/>
+                    <label end="37" start="36" name="NT"/>
+                    <label end="43" start="39" name="NT"/>
+                    <label end="51" start="48" name="NT"/>
+                    <label end="53" start="53" name="NT"/>
+                    <label end="61" start="59" name="NT"/>
+                    <label end="83" start="83" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/31/2011 01:33:52 PST Mon" status="MANUAL" ID="6561856">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="71" start="63" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="7541" end="71" start="63" name="Defender"/>
+                    <label cBy="AlK" feID="7543" itype="DNI" name="Assailant"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

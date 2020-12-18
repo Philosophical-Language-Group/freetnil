@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="ADV" name="regularly.adv" ID="14615" frame="Frequency" frameID="80" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Greece" name="HistoryOfGreece" ID="23692"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Core" abbrev="att" name="Attribute"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Evnt" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="gro" name="Group"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Int" name="Interval"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="rat" name="Rate"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Core" abbrev="sal" name="Salient_entity"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="T_span" name="Time_span"/>
+        </frame>
+    </header>
+    <definition>FN: with regular frequency</definition>
+    <lexeme POS="ADV" name="regularly"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPbrst" FE="Event"/>
+                <annoSet ID="6549742"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPbrst" FE="Event"/>
+                <annoSet ID="6549742"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23692" sentNo="2" paragNo="4" aPos="0" ID="4101177">
+            <text>The major changes were not to daily tasks and routines , but to the political power base , which changed regularly and not necessarily peacefully throughout the ages .</text>
+            <annotationSet cDate="03/12/2007 02:50:53 PDT Mon" status="UNANN" ID="6541970">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="8" start="4" name="jj"/>
+                    <label end="16" start="10" name="nns"/>
+                    <label end="21" start="18" name="VBD"/>
+                    <label end="25" start="23" name="rb"/>
+                    <label end="28" start="27" name="to"/>
+                    <label end="34" start="30" name="jj"/>
+                    <label end="40" start="36" name="nns"/>
+                    <label end="44" start="42" name="cc"/>
+                    <label end="53" start="46" name="nns"/>
+                    <label end="55" start="55" name=","/>
+                    <label end="59" start="57" name="cc"/>
+                    <label end="62" start="61" name="to"/>
+                    <label end="66" start="64" name="dt"/>
+                    <label end="76" start="68" name="jj"/>
+                    <label end="82" start="78" name="nn"/>
+                    <label end="87" start="84" name="nn"/>
+                    <label end="89" start="89" name=","/>
+                    <label end="95" start="91" name="wdt"/>
+                    <label end="103" start="97" name="VVD"/>
+                    <label end="113" start="105" name="rb"/>
+                    <label end="117" start="115" name="cc"/>
+                    <label end="121" start="119" name="rb"/>
+                    <label end="133" start="123" name="rb"/>
+                    <label end="144" start="135" name="rb"/>
+                    <label end="155" start="146" name="in"/>
+                    <label end="159" start="157" name="dt"/>
+                    <label end="164" start="161" name="nns"/>
+                    <label end="166" start="166" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="21" start="18" name="NT"/>
+                    <label end="25" start="23" name="NT"/>
+                    <label end="28" start="27" name="NT"/>
+                    <label end="44" start="42" name="NT"/>
+                    <label end="55" start="55" name="NT"/>
+                    <label end="59" start="57" name="NT"/>
+                    <label end="62" start="61" name="NT"/>
+                    <label end="66" start="64" name="NT"/>
+                    <label end="89" start="89" name="NT"/>
+                    <label end="95" start="91" name="NT"/>
+                    <label end="117" start="115" name="NT"/>
+                    <label end="121" start="119" name="NT"/>
+                    <label end="133" start="123" name="NT"/>
+                    <label end="155" start="146" name="NT"/>
+                    <label end="159" start="157" name="NT"/>
+                    <label end="166" start="166" name="NT"/>
+                    <label end="53" start="46" name="Nonrelational"/>
+                    <label end="76" start="68" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/02/2007 01:44:37 PDT Fri" status="MANUAL" ID="6549742">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="113" start="105" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="371" end="103" start="97" name="Event"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="103" start="97" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="103" start="97" name="VPbrst"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

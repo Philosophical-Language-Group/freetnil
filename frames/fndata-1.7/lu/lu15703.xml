@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="model.n" ID="15703" frame="Exemplar" frameID="2252" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Election Victory" name="ElectionVictory" ID="23010"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="" name="Domain"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="" name="Instance"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="" name="Instance_prop"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Type"/>
+        </frame>
+    </header>
+    <definition>FN: a member of a category other members (should) strive to be similar to</definition>
+    <lexeme POS="N" name="model"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Instance"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="2nd" FE="Instance"/>
+                <annoSet ID="6773015"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Type"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Type"/>
+                <annoSet ID="6773015"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Instance"/>
+            <FE name="Type"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="2nd" FE="Instance"/>
+                <valenceUnit GF="" PT="DEN" FE="Type"/>
+                <annoSet ID="6773015"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23010" sentNo="2" paragNo="7" aPos="0" ID="2824291">
+            <text>They , as well as numerous Latin American and East European countries that hope to adopt elements of the Spanish model , are supporting the direction Spain is taking .</text>
+            <annotationSet cDate="02/05/2004 08:29:48 PST Thu" status="UNANN" ID="4528286">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="PP"/>
+                    <label end="5" start="5" name=","/>
+                    <label end="8" start="7" name="rb"/>
+                    <label end="13" start="10" name="rb"/>
+                    <label end="16" start="15" name="in"/>
+                    <label end="25" start="18" name="jj"/>
+                    <label end="31" start="27" name="NP"/>
+                    <label end="40" start="33" name="NP"/>
+                    <label end="44" start="42" name="cc"/>
+                    <label end="49" start="46" name="NP"/>
+                    <label end="58" start="51" name="NP"/>
+                    <label end="68" start="60" name="nns"/>
+                    <label end="73" start="70" name="wdt"/>
+                    <label end="78" start="75" name="VVP"/>
+                    <label end="81" start="80" name="to"/>
+                    <label end="87" start="83" name="VV"/>
+                    <label end="96" start="89" name="nns"/>
+                    <label end="99" start="98" name="in"/>
+                    <label end="103" start="101" name="dt"/>
+                    <label end="111" start="105" name="jj"/>
+                    <label end="117" start="113" name="nn"/>
+                    <label end="119" start="119" name=","/>
+                    <label end="123" start="121" name="vbp"/>
+                    <label end="134" start="125" name="VVG"/>
+                    <label end="138" start="136" name="dt"/>
+                    <label end="148" start="140" name="nn"/>
+                    <label end="154" start="150" name="NP"/>
+                    <label end="157" start="156" name="VBZ"/>
+                    <label end="164" start="159" name="VVG"/>
+                    <label end="166" start="166" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="68" start="27" name="GPE"/>
+                    <label end="154" start="150" name="GPE"/>
+                    <label end="111" start="105" name="GPE"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="5" name="NT"/>
+                    <label end="8" start="7" name="NT"/>
+                    <label end="13" start="10" name="NT"/>
+                    <label end="81" start="80" name="NT"/>
+                    <label end="119" start="119" name="NT"/>
+                    <label end="123" start="121" name="NT"/>
+                    <label end="157" start="156" name="NT"/>
+                    <label end="166" start="166" name="NT"/>
+                    <label end="3" start="0" name="NT"/>
+                    <label end="16" start="15" name="NT"/>
+                    <label end="31" start="27" name="NT"/>
+                    <label end="40" start="33" name="NT"/>
+                    <label end="44" start="42" name="NT"/>
+                    <label end="49" start="46" name="NT"/>
+                    <label end="58" start="51" name="NT"/>
+                    <label end="73" start="70" name="NT"/>
+                    <label end="99" start="98" name="NT"/>
+                    <label end="103" start="101" name="NT"/>
+                    <label end="138" start="136" name="NT"/>
+                    <label end="154" start="150" name="NT"/>
+                    <label end="111" start="105" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="02/23/2016 07:24:21 PST Tue" status="MANUAL" ID="6773015">
+                <layer rank="1" name="Target">
+                    <label cBy="HPh" end="117" start="113" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="HPh" feID="13734" end="117" start="113" name="Type"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+                <layer rank="2" name="FE">
+                    <label cBy="HPh" feID="13733" end="117" start="105" name="Instance"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

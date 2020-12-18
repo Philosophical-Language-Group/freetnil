@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Direction" POS="ADV" name="afterwards.adv" ID="10919" frame="Time_vector" frameID="379" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Loma Prieta" name="LomaPrieta" ID="23013"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Direction" name="Direction"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Distance" name="Distance"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Core" abbrev="Evt" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="lan" name="Landmark_event"/>
+        </frame>
+    </header>
+    <definition>COD: at a later or future time.</definition>
+    <lexeme POS="ADV" name="afterwards"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Direction"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Direction"/>
+                <annoSet ID="4531229"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Event"/>
+                <annoSet ID="4531229"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Landmark_event"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Landmark_event"/>
+                <annoSet ID="4531229"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Direction"/>
+            <FE name="Event"/>
+            <FE name="Landmark_event"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="--" FE="Direction"/>
+                <valenceUnit GF="Dep" PT="NP" FE="Event"/>
+                <valenceUnit GF="" PT="DNI" FE="Landmark_event"/>
+                <annoSet ID="4531229"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23013" sentNo="3" paragNo="12" aPos="0" ID="2824455">
+            <text>Many hairline cracks in the concrete slabs afterwards .</text>
+            <annotationSet cDate="02/05/2004 08:30:44 PST Thu" status="UNANN" ID="4528450">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="jj"/>
+                    <label end="12" start="5" name="nn"/>
+                    <label end="19" start="14" name="nns"/>
+                    <label end="22" start="21" name="in"/>
+                    <label end="26" start="24" name="dt"/>
+                    <label end="35" start="28" name="jj"/>
+                    <label end="41" start="37" name="nns"/>
+                    <label end="52" start="43" name="rb"/>
+                    <label end="54" start="54" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="54" start="54" name="NT"/>
+                    <label end="26" start="24" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/08/2010 11:51:34 PDT Thu" status="MANUAL" ID="4531229">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="52" start="43" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="4832" end="41" start="0" name="Event"/>
+                    <label cBy="AlK" feID="3398" end="52" start="43" name="Direction"/>
+                    <label cBy="AlK" feID="3396" itype="DNI" name="Landmark_event"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="41" start="0" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="41" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adv"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

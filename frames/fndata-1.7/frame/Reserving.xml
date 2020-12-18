@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="RyC" cDate="10/25/2011 01:03:06 PDT Tue" name="Reserving" ID="2679" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definition>&lt;def-root&gt;In this frame, a &lt;fen&gt;Booker&lt;/fen&gt; brings about a situation where an &lt;fen&gt;Organization&lt;/fen&gt; plans to provide &lt;fen&gt;Services&lt;/fen&gt; to a &lt;fen&gt;Client&lt;/fen&gt; at a particular &lt;fen&gt;Scheduled_time&lt;/fen&gt;.  The &lt;fen&gt;Organization&lt;/fen&gt; has authority over when &lt;fen&gt;Services&lt;/fen&gt; are provided to whom.  The &lt;fen&gt;Booker&lt;/fen&gt; usually has to communicate and negotiate with the &lt;fen&gt;Organization&lt;/fen&gt; to plan the &lt;fen&gt;Services&lt;/fen&gt; for a mutually agreeable &lt;fen&gt;Scheduled_time&lt;/fen&gt;.  Usually, there is a &lt;fen&gt;Payment&lt;/fen&gt; as well.
+
+&lt;ex&gt;&lt;fex name="Booker"&gt;We&lt;/fex&gt; can &lt;t&gt;book&lt;/t&gt; &lt;fex name="Client"&gt;you&lt;/fex&gt; &lt;fex name="Services"&gt;a boatride on the Somme or a special tour of the Louvre&lt;/fex&gt; .&lt;/ex&gt;
+&lt;ex&gt;&lt;fex name="Time"&gt;Now&lt;/fex&gt; &lt;t&gt;booking&lt;/t&gt; &lt;fex name="Services"&gt;trips to Cancun&lt;/fex&gt;&lt;fex name="Payment"&gt;for only $50&lt;/fex&gt; ! &lt;fex name="Booker"&gt;CNI&lt;/fex&gt; &lt;fex name="Client"&gt;INI&lt;/fex&gt;&lt;/ex&gt;
+
+
+In many cases, the &lt;fen&gt;Booker&lt;/fen&gt; may be the same as the &lt;fen&gt;Client&lt;/fen&gt; or the &lt;fen&gt;Organization&lt;/fen&gt;.
+&lt;ex&gt;&lt;/ex&gt;
+When the &lt;fen&gt;Booker&lt;/fen&gt; is also the &lt;fen&gt;Organization&lt;/fen&gt; providing the service, as in the first sentence below, we annotate &lt;fen&gt;Booker&lt;/fen&gt; on the first layer and &lt;fen&gt;Organization&lt;/fen&gt; on the second.  Realizing that the &lt;fen&gt;Booker&lt;/fen&gt; is also the &lt;fen&gt;Organization&lt;/fen&gt; providing the service is an inference, as we can see by comparing the following two examples.  In the first, it seems clear that the hotel is providing the service.  In the second, it is clear that the hotel is not providing the service.
+
+&lt;ex&gt;&lt;fex name="Booker"&gt;The hotel&lt;/fex&gt; gave &lt;fex name="Client"&gt;us&lt;/fex&gt; a &lt;t&gt;reservation&lt;/t&gt; &lt;fex name="Services"&gt;for two nights&lt;/fex&gt; .&lt;/ex&gt;
+&lt;ex&gt;&lt;fex name="Booker"&gt;The hotel&lt;/fex&gt; &lt;m&gt;gave&lt;/m&gt; &lt;fex name="Client"&gt;us&lt;/fex&gt; a &lt;t&gt;reservation&lt;/t&gt; &lt;fex name="Services"&gt;for two nights&lt;/fex&gt; &lt;fex name="Organization"&gt;at the adjacent hotel&lt;/fex&gt; &lt;fex name="Purpose"&gt;to make up for screwing up our original booking&lt;/fex&gt; .&lt;/ex&gt;
+
+&lt;ex&gt;&lt;/ex&gt;
+In the frequent case where the &lt;fen&gt;Booker&lt;/fen&gt; is the same as the &lt;fen&gt;Client&lt;/fen&gt;, we annotate &lt;fen&gt;Booker&lt;/fen&gt; on the first layer and &lt;fen&gt;Client&lt;/fen&gt; on the second.  &lt;fen&gt;Client&lt;/fen&gt; is on the second layer since, in most cases, it is an inference that may be wrong.  For example, in the following sentence, the annotation indicates that Patrick is the &lt;fen&gt;Client&lt;/fen&gt;.  However, it is also possible that Patrick is reserving a table for a party that doesn't even include himself:
+
+&lt;ex&gt;&lt;fex name="Booker"&gt;Patrick&lt;/fex&gt; tried to &lt;t&gt;reserve&lt;/t&gt; &lt;fex name="Services"&gt;a table&lt;/fex&gt; &lt;fex name="Organization"&gt;at Dorsia&lt;/fex&gt; &lt;fex name="Scheduled_time"&gt; for 7:00&lt;/fex&gt; .&lt;/ex&gt;
+&lt;ex&gt;&lt;fex name="Client"&gt;Patrick&lt;/fex&gt; tried to &lt;t&gt;reserve&lt;/t&gt; a table at Dorsia for 7:00 .&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="RyC" cDate="10/25/2011 01:11:53 PDT Tue" abbrev="" name="Client" ID="15261">
+        <definition>&lt;def-root&gt;The entity that is intended to receive the &lt;fen&gt;Services&lt;/fen&gt; of the &lt;fen&gt;Organization&lt;/fen&gt;.
+
+
+&lt;ex&gt;Phil Collins &lt;t&gt;booked&lt;/t&gt; his &lt;fex name="Client"&gt;cockatoo&lt;/fex&gt; into a $350-a-night pet hotel.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Core" cBy="RyC" cDate="10/25/2011 01:12:42 PDT Tue" abbrev="" name="Services" ID="15262">
+        <definition>&lt;def-root&gt;The goods or labor that the &lt;fen&gt;Client&lt;/fen&gt; requests the &lt;fen&gt;Organization&lt;/fen&gt; preserve for future consumption or rendering.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Core" cBy="RyC" cDate="10/25/2011 01:13:17 PDT Tue" abbrev="" name="Organization" ID="15263">
+        <definition>&lt;def-root&gt;The entity that enters into its records the request of the &lt;fen&gt;Client&lt;/fen&gt; to retain &lt;fen&gt;Services&lt;/fen&gt; in the future.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="9400D3" fgColor="FFFFFF" coreType="Core" cBy="RyC" cDate="10/25/2011 01:20:52 PDT Tue" abbrev="" name="Scheduled_time" ID="15265">
+        <definition>&lt;def-root&gt;The future point in time when the &lt;fen&gt;Client&lt;/fen&gt; arranges for the &lt;fen&gt;Organization&lt;/fen&gt; to provide &lt;fen&gt;Services&lt;/fen&gt;.
+
+&lt;ex&gt;She &lt;t&gt;reserved&lt;/t&gt; the room for the meeting &lt;fex name="Scheduled_time"&gt;for Tuesday&lt;/fex&gt; .&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="7FFF00" fgColor="000000" coreType="Core" cBy="RyC" cDate="10/27/2011 12:33:43 PDT Thu" abbrev="" name="Booker" ID="15269">
+        <definition>&lt;def-root&gt;The entity that contacts the &lt;fen&gt;Organization&lt;/fen&gt; directly.  In many if not most cases, a &lt;fen&gt;Booker&lt;/fen&gt; is also a &lt;fen&gt;Client&lt;/fen&gt;, but the roles may also be separated, e.g. a travel agent.
+
+&lt;ex&gt;The hotel reserved two rooms for me . &lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="800080" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="09/15/2016 05:55:31 PDT Thu" abbrev="" name="Manner" ID="16910">
+        <definition>&lt;def-root&gt;Any description of the event as a whole ("the same way") or a characteristic of the &lt;fen&gt;Booker&lt;/fen&gt; during the action that holistically affects the event ("sloppily").&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="d0d0d0" fgColor="000000" coreType="Peripheral" cBy="MJE" cDate="09/15/2016 05:56:50 PDT Thu" abbrev="" name="Place" ID="16911">
+        <definition>&lt;def-root&gt;The location the &lt;fen&gt;Booker&lt;/fen&gt; performs the action.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FF69B4" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="09/15/2016 05:58:15 PDT Thu" abbrev="" name="Purpose" ID="16912">
+        <definition>&lt;def-root&gt;The situation that the &lt;fen&gt;Booker&lt;/fen&gt; intends to bring about by reserving.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="00BFFF" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="09/15/2016 06:03:55 PDT Thu" abbrev="" name="Means" ID="16913">
+        <definition>&lt;def-root&gt;An action or methodology used by the &lt;fen&gt;Booker&lt;/fen&gt; to bring the reservation about.&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FFA500" fgColor="FFFFFF" coreType="Peripheral" cBy="MJE" cDate="09/15/2016 06:18:34 PDT Thu" abbrev="" name="Time" ID="16914">
+        <definition>&lt;def-root&gt;The time at which the reserving event takes place.
+
+&lt;ex&gt;I booked the room for Monday &lt;fex name="Time"&gt;only on Tuesday&lt;/fex&gt; .&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="1E90FF" fgColor="FFFFFF" coreType="Extra-Thematic" cBy="MJE" cDate="09/15/2016 06:47:41 PDT Thu" abbrev="" name="Payment" ID="16915">
+        <definition>&lt;def-root&gt;The amount paid to the &lt;fen&gt;Organization&lt;/fen&gt; in exchange for the &lt;fen&gt;Services&lt;/fen&gt;.&lt;/def-root&gt;</definition>
+    </FE>
+    <frameRelation type="Inherits from">
+        <relatedFrame ID="2838">Scheduling</relatedFrame>
+    </frameRelation>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses"/>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="Created" POS="V" name="reserve.v" ID="16749" lemmaID="32824" cBy="RyC" cDate="10/25/2011 02:08:23 PDT Tue">
+        <definition>COD: arrange for (a seat, ticket, etc.) to be kept for the use of a particular person.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="reserve"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="book.v" ID="16750" lemmaID="4157" cBy="RyC" cDate="10/25/2011 02:10:56 PDT Tue">
+        <definition>COD: reserve (accomodation, a ticket, etc.)</definition>
+        <sentenceCount annotated="35" total="37"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="book"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="V" name="hold.v" ID="16751" lemmaID="45669" cBy="RyC" cDate="10/25/2011 02:15:08 PDT Tue">
+        <definition>COD: reserve</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="hold"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="reservation.n" ID="16752" lemmaID="32822" cBy="RyC" cDate="10/25/2011 02:15:33 PDT Tue">
+        <definition>COD: the action of reserving. &gt; an arrangement whereby something has been reserved.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="reservation"/>
+    </lexUnit>
+    <lexUnit status="Created" POS="N" name="booking.n" ID="18809" lemmaID="4165" cBy="MJE" cDate="09/15/2016 07:14:38 PDT Thu">
+        <definition>FN: arrangement to receive a service at a particular time.</definition>
+        <sentenceCount annotated="0" total="0"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="N" name="booking"/>
+    </lexUnit>
+</frame>

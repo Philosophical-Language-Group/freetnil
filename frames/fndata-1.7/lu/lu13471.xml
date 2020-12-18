@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="shorten.v" ID="13471" frame="Change_event_duration" frameID="1770" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="CNN_AARONBROWN_ENG_20051101_215800.partial-NEW" name="CNN_AARONBROWN_ENG_20051101_215800.partial-NEW" ID="23733"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="age" name="Agent"/>
+            <FE fgColor="00008B" bgColor="d0d0d0" type="Core" abbrev="cau" name="Cause"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Core" abbrev="eve" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="ini" name="Initial_duration"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="man" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="mea" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="new" name="New_duration"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: decrease the duration of something.</definition>
+    <lexeme POS="V" name="shorten"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Cause"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cause"/>
+                <annoSet ID="6550375"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="Sinterrog" FE="Event"/>
+                <annoSet ID="6550375"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cause"/>
+            <FE name="Event"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cause"/>
+                <valenceUnit GF="Dep" PT="Sinterrog" FE="Event"/>
+                <annoSet ID="6550375"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23733" sentNo="6" paragNo="36" aPos="0" ID="4102469">
+            <text>They are antiviral drugs uh designed to basically shorten uh how bad the flu might effect you uh try to lessen its impact .</text>
+            <annotationSet cDate="08/17/2007 03:25:01 PDT Fri" status="UNANN" ID="6546251">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="PP"/>
+                    <label end="7" start="5" name="vbp"/>
+                    <label end="17" start="9" name="jj"/>
+                    <label end="23" start="19" name="nns"/>
+                    <label end="26" start="25" name="uh"/>
+                    <label end="35" start="28" name="VVN"/>
+                    <label end="38" start="37" name="to"/>
+                    <label end="48" start="40" name="rb"/>
+                    <label end="56" start="50" name="VV"/>
+                    <label end="59" start="58" name="uh"/>
+                    <label end="63" start="61" name="wrb"/>
+                    <label end="67" start="65" name="jj"/>
+                    <label end="71" start="69" name="dt"/>
+                    <label end="75" start="73" name="nn"/>
+                    <label end="81" start="77" name="md"/>
+                    <label end="88" start="83" name="VV"/>
+                    <label end="92" start="90" name="PP"/>
+                    <label end="95" start="94" name="uh"/>
+                    <label end="99" start="97" name="VV"/>
+                    <label end="102" start="101" name="to"/>
+                    <label end="109" start="104" name="VV"/>
+                    <label end="113" start="111" name="PP$"/>
+                    <label end="120" start="115" name="nn"/>
+                    <label end="122" start="122" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="7" start="5" name="NT"/>
+                    <label end="26" start="25" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="48" start="40" name="NT"/>
+                    <label end="59" start="58" name="NT"/>
+                    <label end="63" start="61" name="NT"/>
+                    <label end="71" start="69" name="NT"/>
+                    <label end="92" start="90" name="NT"/>
+                    <label end="95" start="94" name="NT"/>
+                    <label end="102" start="101" name="NT"/>
+                    <label end="113" start="111" name="NT"/>
+                    <label end="122" start="122" name="NT"/>
+                    <label end="17" start="9" name="Nonrelational"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/07/2007 11:56:35 PST Wed" status="MANUAL" ID="6550375">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="56" start="50" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="10497" end="92" start="61" name="Event"/>
+                    <label cBy="KmG" feID="10498" end="23" start="9" name="Cause"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="92" start="61" name="Dep"/>
+                    <label end="23" start="9" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="92" start="61" name="Sinterrog"/>
+                    <label end="23" start="9" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other">
+                    <label end="23" start="9" name="Ant"/>
+                </layer>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

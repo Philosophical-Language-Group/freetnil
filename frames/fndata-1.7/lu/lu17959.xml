@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="New" POS="PREP" name="over.prep" ID="17959" frame="Distributed_position" frameID="76" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp" name="bncp" ID="421"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="" name="Deixis"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Loc" name="Location"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Region_quantification"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD73" type="Extra-Thematic" abbrev="Sub" name="Subregion"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Extra-Thematic" abbrev="" name="Temporal_profile"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Thm" name="Theme"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: covering</definition>
+    <lexeme POS="PREP" name="over"/>
+    <valences>
+        <governor type="Ctrlr" lemma="dot">
+            <annoSet ID="6719077"/>
+        </governor>
+        <governor type="Ctrlr" lemma="scatter">
+            <annoSet ID="6719028"/>
+        </governor>
+        <FERealization total="2">
+            <FE name="Deixis"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="AJP" FE="Deixis"/>
+                <annoSet ID="6719028"/>
+                <annoSet ID="6719077"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Location"/>
+            <pattern total="3">
+                <valenceUnit GF="Obj" PT="NP" FE="Location"/>
+                <annoSet ID="6716580"/>
+                <annoSet ID="6719028"/>
+                <annoSet ID="6719077"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Theme"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Theme"/>
+                <annoSet ID="6719028"/>
+                <annoSet ID="6719077"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Theme"/>
+                <annoSet ID="6716580"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Deixis"/>
+            <FE name="Location"/>
+            <FE name="Theme"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Deixis"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Location"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Theme"/>
+                <annoSet ID="6719028"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Deixis"/>
+            <FE name="Location"/>
+            <FE name="Theme"/>
+            <FE name="Theme"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Deixis"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Location"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Theme"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Theme"/>
+                <annoSet ID="6719077"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Location"/>
+            <FE name="Theme"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Location"/>
+                <valenceUnit GF="" PT="DNI" FE="Theme"/>
+                <annoSet ID="6716580"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-np-Theme-(1)"/>
+    <subCorpus name="01-gov-AboundWith-(2)">
+        <sentence corpID="111" docID="421" sentNo="3" paragNo="165" aPos="32394548" ID="4188198">
+            <text>Spoon into the prepared baking dish , season with the nutmeg and then sprinkle over the Parmesan .</text>
+            <annotationSet cDate="04/21/2015 12:20:53 PDT Tue" status="UNANN" ID="6716579">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="NP"/>
+                    <label end="9" start="6" name="in"/>
+                    <label end="13" start="11" name="dt"/>
+                    <label end="22" start="15" name="jj"/>
+                    <label end="29" start="24" name="VVG"/>
+                    <label end="34" start="31" name="nn"/>
+                    <label end="36" start="36" name=","/>
+                    <label end="43" start="38" name="nn"/>
+                    <label end="48" start="45" name="in"/>
+                    <label end="52" start="50" name="dt"/>
+                    <label end="59" start="54" name="nn"/>
+                    <label end="63" start="61" name="cc"/>
+                    <label end="68" start="65" name="rb"/>
+                    <label end="77" start="70" name="VVP"/>
+                    <label end="82" start="79" name="in"/>
+                    <label end="86" start="84" name="dt"/>
+                    <label end="95" start="88" name="nn"/>
+                    <label end="97" start="97" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/21/2015 12:20:53 PDT Tue" status="MANUAL" ID="6716580">
+                <layer rank="1" name="Target">
+                    <label cBy="WMcQ" end="82" start="79" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="WMcQ" feID="359" itype="DNI" name="Theme"/>
+                    <label cBy="WMcQ" feID="360" end="95" start="84" name="Location"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="95" start="84" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="95" start="84" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Prep"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="01-deixis-(3)">
+        <sentence corpID="111" docID="421" sentNo="6" paragNo="49" aPos="32205294" ID="4189425">
+            <text>Scattered here and there over the text are frank paraphrases of lines from Virgil , Cicero and Quintilian , and evidence of reliance on the French critics , Boileau and Rapin .</text>
+            <annotationSet cDate="04/23/2015 11:51:24 PDT Thu" status="UNANN" ID="6719027">
+                <layer rank="1" name="PENN">
+                    <label end="8" start="0" name="VVN"/>
+                    <label end="13" start="10" name="rb"/>
+                    <label end="17" start="15" name="cc"/>
+                    <label end="23" start="19" name="rb"/>
+                    <label end="28" start="25" name="in"/>
+                    <label end="32" start="30" name="dt"/>
+                    <label end="37" start="34" name="nn"/>
+                    <label end="41" start="39" name="vbp"/>
+                    <label end="47" start="43" name="jj"/>
+                    <label end="59" start="49" name="nns"/>
+                    <label end="62" start="61" name="in"/>
+                    <label end="68" start="64" name="nns"/>
+                    <label end="73" start="70" name="in"/>
+                    <label end="80" start="75" name="NP"/>
+                    <label end="82" start="82" name=","/>
+                    <label end="89" start="84" name="NP"/>
+                    <label end="93" start="91" name="cc"/>
+                    <label end="104" start="95" name="NP"/>
+                    <label end="106" start="106" name=","/>
+                    <label end="110" start="108" name="cc"/>
+                    <label end="119" start="112" name="nn"/>
+                    <label end="122" start="121" name="in"/>
+                    <label end="131" start="124" name="nn"/>
+                    <label end="134" start="133" name="in"/>
+                    <label end="138" start="136" name="dt"/>
+                    <label end="145" start="140" name="jj"/>
+                    <label end="153" start="147" name="nns"/>
+                    <label end="155" start="155" name=","/>
+                    <label end="163" start="157" name="NP"/>
+                    <label end="167" start="165" name="cc"/>
+                    <label end="173" start="169" name="NP"/>
+                    <label end="175" start="175" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/23/2015 11:51:25 PDT Thu" status="MANUAL" ID="6719028">
+                <layer rank="1" name="Target">
+                    <label cBy="WMcQ" end="28" start="25" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="WMcQ" feID="16384" end="23" start="10" name="Deixis"/>
+                    <label cBy="WMcQ" feID="360" end="37" start="30" name="Location"/>
+                    <label cBy="WMcQ" feID="359" end="104" start="43" name="Theme"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="23" start="10" name="Dep"/>
+                    <label end="37" start="30" name="Obj"/>
+                    <label end="104" start="43" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="23" start="10" name="AJP"/>
+                    <label end="37" start="30" name="NP"/>
+                    <label end="104" start="43" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Prep">
+                    <label end="8" start="0" name="Ctrlr"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="421" sentNo="3" paragNo="374" aPos="94166521" ID="4189450">
+            <text>Clouds of little-crested parrots and rose-breasted cockatoos swarmed upon the woods that were dotted here and there over the grasslands .</text>
+            <annotationSet cDate="04/23/2015 11:51:30 PDT Thu" status="UNANN" ID="6719076">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="nns"/>
+                    <label end="8" start="7" name="in"/>
+                    <label end="23" start="10" name="jj"/>
+                    <label end="31" start="25" name="nns"/>
+                    <label end="35" start="33" name="cc"/>
+                    <label end="49" start="37" name="VVN"/>
+                    <label end="59" start="51" name="nns"/>
+                    <label end="67" start="61" name="VVN"/>
+                    <label end="72" start="69" name="in"/>
+                    <label end="76" start="74" name="dt"/>
+                    <label end="82" start="78" name="nns"/>
+                    <label end="87" start="84" name="wdt"/>
+                    <label end="92" start="89" name="VBD"/>
+                    <label end="99" start="94" name="VVN"/>
+                    <label end="104" start="101" name="rb"/>
+                    <label end="108" start="106" name="cc"/>
+                    <label end="114" start="110" name="rb"/>
+                    <label end="119" start="116" name="in"/>
+                    <label end="123" start="121" name="dt"/>
+                    <label end="134" start="125" name="nns"/>
+                    <label end="136" start="136" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/23/2015 11:51:30 PDT Thu" status="MANUAL" ID="6719077">
+                <layer rank="1" name="Target">
+                    <label cBy="WMcQ" end="119" start="116" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="WMcQ" feID="16384" end="114" start="101" name="Deixis"/>
+                    <label cBy="WMcQ" feID="360" end="134" start="121" name="Location"/>
+                    <label cBy="WMcQ" feID="359" end="82" start="74" name="Theme"/>
+                    <label cBy="WMcQ" feID="359" end="87" start="84" name="Theme"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="114" start="101" name="Dep"/>
+                    <label end="134" start="121" name="Obj"/>
+                    <label end="82" start="74" name="Ext"/>
+                    <label end="87" start="84" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="114" start="101" name="AJP"/>
+                    <label end="134" start="121" name="NP"/>
+                    <label end="82" start="74" name="NP"/>
+                    <label end="87" start="84" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other">
+                    <label end="82" start="74" name="Ant"/>
+                    <label end="87" start="84" name="Rel"/>
+                </layer>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Prep">
+                    <label end="99" start="94" name="Ctrlr"/>
+                    <label end="92" start="89" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+    <subCorpus name="01-region_quant-(5)"/>
+</lexUnit>

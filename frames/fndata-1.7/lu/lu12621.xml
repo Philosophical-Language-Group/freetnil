@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="engineer.n" ID="12621" frame="People_by_vocation" frameID="1071" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="North Korea Nuclear Overview" name="NorthKorea_NuclearOverview" ID="23562"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Age" name="Age"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="com" name="Compensation"/>
+            <FE fgColor="000000" bgColor="FFA500" type="Extra-Thematic" abbrev="coa" name="Context_of_acquaintance"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="cb" name="Contract_basis"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="" name="Employer"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Eth" name="Ethnicity"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Ori" name="Origin"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Extra-Thematic" abbrev="Pers_char" name="Persistent_characteristic"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Person" name="Person"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="poe" name="Place_of_employment"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Peripheral" abbrev="rnk" name="Rank"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="typ" name="Type"/>
+        </frame>
+    </header>
+    <definition>COD: a person qualified in engineering.  </definition>
+    <lexeme POS="N" name="engineer"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Origin"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Origin"/>
+                <annoSet ID="6530386"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Person"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Person"/>
+                <annoSet ID="6530386"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Origin"/>
+            <FE name="Person"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Origin"/>
+                <valenceUnit GF="" PT="DEN" FE="Person"/>
+                <annoSet ID="6530386"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23562" sentNo="2" paragNo="19" aPos="0" ID="4097705">
+            <text>By the early 1970s , North Korean engineers were using indigenous technology to expand the IRT- 2000 research reactor and Pyongyang began to acquire plutonium reprocessing technology from the Soviet Union .</text>
+            <annotationSet cDate="08/01/2005 12:16:16 PDT Mon" status="UNANN" ID="6528679">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="11" start="7" name="jj"/>
+                    <label end="17" start="13" name="nns"/>
+                    <label end="19" start="19" name=","/>
+                    <label end="25" start="21" name="jj"/>
+                    <label end="32" start="27" name="jj"/>
+                    <label end="42" start="34" name="nns"/>
+                    <label end="47" start="44" name="VBD"/>
+                    <label end="53" start="49" name="VVG"/>
+                    <label end="64" start="55" name="jj"/>
+                    <label end="75" start="66" name="nn"/>
+                    <label end="78" start="77" name="to"/>
+                    <label end="85" start="80" name="VV"/>
+                    <label end="89" start="87" name="dt"/>
+                    <label end="94" start="91" name="NP"/>
+                    <label end="99" start="96" name="cd"/>
+                    <label end="108" start="101" name="nn"/>
+                    <label end="116" start="110" name="nn"/>
+                    <label end="120" start="118" name="cc"/>
+                    <label end="130" start="122" name="NP"/>
+                    <label end="136" start="132" name="VVD"/>
+                    <label end="139" start="138" name="to"/>
+                    <label end="147" start="141" name="VV"/>
+                    <label end="157" start="149" name="nn"/>
+                    <label end="170" start="159" name="VVG"/>
+                    <label end="181" start="172" name="nn"/>
+                    <label end="186" start="183" name="in"/>
+                    <label end="190" start="188" name="dt"/>
+                    <label end="197" start="192" name="NP"/>
+                    <label end="203" start="199" name="NP"/>
+                    <label end="205" start="205" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="17" start="13" name="date"/>
+                    <label end="99" start="96" name="date"/>
+                    <label end="130" start="122" name="location"/>
+                    <label end="203" start="192" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="19" start="19" name="NT"/>
+                    <label end="47" start="44" name="NT"/>
+                    <label end="78" start="77" name="NT"/>
+                    <label end="89" start="87" name="NT"/>
+                    <label end="94" start="91" name="NT"/>
+                    <label end="99" start="96" name="NT"/>
+                    <label end="120" start="118" name="NT"/>
+                    <label end="130" start="122" name="NT"/>
+                    <label end="139" start="138" name="NT"/>
+                    <label end="186" start="183" name="NT"/>
+                    <label end="190" start="188" name="NT"/>
+                    <label end="197" start="192" name="NT"/>
+                    <label end="203" start="199" name="NT"/>
+                    <label end="205" start="205" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/15/2005 03:52:50 PDT Mon" status="MANUAL" ID="6530386">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="42" start="34" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="6262" end="32" start="21" name="Origin"/>
+                    <label cBy="RLG" feID="6263" end="42" start="34" name="Person"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="32" start="21" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="32" start="21" name="A"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

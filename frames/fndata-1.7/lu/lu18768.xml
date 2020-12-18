@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="mandate.n" ID="18768" frame="Deny_or_grant_permission" frameID="520" totalAnnotated="4" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Election Victory" name="ElectionVictory" ID="23010"/>
+        </corpus>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz History of Jerusalem" name="HistoryOfJerusalem" ID="23647"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Act" name="Action"/>
+            <FE fgColor="FF0000" bgColor="d0d0d0" type="Extra-Thematic" abbrev="" name="Allowed_category"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Auth" name="Authority"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD73" type="Extra-Thematic" abbrev="" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="" name="Depictive"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Event_description"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A9A9A9" type="Peripheral" abbrev="" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="" name="Period_of_iterations"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Pro" name="Protagonist"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Purpose" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: authorization to carry out a policy, usually granted by an organization or by the electorate in an election, e.g. a U.N. mandate, re-election with a mandate to improve public schools.</definition>
+    <lexeme POS="N" name="mandate"/>
+    <semType name="Negative" ID="99"/>
+    <valences>
+        <FERealization total="3">
+            <FE name="Action"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DEN" FE="Action"/>
+                <annoSet ID="6539279"/>
+                <annoSet ID="6539283"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPto" FE="Action"/>
+                <annoSet ID="4530162"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Authority"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="A" FE="Authority"/>
+                <annoSet ID="6539279"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DNI" FE="Authority"/>
+                <annoSet ID="4530162"/>
+                <annoSet ID="4530170"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Explanation"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Explanation"/>
+                <annoSet ID="4530170"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Protagonist"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="DNI" FE="Protagonist"/>
+                <annoSet ID="4530162"/>
+                <annoSet ID="4530170"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Purpose"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPto" FE="Purpose"/>
+                <annoSet ID="6539279"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Action"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Action"/>
+                <annoSet ID="6539283"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Action"/>
+            <FE name="Authority"/>
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPto" FE="Action"/>
+                <valenceUnit GF="" PT="DNI" FE="Authority"/>
+                <valenceUnit GF="" PT="DNI" FE="Protagonist"/>
+                <annoSet ID="4530162"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Action"/>
+            <FE name="Authority"/>
+            <FE name="Purpose"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Action"/>
+                <valenceUnit GF="Dep" PT="A" FE="Authority"/>
+                <valenceUnit GF="Dep" PT="VPto" FE="Purpose"/>
+                <annoSet ID="6539279"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Authority"/>
+            <FE name="Explanation"/>
+            <FE name="Protagonist"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Authority"/>
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Explanation"/>
+                <valenceUnit GF="" PT="DNI" FE="Protagonist"/>
+                <annoSet ID="4530170"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23010" sentNo="3" paragNo="1" aPos="0" ID="2824269">
+            <text>He should consider his victory a mandate to continue his growth-oriented economic reforms and not a demand that he move further left .</text>
+            <annotationSet cDate="02/05/2004 08:29:42 PST Thu" status="UNANN" ID="4528264">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="PP"/>
+                    <label end="8" start="3" name="md"/>
+                    <label end="17" start="10" name="VV"/>
+                    <label end="21" start="19" name="PP$"/>
+                    <label end="29" start="23" name="nn"/>
+                    <label end="31" start="31" name="dt"/>
+                    <label end="39" start="33" name="nn"/>
+                    <label end="42" start="41" name="to"/>
+                    <label end="51" start="44" name="VV"/>
+                    <label end="55" start="53" name="PP$"/>
+                    <label end="71" start="57" name="jj"/>
+                    <label end="80" start="73" name="jj"/>
+                    <label end="88" start="82" name="nns"/>
+                    <label end="92" start="90" name="cc"/>
+                    <label end="96" start="94" name="rb"/>
+                    <label end="98" start="98" name="dt"/>
+                    <label end="105" start="100" name="nn"/>
+                    <label end="110" start="107" name="in"/>
+                    <label end="113" start="112" name="PP"/>
+                    <label end="118" start="115" name="VVP"/>
+                    <label end="126" start="120" name="rb"/>
+                    <label end="131" start="128" name="VVN"/>
+                    <label end="133" start="133" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="42" start="41" name="NT"/>
+                    <label end="133" start="133" name="NT"/>
+                    <label end="1" start="0" name="NT"/>
+                    <label end="21" start="19" name="NT"/>
+                    <label end="31" start="31" name="NT"/>
+                    <label end="55" start="53" name="NT"/>
+                    <label end="92" start="90" name="NT"/>
+                    <label end="98" start="98" name="NT"/>
+                    <label end="110" start="107" name="NT"/>
+                    <label end="113" start="112" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/16/2005 01:45:03 PST Wed" status="MANUAL" ID="4530162">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="39" start="33" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="4123" end="88" start="41" name="Action"/>
+                    <label cBy="RLG" feID="4121" itype="DNI" name="Authority"/>
+                    <label cBy="HPh" feID="4122" itype="DNI" name="Protagonist"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="88" start="41" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="88" start="41" name="VPto"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="115" docID="23010" sentNo="1" paragNo="7" aPos="0" ID="2824290">
+            <text>The voters delivered Mr. Gonzalez a third mandate for his successes .</text>
+            <annotationSet cDate="02/05/2004 08:29:48 PST Thu" status="UNANN" ID="4528285">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="9" start="4" name="nns"/>
+                    <label end="19" start="11" name="VVD"/>
+                    <label end="23" start="21" name="NP"/>
+                    <label end="32" start="25" name="NP"/>
+                    <label end="34" start="34" name="dt"/>
+                    <label end="40" start="36" name="jj"/>
+                    <label end="48" start="42" name="nn"/>
+                    <label end="52" start="50" name="in"/>
+                    <label end="56" start="54" name="PP$"/>
+                    <label end="66" start="58" name="nns"/>
+                    <label end="68" start="68" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="32" start="21" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="68" start="68" name="NT"/>
+                    <label end="2" start="0" name="NT"/>
+                    <label end="32" start="25" name="NT"/>
+                    <label end="34" start="34" name="NT"/>
+                    <label end="52" start="50" name="NT"/>
+                    <label end="56" start="54" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/16/2005 02:07:12 PST Wed" status="MANUAL" ID="4530170">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="48" start="42" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="4122" itype="DNI" name="Protagonist"/>
+                    <label cBy="RLG" feID="4121" itype="DNI" name="Authority"/>
+                    <label cBy="Pam" feID="10937" end="66" start="50" name="Explanation"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="66" start="50" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="66" start="50" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23647" sentNo="1" paragNo="26" aPos="0" ID="4100415">
+            <text>In 1922 the League of Nations granted the British a mandate to administer Palestine .</text>
+            <annotationSet cDate="09/29/2006 11:01:23 PDT Fri" status="UNANN" ID="6538495">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="6" start="3" name="cd"/>
+                    <label end="10" start="8" name="dt"/>
+                    <label end="17" start="12" name="NP"/>
+                    <label end="20" start="19" name="in"/>
+                    <label end="28" start="22" name="NPS"/>
+                    <label end="36" start="30" name="VVD"/>
+                    <label end="40" start="38" name="dt"/>
+                    <label end="48" start="42" name="jj"/>
+                    <label end="50" start="50" name="dt"/>
+                    <label end="58" start="52" name="nn"/>
+                    <label end="61" start="60" name="to"/>
+                    <label end="72" start="63" name="VV"/>
+                    <label end="82" start="74" name="NP"/>
+                    <label end="84" start="84" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="6" start="3" name="date"/>
+                    <label end="28" start="12" name="organization"/>
+                    <label end="82" start="74" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="6" start="3" name="NT"/>
+                    <label end="10" start="8" name="NT"/>
+                    <label end="17" start="12" name="NT"/>
+                    <label end="20" start="19" name="NT"/>
+                    <label end="28" start="22" name="NT"/>
+                    <label end="40" start="38" name="NT"/>
+                    <label end="50" start="50" name="NT"/>
+                    <label end="61" start="60" name="NT"/>
+                    <label end="82" start="74" name="NT"/>
+                    <label end="84" start="84" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/07/2006 05:27:18 PST Tue" status="MANUAL" ID="6539279">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="58" start="52" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="4123" end="58" start="52" name="Action"/>
+                    <label cBy="KmG" feID="4121" end="48" start="42" name="Authority"/>
+                    <label cBy="KmG" feID="4128" end="82" start="60" name="Purpose"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="48" start="42" name="Dep"/>
+                    <label end="82" start="60" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="48" start="42" name="A"/>
+                    <label end="82" start="60" name="VPto"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="195" docID="23647" sentNo="2" paragNo="26" aPos="0" ID="4100416">
+            <text>Jerusalem flourished during the early years of the Mandate .</text>
+            <annotationSet cDate="09/29/2006 11:01:24 PDT Fri" status="UNANN" ID="6538496">
+                <layer rank="1" name="PENN">
+                    <label end="8" start="0" name="NP"/>
+                    <label end="19" start="10" name="VVD"/>
+                    <label end="26" start="21" name="in"/>
+                    <label end="30" start="28" name="dt"/>
+                    <label end="36" start="32" name="jj"/>
+                    <label end="42" start="38" name="nns"/>
+                    <label end="45" start="44" name="in"/>
+                    <label end="49" start="47" name="dt"/>
+                    <label end="57" start="51" name="nn"/>
+                    <label end="59" start="59" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="8" start="0" name="location"/>
+                    <label end="57" start="51" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="8" start="0" name="NT"/>
+                    <label end="30" start="28" name="NT"/>
+                    <label end="45" start="44" name="NT"/>
+                    <label end="49" start="47" name="NT"/>
+                    <label end="59" start="59" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/07/2006 05:33:40 PST Tue" status="MANUAL" ID="6539283">
+                <layer rank="1" name="Target">
+                    <label cBy="KmG" end="57" start="51" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="KmG" feID="4123" end="57" start="51" name="Action"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

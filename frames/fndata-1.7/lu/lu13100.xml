@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="go [through].v" ID="13100" frame="Scrutiny" frameID="31" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Extra-Thematic" abbrev="Dir" name="Direction"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Core" abbrev="Ground" name="Ground"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="Med" name="Medium"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Extra-Thematic" abbrev="Phen" name="Phenomenon"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Extra-Thematic" abbrev="Purp" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>COD: search through or examine carefully.</definition>
+    <lexeme POS="V" name="go"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <annoSet ID="6555954"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Ground"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Ground"/>
+                <annoSet ID="6555954"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Manner"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Manner"/>
+                <annoSet ID="6555954"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Purpose"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPto" FE="Purpose"/>
+                <annoSet ID="6555954"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="Ground"/>
+            <FE name="Manner"/>
+            <FE name="Purpose"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Ground"/>
+                <valenceUnit GF="Dep" PT="PP[in]" FE="Manner"/>
+                <valenceUnit GF="Dep" PT="VPto" FE="Purpose"/>
+                <annoSet ID="6555954"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23771" sentNo="4" paragNo="17" aPos="0" ID="4105864">
+            <text>Both young and old go through ballet - like movements in slow motion to discipline the mind and body .</text>
+            <annotationSet cDate="07/25/2008 01:18:12 PDT Fri" status="UNANN" ID="6554954">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="9" start="5" name="jj"/>
+                    <label end="13" start="11" name="cc"/>
+                    <label end="17" start="15" name="jj"/>
+                    <label end="20" start="19" name="VVP"/>
+                    <label end="28" start="22" name="in"/>
+                    <label end="35" start="30" name="nn"/>
+                    <label end="37" start="37" name=":"/>
+                    <label end="42" start="39" name="in"/>
+                    <label end="52" start="44" name="nns"/>
+                    <label end="55" start="54" name="in"/>
+                    <label end="60" start="57" name="jj"/>
+                    <label end="67" start="62" name="nn"/>
+                    <label end="70" start="69" name="to"/>
+                    <label end="81" start="72" name="nn"/>
+                    <label end="85" start="83" name="dt"/>
+                    <label end="90" start="87" name="nn"/>
+                    <label end="94" start="92" name="cc"/>
+                    <label end="99" start="96" name="nn"/>
+                    <label end="101" start="101" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="13" start="11" name="NT"/>
+                    <label end="37" start="37" name="NT"/>
+                    <label end="55" start="54" name="NT"/>
+                    <label end="70" start="69" name="NT"/>
+                    <label end="85" start="83" name="NT"/>
+                    <label end="94" start="92" name="NT"/>
+                    <label end="101" start="101" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/25/2008 09:35:03 PDT Mon" status="MANUAL" ID="6555954">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="20" start="19" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="128" end="17" start="0" name="Cognizer"/>
+                    <label cBy="JKs" feID="129" end="52" start="30" name="Ground"/>
+                    <label cBy="JKs" feID="1497" end="67" start="54" name="Manner"/>
+                    <label cBy="JKs" feID="4511" end="99" start="69" name="Purpose"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="17" start="0" name="Ext"/>
+                    <label end="52" start="30" name="Obj"/>
+                    <label end="67" start="54" name="Dep"/>
+                    <label end="99" start="69" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="17" start="0" name="NP"/>
+                    <label end="52" start="30" name="NP"/>
+                    <label end="67" start="54" name="PP"/>
+                    <label end="99" start="69" name="VPto"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

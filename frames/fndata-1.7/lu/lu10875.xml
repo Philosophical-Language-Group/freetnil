@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="unfazed.a" ID="10875" frame="Experiencer_focus" frameID="48" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Loma Prieta" name="LomaPrieta" ID="23013"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Cont" name="Content"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Event" name="Event"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Exp" name="Experiencer"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Extra-Thematic" abbrev="Exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core-Unexpressed" abbrev="Expr" name="Expressor"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="Par" name="Parameter"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core-Unexpressed" abbrev="State" name="State"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Top" name="Topic"/>
+        </frame>
+    </header>
+    <definition>FN: not disturbed</definition>
+    <lexeme POS="A" name="unfazed"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Content"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Content"/>
+                <annoSet ID="4530289"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Experiencer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Experiencer"/>
+                <annoSet ID="4530289"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[at]" FE="Time"/>
+                <annoSet ID="4530289"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Content"/>
+            <FE name="Experiencer"/>
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Content"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Experiencer"/>
+                <valenceUnit GF="Dep" PT="PP[at]" FE="Time"/>
+                <annoSet ID="4530289"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23013" sentNo="2" paragNo="20" aPos="0" ID="2824482">
+            <text>At first , we were unfazed .</text>
+            <annotationSet cDate="02/05/2004 08:30:50 PST Thu" status="UNANN" ID="4528477">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="7" start="3" name="jj"/>
+                    <label end="9" start="9" name=","/>
+                    <label end="12" start="11" name="PP"/>
+                    <label end="17" start="14" name="VBD"/>
+                    <label end="25" start="19" name="VVN"/>
+                    <label end="27" start="27" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="9" start="9" name="NT"/>
+                    <label end="17" start="14" name="NT"/>
+                    <label end="27" start="27" name="NT"/>
+                    <label end="1" start="0" name="NT"/>
+                    <label end="12" start="11" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/23/2005 10:31:54 PST Wed" status="MANUAL" ID="4530289">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="25" start="19" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="201" end="12" start="11" name="Experiencer"/>
+                    <label cBy="RLG" feID="6502" end="7" start="0" name="Time"/>
+                    <label cBy="RLG" feID="202" itype="DNI" name="Content"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="12" start="11" name="Ext"/>
+                    <label end="7" start="0" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="12" start="11" name="NP"/>
+                    <label end="7" start="0" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="17" start="14" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="pub.n" ID="14926" frame="Buildings" frameID="173" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="" name="Building"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Extra-Thematic" abbrev="Cre" name="Creator"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="" name="Function"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="Mat" name="Material"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="" name="Name"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD73" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="000000" bgColor="1E90FF" type="Extra-Thematic" abbrev="pos" name="Possessor"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="" name="Relative_location"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="toc" name="Time_of_creation"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="" name="Type"/>
+        </frame>
+    </header>
+    <definition>FN: a place that serves drinks and usually food</definition>
+    <lexeme POS="N" name="pub"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Building"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Building"/>
+                <annoSet ID="6561684"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Descriptor"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Descriptor"/>
+                <annoSet ID="6561684"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Building"/>
+            <FE name="Descriptor"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Building"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Descriptor"/>
+                <annoSet ID="6561684"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23771" sentNo="5" paragNo="87" aPos="0" ID="4106092">
+            <text>Yung Shue Wan is still a very British residential enclave , with many nice pubs .</text>
+            <annotationSet cDate="07/25/2008 01:19:41 PDT Fri" status="UNANN" ID="6555182">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="NP"/>
+                    <label end="8" start="5" name="NP"/>
+                    <label end="12" start="10" name="NP"/>
+                    <label end="15" start="14" name="VBZ"/>
+                    <label end="23" start="23" name="dt"/>
+                    <label end="28" start="25" name="rb"/>
+                    <label end="36" start="30" name="jj"/>
+                    <label end="48" start="38" name="jj"/>
+                    <label end="56" start="50" name="nn"/>
+                    <label end="58" start="58" name=","/>
+                    <label end="63" start="60" name="in"/>
+                    <label end="68" start="65" name="jj"/>
+                    <label end="73" start="70" name="jj"/>
+                    <label end="78" start="75" name="nns"/>
+                    <label end="80" start="80" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="8" start="0" name="person"/>
+                    <label end="12" start="10" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="8" start="5" name="NT"/>
+                    <label end="12" start="10" name="NT"/>
+                    <label end="15" start="14" name="NT"/>
+                    <label end="23" start="23" name="NT"/>
+                    <label end="58" start="58" name="NT"/>
+                    <label end="63" start="60" name="NT"/>
+                    <label end="80" start="80" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/28/2011 02:57:46 PST Fri" status="MANUAL" ID="6561684">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="78" start="75" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="6037" end="78" start="75" name="Building"/>
+                    <label cBy="AlK" feID="10837" end="73" start="70" name="Descriptor"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="73" start="70" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="73" start="70" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

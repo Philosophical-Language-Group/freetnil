@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="sever.v" ID="15617" frame="Separating" frameID="15" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agt" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="Cause" name="Cause"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Crit" name="Criterion"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="Inst" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="Parts" name="Parts"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Core" abbrev="Part-1" name="Part_1"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="Part-2" name="Part_2"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="Recs" name="Recipients"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="Result" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="Whole" name="Whole"/>
+        </frame>
+    </header>
+    <definition>FN: separate one part from another by cutting.</definition>
+    <lexeme POS="V" name="sever"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Agent"/>
+                <annoSet ID="6645301"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Part_1"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="NP" FE="Part_1"/>
+                <annoSet ID="6645301"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Part_2"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Part_2"/>
+                <annoSet ID="6645301"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Part_1"/>
+            <FE name="Part_2"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Agent"/>
+                <valenceUnit GF="Head" PT="NP" FE="Part_1"/>
+                <valenceUnit GF="" PT="DNI" FE="Part_2"/>
+                <annoSet ID="6645301"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="4" paragNo="8" aPos="0" ID="4148260">
+            <text>Holmes pointed to the wattles on the severed head .</text>
+            <annotationSet cDate="04/30/2013 05:17:16 PDT Tue" status="UNANN" ID="6645299">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="NNP"/>
+                    <label end="13" start="7" name="VBD"/>
+                    <label end="16" start="15" name="to"/>
+                    <label end="20" start="18" name="dt"/>
+                    <label end="28" start="22" name="nns"/>
+                    <label end="31" start="30" name="in"/>
+                    <label end="35" start="33" name="dt"/>
+                    <label end="43" start="37" name="VBN"/>
+                    <label end="48" start="45" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:17:16 PDT Tue" status="MANUAL" ID="6645301">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="43" start="37" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="66" itype="CNI" name="Agent"/>
+                    <label cBy="EGp" feID="64" end="48" start="45" name="Part_1"/>
+                    <label cBy="EGp" feID="65" itype="DNI" name="Part_2"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="48" start="45" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="48" start="45" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

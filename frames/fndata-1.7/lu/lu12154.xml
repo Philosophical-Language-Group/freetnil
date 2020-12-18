@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="middle.n" ID="12154" frame="Temporal_subregion" frameID="1470" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="IZ-060316-01-Trans-1" name="IZ-060316-01-Trans-1" ID="23732"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="subpar" name="Subpart"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Extra-Thematic" abbrev="subpp" name="Subpart_property"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="tim" name="Time_period"/>
+        </frame>
+    </header>
+    <definition>COD: a middle point or position.</definition>
+    <lexeme POS="N" name="middle"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Subpart"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Subpart"/>
+                <annoSet ID="6550978"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time_period"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Time_period"/>
+                <annoSet ID="6550978"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Subpart"/>
+            <FE name="Time_period"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Subpart"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Time_period"/>
+                <annoSet ID="6550978"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23732" sentNo="6" paragNo="9" aPos="0" ID="4102310">
+            <text>So the brothers raided his house in the middle of the night wearing the national guards uniform and driving similar cars .</text>
+            <annotationSet cDate="08/17/2007 03:24:09 PDT Fri" status="UNANN" ID="6546092">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="14" start="7" name="nns"/>
+                    <label end="21" start="16" name="VVD"/>
+                    <label end="25" start="23" name="PP$"/>
+                    <label end="31" start="27" name="nn"/>
+                    <label end="34" start="33" name="in"/>
+                    <label end="38" start="36" name="dt"/>
+                    <label end="45" start="40" name="nn"/>
+                    <label end="48" start="47" name="in"/>
+                    <label end="52" start="50" name="dt"/>
+                    <label end="58" start="54" name="nn"/>
+                    <label end="66" start="60" name="VVG"/>
+                    <label end="70" start="68" name="dt"/>
+                    <label end="79" start="72" name="jj"/>
+                    <label end="86" start="81" name="nns"/>
+                    <label end="94" start="88" name="nn"/>
+                    <label end="98" start="96" name="cc"/>
+                    <label end="106" start="100" name="VVG"/>
+                    <label end="114" start="108" name="jj"/>
+                    <label end="119" start="116" name="nns"/>
+                    <label end="121" start="121" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="1" start="0" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="25" start="23" name="NT"/>
+                    <label end="34" start="33" name="NT"/>
+                    <label end="38" start="36" name="NT"/>
+                    <label end="48" start="47" name="NT"/>
+                    <label end="52" start="50" name="NT"/>
+                    <label end="70" start="68" name="NT"/>
+                    <label end="98" start="96" name="NT"/>
+                    <label end="121" start="121" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="11/15/2007 12:05:40 PST Thu" status="MANUAL" ID="6550978">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="45" start="40" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="8053" end="45" start="40" name="Subpart"/>
+                    <label cBy="JKs" feID="8055" end="58" start="47" name="Time_period"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="58" start="47" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="58" start="47" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

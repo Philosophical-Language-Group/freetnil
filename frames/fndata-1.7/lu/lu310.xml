@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="A" name="critical.a" ID="310" frame="Judgment" frameID="28" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Election Victory" name="ElectionVictory" ID="23010"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Depict" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Eval" name="Evaluee"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="Exr" name="Expressor"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="" name="Extent_of_acclaim"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="Reas" name="Reason"/>
+            <FE fgColor="00008B" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Extra-Thematic" abbrev="Role" name="Role"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Top" name="Topic"/>
+        </frame>
+    </header>
+    <definition>COD: expressing adverse or disapproving comments or judgements</definition>
+    <lexeme POS="A" name="critical"/>
+    <semType name="Negative_judgment" ID="14"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <annoSet ID="4528724"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Evaluee"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Evaluee"/>
+                <annoSet ID="4528724"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Reason"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Reason"/>
+                <annoSet ID="4528724"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="Evaluee"/>
+            <FE name="Reason"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <valenceUnit GF="Dep" PT="PP[of]" FE="Evaluee"/>
+                <valenceUnit GF="" PT="INI" FE="Reason"/>
+                <annoSet ID="4528724"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="A-002-rcoll-comments"/>
+    <subCorpus name="A-002-rcoll-eye"/>
+    <subCorpus name="A-002-rcoll-judgements"/>
+    <subCorpus name="A-002-rcoll-remarks"/>
+    <subCorpus name="A-002-rcoll-views"/>
+    <subCorpus name="A-090-wh"/>
+    <subCorpus name="A-100-ppof"/>
+    <subCorpus name="A-110-ppother"/>
+    <subCorpus name="A-160-pother"/>
+    <subCorpus name="A-170-prenom"/>
+    <subCorpus name="A-180-punct"/>
+    <subCorpus name="A-190-other"/>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23010" sentNo="1" paragNo="3" aPos="0" ID="2824276">
+            <text>The left also is critical of the style of the Socialist government -- a remarkable parallel to the situation in Britain .</text>
+            <annotationSet cDate="02/05/2004 08:29:44 PST Thu" status="UNANN" ID="4528271">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="7" start="4" name="nn"/>
+                    <label end="12" start="9" name="rb"/>
+                    <label end="15" start="14" name="VBZ"/>
+                    <label end="24" start="17" name="jj"/>
+                    <label end="27" start="26" name="in"/>
+                    <label end="31" start="29" name="dt"/>
+                    <label end="37" start="33" name="nn"/>
+                    <label end="40" start="39" name="in"/>
+                    <label end="44" start="42" name="dt"/>
+                    <label end="54" start="46" name="jj"/>
+                    <label end="65" start="56" name="nn"/>
+                    <label end="68" start="67" name=":"/>
+                    <label end="70" start="70" name="dt"/>
+                    <label end="81" start="72" name="jj"/>
+                    <label end="90" start="83" name="nn"/>
+                    <label end="93" start="92" name="to"/>
+                    <label end="97" start="95" name="dt"/>
+                    <label end="107" start="99" name="nn"/>
+                    <label end="110" start="109" name="in"/>
+                    <label end="118" start="112" name="NP"/>
+                    <label end="120" start="120" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="118" start="112" name="location"/>
+                    <label end="65" start="46" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="12" start="9" name="NT"/>
+                    <label end="15" start="14" name="NT"/>
+                    <label end="93" start="92" name="NT"/>
+                    <label end="120" start="120" name="NT"/>
+                    <label end="2" start="0" name="NT"/>
+                    <label end="27" start="26" name="NT"/>
+                    <label end="31" start="29" name="NT"/>
+                    <label end="40" start="39" name="NT"/>
+                    <label end="44" start="42" name="NT"/>
+                    <label end="68" start="67" name="NT"/>
+                    <label end="70" start="70" name="NT"/>
+                    <label end="97" start="95" name="NT"/>
+                    <label end="118" start="112" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/02/2004 12:02:56 PDT Fri" status="MANUAL" ID="4528724">
+                <layer rank="1" name="Target">
+                    <label cBy="CHg" end="24" start="17" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CHg" feID="115" end="7" start="0" name="Cognizer"/>
+                    <label cBy="CHg" feID="116" end="65" start="26" name="Evaluee"/>
+                    <label cBy="CHg" feID="117" itype="INI" name="Reason"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="7" start="0" name="Ext"/>
+                    <label end="65" start="26" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="7" start="0" name="NP"/>
+                    <label end="65" start="26" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Adj">
+                    <label end="15" start="14" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="leg.n" ID="11244" frame="Body_parts" frameID="119" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Peripheral" abbrev="Attachment" name="Attachment"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Body_P" name="Body_part"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="Desc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="OrLoc" name="Orientational_location"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Poss" name="Possessor"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Subr" name="Subregion"/>
+        </frame>
+    </header>
+    <definition>COD: each of the limbs on which a person or animal walks and stands.</definition>
+    <lexeme POS="N" name="leg"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Body_part"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Body_part"/>
+                <annoSet ID="6560381"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Possessor"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Possessor"/>
+                <annoSet ID="6560381"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Body_part"/>
+            <FE name="Possessor"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Body_part"/>
+                <valenceUnit GF="" PT="DNI" FE="Possessor"/>
+                <annoSet ID="6560381"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23771" sentNo="3" paragNo="137" aPos="0" ID="4106289">
+            <text>The Cantonese love to eat and have the reputation of eating almost anything that walks on four legs .</text>
+            <annotationSet cDate="07/25/2008 01:21:33 PDT Fri" status="UNANN" ID="6555379">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="12" start="4" name="NP"/>
+                    <label end="17" start="14" name="nn"/>
+                    <label end="20" start="19" name="to"/>
+                    <label end="24" start="22" name="VV"/>
+                    <label end="28" start="26" name="cc"/>
+                    <label end="33" start="30" name="VHP"/>
+                    <label end="37" start="35" name="dt"/>
+                    <label end="48" start="39" name="nn"/>
+                    <label end="51" start="50" name="in"/>
+                    <label end="58" start="53" name="VVG"/>
+                    <label end="65" start="60" name="rb"/>
+                    <label end="74" start="67" name="nn"/>
+                    <label end="79" start="76" name="wdt"/>
+                    <label end="85" start="81" name="VVZ"/>
+                    <label end="88" start="87" name="in"/>
+                    <label end="93" start="90" name="cd"/>
+                    <label end="98" start="95" name="nns"/>
+                    <label end="100" start="100" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="12" start="4" name="NT"/>
+                    <label end="20" start="19" name="NT"/>
+                    <label end="28" start="26" name="NT"/>
+                    <label end="37" start="35" name="NT"/>
+                    <label end="51" start="50" name="NT"/>
+                    <label end="65" start="60" name="NT"/>
+                    <label end="79" start="76" name="NT"/>
+                    <label end="88" start="87" name="NT"/>
+                    <label end="100" start="100" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/19/2011 05:33:57 PST Wed" status="MANUAL" ID="6560381">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="98" start="95" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="692" end="98" start="95" name="Body_part"/>
+                    <label cBy="MLC" feID="611" itype="DNI" name="Possessor"/>
+                </layer>
+                <layer rank="1" name="GF"/>
+                <layer rank="1" name="PT"/>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="drop.v" ID="17646" frame="Cause_motion" frameID="55" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_10" name="Fires_10" ID="25625"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Agt" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Core" abbrev="Area" name="Area"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD7C" type="Core" abbrev="Cse" name="Cause"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Dep" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Peripheral" abbrev="Dist" name="Distance"/>
+            <FE fgColor="000000" bgColor="d0d0d0" type="Peripheral" abbrev="" name="Duration"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Extra-Thematic" abbrev="" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Core" abbrev="Goal" name="Goal"/>
+            <FE fgColor="FFFFFF" bgColor="7CCD73" type="Extra-Thematic" abbrev="" name="Handle"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="Initial_State" name="Initial_state"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="Ins" name="Instrument"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Path" name="Path"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="Place" name="Place"/>
+            <FE fgColor="0000FF" bgColor="d0d0d0" type="Core" abbrev="" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Core" abbrev="Src" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Extra-Thematic" abbrev="" name="Subregion"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Thm" name="Theme"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="Time" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: to let something fall downward</definition>
+    <lexeme POS="V" name="drop"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Agent"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <annoSet ID="6671541"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Goal"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[on]" FE="Goal"/>
+                <annoSet ID="6671541"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Theme"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Theme"/>
+                <annoSet ID="6671541"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Agent"/>
+            <FE name="Agent"/>
+            <FE name="Goal"/>
+            <FE name="Theme"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Agent"/>
+                <valenceUnit GF="Dep" PT="PP[on]" FE="Goal"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Theme"/>
+                <annoSet ID="6671541"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="246" docID="25625" sentNo="1" paragNo="9" aPos="0" ID="4165603">
+            <text>Some helicopters and airplanes , which were to drop water on the fires , continued to be delayed by strong winds .</text>
+            <annotationSet cDate="07/21/2014 11:09:20 PDT Mon" status="UNANN" ID="6670859">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="15" start="5" name="nns"/>
+                    <label end="19" start="17" name="cc"/>
+                    <label end="29" start="21" name="nns"/>
+                    <label end="31" start="31" name=","/>
+                    <label end="37" start="33" name="wdt"/>
+                    <label end="42" start="39" name="VBD"/>
+                    <label end="45" start="44" name="to"/>
+                    <label end="50" start="47" name="VV"/>
+                    <label end="56" start="52" name="nn"/>
+                    <label end="59" start="58" name="in"/>
+                    <label end="63" start="61" name="dt"/>
+                    <label end="69" start="65" name="nns"/>
+                    <label end="71" start="71" name=","/>
+                    <label end="81" start="73" name="VVD"/>
+                    <label end="84" start="83" name="to"/>
+                    <label end="87" start="86" name="vb"/>
+                    <label end="95" start="89" name="VVN"/>
+                    <label end="98" start="97" name="in"/>
+                    <label end="105" start="100" name="jj"/>
+                    <label end="111" start="107" name="nns"/>
+                    <label end="113" start="113" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="19" start="17" name="NT"/>
+                    <label end="31" start="31" name="NT"/>
+                    <label end="37" start="33" name="NT"/>
+                    <label end="42" start="39" name="NT"/>
+                    <label end="45" start="44" name="NT"/>
+                    <label end="63" start="61" name="NT"/>
+                    <label end="71" start="71" name="NT"/>
+                    <label end="84" start="83" name="NT"/>
+                    <label end="87" start="86" name="NT"/>
+                    <label end="98" start="97" name="NT"/>
+                    <label end="113" start="113" name="NT"/>
+                    <label end="59" start="58" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/21/2014 04:17:09 PDT Mon" status="MANUAL" ID="6671541">
+                <layer rank="1" name="Target">
+                    <label cBy="CVa" end="50" start="47" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CVa" feID="229" end="56" start="52" name="Theme"/>
+                    <label cBy="CVa" feID="232" end="69" start="58" name="Goal"/>
+                    <label cBy="CVa" feID="228" end="37" start="33" name="Agent"/>
+                    <label cBy="CVa" feID="228" end="29" start="0" name="Agent"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="56" start="52" name="Obj"/>
+                    <label end="69" start="58" name="Dep"/>
+                    <label end="37" start="33" name="Ext"/>
+                    <label end="29" start="0" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="56" start="52" name="NP"/>
+                    <label end="69" start="58" name="PP"/>
+                    <label end="37" start="33" name="NP"/>
+                    <label end="29" start="0" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other">
+                    <label end="37" start="33" name="Rel"/>
+                    <label end="29" start="0" name="Ant"/>
+                </layer>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

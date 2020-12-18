@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="reliability.n" ID="13171" frame="Trust" frameID="1731" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Taiwan Introduction" name="Taiwan_Introduction" ID="23565"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Cognizer" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Peripheral" abbrev="Content" name="Content"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="Exr" name="Expressor"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="inf" name="Information"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="sou" name="Information_source"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Topic" name="Topic"/>
+        </frame>
+    </header>
+    <definition>FN: degree to which (something) should be believed.</definition>
+    <lexeme POS="N" name="reliability"/>
+    <semType name="Tendency_grading_LU" ID="91"/>
+    <valences>
+        <governor type="Sup" lemma="of">
+            <annoSet ID="6536803"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Cognizer"/>
+                <annoSet ID="6536803"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Information"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Information"/>
+                <annoSet ID="6536803"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Manner"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Manner"/>
+                <annoSet ID="6536803"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="Information"/>
+            <FE name="Manner"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="INI" FE="Cognizer"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Information"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Manner"/>
+                <annoSet ID="6536803"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23565" sentNo="3" paragNo="7" aPos="0" ID="4097860">
+            <text>This report , of questionable reliability , was vigorously denied by the Ministry of National Defense ( MND ) .</text>
+            <annotationSet cDate="08/08/2005 10:16:10 PDT Mon" status="UNANN" ID="6529800">
+                <layer rank="1" name="PENN">
+                    <label end="3" start="0" name="dt"/>
+                    <label end="10" start="5" name="nn"/>
+                    <label end="12" start="12" name=","/>
+                    <label end="15" start="14" name="in"/>
+                    <label end="28" start="17" name="jj"/>
+                    <label end="40" start="30" name="nn"/>
+                    <label end="42" start="42" name=","/>
+                    <label end="46" start="44" name="VBD"/>
+                    <label end="57" start="48" name="rb"/>
+                    <label end="64" start="59" name="VVN"/>
+                    <label end="67" start="66" name="in"/>
+                    <label end="71" start="69" name="dt"/>
+                    <label end="80" start="73" name="NP"/>
+                    <label end="83" start="82" name="in"/>
+                    <label end="92" start="85" name="NP"/>
+                    <label end="100" start="94" name="NP"/>
+                    <label end="102" start="102" name="("/>
+                    <label end="106" start="104" name="NP"/>
+                    <label end="108" start="108" name=")"/>
+                    <label end="110" start="110" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="100" start="73" name="organization"/>
+                    <label end="106" start="104" name="organization"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="3" start="0" name="NT"/>
+                    <label end="12" start="12" name="NT"/>
+                    <label end="15" start="14" name="NT"/>
+                    <label end="42" start="42" name="NT"/>
+                    <label end="46" start="44" name="NT"/>
+                    <label end="57" start="48" name="NT"/>
+                    <label end="67" start="66" name="NT"/>
+                    <label end="71" start="69" name="NT"/>
+                    <label end="80" start="73" name="NT"/>
+                    <label end="83" start="82" name="NT"/>
+                    <label end="92" start="85" name="NT"/>
+                    <label end="100" start="94" name="NT"/>
+                    <label end="102" start="102" name="NT"/>
+                    <label end="106" start="104" name="NT"/>
+                    <label end="108" start="108" name="NT"/>
+                    <label end="110" start="110" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/17/2006 03:43:32 PDT Mon" status="MANUAL" ID="6536803">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="40" start="30" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="10035" end="10" start="0" name="Information"/>
+                    <label cBy="RLG" feID="10022" end="28" start="17" name="Manner"/>
+                    <label cBy="RLG" feID="10018" itype="INI" name="Cognizer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="10" start="0" name="Ext"/>
+                    <label end="28" start="17" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="10" start="0" name="NP"/>
+                    <label end="28" start="17" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="15" start="14" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

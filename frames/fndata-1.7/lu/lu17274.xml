@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="difficulty.n" ID="17274" frame="Difficulty" frameID="375" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <corpus description="Texts from WikiMedia--WikiNews and Wikipedia" name="WikiTexts" ID="246">
+            <document description="Fires_8" name="Fires_8" ID="25623"/>
+            <document description="Fires_9" name="Fires_9" ID="25624"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Activity" name="Activity"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Extra-Thematic" abbrev="Circumstances" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degree" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="Experiencer" name="Experiencer"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Peripheral" abbrev="Parameter" name="Parameter"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="sta" name="Standard"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: to state of being hard to deal with</definition>
+    <lexeme POS="N" name="difficulty"/>
+    <valences>
+        <FERealization total="3">
+            <FE name="Activity"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Activity"/>
+                <annoSet ID="6671140"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Activity"/>
+                <annoSet ID="6646067"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PPing[in]" FE="Activity"/>
+                <annoSet ID="6774082"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Degree"/>
+            <pattern total="2">
+                <valenceUnit GF="Dep" PT="AJP" FE="Degree"/>
+                <annoSet ID="6671140"/>
+                <annoSet ID="6774082"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Experiencer"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Experiencer"/>
+                <annoSet ID="6671140"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Experiencer"/>
+                <annoSet ID="6646067"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Activity"/>
+            <FE name="Degree"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PPing[in]" FE="Activity"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Degree"/>
+                <annoSet ID="6774082"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Activity"/>
+            <FE name="Degree"/>
+            <FE name="Experiencer"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DNI" FE="Activity"/>
+                <valenceUnit GF="Dep" PT="AJP" FE="Degree"/>
+                <valenceUnit GF="Dep" PT="PP[for]" FE="Experiencer"/>
+                <annoSet ID="6671140"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="1">
+            <FE name="Activity"/>
+            <FE name="Experiencer"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Activity"/>
+                <valenceUnit GF="" PT="DNI" FE="Experiencer"/>
+                <annoSet ID="6646067"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="9" paragNo="29" aPos="0" ID="4148454">
+            <text>&quot; You will appreciate the difficulty of the situation , Watson .</text>
+            <annotationSet cDate="04/30/2013 05:20:30 PDT Tue" status="UNANN" ID="6646066">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="2" name="PRP"/>
+                    <label end="9" start="6" name="md"/>
+                    <label end="20" start="11" name="vb"/>
+                    <label end="24" start="22" name="dt"/>
+                    <label end="35" start="26" name="nn"/>
+                    <label end="38" start="37" name="in"/>
+                    <label end="42" start="40" name="dt"/>
+                    <label end="52" start="44" name="nn"/>
+                    <label end="61" start="56" name="NNP"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:20:30 PDT Tue" status="MANUAL" ID="6646067">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="35" start="26" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="3360" end="54" start="40" name="Activity"/>
+                    <label cBy="EGp" feID="3365" itype="DNI" name="Experiencer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="54" start="40" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="54" start="40" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="246" docID="25623" sentNo="1" paragNo="6" aPos="0" ID="4165567">
+            <text>Athens Prefect Yannis Sgouras told state NET TV that strong winds helped strengthen the fires , and caused extra difficulties for the firefighters trying to put out the blaze .</text>
+            <annotationSet cDate="07/21/2014 11:07:56 PDT Mon" status="UNANN" ID="6670823">
+                <layer rank="1" name="PENN">
+                    <label end="5" start="0" name="NP"/>
+                    <label end="13" start="7" name="NP"/>
+                    <label end="20" start="15" name="NP"/>
+                    <label end="28" start="22" name="NP"/>
+                    <label end="33" start="30" name="VVD"/>
+                    <label end="39" start="35" name="nn"/>
+                    <label end="43" start="41" name="NP"/>
+                    <label end="46" start="45" name="NP"/>
+                    <label end="51" start="48" name="IN/that"/>
+                    <label end="58" start="53" name="jj"/>
+                    <label end="64" start="60" name="nns"/>
+                    <label end="71" start="66" name="VVD"/>
+                    <label end="82" start="73" name="VV"/>
+                    <label end="86" start="84" name="dt"/>
+                    <label end="92" start="88" name="nns"/>
+                    <label end="94" start="94" name=","/>
+                    <label end="98" start="96" name="cc"/>
+                    <label end="105" start="100" name="VVD"/>
+                    <label end="111" start="107" name="jj"/>
+                    <label end="124" start="113" name="nns"/>
+                    <label end="128" start="126" name="in"/>
+                    <label end="132" start="130" name="dt"/>
+                    <label end="145" start="134" name="nns"/>
+                    <label end="152" start="147" name="VVG"/>
+                    <label end="155" start="154" name="to"/>
+                    <label end="159" start="157" name="VV"/>
+                    <label end="163" start="161" name="rp"/>
+                    <label end="167" start="165" name="dt"/>
+                    <label end="173" start="169" name="nn"/>
+                    <label end="175" start="175" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="5" start="0" name="location"/>
+                    <label end="28" start="15" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="0" name="NT"/>
+                    <label end="13" start="7" name="NT"/>
+                    <label end="20" start="15" name="NT"/>
+                    <label end="28" start="22" name="NT"/>
+                    <label end="43" start="41" name="NT"/>
+                    <label end="46" start="45" name="NT"/>
+                    <label end="86" start="84" name="NT"/>
+                    <label end="94" start="94" name="NT"/>
+                    <label end="98" start="96" name="NT"/>
+                    <label end="128" start="126" name="NT"/>
+                    <label end="132" start="130" name="NT"/>
+                    <label end="155" start="154" name="NT"/>
+                    <label end="163" start="161" name="NT"/>
+                    <label end="167" start="165" name="NT"/>
+                    <label end="175" start="175" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="07/21/2014 01:29:19 PDT Mon" status="MANUAL" ID="6671140">
+                <layer rank="1" name="Target">
+                    <label cBy="WMcQ" end="124" start="113" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="WMcQ" feID="3360" itype="DNI" name="Activity"/>
+                    <label cBy="WMcQ" feID="3362" end="111" start="107" name="Degree"/>
+                    <label cBy="WMcQ" feID="3365" end="173" start="126" name="Experiencer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="111" start="107" name="Dep"/>
+                    <label end="173" start="126" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="111" start="107" name="AJP"/>
+                    <label end="173" start="126" name="PP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="246" docID="25624" sentNo="1" paragNo="6" aPos="0" ID="4165585">
+            <text>Extremely dry weather , and difficult wind conditions , have caused severe difficulties in fighting the fire .</text>
+            <annotationSet cDate="07/21/2014 11:08:17 PDT Mon" status="UNANN" ID="6670841">
+                <layer rank="1" name="PENN">
+                    <label end="8" start="0" name="rb"/>
+                    <label end="12" start="10" name="jj"/>
+                    <label end="20" start="14" name="nn"/>
+                    <label end="22" start="22" name=","/>
+                    <label end="26" start="24" name="cc"/>
+                    <label end="36" start="28" name="jj"/>
+                    <label end="41" start="38" name="nn"/>
+                    <label end="52" start="43" name="nns"/>
+                    <label end="54" start="54" name=","/>
+                    <label end="59" start="56" name="VHP"/>
+                    <label end="66" start="61" name="VVN"/>
+                    <label end="73" start="68" name="jj"/>
+                    <label end="86" start="75" name="nns"/>
+                    <label end="89" start="88" name="in"/>
+                    <label end="98" start="91" name="VVG"/>
+                    <label end="102" start="100" name="dt"/>
+                    <label end="107" start="104" name="nn"/>
+                    <label end="109" start="109" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="8" start="0" name="NT"/>
+                    <label end="22" start="22" name="NT"/>
+                    <label end="26" start="24" name="NT"/>
+                    <label end="54" start="54" name="NT"/>
+                    <label end="59" start="56" name="NT"/>
+                    <label end="89" start="88" name="NT"/>
+                    <label end="102" start="100" name="NT"/>
+                    <label end="109" start="109" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/01/2016 11:51:53 PDT Wed" status="MANUAL" ID="6774082">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="86" start="75" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="3362" end="73" start="68" name="Degree"/>
+                    <label cBy="MJE" feID="3360" end="107" start="88" name="Activity"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="73" start="68" name="Dep"/>
+                    <label end="107" start="88" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="73" start="68" name="AJP"/>
+                    <label end="107" start="88" name="PPing"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

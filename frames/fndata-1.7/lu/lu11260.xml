@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="housemate.n" ID="11260" frame="People_by_residence" frameID="1143" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Children's home fund-raising letter" name="112C-L013" ID="23811"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="age" name="Age"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="des" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Peripheral" abbrev="eth" name="Ethnicity"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="ind" name="Indicated_resident"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="kno" name="Known_resident"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="loc" name="Location"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="per" name="Persistent_characteristic"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Core" abbrev="res" name="Residents"/>
+        </frame>
+    </header>
+    <definition>FN: A person occupying the same house, flat or apartment as another</definition>
+    <lexeme POS="N" name="housemate"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Indicated_resident"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Indicated_resident"/>
+                <annoSet ID="6557612"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Residents"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="PP[at]" FE="Residents"/>
+                <annoSet ID="6557612"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Indicated_resident"/>
+            <FE name="Residents"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Indicated_resident"/>
+                <valenceUnit GF="Dep" PT="PP[at]" FE="Residents"/>
+                <annoSet ID="6557612"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23811" sentNo="5" paragNo="6" aPos="0" ID="4106602">
+            <text>For others , `` families '' are the counselors are housemates at the group homes where they live .</text>
+            <annotationSet cDate="01/08/2009 11:47:16 PST Thu" status="UNANN" ID="6557499">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="in"/>
+                    <label end="9" start="4" name="nns"/>
+                    <label end="11" start="11" name=","/>
+                    <label end="14" start="13" name="``"/>
+                    <label end="23" start="16" name="nns"/>
+                    <label end="26" start="25" name="''"/>
+                    <label end="30" start="28" name="vbp"/>
+                    <label end="34" start="32" name="dt"/>
+                    <label end="45" start="36" name="nns"/>
+                    <label end="49" start="47" name="vbp"/>
+                    <label end="60" start="51" name="nns"/>
+                    <label end="63" start="62" name="in"/>
+                    <label end="67" start="65" name="dt"/>
+                    <label end="73" start="69" name="nn"/>
+                    <label end="79" start="75" name="nns"/>
+                    <label end="85" start="81" name="wrb"/>
+                    <label end="90" start="87" name="PP"/>
+                    <label end="95" start="92" name="VVP"/>
+                    <label end="97" start="97" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="2" start="0" name="NT"/>
+                    <label end="11" start="11" name="NT"/>
+                    <label end="14" start="13" name="NT"/>
+                    <label end="26" start="25" name="NT"/>
+                    <label end="30" start="28" name="NT"/>
+                    <label end="34" start="32" name="NT"/>
+                    <label end="49" start="47" name="NT"/>
+                    <label end="63" start="62" name="NT"/>
+                    <label end="67" start="65" name="NT"/>
+                    <label end="85" start="81" name="NT"/>
+                    <label end="90" start="87" name="NT"/>
+                    <label end="97" start="97" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="01/12/2009 04:11:07 PST Mon" status="MANUAL" ID="6557612">
+                <layer rank="1" name="Target">
+                    <label cBy="AlK" end="60" start="51" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AlK" feID="6594" end="95" start="62" name="Residents"/>
+                    <label cBy="AlK" feID="6586" end="45" start="32" name="Indicated_resident"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="95" start="62" name="Dep"/>
+                    <label end="45" start="32" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="95" start="62" name="PP"/>
+                    <label end="45" start="32" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="49" start="47" name="Cop"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

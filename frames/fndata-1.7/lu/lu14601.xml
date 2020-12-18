@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="N" name="details.n" ID="14601" frame="Information" frameID="1591" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="enron-thread-159550" name="enron-thread-159550" ID="23724"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="inf" name="Information"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Mea" name="Means_of_gathering"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="sou" name="Source"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Core" abbrev="top" name="Topic"/>
+        </frame>
+    </header>
+    <definition>FN: specific information</definition>
+    <lexeme POS="N" name="details"/>
+    <valences>
+        <governor type="Sup" lemma="with">
+            <annoSet ID="6556016"/>
+        </governor>
+        <FERealization total="1">
+            <FE name="Cognizer"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <annoSet ID="6556016"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Information"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="DEN" FE="Information"/>
+                <annoSet ID="6556016"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Cognizer"/>
+            <FE name="Information"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Cognizer"/>
+                <valenceUnit GF="" PT="DEN" FE="Information"/>
+                <annoSet ID="6556016"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23724" sentNo="1" paragNo="27" aPos="0" ID="4101661">
+            <text>Patti is the one with the details , I 'm just the deal maker and do n't have access to any of the systems .</text>
+            <annotationSet cDate="08/15/2007 03:55:36 PDT Wed" status="UNANN" ID="6545419">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="NP"/>
+                    <label end="7" start="6" name="VBZ"/>
+                    <label end="11" start="9" name="dt"/>
+                    <label end="15" start="13" name="nn"/>
+                    <label end="20" start="17" name="in"/>
+                    <label end="24" start="22" name="dt"/>
+                    <label end="32" start="26" name="nns"/>
+                    <label end="34" start="34" name=","/>
+                    <label end="36" start="36" name="PP"/>
+                    <label end="39" start="38" name="vbp"/>
+                    <label end="44" start="41" name="rb"/>
+                    <label end="48" start="46" name="dt"/>
+                    <label end="53" start="50" name="nn"/>
+                    <label end="59" start="55" name="nn"/>
+                    <label end="63" start="61" name="cc"/>
+                    <label end="66" start="65" name="VVP"/>
+                    <label end="70" start="68" name="rb"/>
+                    <label end="75" start="72" name="VH"/>
+                    <label end="82" start="77" name="nn"/>
+                    <label end="85" start="84" name="to"/>
+                    <label end="89" start="87" name="dt"/>
+                    <label end="92" start="91" name="in"/>
+                    <label end="96" start="94" name="dt"/>
+                    <label end="104" start="98" name="nns"/>
+                    <label end="106" start="106" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="4" start="0" name="person"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="4" start="0" name="NT"/>
+                    <label end="7" start="6" name="NT"/>
+                    <label end="11" start="9" name="NT"/>
+                    <label end="20" start="17" name="NT"/>
+                    <label end="24" start="22" name="NT"/>
+                    <label end="34" start="34" name="NT"/>
+                    <label end="36" start="36" name="NT"/>
+                    <label end="39" start="38" name="NT"/>
+                    <label end="44" start="41" name="NT"/>
+                    <label end="48" start="46" name="NT"/>
+                    <label end="63" start="61" name="NT"/>
+                    <label end="66" start="65" name="NT"/>
+                    <label end="70" start="68" name="NT"/>
+                    <label end="85" start="84" name="NT"/>
+                    <label end="92" start="91" name="NT"/>
+                    <label end="96" start="94" name="NT"/>
+                    <label end="106" start="106" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/26/2008 01:44:11 PDT Tue" status="MANUAL" ID="6556016">
+                <layer rank="1" name="Target">
+                    <label cBy="JKs" end="32" start="26" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="JKs" feID="8690" end="32" start="26" name="Information"/>
+                    <label cBy="JKs" feID="8691" end="15" start="9" name="Cognizer"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="15" start="9" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="15" start="9" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun">
+                    <label end="20" start="17" name="Supp"/>
+                </layer>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

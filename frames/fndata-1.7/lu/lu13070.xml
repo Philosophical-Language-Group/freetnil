@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="ought to.v" ID="13070" frame="Required_event" frameID="1381" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Polemic Progressive Education" name="PolemicProgressiveEducation" ID="23011"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Extra-Thematic" abbrev="cir" name="Circumstances"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="deg" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Extra-Thematic" abbrev="exp" name="Explanation"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="neg" name="Negative_consequences"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="pur" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Core" abbrev="req" name="Required_situation"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: should.</definition>
+    <lexeme order="1" headword="true" breakBefore="false" POS="V" name="ought"/>
+    <lexeme order="2" headword="false" breakBefore="false" POS="N" name="to"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Required_situation"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Required_situation"/>
+                <annoSet ID="4530642"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPto" FE="Required_situation"/>
+                <annoSet ID="4530642"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Required_situation"/>
+            <FE name="Required_situation"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Required_situation"/>
+                <valenceUnit GF="Dep" PT="VPto" FE="Required_situation"/>
+                <annoSet ID="4530642"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23011" sentNo="2" paragNo="5" aPos="0" ID="2824310">
+            <text>The reasons are complex , but one simple reason ought not to be underestimated .</text>
+            <annotationSet cDate="02/05/2004 08:29:55 PST Thu" status="UNANN" ID="4528305">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="10" start="4" name="nns"/>
+                    <label end="14" start="12" name="vbp"/>
+                    <label end="22" start="16" name="jj"/>
+                    <label end="24" start="24" name=","/>
+                    <label end="28" start="26" name="cc"/>
+                    <label end="32" start="30" name="cd"/>
+                    <label end="39" start="34" name="jj"/>
+                    <label end="46" start="41" name="nn"/>
+                    <label end="52" start="48" name="md"/>
+                    <label end="56" start="54" name="rb"/>
+                    <label end="59" start="58" name="to"/>
+                    <label end="62" start="61" name="vb"/>
+                    <label end="77" start="64" name="VVN"/>
+                    <label end="79" start="79" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="14" start="12" name="NT"/>
+                    <label end="24" start="24" name="NT"/>
+                    <label end="56" start="54" name="NT"/>
+                    <label end="59" start="58" name="NT"/>
+                    <label end="62" start="61" name="NT"/>
+                    <label end="79" start="79" name="NT"/>
+                    <label end="2" start="0" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="12/08/2005 05:56:31 PST Thu" status="MANUAL" ID="4530642">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="52" start="48" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="7752" end="77" start="58" name="Required_situation"/>
+                    <label cBy="RLG" feID="7752" end="46" start="30" name="Required_situation"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="77" start="58" name="Dep"/>
+                    <label end="46" start="30" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="77" start="58" name="VPto"/>
+                    <label end="46" start="30" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="convene.v" ID="15720" frame="Assemble" frameID="2237" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="American National Corpus Texts" name="ANC" ID="195">
+            <document description="Berlitz Where to Go in Hong Kong" name="WhereToHongKong" ID="23771"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="" name="Group"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Individuals"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="" name="Manner"/>
+            <FE fgColor="000000" bgColor="EEE8AA" type="Peripheral" abbrev="" name="Means"/>
+            <FE fgColor="000000" bgColor="FFFF00" type="Core" abbrev="" name="Party_1"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Core" abbrev="" name="Party_2"/>
+            <FE fgColor="FFFFFF" bgColor="1E90FF" type="Peripheral" abbrev="" name="Place"/>
+            <FE fgColor="000000" bgColor="7FFF00" type="Peripheral" abbrev="" name="Purpose"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: to assemble for a public purpose</definition>
+    <lexeme POS="V" name="convene"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Individuals"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Individuals"/>
+                <annoSet ID="6559195"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Purpose"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="VPto" FE="Purpose"/>
+                <annoSet ID="6559195"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="NP" FE="Time"/>
+                <annoSet ID="6559195"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Individuals"/>
+            <FE name="Purpose"/>
+            <FE name="Time"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Individuals"/>
+                <valenceUnit GF="Dep" PT="VPto" FE="Purpose"/>
+                <valenceUnit GF="Dep" PT="NP" FE="Time"/>
+                <annoSet ID="6559195"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="195" docID="23771" sentNo="3" paragNo="28" aPos="0" ID="4105900">
+            <text>Every August young women convene to light joss sticks and some even climb the nine - meter ( 30 - ft ) rock to pray for good husbands .</text>
+            <annotationSet cDate="07/25/2008 01:18:22 PDT Fri" status="UNANN" ID="6554990">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="dt"/>
+                    <label end="11" start="6" name="NP"/>
+                    <label end="17" start="13" name="jj"/>
+                    <label end="23" start="19" name="nns"/>
+                    <label end="31" start="25" name="VVP"/>
+                    <label end="34" start="33" name="to"/>
+                    <label end="40" start="36" name="jj"/>
+                    <label end="45" start="42" name="nn"/>
+                    <label end="52" start="47" name="nns"/>
+                    <label end="56" start="54" name="cc"/>
+                    <label end="61" start="58" name="rb"/>
+                    <label end="66" start="63" name="rb"/>
+                    <label end="72" start="68" name="VV"/>
+                    <label end="76" start="74" name="dt"/>
+                    <label end="81" start="78" name="cd"/>
+                    <label end="83" start="83" name=":"/>
+                    <label end="89" start="85" name="nn"/>
+                    <label end="91" start="91" name="("/>
+                    <label end="94" start="93" name="cd"/>
+                    <label end="96" start="96" name=":"/>
+                    <label end="99" start="98" name="nn"/>
+                    <label end="101" start="101" name=")"/>
+                    <label end="106" start="103" name="nn"/>
+                    <label end="109" start="108" name="to"/>
+                    <label end="114" start="111" name="VV"/>
+                    <label end="118" start="116" name="in"/>
+                    <label end="123" start="120" name="jj"/>
+                    <label end="132" start="125" name="nns"/>
+                    <label end="134" start="134" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="11" start="6" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="34" start="33" name="NT"/>
+                    <label end="56" start="54" name="NT"/>
+                    <label end="66" start="63" name="NT"/>
+                    <label end="76" start="74" name="NT"/>
+                    <label end="83" start="83" name="NT"/>
+                    <label end="91" start="91" name="NT"/>
+                    <label end="96" start="96" name="NT"/>
+                    <label end="101" start="101" name="NT"/>
+                    <label end="109" start="108" name="NT"/>
+                    <label end="118" start="116" name="NT"/>
+                    <label end="134" start="134" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="05/04/2010 02:57:44 PDT Tue" status="MANUAL" ID="6559195">
+                <layer rank="1" name="Target">
+                    <label cBy="AnW" end="31" start="25" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="AnW" feID="13647" end="11" start="0" name="Time"/>
+                    <label cBy="AnW" feID="13640" end="23" start="13" name="Individuals"/>
+                    <label cBy="AnW" feID="13648" end="132" start="33" name="Purpose"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="11" start="0" name="Dep"/>
+                    <label end="23" start="13" name="Ext"/>
+                    <label end="132" start="33" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="11" start="0" name="NP"/>
+                    <label end="23" start="13" name="NP"/>
+                    <label end="132" start="33" name="VPto"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

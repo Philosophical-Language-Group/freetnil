@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" incorporatedFE="Gizmo" POS="N" name="gear.n" ID="12213" frame="Gizmo" frameID="106" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Texts from Nuclear Threat Initiative website, created by Center for Non-Proliferation Studies" name="NTI" ID="135">
+            <document description="Iran Chemical" name="Iran_Chemical" ID="23514"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Giz" name="Gizmo"/>
+            <FE fgColor="FFFFFF" bgColor="006400" type="Peripheral" abbrev="Power_source" name="Power_source"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="Use" name="Use"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Peripheral" abbrev="Usr" name="User"/>
+        </frame>
+    </header>
+    <definition>COD: apparatus or equipment</definition>
+    <lexeme POS="N" name="gear"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Use"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Use"/>
+                <annoSet ID="6528260"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Use"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="AJP" FE="Use"/>
+                <annoSet ID="6528260"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="135" docID="23514" sentNo="3" paragNo="11" aPos="0" ID="4097024">
+            <text>Other defensive material purchased by Iran includes respirators from Spain , protective gear from South Korea , and atropine autoinjectors from the Netherlands .</text>
+            <annotationSet cDate="02/25/2005 12:43:01 PST Fri" status="UNANN" ID="6522689">
+                <layer rank="1" name="PENN">
+                    <label end="4" start="0" name="jj"/>
+                    <label end="14" start="6" name="jj"/>
+                    <label end="23" start="16" name="nn"/>
+                    <label end="33" start="25" name="VVN"/>
+                    <label end="36" start="35" name="in"/>
+                    <label end="41" start="38" name="NP"/>
+                    <label end="50" start="43" name="VVZ"/>
+                    <label end="62" start="52" name="nns"/>
+                    <label end="67" start="64" name="in"/>
+                    <label end="73" start="69" name="NP"/>
+                    <label end="75" start="75" name=","/>
+                    <label end="86" start="77" name="jj"/>
+                    <label end="91" start="88" name="nn"/>
+                    <label end="96" start="93" name="in"/>
+                    <label end="102" start="98" name="NP"/>
+                    <label end="108" start="104" name="NP"/>
+                    <label end="110" start="110" name=","/>
+                    <label end="114" start="112" name="cc"/>
+                    <label end="123" start="116" name="nn"/>
+                    <label end="137" start="125" name="nns"/>
+                    <label end="142" start="139" name="in"/>
+                    <label end="146" start="144" name="dt"/>
+                    <label end="158" start="148" name="NPS"/>
+                    <label end="160" start="160" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="41" start="38" name="GPE"/>
+                    <label end="73" start="69" name="GPE"/>
+                    <label end="108" start="98" name="GPE"/>
+                    <label end="158" start="148" name="location"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="36" start="35" name="NT"/>
+                    <label end="41" start="38" name="NT"/>
+                    <label end="67" start="64" name="NT"/>
+                    <label end="73" start="69" name="NT"/>
+                    <label end="75" start="75" name="NT"/>
+                    <label end="96" start="93" name="NT"/>
+                    <label end="102" start="98" name="NT"/>
+                    <label end="108" start="104" name="NT"/>
+                    <label end="110" start="110" name="NT"/>
+                    <label end="114" start="112" name="NT"/>
+                    <label end="142" start="139" name="NT"/>
+                    <label end="146" start="144" name="NT"/>
+                    <label end="158" start="148" name="NT"/>
+                    <label end="160" start="160" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="06/27/2005 02:26:56 PDT Mon" status="MANUAL" ID="6528260">
+                <layer rank="1" name="Target">
+                    <label cBy="RLG" end="91" start="88" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="RLG" feID="525" end="86" start="77" name="Use"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="86" start="77" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="86" start="77" name="AJP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

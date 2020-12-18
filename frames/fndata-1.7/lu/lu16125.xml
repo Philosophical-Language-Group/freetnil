@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="New" POS="V" name="mine.v" ID="16125" frame="Mining" frameID="2285" totalAnnotated="3" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="BNC2" name="BNC2" ID="111">
+            <document description="bncp=788" name="bncp=788" ID="17714"/>
+            <document description="bncp=1728" name="bncp=1728" ID="18108"/>
+            <document description="bncp=1467" name="bncp=1467" ID="18253"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Peripheral" abbrev="" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="min" name="Miner"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Peripheral" abbrev="" name="Outcome"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="sou" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="res" name="Resource"/>
+            <FE fgColor="000000" bgColor="FFD700" type="Peripheral" abbrev="" name="Time"/>
+        </frame>
+    </header>
+    <definition>FN: the extraction of a valuable resource from the earth. </definition>
+    <lexeme POS="V" name="mine"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Miner"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Miner"/>
+                <annoSet ID="2613302"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="3">
+            <FE name="Resource"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Resource"/>
+                <annoSet ID="2613302"/>
+            </pattern>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Resource"/>
+                <annoSet ID="2613312"/>
+                <annoSet ID="2613384"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Miner"/>
+            <FE name="Resource"/>
+            <pattern total="1">
+                <valenceUnit GF="" PT="CNI" FE="Miner"/>
+                <valenceUnit GF="Obj" PT="NP" FE="Resource"/>
+                <annoSet ID="2613302"/>
+            </pattern>
+        </FEGroupRealization>
+        <FEGroupRealization total="2">
+            <FE name="Resource"/>
+            <pattern total="2">
+                <valenceUnit GF="Ext" PT="NP" FE="Resource"/>
+                <annoSet ID="2613312"/>
+                <annoSet ID="2613384"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="01-object-(1)"/>
+    <subCorpus name="02-other-matched-(1)"/>
+    <subCorpus name="03-other-unmatched-(1)">
+        <sentence corpID="111" docID="17714" sentNo="2" paragNo="320" aPos="0" ID="1588057">
+            <text>If these are analogous with the vessels proposed for mining manganese nodules , the capital costs of each operation are likely to run toward $1000 million .</text>
+            <annotationSet cDate="10/08/2010 02:45:37 PDT Fri" status="UNANN" ID="2613301">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="7" start="3" name="dt"/>
+                    <label end="11" start="9" name="vbp"/>
+                    <label end="21" start="13" name="jj"/>
+                    <label end="26" start="23" name="in"/>
+                    <label end="30" start="28" name="dt"/>
+                    <label end="38" start="32" name="nns"/>
+                    <label end="47" start="40" name="VVN"/>
+                    <label end="51" start="49" name="in"/>
+                    <label end="58" start="53" name="VVG"/>
+                    <label end="68" start="60" name="nn"/>
+                    <label end="76" start="70" name="nns"/>
+                    <label end="78" start="78" name=","/>
+                    <label end="82" start="80" name="dt"/>
+                    <label end="90" start="84" name="nn"/>
+                    <label end="96" start="92" name="nns"/>
+                    <label end="99" start="98" name="in"/>
+                    <label end="104" start="101" name="dt"/>
+                    <label end="114" start="106" name="nn"/>
+                    <label end="118" start="116" name="vbp"/>
+                    <label end="125" start="120" name="jj"/>
+                    <label end="128" start="127" name="to"/>
+                    <label end="132" start="130" name="VV"/>
+                    <label end="139" start="134" name="in"/>
+                    <label end="145" start="141" name="jj"/>
+                    <label end="153" start="147" name="cd"/>
+                    <label end="155" start="155" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="10/08/2010 02:45:37 PDT Fri" status="MANUAL" ID="2613302">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="58" start="53" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MLC" feID="13822" end="76" start="60" name="Resource"/>
+                    <label cBy="CVa" feID="13821" itype="CNI" name="Miner"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="76" start="60" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="76" start="60" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="18108" sentNo="10" paragNo="119" aPos="0" ID="1588062">
+            <text>Sometimes slate was also mined in caverns as at Carnglaze .</text>
+            <annotationSet cDate="10/08/2010 02:45:38 PDT Fri" status="UNANN" ID="2613311">
+                <layer rank="1" name="PENN">
+                    <label end="8" start="0" name="rb"/>
+                    <label end="14" start="10" name="nn"/>
+                    <label end="18" start="16" name="VBD"/>
+                    <label end="23" start="20" name="rb"/>
+                    <label end="29" start="25" name="VVN"/>
+                    <label end="32" start="31" name="in"/>
+                    <label end="40" start="34" name="nns"/>
+                    <label end="43" start="42" name="in"/>
+                    <label end="46" start="45" name="in"/>
+                    <label end="56" start="48" name="NP"/>
+                    <label end="58" start="58" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="10/08/2010 02:45:38 PDT Fri" status="MANUAL" ID="2613312">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="29" start="25" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CFB" feID="13822" end="14" start="10" name="Resource"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="14" start="10" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="14" start="10" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="111" docID="18253" sentNo="3" paragNo="3" aPos="0" ID="1588098">
+            <text>In South-west England tin , copper and other metals have been mined for at least 2000 years from deposits related to Variscan granites ; in the Pennine range of central and northern England over a similar period , lead , and lately fluorite and baryte , have been extracted from vein and replacement deposits in Carboniferous sediments ; in Central Wales , the Isle of Man and the Southern Uplands of Scotland lead and zinc have been mined from vein deposits in Lower Palaeozoic greywackes and in the Lake District copper , lead and zinc have been recovered from a variety of deposits in Lower Palaeozoic sedimentary and volcanic rocks underlain by Caledonian granites .</text>
+            <annotationSet cDate="10/08/2010 02:45:49 PDT Fri" status="UNANN" ID="2613383">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="12" start="3" name="jj"/>
+                    <label end="20" start="14" name="NP"/>
+                    <label end="24" start="22" name="nn"/>
+                    <label end="26" start="26" name=","/>
+                    <label end="33" start="28" name="nn"/>
+                    <label end="37" start="35" name="cc"/>
+                    <label end="43" start="39" name="jj"/>
+                    <label end="50" start="45" name="nns"/>
+                    <label end="55" start="52" name="VHP"/>
+                    <label end="60" start="57" name="VBN"/>
+                    <label end="66" start="62" name="VVN"/>
+                    <label end="70" start="68" name="in"/>
+                    <label end="73" start="72" name="in"/>
+                    <label end="79" start="75" name="jjs"/>
+                    <label end="84" start="81" name="cd"/>
+                    <label end="90" start="86" name="nns"/>
+                    <label end="95" start="92" name="in"/>
+                    <label end="104" start="97" name="nns"/>
+                    <label end="112" start="106" name="VVN"/>
+                    <label end="115" start="114" name="to"/>
+                    <label end="124" start="117" name="jj"/>
+                    <label end="133" start="126" name="nns"/>
+                    <label end="135" start="135" name=":"/>
+                    <label end="138" start="137" name="in"/>
+                    <label end="142" start="140" name="dt"/>
+                    <label end="150" start="144" name="NP"/>
+                    <label end="156" start="152" name="nn"/>
+                    <label end="159" start="158" name="in"/>
+                    <label end="167" start="161" name="jj"/>
+                    <label end="171" start="169" name="cc"/>
+                    <label end="180" start="173" name="jj"/>
+                    <label end="188" start="182" name="NP"/>
+                    <label end="193" start="190" name="in"/>
+                    <label end="195" start="195" name="dt"/>
+                    <label end="203" start="197" name="jj"/>
+                    <label end="210" start="205" name="nn"/>
+                    <label end="212" start="212" name=","/>
+                    <label end="217" start="214" name="VV"/>
+                    <label end="219" start="219" name=","/>
+                    <label end="223" start="221" name="cc"/>
+                    <label end="230" start="225" name="rb"/>
+                    <label end="239" start="232" name="nns"/>
+                    <label end="243" start="241" name="cc"/>
+                    <label end="250" start="245" name="nn"/>
+                    <label end="252" start="252" name=","/>
+                    <label end="257" start="254" name="VHP"/>
+                    <label end="262" start="259" name="VBN"/>
+                    <label end="272" start="264" name="VVN"/>
+                    <label end="277" start="274" name="in"/>
+                    <label end="282" start="279" name="nn"/>
+                    <label end="286" start="284" name="cc"/>
+                    <label end="298" start="288" name="nn"/>
+                    <label end="307" start="300" name="nns"/>
+                    <label end="310" start="309" name="in"/>
+                    <label end="324" start="312" name="jj"/>
+                    <label end="334" start="326" name="nns"/>
+                    <label end="336" start="336" name=":"/>
+                    <label end="339" start="338" name="in"/>
+                    <label end="347" start="341" name="NP"/>
+                    <label end="353" start="349" name="NP"/>
+                    <label end="355" start="355" name=","/>
+                    <label end="359" start="357" name="dt"/>
+                    <label end="364" start="361" name="NP"/>
+                    <label end="367" start="366" name="in"/>
+                    <label end="371" start="369" name="NP"/>
+                    <label end="375" start="373" name="cc"/>
+                    <label end="379" start="377" name="dt"/>
+                    <label end="388" start="381" name="jj"/>
+                    <label end="396" start="390" name="nns"/>
+                    <label end="399" start="398" name="in"/>
+                    <label end="408" start="401" name="NP"/>
+                    <label end="413" start="410" name="nn"/>
+                    <label end="417" start="415" name="cc"/>
+                    <label end="422" start="419" name="nn"/>
+                    <label end="427" start="424" name="VHP"/>
+                    <label end="432" start="429" name="VBN"/>
+                    <label end="438" start="434" name="VVN"/>
+                    <label end="443" start="440" name="in"/>
+                    <label end="448" start="445" name="nn"/>
+                    <label end="457" start="450" name="nns"/>
+                    <label end="460" start="459" name="in"/>
+                    <label end="466" start="462" name="jjr"/>
+                    <label end="477" start="468" name="jj"/>
+                    <label end="488" start="479" name="nns"/>
+                    <label end="492" start="490" name="cc"/>
+                    <label end="495" start="494" name="in"/>
+                    <label end="499" start="497" name="dt"/>
+                    <label end="504" start="501" name="NP"/>
+                    <label end="513" start="506" name="NP"/>
+                    <label end="520" start="515" name="nn"/>
+                    <label end="522" start="522" name=","/>
+                    <label end="527" start="524" name="nn"/>
+                    <label end="531" start="529" name="cc"/>
+                    <label end="536" start="533" name="nn"/>
+                    <label end="541" start="538" name="VHP"/>
+                    <label end="546" start="543" name="VBN"/>
+                    <label end="556" start="548" name="VVN"/>
+                    <label end="561" start="558" name="in"/>
+                    <label end="563" start="563" name="dt"/>
+                    <label end="571" start="565" name="nn"/>
+                    <label end="574" start="573" name="in"/>
+                    <label end="583" start="576" name="nns"/>
+                    <label end="586" start="585" name="in"/>
+                    <label end="592" start="588" name="jjr"/>
+                    <label end="603" start="594" name="jj"/>
+                    <label end="615" start="605" name="jj"/>
+                    <label end="619" start="617" name="cc"/>
+                    <label end="628" start="621" name="jj"/>
+                    <label end="634" start="630" name="nns"/>
+                    <label end="644" start="636" name="VVN"/>
+                    <label end="647" start="646" name="in"/>
+                    <label end="658" start="649" name="jj"/>
+                    <label end="667" start="660" name="nns"/>
+                    <label end="669" start="669" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="10/08/2010 02:45:50 PDT Fri" status="MANUAL" ID="2613384">
+                <layer rank="1" name="Target">
+                    <label cBy="MLC" end="66" start="62" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="CFB" feID="13822" end="50" start="22" name="Resource"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="50" start="22" name="Ext"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="50" start="22" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Verb"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

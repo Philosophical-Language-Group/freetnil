@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="IDIO" name="let know.v" ID="18759" frame="Telling" frameID="750" totalAnnotated="2" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="LUCorpus-v0.3" name="LUCorpus-v0.3" ID="205">
+            <document description="enron-thread-159550" name="enron-thread-159550" ID="23724"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="" name="Addressee"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Extra-Thematic" abbrev="Cf" name="Communicative_force"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="90876C" type="Extra-Thematic" abbrev="Ite" name="Iterations"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="808080" type="Core" abbrev="" name="Medium"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="" name="Message"/>
+            <FE fgColor="FFFFFF" bgColor="2E8B57" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="" name="Speaker"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Core" abbrev="" name="Topic"/>
+        </frame>
+    </header>
+    <definition>FN: tell (someone) by language or some other means.</definition>
+    <lexeme order="1" headword="true" breakBefore="false" POS="V" name="let"/>
+    <lexeme order="2" headword="false" breakBefore="false" POS="V" name="know"/>
+    <valences>
+        <FERealization total="2">
+            <FE name="Addressee"/>
+            <pattern total="2">
+                <valenceUnit GF="Obj" PT="NP" FE="Addressee"/>
+                <annoSet ID="6774315"/>
+                <annoSet ID="6774316"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Message"/>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="Sinterrog" FE="Message"/>
+                <annoSet ID="6774316"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Dep" PT="Sub" FE="Message"/>
+                <annoSet ID="6774315"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="2">
+            <FE name="Speaker"/>
+            <pattern total="2">
+                <valenceUnit GF="" PT="CNI" FE="Speaker"/>
+                <annoSet ID="6774315"/>
+                <annoSet ID="6774316"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="2">
+            <FE name="Addressee"/>
+            <FE name="Message"/>
+            <FE name="Speaker"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Addressee"/>
+                <valenceUnit GF="Dep" PT="Sinterrog" FE="Message"/>
+                <valenceUnit GF="" PT="CNI" FE="Speaker"/>
+                <annoSet ID="6774316"/>
+            </pattern>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Addressee"/>
+                <valenceUnit GF="Dep" PT="Sub" FE="Message"/>
+                <valenceUnit GF="" PT="CNI" FE="Speaker"/>
+                <annoSet ID="6774315"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="205" docID="23724" sentNo="5" paragNo="27" aPos="0" ID="4101665">
+            <text>Let me know if you do n't hear from her today .</text>
+            <annotationSet cDate="08/15/2007 03:55:37 PDT Wed" status="UNANN" ID="6545423">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="VV"/>
+                    <label end="5" start="4" name="PP"/>
+                    <label end="10" start="7" name="VV"/>
+                    <label end="13" start="12" name="in"/>
+                    <label end="17" start="15" name="PP"/>
+                    <label end="20" start="19" name="VVP"/>
+                    <label end="24" start="22" name="rb"/>
+                    <label end="29" start="26" name="VV"/>
+                    <label end="34" start="31" name="in"/>
+                    <label end="38" start="36" name="PP$"/>
+                    <label end="44" start="40" name="nn"/>
+                    <label end="46" start="46" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="5" start="4" name="NT"/>
+                    <label end="13" start="12" name="NT"/>
+                    <label end="17" start="15" name="NT"/>
+                    <label end="20" start="19" name="NT"/>
+                    <label end="24" start="22" name="NT"/>
+                    <label end="34" start="31" name="NT"/>
+                    <label end="38" start="36" name="NT"/>
+                    <label end="46" start="46" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/30/2016 11:30:49 PDT Tue" status="MANUAL" ID="6774315">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="2" start="0" name="Target"/>
+                    <label cBy="MJE" end="10" start="7" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="4870" end="5" start="4" name="Addressee"/>
+                    <label cBy="MJE" feID="4871" end="44" start="12" name="Message"/>
+                    <label cBy="MJE" feID="4869" itype="CNI" name="Speaker"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="5" start="4" name="Obj"/>
+                    <label end="44" start="12" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="5" start="4" name="NP"/>
+                    <label end="44" start="12" name="Sub"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+            </annotationSet>
+        </sentence>
+        <sentence corpID="205" docID="23724" sentNo="6" paragNo="21" aPos="0" ID="4101655">
+            <text>I need to forecast the money today , so please let me know what you would like to do .</text>
+            <annotationSet cDate="08/15/2007 03:55:34 PDT Wed" status="UNANN" ID="6545413">
+                <layer rank="1" name="PENN">
+                    <label end="0" start="0" name="PP"/>
+                    <label end="5" start="2" name="VVP"/>
+                    <label end="8" start="7" name="to"/>
+                    <label end="17" start="10" name="VV"/>
+                    <label end="21" start="19" name="dt"/>
+                    <label end="27" start="23" name="nn"/>
+                    <label end="33" start="29" name="nn"/>
+                    <label end="35" start="35" name=","/>
+                    <label end="38" start="37" name="rb"/>
+                    <label end="45" start="40" name="VVP"/>
+                    <label end="49" start="47" name="VV"/>
+                    <label end="52" start="51" name="PP"/>
+                    <label end="57" start="54" name="VVP"/>
+                    <label end="62" start="59" name="wp"/>
+                    <label end="66" start="64" name="PP"/>
+                    <label end="72" start="68" name="md"/>
+                    <label end="77" start="74" name="VV"/>
+                    <label end="80" start="79" name="to"/>
+                    <label end="83" start="82" name="VV"/>
+                    <label end="85" start="85" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL">
+                    <label end="0" start="0" name="NT"/>
+                    <label end="8" start="7" name="NT"/>
+                    <label end="21" start="19" name="NT"/>
+                    <label end="35" start="35" name="NT"/>
+                    <label end="38" start="37" name="NT"/>
+                    <label end="52" start="51" name="NT"/>
+                    <label end="62" start="59" name="NT"/>
+                    <label end="66" start="64" name="NT"/>
+                    <label end="72" start="68" name="NT"/>
+                    <label end="80" start="79" name="NT"/>
+                    <label end="85" start="85" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="08/30/2016 11:33:08 PDT Tue" status="MANUAL" ID="6774316">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="49" start="47" name="Target"/>
+                    <label cBy="MJE" end="57" start="54" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="4870" end="52" start="51" name="Addressee"/>
+                    <label cBy="MJE" feID="4869" itype="CNI" name="Speaker"/>
+                    <label cBy="MJE" feID="4871" end="83" start="59" name="Message"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="52" start="51" name="Obj"/>
+                    <label end="83" start="59" name="Dep"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="52" start="51" name="NP"/>
+                    <label end="83" start="59" name="Sinterrog"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

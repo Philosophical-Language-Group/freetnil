@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="V" name="point (to).v" ID="13329" frame="Evidence" frameID="25" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Miscellaneous" name="Miscellaneous" ID="175">
+            <document description="TigerOfSanPedro" name="Tiger_Of_San_Pedro" ID="25343"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="cog" name="Cognizer"/>
+            <FE fgColor="FFFFFF" bgColor="FF69B4" type="Peripheral" abbrev="Degr" name="Degree"/>
+            <FE fgColor="FFFFFF" bgColor="9400D3" type="Extra-Thematic" abbrev="Depict" name="Depictive"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Extra-Thematic" abbrev="doma" name="Domain_of_relevance"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="Manr" name="Manner"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="Mns" name="Means"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Core" abbrev="Prp" name="Proposition"/>
+            <FE fgColor="FFFFFF" bgColor="9F79EE" type="Extra-Thematic" abbrev="Result" name="Result"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="Sup" name="Support"/>
+        </frame>
+    </header>
+    <definition>FN: (of some fact or state of affairs) to provide evidence for a conclusion.</definition>
+    <lexeme order="1" headword="true" breakBefore="false" POS="V" name="point"/>
+    <lexeme order="2" headword="false" breakBefore="false" POS="PREP" name="to"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Proposition"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Proposition"/>
+                <annoSet ID="6646005"/>
+            </pattern>
+        </FERealization>
+        <FERealization total="1">
+            <FE name="Support"/>
+            <pattern total="1">
+                <valenceUnit GF="Ext" PT="NP" FE="Support"/>
+                <annoSet ID="6646005"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Proposition"/>
+            <FE name="Support"/>
+            <pattern total="1">
+                <valenceUnit GF="Obj" PT="NP" FE="Proposition"/>
+                <valenceUnit GF="Ext" PT="NP" FE="Support"/>
+                <annoSet ID="6646005"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="175" docID="25343" sentNo="2" paragNo="28" aPos="0" ID="4148438">
+            <text>All our reasoning seems to point that way .</text>
+            <annotationSet cDate="04/30/2013 05:20:11 PDT Tue" status="UNANN" ID="6646003">
+                <layer rank="1" name="PENN">
+                    <label end="2" start="0" name="dt"/>
+                    <label end="6" start="4" name="PRP$"/>
+                    <label end="16" start="8" name="nn"/>
+                    <label end="22" start="18" name="VBZ"/>
+                    <label end="25" start="24" name="to"/>
+                    <label end="31" start="27" name="vb"/>
+                    <label end="36" start="33" name="dt"/>
+                    <label end="40" start="38" name="nn"/>
+                </layer>
+                <layer rank="1" name="NER"/>
+                <layer rank="1" name="WSL"/>
+            </annotationSet>
+            <annotationSet cDate="04/30/2013 05:20:11 PDT Tue" status="MANUAL" ID="6646005">
+                <layer rank="1" name="Target">
+                    <label cBy="EGp" end="31" start="27" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="EGp" feID="107" end="16" start="0" name="Support"/>
+                    <label cBy="EGp" feID="108" end="42" start="33" name="Proposition"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="16" start="0" name="Ext"/>
+                    <label end="42" start="33" name="Obj"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="16" start="0" name="NP"/>
+                    <label end="42" start="33" name="NP"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+                <layer rank="1" name="Noun"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit status="Created" POS="ADV" name="rhythmically.adv" ID="10331" frame="Temporal_pattern" frameID="1040" totalAnnotated="1" xsi:schemaLocation="../schema/lexUnit.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <corpus description="Wall Street Journal Texts from the PropBank Project" name="PropBank" ID="115">
+            <document description="Bell Ringing" name="BellRinging" ID="23009"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Peripheral" abbrev="dsc" name="Descriptor"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Core" abbrev="pt" name="Pattern"/>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="pr" name="Process"/>
+            <FE fgColor="FFFFFF" bgColor="00008B" type="Core" abbrev="se" name="Subevent"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="tp" name="Type"/>
+        </frame>
+    </header>
+    <definition>FN: with regular,  patterned repetition</definition>
+    <lexeme POS="ADV" name="rhythmically"/>
+    <valences>
+        <FERealization total="1">
+            <FE name="Subevent"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="VPfin" FE="Subevent"/>
+                <annoSet ID="4528565"/>
+            </pattern>
+        </FERealization>
+        <FEGroupRealization total="1">
+            <FE name="Subevent"/>
+            <pattern total="1">
+                <valenceUnit GF="Head" PT="VPfin" FE="Subevent"/>
+                <annoSet ID="4528565"/>
+            </pattern>
+        </FEGroupRealization>
+    </valences>
+    <subCorpus name="manually-added">
+        <sentence corpID="115" docID="23009" sentNo="2" paragNo="4" aPos="0" ID="2824201">
+            <text>In the tower , five men and women pull rhythmically on ropes attached to the same five bells that first sounded here in 1614 .</text>
+            <annotationSet cDate="02/05/2004 08:29:19 PST Thu" status="UNANN" ID="4528196">
+                <layer rank="1" name="PENN">
+                    <label end="1" start="0" name="in"/>
+                    <label end="5" start="3" name="dt"/>
+                    <label end="11" start="7" name="nn"/>
+                    <label end="13" start="13" name=","/>
+                    <label end="18" start="15" name="cd"/>
+                    <label end="22" start="20" name="nns"/>
+                    <label end="26" start="24" name="cc"/>
+                    <label end="32" start="28" name="nns"/>
+                    <label end="37" start="34" name="VVP"/>
+                    <label end="50" start="39" name="rb"/>
+                    <label end="53" start="52" name="in"/>
+                    <label end="59" start="55" name="nns"/>
+                    <label end="68" start="61" name="VVN"/>
+                    <label end="71" start="70" name="to"/>
+                    <label end="75" start="73" name="dt"/>
+                    <label end="80" start="77" name="jj"/>
+                    <label end="85" start="82" name="cd"/>
+                    <label end="91" start="87" name="nns"/>
+                    <label end="96" start="93" name="wdt"/>
+                    <label end="102" start="98" name="rb"/>
+                    <label end="110" start="104" name="VVD"/>
+                    <label end="115" start="112" name="rb"/>
+                    <label end="118" start="117" name="in"/>
+                    <label end="123" start="120" name="cd"/>
+                    <label end="125" start="125" name="sent"/>
+                </layer>
+                <layer rank="1" name="NER">
+                    <label end="123" start="120" name="date"/>
+                </layer>
+                <layer rank="1" name="WSL">
+                    <label end="13" start="13" name="NT"/>
+                    <label end="71" start="70" name="NT"/>
+                    <label end="115" start="112" name="NT"/>
+                    <label end="118" start="117" name="NT"/>
+                    <label end="125" start="125" name="NT"/>
+                    <label end="1" start="0" name="NT"/>
+                    <label end="5" start="3" name="NT"/>
+                    <label end="26" start="24" name="NT"/>
+                    <label end="53" start="52" name="NT"/>
+                    <label end="75" start="73" name="NT"/>
+                    <label end="96" start="93" name="NT"/>
+                    <label end="123" start="120" name="NT"/>
+                </layer>
+            </annotationSet>
+            <annotationSet cDate="03/21/2004 09:24:07 PST Sun" status="MANUAL" ID="4528565">
+                <layer rank="1" name="Target">
+                    <label cBy="MJE" end="50" start="39" name="Target"/>
+                </layer>
+                <layer rank="1" name="FE">
+                    <label cBy="MJE" feID="6164" end="37" start="34" name="Subevent"/>
+                </layer>
+                <layer rank="1" name="GF">
+                    <label end="37" start="34" name="Head"/>
+                </layer>
+                <layer rank="1" name="PT">
+                    <label end="37" start="34" name="VPfin"/>
+                </layer>
+                <layer rank="1" name="Other"/>
+                <layer rank="1" name="Sent"/>
+            </annotationSet>
+        </sentence>
+    </subCorpus>
+</lexUnit>
