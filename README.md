@@ -28,7 +28,20 @@ documents will contain programs for encoding and deciphering its text.  The end
 goal of this project is not only the specification of a language, but also an
 implementation of it.
 
+## Where do I start?
+
+We publish ideas for language features as "Requests for Comment", or
+"RFCs". These can be found in `docs/rfc/`. You are welcome to
+[contribute](./contribute.md) as well.
+
+- [Back to Basics, or Organizational Sets](./docs/rfc/RFC_0001)
+- [The Next level, or Discourse Categories](./docs/rfc/RFC_0002)
+- [Down with Specification](./docs/rfc/RFC_0003)
+- [Discourse as a Tree](./docs/rfc/RFC_0004)
+- [Development Roadmap](./docs/rfc/RFC_0005)
+
 ## Contributing
+
 Contributions and bug-fixes are welcome, and anybody may contribute.  [See here
 instructions.](./contribute.md)
 
